@@ -12,7 +12,7 @@
 # pragma once
 #endif /* __cplusplus */
 #
-#if !defined (_opengl_loader_h_)
+#if !defined (_gload_h_)
 #
 # if defined (__gl_h_)
 #  error "#include <GL/gl.h> detected. To ensure a proper usage of this loader, remove the include."
@@ -24,7 +24,7 @@
 #  error "#include <GL/glcorearb.h> detected. To ensure a proper usage of this loader, remove the include."
 # endif /* __gl_glcorearb_h_ */
 #
-# define _opengl_loader_h_ 1
+# define _gload_h_ 1
 # define __gl_h_ 1
 # define __gl_glext_h_ 1
 # define __gl_glcorearb_h_ 1
@@ -12544,4 +12544,4 @@ extern PFNGLVIEWPORTPROC gload_glViewport;
 #  endif /* __cplusplus */
 #
 # endif /* OPENGL_IMPLEMENTATION */
-#endif /* _opengl_loader_h_ */
+#endif /* _gload_h_ */
