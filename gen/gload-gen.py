@@ -361,6 +361,9 @@ def opengl_loader(parse: glParse):
             '/* <<gload-funcptr>> */',
             gload_funcptr(parse).replace('#', '# ')
         ).replace(
+            '/* <<gload-nameaddr>> */',
+            gload_nameaddr(parse).replace('#', '#  ')
+        ).replace(
             '/* <<gload-loadfunc>> */',
             gload_loadfunc(parse).replace('#', '#  ')
         ).replace(
@@ -492,6 +495,25 @@ def gload_declr(parse: glParse, mode: int) -> str:
         if mode != 2:
             result += '\n'
         result += f'#endif /* {feat.name} */\n'
+    return (result.strip())
+
+
+def gload_nameaddr(parse: glParse) -> str:
+    result: str
+
+    result = str()
+    for feat in parse.feat:
+        result += f'#if defined {feat.name}\n\n'
+
+        for req in feat.req:
+            for c_str in req.cmds:
+                cmd: glCmd
+                name: str
+
+                cmd = next(cmd for cmd in parse.cmds if cmd.name == c_str)
+                name = f'   {{ \"{cmd.name}\", (void **) &gload_{cmd.name} }},\n'
+                result += name
+        result += f'\n#endif /* {feat.name} */\n'
     return (result.strip())
 
 

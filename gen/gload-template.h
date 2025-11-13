@@ -174,9 +174,7 @@ GLAPI void  *gloadGetProcAddress(const char *);
 /* <<gload-funcptr>> */
 /* <<gload-declr-1>> */
 /* <<gload-declr-2>> */
-
-
-
+#
 # if defined (__cplusplus)
 
 }
@@ -229,7 +227,23 @@ extern "C" {
  *  Global objects
  * * * * * * * * * * */
 
+#  if defined (GLOAD_DLSYM)
+
 static void *g_handle = 0;
+
+#  endif /* GLOAD_DLSYM */
+
+struct s_nameaddr {
+    char    *name;
+    void    **addr;
+};
+
+static struct s_nameaddr    g_nameaddr[] = {
+    
+/* <<gload-nameaddr>> */
+
+    { 0, 0 }
+};
 
 /* SECTION:
  *  gload API
@@ -253,8 +267,15 @@ GLAPI int   gloadLoadGL(void) {
 }
 
 GLAPI int   gloadLoadGLLoader(t_gloadLoader load) {
+    if (!load) { return (0); }
 
-/* <<gload-loadfunc>> */
+    for (size_t i = 0; g_nameaddr[i].name && g_nameaddr[i].addr; i++) {
+        /* If the function is already loaded, skip it... */
+        if (*g_nameaddr[i].addr) { continue; }
+
+        *g_nameaddr[i].addr = load(g_nameaddr[i].name);
+        if (!*g_nameaddr[i].addr) { return (0); }
+    }
 
     return (1);
 }

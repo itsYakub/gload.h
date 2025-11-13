@@ -97,8 +97,8 @@
  *        - OpenGL Registry provided by KhronosGroup.
  *        
  *      This project is heavily inspired by the following projects:
- *      - nothings/stb:  https://github.com/nothings/stb.git
- *      - Dav1dde/glad:  https://github.com/Dav1dde/glad.git
+ *      - nothings/stb: https://github.com/nothings/stb.git
+ *      - Dav1dde/glad: https://github.com/Dav1dde/glad.git
  *      - macron/glbind: https://github.com/mackron/glbind.git
  *      - KhronosGroup/OpenGL-Registry: https://github.com/KhronosGroup/OpenGL-Registry.git
  *
@@ -9052,9 +9052,7 @@ extern PFNGLVIEWPORTPROC gload_glViewport;
 #  define glVertexAttribPointer gload_glVertexAttribPointer
 #  define glViewport gload_glViewport
 # endif /* GL_SC_VERSION_2_0 */
-
-
-
+#
 # if defined (__cplusplus)
 
 }
@@ -9107,7 +9105,1788 @@ extern "C" {
  *  Global objects
  * * * * * * * * * * */
 
+#  if defined (GLOAD_DLSYM)
+
 static void *g_handle = 0;
+
+#  endif /* GLOAD_DLSYM */
+
+struct s_nameaddr {
+    char    *name;
+    void    **addr;
+};
+
+static struct s_nameaddr    g_nameaddr[] = {
+    
+#  if defined GL_VERSION_1_0
+
+   { "glCullFace", (void **) &gload_glCullFace },
+   { "glFrontFace", (void **) &gload_glFrontFace },
+   { "glHint", (void **) &gload_glHint },
+   { "glLineWidth", (void **) &gload_glLineWidth },
+   { "glPointSize", (void **) &gload_glPointSize },
+   { "glPolygonMode", (void **) &gload_glPolygonMode },
+   { "glScissor", (void **) &gload_glScissor },
+   { "glTexParameterf", (void **) &gload_glTexParameterf },
+   { "glTexParameterfv", (void **) &gload_glTexParameterfv },
+   { "glTexParameteri", (void **) &gload_glTexParameteri },
+   { "glTexParameteriv", (void **) &gload_glTexParameteriv },
+   { "glTexImage1D", (void **) &gload_glTexImage1D },
+   { "glTexImage2D", (void **) &gload_glTexImage2D },
+   { "glDrawBuffer", (void **) &gload_glDrawBuffer },
+   { "glClear", (void **) &gload_glClear },
+   { "glClearColor", (void **) &gload_glClearColor },
+   { "glClearStencil", (void **) &gload_glClearStencil },
+   { "glClearDepth", (void **) &gload_glClearDepth },
+   { "glStencilMask", (void **) &gload_glStencilMask },
+   { "glColorMask", (void **) &gload_glColorMask },
+   { "glDepthMask", (void **) &gload_glDepthMask },
+   { "glDisable", (void **) &gload_glDisable },
+   { "glEnable", (void **) &gload_glEnable },
+   { "glFinish", (void **) &gload_glFinish },
+   { "glFlush", (void **) &gload_glFlush },
+   { "glBlendFunc", (void **) &gload_glBlendFunc },
+   { "glLogicOp", (void **) &gload_glLogicOp },
+   { "glStencilFunc", (void **) &gload_glStencilFunc },
+   { "glStencilOp", (void **) &gload_glStencilOp },
+   { "glDepthFunc", (void **) &gload_glDepthFunc },
+   { "glPixelStoref", (void **) &gload_glPixelStoref },
+   { "glPixelStorei", (void **) &gload_glPixelStorei },
+   { "glReadBuffer", (void **) &gload_glReadBuffer },
+   { "glReadPixels", (void **) &gload_glReadPixels },
+   { "glGetBooleanv", (void **) &gload_glGetBooleanv },
+   { "glGetDoublev", (void **) &gload_glGetDoublev },
+   { "glGetError", (void **) &gload_glGetError },
+   { "glGetFloatv", (void **) &gload_glGetFloatv },
+   { "glGetIntegerv", (void **) &gload_glGetIntegerv },
+   { "glGetString", (void **) &gload_glGetString },
+   { "glGetTexImage", (void **) &gload_glGetTexImage },
+   { "glGetTexParameterfv", (void **) &gload_glGetTexParameterfv },
+   { "glGetTexParameteriv", (void **) &gload_glGetTexParameteriv },
+   { "glGetTexLevelParameterfv", (void **) &gload_glGetTexLevelParameterfv },
+   { "glGetTexLevelParameteriv", (void **) &gload_glGetTexLevelParameteriv },
+   { "glIsEnabled", (void **) &gload_glIsEnabled },
+   { "glDepthRange", (void **) &gload_glDepthRange },
+   { "glViewport", (void **) &gload_glViewport },
+   { "glNewList", (void **) &gload_glNewList },
+   { "glEndList", (void **) &gload_glEndList },
+   { "glCallList", (void **) &gload_glCallList },
+   { "glCallLists", (void **) &gload_glCallLists },
+   { "glDeleteLists", (void **) &gload_glDeleteLists },
+   { "glGenLists", (void **) &gload_glGenLists },
+   { "glListBase", (void **) &gload_glListBase },
+   { "glBegin", (void **) &gload_glBegin },
+   { "glBitmap", (void **) &gload_glBitmap },
+   { "glColor3b", (void **) &gload_glColor3b },
+   { "glColor3bv", (void **) &gload_glColor3bv },
+   { "glColor3d", (void **) &gload_glColor3d },
+   { "glColor3dv", (void **) &gload_glColor3dv },
+   { "glColor3f", (void **) &gload_glColor3f },
+   { "glColor3fv", (void **) &gload_glColor3fv },
+   { "glColor3i", (void **) &gload_glColor3i },
+   { "glColor3iv", (void **) &gload_glColor3iv },
+   { "glColor3s", (void **) &gload_glColor3s },
+   { "glColor3sv", (void **) &gload_glColor3sv },
+   { "glColor3ub", (void **) &gload_glColor3ub },
+   { "glColor3ubv", (void **) &gload_glColor3ubv },
+   { "glColor3ui", (void **) &gload_glColor3ui },
+   { "glColor3uiv", (void **) &gload_glColor3uiv },
+   { "glColor3us", (void **) &gload_glColor3us },
+   { "glColor3usv", (void **) &gload_glColor3usv },
+   { "glColor4b", (void **) &gload_glColor4b },
+   { "glColor4bv", (void **) &gload_glColor4bv },
+   { "glColor4d", (void **) &gload_glColor4d },
+   { "glColor4dv", (void **) &gload_glColor4dv },
+   { "glColor4f", (void **) &gload_glColor4f },
+   { "glColor4fv", (void **) &gload_glColor4fv },
+   { "glColor4i", (void **) &gload_glColor4i },
+   { "glColor4iv", (void **) &gload_glColor4iv },
+   { "glColor4s", (void **) &gload_glColor4s },
+   { "glColor4sv", (void **) &gload_glColor4sv },
+   { "glColor4ub", (void **) &gload_glColor4ub },
+   { "glColor4ubv", (void **) &gload_glColor4ubv },
+   { "glColor4ui", (void **) &gload_glColor4ui },
+   { "glColor4uiv", (void **) &gload_glColor4uiv },
+   { "glColor4us", (void **) &gload_glColor4us },
+   { "glColor4usv", (void **) &gload_glColor4usv },
+   { "glEdgeFlag", (void **) &gload_glEdgeFlag },
+   { "glEdgeFlagv", (void **) &gload_glEdgeFlagv },
+   { "glEnd", (void **) &gload_glEnd },
+   { "glIndexd", (void **) &gload_glIndexd },
+   { "glIndexdv", (void **) &gload_glIndexdv },
+   { "glIndexf", (void **) &gload_glIndexf },
+   { "glIndexfv", (void **) &gload_glIndexfv },
+   { "glIndexi", (void **) &gload_glIndexi },
+   { "glIndexiv", (void **) &gload_glIndexiv },
+   { "glIndexs", (void **) &gload_glIndexs },
+   { "glIndexsv", (void **) &gload_glIndexsv },
+   { "glNormal3b", (void **) &gload_glNormal3b },
+   { "glNormal3bv", (void **) &gload_glNormal3bv },
+   { "glNormal3d", (void **) &gload_glNormal3d },
+   { "glNormal3dv", (void **) &gload_glNormal3dv },
+   { "glNormal3f", (void **) &gload_glNormal3f },
+   { "glNormal3fv", (void **) &gload_glNormal3fv },
+   { "glNormal3i", (void **) &gload_glNormal3i },
+   { "glNormal3iv", (void **) &gload_glNormal3iv },
+   { "glNormal3s", (void **) &gload_glNormal3s },
+   { "glNormal3sv", (void **) &gload_glNormal3sv },
+   { "glRasterPos2d", (void **) &gload_glRasterPos2d },
+   { "glRasterPos2dv", (void **) &gload_glRasterPos2dv },
+   { "glRasterPos2f", (void **) &gload_glRasterPos2f },
+   { "glRasterPos2fv", (void **) &gload_glRasterPos2fv },
+   { "glRasterPos2i", (void **) &gload_glRasterPos2i },
+   { "glRasterPos2iv", (void **) &gload_glRasterPos2iv },
+   { "glRasterPos2s", (void **) &gload_glRasterPos2s },
+   { "glRasterPos2sv", (void **) &gload_glRasterPos2sv },
+   { "glRasterPos3d", (void **) &gload_glRasterPos3d },
+   { "glRasterPos3dv", (void **) &gload_glRasterPos3dv },
+   { "glRasterPos3f", (void **) &gload_glRasterPos3f },
+   { "glRasterPos3fv", (void **) &gload_glRasterPos3fv },
+   { "glRasterPos3i", (void **) &gload_glRasterPos3i },
+   { "glRasterPos3iv", (void **) &gload_glRasterPos3iv },
+   { "glRasterPos3s", (void **) &gload_glRasterPos3s },
+   { "glRasterPos3sv", (void **) &gload_glRasterPos3sv },
+   { "glRasterPos4d", (void **) &gload_glRasterPos4d },
+   { "glRasterPos4dv", (void **) &gload_glRasterPos4dv },
+   { "glRasterPos4f", (void **) &gload_glRasterPos4f },
+   { "glRasterPos4fv", (void **) &gload_glRasterPos4fv },
+   { "glRasterPos4i", (void **) &gload_glRasterPos4i },
+   { "glRasterPos4iv", (void **) &gload_glRasterPos4iv },
+   { "glRasterPos4s", (void **) &gload_glRasterPos4s },
+   { "glRasterPos4sv", (void **) &gload_glRasterPos4sv },
+   { "glRectd", (void **) &gload_glRectd },
+   { "glRectdv", (void **) &gload_glRectdv },
+   { "glRectf", (void **) &gload_glRectf },
+   { "glRectfv", (void **) &gload_glRectfv },
+   { "glRecti", (void **) &gload_glRecti },
+   { "glRectiv", (void **) &gload_glRectiv },
+   { "glRects", (void **) &gload_glRects },
+   { "glRectsv", (void **) &gload_glRectsv },
+   { "glTexCoord1d", (void **) &gload_glTexCoord1d },
+   { "glTexCoord1dv", (void **) &gload_glTexCoord1dv },
+   { "glTexCoord1f", (void **) &gload_glTexCoord1f },
+   { "glTexCoord1fv", (void **) &gload_glTexCoord1fv },
+   { "glTexCoord1i", (void **) &gload_glTexCoord1i },
+   { "glTexCoord1iv", (void **) &gload_glTexCoord1iv },
+   { "glTexCoord1s", (void **) &gload_glTexCoord1s },
+   { "glTexCoord1sv", (void **) &gload_glTexCoord1sv },
+   { "glTexCoord2d", (void **) &gload_glTexCoord2d },
+   { "glTexCoord2dv", (void **) &gload_glTexCoord2dv },
+   { "glTexCoord2f", (void **) &gload_glTexCoord2f },
+   { "glTexCoord2fv", (void **) &gload_glTexCoord2fv },
+   { "glTexCoord2i", (void **) &gload_glTexCoord2i },
+   { "glTexCoord2iv", (void **) &gload_glTexCoord2iv },
+   { "glTexCoord2s", (void **) &gload_glTexCoord2s },
+   { "glTexCoord2sv", (void **) &gload_glTexCoord2sv },
+   { "glTexCoord3d", (void **) &gload_glTexCoord3d },
+   { "glTexCoord3dv", (void **) &gload_glTexCoord3dv },
+   { "glTexCoord3f", (void **) &gload_glTexCoord3f },
+   { "glTexCoord3fv", (void **) &gload_glTexCoord3fv },
+   { "glTexCoord3i", (void **) &gload_glTexCoord3i },
+   { "glTexCoord3iv", (void **) &gload_glTexCoord3iv },
+   { "glTexCoord3s", (void **) &gload_glTexCoord3s },
+   { "glTexCoord3sv", (void **) &gload_glTexCoord3sv },
+   { "glTexCoord4d", (void **) &gload_glTexCoord4d },
+   { "glTexCoord4dv", (void **) &gload_glTexCoord4dv },
+   { "glTexCoord4f", (void **) &gload_glTexCoord4f },
+   { "glTexCoord4fv", (void **) &gload_glTexCoord4fv },
+   { "glTexCoord4i", (void **) &gload_glTexCoord4i },
+   { "glTexCoord4iv", (void **) &gload_glTexCoord4iv },
+   { "glTexCoord4s", (void **) &gload_glTexCoord4s },
+   { "glTexCoord4sv", (void **) &gload_glTexCoord4sv },
+   { "glVertex2d", (void **) &gload_glVertex2d },
+   { "glVertex2dv", (void **) &gload_glVertex2dv },
+   { "glVertex2f", (void **) &gload_glVertex2f },
+   { "glVertex2fv", (void **) &gload_glVertex2fv },
+   { "glVertex2i", (void **) &gload_glVertex2i },
+   { "glVertex2iv", (void **) &gload_glVertex2iv },
+   { "glVertex2s", (void **) &gload_glVertex2s },
+   { "glVertex2sv", (void **) &gload_glVertex2sv },
+   { "glVertex3d", (void **) &gload_glVertex3d },
+   { "glVertex3dv", (void **) &gload_glVertex3dv },
+   { "glVertex3f", (void **) &gload_glVertex3f },
+   { "glVertex3fv", (void **) &gload_glVertex3fv },
+   { "glVertex3i", (void **) &gload_glVertex3i },
+   { "glVertex3iv", (void **) &gload_glVertex3iv },
+   { "glVertex3s", (void **) &gload_glVertex3s },
+   { "glVertex3sv", (void **) &gload_glVertex3sv },
+   { "glVertex4d", (void **) &gload_glVertex4d },
+   { "glVertex4dv", (void **) &gload_glVertex4dv },
+   { "glVertex4f", (void **) &gload_glVertex4f },
+   { "glVertex4fv", (void **) &gload_glVertex4fv },
+   { "glVertex4i", (void **) &gload_glVertex4i },
+   { "glVertex4iv", (void **) &gload_glVertex4iv },
+   { "glVertex4s", (void **) &gload_glVertex4s },
+   { "glVertex4sv", (void **) &gload_glVertex4sv },
+   { "glClipPlane", (void **) &gload_glClipPlane },
+   { "glColorMaterial", (void **) &gload_glColorMaterial },
+   { "glFogf", (void **) &gload_glFogf },
+   { "glFogfv", (void **) &gload_glFogfv },
+   { "glFogi", (void **) &gload_glFogi },
+   { "glFogiv", (void **) &gload_glFogiv },
+   { "glLightf", (void **) &gload_glLightf },
+   { "glLightfv", (void **) &gload_glLightfv },
+   { "glLighti", (void **) &gload_glLighti },
+   { "glLightiv", (void **) &gload_glLightiv },
+   { "glLightModelf", (void **) &gload_glLightModelf },
+   { "glLightModelfv", (void **) &gload_glLightModelfv },
+   { "glLightModeli", (void **) &gload_glLightModeli },
+   { "glLightModeliv", (void **) &gload_glLightModeliv },
+   { "glLineStipple", (void **) &gload_glLineStipple },
+   { "glMaterialf", (void **) &gload_glMaterialf },
+   { "glMaterialfv", (void **) &gload_glMaterialfv },
+   { "glMateriali", (void **) &gload_glMateriali },
+   { "glMaterialiv", (void **) &gload_glMaterialiv },
+   { "glPolygonStipple", (void **) &gload_glPolygonStipple },
+   { "glShadeModel", (void **) &gload_glShadeModel },
+   { "glTexEnvf", (void **) &gload_glTexEnvf },
+   { "glTexEnvfv", (void **) &gload_glTexEnvfv },
+   { "glTexEnvi", (void **) &gload_glTexEnvi },
+   { "glTexEnviv", (void **) &gload_glTexEnviv },
+   { "glTexGend", (void **) &gload_glTexGend },
+   { "glTexGendv", (void **) &gload_glTexGendv },
+   { "glTexGenf", (void **) &gload_glTexGenf },
+   { "glTexGenfv", (void **) &gload_glTexGenfv },
+   { "glTexGeni", (void **) &gload_glTexGeni },
+   { "glTexGeniv", (void **) &gload_glTexGeniv },
+   { "glFeedbackBuffer", (void **) &gload_glFeedbackBuffer },
+   { "glSelectBuffer", (void **) &gload_glSelectBuffer },
+   { "glRenderMode", (void **) &gload_glRenderMode },
+   { "glInitNames", (void **) &gload_glInitNames },
+   { "glLoadName", (void **) &gload_glLoadName },
+   { "glPassThrough", (void **) &gload_glPassThrough },
+   { "glPopName", (void **) &gload_glPopName },
+   { "glPushName", (void **) &gload_glPushName },
+   { "glClearAccum", (void **) &gload_glClearAccum },
+   { "glClearIndex", (void **) &gload_glClearIndex },
+   { "glIndexMask", (void **) &gload_glIndexMask },
+   { "glAccum", (void **) &gload_glAccum },
+   { "glPopAttrib", (void **) &gload_glPopAttrib },
+   { "glPushAttrib", (void **) &gload_glPushAttrib },
+   { "glMap1d", (void **) &gload_glMap1d },
+   { "glMap1f", (void **) &gload_glMap1f },
+   { "glMap2d", (void **) &gload_glMap2d },
+   { "glMap2f", (void **) &gload_glMap2f },
+   { "glMapGrid1d", (void **) &gload_glMapGrid1d },
+   { "glMapGrid1f", (void **) &gload_glMapGrid1f },
+   { "glMapGrid2d", (void **) &gload_glMapGrid2d },
+   { "glMapGrid2f", (void **) &gload_glMapGrid2f },
+   { "glEvalCoord1d", (void **) &gload_glEvalCoord1d },
+   { "glEvalCoord1dv", (void **) &gload_glEvalCoord1dv },
+   { "glEvalCoord1f", (void **) &gload_glEvalCoord1f },
+   { "glEvalCoord1fv", (void **) &gload_glEvalCoord1fv },
+   { "glEvalCoord2d", (void **) &gload_glEvalCoord2d },
+   { "glEvalCoord2dv", (void **) &gload_glEvalCoord2dv },
+   { "glEvalCoord2f", (void **) &gload_glEvalCoord2f },
+   { "glEvalCoord2fv", (void **) &gload_glEvalCoord2fv },
+   { "glEvalMesh1", (void **) &gload_glEvalMesh1 },
+   { "glEvalPoint1", (void **) &gload_glEvalPoint1 },
+   { "glEvalMesh2", (void **) &gload_glEvalMesh2 },
+   { "glEvalPoint2", (void **) &gload_glEvalPoint2 },
+   { "glAlphaFunc", (void **) &gload_glAlphaFunc },
+   { "glPixelZoom", (void **) &gload_glPixelZoom },
+   { "glPixelTransferf", (void **) &gload_glPixelTransferf },
+   { "glPixelTransferi", (void **) &gload_glPixelTransferi },
+   { "glPixelMapfv", (void **) &gload_glPixelMapfv },
+   { "glPixelMapuiv", (void **) &gload_glPixelMapuiv },
+   { "glPixelMapusv", (void **) &gload_glPixelMapusv },
+   { "glCopyPixels", (void **) &gload_glCopyPixels },
+   { "glDrawPixels", (void **) &gload_glDrawPixels },
+   { "glGetClipPlane", (void **) &gload_glGetClipPlane },
+   { "glGetLightfv", (void **) &gload_glGetLightfv },
+   { "glGetLightiv", (void **) &gload_glGetLightiv },
+   { "glGetMapdv", (void **) &gload_glGetMapdv },
+   { "glGetMapfv", (void **) &gload_glGetMapfv },
+   { "glGetMapiv", (void **) &gload_glGetMapiv },
+   { "glGetMaterialfv", (void **) &gload_glGetMaterialfv },
+   { "glGetMaterialiv", (void **) &gload_glGetMaterialiv },
+   { "glGetPixelMapfv", (void **) &gload_glGetPixelMapfv },
+   { "glGetPixelMapuiv", (void **) &gload_glGetPixelMapuiv },
+   { "glGetPixelMapusv", (void **) &gload_glGetPixelMapusv },
+   { "glGetPolygonStipple", (void **) &gload_glGetPolygonStipple },
+   { "glGetTexEnvfv", (void **) &gload_glGetTexEnvfv },
+   { "glGetTexEnviv", (void **) &gload_glGetTexEnviv },
+   { "glGetTexGendv", (void **) &gload_glGetTexGendv },
+   { "glGetTexGenfv", (void **) &gload_glGetTexGenfv },
+   { "glGetTexGeniv", (void **) &gload_glGetTexGeniv },
+   { "glIsList", (void **) &gload_glIsList },
+   { "glFrustum", (void **) &gload_glFrustum },
+   { "glLoadIdentity", (void **) &gload_glLoadIdentity },
+   { "glLoadMatrixf", (void **) &gload_glLoadMatrixf },
+   { "glLoadMatrixd", (void **) &gload_glLoadMatrixd },
+   { "glMatrixMode", (void **) &gload_glMatrixMode },
+   { "glMultMatrixf", (void **) &gload_glMultMatrixf },
+   { "glMultMatrixd", (void **) &gload_glMultMatrixd },
+   { "glOrtho", (void **) &gload_glOrtho },
+   { "glPopMatrix", (void **) &gload_glPopMatrix },
+   { "glPushMatrix", (void **) &gload_glPushMatrix },
+   { "glRotated", (void **) &gload_glRotated },
+   { "glRotatef", (void **) &gload_glRotatef },
+   { "glScaled", (void **) &gload_glScaled },
+   { "glScalef", (void **) &gload_glScalef },
+   { "glTranslated", (void **) &gload_glTranslated },
+   { "glTranslatef", (void **) &gload_glTranslatef },
+
+#  endif /* GL_VERSION_1_0 */
+#  if defined GL_VERSION_1_1
+
+   { "glDrawArrays", (void **) &gload_glDrawArrays },
+   { "glDrawElements", (void **) &gload_glDrawElements },
+   { "glGetPointerv", (void **) &gload_glGetPointerv },
+   { "glPolygonOffset", (void **) &gload_glPolygonOffset },
+   { "glCopyTexImage1D", (void **) &gload_glCopyTexImage1D },
+   { "glCopyTexImage2D", (void **) &gload_glCopyTexImage2D },
+   { "glCopyTexSubImage1D", (void **) &gload_glCopyTexSubImage1D },
+   { "glCopyTexSubImage2D", (void **) &gload_glCopyTexSubImage2D },
+   { "glTexSubImage1D", (void **) &gload_glTexSubImage1D },
+   { "glTexSubImage2D", (void **) &gload_glTexSubImage2D },
+   { "glBindTexture", (void **) &gload_glBindTexture },
+   { "glDeleteTextures", (void **) &gload_glDeleteTextures },
+   { "glGenTextures", (void **) &gload_glGenTextures },
+   { "glIsTexture", (void **) &gload_glIsTexture },
+   { "glArrayElement", (void **) &gload_glArrayElement },
+   { "glColorPointer", (void **) &gload_glColorPointer },
+   { "glDisableClientState", (void **) &gload_glDisableClientState },
+   { "glEdgeFlagPointer", (void **) &gload_glEdgeFlagPointer },
+   { "glEnableClientState", (void **) &gload_glEnableClientState },
+   { "glIndexPointer", (void **) &gload_glIndexPointer },
+   { "glInterleavedArrays", (void **) &gload_glInterleavedArrays },
+   { "glNormalPointer", (void **) &gload_glNormalPointer },
+   { "glTexCoordPointer", (void **) &gload_glTexCoordPointer },
+   { "glVertexPointer", (void **) &gload_glVertexPointer },
+   { "glAreTexturesResident", (void **) &gload_glAreTexturesResident },
+   { "glPrioritizeTextures", (void **) &gload_glPrioritizeTextures },
+   { "glIndexub", (void **) &gload_glIndexub },
+   { "glIndexubv", (void **) &gload_glIndexubv },
+   { "glPopClientAttrib", (void **) &gload_glPopClientAttrib },
+   { "glPushClientAttrib", (void **) &gload_glPushClientAttrib },
+
+#  endif /* GL_VERSION_1_1 */
+#  if defined GL_VERSION_1_2
+
+   { "glDrawRangeElements", (void **) &gload_glDrawRangeElements },
+   { "glTexImage3D", (void **) &gload_glTexImage3D },
+   { "glTexSubImage3D", (void **) &gload_glTexSubImage3D },
+   { "glCopyTexSubImage3D", (void **) &gload_glCopyTexSubImage3D },
+
+#  endif /* GL_VERSION_1_2 */
+#  if defined GL_VERSION_1_3
+
+   { "glActiveTexture", (void **) &gload_glActiveTexture },
+   { "glSampleCoverage", (void **) &gload_glSampleCoverage },
+   { "glCompressedTexImage3D", (void **) &gload_glCompressedTexImage3D },
+   { "glCompressedTexImage2D", (void **) &gload_glCompressedTexImage2D },
+   { "glCompressedTexImage1D", (void **) &gload_glCompressedTexImage1D },
+   { "glCompressedTexSubImage3D", (void **) &gload_glCompressedTexSubImage3D },
+   { "glCompressedTexSubImage2D", (void **) &gload_glCompressedTexSubImage2D },
+   { "glCompressedTexSubImage1D", (void **) &gload_glCompressedTexSubImage1D },
+   { "glGetCompressedTexImage", (void **) &gload_glGetCompressedTexImage },
+   { "glClientActiveTexture", (void **) &gload_glClientActiveTexture },
+   { "glMultiTexCoord1d", (void **) &gload_glMultiTexCoord1d },
+   { "glMultiTexCoord1dv", (void **) &gload_glMultiTexCoord1dv },
+   { "glMultiTexCoord1f", (void **) &gload_glMultiTexCoord1f },
+   { "glMultiTexCoord1fv", (void **) &gload_glMultiTexCoord1fv },
+   { "glMultiTexCoord1i", (void **) &gload_glMultiTexCoord1i },
+   { "glMultiTexCoord1iv", (void **) &gload_glMultiTexCoord1iv },
+   { "glMultiTexCoord1s", (void **) &gload_glMultiTexCoord1s },
+   { "glMultiTexCoord1sv", (void **) &gload_glMultiTexCoord1sv },
+   { "glMultiTexCoord2d", (void **) &gload_glMultiTexCoord2d },
+   { "glMultiTexCoord2dv", (void **) &gload_glMultiTexCoord2dv },
+   { "glMultiTexCoord2f", (void **) &gload_glMultiTexCoord2f },
+   { "glMultiTexCoord2fv", (void **) &gload_glMultiTexCoord2fv },
+   { "glMultiTexCoord2i", (void **) &gload_glMultiTexCoord2i },
+   { "glMultiTexCoord2iv", (void **) &gload_glMultiTexCoord2iv },
+   { "glMultiTexCoord2s", (void **) &gload_glMultiTexCoord2s },
+   { "glMultiTexCoord2sv", (void **) &gload_glMultiTexCoord2sv },
+   { "glMultiTexCoord3d", (void **) &gload_glMultiTexCoord3d },
+   { "glMultiTexCoord3dv", (void **) &gload_glMultiTexCoord3dv },
+   { "glMultiTexCoord3f", (void **) &gload_glMultiTexCoord3f },
+   { "glMultiTexCoord3fv", (void **) &gload_glMultiTexCoord3fv },
+   { "glMultiTexCoord3i", (void **) &gload_glMultiTexCoord3i },
+   { "glMultiTexCoord3iv", (void **) &gload_glMultiTexCoord3iv },
+   { "glMultiTexCoord3s", (void **) &gload_glMultiTexCoord3s },
+   { "glMultiTexCoord3sv", (void **) &gload_glMultiTexCoord3sv },
+   { "glMultiTexCoord4d", (void **) &gload_glMultiTexCoord4d },
+   { "glMultiTexCoord4dv", (void **) &gload_glMultiTexCoord4dv },
+   { "glMultiTexCoord4f", (void **) &gload_glMultiTexCoord4f },
+   { "glMultiTexCoord4fv", (void **) &gload_glMultiTexCoord4fv },
+   { "glMultiTexCoord4i", (void **) &gload_glMultiTexCoord4i },
+   { "glMultiTexCoord4iv", (void **) &gload_glMultiTexCoord4iv },
+   { "glMultiTexCoord4s", (void **) &gload_glMultiTexCoord4s },
+   { "glMultiTexCoord4sv", (void **) &gload_glMultiTexCoord4sv },
+   { "glLoadTransposeMatrixf", (void **) &gload_glLoadTransposeMatrixf },
+   { "glLoadTransposeMatrixd", (void **) &gload_glLoadTransposeMatrixd },
+   { "glMultTransposeMatrixf", (void **) &gload_glMultTransposeMatrixf },
+   { "glMultTransposeMatrixd", (void **) &gload_glMultTransposeMatrixd },
+
+#  endif /* GL_VERSION_1_3 */
+#  if defined GL_VERSION_1_4
+
+   { "glBlendFuncSeparate", (void **) &gload_glBlendFuncSeparate },
+   { "glMultiDrawArrays", (void **) &gload_glMultiDrawArrays },
+   { "glMultiDrawElements", (void **) &gload_glMultiDrawElements },
+   { "glPointParameterf", (void **) &gload_glPointParameterf },
+   { "glPointParameterfv", (void **) &gload_glPointParameterfv },
+   { "glPointParameteri", (void **) &gload_glPointParameteri },
+   { "glPointParameteriv", (void **) &gload_glPointParameteriv },
+   { "glFogCoordf", (void **) &gload_glFogCoordf },
+   { "glFogCoordfv", (void **) &gload_glFogCoordfv },
+   { "glFogCoordd", (void **) &gload_glFogCoordd },
+   { "glFogCoorddv", (void **) &gload_glFogCoorddv },
+   { "glFogCoordPointer", (void **) &gload_glFogCoordPointer },
+   { "glSecondaryColor3b", (void **) &gload_glSecondaryColor3b },
+   { "glSecondaryColor3bv", (void **) &gload_glSecondaryColor3bv },
+   { "glSecondaryColor3d", (void **) &gload_glSecondaryColor3d },
+   { "glSecondaryColor3dv", (void **) &gload_glSecondaryColor3dv },
+   { "glSecondaryColor3f", (void **) &gload_glSecondaryColor3f },
+   { "glSecondaryColor3fv", (void **) &gload_glSecondaryColor3fv },
+   { "glSecondaryColor3i", (void **) &gload_glSecondaryColor3i },
+   { "glSecondaryColor3iv", (void **) &gload_glSecondaryColor3iv },
+   { "glSecondaryColor3s", (void **) &gload_glSecondaryColor3s },
+   { "glSecondaryColor3sv", (void **) &gload_glSecondaryColor3sv },
+   { "glSecondaryColor3ub", (void **) &gload_glSecondaryColor3ub },
+   { "glSecondaryColor3ubv", (void **) &gload_glSecondaryColor3ubv },
+   { "glSecondaryColor3ui", (void **) &gload_glSecondaryColor3ui },
+   { "glSecondaryColor3uiv", (void **) &gload_glSecondaryColor3uiv },
+   { "glSecondaryColor3us", (void **) &gload_glSecondaryColor3us },
+   { "glSecondaryColor3usv", (void **) &gload_glSecondaryColor3usv },
+   { "glSecondaryColorPointer", (void **) &gload_glSecondaryColorPointer },
+   { "glWindowPos2d", (void **) &gload_glWindowPos2d },
+   { "glWindowPos2dv", (void **) &gload_glWindowPos2dv },
+   { "glWindowPos2f", (void **) &gload_glWindowPos2f },
+   { "glWindowPos2fv", (void **) &gload_glWindowPos2fv },
+   { "glWindowPos2i", (void **) &gload_glWindowPos2i },
+   { "glWindowPos2iv", (void **) &gload_glWindowPos2iv },
+   { "glWindowPos2s", (void **) &gload_glWindowPos2s },
+   { "glWindowPos2sv", (void **) &gload_glWindowPos2sv },
+   { "glWindowPos3d", (void **) &gload_glWindowPos3d },
+   { "glWindowPos3dv", (void **) &gload_glWindowPos3dv },
+   { "glWindowPos3f", (void **) &gload_glWindowPos3f },
+   { "glWindowPos3fv", (void **) &gload_glWindowPos3fv },
+   { "glWindowPos3i", (void **) &gload_glWindowPos3i },
+   { "glWindowPos3iv", (void **) &gload_glWindowPos3iv },
+   { "glWindowPos3s", (void **) &gload_glWindowPos3s },
+   { "glWindowPos3sv", (void **) &gload_glWindowPos3sv },
+   { "glBlendColor", (void **) &gload_glBlendColor },
+   { "glBlendEquation", (void **) &gload_glBlendEquation },
+
+#  endif /* GL_VERSION_1_4 */
+#  if defined GL_VERSION_1_5
+
+   { "glGenQueries", (void **) &gload_glGenQueries },
+   { "glDeleteQueries", (void **) &gload_glDeleteQueries },
+   { "glIsQuery", (void **) &gload_glIsQuery },
+   { "glBeginQuery", (void **) &gload_glBeginQuery },
+   { "glEndQuery", (void **) &gload_glEndQuery },
+   { "glGetQueryiv", (void **) &gload_glGetQueryiv },
+   { "glGetQueryObjectiv", (void **) &gload_glGetQueryObjectiv },
+   { "glGetQueryObjectuiv", (void **) &gload_glGetQueryObjectuiv },
+   { "glBindBuffer", (void **) &gload_glBindBuffer },
+   { "glDeleteBuffers", (void **) &gload_glDeleteBuffers },
+   { "glGenBuffers", (void **) &gload_glGenBuffers },
+   { "glIsBuffer", (void **) &gload_glIsBuffer },
+   { "glBufferData", (void **) &gload_glBufferData },
+   { "glBufferSubData", (void **) &gload_glBufferSubData },
+   { "glGetBufferSubData", (void **) &gload_glGetBufferSubData },
+   { "glMapBuffer", (void **) &gload_glMapBuffer },
+   { "glUnmapBuffer", (void **) &gload_glUnmapBuffer },
+   { "glGetBufferParameteriv", (void **) &gload_glGetBufferParameteriv },
+   { "glGetBufferPointerv", (void **) &gload_glGetBufferPointerv },
+
+#  endif /* GL_VERSION_1_5 */
+#  if defined GL_VERSION_2_0
+
+   { "glBlendEquationSeparate", (void **) &gload_glBlendEquationSeparate },
+   { "glDrawBuffers", (void **) &gload_glDrawBuffers },
+   { "glStencilOpSeparate", (void **) &gload_glStencilOpSeparate },
+   { "glStencilFuncSeparate", (void **) &gload_glStencilFuncSeparate },
+   { "glStencilMaskSeparate", (void **) &gload_glStencilMaskSeparate },
+   { "glAttachShader", (void **) &gload_glAttachShader },
+   { "glBindAttribLocation", (void **) &gload_glBindAttribLocation },
+   { "glCompileShader", (void **) &gload_glCompileShader },
+   { "glCreateProgram", (void **) &gload_glCreateProgram },
+   { "glCreateShader", (void **) &gload_glCreateShader },
+   { "glDeleteProgram", (void **) &gload_glDeleteProgram },
+   { "glDeleteShader", (void **) &gload_glDeleteShader },
+   { "glDetachShader", (void **) &gload_glDetachShader },
+   { "glDisableVertexAttribArray", (void **) &gload_glDisableVertexAttribArray },
+   { "glEnableVertexAttribArray", (void **) &gload_glEnableVertexAttribArray },
+   { "glGetActiveAttrib", (void **) &gload_glGetActiveAttrib },
+   { "glGetActiveUniform", (void **) &gload_glGetActiveUniform },
+   { "glGetAttachedShaders", (void **) &gload_glGetAttachedShaders },
+   { "glGetAttribLocation", (void **) &gload_glGetAttribLocation },
+   { "glGetProgramiv", (void **) &gload_glGetProgramiv },
+   { "glGetProgramInfoLog", (void **) &gload_glGetProgramInfoLog },
+   { "glGetShaderiv", (void **) &gload_glGetShaderiv },
+   { "glGetShaderInfoLog", (void **) &gload_glGetShaderInfoLog },
+   { "glGetShaderSource", (void **) &gload_glGetShaderSource },
+   { "glGetUniformLocation", (void **) &gload_glGetUniformLocation },
+   { "glGetUniformfv", (void **) &gload_glGetUniformfv },
+   { "glGetUniformiv", (void **) &gload_glGetUniformiv },
+   { "glGetVertexAttribdv", (void **) &gload_glGetVertexAttribdv },
+   { "glGetVertexAttribfv", (void **) &gload_glGetVertexAttribfv },
+   { "glGetVertexAttribiv", (void **) &gload_glGetVertexAttribiv },
+   { "glGetVertexAttribPointerv", (void **) &gload_glGetVertexAttribPointerv },
+   { "glIsProgram", (void **) &gload_glIsProgram },
+   { "glIsShader", (void **) &gload_glIsShader },
+   { "glLinkProgram", (void **) &gload_glLinkProgram },
+   { "glShaderSource", (void **) &gload_glShaderSource },
+   { "glUseProgram", (void **) &gload_glUseProgram },
+   { "glUniform1f", (void **) &gload_glUniform1f },
+   { "glUniform2f", (void **) &gload_glUniform2f },
+   { "glUniform3f", (void **) &gload_glUniform3f },
+   { "glUniform4f", (void **) &gload_glUniform4f },
+   { "glUniform1i", (void **) &gload_glUniform1i },
+   { "glUniform2i", (void **) &gload_glUniform2i },
+   { "glUniform3i", (void **) &gload_glUniform3i },
+   { "glUniform4i", (void **) &gload_glUniform4i },
+   { "glUniform1fv", (void **) &gload_glUniform1fv },
+   { "glUniform2fv", (void **) &gload_glUniform2fv },
+   { "glUniform3fv", (void **) &gload_glUniform3fv },
+   { "glUniform4fv", (void **) &gload_glUniform4fv },
+   { "glUniform1iv", (void **) &gload_glUniform1iv },
+   { "glUniform2iv", (void **) &gload_glUniform2iv },
+   { "glUniform3iv", (void **) &gload_glUniform3iv },
+   { "glUniform4iv", (void **) &gload_glUniform4iv },
+   { "glUniformMatrix2fv", (void **) &gload_glUniformMatrix2fv },
+   { "glUniformMatrix3fv", (void **) &gload_glUniformMatrix3fv },
+   { "glUniformMatrix4fv", (void **) &gload_glUniformMatrix4fv },
+   { "glValidateProgram", (void **) &gload_glValidateProgram },
+   { "glVertexAttrib1d", (void **) &gload_glVertexAttrib1d },
+   { "glVertexAttrib1dv", (void **) &gload_glVertexAttrib1dv },
+   { "glVertexAttrib1f", (void **) &gload_glVertexAttrib1f },
+   { "glVertexAttrib1fv", (void **) &gload_glVertexAttrib1fv },
+   { "glVertexAttrib1s", (void **) &gload_glVertexAttrib1s },
+   { "glVertexAttrib1sv", (void **) &gload_glVertexAttrib1sv },
+   { "glVertexAttrib2d", (void **) &gload_glVertexAttrib2d },
+   { "glVertexAttrib2dv", (void **) &gload_glVertexAttrib2dv },
+   { "glVertexAttrib2f", (void **) &gload_glVertexAttrib2f },
+   { "glVertexAttrib2fv", (void **) &gload_glVertexAttrib2fv },
+   { "glVertexAttrib2s", (void **) &gload_glVertexAttrib2s },
+   { "glVertexAttrib2sv", (void **) &gload_glVertexAttrib2sv },
+   { "glVertexAttrib3d", (void **) &gload_glVertexAttrib3d },
+   { "glVertexAttrib3dv", (void **) &gload_glVertexAttrib3dv },
+   { "glVertexAttrib3f", (void **) &gload_glVertexAttrib3f },
+   { "glVertexAttrib3fv", (void **) &gload_glVertexAttrib3fv },
+   { "glVertexAttrib3s", (void **) &gload_glVertexAttrib3s },
+   { "glVertexAttrib3sv", (void **) &gload_glVertexAttrib3sv },
+   { "glVertexAttrib4Nbv", (void **) &gload_glVertexAttrib4Nbv },
+   { "glVertexAttrib4Niv", (void **) &gload_glVertexAttrib4Niv },
+   { "glVertexAttrib4Nsv", (void **) &gload_glVertexAttrib4Nsv },
+   { "glVertexAttrib4Nub", (void **) &gload_glVertexAttrib4Nub },
+   { "glVertexAttrib4Nubv", (void **) &gload_glVertexAttrib4Nubv },
+   { "glVertexAttrib4Nuiv", (void **) &gload_glVertexAttrib4Nuiv },
+   { "glVertexAttrib4Nusv", (void **) &gload_glVertexAttrib4Nusv },
+   { "glVertexAttrib4bv", (void **) &gload_glVertexAttrib4bv },
+   { "glVertexAttrib4d", (void **) &gload_glVertexAttrib4d },
+   { "glVertexAttrib4dv", (void **) &gload_glVertexAttrib4dv },
+   { "glVertexAttrib4f", (void **) &gload_glVertexAttrib4f },
+   { "glVertexAttrib4fv", (void **) &gload_glVertexAttrib4fv },
+   { "glVertexAttrib4iv", (void **) &gload_glVertexAttrib4iv },
+   { "glVertexAttrib4s", (void **) &gload_glVertexAttrib4s },
+   { "glVertexAttrib4sv", (void **) &gload_glVertexAttrib4sv },
+   { "glVertexAttrib4ubv", (void **) &gload_glVertexAttrib4ubv },
+   { "glVertexAttrib4uiv", (void **) &gload_glVertexAttrib4uiv },
+   { "glVertexAttrib4usv", (void **) &gload_glVertexAttrib4usv },
+   { "glVertexAttribPointer", (void **) &gload_glVertexAttribPointer },
+
+#  endif /* GL_VERSION_2_0 */
+#  if defined GL_VERSION_2_1
+
+   { "glUniformMatrix2x3fv", (void **) &gload_glUniformMatrix2x3fv },
+   { "glUniformMatrix3x2fv", (void **) &gload_glUniformMatrix3x2fv },
+   { "glUniformMatrix2x4fv", (void **) &gload_glUniformMatrix2x4fv },
+   { "glUniformMatrix4x2fv", (void **) &gload_glUniformMatrix4x2fv },
+   { "glUniformMatrix3x4fv", (void **) &gload_glUniformMatrix3x4fv },
+   { "glUniformMatrix4x3fv", (void **) &gload_glUniformMatrix4x3fv },
+
+#  endif /* GL_VERSION_2_1 */
+#  if defined GL_VERSION_3_0
+
+   { "glColorMaski", (void **) &gload_glColorMaski },
+   { "glGetBooleani_v", (void **) &gload_glGetBooleani_v },
+   { "glGetIntegeri_v", (void **) &gload_glGetIntegeri_v },
+   { "glEnablei", (void **) &gload_glEnablei },
+   { "glDisablei", (void **) &gload_glDisablei },
+   { "glIsEnabledi", (void **) &gload_glIsEnabledi },
+   { "glBeginTransformFeedback", (void **) &gload_glBeginTransformFeedback },
+   { "glEndTransformFeedback", (void **) &gload_glEndTransformFeedback },
+   { "glBindBufferRange", (void **) &gload_glBindBufferRange },
+   { "glBindBufferBase", (void **) &gload_glBindBufferBase },
+   { "glTransformFeedbackVaryings", (void **) &gload_glTransformFeedbackVaryings },
+   { "glGetTransformFeedbackVarying", (void **) &gload_glGetTransformFeedbackVarying },
+   { "glClampColor", (void **) &gload_glClampColor },
+   { "glBeginConditionalRender", (void **) &gload_glBeginConditionalRender },
+   { "glEndConditionalRender", (void **) &gload_glEndConditionalRender },
+   { "glVertexAttribIPointer", (void **) &gload_glVertexAttribIPointer },
+   { "glGetVertexAttribIiv", (void **) &gload_glGetVertexAttribIiv },
+   { "glGetVertexAttribIuiv", (void **) &gload_glGetVertexAttribIuiv },
+   { "glVertexAttribI1i", (void **) &gload_glVertexAttribI1i },
+   { "glVertexAttribI2i", (void **) &gload_glVertexAttribI2i },
+   { "glVertexAttribI3i", (void **) &gload_glVertexAttribI3i },
+   { "glVertexAttribI4i", (void **) &gload_glVertexAttribI4i },
+   { "glVertexAttribI1ui", (void **) &gload_glVertexAttribI1ui },
+   { "glVertexAttribI2ui", (void **) &gload_glVertexAttribI2ui },
+   { "glVertexAttribI3ui", (void **) &gload_glVertexAttribI3ui },
+   { "glVertexAttribI4ui", (void **) &gload_glVertexAttribI4ui },
+   { "glVertexAttribI1iv", (void **) &gload_glVertexAttribI1iv },
+   { "glVertexAttribI2iv", (void **) &gload_glVertexAttribI2iv },
+   { "glVertexAttribI3iv", (void **) &gload_glVertexAttribI3iv },
+   { "glVertexAttribI4iv", (void **) &gload_glVertexAttribI4iv },
+   { "glVertexAttribI1uiv", (void **) &gload_glVertexAttribI1uiv },
+   { "glVertexAttribI2uiv", (void **) &gload_glVertexAttribI2uiv },
+   { "glVertexAttribI3uiv", (void **) &gload_glVertexAttribI3uiv },
+   { "glVertexAttribI4uiv", (void **) &gload_glVertexAttribI4uiv },
+   { "glVertexAttribI4bv", (void **) &gload_glVertexAttribI4bv },
+   { "glVertexAttribI4sv", (void **) &gload_glVertexAttribI4sv },
+   { "glVertexAttribI4ubv", (void **) &gload_glVertexAttribI4ubv },
+   { "glVertexAttribI4usv", (void **) &gload_glVertexAttribI4usv },
+   { "glGetUniformuiv", (void **) &gload_glGetUniformuiv },
+   { "glBindFragDataLocation", (void **) &gload_glBindFragDataLocation },
+   { "glGetFragDataLocation", (void **) &gload_glGetFragDataLocation },
+   { "glUniform1ui", (void **) &gload_glUniform1ui },
+   { "glUniform2ui", (void **) &gload_glUniform2ui },
+   { "glUniform3ui", (void **) &gload_glUniform3ui },
+   { "glUniform4ui", (void **) &gload_glUniform4ui },
+   { "glUniform1uiv", (void **) &gload_glUniform1uiv },
+   { "glUniform2uiv", (void **) &gload_glUniform2uiv },
+   { "glUniform3uiv", (void **) &gload_glUniform3uiv },
+   { "glUniform4uiv", (void **) &gload_glUniform4uiv },
+   { "glTexParameterIiv", (void **) &gload_glTexParameterIiv },
+   { "glTexParameterIuiv", (void **) &gload_glTexParameterIuiv },
+   { "glGetTexParameterIiv", (void **) &gload_glGetTexParameterIiv },
+   { "glGetTexParameterIuiv", (void **) &gload_glGetTexParameterIuiv },
+   { "glClearBufferiv", (void **) &gload_glClearBufferiv },
+   { "glClearBufferuiv", (void **) &gload_glClearBufferuiv },
+   { "glClearBufferfv", (void **) &gload_glClearBufferfv },
+   { "glClearBufferfi", (void **) &gload_glClearBufferfi },
+   { "glGetStringi", (void **) &gload_glGetStringi },
+   { "glIsRenderbuffer", (void **) &gload_glIsRenderbuffer },
+   { "glBindRenderbuffer", (void **) &gload_glBindRenderbuffer },
+   { "glDeleteRenderbuffers", (void **) &gload_glDeleteRenderbuffers },
+   { "glGenRenderbuffers", (void **) &gload_glGenRenderbuffers },
+   { "glRenderbufferStorage", (void **) &gload_glRenderbufferStorage },
+   { "glGetRenderbufferParameteriv", (void **) &gload_glGetRenderbufferParameteriv },
+   { "glIsFramebuffer", (void **) &gload_glIsFramebuffer },
+   { "glBindFramebuffer", (void **) &gload_glBindFramebuffer },
+   { "glDeleteFramebuffers", (void **) &gload_glDeleteFramebuffers },
+   { "glGenFramebuffers", (void **) &gload_glGenFramebuffers },
+   { "glCheckFramebufferStatus", (void **) &gload_glCheckFramebufferStatus },
+   { "glFramebufferTexture1D", (void **) &gload_glFramebufferTexture1D },
+   { "glFramebufferTexture2D", (void **) &gload_glFramebufferTexture2D },
+   { "glFramebufferTexture3D", (void **) &gload_glFramebufferTexture3D },
+   { "glFramebufferRenderbuffer", (void **) &gload_glFramebufferRenderbuffer },
+   { "glGetFramebufferAttachmentParameteriv", (void **) &gload_glGetFramebufferAttachmentParameteriv },
+   { "glGenerateMipmap", (void **) &gload_glGenerateMipmap },
+   { "glBlitFramebuffer", (void **) &gload_glBlitFramebuffer },
+   { "glRenderbufferStorageMultisample", (void **) &gload_glRenderbufferStorageMultisample },
+   { "glFramebufferTextureLayer", (void **) &gload_glFramebufferTextureLayer },
+   { "glMapBufferRange", (void **) &gload_glMapBufferRange },
+   { "glFlushMappedBufferRange", (void **) &gload_glFlushMappedBufferRange },
+   { "glBindVertexArray", (void **) &gload_glBindVertexArray },
+   { "glDeleteVertexArrays", (void **) &gload_glDeleteVertexArrays },
+   { "glGenVertexArrays", (void **) &gload_glGenVertexArrays },
+   { "glIsVertexArray", (void **) &gload_glIsVertexArray },
+
+#  endif /* GL_VERSION_3_0 */
+#  if defined GL_VERSION_3_1
+
+   { "glDrawArraysInstanced", (void **) &gload_glDrawArraysInstanced },
+   { "glDrawElementsInstanced", (void **) &gload_glDrawElementsInstanced },
+   { "glTexBuffer", (void **) &gload_glTexBuffer },
+   { "glPrimitiveRestartIndex", (void **) &gload_glPrimitiveRestartIndex },
+   { "glCopyBufferSubData", (void **) &gload_glCopyBufferSubData },
+   { "glGetUniformIndices", (void **) &gload_glGetUniformIndices },
+   { "glGetActiveUniformsiv", (void **) &gload_glGetActiveUniformsiv },
+   { "glGetActiveUniformName", (void **) &gload_glGetActiveUniformName },
+   { "glGetUniformBlockIndex", (void **) &gload_glGetUniformBlockIndex },
+   { "glGetActiveUniformBlockiv", (void **) &gload_glGetActiveUniformBlockiv },
+   { "glGetActiveUniformBlockName", (void **) &gload_glGetActiveUniformBlockName },
+   { "glUniformBlockBinding", (void **) &gload_glUniformBlockBinding },
+   { "glBindBufferRange", (void **) &gload_glBindBufferRange },
+   { "glBindBufferBase", (void **) &gload_glBindBufferBase },
+   { "glGetIntegeri_v", (void **) &gload_glGetIntegeri_v },
+
+#  endif /* GL_VERSION_3_1 */
+#  if defined GL_VERSION_3_2
+
+   { "glDrawElementsBaseVertex", (void **) &gload_glDrawElementsBaseVertex },
+   { "glDrawRangeElementsBaseVertex", (void **) &gload_glDrawRangeElementsBaseVertex },
+   { "glDrawElementsInstancedBaseVertex", (void **) &gload_glDrawElementsInstancedBaseVertex },
+   { "glMultiDrawElementsBaseVertex", (void **) &gload_glMultiDrawElementsBaseVertex },
+   { "glProvokingVertex", (void **) &gload_glProvokingVertex },
+   { "glFenceSync", (void **) &gload_glFenceSync },
+   { "glIsSync", (void **) &gload_glIsSync },
+   { "glDeleteSync", (void **) &gload_glDeleteSync },
+   { "glClientWaitSync", (void **) &gload_glClientWaitSync },
+   { "glWaitSync", (void **) &gload_glWaitSync },
+   { "glGetInteger64v", (void **) &gload_glGetInteger64v },
+   { "glGetSynciv", (void **) &gload_glGetSynciv },
+   { "glGetInteger64i_v", (void **) &gload_glGetInteger64i_v },
+   { "glGetBufferParameteri64v", (void **) &gload_glGetBufferParameteri64v },
+   { "glFramebufferTexture", (void **) &gload_glFramebufferTexture },
+   { "glTexImage2DMultisample", (void **) &gload_glTexImage2DMultisample },
+   { "glTexImage3DMultisample", (void **) &gload_glTexImage3DMultisample },
+   { "glGetMultisamplefv", (void **) &gload_glGetMultisamplefv },
+   { "glSampleMaski", (void **) &gload_glSampleMaski },
+
+#  endif /* GL_VERSION_3_2 */
+#  if defined GL_VERSION_3_3
+
+   { "glBindFragDataLocationIndexed", (void **) &gload_glBindFragDataLocationIndexed },
+   { "glGetFragDataIndex", (void **) &gload_glGetFragDataIndex },
+   { "glGenSamplers", (void **) &gload_glGenSamplers },
+   { "glDeleteSamplers", (void **) &gload_glDeleteSamplers },
+   { "glIsSampler", (void **) &gload_glIsSampler },
+   { "glBindSampler", (void **) &gload_glBindSampler },
+   { "glSamplerParameteri", (void **) &gload_glSamplerParameteri },
+   { "glSamplerParameteriv", (void **) &gload_glSamplerParameteriv },
+   { "glSamplerParameterf", (void **) &gload_glSamplerParameterf },
+   { "glSamplerParameterfv", (void **) &gload_glSamplerParameterfv },
+   { "glSamplerParameterIiv", (void **) &gload_glSamplerParameterIiv },
+   { "glSamplerParameterIuiv", (void **) &gload_glSamplerParameterIuiv },
+   { "glGetSamplerParameteriv", (void **) &gload_glGetSamplerParameteriv },
+   { "glGetSamplerParameterIiv", (void **) &gload_glGetSamplerParameterIiv },
+   { "glGetSamplerParameterfv", (void **) &gload_glGetSamplerParameterfv },
+   { "glGetSamplerParameterIuiv", (void **) &gload_glGetSamplerParameterIuiv },
+   { "glQueryCounter", (void **) &gload_glQueryCounter },
+   { "glGetQueryObjecti64v", (void **) &gload_glGetQueryObjecti64v },
+   { "glGetQueryObjectui64v", (void **) &gload_glGetQueryObjectui64v },
+   { "glVertexAttribDivisor", (void **) &gload_glVertexAttribDivisor },
+   { "glVertexAttribP1ui", (void **) &gload_glVertexAttribP1ui },
+   { "glVertexAttribP1uiv", (void **) &gload_glVertexAttribP1uiv },
+   { "glVertexAttribP2ui", (void **) &gload_glVertexAttribP2ui },
+   { "glVertexAttribP2uiv", (void **) &gload_glVertexAttribP2uiv },
+   { "glVertexAttribP3ui", (void **) &gload_glVertexAttribP3ui },
+   { "glVertexAttribP3uiv", (void **) &gload_glVertexAttribP3uiv },
+   { "glVertexAttribP4ui", (void **) &gload_glVertexAttribP4ui },
+   { "glVertexAttribP4uiv", (void **) &gload_glVertexAttribP4uiv },
+   { "glVertexP2ui", (void **) &gload_glVertexP2ui },
+   { "glVertexP2uiv", (void **) &gload_glVertexP2uiv },
+   { "glVertexP3ui", (void **) &gload_glVertexP3ui },
+   { "glVertexP3uiv", (void **) &gload_glVertexP3uiv },
+   { "glVertexP4ui", (void **) &gload_glVertexP4ui },
+   { "glVertexP4uiv", (void **) &gload_glVertexP4uiv },
+   { "glTexCoordP1ui", (void **) &gload_glTexCoordP1ui },
+   { "glTexCoordP1uiv", (void **) &gload_glTexCoordP1uiv },
+   { "glTexCoordP2ui", (void **) &gload_glTexCoordP2ui },
+   { "glTexCoordP2uiv", (void **) &gload_glTexCoordP2uiv },
+   { "glTexCoordP3ui", (void **) &gload_glTexCoordP3ui },
+   { "glTexCoordP3uiv", (void **) &gload_glTexCoordP3uiv },
+   { "glTexCoordP4ui", (void **) &gload_glTexCoordP4ui },
+   { "glTexCoordP4uiv", (void **) &gload_glTexCoordP4uiv },
+   { "glMultiTexCoordP1ui", (void **) &gload_glMultiTexCoordP1ui },
+   { "glMultiTexCoordP1uiv", (void **) &gload_glMultiTexCoordP1uiv },
+   { "glMultiTexCoordP2ui", (void **) &gload_glMultiTexCoordP2ui },
+   { "glMultiTexCoordP2uiv", (void **) &gload_glMultiTexCoordP2uiv },
+   { "glMultiTexCoordP3ui", (void **) &gload_glMultiTexCoordP3ui },
+   { "glMultiTexCoordP3uiv", (void **) &gload_glMultiTexCoordP3uiv },
+   { "glMultiTexCoordP4ui", (void **) &gload_glMultiTexCoordP4ui },
+   { "glMultiTexCoordP4uiv", (void **) &gload_glMultiTexCoordP4uiv },
+   { "glNormalP3ui", (void **) &gload_glNormalP3ui },
+   { "glNormalP3uiv", (void **) &gload_glNormalP3uiv },
+   { "glColorP3ui", (void **) &gload_glColorP3ui },
+   { "glColorP3uiv", (void **) &gload_glColorP3uiv },
+   { "glColorP4ui", (void **) &gload_glColorP4ui },
+   { "glColorP4uiv", (void **) &gload_glColorP4uiv },
+   { "glSecondaryColorP3ui", (void **) &gload_glSecondaryColorP3ui },
+   { "glSecondaryColorP3uiv", (void **) &gload_glSecondaryColorP3uiv },
+
+#  endif /* GL_VERSION_3_3 */
+#  if defined GL_VERSION_4_0
+
+   { "glMinSampleShading", (void **) &gload_glMinSampleShading },
+   { "glBlendEquationi", (void **) &gload_glBlendEquationi },
+   { "glBlendEquationSeparatei", (void **) &gload_glBlendEquationSeparatei },
+   { "glBlendFunci", (void **) &gload_glBlendFunci },
+   { "glBlendFuncSeparatei", (void **) &gload_glBlendFuncSeparatei },
+   { "glDrawArraysIndirect", (void **) &gload_glDrawArraysIndirect },
+   { "glDrawElementsIndirect", (void **) &gload_glDrawElementsIndirect },
+   { "glUniform1d", (void **) &gload_glUniform1d },
+   { "glUniform2d", (void **) &gload_glUniform2d },
+   { "glUniform3d", (void **) &gload_glUniform3d },
+   { "glUniform4d", (void **) &gload_glUniform4d },
+   { "glUniform1dv", (void **) &gload_glUniform1dv },
+   { "glUniform2dv", (void **) &gload_glUniform2dv },
+   { "glUniform3dv", (void **) &gload_glUniform3dv },
+   { "glUniform4dv", (void **) &gload_glUniform4dv },
+   { "glUniformMatrix2dv", (void **) &gload_glUniformMatrix2dv },
+   { "glUniformMatrix3dv", (void **) &gload_glUniformMatrix3dv },
+   { "glUniformMatrix4dv", (void **) &gload_glUniformMatrix4dv },
+   { "glUniformMatrix2x3dv", (void **) &gload_glUniformMatrix2x3dv },
+   { "glUniformMatrix2x4dv", (void **) &gload_glUniformMatrix2x4dv },
+   { "glUniformMatrix3x2dv", (void **) &gload_glUniformMatrix3x2dv },
+   { "glUniformMatrix3x4dv", (void **) &gload_glUniformMatrix3x4dv },
+   { "glUniformMatrix4x2dv", (void **) &gload_glUniformMatrix4x2dv },
+   { "glUniformMatrix4x3dv", (void **) &gload_glUniformMatrix4x3dv },
+   { "glGetUniformdv", (void **) &gload_glGetUniformdv },
+   { "glGetSubroutineUniformLocation", (void **) &gload_glGetSubroutineUniformLocation },
+   { "glGetSubroutineIndex", (void **) &gload_glGetSubroutineIndex },
+   { "glGetActiveSubroutineUniformiv", (void **) &gload_glGetActiveSubroutineUniformiv },
+   { "glGetActiveSubroutineUniformName", (void **) &gload_glGetActiveSubroutineUniformName },
+   { "glGetActiveSubroutineName", (void **) &gload_glGetActiveSubroutineName },
+   { "glUniformSubroutinesuiv", (void **) &gload_glUniformSubroutinesuiv },
+   { "glGetUniformSubroutineuiv", (void **) &gload_glGetUniformSubroutineuiv },
+   { "glGetProgramStageiv", (void **) &gload_glGetProgramStageiv },
+   { "glPatchParameteri", (void **) &gload_glPatchParameteri },
+   { "glPatchParameterfv", (void **) &gload_glPatchParameterfv },
+   { "glBindTransformFeedback", (void **) &gload_glBindTransformFeedback },
+   { "glDeleteTransformFeedbacks", (void **) &gload_glDeleteTransformFeedbacks },
+   { "glGenTransformFeedbacks", (void **) &gload_glGenTransformFeedbacks },
+   { "glIsTransformFeedback", (void **) &gload_glIsTransformFeedback },
+   { "glPauseTransformFeedback", (void **) &gload_glPauseTransformFeedback },
+   { "glResumeTransformFeedback", (void **) &gload_glResumeTransformFeedback },
+   { "glDrawTransformFeedback", (void **) &gload_glDrawTransformFeedback },
+   { "glDrawTransformFeedbackStream", (void **) &gload_glDrawTransformFeedbackStream },
+   { "glBeginQueryIndexed", (void **) &gload_glBeginQueryIndexed },
+   { "glEndQueryIndexed", (void **) &gload_glEndQueryIndexed },
+   { "glGetQueryIndexediv", (void **) &gload_glGetQueryIndexediv },
+
+#  endif /* GL_VERSION_4_0 */
+#  if defined GL_VERSION_4_1
+
+   { "glReleaseShaderCompiler", (void **) &gload_glReleaseShaderCompiler },
+   { "glShaderBinary", (void **) &gload_glShaderBinary },
+   { "glGetShaderPrecisionFormat", (void **) &gload_glGetShaderPrecisionFormat },
+   { "glDepthRangef", (void **) &gload_glDepthRangef },
+   { "glClearDepthf", (void **) &gload_glClearDepthf },
+   { "glGetProgramBinary", (void **) &gload_glGetProgramBinary },
+   { "glProgramBinary", (void **) &gload_glProgramBinary },
+   { "glProgramParameteri", (void **) &gload_glProgramParameteri },
+   { "glUseProgramStages", (void **) &gload_glUseProgramStages },
+   { "glActiveShaderProgram", (void **) &gload_glActiveShaderProgram },
+   { "glCreateShaderProgramv", (void **) &gload_glCreateShaderProgramv },
+   { "glBindProgramPipeline", (void **) &gload_glBindProgramPipeline },
+   { "glDeleteProgramPipelines", (void **) &gload_glDeleteProgramPipelines },
+   { "glGenProgramPipelines", (void **) &gload_glGenProgramPipelines },
+   { "glIsProgramPipeline", (void **) &gload_glIsProgramPipeline },
+   { "glGetProgramPipelineiv", (void **) &gload_glGetProgramPipelineiv },
+   { "glProgramParameteri", (void **) &gload_glProgramParameteri },
+   { "glProgramUniform1i", (void **) &gload_glProgramUniform1i },
+   { "glProgramUniform1iv", (void **) &gload_glProgramUniform1iv },
+   { "glProgramUniform1f", (void **) &gload_glProgramUniform1f },
+   { "glProgramUniform1fv", (void **) &gload_glProgramUniform1fv },
+   { "glProgramUniform1d", (void **) &gload_glProgramUniform1d },
+   { "glProgramUniform1dv", (void **) &gload_glProgramUniform1dv },
+   { "glProgramUniform1ui", (void **) &gload_glProgramUniform1ui },
+   { "glProgramUniform1uiv", (void **) &gload_glProgramUniform1uiv },
+   { "glProgramUniform2i", (void **) &gload_glProgramUniform2i },
+   { "glProgramUniform2iv", (void **) &gload_glProgramUniform2iv },
+   { "glProgramUniform2f", (void **) &gload_glProgramUniform2f },
+   { "glProgramUniform2fv", (void **) &gload_glProgramUniform2fv },
+   { "glProgramUniform2d", (void **) &gload_glProgramUniform2d },
+   { "glProgramUniform2dv", (void **) &gload_glProgramUniform2dv },
+   { "glProgramUniform2ui", (void **) &gload_glProgramUniform2ui },
+   { "glProgramUniform2uiv", (void **) &gload_glProgramUniform2uiv },
+   { "glProgramUniform3i", (void **) &gload_glProgramUniform3i },
+   { "glProgramUniform3iv", (void **) &gload_glProgramUniform3iv },
+   { "glProgramUniform3f", (void **) &gload_glProgramUniform3f },
+   { "glProgramUniform3fv", (void **) &gload_glProgramUniform3fv },
+   { "glProgramUniform3d", (void **) &gload_glProgramUniform3d },
+   { "glProgramUniform3dv", (void **) &gload_glProgramUniform3dv },
+   { "glProgramUniform3ui", (void **) &gload_glProgramUniform3ui },
+   { "glProgramUniform3uiv", (void **) &gload_glProgramUniform3uiv },
+   { "glProgramUniform4i", (void **) &gload_glProgramUniform4i },
+   { "glProgramUniform4iv", (void **) &gload_glProgramUniform4iv },
+   { "glProgramUniform4f", (void **) &gload_glProgramUniform4f },
+   { "glProgramUniform4fv", (void **) &gload_glProgramUniform4fv },
+   { "glProgramUniform4d", (void **) &gload_glProgramUniform4d },
+   { "glProgramUniform4dv", (void **) &gload_glProgramUniform4dv },
+   { "glProgramUniform4ui", (void **) &gload_glProgramUniform4ui },
+   { "glProgramUniform4uiv", (void **) &gload_glProgramUniform4uiv },
+   { "glProgramUniformMatrix2fv", (void **) &gload_glProgramUniformMatrix2fv },
+   { "glProgramUniformMatrix3fv", (void **) &gload_glProgramUniformMatrix3fv },
+   { "glProgramUniformMatrix4fv", (void **) &gload_glProgramUniformMatrix4fv },
+   { "glProgramUniformMatrix2dv", (void **) &gload_glProgramUniformMatrix2dv },
+   { "glProgramUniformMatrix3dv", (void **) &gload_glProgramUniformMatrix3dv },
+   { "glProgramUniformMatrix4dv", (void **) &gload_glProgramUniformMatrix4dv },
+   { "glProgramUniformMatrix2x3fv", (void **) &gload_glProgramUniformMatrix2x3fv },
+   { "glProgramUniformMatrix3x2fv", (void **) &gload_glProgramUniformMatrix3x2fv },
+   { "glProgramUniformMatrix2x4fv", (void **) &gload_glProgramUniformMatrix2x4fv },
+   { "glProgramUniformMatrix4x2fv", (void **) &gload_glProgramUniformMatrix4x2fv },
+   { "glProgramUniformMatrix3x4fv", (void **) &gload_glProgramUniformMatrix3x4fv },
+   { "glProgramUniformMatrix4x3fv", (void **) &gload_glProgramUniformMatrix4x3fv },
+   { "glProgramUniformMatrix2x3dv", (void **) &gload_glProgramUniformMatrix2x3dv },
+   { "glProgramUniformMatrix3x2dv", (void **) &gload_glProgramUniformMatrix3x2dv },
+   { "glProgramUniformMatrix2x4dv", (void **) &gload_glProgramUniformMatrix2x4dv },
+   { "glProgramUniformMatrix4x2dv", (void **) &gload_glProgramUniformMatrix4x2dv },
+   { "glProgramUniformMatrix3x4dv", (void **) &gload_glProgramUniformMatrix3x4dv },
+   { "glProgramUniformMatrix4x3dv", (void **) &gload_glProgramUniformMatrix4x3dv },
+   { "glValidateProgramPipeline", (void **) &gload_glValidateProgramPipeline },
+   { "glGetProgramPipelineInfoLog", (void **) &gload_glGetProgramPipelineInfoLog },
+   { "glVertexAttribL1d", (void **) &gload_glVertexAttribL1d },
+   { "glVertexAttribL2d", (void **) &gload_glVertexAttribL2d },
+   { "glVertexAttribL3d", (void **) &gload_glVertexAttribL3d },
+   { "glVertexAttribL4d", (void **) &gload_glVertexAttribL4d },
+   { "glVertexAttribL1dv", (void **) &gload_glVertexAttribL1dv },
+   { "glVertexAttribL2dv", (void **) &gload_glVertexAttribL2dv },
+   { "glVertexAttribL3dv", (void **) &gload_glVertexAttribL3dv },
+   { "glVertexAttribL4dv", (void **) &gload_glVertexAttribL4dv },
+   { "glVertexAttribLPointer", (void **) &gload_glVertexAttribLPointer },
+   { "glGetVertexAttribLdv", (void **) &gload_glGetVertexAttribLdv },
+   { "glViewportArrayv", (void **) &gload_glViewportArrayv },
+   { "glViewportIndexedf", (void **) &gload_glViewportIndexedf },
+   { "glViewportIndexedfv", (void **) &gload_glViewportIndexedfv },
+   { "glScissorArrayv", (void **) &gload_glScissorArrayv },
+   { "glScissorIndexed", (void **) &gload_glScissorIndexed },
+   { "glScissorIndexedv", (void **) &gload_glScissorIndexedv },
+   { "glDepthRangeArrayv", (void **) &gload_glDepthRangeArrayv },
+   { "glDepthRangeIndexed", (void **) &gload_glDepthRangeIndexed },
+   { "glGetFloati_v", (void **) &gload_glGetFloati_v },
+   { "glGetDoublei_v", (void **) &gload_glGetDoublei_v },
+
+#  endif /* GL_VERSION_4_1 */
+#  if defined GL_VERSION_4_2
+
+   { "glDrawArraysInstancedBaseInstance", (void **) &gload_glDrawArraysInstancedBaseInstance },
+   { "glDrawElementsInstancedBaseInstance", (void **) &gload_glDrawElementsInstancedBaseInstance },
+   { "glDrawElementsInstancedBaseVertexBaseInstance", (void **) &gload_glDrawElementsInstancedBaseVertexBaseInstance },
+   { "glGetInternalformativ", (void **) &gload_glGetInternalformativ },
+   { "glGetActiveAtomicCounterBufferiv", (void **) &gload_glGetActiveAtomicCounterBufferiv },
+   { "glBindImageTexture", (void **) &gload_glBindImageTexture },
+   { "glMemoryBarrier", (void **) &gload_glMemoryBarrier },
+   { "glTexStorage1D", (void **) &gload_glTexStorage1D },
+   { "glTexStorage2D", (void **) &gload_glTexStorage2D },
+   { "glTexStorage3D", (void **) &gload_glTexStorage3D },
+   { "glDrawTransformFeedbackInstanced", (void **) &gload_glDrawTransformFeedbackInstanced },
+   { "glDrawTransformFeedbackStreamInstanced", (void **) &gload_glDrawTransformFeedbackStreamInstanced },
+
+#  endif /* GL_VERSION_4_2 */
+#  if defined GL_VERSION_4_3
+
+   { "glClearBufferData", (void **) &gload_glClearBufferData },
+   { "glClearBufferSubData", (void **) &gload_glClearBufferSubData },
+   { "glDispatchCompute", (void **) &gload_glDispatchCompute },
+   { "glDispatchComputeIndirect", (void **) &gload_glDispatchComputeIndirect },
+   { "glCopyImageSubData", (void **) &gload_glCopyImageSubData },
+   { "glFramebufferParameteri", (void **) &gload_glFramebufferParameteri },
+   { "glGetFramebufferParameteriv", (void **) &gload_glGetFramebufferParameteriv },
+   { "glGetInternalformati64v", (void **) &gload_glGetInternalformati64v },
+   { "glInvalidateTexSubImage", (void **) &gload_glInvalidateTexSubImage },
+   { "glInvalidateTexImage", (void **) &gload_glInvalidateTexImage },
+   { "glInvalidateBufferSubData", (void **) &gload_glInvalidateBufferSubData },
+   { "glInvalidateBufferData", (void **) &gload_glInvalidateBufferData },
+   { "glInvalidateFramebuffer", (void **) &gload_glInvalidateFramebuffer },
+   { "glInvalidateSubFramebuffer", (void **) &gload_glInvalidateSubFramebuffer },
+   { "glMultiDrawArraysIndirect", (void **) &gload_glMultiDrawArraysIndirect },
+   { "glMultiDrawElementsIndirect", (void **) &gload_glMultiDrawElementsIndirect },
+   { "glGetProgramInterfaceiv", (void **) &gload_glGetProgramInterfaceiv },
+   { "glGetProgramResourceIndex", (void **) &gload_glGetProgramResourceIndex },
+   { "glGetProgramResourceName", (void **) &gload_glGetProgramResourceName },
+   { "glGetProgramResourceiv", (void **) &gload_glGetProgramResourceiv },
+   { "glGetProgramResourceLocation", (void **) &gload_glGetProgramResourceLocation },
+   { "glGetProgramResourceLocationIndex", (void **) &gload_glGetProgramResourceLocationIndex },
+   { "glShaderStorageBlockBinding", (void **) &gload_glShaderStorageBlockBinding },
+   { "glTexBufferRange", (void **) &gload_glTexBufferRange },
+   { "glTexStorage2DMultisample", (void **) &gload_glTexStorage2DMultisample },
+   { "glTexStorage3DMultisample", (void **) &gload_glTexStorage3DMultisample },
+   { "glTextureView", (void **) &gload_glTextureView },
+   { "glBindVertexBuffer", (void **) &gload_glBindVertexBuffer },
+   { "glVertexAttribFormat", (void **) &gload_glVertexAttribFormat },
+   { "glVertexAttribIFormat", (void **) &gload_glVertexAttribIFormat },
+   { "glVertexAttribLFormat", (void **) &gload_glVertexAttribLFormat },
+   { "glVertexAttribBinding", (void **) &gload_glVertexAttribBinding },
+   { "glVertexBindingDivisor", (void **) &gload_glVertexBindingDivisor },
+   { "glDebugMessageControl", (void **) &gload_glDebugMessageControl },
+   { "glDebugMessageInsert", (void **) &gload_glDebugMessageInsert },
+   { "glDebugMessageCallback", (void **) &gload_glDebugMessageCallback },
+   { "glGetDebugMessageLog", (void **) &gload_glGetDebugMessageLog },
+   { "glPushDebugGroup", (void **) &gload_glPushDebugGroup },
+   { "glPopDebugGroup", (void **) &gload_glPopDebugGroup },
+   { "glObjectLabel", (void **) &gload_glObjectLabel },
+   { "glGetObjectLabel", (void **) &gload_glGetObjectLabel },
+   { "glObjectPtrLabel", (void **) &gload_glObjectPtrLabel },
+   { "glGetObjectPtrLabel", (void **) &gload_glGetObjectPtrLabel },
+   { "glGetPointerv", (void **) &gload_glGetPointerv },
+
+#  endif /* GL_VERSION_4_3 */
+#  if defined GL_VERSION_4_4
+
+   { "glBufferStorage", (void **) &gload_glBufferStorage },
+   { "glClearTexImage", (void **) &gload_glClearTexImage },
+   { "glClearTexSubImage", (void **) &gload_glClearTexSubImage },
+   { "glBindBuffersBase", (void **) &gload_glBindBuffersBase },
+   { "glBindBuffersRange", (void **) &gload_glBindBuffersRange },
+   { "glBindTextures", (void **) &gload_glBindTextures },
+   { "glBindSamplers", (void **) &gload_glBindSamplers },
+   { "glBindImageTextures", (void **) &gload_glBindImageTextures },
+   { "glBindVertexBuffers", (void **) &gload_glBindVertexBuffers },
+
+#  endif /* GL_VERSION_4_4 */
+#  if defined GL_VERSION_4_5
+
+   { "glClipControl", (void **) &gload_glClipControl },
+   { "glCreateTransformFeedbacks", (void **) &gload_glCreateTransformFeedbacks },
+   { "glTransformFeedbackBufferBase", (void **) &gload_glTransformFeedbackBufferBase },
+   { "glTransformFeedbackBufferRange", (void **) &gload_glTransformFeedbackBufferRange },
+   { "glGetTransformFeedbackiv", (void **) &gload_glGetTransformFeedbackiv },
+   { "glGetTransformFeedbacki_v", (void **) &gload_glGetTransformFeedbacki_v },
+   { "glGetTransformFeedbacki64_v", (void **) &gload_glGetTransformFeedbacki64_v },
+   { "glCreateBuffers", (void **) &gload_glCreateBuffers },
+   { "glNamedBufferStorage", (void **) &gload_glNamedBufferStorage },
+   { "glNamedBufferData", (void **) &gload_glNamedBufferData },
+   { "glNamedBufferSubData", (void **) &gload_glNamedBufferSubData },
+   { "glCopyNamedBufferSubData", (void **) &gload_glCopyNamedBufferSubData },
+   { "glClearNamedBufferData", (void **) &gload_glClearNamedBufferData },
+   { "glClearNamedBufferSubData", (void **) &gload_glClearNamedBufferSubData },
+   { "glMapNamedBuffer", (void **) &gload_glMapNamedBuffer },
+   { "glMapNamedBufferRange", (void **) &gload_glMapNamedBufferRange },
+   { "glUnmapNamedBuffer", (void **) &gload_glUnmapNamedBuffer },
+   { "glFlushMappedNamedBufferRange", (void **) &gload_glFlushMappedNamedBufferRange },
+   { "glGetNamedBufferParameteriv", (void **) &gload_glGetNamedBufferParameteriv },
+   { "glGetNamedBufferParameteri64v", (void **) &gload_glGetNamedBufferParameteri64v },
+   { "glGetNamedBufferPointerv", (void **) &gload_glGetNamedBufferPointerv },
+   { "glGetNamedBufferSubData", (void **) &gload_glGetNamedBufferSubData },
+   { "glCreateFramebuffers", (void **) &gload_glCreateFramebuffers },
+   { "glNamedFramebufferRenderbuffer", (void **) &gload_glNamedFramebufferRenderbuffer },
+   { "glNamedFramebufferParameteri", (void **) &gload_glNamedFramebufferParameteri },
+   { "glNamedFramebufferTexture", (void **) &gload_glNamedFramebufferTexture },
+   { "glNamedFramebufferTextureLayer", (void **) &gload_glNamedFramebufferTextureLayer },
+   { "glNamedFramebufferDrawBuffer", (void **) &gload_glNamedFramebufferDrawBuffer },
+   { "glNamedFramebufferDrawBuffers", (void **) &gload_glNamedFramebufferDrawBuffers },
+   { "glNamedFramebufferReadBuffer", (void **) &gload_glNamedFramebufferReadBuffer },
+   { "glInvalidateNamedFramebufferData", (void **) &gload_glInvalidateNamedFramebufferData },
+   { "glInvalidateNamedFramebufferSubData", (void **) &gload_glInvalidateNamedFramebufferSubData },
+   { "glClearNamedFramebufferiv", (void **) &gload_glClearNamedFramebufferiv },
+   { "glClearNamedFramebufferuiv", (void **) &gload_glClearNamedFramebufferuiv },
+   { "glClearNamedFramebufferfv", (void **) &gload_glClearNamedFramebufferfv },
+   { "glClearNamedFramebufferfi", (void **) &gload_glClearNamedFramebufferfi },
+   { "glBlitNamedFramebuffer", (void **) &gload_glBlitNamedFramebuffer },
+   { "glCheckNamedFramebufferStatus", (void **) &gload_glCheckNamedFramebufferStatus },
+   { "glGetNamedFramebufferParameteriv", (void **) &gload_glGetNamedFramebufferParameteriv },
+   { "glGetNamedFramebufferAttachmentParameteriv", (void **) &gload_glGetNamedFramebufferAttachmentParameteriv },
+   { "glCreateRenderbuffers", (void **) &gload_glCreateRenderbuffers },
+   { "glNamedRenderbufferStorage", (void **) &gload_glNamedRenderbufferStorage },
+   { "glNamedRenderbufferStorageMultisample", (void **) &gload_glNamedRenderbufferStorageMultisample },
+   { "glGetNamedRenderbufferParameteriv", (void **) &gload_glGetNamedRenderbufferParameteriv },
+   { "glCreateTextures", (void **) &gload_glCreateTextures },
+   { "glTextureBuffer", (void **) &gload_glTextureBuffer },
+   { "glTextureBufferRange", (void **) &gload_glTextureBufferRange },
+   { "glTextureStorage1D", (void **) &gload_glTextureStorage1D },
+   { "glTextureStorage2D", (void **) &gload_glTextureStorage2D },
+   { "glTextureStorage3D", (void **) &gload_glTextureStorage3D },
+   { "glTextureStorage2DMultisample", (void **) &gload_glTextureStorage2DMultisample },
+   { "glTextureStorage3DMultisample", (void **) &gload_glTextureStorage3DMultisample },
+   { "glTextureSubImage1D", (void **) &gload_glTextureSubImage1D },
+   { "glTextureSubImage2D", (void **) &gload_glTextureSubImage2D },
+   { "glTextureSubImage3D", (void **) &gload_glTextureSubImage3D },
+   { "glCompressedTextureSubImage1D", (void **) &gload_glCompressedTextureSubImage1D },
+   { "glCompressedTextureSubImage2D", (void **) &gload_glCompressedTextureSubImage2D },
+   { "glCompressedTextureSubImage3D", (void **) &gload_glCompressedTextureSubImage3D },
+   { "glCopyTextureSubImage1D", (void **) &gload_glCopyTextureSubImage1D },
+   { "glCopyTextureSubImage2D", (void **) &gload_glCopyTextureSubImage2D },
+   { "glCopyTextureSubImage3D", (void **) &gload_glCopyTextureSubImage3D },
+   { "glTextureParameterf", (void **) &gload_glTextureParameterf },
+   { "glTextureParameterfv", (void **) &gload_glTextureParameterfv },
+   { "glTextureParameteri", (void **) &gload_glTextureParameteri },
+   { "glTextureParameterIiv", (void **) &gload_glTextureParameterIiv },
+   { "glTextureParameterIuiv", (void **) &gload_glTextureParameterIuiv },
+   { "glTextureParameteriv", (void **) &gload_glTextureParameteriv },
+   { "glGenerateTextureMipmap", (void **) &gload_glGenerateTextureMipmap },
+   { "glBindTextureUnit", (void **) &gload_glBindTextureUnit },
+   { "glGetTextureImage", (void **) &gload_glGetTextureImage },
+   { "glGetCompressedTextureImage", (void **) &gload_glGetCompressedTextureImage },
+   { "glGetTextureLevelParameterfv", (void **) &gload_glGetTextureLevelParameterfv },
+   { "glGetTextureLevelParameteriv", (void **) &gload_glGetTextureLevelParameteriv },
+   { "glGetTextureParameterfv", (void **) &gload_glGetTextureParameterfv },
+   { "glGetTextureParameterIiv", (void **) &gload_glGetTextureParameterIiv },
+   { "glGetTextureParameterIuiv", (void **) &gload_glGetTextureParameterIuiv },
+   { "glGetTextureParameteriv", (void **) &gload_glGetTextureParameteriv },
+   { "glCreateVertexArrays", (void **) &gload_glCreateVertexArrays },
+   { "glDisableVertexArrayAttrib", (void **) &gload_glDisableVertexArrayAttrib },
+   { "glEnableVertexArrayAttrib", (void **) &gload_glEnableVertexArrayAttrib },
+   { "glVertexArrayElementBuffer", (void **) &gload_glVertexArrayElementBuffer },
+   { "glVertexArrayVertexBuffer", (void **) &gload_glVertexArrayVertexBuffer },
+   { "glVertexArrayVertexBuffers", (void **) &gload_glVertexArrayVertexBuffers },
+   { "glVertexArrayAttribBinding", (void **) &gload_glVertexArrayAttribBinding },
+   { "glVertexArrayAttribFormat", (void **) &gload_glVertexArrayAttribFormat },
+   { "glVertexArrayAttribIFormat", (void **) &gload_glVertexArrayAttribIFormat },
+   { "glVertexArrayAttribLFormat", (void **) &gload_glVertexArrayAttribLFormat },
+   { "glVertexArrayBindingDivisor", (void **) &gload_glVertexArrayBindingDivisor },
+   { "glGetVertexArrayiv", (void **) &gload_glGetVertexArrayiv },
+   { "glGetVertexArrayIndexediv", (void **) &gload_glGetVertexArrayIndexediv },
+   { "glGetVertexArrayIndexed64iv", (void **) &gload_glGetVertexArrayIndexed64iv },
+   { "glCreateSamplers", (void **) &gload_glCreateSamplers },
+   { "glCreateProgramPipelines", (void **) &gload_glCreateProgramPipelines },
+   { "glCreateQueries", (void **) &gload_glCreateQueries },
+   { "glGetQueryBufferObjecti64v", (void **) &gload_glGetQueryBufferObjecti64v },
+   { "glGetQueryBufferObjectiv", (void **) &gload_glGetQueryBufferObjectiv },
+   { "glGetQueryBufferObjectui64v", (void **) &gload_glGetQueryBufferObjectui64v },
+   { "glGetQueryBufferObjectuiv", (void **) &gload_glGetQueryBufferObjectuiv },
+   { "glMemoryBarrierByRegion", (void **) &gload_glMemoryBarrierByRegion },
+   { "glGetTextureSubImage", (void **) &gload_glGetTextureSubImage },
+   { "glGetCompressedTextureSubImage", (void **) &gload_glGetCompressedTextureSubImage },
+   { "glGetGraphicsResetStatus", (void **) &gload_glGetGraphicsResetStatus },
+   { "glGetnCompressedTexImage", (void **) &gload_glGetnCompressedTexImage },
+   { "glGetnTexImage", (void **) &gload_glGetnTexImage },
+   { "glGetnUniformdv", (void **) &gload_glGetnUniformdv },
+   { "glGetnUniformfv", (void **) &gload_glGetnUniformfv },
+   { "glGetnUniformiv", (void **) &gload_glGetnUniformiv },
+   { "glGetnUniformuiv", (void **) &gload_glGetnUniformuiv },
+   { "glReadnPixels", (void **) &gload_glReadnPixels },
+   { "glGetnMapdv", (void **) &gload_glGetnMapdv },
+   { "glGetnMapfv", (void **) &gload_glGetnMapfv },
+   { "glGetnMapiv", (void **) &gload_glGetnMapiv },
+   { "glGetnPixelMapfv", (void **) &gload_glGetnPixelMapfv },
+   { "glGetnPixelMapuiv", (void **) &gload_glGetnPixelMapuiv },
+   { "glGetnPixelMapusv", (void **) &gload_glGetnPixelMapusv },
+   { "glGetnPolygonStipple", (void **) &gload_glGetnPolygonStipple },
+   { "glGetnColorTable", (void **) &gload_glGetnColorTable },
+   { "glGetnConvolutionFilter", (void **) &gload_glGetnConvolutionFilter },
+   { "glGetnSeparableFilter", (void **) &gload_glGetnSeparableFilter },
+   { "glGetnHistogram", (void **) &gload_glGetnHistogram },
+   { "glGetnMinmax", (void **) &gload_glGetnMinmax },
+   { "glTextureBarrier", (void **) &gload_glTextureBarrier },
+
+#  endif /* GL_VERSION_4_5 */
+#  if defined GL_VERSION_4_6
+
+   { "glSpecializeShader", (void **) &gload_glSpecializeShader },
+   { "glMultiDrawArraysIndirectCount", (void **) &gload_glMultiDrawArraysIndirectCount },
+   { "glMultiDrawElementsIndirectCount", (void **) &gload_glMultiDrawElementsIndirectCount },
+   { "glPolygonOffsetClamp", (void **) &gload_glPolygonOffsetClamp },
+
+#  endif /* GL_VERSION_4_6 */
+#  if defined GL_VERSION_ES_CM_1_0
+
+   { "glAlphaFunc", (void **) &gload_glAlphaFunc },
+   { "glClearColor", (void **) &gload_glClearColor },
+   { "glClearDepthf", (void **) &gload_glClearDepthf },
+   { "glClipPlanef", (void **) &gload_glClipPlanef },
+   { "glColor4f", (void **) &gload_glColor4f },
+   { "glDepthRangef", (void **) &gload_glDepthRangef },
+   { "glFogf", (void **) &gload_glFogf },
+   { "glFogfv", (void **) &gload_glFogfv },
+   { "glFrustumf", (void **) &gload_glFrustumf },
+   { "glGetClipPlanef", (void **) &gload_glGetClipPlanef },
+   { "glGetFloatv", (void **) &gload_glGetFloatv },
+   { "glGetLightfv", (void **) &gload_glGetLightfv },
+   { "glGetMaterialfv", (void **) &gload_glGetMaterialfv },
+   { "glGetTexEnvfv", (void **) &gload_glGetTexEnvfv },
+   { "glGetTexParameterfv", (void **) &gload_glGetTexParameterfv },
+   { "glLightModelf", (void **) &gload_glLightModelf },
+   { "glLightModelfv", (void **) &gload_glLightModelfv },
+   { "glLightf", (void **) &gload_glLightf },
+   { "glLightfv", (void **) &gload_glLightfv },
+   { "glLineWidth", (void **) &gload_glLineWidth },
+   { "glLoadMatrixf", (void **) &gload_glLoadMatrixf },
+   { "glMaterialf", (void **) &gload_glMaterialf },
+   { "glMaterialfv", (void **) &gload_glMaterialfv },
+   { "glMultMatrixf", (void **) &gload_glMultMatrixf },
+   { "glMultiTexCoord4f", (void **) &gload_glMultiTexCoord4f },
+   { "glNormal3f", (void **) &gload_glNormal3f },
+   { "glOrthof", (void **) &gload_glOrthof },
+   { "glPointParameterf", (void **) &gload_glPointParameterf },
+   { "glPointParameterfv", (void **) &gload_glPointParameterfv },
+   { "glPointSize", (void **) &gload_glPointSize },
+   { "glPolygonOffset", (void **) &gload_glPolygonOffset },
+   { "glRotatef", (void **) &gload_glRotatef },
+   { "glScalef", (void **) &gload_glScalef },
+   { "glTexEnvf", (void **) &gload_glTexEnvf },
+   { "glTexEnvfv", (void **) &gload_glTexEnvfv },
+   { "glTexParameterf", (void **) &gload_glTexParameterf },
+   { "glTexParameterfv", (void **) &gload_glTexParameterfv },
+   { "glTranslatef", (void **) &gload_glTranslatef },
+   { "glActiveTexture", (void **) &gload_glActiveTexture },
+   { "glAlphaFuncx", (void **) &gload_glAlphaFuncx },
+   { "glBindBuffer", (void **) &gload_glBindBuffer },
+   { "glBindTexture", (void **) &gload_glBindTexture },
+   { "glBlendFunc", (void **) &gload_glBlendFunc },
+   { "glBufferData", (void **) &gload_glBufferData },
+   { "glBufferSubData", (void **) &gload_glBufferSubData },
+   { "glClear", (void **) &gload_glClear },
+   { "glClearColorx", (void **) &gload_glClearColorx },
+   { "glClearDepthx", (void **) &gload_glClearDepthx },
+   { "glClearStencil", (void **) &gload_glClearStencil },
+   { "glClientActiveTexture", (void **) &gload_glClientActiveTexture },
+   { "glClipPlanex", (void **) &gload_glClipPlanex },
+   { "glColor4ub", (void **) &gload_glColor4ub },
+   { "glColor4x", (void **) &gload_glColor4x },
+   { "glColorMask", (void **) &gload_glColorMask },
+   { "glColorPointer", (void **) &gload_glColorPointer },
+   { "glCompressedTexImage2D", (void **) &gload_glCompressedTexImage2D },
+   { "glCompressedTexSubImage2D", (void **) &gload_glCompressedTexSubImage2D },
+   { "glCopyTexImage2D", (void **) &gload_glCopyTexImage2D },
+   { "glCopyTexSubImage2D", (void **) &gload_glCopyTexSubImage2D },
+   { "glCullFace", (void **) &gload_glCullFace },
+   { "glDeleteBuffers", (void **) &gload_glDeleteBuffers },
+   { "glDeleteTextures", (void **) &gload_glDeleteTextures },
+   { "glDepthFunc", (void **) &gload_glDepthFunc },
+   { "glDepthMask", (void **) &gload_glDepthMask },
+   { "glDepthRangex", (void **) &gload_glDepthRangex },
+   { "glDisable", (void **) &gload_glDisable },
+   { "glDisableClientState", (void **) &gload_glDisableClientState },
+   { "glDrawArrays", (void **) &gload_glDrawArrays },
+   { "glDrawElements", (void **) &gload_glDrawElements },
+   { "glEnable", (void **) &gload_glEnable },
+   { "glEnableClientState", (void **) &gload_glEnableClientState },
+   { "glFinish", (void **) &gload_glFinish },
+   { "glFlush", (void **) &gload_glFlush },
+   { "glFogx", (void **) &gload_glFogx },
+   { "glFogxv", (void **) &gload_glFogxv },
+   { "glFrontFace", (void **) &gload_glFrontFace },
+   { "glFrustumx", (void **) &gload_glFrustumx },
+   { "glGetBooleanv", (void **) &gload_glGetBooleanv },
+   { "glGetBufferParameteriv", (void **) &gload_glGetBufferParameteriv },
+   { "glGetClipPlanex", (void **) &gload_glGetClipPlanex },
+   { "glGenBuffers", (void **) &gload_glGenBuffers },
+   { "glGenTextures", (void **) &gload_glGenTextures },
+   { "glGetError", (void **) &gload_glGetError },
+   { "glGetFixedv", (void **) &gload_glGetFixedv },
+   { "glGetIntegerv", (void **) &gload_glGetIntegerv },
+   { "glGetLightxv", (void **) &gload_glGetLightxv },
+   { "glGetMaterialxv", (void **) &gload_glGetMaterialxv },
+   { "glGetPointerv", (void **) &gload_glGetPointerv },
+   { "glGetString", (void **) &gload_glGetString },
+   { "glGetTexEnviv", (void **) &gload_glGetTexEnviv },
+   { "glGetTexEnvxv", (void **) &gload_glGetTexEnvxv },
+   { "glGetTexParameteriv", (void **) &gload_glGetTexParameteriv },
+   { "glGetTexParameterxv", (void **) &gload_glGetTexParameterxv },
+   { "glHint", (void **) &gload_glHint },
+   { "glIsBuffer", (void **) &gload_glIsBuffer },
+   { "glIsEnabled", (void **) &gload_glIsEnabled },
+   { "glIsTexture", (void **) &gload_glIsTexture },
+   { "glLightModelx", (void **) &gload_glLightModelx },
+   { "glLightModelxv", (void **) &gload_glLightModelxv },
+   { "glLightx", (void **) &gload_glLightx },
+   { "glLightxv", (void **) &gload_glLightxv },
+   { "glLineWidthx", (void **) &gload_glLineWidthx },
+   { "glLoadIdentity", (void **) &gload_glLoadIdentity },
+   { "glLoadMatrixx", (void **) &gload_glLoadMatrixx },
+   { "glLogicOp", (void **) &gload_glLogicOp },
+   { "glMaterialx", (void **) &gload_glMaterialx },
+   { "glMaterialxv", (void **) &gload_glMaterialxv },
+   { "glMatrixMode", (void **) &gload_glMatrixMode },
+   { "glMultMatrixx", (void **) &gload_glMultMatrixx },
+   { "glMultiTexCoord4x", (void **) &gload_glMultiTexCoord4x },
+   { "glNormal3x", (void **) &gload_glNormal3x },
+   { "glNormalPointer", (void **) &gload_glNormalPointer },
+   { "glOrthox", (void **) &gload_glOrthox },
+   { "glPixelStorei", (void **) &gload_glPixelStorei },
+   { "glPointParameterx", (void **) &gload_glPointParameterx },
+   { "glPointParameterxv", (void **) &gload_glPointParameterxv },
+   { "glPointSizex", (void **) &gload_glPointSizex },
+   { "glPolygonOffsetx", (void **) &gload_glPolygonOffsetx },
+   { "glPopMatrix", (void **) &gload_glPopMatrix },
+   { "glPushMatrix", (void **) &gload_glPushMatrix },
+   { "glReadPixels", (void **) &gload_glReadPixels },
+   { "glRotatex", (void **) &gload_glRotatex },
+   { "glSampleCoverage", (void **) &gload_glSampleCoverage },
+   { "glSampleCoveragex", (void **) &gload_glSampleCoveragex },
+   { "glScalex", (void **) &gload_glScalex },
+   { "glScissor", (void **) &gload_glScissor },
+   { "glShadeModel", (void **) &gload_glShadeModel },
+   { "glStencilFunc", (void **) &gload_glStencilFunc },
+   { "glStencilMask", (void **) &gload_glStencilMask },
+   { "glStencilOp", (void **) &gload_glStencilOp },
+   { "glTexCoordPointer", (void **) &gload_glTexCoordPointer },
+   { "glTexEnvi", (void **) &gload_glTexEnvi },
+   { "glTexEnvx", (void **) &gload_glTexEnvx },
+   { "glTexEnviv", (void **) &gload_glTexEnviv },
+   { "glTexEnvxv", (void **) &gload_glTexEnvxv },
+   { "glTexImage2D", (void **) &gload_glTexImage2D },
+   { "glTexParameteri", (void **) &gload_glTexParameteri },
+   { "glTexParameterx", (void **) &gload_glTexParameterx },
+   { "glTexParameteriv", (void **) &gload_glTexParameteriv },
+   { "glTexParameterxv", (void **) &gload_glTexParameterxv },
+   { "glTexSubImage2D", (void **) &gload_glTexSubImage2D },
+   { "glTranslatex", (void **) &gload_glTranslatex },
+   { "glVertexPointer", (void **) &gload_glVertexPointer },
+   { "glViewport", (void **) &gload_glViewport },
+
+#  endif /* GL_VERSION_ES_CM_1_0 */
+#  if defined GL_ES_VERSION_2_0
+
+   { "glActiveTexture", (void **) &gload_glActiveTexture },
+   { "glAttachShader", (void **) &gload_glAttachShader },
+   { "glBindAttribLocation", (void **) &gload_glBindAttribLocation },
+   { "glBindBuffer", (void **) &gload_glBindBuffer },
+   { "glBindFramebuffer", (void **) &gload_glBindFramebuffer },
+   { "glBindRenderbuffer", (void **) &gload_glBindRenderbuffer },
+   { "glBindTexture", (void **) &gload_glBindTexture },
+   { "glBlendColor", (void **) &gload_glBlendColor },
+   { "glBlendEquation", (void **) &gload_glBlendEquation },
+   { "glBlendEquationSeparate", (void **) &gload_glBlendEquationSeparate },
+   { "glBlendFunc", (void **) &gload_glBlendFunc },
+   { "glBlendFuncSeparate", (void **) &gload_glBlendFuncSeparate },
+   { "glBufferData", (void **) &gload_glBufferData },
+   { "glBufferSubData", (void **) &gload_glBufferSubData },
+   { "glCheckFramebufferStatus", (void **) &gload_glCheckFramebufferStatus },
+   { "glClear", (void **) &gload_glClear },
+   { "glClearColor", (void **) &gload_glClearColor },
+   { "glClearDepthf", (void **) &gload_glClearDepthf },
+   { "glClearStencil", (void **) &gload_glClearStencil },
+   { "glColorMask", (void **) &gload_glColorMask },
+   { "glCompileShader", (void **) &gload_glCompileShader },
+   { "glCompressedTexImage2D", (void **) &gload_glCompressedTexImage2D },
+   { "glCompressedTexSubImage2D", (void **) &gload_glCompressedTexSubImage2D },
+   { "glCopyTexImage2D", (void **) &gload_glCopyTexImage2D },
+   { "glCopyTexSubImage2D", (void **) &gload_glCopyTexSubImage2D },
+   { "glCreateProgram", (void **) &gload_glCreateProgram },
+   { "glCreateShader", (void **) &gload_glCreateShader },
+   { "glCullFace", (void **) &gload_glCullFace },
+   { "glDeleteBuffers", (void **) &gload_glDeleteBuffers },
+   { "glDeleteFramebuffers", (void **) &gload_glDeleteFramebuffers },
+   { "glDeleteProgram", (void **) &gload_glDeleteProgram },
+   { "glDeleteRenderbuffers", (void **) &gload_glDeleteRenderbuffers },
+   { "glDeleteShader", (void **) &gload_glDeleteShader },
+   { "glDeleteTextures", (void **) &gload_glDeleteTextures },
+   { "glDepthFunc", (void **) &gload_glDepthFunc },
+   { "glDepthMask", (void **) &gload_glDepthMask },
+   { "glDepthRangef", (void **) &gload_glDepthRangef },
+   { "glDetachShader", (void **) &gload_glDetachShader },
+   { "glDisable", (void **) &gload_glDisable },
+   { "glDisableVertexAttribArray", (void **) &gload_glDisableVertexAttribArray },
+   { "glDrawArrays", (void **) &gload_glDrawArrays },
+   { "glDrawElements", (void **) &gload_glDrawElements },
+   { "glEnable", (void **) &gload_glEnable },
+   { "glEnableVertexAttribArray", (void **) &gload_glEnableVertexAttribArray },
+   { "glFinish", (void **) &gload_glFinish },
+   { "glFlush", (void **) &gload_glFlush },
+   { "glFramebufferRenderbuffer", (void **) &gload_glFramebufferRenderbuffer },
+   { "glFramebufferTexture2D", (void **) &gload_glFramebufferTexture2D },
+   { "glFrontFace", (void **) &gload_glFrontFace },
+   { "glGenBuffers", (void **) &gload_glGenBuffers },
+   { "glGenerateMipmap", (void **) &gload_glGenerateMipmap },
+   { "glGenFramebuffers", (void **) &gload_glGenFramebuffers },
+   { "glGenRenderbuffers", (void **) &gload_glGenRenderbuffers },
+   { "glGenTextures", (void **) &gload_glGenTextures },
+   { "glGetActiveAttrib", (void **) &gload_glGetActiveAttrib },
+   { "glGetActiveUniform", (void **) &gload_glGetActiveUniform },
+   { "glGetAttachedShaders", (void **) &gload_glGetAttachedShaders },
+   { "glGetAttribLocation", (void **) &gload_glGetAttribLocation },
+   { "glGetBooleanv", (void **) &gload_glGetBooleanv },
+   { "glGetBufferParameteriv", (void **) &gload_glGetBufferParameteriv },
+   { "glGetError", (void **) &gload_glGetError },
+   { "glGetFloatv", (void **) &gload_glGetFloatv },
+   { "glGetFramebufferAttachmentParameteriv", (void **) &gload_glGetFramebufferAttachmentParameteriv },
+   { "glGetIntegerv", (void **) &gload_glGetIntegerv },
+   { "glGetProgramiv", (void **) &gload_glGetProgramiv },
+   { "glGetProgramInfoLog", (void **) &gload_glGetProgramInfoLog },
+   { "glGetRenderbufferParameteriv", (void **) &gload_glGetRenderbufferParameteriv },
+   { "glGetShaderiv", (void **) &gload_glGetShaderiv },
+   { "glGetShaderInfoLog", (void **) &gload_glGetShaderInfoLog },
+   { "glGetShaderPrecisionFormat", (void **) &gload_glGetShaderPrecisionFormat },
+   { "glGetShaderSource", (void **) &gload_glGetShaderSource },
+   { "glGetString", (void **) &gload_glGetString },
+   { "glGetTexParameterfv", (void **) &gload_glGetTexParameterfv },
+   { "glGetTexParameteriv", (void **) &gload_glGetTexParameteriv },
+   { "glGetUniformfv", (void **) &gload_glGetUniformfv },
+   { "glGetUniformiv", (void **) &gload_glGetUniformiv },
+   { "glGetUniformLocation", (void **) &gload_glGetUniformLocation },
+   { "glGetVertexAttribfv", (void **) &gload_glGetVertexAttribfv },
+   { "glGetVertexAttribiv", (void **) &gload_glGetVertexAttribiv },
+   { "glGetVertexAttribPointerv", (void **) &gload_glGetVertexAttribPointerv },
+   { "glHint", (void **) &gload_glHint },
+   { "glIsBuffer", (void **) &gload_glIsBuffer },
+   { "glIsEnabled", (void **) &gload_glIsEnabled },
+   { "glIsFramebuffer", (void **) &gload_glIsFramebuffer },
+   { "glIsProgram", (void **) &gload_glIsProgram },
+   { "glIsRenderbuffer", (void **) &gload_glIsRenderbuffer },
+   { "glIsShader", (void **) &gload_glIsShader },
+   { "glIsTexture", (void **) &gload_glIsTexture },
+   { "glLineWidth", (void **) &gload_glLineWidth },
+   { "glLinkProgram", (void **) &gload_glLinkProgram },
+   { "glPixelStorei", (void **) &gload_glPixelStorei },
+   { "glPolygonOffset", (void **) &gload_glPolygonOffset },
+   { "glReadPixels", (void **) &gload_glReadPixels },
+   { "glReleaseShaderCompiler", (void **) &gload_glReleaseShaderCompiler },
+   { "glRenderbufferStorage", (void **) &gload_glRenderbufferStorage },
+   { "glSampleCoverage", (void **) &gload_glSampleCoverage },
+   { "glScissor", (void **) &gload_glScissor },
+   { "glShaderBinary", (void **) &gload_glShaderBinary },
+   { "glShaderSource", (void **) &gload_glShaderSource },
+   { "glStencilFunc", (void **) &gload_glStencilFunc },
+   { "glStencilFuncSeparate", (void **) &gload_glStencilFuncSeparate },
+   { "glStencilMask", (void **) &gload_glStencilMask },
+   { "glStencilMaskSeparate", (void **) &gload_glStencilMaskSeparate },
+   { "glStencilOp", (void **) &gload_glStencilOp },
+   { "glStencilOpSeparate", (void **) &gload_glStencilOpSeparate },
+   { "glTexImage2D", (void **) &gload_glTexImage2D },
+   { "glTexParameterf", (void **) &gload_glTexParameterf },
+   { "glTexParameterfv", (void **) &gload_glTexParameterfv },
+   { "glTexParameteri", (void **) &gload_glTexParameteri },
+   { "glTexParameteriv", (void **) &gload_glTexParameteriv },
+   { "glTexSubImage2D", (void **) &gload_glTexSubImage2D },
+   { "glUniform1f", (void **) &gload_glUniform1f },
+   { "glUniform1fv", (void **) &gload_glUniform1fv },
+   { "glUniform1i", (void **) &gload_glUniform1i },
+   { "glUniform1iv", (void **) &gload_glUniform1iv },
+   { "glUniform2f", (void **) &gload_glUniform2f },
+   { "glUniform2fv", (void **) &gload_glUniform2fv },
+   { "glUniform2i", (void **) &gload_glUniform2i },
+   { "glUniform2iv", (void **) &gload_glUniform2iv },
+   { "glUniform3f", (void **) &gload_glUniform3f },
+   { "glUniform3fv", (void **) &gload_glUniform3fv },
+   { "glUniform3i", (void **) &gload_glUniform3i },
+   { "glUniform3iv", (void **) &gload_glUniform3iv },
+   { "glUniform4f", (void **) &gload_glUniform4f },
+   { "glUniform4fv", (void **) &gload_glUniform4fv },
+   { "glUniform4i", (void **) &gload_glUniform4i },
+   { "glUniform4iv", (void **) &gload_glUniform4iv },
+   { "glUniformMatrix2fv", (void **) &gload_glUniformMatrix2fv },
+   { "glUniformMatrix3fv", (void **) &gload_glUniformMatrix3fv },
+   { "glUniformMatrix4fv", (void **) &gload_glUniformMatrix4fv },
+   { "glUseProgram", (void **) &gload_glUseProgram },
+   { "glValidateProgram", (void **) &gload_glValidateProgram },
+   { "glVertexAttrib1f", (void **) &gload_glVertexAttrib1f },
+   { "glVertexAttrib1fv", (void **) &gload_glVertexAttrib1fv },
+   { "glVertexAttrib2f", (void **) &gload_glVertexAttrib2f },
+   { "glVertexAttrib2fv", (void **) &gload_glVertexAttrib2fv },
+   { "glVertexAttrib3f", (void **) &gload_glVertexAttrib3f },
+   { "glVertexAttrib3fv", (void **) &gload_glVertexAttrib3fv },
+   { "glVertexAttrib4f", (void **) &gload_glVertexAttrib4f },
+   { "glVertexAttrib4fv", (void **) &gload_glVertexAttrib4fv },
+   { "glVertexAttribPointer", (void **) &gload_glVertexAttribPointer },
+   { "glViewport", (void **) &gload_glViewport },
+
+#  endif /* GL_ES_VERSION_2_0 */
+#  if defined GL_ES_VERSION_3_0
+
+   { "glReadBuffer", (void **) &gload_glReadBuffer },
+   { "glDrawRangeElements", (void **) &gload_glDrawRangeElements },
+   { "glTexImage3D", (void **) &gload_glTexImage3D },
+   { "glTexSubImage3D", (void **) &gload_glTexSubImage3D },
+   { "glCopyTexSubImage3D", (void **) &gload_glCopyTexSubImage3D },
+   { "glCompressedTexImage3D", (void **) &gload_glCompressedTexImage3D },
+   { "glCompressedTexSubImage3D", (void **) &gload_glCompressedTexSubImage3D },
+   { "glGenQueries", (void **) &gload_glGenQueries },
+   { "glDeleteQueries", (void **) &gload_glDeleteQueries },
+   { "glIsQuery", (void **) &gload_glIsQuery },
+   { "glBeginQuery", (void **) &gload_glBeginQuery },
+   { "glEndQuery", (void **) &gload_glEndQuery },
+   { "glGetQueryiv", (void **) &gload_glGetQueryiv },
+   { "glGetQueryObjectuiv", (void **) &gload_glGetQueryObjectuiv },
+   { "glUnmapBuffer", (void **) &gload_glUnmapBuffer },
+   { "glGetBufferPointerv", (void **) &gload_glGetBufferPointerv },
+   { "glDrawBuffers", (void **) &gload_glDrawBuffers },
+   { "glUniformMatrix2x3fv", (void **) &gload_glUniformMatrix2x3fv },
+   { "glUniformMatrix3x2fv", (void **) &gload_glUniformMatrix3x2fv },
+   { "glUniformMatrix2x4fv", (void **) &gload_glUniformMatrix2x4fv },
+   { "glUniformMatrix4x2fv", (void **) &gload_glUniformMatrix4x2fv },
+   { "glUniformMatrix3x4fv", (void **) &gload_glUniformMatrix3x4fv },
+   { "glUniformMatrix4x3fv", (void **) &gload_glUniformMatrix4x3fv },
+   { "glBlitFramebuffer", (void **) &gload_glBlitFramebuffer },
+   { "glRenderbufferStorageMultisample", (void **) &gload_glRenderbufferStorageMultisample },
+   { "glFramebufferTextureLayer", (void **) &gload_glFramebufferTextureLayer },
+   { "glMapBufferRange", (void **) &gload_glMapBufferRange },
+   { "glFlushMappedBufferRange", (void **) &gload_glFlushMappedBufferRange },
+   { "glBindVertexArray", (void **) &gload_glBindVertexArray },
+   { "glDeleteVertexArrays", (void **) &gload_glDeleteVertexArrays },
+   { "glGenVertexArrays", (void **) &gload_glGenVertexArrays },
+   { "glIsVertexArray", (void **) &gload_glIsVertexArray },
+   { "glGetIntegeri_v", (void **) &gload_glGetIntegeri_v },
+   { "glBeginTransformFeedback", (void **) &gload_glBeginTransformFeedback },
+   { "glEndTransformFeedback", (void **) &gload_glEndTransformFeedback },
+   { "glBindBufferRange", (void **) &gload_glBindBufferRange },
+   { "glBindBufferBase", (void **) &gload_glBindBufferBase },
+   { "glTransformFeedbackVaryings", (void **) &gload_glTransformFeedbackVaryings },
+   { "glGetTransformFeedbackVarying", (void **) &gload_glGetTransformFeedbackVarying },
+   { "glVertexAttribIPointer", (void **) &gload_glVertexAttribIPointer },
+   { "glGetVertexAttribIiv", (void **) &gload_glGetVertexAttribIiv },
+   { "glGetVertexAttribIuiv", (void **) &gload_glGetVertexAttribIuiv },
+   { "glVertexAttribI4i", (void **) &gload_glVertexAttribI4i },
+   { "glVertexAttribI4ui", (void **) &gload_glVertexAttribI4ui },
+   { "glVertexAttribI4iv", (void **) &gload_glVertexAttribI4iv },
+   { "glVertexAttribI4uiv", (void **) &gload_glVertexAttribI4uiv },
+   { "glGetUniformuiv", (void **) &gload_glGetUniformuiv },
+   { "glGetFragDataLocation", (void **) &gload_glGetFragDataLocation },
+   { "glUniform1ui", (void **) &gload_glUniform1ui },
+   { "glUniform2ui", (void **) &gload_glUniform2ui },
+   { "glUniform3ui", (void **) &gload_glUniform3ui },
+   { "glUniform4ui", (void **) &gload_glUniform4ui },
+   { "glUniform1uiv", (void **) &gload_glUniform1uiv },
+   { "glUniform2uiv", (void **) &gload_glUniform2uiv },
+   { "glUniform3uiv", (void **) &gload_glUniform3uiv },
+   { "glUniform4uiv", (void **) &gload_glUniform4uiv },
+   { "glClearBufferiv", (void **) &gload_glClearBufferiv },
+   { "glClearBufferuiv", (void **) &gload_glClearBufferuiv },
+   { "glClearBufferfv", (void **) &gload_glClearBufferfv },
+   { "glClearBufferfi", (void **) &gload_glClearBufferfi },
+   { "glGetStringi", (void **) &gload_glGetStringi },
+   { "glCopyBufferSubData", (void **) &gload_glCopyBufferSubData },
+   { "glGetUniformIndices", (void **) &gload_glGetUniformIndices },
+   { "glGetActiveUniformsiv", (void **) &gload_glGetActiveUniformsiv },
+   { "glGetUniformBlockIndex", (void **) &gload_glGetUniformBlockIndex },
+   { "glGetActiveUniformBlockiv", (void **) &gload_glGetActiveUniformBlockiv },
+   { "glGetActiveUniformBlockName", (void **) &gload_glGetActiveUniformBlockName },
+   { "glUniformBlockBinding", (void **) &gload_glUniformBlockBinding },
+   { "glDrawArraysInstanced", (void **) &gload_glDrawArraysInstanced },
+   { "glDrawElementsInstanced", (void **) &gload_glDrawElementsInstanced },
+   { "glFenceSync", (void **) &gload_glFenceSync },
+   { "glIsSync", (void **) &gload_glIsSync },
+   { "glDeleteSync", (void **) &gload_glDeleteSync },
+   { "glClientWaitSync", (void **) &gload_glClientWaitSync },
+   { "glWaitSync", (void **) &gload_glWaitSync },
+   { "glGetInteger64v", (void **) &gload_glGetInteger64v },
+   { "glGetSynciv", (void **) &gload_glGetSynciv },
+   { "glGetInteger64i_v", (void **) &gload_glGetInteger64i_v },
+   { "glGetBufferParameteri64v", (void **) &gload_glGetBufferParameteri64v },
+   { "glGenSamplers", (void **) &gload_glGenSamplers },
+   { "glDeleteSamplers", (void **) &gload_glDeleteSamplers },
+   { "glIsSampler", (void **) &gload_glIsSampler },
+   { "glBindSampler", (void **) &gload_glBindSampler },
+   { "glSamplerParameteri", (void **) &gload_glSamplerParameteri },
+   { "glSamplerParameteriv", (void **) &gload_glSamplerParameteriv },
+   { "glSamplerParameterf", (void **) &gload_glSamplerParameterf },
+   { "glSamplerParameterfv", (void **) &gload_glSamplerParameterfv },
+   { "glGetSamplerParameteriv", (void **) &gload_glGetSamplerParameteriv },
+   { "glGetSamplerParameterfv", (void **) &gload_glGetSamplerParameterfv },
+   { "glVertexAttribDivisor", (void **) &gload_glVertexAttribDivisor },
+   { "glBindTransformFeedback", (void **) &gload_glBindTransformFeedback },
+   { "glDeleteTransformFeedbacks", (void **) &gload_glDeleteTransformFeedbacks },
+   { "glGenTransformFeedbacks", (void **) &gload_glGenTransformFeedbacks },
+   { "glIsTransformFeedback", (void **) &gload_glIsTransformFeedback },
+   { "glPauseTransformFeedback", (void **) &gload_glPauseTransformFeedback },
+   { "glResumeTransformFeedback", (void **) &gload_glResumeTransformFeedback },
+   { "glGetProgramBinary", (void **) &gload_glGetProgramBinary },
+   { "glProgramBinary", (void **) &gload_glProgramBinary },
+   { "glProgramParameteri", (void **) &gload_glProgramParameteri },
+   { "glInvalidateFramebuffer", (void **) &gload_glInvalidateFramebuffer },
+   { "glInvalidateSubFramebuffer", (void **) &gload_glInvalidateSubFramebuffer },
+   { "glTexStorage2D", (void **) &gload_glTexStorage2D },
+   { "glTexStorage3D", (void **) &gload_glTexStorage3D },
+   { "glGetInternalformativ", (void **) &gload_glGetInternalformativ },
+
+#  endif /* GL_ES_VERSION_3_0 */
+#  if defined GL_ES_VERSION_3_1
+
+   { "glDispatchCompute", (void **) &gload_glDispatchCompute },
+   { "glDispatchComputeIndirect", (void **) &gload_glDispatchComputeIndirect },
+   { "glDrawArraysIndirect", (void **) &gload_glDrawArraysIndirect },
+   { "glDrawElementsIndirect", (void **) &gload_glDrawElementsIndirect },
+   { "glFramebufferParameteri", (void **) &gload_glFramebufferParameteri },
+   { "glGetFramebufferParameteriv", (void **) &gload_glGetFramebufferParameteriv },
+   { "glGetProgramInterfaceiv", (void **) &gload_glGetProgramInterfaceiv },
+   { "glGetProgramResourceIndex", (void **) &gload_glGetProgramResourceIndex },
+   { "glGetProgramResourceName", (void **) &gload_glGetProgramResourceName },
+   { "glGetProgramResourceiv", (void **) &gload_glGetProgramResourceiv },
+   { "glGetProgramResourceLocation", (void **) &gload_glGetProgramResourceLocation },
+   { "glUseProgramStages", (void **) &gload_glUseProgramStages },
+   { "glActiveShaderProgram", (void **) &gload_glActiveShaderProgram },
+   { "glCreateShaderProgramv", (void **) &gload_glCreateShaderProgramv },
+   { "glBindProgramPipeline", (void **) &gload_glBindProgramPipeline },
+   { "glDeleteProgramPipelines", (void **) &gload_glDeleteProgramPipelines },
+   { "glGenProgramPipelines", (void **) &gload_glGenProgramPipelines },
+   { "glIsProgramPipeline", (void **) &gload_glIsProgramPipeline },
+   { "glGetProgramPipelineiv", (void **) &gload_glGetProgramPipelineiv },
+   { "glProgramUniform1i", (void **) &gload_glProgramUniform1i },
+   { "glProgramUniform2i", (void **) &gload_glProgramUniform2i },
+   { "glProgramUniform3i", (void **) &gload_glProgramUniform3i },
+   { "glProgramUniform4i", (void **) &gload_glProgramUniform4i },
+   { "glProgramUniform1ui", (void **) &gload_glProgramUniform1ui },
+   { "glProgramUniform2ui", (void **) &gload_glProgramUniform2ui },
+   { "glProgramUniform3ui", (void **) &gload_glProgramUniform3ui },
+   { "glProgramUniform4ui", (void **) &gload_glProgramUniform4ui },
+   { "glProgramUniform1f", (void **) &gload_glProgramUniform1f },
+   { "glProgramUniform2f", (void **) &gload_glProgramUniform2f },
+   { "glProgramUniform3f", (void **) &gload_glProgramUniform3f },
+   { "glProgramUniform4f", (void **) &gload_glProgramUniform4f },
+   { "glProgramUniform1iv", (void **) &gload_glProgramUniform1iv },
+   { "glProgramUniform2iv", (void **) &gload_glProgramUniform2iv },
+   { "glProgramUniform3iv", (void **) &gload_glProgramUniform3iv },
+   { "glProgramUniform4iv", (void **) &gload_glProgramUniform4iv },
+   { "glProgramUniform1uiv", (void **) &gload_glProgramUniform1uiv },
+   { "glProgramUniform2uiv", (void **) &gload_glProgramUniform2uiv },
+   { "glProgramUniform3uiv", (void **) &gload_glProgramUniform3uiv },
+   { "glProgramUniform4uiv", (void **) &gload_glProgramUniform4uiv },
+   { "glProgramUniform1fv", (void **) &gload_glProgramUniform1fv },
+   { "glProgramUniform2fv", (void **) &gload_glProgramUniform2fv },
+   { "glProgramUniform3fv", (void **) &gload_glProgramUniform3fv },
+   { "glProgramUniform4fv", (void **) &gload_glProgramUniform4fv },
+   { "glProgramUniformMatrix2fv", (void **) &gload_glProgramUniformMatrix2fv },
+   { "glProgramUniformMatrix3fv", (void **) &gload_glProgramUniformMatrix3fv },
+   { "glProgramUniformMatrix4fv", (void **) &gload_glProgramUniformMatrix4fv },
+   { "glProgramUniformMatrix2x3fv", (void **) &gload_glProgramUniformMatrix2x3fv },
+   { "glProgramUniformMatrix3x2fv", (void **) &gload_glProgramUniformMatrix3x2fv },
+   { "glProgramUniformMatrix2x4fv", (void **) &gload_glProgramUniformMatrix2x4fv },
+   { "glProgramUniformMatrix4x2fv", (void **) &gload_glProgramUniformMatrix4x2fv },
+   { "glProgramUniformMatrix3x4fv", (void **) &gload_glProgramUniformMatrix3x4fv },
+   { "glProgramUniformMatrix4x3fv", (void **) &gload_glProgramUniformMatrix4x3fv },
+   { "glValidateProgramPipeline", (void **) &gload_glValidateProgramPipeline },
+   { "glGetProgramPipelineInfoLog", (void **) &gload_glGetProgramPipelineInfoLog },
+   { "glBindImageTexture", (void **) &gload_glBindImageTexture },
+   { "glGetBooleani_v", (void **) &gload_glGetBooleani_v },
+   { "glMemoryBarrier", (void **) &gload_glMemoryBarrier },
+   { "glMemoryBarrierByRegion", (void **) &gload_glMemoryBarrierByRegion },
+   { "glTexStorage2DMultisample", (void **) &gload_glTexStorage2DMultisample },
+   { "glGetMultisamplefv", (void **) &gload_glGetMultisamplefv },
+   { "glSampleMaski", (void **) &gload_glSampleMaski },
+   { "glGetTexLevelParameteriv", (void **) &gload_glGetTexLevelParameteriv },
+   { "glGetTexLevelParameterfv", (void **) &gload_glGetTexLevelParameterfv },
+   { "glBindVertexBuffer", (void **) &gload_glBindVertexBuffer },
+   { "glVertexAttribFormat", (void **) &gload_glVertexAttribFormat },
+   { "glVertexAttribIFormat", (void **) &gload_glVertexAttribIFormat },
+   { "glVertexAttribBinding", (void **) &gload_glVertexAttribBinding },
+   { "glVertexBindingDivisor", (void **) &gload_glVertexBindingDivisor },
+
+#  endif /* GL_ES_VERSION_3_1 */
+#  if defined GL_ES_VERSION_3_2
+
+   { "glBlendBarrier", (void **) &gload_glBlendBarrier },
+   { "glCopyImageSubData", (void **) &gload_glCopyImageSubData },
+   { "glDebugMessageControl", (void **) &gload_glDebugMessageControl },
+   { "glDebugMessageInsert", (void **) &gload_glDebugMessageInsert },
+   { "glDebugMessageCallback", (void **) &gload_glDebugMessageCallback },
+   { "glGetDebugMessageLog", (void **) &gload_glGetDebugMessageLog },
+   { "glPushDebugGroup", (void **) &gload_glPushDebugGroup },
+   { "glPopDebugGroup", (void **) &gload_glPopDebugGroup },
+   { "glObjectLabel", (void **) &gload_glObjectLabel },
+   { "glGetObjectLabel", (void **) &gload_glGetObjectLabel },
+   { "glObjectPtrLabel", (void **) &gload_glObjectPtrLabel },
+   { "glGetObjectPtrLabel", (void **) &gload_glGetObjectPtrLabel },
+   { "glGetPointerv", (void **) &gload_glGetPointerv },
+   { "glEnablei", (void **) &gload_glEnablei },
+   { "glDisablei", (void **) &gload_glDisablei },
+   { "glBlendEquationi", (void **) &gload_glBlendEquationi },
+   { "glBlendEquationSeparatei", (void **) &gload_glBlendEquationSeparatei },
+   { "glBlendFunci", (void **) &gload_glBlendFunci },
+   { "glBlendFuncSeparatei", (void **) &gload_glBlendFuncSeparatei },
+   { "glColorMaski", (void **) &gload_glColorMaski },
+   { "glIsEnabledi", (void **) &gload_glIsEnabledi },
+   { "glDrawElementsBaseVertex", (void **) &gload_glDrawElementsBaseVertex },
+   { "glDrawRangeElementsBaseVertex", (void **) &gload_glDrawRangeElementsBaseVertex },
+   { "glDrawElementsInstancedBaseVertex", (void **) &gload_glDrawElementsInstancedBaseVertex },
+   { "glFramebufferTexture", (void **) &gload_glFramebufferTexture },
+   { "glPrimitiveBoundingBox", (void **) &gload_glPrimitiveBoundingBox },
+   { "glGetGraphicsResetStatus", (void **) &gload_glGetGraphicsResetStatus },
+   { "glReadnPixels", (void **) &gload_glReadnPixels },
+   { "glGetnUniformfv", (void **) &gload_glGetnUniformfv },
+   { "glGetnUniformiv", (void **) &gload_glGetnUniformiv },
+   { "glGetnUniformuiv", (void **) &gload_glGetnUniformuiv },
+   { "glMinSampleShading", (void **) &gload_glMinSampleShading },
+   { "glPatchParameteri", (void **) &gload_glPatchParameteri },
+   { "glTexParameterIiv", (void **) &gload_glTexParameterIiv },
+   { "glTexParameterIuiv", (void **) &gload_glTexParameterIuiv },
+   { "glGetTexParameterIiv", (void **) &gload_glGetTexParameterIiv },
+   { "glGetTexParameterIuiv", (void **) &gload_glGetTexParameterIuiv },
+   { "glSamplerParameterIiv", (void **) &gload_glSamplerParameterIiv },
+   { "glSamplerParameterIuiv", (void **) &gload_glSamplerParameterIuiv },
+   { "glGetSamplerParameterIiv", (void **) &gload_glGetSamplerParameterIiv },
+   { "glGetSamplerParameterIuiv", (void **) &gload_glGetSamplerParameterIuiv },
+   { "glTexBuffer", (void **) &gload_glTexBuffer },
+   { "glTexBufferRange", (void **) &gload_glTexBufferRange },
+   { "glTexStorage3DMultisample", (void **) &gload_glTexStorage3DMultisample },
+
+#  endif /* GL_ES_VERSION_3_2 */
+#  if defined GL_SC_VERSION_2_0
+
+   { "glActiveTexture", (void **) &gload_glActiveTexture },
+   { "glBindBuffer", (void **) &gload_glBindBuffer },
+   { "glBindFramebuffer", (void **) &gload_glBindFramebuffer },
+   { "glBindRenderbuffer", (void **) &gload_glBindRenderbuffer },
+   { "glBindTexture", (void **) &gload_glBindTexture },
+   { "glBlendColor", (void **) &gload_glBlendColor },
+   { "glBlendEquation", (void **) &gload_glBlendEquation },
+   { "glBlendEquationSeparate", (void **) &gload_glBlendEquationSeparate },
+   { "glBlendFunc", (void **) &gload_glBlendFunc },
+   { "glBlendFuncSeparate", (void **) &gload_glBlendFuncSeparate },
+   { "glBufferData", (void **) &gload_glBufferData },
+   { "glBufferSubData", (void **) &gload_glBufferSubData },
+   { "glCheckFramebufferStatus", (void **) &gload_glCheckFramebufferStatus },
+   { "glClear", (void **) &gload_glClear },
+   { "glClearColor", (void **) &gload_glClearColor },
+   { "glClearDepthf", (void **) &gload_glClearDepthf },
+   { "glClearStencil", (void **) &gload_glClearStencil },
+   { "glColorMask", (void **) &gload_glColorMask },
+   { "glCompressedTexSubImage2D", (void **) &gload_glCompressedTexSubImage2D },
+   { "glCreateProgram", (void **) &gload_glCreateProgram },
+   { "glCullFace", (void **) &gload_glCullFace },
+   { "glDepthFunc", (void **) &gload_glDepthFunc },
+   { "glDepthMask", (void **) &gload_glDepthMask },
+   { "glDepthRangef", (void **) &gload_glDepthRangef },
+   { "glDisable", (void **) &gload_glDisable },
+   { "glDisableVertexAttribArray", (void **) &gload_glDisableVertexAttribArray },
+   { "glDrawArrays", (void **) &gload_glDrawArrays },
+   { "glDrawRangeElements", (void **) &gload_glDrawRangeElements },
+   { "glEnable", (void **) &gload_glEnable },
+   { "glEnableVertexAttribArray", (void **) &gload_glEnableVertexAttribArray },
+   { "glFinish", (void **) &gload_glFinish },
+   { "glFlush", (void **) &gload_glFlush },
+   { "glFramebufferRenderbuffer", (void **) &gload_glFramebufferRenderbuffer },
+   { "glFramebufferTexture2D", (void **) &gload_glFramebufferTexture2D },
+   { "glFrontFace", (void **) &gload_glFrontFace },
+   { "glGenBuffers", (void **) &gload_glGenBuffers },
+   { "glGenerateMipmap", (void **) &gload_glGenerateMipmap },
+   { "glGenFramebuffers", (void **) &gload_glGenFramebuffers },
+   { "glGenRenderbuffers", (void **) &gload_glGenRenderbuffers },
+   { "glGenTextures", (void **) &gload_glGenTextures },
+   { "glGetAttribLocation", (void **) &gload_glGetAttribLocation },
+   { "glGetBooleanv", (void **) &gload_glGetBooleanv },
+   { "glGetBufferParameteriv", (void **) &gload_glGetBufferParameteriv },
+   { "glGetError", (void **) &gload_glGetError },
+   { "glGetFloatv", (void **) &gload_glGetFloatv },
+   { "glGetFramebufferAttachmentParameteriv", (void **) &gload_glGetFramebufferAttachmentParameteriv },
+   { "glGetGraphicsResetStatus", (void **) &gload_glGetGraphicsResetStatus },
+   { "glGetIntegerv", (void **) &gload_glGetIntegerv },
+   { "glGetProgramiv", (void **) &gload_glGetProgramiv },
+   { "glGetRenderbufferParameteriv", (void **) &gload_glGetRenderbufferParameteriv },
+   { "glGetString", (void **) &gload_glGetString },
+   { "glGetTexParameterfv", (void **) &gload_glGetTexParameterfv },
+   { "glGetTexParameteriv", (void **) &gload_glGetTexParameteriv },
+   { "glGetnUniformfv", (void **) &gload_glGetnUniformfv },
+   { "glGetnUniformiv", (void **) &gload_glGetnUniformiv },
+   { "glGetUniformLocation", (void **) &gload_glGetUniformLocation },
+   { "glGetVertexAttribfv", (void **) &gload_glGetVertexAttribfv },
+   { "glGetVertexAttribiv", (void **) &gload_glGetVertexAttribiv },
+   { "glGetVertexAttribPointerv", (void **) &gload_glGetVertexAttribPointerv },
+   { "glHint", (void **) &gload_glHint },
+   { "glIsEnabled", (void **) &gload_glIsEnabled },
+   { "glLineWidth", (void **) &gload_glLineWidth },
+   { "glPixelStorei", (void **) &gload_glPixelStorei },
+   { "glPolygonOffset", (void **) &gload_glPolygonOffset },
+   { "glProgramBinary", (void **) &gload_glProgramBinary },
+   { "glReadnPixels", (void **) &gload_glReadnPixels },
+   { "glRenderbufferStorage", (void **) &gload_glRenderbufferStorage },
+   { "glSampleCoverage", (void **) &gload_glSampleCoverage },
+   { "glScissor", (void **) &gload_glScissor },
+   { "glStencilFunc", (void **) &gload_glStencilFunc },
+   { "glStencilFuncSeparate", (void **) &gload_glStencilFuncSeparate },
+   { "glStencilMask", (void **) &gload_glStencilMask },
+   { "glStencilMaskSeparate", (void **) &gload_glStencilMaskSeparate },
+   { "glStencilOp", (void **) &gload_glStencilOp },
+   { "glStencilOpSeparate", (void **) &gload_glStencilOpSeparate },
+   { "glTexStorage2D", (void **) &gload_glTexStorage2D },
+   { "glTexParameterf", (void **) &gload_glTexParameterf },
+   { "glTexParameterfv", (void **) &gload_glTexParameterfv },
+   { "glTexParameteri", (void **) &gload_glTexParameteri },
+   { "glTexParameteriv", (void **) &gload_glTexParameteriv },
+   { "glTexSubImage2D", (void **) &gload_glTexSubImage2D },
+   { "glUniform1f", (void **) &gload_glUniform1f },
+   { "glUniform1fv", (void **) &gload_glUniform1fv },
+   { "glUniform1i", (void **) &gload_glUniform1i },
+   { "glUniform1iv", (void **) &gload_glUniform1iv },
+   { "glUniform2f", (void **) &gload_glUniform2f },
+   { "glUniform2fv", (void **) &gload_glUniform2fv },
+   { "glUniform2i", (void **) &gload_glUniform2i },
+   { "glUniform2iv", (void **) &gload_glUniform2iv },
+   { "glUniform3f", (void **) &gload_glUniform3f },
+   { "glUniform3fv", (void **) &gload_glUniform3fv },
+   { "glUniform3i", (void **) &gload_glUniform3i },
+   { "glUniform3iv", (void **) &gload_glUniform3iv },
+   { "glUniform4f", (void **) &gload_glUniform4f },
+   { "glUniform4fv", (void **) &gload_glUniform4fv },
+   { "glUniform4i", (void **) &gload_glUniform4i },
+   { "glUniform4iv", (void **) &gload_glUniform4iv },
+   { "glUniformMatrix2fv", (void **) &gload_glUniformMatrix2fv },
+   { "glUniformMatrix3fv", (void **) &gload_glUniformMatrix3fv },
+   { "glUniformMatrix4fv", (void **) &gload_glUniformMatrix4fv },
+   { "glUseProgram", (void **) &gload_glUseProgram },
+   { "glVertexAttrib1f", (void **) &gload_glVertexAttrib1f },
+   { "glVertexAttrib1fv", (void **) &gload_glVertexAttrib1fv },
+   { "glVertexAttrib2f", (void **) &gload_glVertexAttrib2f },
+   { "glVertexAttrib2fv", (void **) &gload_glVertexAttrib2fv },
+   { "glVertexAttrib3f", (void **) &gload_glVertexAttrib3f },
+   { "glVertexAttrib3fv", (void **) &gload_glVertexAttrib3fv },
+   { "glVertexAttrib4f", (void **) &gload_glVertexAttrib4f },
+   { "glVertexAttrib4fv", (void **) &gload_glVertexAttrib4fv },
+   { "glVertexAttribPointer", (void **) &gload_glVertexAttribPointer },
+   { "glViewport", (void **) &gload_glViewport },
+
+#  endif /* GL_SC_VERSION_2_0 */
+
+    { 0, 0 }
+};
 
 /* SECTION:
  *  gload API
@@ -9131,1773 +10910,15 @@ GLAPI int   gloadLoadGL(void) {
 }
 
 GLAPI int   gloadLoadGLLoader(t_gloadLoader load) {
+    if (!load) { return (0); }
 
-#  if defined GL_VERSION_1_0
+    for (size_t i = 0; g_nameaddr[i].name && g_nameaddr[i].addr; i++) {
+        /* If the function is already loaded, skip it... */
+        if (*g_nameaddr[i].addr) { continue; }
 
-   if (!gload_glCullFace && !(gload_glCullFace = (PFNGLCULLFACEPROC) load("glCullFace"))) { return (0); }
-   if (!gload_glFrontFace && !(gload_glFrontFace = (PFNGLFRONTFACEPROC) load("glFrontFace"))) { return (0); }
-   if (!gload_glHint && !(gload_glHint = (PFNGLHINTPROC) load("glHint"))) { return (0); }
-   if (!gload_glLineWidth && !(gload_glLineWidth = (PFNGLLINEWIDTHPROC) load("glLineWidth"))) { return (0); }
-   if (!gload_glPointSize && !(gload_glPointSize = (PFNGLPOINTSIZEPROC) load("glPointSize"))) { return (0); }
-   if (!gload_glPolygonMode && !(gload_glPolygonMode = (PFNGLPOLYGONMODEPROC) load("glPolygonMode"))) { return (0); }
-   if (!gload_glScissor && !(gload_glScissor = (PFNGLSCISSORPROC) load("glScissor"))) { return (0); }
-   if (!gload_glTexParameterf && !(gload_glTexParameterf = (PFNGLTEXPARAMETERFPROC) load("glTexParameterf"))) { return (0); }
-   if (!gload_glTexParameterfv && !(gload_glTexParameterfv = (PFNGLTEXPARAMETERFVPROC) load("glTexParameterfv"))) { return (0); }
-   if (!gload_glTexParameteri && !(gload_glTexParameteri = (PFNGLTEXPARAMETERIPROC) load("glTexParameteri"))) { return (0); }
-   if (!gload_glTexParameteriv && !(gload_glTexParameteriv = (PFNGLTEXPARAMETERIVPROC) load("glTexParameteriv"))) { return (0); }
-   if (!gload_glTexImage1D && !(gload_glTexImage1D = (PFNGLTEXIMAGE1DPROC) load("glTexImage1D"))) { return (0); }
-   if (!gload_glTexImage2D && !(gload_glTexImage2D = (PFNGLTEXIMAGE2DPROC) load("glTexImage2D"))) { return (0); }
-   if (!gload_glDrawBuffer && !(gload_glDrawBuffer = (PFNGLDRAWBUFFERPROC) load("glDrawBuffer"))) { return (0); }
-   if (!gload_glClear && !(gload_glClear = (PFNGLCLEARPROC) load("glClear"))) { return (0); }
-   if (!gload_glClearColor && !(gload_glClearColor = (PFNGLCLEARCOLORPROC) load("glClearColor"))) { return (0); }
-   if (!gload_glClearStencil && !(gload_glClearStencil = (PFNGLCLEARSTENCILPROC) load("glClearStencil"))) { return (0); }
-   if (!gload_glClearDepth && !(gload_glClearDepth = (PFNGLCLEARDEPTHPROC) load("glClearDepth"))) { return (0); }
-   if (!gload_glStencilMask && !(gload_glStencilMask = (PFNGLSTENCILMASKPROC) load("glStencilMask"))) { return (0); }
-   if (!gload_glColorMask && !(gload_glColorMask = (PFNGLCOLORMASKPROC) load("glColorMask"))) { return (0); }
-   if (!gload_glDepthMask && !(gload_glDepthMask = (PFNGLDEPTHMASKPROC) load("glDepthMask"))) { return (0); }
-   if (!gload_glDisable && !(gload_glDisable = (PFNGLDISABLEPROC) load("glDisable"))) { return (0); }
-   if (!gload_glEnable && !(gload_glEnable = (PFNGLENABLEPROC) load("glEnable"))) { return (0); }
-   if (!gload_glFinish && !(gload_glFinish = (PFNGLFINISHPROC) load("glFinish"))) { return (0); }
-   if (!gload_glFlush && !(gload_glFlush = (PFNGLFLUSHPROC) load("glFlush"))) { return (0); }
-   if (!gload_glBlendFunc && !(gload_glBlendFunc = (PFNGLBLENDFUNCPROC) load("glBlendFunc"))) { return (0); }
-   if (!gload_glLogicOp && !(gload_glLogicOp = (PFNGLLOGICOPPROC) load("glLogicOp"))) { return (0); }
-   if (!gload_glStencilFunc && !(gload_glStencilFunc = (PFNGLSTENCILFUNCPROC) load("glStencilFunc"))) { return (0); }
-   if (!gload_glStencilOp && !(gload_glStencilOp = (PFNGLSTENCILOPPROC) load("glStencilOp"))) { return (0); }
-   if (!gload_glDepthFunc && !(gload_glDepthFunc = (PFNGLDEPTHFUNCPROC) load("glDepthFunc"))) { return (0); }
-   if (!gload_glPixelStoref && !(gload_glPixelStoref = (PFNGLPIXELSTOREFPROC) load("glPixelStoref"))) { return (0); }
-   if (!gload_glPixelStorei && !(gload_glPixelStorei = (PFNGLPIXELSTOREIPROC) load("glPixelStorei"))) { return (0); }
-   if (!gload_glReadBuffer && !(gload_glReadBuffer = (PFNGLREADBUFFERPROC) load("glReadBuffer"))) { return (0); }
-   if (!gload_glReadPixels && !(gload_glReadPixels = (PFNGLREADPIXELSPROC) load("glReadPixels"))) { return (0); }
-   if (!gload_glGetBooleanv && !(gload_glGetBooleanv = (PFNGLGETBOOLEANVPROC) load("glGetBooleanv"))) { return (0); }
-   if (!gload_glGetDoublev && !(gload_glGetDoublev = (PFNGLGETDOUBLEVPROC) load("glGetDoublev"))) { return (0); }
-   if (!gload_glGetError && !(gload_glGetError = (PFNGLGETERRORPROC) load("glGetError"))) { return (0); }
-   if (!gload_glGetFloatv && !(gload_glGetFloatv = (PFNGLGETFLOATVPROC) load("glGetFloatv"))) { return (0); }
-   if (!gload_glGetIntegerv && !(gload_glGetIntegerv = (PFNGLGETINTEGERVPROC) load("glGetIntegerv"))) { return (0); }
-   if (!gload_glGetString && !(gload_glGetString = (PFNGLGETSTRINGPROC) load("glGetString"))) { return (0); }
-   if (!gload_glGetTexImage && !(gload_glGetTexImage = (PFNGLGETTEXIMAGEPROC) load("glGetTexImage"))) { return (0); }
-   if (!gload_glGetTexParameterfv && !(gload_glGetTexParameterfv = (PFNGLGETTEXPARAMETERFVPROC) load("glGetTexParameterfv"))) { return (0); }
-   if (!gload_glGetTexParameteriv && !(gload_glGetTexParameteriv = (PFNGLGETTEXPARAMETERIVPROC) load("glGetTexParameteriv"))) { return (0); }
-   if (!gload_glGetTexLevelParameterfv && !(gload_glGetTexLevelParameterfv = (PFNGLGETTEXLEVELPARAMETERFVPROC) load("glGetTexLevelParameterfv"))) { return (0); }
-   if (!gload_glGetTexLevelParameteriv && !(gload_glGetTexLevelParameteriv = (PFNGLGETTEXLEVELPARAMETERIVPROC) load("glGetTexLevelParameteriv"))) { return (0); }
-   if (!gload_glIsEnabled && !(gload_glIsEnabled = (PFNGLISENABLEDPROC) load("glIsEnabled"))) { return (0); }
-   if (!gload_glDepthRange && !(gload_glDepthRange = (PFNGLDEPTHRANGEPROC) load("glDepthRange"))) { return (0); }
-   if (!gload_glViewport && !(gload_glViewport = (PFNGLVIEWPORTPROC) load("glViewport"))) { return (0); }
-   if (!gload_glNewList && !(gload_glNewList = (PFNGLNEWLISTPROC) load("glNewList"))) { return (0); }
-   if (!gload_glEndList && !(gload_glEndList = (PFNGLENDLISTPROC) load("glEndList"))) { return (0); }
-   if (!gload_glCallList && !(gload_glCallList = (PFNGLCALLLISTPROC) load("glCallList"))) { return (0); }
-   if (!gload_glCallLists && !(gload_glCallLists = (PFNGLCALLLISTSPROC) load("glCallLists"))) { return (0); }
-   if (!gload_glDeleteLists && !(gload_glDeleteLists = (PFNGLDELETELISTSPROC) load("glDeleteLists"))) { return (0); }
-   if (!gload_glGenLists && !(gload_glGenLists = (PFNGLGENLISTSPROC) load("glGenLists"))) { return (0); }
-   if (!gload_glListBase && !(gload_glListBase = (PFNGLLISTBASEPROC) load("glListBase"))) { return (0); }
-   if (!gload_glBegin && !(gload_glBegin = (PFNGLBEGINPROC) load("glBegin"))) { return (0); }
-   if (!gload_glBitmap && !(gload_glBitmap = (PFNGLBITMAPPROC) load("glBitmap"))) { return (0); }
-   if (!gload_glColor3b && !(gload_glColor3b = (PFNGLCOLOR3BPROC) load("glColor3b"))) { return (0); }
-   if (!gload_glColor3bv && !(gload_glColor3bv = (PFNGLCOLOR3BVPROC) load("glColor3bv"))) { return (0); }
-   if (!gload_glColor3d && !(gload_glColor3d = (PFNGLCOLOR3DPROC) load("glColor3d"))) { return (0); }
-   if (!gload_glColor3dv && !(gload_glColor3dv = (PFNGLCOLOR3DVPROC) load("glColor3dv"))) { return (0); }
-   if (!gload_glColor3f && !(gload_glColor3f = (PFNGLCOLOR3FPROC) load("glColor3f"))) { return (0); }
-   if (!gload_glColor3fv && !(gload_glColor3fv = (PFNGLCOLOR3FVPROC) load("glColor3fv"))) { return (0); }
-   if (!gload_glColor3i && !(gload_glColor3i = (PFNGLCOLOR3IPROC) load("glColor3i"))) { return (0); }
-   if (!gload_glColor3iv && !(gload_glColor3iv = (PFNGLCOLOR3IVPROC) load("glColor3iv"))) { return (0); }
-   if (!gload_glColor3s && !(gload_glColor3s = (PFNGLCOLOR3SPROC) load("glColor3s"))) { return (0); }
-   if (!gload_glColor3sv && !(gload_glColor3sv = (PFNGLCOLOR3SVPROC) load("glColor3sv"))) { return (0); }
-   if (!gload_glColor3ub && !(gload_glColor3ub = (PFNGLCOLOR3UBPROC) load("glColor3ub"))) { return (0); }
-   if (!gload_glColor3ubv && !(gload_glColor3ubv = (PFNGLCOLOR3UBVPROC) load("glColor3ubv"))) { return (0); }
-   if (!gload_glColor3ui && !(gload_glColor3ui = (PFNGLCOLOR3UIPROC) load("glColor3ui"))) { return (0); }
-   if (!gload_glColor3uiv && !(gload_glColor3uiv = (PFNGLCOLOR3UIVPROC) load("glColor3uiv"))) { return (0); }
-   if (!gload_glColor3us && !(gload_glColor3us = (PFNGLCOLOR3USPROC) load("glColor3us"))) { return (0); }
-   if (!gload_glColor3usv && !(gload_glColor3usv = (PFNGLCOLOR3USVPROC) load("glColor3usv"))) { return (0); }
-   if (!gload_glColor4b && !(gload_glColor4b = (PFNGLCOLOR4BPROC) load("glColor4b"))) { return (0); }
-   if (!gload_glColor4bv && !(gload_glColor4bv = (PFNGLCOLOR4BVPROC) load("glColor4bv"))) { return (0); }
-   if (!gload_glColor4d && !(gload_glColor4d = (PFNGLCOLOR4DPROC) load("glColor4d"))) { return (0); }
-   if (!gload_glColor4dv && !(gload_glColor4dv = (PFNGLCOLOR4DVPROC) load("glColor4dv"))) { return (0); }
-   if (!gload_glColor4f && !(gload_glColor4f = (PFNGLCOLOR4FPROC) load("glColor4f"))) { return (0); }
-   if (!gload_glColor4fv && !(gload_glColor4fv = (PFNGLCOLOR4FVPROC) load("glColor4fv"))) { return (0); }
-   if (!gload_glColor4i && !(gload_glColor4i = (PFNGLCOLOR4IPROC) load("glColor4i"))) { return (0); }
-   if (!gload_glColor4iv && !(gload_glColor4iv = (PFNGLCOLOR4IVPROC) load("glColor4iv"))) { return (0); }
-   if (!gload_glColor4s && !(gload_glColor4s = (PFNGLCOLOR4SPROC) load("glColor4s"))) { return (0); }
-   if (!gload_glColor4sv && !(gload_glColor4sv = (PFNGLCOLOR4SVPROC) load("glColor4sv"))) { return (0); }
-   if (!gload_glColor4ub && !(gload_glColor4ub = (PFNGLCOLOR4UBPROC) load("glColor4ub"))) { return (0); }
-   if (!gload_glColor4ubv && !(gload_glColor4ubv = (PFNGLCOLOR4UBVPROC) load("glColor4ubv"))) { return (0); }
-   if (!gload_glColor4ui && !(gload_glColor4ui = (PFNGLCOLOR4UIPROC) load("glColor4ui"))) { return (0); }
-   if (!gload_glColor4uiv && !(gload_glColor4uiv = (PFNGLCOLOR4UIVPROC) load("glColor4uiv"))) { return (0); }
-   if (!gload_glColor4us && !(gload_glColor4us = (PFNGLCOLOR4USPROC) load("glColor4us"))) { return (0); }
-   if (!gload_glColor4usv && !(gload_glColor4usv = (PFNGLCOLOR4USVPROC) load("glColor4usv"))) { return (0); }
-   if (!gload_glEdgeFlag && !(gload_glEdgeFlag = (PFNGLEDGEFLAGPROC) load("glEdgeFlag"))) { return (0); }
-   if (!gload_glEdgeFlagv && !(gload_glEdgeFlagv = (PFNGLEDGEFLAGVPROC) load("glEdgeFlagv"))) { return (0); }
-   if (!gload_glEnd && !(gload_glEnd = (PFNGLENDPROC) load("glEnd"))) { return (0); }
-   if (!gload_glIndexd && !(gload_glIndexd = (PFNGLINDEXDPROC) load("glIndexd"))) { return (0); }
-   if (!gload_glIndexdv && !(gload_glIndexdv = (PFNGLINDEXDVPROC) load("glIndexdv"))) { return (0); }
-   if (!gload_glIndexf && !(gload_glIndexf = (PFNGLINDEXFPROC) load("glIndexf"))) { return (0); }
-   if (!gload_glIndexfv && !(gload_glIndexfv = (PFNGLINDEXFVPROC) load("glIndexfv"))) { return (0); }
-   if (!gload_glIndexi && !(gload_glIndexi = (PFNGLINDEXIPROC) load("glIndexi"))) { return (0); }
-   if (!gload_glIndexiv && !(gload_glIndexiv = (PFNGLINDEXIVPROC) load("glIndexiv"))) { return (0); }
-   if (!gload_glIndexs && !(gload_glIndexs = (PFNGLINDEXSPROC) load("glIndexs"))) { return (0); }
-   if (!gload_glIndexsv && !(gload_glIndexsv = (PFNGLINDEXSVPROC) load("glIndexsv"))) { return (0); }
-   if (!gload_glNormal3b && !(gload_glNormal3b = (PFNGLNORMAL3BPROC) load("glNormal3b"))) { return (0); }
-   if (!gload_glNormal3bv && !(gload_glNormal3bv = (PFNGLNORMAL3BVPROC) load("glNormal3bv"))) { return (0); }
-   if (!gload_glNormal3d && !(gload_glNormal3d = (PFNGLNORMAL3DPROC) load("glNormal3d"))) { return (0); }
-   if (!gload_glNormal3dv && !(gload_glNormal3dv = (PFNGLNORMAL3DVPROC) load("glNormal3dv"))) { return (0); }
-   if (!gload_glNormal3f && !(gload_glNormal3f = (PFNGLNORMAL3FPROC) load("glNormal3f"))) { return (0); }
-   if (!gload_glNormal3fv && !(gload_glNormal3fv = (PFNGLNORMAL3FVPROC) load("glNormal3fv"))) { return (0); }
-   if (!gload_glNormal3i && !(gload_glNormal3i = (PFNGLNORMAL3IPROC) load("glNormal3i"))) { return (0); }
-   if (!gload_glNormal3iv && !(gload_glNormal3iv = (PFNGLNORMAL3IVPROC) load("glNormal3iv"))) { return (0); }
-   if (!gload_glNormal3s && !(gload_glNormal3s = (PFNGLNORMAL3SPROC) load("glNormal3s"))) { return (0); }
-   if (!gload_glNormal3sv && !(gload_glNormal3sv = (PFNGLNORMAL3SVPROC) load("glNormal3sv"))) { return (0); }
-   if (!gload_glRasterPos2d && !(gload_glRasterPos2d = (PFNGLRASTERPOS2DPROC) load("glRasterPos2d"))) { return (0); }
-   if (!gload_glRasterPos2dv && !(gload_glRasterPos2dv = (PFNGLRASTERPOS2DVPROC) load("glRasterPos2dv"))) { return (0); }
-   if (!gload_glRasterPos2f && !(gload_glRasterPos2f = (PFNGLRASTERPOS2FPROC) load("glRasterPos2f"))) { return (0); }
-   if (!gload_glRasterPos2fv && !(gload_glRasterPos2fv = (PFNGLRASTERPOS2FVPROC) load("glRasterPos2fv"))) { return (0); }
-   if (!gload_glRasterPos2i && !(gload_glRasterPos2i = (PFNGLRASTERPOS2IPROC) load("glRasterPos2i"))) { return (0); }
-   if (!gload_glRasterPos2iv && !(gload_glRasterPos2iv = (PFNGLRASTERPOS2IVPROC) load("glRasterPos2iv"))) { return (0); }
-   if (!gload_glRasterPos2s && !(gload_glRasterPos2s = (PFNGLRASTERPOS2SPROC) load("glRasterPos2s"))) { return (0); }
-   if (!gload_glRasterPos2sv && !(gload_glRasterPos2sv = (PFNGLRASTERPOS2SVPROC) load("glRasterPos2sv"))) { return (0); }
-   if (!gload_glRasterPos3d && !(gload_glRasterPos3d = (PFNGLRASTERPOS3DPROC) load("glRasterPos3d"))) { return (0); }
-   if (!gload_glRasterPos3dv && !(gload_glRasterPos3dv = (PFNGLRASTERPOS3DVPROC) load("glRasterPos3dv"))) { return (0); }
-   if (!gload_glRasterPos3f && !(gload_glRasterPos3f = (PFNGLRASTERPOS3FPROC) load("glRasterPos3f"))) { return (0); }
-   if (!gload_glRasterPos3fv && !(gload_glRasterPos3fv = (PFNGLRASTERPOS3FVPROC) load("glRasterPos3fv"))) { return (0); }
-   if (!gload_glRasterPos3i && !(gload_glRasterPos3i = (PFNGLRASTERPOS3IPROC) load("glRasterPos3i"))) { return (0); }
-   if (!gload_glRasterPos3iv && !(gload_glRasterPos3iv = (PFNGLRASTERPOS3IVPROC) load("glRasterPos3iv"))) { return (0); }
-   if (!gload_glRasterPos3s && !(gload_glRasterPos3s = (PFNGLRASTERPOS3SPROC) load("glRasterPos3s"))) { return (0); }
-   if (!gload_glRasterPos3sv && !(gload_glRasterPos3sv = (PFNGLRASTERPOS3SVPROC) load("glRasterPos3sv"))) { return (0); }
-   if (!gload_glRasterPos4d && !(gload_glRasterPos4d = (PFNGLRASTERPOS4DPROC) load("glRasterPos4d"))) { return (0); }
-   if (!gload_glRasterPos4dv && !(gload_glRasterPos4dv = (PFNGLRASTERPOS4DVPROC) load("glRasterPos4dv"))) { return (0); }
-   if (!gload_glRasterPos4f && !(gload_glRasterPos4f = (PFNGLRASTERPOS4FPROC) load("glRasterPos4f"))) { return (0); }
-   if (!gload_glRasterPos4fv && !(gload_glRasterPos4fv = (PFNGLRASTERPOS4FVPROC) load("glRasterPos4fv"))) { return (0); }
-   if (!gload_glRasterPos4i && !(gload_glRasterPos4i = (PFNGLRASTERPOS4IPROC) load("glRasterPos4i"))) { return (0); }
-   if (!gload_glRasterPos4iv && !(gload_glRasterPos4iv = (PFNGLRASTERPOS4IVPROC) load("glRasterPos4iv"))) { return (0); }
-   if (!gload_glRasterPos4s && !(gload_glRasterPos4s = (PFNGLRASTERPOS4SPROC) load("glRasterPos4s"))) { return (0); }
-   if (!gload_glRasterPos4sv && !(gload_glRasterPos4sv = (PFNGLRASTERPOS4SVPROC) load("glRasterPos4sv"))) { return (0); }
-   if (!gload_glRectd && !(gload_glRectd = (PFNGLRECTDPROC) load("glRectd"))) { return (0); }
-   if (!gload_glRectdv && !(gload_glRectdv = (PFNGLRECTDVPROC) load("glRectdv"))) { return (0); }
-   if (!gload_glRectf && !(gload_glRectf = (PFNGLRECTFPROC) load("glRectf"))) { return (0); }
-   if (!gload_glRectfv && !(gload_glRectfv = (PFNGLRECTFVPROC) load("glRectfv"))) { return (0); }
-   if (!gload_glRecti && !(gload_glRecti = (PFNGLRECTIPROC) load("glRecti"))) { return (0); }
-   if (!gload_glRectiv && !(gload_glRectiv = (PFNGLRECTIVPROC) load("glRectiv"))) { return (0); }
-   if (!gload_glRects && !(gload_glRects = (PFNGLRECTSPROC) load("glRects"))) { return (0); }
-   if (!gload_glRectsv && !(gload_glRectsv = (PFNGLRECTSVPROC) load("glRectsv"))) { return (0); }
-   if (!gload_glTexCoord1d && !(gload_glTexCoord1d = (PFNGLTEXCOORD1DPROC) load("glTexCoord1d"))) { return (0); }
-   if (!gload_glTexCoord1dv && !(gload_glTexCoord1dv = (PFNGLTEXCOORD1DVPROC) load("glTexCoord1dv"))) { return (0); }
-   if (!gload_glTexCoord1f && !(gload_glTexCoord1f = (PFNGLTEXCOORD1FPROC) load("glTexCoord1f"))) { return (0); }
-   if (!gload_glTexCoord1fv && !(gload_glTexCoord1fv = (PFNGLTEXCOORD1FVPROC) load("glTexCoord1fv"))) { return (0); }
-   if (!gload_glTexCoord1i && !(gload_glTexCoord1i = (PFNGLTEXCOORD1IPROC) load("glTexCoord1i"))) { return (0); }
-   if (!gload_glTexCoord1iv && !(gload_glTexCoord1iv = (PFNGLTEXCOORD1IVPROC) load("glTexCoord1iv"))) { return (0); }
-   if (!gload_glTexCoord1s && !(gload_glTexCoord1s = (PFNGLTEXCOORD1SPROC) load("glTexCoord1s"))) { return (0); }
-   if (!gload_glTexCoord1sv && !(gload_glTexCoord1sv = (PFNGLTEXCOORD1SVPROC) load("glTexCoord1sv"))) { return (0); }
-   if (!gload_glTexCoord2d && !(gload_glTexCoord2d = (PFNGLTEXCOORD2DPROC) load("glTexCoord2d"))) { return (0); }
-   if (!gload_glTexCoord2dv && !(gload_glTexCoord2dv = (PFNGLTEXCOORD2DVPROC) load("glTexCoord2dv"))) { return (0); }
-   if (!gload_glTexCoord2f && !(gload_glTexCoord2f = (PFNGLTEXCOORD2FPROC) load("glTexCoord2f"))) { return (0); }
-   if (!gload_glTexCoord2fv && !(gload_glTexCoord2fv = (PFNGLTEXCOORD2FVPROC) load("glTexCoord2fv"))) { return (0); }
-   if (!gload_glTexCoord2i && !(gload_glTexCoord2i = (PFNGLTEXCOORD2IPROC) load("glTexCoord2i"))) { return (0); }
-   if (!gload_glTexCoord2iv && !(gload_glTexCoord2iv = (PFNGLTEXCOORD2IVPROC) load("glTexCoord2iv"))) { return (0); }
-   if (!gload_glTexCoord2s && !(gload_glTexCoord2s = (PFNGLTEXCOORD2SPROC) load("glTexCoord2s"))) { return (0); }
-   if (!gload_glTexCoord2sv && !(gload_glTexCoord2sv = (PFNGLTEXCOORD2SVPROC) load("glTexCoord2sv"))) { return (0); }
-   if (!gload_glTexCoord3d && !(gload_glTexCoord3d = (PFNGLTEXCOORD3DPROC) load("glTexCoord3d"))) { return (0); }
-   if (!gload_glTexCoord3dv && !(gload_glTexCoord3dv = (PFNGLTEXCOORD3DVPROC) load("glTexCoord3dv"))) { return (0); }
-   if (!gload_glTexCoord3f && !(gload_glTexCoord3f = (PFNGLTEXCOORD3FPROC) load("glTexCoord3f"))) { return (0); }
-   if (!gload_glTexCoord3fv && !(gload_glTexCoord3fv = (PFNGLTEXCOORD3FVPROC) load("glTexCoord3fv"))) { return (0); }
-   if (!gload_glTexCoord3i && !(gload_glTexCoord3i = (PFNGLTEXCOORD3IPROC) load("glTexCoord3i"))) { return (0); }
-   if (!gload_glTexCoord3iv && !(gload_glTexCoord3iv = (PFNGLTEXCOORD3IVPROC) load("glTexCoord3iv"))) { return (0); }
-   if (!gload_glTexCoord3s && !(gload_glTexCoord3s = (PFNGLTEXCOORD3SPROC) load("glTexCoord3s"))) { return (0); }
-   if (!gload_glTexCoord3sv && !(gload_glTexCoord3sv = (PFNGLTEXCOORD3SVPROC) load("glTexCoord3sv"))) { return (0); }
-   if (!gload_glTexCoord4d && !(gload_glTexCoord4d = (PFNGLTEXCOORD4DPROC) load("glTexCoord4d"))) { return (0); }
-   if (!gload_glTexCoord4dv && !(gload_glTexCoord4dv = (PFNGLTEXCOORD4DVPROC) load("glTexCoord4dv"))) { return (0); }
-   if (!gload_glTexCoord4f && !(gload_glTexCoord4f = (PFNGLTEXCOORD4FPROC) load("glTexCoord4f"))) { return (0); }
-   if (!gload_glTexCoord4fv && !(gload_glTexCoord4fv = (PFNGLTEXCOORD4FVPROC) load("glTexCoord4fv"))) { return (0); }
-   if (!gload_glTexCoord4i && !(gload_glTexCoord4i = (PFNGLTEXCOORD4IPROC) load("glTexCoord4i"))) { return (0); }
-   if (!gload_glTexCoord4iv && !(gload_glTexCoord4iv = (PFNGLTEXCOORD4IVPROC) load("glTexCoord4iv"))) { return (0); }
-   if (!gload_glTexCoord4s && !(gload_glTexCoord4s = (PFNGLTEXCOORD4SPROC) load("glTexCoord4s"))) { return (0); }
-   if (!gload_glTexCoord4sv && !(gload_glTexCoord4sv = (PFNGLTEXCOORD4SVPROC) load("glTexCoord4sv"))) { return (0); }
-   if (!gload_glVertex2d && !(gload_glVertex2d = (PFNGLVERTEX2DPROC) load("glVertex2d"))) { return (0); }
-   if (!gload_glVertex2dv && !(gload_glVertex2dv = (PFNGLVERTEX2DVPROC) load("glVertex2dv"))) { return (0); }
-   if (!gload_glVertex2f && !(gload_glVertex2f = (PFNGLVERTEX2FPROC) load("glVertex2f"))) { return (0); }
-   if (!gload_glVertex2fv && !(gload_glVertex2fv = (PFNGLVERTEX2FVPROC) load("glVertex2fv"))) { return (0); }
-   if (!gload_glVertex2i && !(gload_glVertex2i = (PFNGLVERTEX2IPROC) load("glVertex2i"))) { return (0); }
-   if (!gload_glVertex2iv && !(gload_glVertex2iv = (PFNGLVERTEX2IVPROC) load("glVertex2iv"))) { return (0); }
-   if (!gload_glVertex2s && !(gload_glVertex2s = (PFNGLVERTEX2SPROC) load("glVertex2s"))) { return (0); }
-   if (!gload_glVertex2sv && !(gload_glVertex2sv = (PFNGLVERTEX2SVPROC) load("glVertex2sv"))) { return (0); }
-   if (!gload_glVertex3d && !(gload_glVertex3d = (PFNGLVERTEX3DPROC) load("glVertex3d"))) { return (0); }
-   if (!gload_glVertex3dv && !(gload_glVertex3dv = (PFNGLVERTEX3DVPROC) load("glVertex3dv"))) { return (0); }
-   if (!gload_glVertex3f && !(gload_glVertex3f = (PFNGLVERTEX3FPROC) load("glVertex3f"))) { return (0); }
-   if (!gload_glVertex3fv && !(gload_glVertex3fv = (PFNGLVERTEX3FVPROC) load("glVertex3fv"))) { return (0); }
-   if (!gload_glVertex3i && !(gload_glVertex3i = (PFNGLVERTEX3IPROC) load("glVertex3i"))) { return (0); }
-   if (!gload_glVertex3iv && !(gload_glVertex3iv = (PFNGLVERTEX3IVPROC) load("glVertex3iv"))) { return (0); }
-   if (!gload_glVertex3s && !(gload_glVertex3s = (PFNGLVERTEX3SPROC) load("glVertex3s"))) { return (0); }
-   if (!gload_glVertex3sv && !(gload_glVertex3sv = (PFNGLVERTEX3SVPROC) load("glVertex3sv"))) { return (0); }
-   if (!gload_glVertex4d && !(gload_glVertex4d = (PFNGLVERTEX4DPROC) load("glVertex4d"))) { return (0); }
-   if (!gload_glVertex4dv && !(gload_glVertex4dv = (PFNGLVERTEX4DVPROC) load("glVertex4dv"))) { return (0); }
-   if (!gload_glVertex4f && !(gload_glVertex4f = (PFNGLVERTEX4FPROC) load("glVertex4f"))) { return (0); }
-   if (!gload_glVertex4fv && !(gload_glVertex4fv = (PFNGLVERTEX4FVPROC) load("glVertex4fv"))) { return (0); }
-   if (!gload_glVertex4i && !(gload_glVertex4i = (PFNGLVERTEX4IPROC) load("glVertex4i"))) { return (0); }
-   if (!gload_glVertex4iv && !(gload_glVertex4iv = (PFNGLVERTEX4IVPROC) load("glVertex4iv"))) { return (0); }
-   if (!gload_glVertex4s && !(gload_glVertex4s = (PFNGLVERTEX4SPROC) load("glVertex4s"))) { return (0); }
-   if (!gload_glVertex4sv && !(gload_glVertex4sv = (PFNGLVERTEX4SVPROC) load("glVertex4sv"))) { return (0); }
-   if (!gload_glClipPlane && !(gload_glClipPlane = (PFNGLCLIPPLANEPROC) load("glClipPlane"))) { return (0); }
-   if (!gload_glColorMaterial && !(gload_glColorMaterial = (PFNGLCOLORMATERIALPROC) load("glColorMaterial"))) { return (0); }
-   if (!gload_glFogf && !(gload_glFogf = (PFNGLFOGFPROC) load("glFogf"))) { return (0); }
-   if (!gload_glFogfv && !(gload_glFogfv = (PFNGLFOGFVPROC) load("glFogfv"))) { return (0); }
-   if (!gload_glFogi && !(gload_glFogi = (PFNGLFOGIPROC) load("glFogi"))) { return (0); }
-   if (!gload_glFogiv && !(gload_glFogiv = (PFNGLFOGIVPROC) load("glFogiv"))) { return (0); }
-   if (!gload_glLightf && !(gload_glLightf = (PFNGLLIGHTFPROC) load("glLightf"))) { return (0); }
-   if (!gload_glLightfv && !(gload_glLightfv = (PFNGLLIGHTFVPROC) load("glLightfv"))) { return (0); }
-   if (!gload_glLighti && !(gload_glLighti = (PFNGLLIGHTIPROC) load("glLighti"))) { return (0); }
-   if (!gload_glLightiv && !(gload_glLightiv = (PFNGLLIGHTIVPROC) load("glLightiv"))) { return (0); }
-   if (!gload_glLightModelf && !(gload_glLightModelf = (PFNGLLIGHTMODELFPROC) load("glLightModelf"))) { return (0); }
-   if (!gload_glLightModelfv && !(gload_glLightModelfv = (PFNGLLIGHTMODELFVPROC) load("glLightModelfv"))) { return (0); }
-   if (!gload_glLightModeli && !(gload_glLightModeli = (PFNGLLIGHTMODELIPROC) load("glLightModeli"))) { return (0); }
-   if (!gload_glLightModeliv && !(gload_glLightModeliv = (PFNGLLIGHTMODELIVPROC) load("glLightModeliv"))) { return (0); }
-   if (!gload_glLineStipple && !(gload_glLineStipple = (PFNGLLINESTIPPLEPROC) load("glLineStipple"))) { return (0); }
-   if (!gload_glMaterialf && !(gload_glMaterialf = (PFNGLMATERIALFPROC) load("glMaterialf"))) { return (0); }
-   if (!gload_glMaterialfv && !(gload_glMaterialfv = (PFNGLMATERIALFVPROC) load("glMaterialfv"))) { return (0); }
-   if (!gload_glMateriali && !(gload_glMateriali = (PFNGLMATERIALIPROC) load("glMateriali"))) { return (0); }
-   if (!gload_glMaterialiv && !(gload_glMaterialiv = (PFNGLMATERIALIVPROC) load("glMaterialiv"))) { return (0); }
-   if (!gload_glPolygonStipple && !(gload_glPolygonStipple = (PFNGLPOLYGONSTIPPLEPROC) load("glPolygonStipple"))) { return (0); }
-   if (!gload_glShadeModel && !(gload_glShadeModel = (PFNGLSHADEMODELPROC) load("glShadeModel"))) { return (0); }
-   if (!gload_glTexEnvf && !(gload_glTexEnvf = (PFNGLTEXENVFPROC) load("glTexEnvf"))) { return (0); }
-   if (!gload_glTexEnvfv && !(gload_glTexEnvfv = (PFNGLTEXENVFVPROC) load("glTexEnvfv"))) { return (0); }
-   if (!gload_glTexEnvi && !(gload_glTexEnvi = (PFNGLTEXENVIPROC) load("glTexEnvi"))) { return (0); }
-   if (!gload_glTexEnviv && !(gload_glTexEnviv = (PFNGLTEXENVIVPROC) load("glTexEnviv"))) { return (0); }
-   if (!gload_glTexGend && !(gload_glTexGend = (PFNGLTEXGENDPROC) load("glTexGend"))) { return (0); }
-   if (!gload_glTexGendv && !(gload_glTexGendv = (PFNGLTEXGENDVPROC) load("glTexGendv"))) { return (0); }
-   if (!gload_glTexGenf && !(gload_glTexGenf = (PFNGLTEXGENFPROC) load("glTexGenf"))) { return (0); }
-   if (!gload_glTexGenfv && !(gload_glTexGenfv = (PFNGLTEXGENFVPROC) load("glTexGenfv"))) { return (0); }
-   if (!gload_glTexGeni && !(gload_glTexGeni = (PFNGLTEXGENIPROC) load("glTexGeni"))) { return (0); }
-   if (!gload_glTexGeniv && !(gload_glTexGeniv = (PFNGLTEXGENIVPROC) load("glTexGeniv"))) { return (0); }
-   if (!gload_glFeedbackBuffer && !(gload_glFeedbackBuffer = (PFNGLFEEDBACKBUFFERPROC) load("glFeedbackBuffer"))) { return (0); }
-   if (!gload_glSelectBuffer && !(gload_glSelectBuffer = (PFNGLSELECTBUFFERPROC) load("glSelectBuffer"))) { return (0); }
-   if (!gload_glRenderMode && !(gload_glRenderMode = (PFNGLRENDERMODEPROC) load("glRenderMode"))) { return (0); }
-   if (!gload_glInitNames && !(gload_glInitNames = (PFNGLINITNAMESPROC) load("glInitNames"))) { return (0); }
-   if (!gload_glLoadName && !(gload_glLoadName = (PFNGLLOADNAMEPROC) load("glLoadName"))) { return (0); }
-   if (!gload_glPassThrough && !(gload_glPassThrough = (PFNGLPASSTHROUGHPROC) load("glPassThrough"))) { return (0); }
-   if (!gload_glPopName && !(gload_glPopName = (PFNGLPOPNAMEPROC) load("glPopName"))) { return (0); }
-   if (!gload_glPushName && !(gload_glPushName = (PFNGLPUSHNAMEPROC) load("glPushName"))) { return (0); }
-   if (!gload_glClearAccum && !(gload_glClearAccum = (PFNGLCLEARACCUMPROC) load("glClearAccum"))) { return (0); }
-   if (!gload_glClearIndex && !(gload_glClearIndex = (PFNGLCLEARINDEXPROC) load("glClearIndex"))) { return (0); }
-   if (!gload_glIndexMask && !(gload_glIndexMask = (PFNGLINDEXMASKPROC) load("glIndexMask"))) { return (0); }
-   if (!gload_glAccum && !(gload_glAccum = (PFNGLACCUMPROC) load("glAccum"))) { return (0); }
-   if (!gload_glPopAttrib && !(gload_glPopAttrib = (PFNGLPOPATTRIBPROC) load("glPopAttrib"))) { return (0); }
-   if (!gload_glPushAttrib && !(gload_glPushAttrib = (PFNGLPUSHATTRIBPROC) load("glPushAttrib"))) { return (0); }
-   if (!gload_glMap1d && !(gload_glMap1d = (PFNGLMAP1DPROC) load("glMap1d"))) { return (0); }
-   if (!gload_glMap1f && !(gload_glMap1f = (PFNGLMAP1FPROC) load("glMap1f"))) { return (0); }
-   if (!gload_glMap2d && !(gload_glMap2d = (PFNGLMAP2DPROC) load("glMap2d"))) { return (0); }
-   if (!gload_glMap2f && !(gload_glMap2f = (PFNGLMAP2FPROC) load("glMap2f"))) { return (0); }
-   if (!gload_glMapGrid1d && !(gload_glMapGrid1d = (PFNGLMAPGRID1DPROC) load("glMapGrid1d"))) { return (0); }
-   if (!gload_glMapGrid1f && !(gload_glMapGrid1f = (PFNGLMAPGRID1FPROC) load("glMapGrid1f"))) { return (0); }
-   if (!gload_glMapGrid2d && !(gload_glMapGrid2d = (PFNGLMAPGRID2DPROC) load("glMapGrid2d"))) { return (0); }
-   if (!gload_glMapGrid2f && !(gload_glMapGrid2f = (PFNGLMAPGRID2FPROC) load("glMapGrid2f"))) { return (0); }
-   if (!gload_glEvalCoord1d && !(gload_glEvalCoord1d = (PFNGLEVALCOORD1DPROC) load("glEvalCoord1d"))) { return (0); }
-   if (!gload_glEvalCoord1dv && !(gload_glEvalCoord1dv = (PFNGLEVALCOORD1DVPROC) load("glEvalCoord1dv"))) { return (0); }
-   if (!gload_glEvalCoord1f && !(gload_glEvalCoord1f = (PFNGLEVALCOORD1FPROC) load("glEvalCoord1f"))) { return (0); }
-   if (!gload_glEvalCoord1fv && !(gload_glEvalCoord1fv = (PFNGLEVALCOORD1FVPROC) load("glEvalCoord1fv"))) { return (0); }
-   if (!gload_glEvalCoord2d && !(gload_glEvalCoord2d = (PFNGLEVALCOORD2DPROC) load("glEvalCoord2d"))) { return (0); }
-   if (!gload_glEvalCoord2dv && !(gload_glEvalCoord2dv = (PFNGLEVALCOORD2DVPROC) load("glEvalCoord2dv"))) { return (0); }
-   if (!gload_glEvalCoord2f && !(gload_glEvalCoord2f = (PFNGLEVALCOORD2FPROC) load("glEvalCoord2f"))) { return (0); }
-   if (!gload_glEvalCoord2fv && !(gload_glEvalCoord2fv = (PFNGLEVALCOORD2FVPROC) load("glEvalCoord2fv"))) { return (0); }
-   if (!gload_glEvalMesh1 && !(gload_glEvalMesh1 = (PFNGLEVALMESH1PROC) load("glEvalMesh1"))) { return (0); }
-   if (!gload_glEvalPoint1 && !(gload_glEvalPoint1 = (PFNGLEVALPOINT1PROC) load("glEvalPoint1"))) { return (0); }
-   if (!gload_glEvalMesh2 && !(gload_glEvalMesh2 = (PFNGLEVALMESH2PROC) load("glEvalMesh2"))) { return (0); }
-   if (!gload_glEvalPoint2 && !(gload_glEvalPoint2 = (PFNGLEVALPOINT2PROC) load("glEvalPoint2"))) { return (0); }
-   if (!gload_glAlphaFunc && !(gload_glAlphaFunc = (PFNGLALPHAFUNCPROC) load("glAlphaFunc"))) { return (0); }
-   if (!gload_glPixelZoom && !(gload_glPixelZoom = (PFNGLPIXELZOOMPROC) load("glPixelZoom"))) { return (0); }
-   if (!gload_glPixelTransferf && !(gload_glPixelTransferf = (PFNGLPIXELTRANSFERFPROC) load("glPixelTransferf"))) { return (0); }
-   if (!gload_glPixelTransferi && !(gload_glPixelTransferi = (PFNGLPIXELTRANSFERIPROC) load("glPixelTransferi"))) { return (0); }
-   if (!gload_glPixelMapfv && !(gload_glPixelMapfv = (PFNGLPIXELMAPFVPROC) load("glPixelMapfv"))) { return (0); }
-   if (!gload_glPixelMapuiv && !(gload_glPixelMapuiv = (PFNGLPIXELMAPUIVPROC) load("glPixelMapuiv"))) { return (0); }
-   if (!gload_glPixelMapusv && !(gload_glPixelMapusv = (PFNGLPIXELMAPUSVPROC) load("glPixelMapusv"))) { return (0); }
-   if (!gload_glCopyPixels && !(gload_glCopyPixels = (PFNGLCOPYPIXELSPROC) load("glCopyPixels"))) { return (0); }
-   if (!gload_glDrawPixels && !(gload_glDrawPixels = (PFNGLDRAWPIXELSPROC) load("glDrawPixels"))) { return (0); }
-   if (!gload_glGetClipPlane && !(gload_glGetClipPlane = (PFNGLGETCLIPPLANEPROC) load("glGetClipPlane"))) { return (0); }
-   if (!gload_glGetLightfv && !(gload_glGetLightfv = (PFNGLGETLIGHTFVPROC) load("glGetLightfv"))) { return (0); }
-   if (!gload_glGetLightiv && !(gload_glGetLightiv = (PFNGLGETLIGHTIVPROC) load("glGetLightiv"))) { return (0); }
-   if (!gload_glGetMapdv && !(gload_glGetMapdv = (PFNGLGETMAPDVPROC) load("glGetMapdv"))) { return (0); }
-   if (!gload_glGetMapfv && !(gload_glGetMapfv = (PFNGLGETMAPFVPROC) load("glGetMapfv"))) { return (0); }
-   if (!gload_glGetMapiv && !(gload_glGetMapiv = (PFNGLGETMAPIVPROC) load("glGetMapiv"))) { return (0); }
-   if (!gload_glGetMaterialfv && !(gload_glGetMaterialfv = (PFNGLGETMATERIALFVPROC) load("glGetMaterialfv"))) { return (0); }
-   if (!gload_glGetMaterialiv && !(gload_glGetMaterialiv = (PFNGLGETMATERIALIVPROC) load("glGetMaterialiv"))) { return (0); }
-   if (!gload_glGetPixelMapfv && !(gload_glGetPixelMapfv = (PFNGLGETPIXELMAPFVPROC) load("glGetPixelMapfv"))) { return (0); }
-   if (!gload_glGetPixelMapuiv && !(gload_glGetPixelMapuiv = (PFNGLGETPIXELMAPUIVPROC) load("glGetPixelMapuiv"))) { return (0); }
-   if (!gload_glGetPixelMapusv && !(gload_glGetPixelMapusv = (PFNGLGETPIXELMAPUSVPROC) load("glGetPixelMapusv"))) { return (0); }
-   if (!gload_glGetPolygonStipple && !(gload_glGetPolygonStipple = (PFNGLGETPOLYGONSTIPPLEPROC) load("glGetPolygonStipple"))) { return (0); }
-   if (!gload_glGetTexEnvfv && !(gload_glGetTexEnvfv = (PFNGLGETTEXENVFVPROC) load("glGetTexEnvfv"))) { return (0); }
-   if (!gload_glGetTexEnviv && !(gload_glGetTexEnviv = (PFNGLGETTEXENVIVPROC) load("glGetTexEnviv"))) { return (0); }
-   if (!gload_glGetTexGendv && !(gload_glGetTexGendv = (PFNGLGETTEXGENDVPROC) load("glGetTexGendv"))) { return (0); }
-   if (!gload_glGetTexGenfv && !(gload_glGetTexGenfv = (PFNGLGETTEXGENFVPROC) load("glGetTexGenfv"))) { return (0); }
-   if (!gload_glGetTexGeniv && !(gload_glGetTexGeniv = (PFNGLGETTEXGENIVPROC) load("glGetTexGeniv"))) { return (0); }
-   if (!gload_glIsList && !(gload_glIsList = (PFNGLISLISTPROC) load("glIsList"))) { return (0); }
-   if (!gload_glFrustum && !(gload_glFrustum = (PFNGLFRUSTUMPROC) load("glFrustum"))) { return (0); }
-   if (!gload_glLoadIdentity && !(gload_glLoadIdentity = (PFNGLLOADIDENTITYPROC) load("glLoadIdentity"))) { return (0); }
-   if (!gload_glLoadMatrixf && !(gload_glLoadMatrixf = (PFNGLLOADMATRIXFPROC) load("glLoadMatrixf"))) { return (0); }
-   if (!gload_glLoadMatrixd && !(gload_glLoadMatrixd = (PFNGLLOADMATRIXDPROC) load("glLoadMatrixd"))) { return (0); }
-   if (!gload_glMatrixMode && !(gload_glMatrixMode = (PFNGLMATRIXMODEPROC) load("glMatrixMode"))) { return (0); }
-   if (!gload_glMultMatrixf && !(gload_glMultMatrixf = (PFNGLMULTMATRIXFPROC) load("glMultMatrixf"))) { return (0); }
-   if (!gload_glMultMatrixd && !(gload_glMultMatrixd = (PFNGLMULTMATRIXDPROC) load("glMultMatrixd"))) { return (0); }
-   if (!gload_glOrtho && !(gload_glOrtho = (PFNGLORTHOPROC) load("glOrtho"))) { return (0); }
-   if (!gload_glPopMatrix && !(gload_glPopMatrix = (PFNGLPOPMATRIXPROC) load("glPopMatrix"))) { return (0); }
-   if (!gload_glPushMatrix && !(gload_glPushMatrix = (PFNGLPUSHMATRIXPROC) load("glPushMatrix"))) { return (0); }
-   if (!gload_glRotated && !(gload_glRotated = (PFNGLROTATEDPROC) load("glRotated"))) { return (0); }
-   if (!gload_glRotatef && !(gload_glRotatef = (PFNGLROTATEFPROC) load("glRotatef"))) { return (0); }
-   if (!gload_glScaled && !(gload_glScaled = (PFNGLSCALEDPROC) load("glScaled"))) { return (0); }
-   if (!gload_glScalef && !(gload_glScalef = (PFNGLSCALEFPROC) load("glScalef"))) { return (0); }
-   if (!gload_glTranslated && !(gload_glTranslated = (PFNGLTRANSLATEDPROC) load("glTranslated"))) { return (0); }
-   if (!gload_glTranslatef && !(gload_glTranslatef = (PFNGLTRANSLATEFPROC) load("glTranslatef"))) { return (0); }
-
-#  endif /* GL_VERSION_1_0 */
-#  if defined GL_VERSION_1_1
-
-   if (!gload_glDrawArrays && !(gload_glDrawArrays = (PFNGLDRAWARRAYSPROC) load("glDrawArrays"))) { return (0); }
-   if (!gload_glDrawElements && !(gload_glDrawElements = (PFNGLDRAWELEMENTSPROC) load("glDrawElements"))) { return (0); }
-   if (!gload_glGetPointerv && !(gload_glGetPointerv = (PFNGLGETPOINTERVPROC) load("glGetPointerv"))) { return (0); }
-   if (!gload_glPolygonOffset && !(gload_glPolygonOffset = (PFNGLPOLYGONOFFSETPROC) load("glPolygonOffset"))) { return (0); }
-   if (!gload_glCopyTexImage1D && !(gload_glCopyTexImage1D = (PFNGLCOPYTEXIMAGE1DPROC) load("glCopyTexImage1D"))) { return (0); }
-   if (!gload_glCopyTexImage2D && !(gload_glCopyTexImage2D = (PFNGLCOPYTEXIMAGE2DPROC) load("glCopyTexImage2D"))) { return (0); }
-   if (!gload_glCopyTexSubImage1D && !(gload_glCopyTexSubImage1D = (PFNGLCOPYTEXSUBIMAGE1DPROC) load("glCopyTexSubImage1D"))) { return (0); }
-   if (!gload_glCopyTexSubImage2D && !(gload_glCopyTexSubImage2D = (PFNGLCOPYTEXSUBIMAGE2DPROC) load("glCopyTexSubImage2D"))) { return (0); }
-   if (!gload_glTexSubImage1D && !(gload_glTexSubImage1D = (PFNGLTEXSUBIMAGE1DPROC) load("glTexSubImage1D"))) { return (0); }
-   if (!gload_glTexSubImage2D && !(gload_glTexSubImage2D = (PFNGLTEXSUBIMAGE2DPROC) load("glTexSubImage2D"))) { return (0); }
-   if (!gload_glBindTexture && !(gload_glBindTexture = (PFNGLBINDTEXTUREPROC) load("glBindTexture"))) { return (0); }
-   if (!gload_glDeleteTextures && !(gload_glDeleteTextures = (PFNGLDELETETEXTURESPROC) load("glDeleteTextures"))) { return (0); }
-   if (!gload_glGenTextures && !(gload_glGenTextures = (PFNGLGENTEXTURESPROC) load("glGenTextures"))) { return (0); }
-   if (!gload_glIsTexture && !(gload_glIsTexture = (PFNGLISTEXTUREPROC) load("glIsTexture"))) { return (0); }
-   if (!gload_glArrayElement && !(gload_glArrayElement = (PFNGLARRAYELEMENTPROC) load("glArrayElement"))) { return (0); }
-   if (!gload_glColorPointer && !(gload_glColorPointer = (PFNGLCOLORPOINTERPROC) load("glColorPointer"))) { return (0); }
-   if (!gload_glDisableClientState && !(gload_glDisableClientState = (PFNGLDISABLECLIENTSTATEPROC) load("glDisableClientState"))) { return (0); }
-   if (!gload_glEdgeFlagPointer && !(gload_glEdgeFlagPointer = (PFNGLEDGEFLAGPOINTERPROC) load("glEdgeFlagPointer"))) { return (0); }
-   if (!gload_glEnableClientState && !(gload_glEnableClientState = (PFNGLENABLECLIENTSTATEPROC) load("glEnableClientState"))) { return (0); }
-   if (!gload_glIndexPointer && !(gload_glIndexPointer = (PFNGLINDEXPOINTERPROC) load("glIndexPointer"))) { return (0); }
-   if (!gload_glInterleavedArrays && !(gload_glInterleavedArrays = (PFNGLINTERLEAVEDARRAYSPROC) load("glInterleavedArrays"))) { return (0); }
-   if (!gload_glNormalPointer && !(gload_glNormalPointer = (PFNGLNORMALPOINTERPROC) load("glNormalPointer"))) { return (0); }
-   if (!gload_glTexCoordPointer && !(gload_glTexCoordPointer = (PFNGLTEXCOORDPOINTERPROC) load("glTexCoordPointer"))) { return (0); }
-   if (!gload_glVertexPointer && !(gload_glVertexPointer = (PFNGLVERTEXPOINTERPROC) load("glVertexPointer"))) { return (0); }
-   if (!gload_glAreTexturesResident && !(gload_glAreTexturesResident = (PFNGLARETEXTURESRESIDENTPROC) load("glAreTexturesResident"))) { return (0); }
-   if (!gload_glPrioritizeTextures && !(gload_glPrioritizeTextures = (PFNGLPRIORITIZETEXTURESPROC) load("glPrioritizeTextures"))) { return (0); }
-   if (!gload_glIndexub && !(gload_glIndexub = (PFNGLINDEXUBPROC) load("glIndexub"))) { return (0); }
-   if (!gload_glIndexubv && !(gload_glIndexubv = (PFNGLINDEXUBVPROC) load("glIndexubv"))) { return (0); }
-   if (!gload_glPopClientAttrib && !(gload_glPopClientAttrib = (PFNGLPOPCLIENTATTRIBPROC) load("glPopClientAttrib"))) { return (0); }
-   if (!gload_glPushClientAttrib && !(gload_glPushClientAttrib = (PFNGLPUSHCLIENTATTRIBPROC) load("glPushClientAttrib"))) { return (0); }
-
-#  endif /* GL_VERSION_1_1 */
-#  if defined GL_VERSION_1_2
-
-   if (!gload_glDrawRangeElements && !(gload_glDrawRangeElements = (PFNGLDRAWRANGEELEMENTSPROC) load("glDrawRangeElements"))) { return (0); }
-   if (!gload_glTexImage3D && !(gload_glTexImage3D = (PFNGLTEXIMAGE3DPROC) load("glTexImage3D"))) { return (0); }
-   if (!gload_glTexSubImage3D && !(gload_glTexSubImage3D = (PFNGLTEXSUBIMAGE3DPROC) load("glTexSubImage3D"))) { return (0); }
-   if (!gload_glCopyTexSubImage3D && !(gload_glCopyTexSubImage3D = (PFNGLCOPYTEXSUBIMAGE3DPROC) load("glCopyTexSubImage3D"))) { return (0); }
-
-#  endif /* GL_VERSION_1_2 */
-#  if defined GL_VERSION_1_3
-
-   if (!gload_glActiveTexture && !(gload_glActiveTexture = (PFNGLACTIVETEXTUREPROC) load("glActiveTexture"))) { return (0); }
-   if (!gload_glSampleCoverage && !(gload_glSampleCoverage = (PFNGLSAMPLECOVERAGEPROC) load("glSampleCoverage"))) { return (0); }
-   if (!gload_glCompressedTexImage3D && !(gload_glCompressedTexImage3D = (PFNGLCOMPRESSEDTEXIMAGE3DPROC) load("glCompressedTexImage3D"))) { return (0); }
-   if (!gload_glCompressedTexImage2D && !(gload_glCompressedTexImage2D = (PFNGLCOMPRESSEDTEXIMAGE2DPROC) load("glCompressedTexImage2D"))) { return (0); }
-   if (!gload_glCompressedTexImage1D && !(gload_glCompressedTexImage1D = (PFNGLCOMPRESSEDTEXIMAGE1DPROC) load("glCompressedTexImage1D"))) { return (0); }
-   if (!gload_glCompressedTexSubImage3D && !(gload_glCompressedTexSubImage3D = (PFNGLCOMPRESSEDTEXSUBIMAGE3DPROC) load("glCompressedTexSubImage3D"))) { return (0); }
-   if (!gload_glCompressedTexSubImage2D && !(gload_glCompressedTexSubImage2D = (PFNGLCOMPRESSEDTEXSUBIMAGE2DPROC) load("glCompressedTexSubImage2D"))) { return (0); }
-   if (!gload_glCompressedTexSubImage1D && !(gload_glCompressedTexSubImage1D = (PFNGLCOMPRESSEDTEXSUBIMAGE1DPROC) load("glCompressedTexSubImage1D"))) { return (0); }
-   if (!gload_glGetCompressedTexImage && !(gload_glGetCompressedTexImage = (PFNGLGETCOMPRESSEDTEXIMAGEPROC) load("glGetCompressedTexImage"))) { return (0); }
-   if (!gload_glClientActiveTexture && !(gload_glClientActiveTexture = (PFNGLCLIENTACTIVETEXTUREPROC) load("glClientActiveTexture"))) { return (0); }
-   if (!gload_glMultiTexCoord1d && !(gload_glMultiTexCoord1d = (PFNGLMULTITEXCOORD1DPROC) load("glMultiTexCoord1d"))) { return (0); }
-   if (!gload_glMultiTexCoord1dv && !(gload_glMultiTexCoord1dv = (PFNGLMULTITEXCOORD1DVPROC) load("glMultiTexCoord1dv"))) { return (0); }
-   if (!gload_glMultiTexCoord1f && !(gload_glMultiTexCoord1f = (PFNGLMULTITEXCOORD1FPROC) load("glMultiTexCoord1f"))) { return (0); }
-   if (!gload_glMultiTexCoord1fv && !(gload_glMultiTexCoord1fv = (PFNGLMULTITEXCOORD1FVPROC) load("glMultiTexCoord1fv"))) { return (0); }
-   if (!gload_glMultiTexCoord1i && !(gload_glMultiTexCoord1i = (PFNGLMULTITEXCOORD1IPROC) load("glMultiTexCoord1i"))) { return (0); }
-   if (!gload_glMultiTexCoord1iv && !(gload_glMultiTexCoord1iv = (PFNGLMULTITEXCOORD1IVPROC) load("glMultiTexCoord1iv"))) { return (0); }
-   if (!gload_glMultiTexCoord1s && !(gload_glMultiTexCoord1s = (PFNGLMULTITEXCOORD1SPROC) load("glMultiTexCoord1s"))) { return (0); }
-   if (!gload_glMultiTexCoord1sv && !(gload_glMultiTexCoord1sv = (PFNGLMULTITEXCOORD1SVPROC) load("glMultiTexCoord1sv"))) { return (0); }
-   if (!gload_glMultiTexCoord2d && !(gload_glMultiTexCoord2d = (PFNGLMULTITEXCOORD2DPROC) load("glMultiTexCoord2d"))) { return (0); }
-   if (!gload_glMultiTexCoord2dv && !(gload_glMultiTexCoord2dv = (PFNGLMULTITEXCOORD2DVPROC) load("glMultiTexCoord2dv"))) { return (0); }
-   if (!gload_glMultiTexCoord2f && !(gload_glMultiTexCoord2f = (PFNGLMULTITEXCOORD2FPROC) load("glMultiTexCoord2f"))) { return (0); }
-   if (!gload_glMultiTexCoord2fv && !(gload_glMultiTexCoord2fv = (PFNGLMULTITEXCOORD2FVPROC) load("glMultiTexCoord2fv"))) { return (0); }
-   if (!gload_glMultiTexCoord2i && !(gload_glMultiTexCoord2i = (PFNGLMULTITEXCOORD2IPROC) load("glMultiTexCoord2i"))) { return (0); }
-   if (!gload_glMultiTexCoord2iv && !(gload_glMultiTexCoord2iv = (PFNGLMULTITEXCOORD2IVPROC) load("glMultiTexCoord2iv"))) { return (0); }
-   if (!gload_glMultiTexCoord2s && !(gload_glMultiTexCoord2s = (PFNGLMULTITEXCOORD2SPROC) load("glMultiTexCoord2s"))) { return (0); }
-   if (!gload_glMultiTexCoord2sv && !(gload_glMultiTexCoord2sv = (PFNGLMULTITEXCOORD2SVPROC) load("glMultiTexCoord2sv"))) { return (0); }
-   if (!gload_glMultiTexCoord3d && !(gload_glMultiTexCoord3d = (PFNGLMULTITEXCOORD3DPROC) load("glMultiTexCoord3d"))) { return (0); }
-   if (!gload_glMultiTexCoord3dv && !(gload_glMultiTexCoord3dv = (PFNGLMULTITEXCOORD3DVPROC) load("glMultiTexCoord3dv"))) { return (0); }
-   if (!gload_glMultiTexCoord3f && !(gload_glMultiTexCoord3f = (PFNGLMULTITEXCOORD3FPROC) load("glMultiTexCoord3f"))) { return (0); }
-   if (!gload_glMultiTexCoord3fv && !(gload_glMultiTexCoord3fv = (PFNGLMULTITEXCOORD3FVPROC) load("glMultiTexCoord3fv"))) { return (0); }
-   if (!gload_glMultiTexCoord3i && !(gload_glMultiTexCoord3i = (PFNGLMULTITEXCOORD3IPROC) load("glMultiTexCoord3i"))) { return (0); }
-   if (!gload_glMultiTexCoord3iv && !(gload_glMultiTexCoord3iv = (PFNGLMULTITEXCOORD3IVPROC) load("glMultiTexCoord3iv"))) { return (0); }
-   if (!gload_glMultiTexCoord3s && !(gload_glMultiTexCoord3s = (PFNGLMULTITEXCOORD3SPROC) load("glMultiTexCoord3s"))) { return (0); }
-   if (!gload_glMultiTexCoord3sv && !(gload_glMultiTexCoord3sv = (PFNGLMULTITEXCOORD3SVPROC) load("glMultiTexCoord3sv"))) { return (0); }
-   if (!gload_glMultiTexCoord4d && !(gload_glMultiTexCoord4d = (PFNGLMULTITEXCOORD4DPROC) load("glMultiTexCoord4d"))) { return (0); }
-   if (!gload_glMultiTexCoord4dv && !(gload_glMultiTexCoord4dv = (PFNGLMULTITEXCOORD4DVPROC) load("glMultiTexCoord4dv"))) { return (0); }
-   if (!gload_glMultiTexCoord4f && !(gload_glMultiTexCoord4f = (PFNGLMULTITEXCOORD4FPROC) load("glMultiTexCoord4f"))) { return (0); }
-   if (!gload_glMultiTexCoord4fv && !(gload_glMultiTexCoord4fv = (PFNGLMULTITEXCOORD4FVPROC) load("glMultiTexCoord4fv"))) { return (0); }
-   if (!gload_glMultiTexCoord4i && !(gload_glMultiTexCoord4i = (PFNGLMULTITEXCOORD4IPROC) load("glMultiTexCoord4i"))) { return (0); }
-   if (!gload_glMultiTexCoord4iv && !(gload_glMultiTexCoord4iv = (PFNGLMULTITEXCOORD4IVPROC) load("glMultiTexCoord4iv"))) { return (0); }
-   if (!gload_glMultiTexCoord4s && !(gload_glMultiTexCoord4s = (PFNGLMULTITEXCOORD4SPROC) load("glMultiTexCoord4s"))) { return (0); }
-   if (!gload_glMultiTexCoord4sv && !(gload_glMultiTexCoord4sv = (PFNGLMULTITEXCOORD4SVPROC) load("glMultiTexCoord4sv"))) { return (0); }
-   if (!gload_glLoadTransposeMatrixf && !(gload_glLoadTransposeMatrixf = (PFNGLLOADTRANSPOSEMATRIXFPROC) load("glLoadTransposeMatrixf"))) { return (0); }
-   if (!gload_glLoadTransposeMatrixd && !(gload_glLoadTransposeMatrixd = (PFNGLLOADTRANSPOSEMATRIXDPROC) load("glLoadTransposeMatrixd"))) { return (0); }
-   if (!gload_glMultTransposeMatrixf && !(gload_glMultTransposeMatrixf = (PFNGLMULTTRANSPOSEMATRIXFPROC) load("glMultTransposeMatrixf"))) { return (0); }
-   if (!gload_glMultTransposeMatrixd && !(gload_glMultTransposeMatrixd = (PFNGLMULTTRANSPOSEMATRIXDPROC) load("glMultTransposeMatrixd"))) { return (0); }
-
-#  endif /* GL_VERSION_1_3 */
-#  if defined GL_VERSION_1_4
-
-   if (!gload_glBlendFuncSeparate && !(gload_glBlendFuncSeparate = (PFNGLBLENDFUNCSEPARATEPROC) load("glBlendFuncSeparate"))) { return (0); }
-   if (!gload_glMultiDrawArrays && !(gload_glMultiDrawArrays = (PFNGLMULTIDRAWARRAYSPROC) load("glMultiDrawArrays"))) { return (0); }
-   if (!gload_glMultiDrawElements && !(gload_glMultiDrawElements = (PFNGLMULTIDRAWELEMENTSPROC) load("glMultiDrawElements"))) { return (0); }
-   if (!gload_glPointParameterf && !(gload_glPointParameterf = (PFNGLPOINTPARAMETERFPROC) load("glPointParameterf"))) { return (0); }
-   if (!gload_glPointParameterfv && !(gload_glPointParameterfv = (PFNGLPOINTPARAMETERFVPROC) load("glPointParameterfv"))) { return (0); }
-   if (!gload_glPointParameteri && !(gload_glPointParameteri = (PFNGLPOINTPARAMETERIPROC) load("glPointParameteri"))) { return (0); }
-   if (!gload_glPointParameteriv && !(gload_glPointParameteriv = (PFNGLPOINTPARAMETERIVPROC) load("glPointParameteriv"))) { return (0); }
-   if (!gload_glFogCoordf && !(gload_glFogCoordf = (PFNGLFOGCOORDFPROC) load("glFogCoordf"))) { return (0); }
-   if (!gload_glFogCoordfv && !(gload_glFogCoordfv = (PFNGLFOGCOORDFVPROC) load("glFogCoordfv"))) { return (0); }
-   if (!gload_glFogCoordd && !(gload_glFogCoordd = (PFNGLFOGCOORDDPROC) load("glFogCoordd"))) { return (0); }
-   if (!gload_glFogCoorddv && !(gload_glFogCoorddv = (PFNGLFOGCOORDDVPROC) load("glFogCoorddv"))) { return (0); }
-   if (!gload_glFogCoordPointer && !(gload_glFogCoordPointer = (PFNGLFOGCOORDPOINTERPROC) load("glFogCoordPointer"))) { return (0); }
-   if (!gload_glSecondaryColor3b && !(gload_glSecondaryColor3b = (PFNGLSECONDARYCOLOR3BPROC) load("glSecondaryColor3b"))) { return (0); }
-   if (!gload_glSecondaryColor3bv && !(gload_glSecondaryColor3bv = (PFNGLSECONDARYCOLOR3BVPROC) load("glSecondaryColor3bv"))) { return (0); }
-   if (!gload_glSecondaryColor3d && !(gload_glSecondaryColor3d = (PFNGLSECONDARYCOLOR3DPROC) load("glSecondaryColor3d"))) { return (0); }
-   if (!gload_glSecondaryColor3dv && !(gload_glSecondaryColor3dv = (PFNGLSECONDARYCOLOR3DVPROC) load("glSecondaryColor3dv"))) { return (0); }
-   if (!gload_glSecondaryColor3f && !(gload_glSecondaryColor3f = (PFNGLSECONDARYCOLOR3FPROC) load("glSecondaryColor3f"))) { return (0); }
-   if (!gload_glSecondaryColor3fv && !(gload_glSecondaryColor3fv = (PFNGLSECONDARYCOLOR3FVPROC) load("glSecondaryColor3fv"))) { return (0); }
-   if (!gload_glSecondaryColor3i && !(gload_glSecondaryColor3i = (PFNGLSECONDARYCOLOR3IPROC) load("glSecondaryColor3i"))) { return (0); }
-   if (!gload_glSecondaryColor3iv && !(gload_glSecondaryColor3iv = (PFNGLSECONDARYCOLOR3IVPROC) load("glSecondaryColor3iv"))) { return (0); }
-   if (!gload_glSecondaryColor3s && !(gload_glSecondaryColor3s = (PFNGLSECONDARYCOLOR3SPROC) load("glSecondaryColor3s"))) { return (0); }
-   if (!gload_glSecondaryColor3sv && !(gload_glSecondaryColor3sv = (PFNGLSECONDARYCOLOR3SVPROC) load("glSecondaryColor3sv"))) { return (0); }
-   if (!gload_glSecondaryColor3ub && !(gload_glSecondaryColor3ub = (PFNGLSECONDARYCOLOR3UBPROC) load("glSecondaryColor3ub"))) { return (0); }
-   if (!gload_glSecondaryColor3ubv && !(gload_glSecondaryColor3ubv = (PFNGLSECONDARYCOLOR3UBVPROC) load("glSecondaryColor3ubv"))) { return (0); }
-   if (!gload_glSecondaryColor3ui && !(gload_glSecondaryColor3ui = (PFNGLSECONDARYCOLOR3UIPROC) load("glSecondaryColor3ui"))) { return (0); }
-   if (!gload_glSecondaryColor3uiv && !(gload_glSecondaryColor3uiv = (PFNGLSECONDARYCOLOR3UIVPROC) load("glSecondaryColor3uiv"))) { return (0); }
-   if (!gload_glSecondaryColor3us && !(gload_glSecondaryColor3us = (PFNGLSECONDARYCOLOR3USPROC) load("glSecondaryColor3us"))) { return (0); }
-   if (!gload_glSecondaryColor3usv && !(gload_glSecondaryColor3usv = (PFNGLSECONDARYCOLOR3USVPROC) load("glSecondaryColor3usv"))) { return (0); }
-   if (!gload_glSecondaryColorPointer && !(gload_glSecondaryColorPointer = (PFNGLSECONDARYCOLORPOINTERPROC) load("glSecondaryColorPointer"))) { return (0); }
-   if (!gload_glWindowPos2d && !(gload_glWindowPos2d = (PFNGLWINDOWPOS2DPROC) load("glWindowPos2d"))) { return (0); }
-   if (!gload_glWindowPos2dv && !(gload_glWindowPos2dv = (PFNGLWINDOWPOS2DVPROC) load("glWindowPos2dv"))) { return (0); }
-   if (!gload_glWindowPos2f && !(gload_glWindowPos2f = (PFNGLWINDOWPOS2FPROC) load("glWindowPos2f"))) { return (0); }
-   if (!gload_glWindowPos2fv && !(gload_glWindowPos2fv = (PFNGLWINDOWPOS2FVPROC) load("glWindowPos2fv"))) { return (0); }
-   if (!gload_glWindowPos2i && !(gload_glWindowPos2i = (PFNGLWINDOWPOS2IPROC) load("glWindowPos2i"))) { return (0); }
-   if (!gload_glWindowPos2iv && !(gload_glWindowPos2iv = (PFNGLWINDOWPOS2IVPROC) load("glWindowPos2iv"))) { return (0); }
-   if (!gload_glWindowPos2s && !(gload_glWindowPos2s = (PFNGLWINDOWPOS2SPROC) load("glWindowPos2s"))) { return (0); }
-   if (!gload_glWindowPos2sv && !(gload_glWindowPos2sv = (PFNGLWINDOWPOS2SVPROC) load("glWindowPos2sv"))) { return (0); }
-   if (!gload_glWindowPos3d && !(gload_glWindowPos3d = (PFNGLWINDOWPOS3DPROC) load("glWindowPos3d"))) { return (0); }
-   if (!gload_glWindowPos3dv && !(gload_glWindowPos3dv = (PFNGLWINDOWPOS3DVPROC) load("glWindowPos3dv"))) { return (0); }
-   if (!gload_glWindowPos3f && !(gload_glWindowPos3f = (PFNGLWINDOWPOS3FPROC) load("glWindowPos3f"))) { return (0); }
-   if (!gload_glWindowPos3fv && !(gload_glWindowPos3fv = (PFNGLWINDOWPOS3FVPROC) load("glWindowPos3fv"))) { return (0); }
-   if (!gload_glWindowPos3i && !(gload_glWindowPos3i = (PFNGLWINDOWPOS3IPROC) load("glWindowPos3i"))) { return (0); }
-   if (!gload_glWindowPos3iv && !(gload_glWindowPos3iv = (PFNGLWINDOWPOS3IVPROC) load("glWindowPos3iv"))) { return (0); }
-   if (!gload_glWindowPos3s && !(gload_glWindowPos3s = (PFNGLWINDOWPOS3SPROC) load("glWindowPos3s"))) { return (0); }
-   if (!gload_glWindowPos3sv && !(gload_glWindowPos3sv = (PFNGLWINDOWPOS3SVPROC) load("glWindowPos3sv"))) { return (0); }
-   if (!gload_glBlendColor && !(gload_glBlendColor = (PFNGLBLENDCOLORPROC) load("glBlendColor"))) { return (0); }
-   if (!gload_glBlendEquation && !(gload_glBlendEquation = (PFNGLBLENDEQUATIONPROC) load("glBlendEquation"))) { return (0); }
-
-#  endif /* GL_VERSION_1_4 */
-#  if defined GL_VERSION_1_5
-
-   if (!gload_glGenQueries && !(gload_glGenQueries = (PFNGLGENQUERIESPROC) load("glGenQueries"))) { return (0); }
-   if (!gload_glDeleteQueries && !(gload_glDeleteQueries = (PFNGLDELETEQUERIESPROC) load("glDeleteQueries"))) { return (0); }
-   if (!gload_glIsQuery && !(gload_glIsQuery = (PFNGLISQUERYPROC) load("glIsQuery"))) { return (0); }
-   if (!gload_glBeginQuery && !(gload_glBeginQuery = (PFNGLBEGINQUERYPROC) load("glBeginQuery"))) { return (0); }
-   if (!gload_glEndQuery && !(gload_glEndQuery = (PFNGLENDQUERYPROC) load("glEndQuery"))) { return (0); }
-   if (!gload_glGetQueryiv && !(gload_glGetQueryiv = (PFNGLGETQUERYIVPROC) load("glGetQueryiv"))) { return (0); }
-   if (!gload_glGetQueryObjectiv && !(gload_glGetQueryObjectiv = (PFNGLGETQUERYOBJECTIVPROC) load("glGetQueryObjectiv"))) { return (0); }
-   if (!gload_glGetQueryObjectuiv && !(gload_glGetQueryObjectuiv = (PFNGLGETQUERYOBJECTUIVPROC) load("glGetQueryObjectuiv"))) { return (0); }
-   if (!gload_glBindBuffer && !(gload_glBindBuffer = (PFNGLBINDBUFFERPROC) load("glBindBuffer"))) { return (0); }
-   if (!gload_glDeleteBuffers && !(gload_glDeleteBuffers = (PFNGLDELETEBUFFERSPROC) load("glDeleteBuffers"))) { return (0); }
-   if (!gload_glGenBuffers && !(gload_glGenBuffers = (PFNGLGENBUFFERSPROC) load("glGenBuffers"))) { return (0); }
-   if (!gload_glIsBuffer && !(gload_glIsBuffer = (PFNGLISBUFFERPROC) load("glIsBuffer"))) { return (0); }
-   if (!gload_glBufferData && !(gload_glBufferData = (PFNGLBUFFERDATAPROC) load("glBufferData"))) { return (0); }
-   if (!gload_glBufferSubData && !(gload_glBufferSubData = (PFNGLBUFFERSUBDATAPROC) load("glBufferSubData"))) { return (0); }
-   if (!gload_glGetBufferSubData && !(gload_glGetBufferSubData = (PFNGLGETBUFFERSUBDATAPROC) load("glGetBufferSubData"))) { return (0); }
-   if (!gload_glMapBuffer && !(gload_glMapBuffer = (PFNGLMAPBUFFERPROC) load("glMapBuffer"))) { return (0); }
-   if (!gload_glUnmapBuffer && !(gload_glUnmapBuffer = (PFNGLUNMAPBUFFERPROC) load("glUnmapBuffer"))) { return (0); }
-   if (!gload_glGetBufferParameteriv && !(gload_glGetBufferParameteriv = (PFNGLGETBUFFERPARAMETERIVPROC) load("glGetBufferParameteriv"))) { return (0); }
-   if (!gload_glGetBufferPointerv && !(gload_glGetBufferPointerv = (PFNGLGETBUFFERPOINTERVPROC) load("glGetBufferPointerv"))) { return (0); }
-
-#  endif /* GL_VERSION_1_5 */
-#  if defined GL_VERSION_2_0
-
-   if (!gload_glBlendEquationSeparate && !(gload_glBlendEquationSeparate = (PFNGLBLENDEQUATIONSEPARATEPROC) load("glBlendEquationSeparate"))) { return (0); }
-   if (!gload_glDrawBuffers && !(gload_glDrawBuffers = (PFNGLDRAWBUFFERSPROC) load("glDrawBuffers"))) { return (0); }
-   if (!gload_glStencilOpSeparate && !(gload_glStencilOpSeparate = (PFNGLSTENCILOPSEPARATEPROC) load("glStencilOpSeparate"))) { return (0); }
-   if (!gload_glStencilFuncSeparate && !(gload_glStencilFuncSeparate = (PFNGLSTENCILFUNCSEPARATEPROC) load("glStencilFuncSeparate"))) { return (0); }
-   if (!gload_glStencilMaskSeparate && !(gload_glStencilMaskSeparate = (PFNGLSTENCILMASKSEPARATEPROC) load("glStencilMaskSeparate"))) { return (0); }
-   if (!gload_glAttachShader && !(gload_glAttachShader = (PFNGLATTACHSHADERPROC) load("glAttachShader"))) { return (0); }
-   if (!gload_glBindAttribLocation && !(gload_glBindAttribLocation = (PFNGLBINDATTRIBLOCATIONPROC) load("glBindAttribLocation"))) { return (0); }
-   if (!gload_glCompileShader && !(gload_glCompileShader = (PFNGLCOMPILESHADERPROC) load("glCompileShader"))) { return (0); }
-   if (!gload_glCreateProgram && !(gload_glCreateProgram = (PFNGLCREATEPROGRAMPROC) load("glCreateProgram"))) { return (0); }
-   if (!gload_glCreateShader && !(gload_glCreateShader = (PFNGLCREATESHADERPROC) load("glCreateShader"))) { return (0); }
-   if (!gload_glDeleteProgram && !(gload_glDeleteProgram = (PFNGLDELETEPROGRAMPROC) load("glDeleteProgram"))) { return (0); }
-   if (!gload_glDeleteShader && !(gload_glDeleteShader = (PFNGLDELETESHADERPROC) load("glDeleteShader"))) { return (0); }
-   if (!gload_glDetachShader && !(gload_glDetachShader = (PFNGLDETACHSHADERPROC) load("glDetachShader"))) { return (0); }
-   if (!gload_glDisableVertexAttribArray && !(gload_glDisableVertexAttribArray = (PFNGLDISABLEVERTEXATTRIBARRAYPROC) load("glDisableVertexAttribArray"))) { return (0); }
-   if (!gload_glEnableVertexAttribArray && !(gload_glEnableVertexAttribArray = (PFNGLENABLEVERTEXATTRIBARRAYPROC) load("glEnableVertexAttribArray"))) { return (0); }
-   if (!gload_glGetActiveAttrib && !(gload_glGetActiveAttrib = (PFNGLGETACTIVEATTRIBPROC) load("glGetActiveAttrib"))) { return (0); }
-   if (!gload_glGetActiveUniform && !(gload_glGetActiveUniform = (PFNGLGETACTIVEUNIFORMPROC) load("glGetActiveUniform"))) { return (0); }
-   if (!gload_glGetAttachedShaders && !(gload_glGetAttachedShaders = (PFNGLGETATTACHEDSHADERSPROC) load("glGetAttachedShaders"))) { return (0); }
-   if (!gload_glGetAttribLocation && !(gload_glGetAttribLocation = (PFNGLGETATTRIBLOCATIONPROC) load("glGetAttribLocation"))) { return (0); }
-   if (!gload_glGetProgramiv && !(gload_glGetProgramiv = (PFNGLGETPROGRAMIVPROC) load("glGetProgramiv"))) { return (0); }
-   if (!gload_glGetProgramInfoLog && !(gload_glGetProgramInfoLog = (PFNGLGETPROGRAMINFOLOGPROC) load("glGetProgramInfoLog"))) { return (0); }
-   if (!gload_glGetShaderiv && !(gload_glGetShaderiv = (PFNGLGETSHADERIVPROC) load("glGetShaderiv"))) { return (0); }
-   if (!gload_glGetShaderInfoLog && !(gload_glGetShaderInfoLog = (PFNGLGETSHADERINFOLOGPROC) load("glGetShaderInfoLog"))) { return (0); }
-   if (!gload_glGetShaderSource && !(gload_glGetShaderSource = (PFNGLGETSHADERSOURCEPROC) load("glGetShaderSource"))) { return (0); }
-   if (!gload_glGetUniformLocation && !(gload_glGetUniformLocation = (PFNGLGETUNIFORMLOCATIONPROC) load("glGetUniformLocation"))) { return (0); }
-   if (!gload_glGetUniformfv && !(gload_glGetUniformfv = (PFNGLGETUNIFORMFVPROC) load("glGetUniformfv"))) { return (0); }
-   if (!gload_glGetUniformiv && !(gload_glGetUniformiv = (PFNGLGETUNIFORMIVPROC) load("glGetUniformiv"))) { return (0); }
-   if (!gload_glGetVertexAttribdv && !(gload_glGetVertexAttribdv = (PFNGLGETVERTEXATTRIBDVPROC) load("glGetVertexAttribdv"))) { return (0); }
-   if (!gload_glGetVertexAttribfv && !(gload_glGetVertexAttribfv = (PFNGLGETVERTEXATTRIBFVPROC) load("glGetVertexAttribfv"))) { return (0); }
-   if (!gload_glGetVertexAttribiv && !(gload_glGetVertexAttribiv = (PFNGLGETVERTEXATTRIBIVPROC) load("glGetVertexAttribiv"))) { return (0); }
-   if (!gload_glGetVertexAttribPointerv && !(gload_glGetVertexAttribPointerv = (PFNGLGETVERTEXATTRIBPOINTERVPROC) load("glGetVertexAttribPointerv"))) { return (0); }
-   if (!gload_glIsProgram && !(gload_glIsProgram = (PFNGLISPROGRAMPROC) load("glIsProgram"))) { return (0); }
-   if (!gload_glIsShader && !(gload_glIsShader = (PFNGLISSHADERPROC) load("glIsShader"))) { return (0); }
-   if (!gload_glLinkProgram && !(gload_glLinkProgram = (PFNGLLINKPROGRAMPROC) load("glLinkProgram"))) { return (0); }
-   if (!gload_glShaderSource && !(gload_glShaderSource = (PFNGLSHADERSOURCEPROC) load("glShaderSource"))) { return (0); }
-   if (!gload_glUseProgram && !(gload_glUseProgram = (PFNGLUSEPROGRAMPROC) load("glUseProgram"))) { return (0); }
-   if (!gload_glUniform1f && !(gload_glUniform1f = (PFNGLUNIFORM1FPROC) load("glUniform1f"))) { return (0); }
-   if (!gload_glUniform2f && !(gload_glUniform2f = (PFNGLUNIFORM2FPROC) load("glUniform2f"))) { return (0); }
-   if (!gload_glUniform3f && !(gload_glUniform3f = (PFNGLUNIFORM3FPROC) load("glUniform3f"))) { return (0); }
-   if (!gload_glUniform4f && !(gload_glUniform4f = (PFNGLUNIFORM4FPROC) load("glUniform4f"))) { return (0); }
-   if (!gload_glUniform1i && !(gload_glUniform1i = (PFNGLUNIFORM1IPROC) load("glUniform1i"))) { return (0); }
-   if (!gload_glUniform2i && !(gload_glUniform2i = (PFNGLUNIFORM2IPROC) load("glUniform2i"))) { return (0); }
-   if (!gload_glUniform3i && !(gload_glUniform3i = (PFNGLUNIFORM3IPROC) load("glUniform3i"))) { return (0); }
-   if (!gload_glUniform4i && !(gload_glUniform4i = (PFNGLUNIFORM4IPROC) load("glUniform4i"))) { return (0); }
-   if (!gload_glUniform1fv && !(gload_glUniform1fv = (PFNGLUNIFORM1FVPROC) load("glUniform1fv"))) { return (0); }
-   if (!gload_glUniform2fv && !(gload_glUniform2fv = (PFNGLUNIFORM2FVPROC) load("glUniform2fv"))) { return (0); }
-   if (!gload_glUniform3fv && !(gload_glUniform3fv = (PFNGLUNIFORM3FVPROC) load("glUniform3fv"))) { return (0); }
-   if (!gload_glUniform4fv && !(gload_glUniform4fv = (PFNGLUNIFORM4FVPROC) load("glUniform4fv"))) { return (0); }
-   if (!gload_glUniform1iv && !(gload_glUniform1iv = (PFNGLUNIFORM1IVPROC) load("glUniform1iv"))) { return (0); }
-   if (!gload_glUniform2iv && !(gload_glUniform2iv = (PFNGLUNIFORM2IVPROC) load("glUniform2iv"))) { return (0); }
-   if (!gload_glUniform3iv && !(gload_glUniform3iv = (PFNGLUNIFORM3IVPROC) load("glUniform3iv"))) { return (0); }
-   if (!gload_glUniform4iv && !(gload_glUniform4iv = (PFNGLUNIFORM4IVPROC) load("glUniform4iv"))) { return (0); }
-   if (!gload_glUniformMatrix2fv && !(gload_glUniformMatrix2fv = (PFNGLUNIFORMMATRIX2FVPROC) load("glUniformMatrix2fv"))) { return (0); }
-   if (!gload_glUniformMatrix3fv && !(gload_glUniformMatrix3fv = (PFNGLUNIFORMMATRIX3FVPROC) load("glUniformMatrix3fv"))) { return (0); }
-   if (!gload_glUniformMatrix4fv && !(gload_glUniformMatrix4fv = (PFNGLUNIFORMMATRIX4FVPROC) load("glUniformMatrix4fv"))) { return (0); }
-   if (!gload_glValidateProgram && !(gload_glValidateProgram = (PFNGLVALIDATEPROGRAMPROC) load("glValidateProgram"))) { return (0); }
-   if (!gload_glVertexAttrib1d && !(gload_glVertexAttrib1d = (PFNGLVERTEXATTRIB1DPROC) load("glVertexAttrib1d"))) { return (0); }
-   if (!gload_glVertexAttrib1dv && !(gload_glVertexAttrib1dv = (PFNGLVERTEXATTRIB1DVPROC) load("glVertexAttrib1dv"))) { return (0); }
-   if (!gload_glVertexAttrib1f && !(gload_glVertexAttrib1f = (PFNGLVERTEXATTRIB1FPROC) load("glVertexAttrib1f"))) { return (0); }
-   if (!gload_glVertexAttrib1fv && !(gload_glVertexAttrib1fv = (PFNGLVERTEXATTRIB1FVPROC) load("glVertexAttrib1fv"))) { return (0); }
-   if (!gload_glVertexAttrib1s && !(gload_glVertexAttrib1s = (PFNGLVERTEXATTRIB1SPROC) load("glVertexAttrib1s"))) { return (0); }
-   if (!gload_glVertexAttrib1sv && !(gload_glVertexAttrib1sv = (PFNGLVERTEXATTRIB1SVPROC) load("glVertexAttrib1sv"))) { return (0); }
-   if (!gload_glVertexAttrib2d && !(gload_glVertexAttrib2d = (PFNGLVERTEXATTRIB2DPROC) load("glVertexAttrib2d"))) { return (0); }
-   if (!gload_glVertexAttrib2dv && !(gload_glVertexAttrib2dv = (PFNGLVERTEXATTRIB2DVPROC) load("glVertexAttrib2dv"))) { return (0); }
-   if (!gload_glVertexAttrib2f && !(gload_glVertexAttrib2f = (PFNGLVERTEXATTRIB2FPROC) load("glVertexAttrib2f"))) { return (0); }
-   if (!gload_glVertexAttrib2fv && !(gload_glVertexAttrib2fv = (PFNGLVERTEXATTRIB2FVPROC) load("glVertexAttrib2fv"))) { return (0); }
-   if (!gload_glVertexAttrib2s && !(gload_glVertexAttrib2s = (PFNGLVERTEXATTRIB2SPROC) load("glVertexAttrib2s"))) { return (0); }
-   if (!gload_glVertexAttrib2sv && !(gload_glVertexAttrib2sv = (PFNGLVERTEXATTRIB2SVPROC) load("glVertexAttrib2sv"))) { return (0); }
-   if (!gload_glVertexAttrib3d && !(gload_glVertexAttrib3d = (PFNGLVERTEXATTRIB3DPROC) load("glVertexAttrib3d"))) { return (0); }
-   if (!gload_glVertexAttrib3dv && !(gload_glVertexAttrib3dv = (PFNGLVERTEXATTRIB3DVPROC) load("glVertexAttrib3dv"))) { return (0); }
-   if (!gload_glVertexAttrib3f && !(gload_glVertexAttrib3f = (PFNGLVERTEXATTRIB3FPROC) load("glVertexAttrib3f"))) { return (0); }
-   if (!gload_glVertexAttrib3fv && !(gload_glVertexAttrib3fv = (PFNGLVERTEXATTRIB3FVPROC) load("glVertexAttrib3fv"))) { return (0); }
-   if (!gload_glVertexAttrib3s && !(gload_glVertexAttrib3s = (PFNGLVERTEXATTRIB3SPROC) load("glVertexAttrib3s"))) { return (0); }
-   if (!gload_glVertexAttrib3sv && !(gload_glVertexAttrib3sv = (PFNGLVERTEXATTRIB3SVPROC) load("glVertexAttrib3sv"))) { return (0); }
-   if (!gload_glVertexAttrib4Nbv && !(gload_glVertexAttrib4Nbv = (PFNGLVERTEXATTRIB4NBVPROC) load("glVertexAttrib4Nbv"))) { return (0); }
-   if (!gload_glVertexAttrib4Niv && !(gload_glVertexAttrib4Niv = (PFNGLVERTEXATTRIB4NIVPROC) load("glVertexAttrib4Niv"))) { return (0); }
-   if (!gload_glVertexAttrib4Nsv && !(gload_glVertexAttrib4Nsv = (PFNGLVERTEXATTRIB4NSVPROC) load("glVertexAttrib4Nsv"))) { return (0); }
-   if (!gload_glVertexAttrib4Nub && !(gload_glVertexAttrib4Nub = (PFNGLVERTEXATTRIB4NUBPROC) load("glVertexAttrib4Nub"))) { return (0); }
-   if (!gload_glVertexAttrib4Nubv && !(gload_glVertexAttrib4Nubv = (PFNGLVERTEXATTRIB4NUBVPROC) load("glVertexAttrib4Nubv"))) { return (0); }
-   if (!gload_glVertexAttrib4Nuiv && !(gload_glVertexAttrib4Nuiv = (PFNGLVERTEXATTRIB4NUIVPROC) load("glVertexAttrib4Nuiv"))) { return (0); }
-   if (!gload_glVertexAttrib4Nusv && !(gload_glVertexAttrib4Nusv = (PFNGLVERTEXATTRIB4NUSVPROC) load("glVertexAttrib4Nusv"))) { return (0); }
-   if (!gload_glVertexAttrib4bv && !(gload_glVertexAttrib4bv = (PFNGLVERTEXATTRIB4BVPROC) load("glVertexAttrib4bv"))) { return (0); }
-   if (!gload_glVertexAttrib4d && !(gload_glVertexAttrib4d = (PFNGLVERTEXATTRIB4DPROC) load("glVertexAttrib4d"))) { return (0); }
-   if (!gload_glVertexAttrib4dv && !(gload_glVertexAttrib4dv = (PFNGLVERTEXATTRIB4DVPROC) load("glVertexAttrib4dv"))) { return (0); }
-   if (!gload_glVertexAttrib4f && !(gload_glVertexAttrib4f = (PFNGLVERTEXATTRIB4FPROC) load("glVertexAttrib4f"))) { return (0); }
-   if (!gload_glVertexAttrib4fv && !(gload_glVertexAttrib4fv = (PFNGLVERTEXATTRIB4FVPROC) load("glVertexAttrib4fv"))) { return (0); }
-   if (!gload_glVertexAttrib4iv && !(gload_glVertexAttrib4iv = (PFNGLVERTEXATTRIB4IVPROC) load("glVertexAttrib4iv"))) { return (0); }
-   if (!gload_glVertexAttrib4s && !(gload_glVertexAttrib4s = (PFNGLVERTEXATTRIB4SPROC) load("glVertexAttrib4s"))) { return (0); }
-   if (!gload_glVertexAttrib4sv && !(gload_glVertexAttrib4sv = (PFNGLVERTEXATTRIB4SVPROC) load("glVertexAttrib4sv"))) { return (0); }
-   if (!gload_glVertexAttrib4ubv && !(gload_glVertexAttrib4ubv = (PFNGLVERTEXATTRIB4UBVPROC) load("glVertexAttrib4ubv"))) { return (0); }
-   if (!gload_glVertexAttrib4uiv && !(gload_glVertexAttrib4uiv = (PFNGLVERTEXATTRIB4UIVPROC) load("glVertexAttrib4uiv"))) { return (0); }
-   if (!gload_glVertexAttrib4usv && !(gload_glVertexAttrib4usv = (PFNGLVERTEXATTRIB4USVPROC) load("glVertexAttrib4usv"))) { return (0); }
-   if (!gload_glVertexAttribPointer && !(gload_glVertexAttribPointer = (PFNGLVERTEXATTRIBPOINTERPROC) load("glVertexAttribPointer"))) { return (0); }
-
-#  endif /* GL_VERSION_2_0 */
-#  if defined GL_VERSION_2_1
-
-   if (!gload_glUniformMatrix2x3fv && !(gload_glUniformMatrix2x3fv = (PFNGLUNIFORMMATRIX2X3FVPROC) load("glUniformMatrix2x3fv"))) { return (0); }
-   if (!gload_glUniformMatrix3x2fv && !(gload_glUniformMatrix3x2fv = (PFNGLUNIFORMMATRIX3X2FVPROC) load("glUniformMatrix3x2fv"))) { return (0); }
-   if (!gload_glUniformMatrix2x4fv && !(gload_glUniformMatrix2x4fv = (PFNGLUNIFORMMATRIX2X4FVPROC) load("glUniformMatrix2x4fv"))) { return (0); }
-   if (!gload_glUniformMatrix4x2fv && !(gload_glUniformMatrix4x2fv = (PFNGLUNIFORMMATRIX4X2FVPROC) load("glUniformMatrix4x2fv"))) { return (0); }
-   if (!gload_glUniformMatrix3x4fv && !(gload_glUniformMatrix3x4fv = (PFNGLUNIFORMMATRIX3X4FVPROC) load("glUniformMatrix3x4fv"))) { return (0); }
-   if (!gload_glUniformMatrix4x3fv && !(gload_glUniformMatrix4x3fv = (PFNGLUNIFORMMATRIX4X3FVPROC) load("glUniformMatrix4x3fv"))) { return (0); }
-
-#  endif /* GL_VERSION_2_1 */
-#  if defined GL_VERSION_3_0
-
-   if (!gload_glColorMaski && !(gload_glColorMaski = (PFNGLCOLORMASKIPROC) load("glColorMaski"))) { return (0); }
-   if (!gload_glGetBooleani_v && !(gload_glGetBooleani_v = (PFNGLGETBOOLEANI_VPROC) load("glGetBooleani_v"))) { return (0); }
-   if (!gload_glGetIntegeri_v && !(gload_glGetIntegeri_v = (PFNGLGETINTEGERI_VPROC) load("glGetIntegeri_v"))) { return (0); }
-   if (!gload_glEnablei && !(gload_glEnablei = (PFNGLENABLEIPROC) load("glEnablei"))) { return (0); }
-   if (!gload_glDisablei && !(gload_glDisablei = (PFNGLDISABLEIPROC) load("glDisablei"))) { return (0); }
-   if (!gload_glIsEnabledi && !(gload_glIsEnabledi = (PFNGLISENABLEDIPROC) load("glIsEnabledi"))) { return (0); }
-   if (!gload_glBeginTransformFeedback && !(gload_glBeginTransformFeedback = (PFNGLBEGINTRANSFORMFEEDBACKPROC) load("glBeginTransformFeedback"))) { return (0); }
-   if (!gload_glEndTransformFeedback && !(gload_glEndTransformFeedback = (PFNGLENDTRANSFORMFEEDBACKPROC) load("glEndTransformFeedback"))) { return (0); }
-   if (!gload_glBindBufferRange && !(gload_glBindBufferRange = (PFNGLBINDBUFFERRANGEPROC) load("glBindBufferRange"))) { return (0); }
-   if (!gload_glBindBufferBase && !(gload_glBindBufferBase = (PFNGLBINDBUFFERBASEPROC) load("glBindBufferBase"))) { return (0); }
-   if (!gload_glTransformFeedbackVaryings && !(gload_glTransformFeedbackVaryings = (PFNGLTRANSFORMFEEDBACKVARYINGSPROC) load("glTransformFeedbackVaryings"))) { return (0); }
-   if (!gload_glGetTransformFeedbackVarying && !(gload_glGetTransformFeedbackVarying = (PFNGLGETTRANSFORMFEEDBACKVARYINGPROC) load("glGetTransformFeedbackVarying"))) { return (0); }
-   if (!gload_glClampColor && !(gload_glClampColor = (PFNGLCLAMPCOLORPROC) load("glClampColor"))) { return (0); }
-   if (!gload_glBeginConditionalRender && !(gload_glBeginConditionalRender = (PFNGLBEGINCONDITIONALRENDERPROC) load("glBeginConditionalRender"))) { return (0); }
-   if (!gload_glEndConditionalRender && !(gload_glEndConditionalRender = (PFNGLENDCONDITIONALRENDERPROC) load("glEndConditionalRender"))) { return (0); }
-   if (!gload_glVertexAttribIPointer && !(gload_glVertexAttribIPointer = (PFNGLVERTEXATTRIBIPOINTERPROC) load("glVertexAttribIPointer"))) { return (0); }
-   if (!gload_glGetVertexAttribIiv && !(gload_glGetVertexAttribIiv = (PFNGLGETVERTEXATTRIBIIVPROC) load("glGetVertexAttribIiv"))) { return (0); }
-   if (!gload_glGetVertexAttribIuiv && !(gload_glGetVertexAttribIuiv = (PFNGLGETVERTEXATTRIBIUIVPROC) load("glGetVertexAttribIuiv"))) { return (0); }
-   if (!gload_glVertexAttribI1i && !(gload_glVertexAttribI1i = (PFNGLVERTEXATTRIBI1IPROC) load("glVertexAttribI1i"))) { return (0); }
-   if (!gload_glVertexAttribI2i && !(gload_glVertexAttribI2i = (PFNGLVERTEXATTRIBI2IPROC) load("glVertexAttribI2i"))) { return (0); }
-   if (!gload_glVertexAttribI3i && !(gload_glVertexAttribI3i = (PFNGLVERTEXATTRIBI3IPROC) load("glVertexAttribI3i"))) { return (0); }
-   if (!gload_glVertexAttribI4i && !(gload_glVertexAttribI4i = (PFNGLVERTEXATTRIBI4IPROC) load("glVertexAttribI4i"))) { return (0); }
-   if (!gload_glVertexAttribI1ui && !(gload_glVertexAttribI1ui = (PFNGLVERTEXATTRIBI1UIPROC) load("glVertexAttribI1ui"))) { return (0); }
-   if (!gload_glVertexAttribI2ui && !(gload_glVertexAttribI2ui = (PFNGLVERTEXATTRIBI2UIPROC) load("glVertexAttribI2ui"))) { return (0); }
-   if (!gload_glVertexAttribI3ui && !(gload_glVertexAttribI3ui = (PFNGLVERTEXATTRIBI3UIPROC) load("glVertexAttribI3ui"))) { return (0); }
-   if (!gload_glVertexAttribI4ui && !(gload_glVertexAttribI4ui = (PFNGLVERTEXATTRIBI4UIPROC) load("glVertexAttribI4ui"))) { return (0); }
-   if (!gload_glVertexAttribI1iv && !(gload_glVertexAttribI1iv = (PFNGLVERTEXATTRIBI1IVPROC) load("glVertexAttribI1iv"))) { return (0); }
-   if (!gload_glVertexAttribI2iv && !(gload_glVertexAttribI2iv = (PFNGLVERTEXATTRIBI2IVPROC) load("glVertexAttribI2iv"))) { return (0); }
-   if (!gload_glVertexAttribI3iv && !(gload_glVertexAttribI3iv = (PFNGLVERTEXATTRIBI3IVPROC) load("glVertexAttribI3iv"))) { return (0); }
-   if (!gload_glVertexAttribI4iv && !(gload_glVertexAttribI4iv = (PFNGLVERTEXATTRIBI4IVPROC) load("glVertexAttribI4iv"))) { return (0); }
-   if (!gload_glVertexAttribI1uiv && !(gload_glVertexAttribI1uiv = (PFNGLVERTEXATTRIBI1UIVPROC) load("glVertexAttribI1uiv"))) { return (0); }
-   if (!gload_glVertexAttribI2uiv && !(gload_glVertexAttribI2uiv = (PFNGLVERTEXATTRIBI2UIVPROC) load("glVertexAttribI2uiv"))) { return (0); }
-   if (!gload_glVertexAttribI3uiv && !(gload_glVertexAttribI3uiv = (PFNGLVERTEXATTRIBI3UIVPROC) load("glVertexAttribI3uiv"))) { return (0); }
-   if (!gload_glVertexAttribI4uiv && !(gload_glVertexAttribI4uiv = (PFNGLVERTEXATTRIBI4UIVPROC) load("glVertexAttribI4uiv"))) { return (0); }
-   if (!gload_glVertexAttribI4bv && !(gload_glVertexAttribI4bv = (PFNGLVERTEXATTRIBI4BVPROC) load("glVertexAttribI4bv"))) { return (0); }
-   if (!gload_glVertexAttribI4sv && !(gload_glVertexAttribI4sv = (PFNGLVERTEXATTRIBI4SVPROC) load("glVertexAttribI4sv"))) { return (0); }
-   if (!gload_glVertexAttribI4ubv && !(gload_glVertexAttribI4ubv = (PFNGLVERTEXATTRIBI4UBVPROC) load("glVertexAttribI4ubv"))) { return (0); }
-   if (!gload_glVertexAttribI4usv && !(gload_glVertexAttribI4usv = (PFNGLVERTEXATTRIBI4USVPROC) load("glVertexAttribI4usv"))) { return (0); }
-   if (!gload_glGetUniformuiv && !(gload_glGetUniformuiv = (PFNGLGETUNIFORMUIVPROC) load("glGetUniformuiv"))) { return (0); }
-   if (!gload_glBindFragDataLocation && !(gload_glBindFragDataLocation = (PFNGLBINDFRAGDATALOCATIONPROC) load("glBindFragDataLocation"))) { return (0); }
-   if (!gload_glGetFragDataLocation && !(gload_glGetFragDataLocation = (PFNGLGETFRAGDATALOCATIONPROC) load("glGetFragDataLocation"))) { return (0); }
-   if (!gload_glUniform1ui && !(gload_glUniform1ui = (PFNGLUNIFORM1UIPROC) load("glUniform1ui"))) { return (0); }
-   if (!gload_glUniform2ui && !(gload_glUniform2ui = (PFNGLUNIFORM2UIPROC) load("glUniform2ui"))) { return (0); }
-   if (!gload_glUniform3ui && !(gload_glUniform3ui = (PFNGLUNIFORM3UIPROC) load("glUniform3ui"))) { return (0); }
-   if (!gload_glUniform4ui && !(gload_glUniform4ui = (PFNGLUNIFORM4UIPROC) load("glUniform4ui"))) { return (0); }
-   if (!gload_glUniform1uiv && !(gload_glUniform1uiv = (PFNGLUNIFORM1UIVPROC) load("glUniform1uiv"))) { return (0); }
-   if (!gload_glUniform2uiv && !(gload_glUniform2uiv = (PFNGLUNIFORM2UIVPROC) load("glUniform2uiv"))) { return (0); }
-   if (!gload_glUniform3uiv && !(gload_glUniform3uiv = (PFNGLUNIFORM3UIVPROC) load("glUniform3uiv"))) { return (0); }
-   if (!gload_glUniform4uiv && !(gload_glUniform4uiv = (PFNGLUNIFORM4UIVPROC) load("glUniform4uiv"))) { return (0); }
-   if (!gload_glTexParameterIiv && !(gload_glTexParameterIiv = (PFNGLTEXPARAMETERIIVPROC) load("glTexParameterIiv"))) { return (0); }
-   if (!gload_glTexParameterIuiv && !(gload_glTexParameterIuiv = (PFNGLTEXPARAMETERIUIVPROC) load("glTexParameterIuiv"))) { return (0); }
-   if (!gload_glGetTexParameterIiv && !(gload_glGetTexParameterIiv = (PFNGLGETTEXPARAMETERIIVPROC) load("glGetTexParameterIiv"))) { return (0); }
-   if (!gload_glGetTexParameterIuiv && !(gload_glGetTexParameterIuiv = (PFNGLGETTEXPARAMETERIUIVPROC) load("glGetTexParameterIuiv"))) { return (0); }
-   if (!gload_glClearBufferiv && !(gload_glClearBufferiv = (PFNGLCLEARBUFFERIVPROC) load("glClearBufferiv"))) { return (0); }
-   if (!gload_glClearBufferuiv && !(gload_glClearBufferuiv = (PFNGLCLEARBUFFERUIVPROC) load("glClearBufferuiv"))) { return (0); }
-   if (!gload_glClearBufferfv && !(gload_glClearBufferfv = (PFNGLCLEARBUFFERFVPROC) load("glClearBufferfv"))) { return (0); }
-   if (!gload_glClearBufferfi && !(gload_glClearBufferfi = (PFNGLCLEARBUFFERFIPROC) load("glClearBufferfi"))) { return (0); }
-   if (!gload_glGetStringi && !(gload_glGetStringi = (PFNGLGETSTRINGIPROC) load("glGetStringi"))) { return (0); }
-   if (!gload_glIsRenderbuffer && !(gload_glIsRenderbuffer = (PFNGLISRENDERBUFFERPROC) load("glIsRenderbuffer"))) { return (0); }
-   if (!gload_glBindRenderbuffer && !(gload_glBindRenderbuffer = (PFNGLBINDRENDERBUFFERPROC) load("glBindRenderbuffer"))) { return (0); }
-   if (!gload_glDeleteRenderbuffers && !(gload_glDeleteRenderbuffers = (PFNGLDELETERENDERBUFFERSPROC) load("glDeleteRenderbuffers"))) { return (0); }
-   if (!gload_glGenRenderbuffers && !(gload_glGenRenderbuffers = (PFNGLGENRENDERBUFFERSPROC) load("glGenRenderbuffers"))) { return (0); }
-   if (!gload_glRenderbufferStorage && !(gload_glRenderbufferStorage = (PFNGLRENDERBUFFERSTORAGEPROC) load("glRenderbufferStorage"))) { return (0); }
-   if (!gload_glGetRenderbufferParameteriv && !(gload_glGetRenderbufferParameteriv = (PFNGLGETRENDERBUFFERPARAMETERIVPROC) load("glGetRenderbufferParameteriv"))) { return (0); }
-   if (!gload_glIsFramebuffer && !(gload_glIsFramebuffer = (PFNGLISFRAMEBUFFERPROC) load("glIsFramebuffer"))) { return (0); }
-   if (!gload_glBindFramebuffer && !(gload_glBindFramebuffer = (PFNGLBINDFRAMEBUFFERPROC) load("glBindFramebuffer"))) { return (0); }
-   if (!gload_glDeleteFramebuffers && !(gload_glDeleteFramebuffers = (PFNGLDELETEFRAMEBUFFERSPROC) load("glDeleteFramebuffers"))) { return (0); }
-   if (!gload_glGenFramebuffers && !(gload_glGenFramebuffers = (PFNGLGENFRAMEBUFFERSPROC) load("glGenFramebuffers"))) { return (0); }
-   if (!gload_glCheckFramebufferStatus && !(gload_glCheckFramebufferStatus = (PFNGLCHECKFRAMEBUFFERSTATUSPROC) load("glCheckFramebufferStatus"))) { return (0); }
-   if (!gload_glFramebufferTexture1D && !(gload_glFramebufferTexture1D = (PFNGLFRAMEBUFFERTEXTURE1DPROC) load("glFramebufferTexture1D"))) { return (0); }
-   if (!gload_glFramebufferTexture2D && !(gload_glFramebufferTexture2D = (PFNGLFRAMEBUFFERTEXTURE2DPROC) load("glFramebufferTexture2D"))) { return (0); }
-   if (!gload_glFramebufferTexture3D && !(gload_glFramebufferTexture3D = (PFNGLFRAMEBUFFERTEXTURE3DPROC) load("glFramebufferTexture3D"))) { return (0); }
-   if (!gload_glFramebufferRenderbuffer && !(gload_glFramebufferRenderbuffer = (PFNGLFRAMEBUFFERRENDERBUFFERPROC) load("glFramebufferRenderbuffer"))) { return (0); }
-   if (!gload_glGetFramebufferAttachmentParameteriv && !(gload_glGetFramebufferAttachmentParameteriv = (PFNGLGETFRAMEBUFFERATTACHMENTPARAMETERIVPROC) load("glGetFramebufferAttachmentParameteriv"))) { return (0); }
-   if (!gload_glGenerateMipmap && !(gload_glGenerateMipmap = (PFNGLGENERATEMIPMAPPROC) load("glGenerateMipmap"))) { return (0); }
-   if (!gload_glBlitFramebuffer && !(gload_glBlitFramebuffer = (PFNGLBLITFRAMEBUFFERPROC) load("glBlitFramebuffer"))) { return (0); }
-   if (!gload_glRenderbufferStorageMultisample && !(gload_glRenderbufferStorageMultisample = (PFNGLRENDERBUFFERSTORAGEMULTISAMPLEPROC) load("glRenderbufferStorageMultisample"))) { return (0); }
-   if (!gload_glFramebufferTextureLayer && !(gload_glFramebufferTextureLayer = (PFNGLFRAMEBUFFERTEXTURELAYERPROC) load("glFramebufferTextureLayer"))) { return (0); }
-   if (!gload_glMapBufferRange && !(gload_glMapBufferRange = (PFNGLMAPBUFFERRANGEPROC) load("glMapBufferRange"))) { return (0); }
-   if (!gload_glFlushMappedBufferRange && !(gload_glFlushMappedBufferRange = (PFNGLFLUSHMAPPEDBUFFERRANGEPROC) load("glFlushMappedBufferRange"))) { return (0); }
-   if (!gload_glBindVertexArray && !(gload_glBindVertexArray = (PFNGLBINDVERTEXARRAYPROC) load("glBindVertexArray"))) { return (0); }
-   if (!gload_glDeleteVertexArrays && !(gload_glDeleteVertexArrays = (PFNGLDELETEVERTEXARRAYSPROC) load("glDeleteVertexArrays"))) { return (0); }
-   if (!gload_glGenVertexArrays && !(gload_glGenVertexArrays = (PFNGLGENVERTEXARRAYSPROC) load("glGenVertexArrays"))) { return (0); }
-   if (!gload_glIsVertexArray && !(gload_glIsVertexArray = (PFNGLISVERTEXARRAYPROC) load("glIsVertexArray"))) { return (0); }
-
-#  endif /* GL_VERSION_3_0 */
-#  if defined GL_VERSION_3_1
-
-   if (!gload_glDrawArraysInstanced && !(gload_glDrawArraysInstanced = (PFNGLDRAWARRAYSINSTANCEDPROC) load("glDrawArraysInstanced"))) { return (0); }
-   if (!gload_glDrawElementsInstanced && !(gload_glDrawElementsInstanced = (PFNGLDRAWELEMENTSINSTANCEDPROC) load("glDrawElementsInstanced"))) { return (0); }
-   if (!gload_glTexBuffer && !(gload_glTexBuffer = (PFNGLTEXBUFFERPROC) load("glTexBuffer"))) { return (0); }
-   if (!gload_glPrimitiveRestartIndex && !(gload_glPrimitiveRestartIndex = (PFNGLPRIMITIVERESTARTINDEXPROC) load("glPrimitiveRestartIndex"))) { return (0); }
-   if (!gload_glCopyBufferSubData && !(gload_glCopyBufferSubData = (PFNGLCOPYBUFFERSUBDATAPROC) load("glCopyBufferSubData"))) { return (0); }
-   if (!gload_glGetUniformIndices && !(gload_glGetUniformIndices = (PFNGLGETUNIFORMINDICESPROC) load("glGetUniformIndices"))) { return (0); }
-   if (!gload_glGetActiveUniformsiv && !(gload_glGetActiveUniformsiv = (PFNGLGETACTIVEUNIFORMSIVPROC) load("glGetActiveUniformsiv"))) { return (0); }
-   if (!gload_glGetActiveUniformName && !(gload_glGetActiveUniformName = (PFNGLGETACTIVEUNIFORMNAMEPROC) load("glGetActiveUniformName"))) { return (0); }
-   if (!gload_glGetUniformBlockIndex && !(gload_glGetUniformBlockIndex = (PFNGLGETUNIFORMBLOCKINDEXPROC) load("glGetUniformBlockIndex"))) { return (0); }
-   if (!gload_glGetActiveUniformBlockiv && !(gload_glGetActiveUniformBlockiv = (PFNGLGETACTIVEUNIFORMBLOCKIVPROC) load("glGetActiveUniformBlockiv"))) { return (0); }
-   if (!gload_glGetActiveUniformBlockName && !(gload_glGetActiveUniformBlockName = (PFNGLGETACTIVEUNIFORMBLOCKNAMEPROC) load("glGetActiveUniformBlockName"))) { return (0); }
-   if (!gload_glUniformBlockBinding && !(gload_glUniformBlockBinding = (PFNGLUNIFORMBLOCKBINDINGPROC) load("glUniformBlockBinding"))) { return (0); }
-   if (!gload_glBindBufferRange && !(gload_glBindBufferRange = (PFNGLBINDBUFFERRANGEPROC) load("glBindBufferRange"))) { return (0); }
-   if (!gload_glBindBufferBase && !(gload_glBindBufferBase = (PFNGLBINDBUFFERBASEPROC) load("glBindBufferBase"))) { return (0); }
-   if (!gload_glGetIntegeri_v && !(gload_glGetIntegeri_v = (PFNGLGETINTEGERI_VPROC) load("glGetIntegeri_v"))) { return (0); }
-
-#  endif /* GL_VERSION_3_1 */
-#  if defined GL_VERSION_3_2
-
-   if (!gload_glDrawElementsBaseVertex && !(gload_glDrawElementsBaseVertex = (PFNGLDRAWELEMENTSBASEVERTEXPROC) load("glDrawElementsBaseVertex"))) { return (0); }
-   if (!gload_glDrawRangeElementsBaseVertex && !(gload_glDrawRangeElementsBaseVertex = (PFNGLDRAWRANGEELEMENTSBASEVERTEXPROC) load("glDrawRangeElementsBaseVertex"))) { return (0); }
-   if (!gload_glDrawElementsInstancedBaseVertex && !(gload_glDrawElementsInstancedBaseVertex = (PFNGLDRAWELEMENTSINSTANCEDBASEVERTEXPROC) load("glDrawElementsInstancedBaseVertex"))) { return (0); }
-   if (!gload_glMultiDrawElementsBaseVertex && !(gload_glMultiDrawElementsBaseVertex = (PFNGLMULTIDRAWELEMENTSBASEVERTEXPROC) load("glMultiDrawElementsBaseVertex"))) { return (0); }
-   if (!gload_glProvokingVertex && !(gload_glProvokingVertex = (PFNGLPROVOKINGVERTEXPROC) load("glProvokingVertex"))) { return (0); }
-   if (!gload_glFenceSync && !(gload_glFenceSync = (PFNGLFENCESYNCPROC) load("glFenceSync"))) { return (0); }
-   if (!gload_glIsSync && !(gload_glIsSync = (PFNGLISSYNCPROC) load("glIsSync"))) { return (0); }
-   if (!gload_glDeleteSync && !(gload_glDeleteSync = (PFNGLDELETESYNCPROC) load("glDeleteSync"))) { return (0); }
-   if (!gload_glClientWaitSync && !(gload_glClientWaitSync = (PFNGLCLIENTWAITSYNCPROC) load("glClientWaitSync"))) { return (0); }
-   if (!gload_glWaitSync && !(gload_glWaitSync = (PFNGLWAITSYNCPROC) load("glWaitSync"))) { return (0); }
-   if (!gload_glGetInteger64v && !(gload_glGetInteger64v = (PFNGLGETINTEGER64VPROC) load("glGetInteger64v"))) { return (0); }
-   if (!gload_glGetSynciv && !(gload_glGetSynciv = (PFNGLGETSYNCIVPROC) load("glGetSynciv"))) { return (0); }
-   if (!gload_glGetInteger64i_v && !(gload_glGetInteger64i_v = (PFNGLGETINTEGER64I_VPROC) load("glGetInteger64i_v"))) { return (0); }
-   if (!gload_glGetBufferParameteri64v && !(gload_glGetBufferParameteri64v = (PFNGLGETBUFFERPARAMETERI64VPROC) load("glGetBufferParameteri64v"))) { return (0); }
-   if (!gload_glFramebufferTexture && !(gload_glFramebufferTexture = (PFNGLFRAMEBUFFERTEXTUREPROC) load("glFramebufferTexture"))) { return (0); }
-   if (!gload_glTexImage2DMultisample && !(gload_glTexImage2DMultisample = (PFNGLTEXIMAGE2DMULTISAMPLEPROC) load("glTexImage2DMultisample"))) { return (0); }
-   if (!gload_glTexImage3DMultisample && !(gload_glTexImage3DMultisample = (PFNGLTEXIMAGE3DMULTISAMPLEPROC) load("glTexImage3DMultisample"))) { return (0); }
-   if (!gload_glGetMultisamplefv && !(gload_glGetMultisamplefv = (PFNGLGETMULTISAMPLEFVPROC) load("glGetMultisamplefv"))) { return (0); }
-   if (!gload_glSampleMaski && !(gload_glSampleMaski = (PFNGLSAMPLEMASKIPROC) load("glSampleMaski"))) { return (0); }
-
-#  endif /* GL_VERSION_3_2 */
-#  if defined GL_VERSION_3_3
-
-   if (!gload_glBindFragDataLocationIndexed && !(gload_glBindFragDataLocationIndexed = (PFNGLBINDFRAGDATALOCATIONINDEXEDPROC) load("glBindFragDataLocationIndexed"))) { return (0); }
-   if (!gload_glGetFragDataIndex && !(gload_glGetFragDataIndex = (PFNGLGETFRAGDATAINDEXPROC) load("glGetFragDataIndex"))) { return (0); }
-   if (!gload_glGenSamplers && !(gload_glGenSamplers = (PFNGLGENSAMPLERSPROC) load("glGenSamplers"))) { return (0); }
-   if (!gload_glDeleteSamplers && !(gload_glDeleteSamplers = (PFNGLDELETESAMPLERSPROC) load("glDeleteSamplers"))) { return (0); }
-   if (!gload_glIsSampler && !(gload_glIsSampler = (PFNGLISSAMPLERPROC) load("glIsSampler"))) { return (0); }
-   if (!gload_glBindSampler && !(gload_glBindSampler = (PFNGLBINDSAMPLERPROC) load("glBindSampler"))) { return (0); }
-   if (!gload_glSamplerParameteri && !(gload_glSamplerParameteri = (PFNGLSAMPLERPARAMETERIPROC) load("glSamplerParameteri"))) { return (0); }
-   if (!gload_glSamplerParameteriv && !(gload_glSamplerParameteriv = (PFNGLSAMPLERPARAMETERIVPROC) load("glSamplerParameteriv"))) { return (0); }
-   if (!gload_glSamplerParameterf && !(gload_glSamplerParameterf = (PFNGLSAMPLERPARAMETERFPROC) load("glSamplerParameterf"))) { return (0); }
-   if (!gload_glSamplerParameterfv && !(gload_glSamplerParameterfv = (PFNGLSAMPLERPARAMETERFVPROC) load("glSamplerParameterfv"))) { return (0); }
-   if (!gload_glSamplerParameterIiv && !(gload_glSamplerParameterIiv = (PFNGLSAMPLERPARAMETERIIVPROC) load("glSamplerParameterIiv"))) { return (0); }
-   if (!gload_glSamplerParameterIuiv && !(gload_glSamplerParameterIuiv = (PFNGLSAMPLERPARAMETERIUIVPROC) load("glSamplerParameterIuiv"))) { return (0); }
-   if (!gload_glGetSamplerParameteriv && !(gload_glGetSamplerParameteriv = (PFNGLGETSAMPLERPARAMETERIVPROC) load("glGetSamplerParameteriv"))) { return (0); }
-   if (!gload_glGetSamplerParameterIiv && !(gload_glGetSamplerParameterIiv = (PFNGLGETSAMPLERPARAMETERIIVPROC) load("glGetSamplerParameterIiv"))) { return (0); }
-   if (!gload_glGetSamplerParameterfv && !(gload_glGetSamplerParameterfv = (PFNGLGETSAMPLERPARAMETERFVPROC) load("glGetSamplerParameterfv"))) { return (0); }
-   if (!gload_glGetSamplerParameterIuiv && !(gload_glGetSamplerParameterIuiv = (PFNGLGETSAMPLERPARAMETERIUIVPROC) load("glGetSamplerParameterIuiv"))) { return (0); }
-   if (!gload_glQueryCounter && !(gload_glQueryCounter = (PFNGLQUERYCOUNTERPROC) load("glQueryCounter"))) { return (0); }
-   if (!gload_glGetQueryObjecti64v && !(gload_glGetQueryObjecti64v = (PFNGLGETQUERYOBJECTI64VPROC) load("glGetQueryObjecti64v"))) { return (0); }
-   if (!gload_glGetQueryObjectui64v && !(gload_glGetQueryObjectui64v = (PFNGLGETQUERYOBJECTUI64VPROC) load("glGetQueryObjectui64v"))) { return (0); }
-   if (!gload_glVertexAttribDivisor && !(gload_glVertexAttribDivisor = (PFNGLVERTEXATTRIBDIVISORPROC) load("glVertexAttribDivisor"))) { return (0); }
-   if (!gload_glVertexAttribP1ui && !(gload_glVertexAttribP1ui = (PFNGLVERTEXATTRIBP1UIPROC) load("glVertexAttribP1ui"))) { return (0); }
-   if (!gload_glVertexAttribP1uiv && !(gload_glVertexAttribP1uiv = (PFNGLVERTEXATTRIBP1UIVPROC) load("glVertexAttribP1uiv"))) { return (0); }
-   if (!gload_glVertexAttribP2ui && !(gload_glVertexAttribP2ui = (PFNGLVERTEXATTRIBP2UIPROC) load("glVertexAttribP2ui"))) { return (0); }
-   if (!gload_glVertexAttribP2uiv && !(gload_glVertexAttribP2uiv = (PFNGLVERTEXATTRIBP2UIVPROC) load("glVertexAttribP2uiv"))) { return (0); }
-   if (!gload_glVertexAttribP3ui && !(gload_glVertexAttribP3ui = (PFNGLVERTEXATTRIBP3UIPROC) load("glVertexAttribP3ui"))) { return (0); }
-   if (!gload_glVertexAttribP3uiv && !(gload_glVertexAttribP3uiv = (PFNGLVERTEXATTRIBP3UIVPROC) load("glVertexAttribP3uiv"))) { return (0); }
-   if (!gload_glVertexAttribP4ui && !(gload_glVertexAttribP4ui = (PFNGLVERTEXATTRIBP4UIPROC) load("glVertexAttribP4ui"))) { return (0); }
-   if (!gload_glVertexAttribP4uiv && !(gload_glVertexAttribP4uiv = (PFNGLVERTEXATTRIBP4UIVPROC) load("glVertexAttribP4uiv"))) { return (0); }
-   if (!gload_glVertexP2ui && !(gload_glVertexP2ui = (PFNGLVERTEXP2UIPROC) load("glVertexP2ui"))) { return (0); }
-   if (!gload_glVertexP2uiv && !(gload_glVertexP2uiv = (PFNGLVERTEXP2UIVPROC) load("glVertexP2uiv"))) { return (0); }
-   if (!gload_glVertexP3ui && !(gload_glVertexP3ui = (PFNGLVERTEXP3UIPROC) load("glVertexP3ui"))) { return (0); }
-   if (!gload_glVertexP3uiv && !(gload_glVertexP3uiv = (PFNGLVERTEXP3UIVPROC) load("glVertexP3uiv"))) { return (0); }
-   if (!gload_glVertexP4ui && !(gload_glVertexP4ui = (PFNGLVERTEXP4UIPROC) load("glVertexP4ui"))) { return (0); }
-   if (!gload_glVertexP4uiv && !(gload_glVertexP4uiv = (PFNGLVERTEXP4UIVPROC) load("glVertexP4uiv"))) { return (0); }
-   if (!gload_glTexCoordP1ui && !(gload_glTexCoordP1ui = (PFNGLTEXCOORDP1UIPROC) load("glTexCoordP1ui"))) { return (0); }
-   if (!gload_glTexCoordP1uiv && !(gload_glTexCoordP1uiv = (PFNGLTEXCOORDP1UIVPROC) load("glTexCoordP1uiv"))) { return (0); }
-   if (!gload_glTexCoordP2ui && !(gload_glTexCoordP2ui = (PFNGLTEXCOORDP2UIPROC) load("glTexCoordP2ui"))) { return (0); }
-   if (!gload_glTexCoordP2uiv && !(gload_glTexCoordP2uiv = (PFNGLTEXCOORDP2UIVPROC) load("glTexCoordP2uiv"))) { return (0); }
-   if (!gload_glTexCoordP3ui && !(gload_glTexCoordP3ui = (PFNGLTEXCOORDP3UIPROC) load("glTexCoordP3ui"))) { return (0); }
-   if (!gload_glTexCoordP3uiv && !(gload_glTexCoordP3uiv = (PFNGLTEXCOORDP3UIVPROC) load("glTexCoordP3uiv"))) { return (0); }
-   if (!gload_glTexCoordP4ui && !(gload_glTexCoordP4ui = (PFNGLTEXCOORDP4UIPROC) load("glTexCoordP4ui"))) { return (0); }
-   if (!gload_glTexCoordP4uiv && !(gload_glTexCoordP4uiv = (PFNGLTEXCOORDP4UIVPROC) load("glTexCoordP4uiv"))) { return (0); }
-   if (!gload_glMultiTexCoordP1ui && !(gload_glMultiTexCoordP1ui = (PFNGLMULTITEXCOORDP1UIPROC) load("glMultiTexCoordP1ui"))) { return (0); }
-   if (!gload_glMultiTexCoordP1uiv && !(gload_glMultiTexCoordP1uiv = (PFNGLMULTITEXCOORDP1UIVPROC) load("glMultiTexCoordP1uiv"))) { return (0); }
-   if (!gload_glMultiTexCoordP2ui && !(gload_glMultiTexCoordP2ui = (PFNGLMULTITEXCOORDP2UIPROC) load("glMultiTexCoordP2ui"))) { return (0); }
-   if (!gload_glMultiTexCoordP2uiv && !(gload_glMultiTexCoordP2uiv = (PFNGLMULTITEXCOORDP2UIVPROC) load("glMultiTexCoordP2uiv"))) { return (0); }
-   if (!gload_glMultiTexCoordP3ui && !(gload_glMultiTexCoordP3ui = (PFNGLMULTITEXCOORDP3UIPROC) load("glMultiTexCoordP3ui"))) { return (0); }
-   if (!gload_glMultiTexCoordP3uiv && !(gload_glMultiTexCoordP3uiv = (PFNGLMULTITEXCOORDP3UIVPROC) load("glMultiTexCoordP3uiv"))) { return (0); }
-   if (!gload_glMultiTexCoordP4ui && !(gload_glMultiTexCoordP4ui = (PFNGLMULTITEXCOORDP4UIPROC) load("glMultiTexCoordP4ui"))) { return (0); }
-   if (!gload_glMultiTexCoordP4uiv && !(gload_glMultiTexCoordP4uiv = (PFNGLMULTITEXCOORDP4UIVPROC) load("glMultiTexCoordP4uiv"))) { return (0); }
-   if (!gload_glNormalP3ui && !(gload_glNormalP3ui = (PFNGLNORMALP3UIPROC) load("glNormalP3ui"))) { return (0); }
-   if (!gload_glNormalP3uiv && !(gload_glNormalP3uiv = (PFNGLNORMALP3UIVPROC) load("glNormalP3uiv"))) { return (0); }
-   if (!gload_glColorP3ui && !(gload_glColorP3ui = (PFNGLCOLORP3UIPROC) load("glColorP3ui"))) { return (0); }
-   if (!gload_glColorP3uiv && !(gload_glColorP3uiv = (PFNGLCOLORP3UIVPROC) load("glColorP3uiv"))) { return (0); }
-   if (!gload_glColorP4ui && !(gload_glColorP4ui = (PFNGLCOLORP4UIPROC) load("glColorP4ui"))) { return (0); }
-   if (!gload_glColorP4uiv && !(gload_glColorP4uiv = (PFNGLCOLORP4UIVPROC) load("glColorP4uiv"))) { return (0); }
-   if (!gload_glSecondaryColorP3ui && !(gload_glSecondaryColorP3ui = (PFNGLSECONDARYCOLORP3UIPROC) load("glSecondaryColorP3ui"))) { return (0); }
-   if (!gload_glSecondaryColorP3uiv && !(gload_glSecondaryColorP3uiv = (PFNGLSECONDARYCOLORP3UIVPROC) load("glSecondaryColorP3uiv"))) { return (0); }
-
-#  endif /* GL_VERSION_3_3 */
-#  if defined GL_VERSION_4_0
-
-   if (!gload_glMinSampleShading && !(gload_glMinSampleShading = (PFNGLMINSAMPLESHADINGPROC) load("glMinSampleShading"))) { return (0); }
-   if (!gload_glBlendEquationi && !(gload_glBlendEquationi = (PFNGLBLENDEQUATIONIPROC) load("glBlendEquationi"))) { return (0); }
-   if (!gload_glBlendEquationSeparatei && !(gload_glBlendEquationSeparatei = (PFNGLBLENDEQUATIONSEPARATEIPROC) load("glBlendEquationSeparatei"))) { return (0); }
-   if (!gload_glBlendFunci && !(gload_glBlendFunci = (PFNGLBLENDFUNCIPROC) load("glBlendFunci"))) { return (0); }
-   if (!gload_glBlendFuncSeparatei && !(gload_glBlendFuncSeparatei = (PFNGLBLENDFUNCSEPARATEIPROC) load("glBlendFuncSeparatei"))) { return (0); }
-   if (!gload_glDrawArraysIndirect && !(gload_glDrawArraysIndirect = (PFNGLDRAWARRAYSINDIRECTPROC) load("glDrawArraysIndirect"))) { return (0); }
-   if (!gload_glDrawElementsIndirect && !(gload_glDrawElementsIndirect = (PFNGLDRAWELEMENTSINDIRECTPROC) load("glDrawElementsIndirect"))) { return (0); }
-   if (!gload_glUniform1d && !(gload_glUniform1d = (PFNGLUNIFORM1DPROC) load("glUniform1d"))) { return (0); }
-   if (!gload_glUniform2d && !(gload_glUniform2d = (PFNGLUNIFORM2DPROC) load("glUniform2d"))) { return (0); }
-   if (!gload_glUniform3d && !(gload_glUniform3d = (PFNGLUNIFORM3DPROC) load("glUniform3d"))) { return (0); }
-   if (!gload_glUniform4d && !(gload_glUniform4d = (PFNGLUNIFORM4DPROC) load("glUniform4d"))) { return (0); }
-   if (!gload_glUniform1dv && !(gload_glUniform1dv = (PFNGLUNIFORM1DVPROC) load("glUniform1dv"))) { return (0); }
-   if (!gload_glUniform2dv && !(gload_glUniform2dv = (PFNGLUNIFORM2DVPROC) load("glUniform2dv"))) { return (0); }
-   if (!gload_glUniform3dv && !(gload_glUniform3dv = (PFNGLUNIFORM3DVPROC) load("glUniform3dv"))) { return (0); }
-   if (!gload_glUniform4dv && !(gload_glUniform4dv = (PFNGLUNIFORM4DVPROC) load("glUniform4dv"))) { return (0); }
-   if (!gload_glUniformMatrix2dv && !(gload_glUniformMatrix2dv = (PFNGLUNIFORMMATRIX2DVPROC) load("glUniformMatrix2dv"))) { return (0); }
-   if (!gload_glUniformMatrix3dv && !(gload_glUniformMatrix3dv = (PFNGLUNIFORMMATRIX3DVPROC) load("glUniformMatrix3dv"))) { return (0); }
-   if (!gload_glUniformMatrix4dv && !(gload_glUniformMatrix4dv = (PFNGLUNIFORMMATRIX4DVPROC) load("glUniformMatrix4dv"))) { return (0); }
-   if (!gload_glUniformMatrix2x3dv && !(gload_glUniformMatrix2x3dv = (PFNGLUNIFORMMATRIX2X3DVPROC) load("glUniformMatrix2x3dv"))) { return (0); }
-   if (!gload_glUniformMatrix2x4dv && !(gload_glUniformMatrix2x4dv = (PFNGLUNIFORMMATRIX2X4DVPROC) load("glUniformMatrix2x4dv"))) { return (0); }
-   if (!gload_glUniformMatrix3x2dv && !(gload_glUniformMatrix3x2dv = (PFNGLUNIFORMMATRIX3X2DVPROC) load("glUniformMatrix3x2dv"))) { return (0); }
-   if (!gload_glUniformMatrix3x4dv && !(gload_glUniformMatrix3x4dv = (PFNGLUNIFORMMATRIX3X4DVPROC) load("glUniformMatrix3x4dv"))) { return (0); }
-   if (!gload_glUniformMatrix4x2dv && !(gload_glUniformMatrix4x2dv = (PFNGLUNIFORMMATRIX4X2DVPROC) load("glUniformMatrix4x2dv"))) { return (0); }
-   if (!gload_glUniformMatrix4x3dv && !(gload_glUniformMatrix4x3dv = (PFNGLUNIFORMMATRIX4X3DVPROC) load("glUniformMatrix4x3dv"))) { return (0); }
-   if (!gload_glGetUniformdv && !(gload_glGetUniformdv = (PFNGLGETUNIFORMDVPROC) load("glGetUniformdv"))) { return (0); }
-   if (!gload_glGetSubroutineUniformLocation && !(gload_glGetSubroutineUniformLocation = (PFNGLGETSUBROUTINEUNIFORMLOCATIONPROC) load("glGetSubroutineUniformLocation"))) { return (0); }
-   if (!gload_glGetSubroutineIndex && !(gload_glGetSubroutineIndex = (PFNGLGETSUBROUTINEINDEXPROC) load("glGetSubroutineIndex"))) { return (0); }
-   if (!gload_glGetActiveSubroutineUniformiv && !(gload_glGetActiveSubroutineUniformiv = (PFNGLGETACTIVESUBROUTINEUNIFORMIVPROC) load("glGetActiveSubroutineUniformiv"))) { return (0); }
-   if (!gload_glGetActiveSubroutineUniformName && !(gload_glGetActiveSubroutineUniformName = (PFNGLGETACTIVESUBROUTINEUNIFORMNAMEPROC) load("glGetActiveSubroutineUniformName"))) { return (0); }
-   if (!gload_glGetActiveSubroutineName && !(gload_glGetActiveSubroutineName = (PFNGLGETACTIVESUBROUTINENAMEPROC) load("glGetActiveSubroutineName"))) { return (0); }
-   if (!gload_glUniformSubroutinesuiv && !(gload_glUniformSubroutinesuiv = (PFNGLUNIFORMSUBROUTINESUIVPROC) load("glUniformSubroutinesuiv"))) { return (0); }
-   if (!gload_glGetUniformSubroutineuiv && !(gload_glGetUniformSubroutineuiv = (PFNGLGETUNIFORMSUBROUTINEUIVPROC) load("glGetUniformSubroutineuiv"))) { return (0); }
-   if (!gload_glGetProgramStageiv && !(gload_glGetProgramStageiv = (PFNGLGETPROGRAMSTAGEIVPROC) load("glGetProgramStageiv"))) { return (0); }
-   if (!gload_glPatchParameteri && !(gload_glPatchParameteri = (PFNGLPATCHPARAMETERIPROC) load("glPatchParameteri"))) { return (0); }
-   if (!gload_glPatchParameterfv && !(gload_glPatchParameterfv = (PFNGLPATCHPARAMETERFVPROC) load("glPatchParameterfv"))) { return (0); }
-   if (!gload_glBindTransformFeedback && !(gload_glBindTransformFeedback = (PFNGLBINDTRANSFORMFEEDBACKPROC) load("glBindTransformFeedback"))) { return (0); }
-   if (!gload_glDeleteTransformFeedbacks && !(gload_glDeleteTransformFeedbacks = (PFNGLDELETETRANSFORMFEEDBACKSPROC) load("glDeleteTransformFeedbacks"))) { return (0); }
-   if (!gload_glGenTransformFeedbacks && !(gload_glGenTransformFeedbacks = (PFNGLGENTRANSFORMFEEDBACKSPROC) load("glGenTransformFeedbacks"))) { return (0); }
-   if (!gload_glIsTransformFeedback && !(gload_glIsTransformFeedback = (PFNGLISTRANSFORMFEEDBACKPROC) load("glIsTransformFeedback"))) { return (0); }
-   if (!gload_glPauseTransformFeedback && !(gload_glPauseTransformFeedback = (PFNGLPAUSETRANSFORMFEEDBACKPROC) load("glPauseTransformFeedback"))) { return (0); }
-   if (!gload_glResumeTransformFeedback && !(gload_glResumeTransformFeedback = (PFNGLRESUMETRANSFORMFEEDBACKPROC) load("glResumeTransformFeedback"))) { return (0); }
-   if (!gload_glDrawTransformFeedback && !(gload_glDrawTransformFeedback = (PFNGLDRAWTRANSFORMFEEDBACKPROC) load("glDrawTransformFeedback"))) { return (0); }
-   if (!gload_glDrawTransformFeedbackStream && !(gload_glDrawTransformFeedbackStream = (PFNGLDRAWTRANSFORMFEEDBACKSTREAMPROC) load("glDrawTransformFeedbackStream"))) { return (0); }
-   if (!gload_glBeginQueryIndexed && !(gload_glBeginQueryIndexed = (PFNGLBEGINQUERYINDEXEDPROC) load("glBeginQueryIndexed"))) { return (0); }
-   if (!gload_glEndQueryIndexed && !(gload_glEndQueryIndexed = (PFNGLENDQUERYINDEXEDPROC) load("glEndQueryIndexed"))) { return (0); }
-   if (!gload_glGetQueryIndexediv && !(gload_glGetQueryIndexediv = (PFNGLGETQUERYINDEXEDIVPROC) load("glGetQueryIndexediv"))) { return (0); }
-
-#  endif /* GL_VERSION_4_0 */
-#  if defined GL_VERSION_4_1
-
-   if (!gload_glReleaseShaderCompiler && !(gload_glReleaseShaderCompiler = (PFNGLRELEASESHADERCOMPILERPROC) load("glReleaseShaderCompiler"))) { return (0); }
-   if (!gload_glShaderBinary && !(gload_glShaderBinary = (PFNGLSHADERBINARYPROC) load("glShaderBinary"))) { return (0); }
-   if (!gload_glGetShaderPrecisionFormat && !(gload_glGetShaderPrecisionFormat = (PFNGLGETSHADERPRECISIONFORMATPROC) load("glGetShaderPrecisionFormat"))) { return (0); }
-   if (!gload_glDepthRangef && !(gload_glDepthRangef = (PFNGLDEPTHRANGEFPROC) load("glDepthRangef"))) { return (0); }
-   if (!gload_glClearDepthf && !(gload_glClearDepthf = (PFNGLCLEARDEPTHFPROC) load("glClearDepthf"))) { return (0); }
-   if (!gload_glGetProgramBinary && !(gload_glGetProgramBinary = (PFNGLGETPROGRAMBINARYPROC) load("glGetProgramBinary"))) { return (0); }
-   if (!gload_glProgramBinary && !(gload_glProgramBinary = (PFNGLPROGRAMBINARYPROC) load("glProgramBinary"))) { return (0); }
-   if (!gload_glProgramParameteri && !(gload_glProgramParameteri = (PFNGLPROGRAMPARAMETERIPROC) load("glProgramParameteri"))) { return (0); }
-   if (!gload_glUseProgramStages && !(gload_glUseProgramStages = (PFNGLUSEPROGRAMSTAGESPROC) load("glUseProgramStages"))) { return (0); }
-   if (!gload_glActiveShaderProgram && !(gload_glActiveShaderProgram = (PFNGLACTIVESHADERPROGRAMPROC) load("glActiveShaderProgram"))) { return (0); }
-   if (!gload_glCreateShaderProgramv && !(gload_glCreateShaderProgramv = (PFNGLCREATESHADERPROGRAMVPROC) load("glCreateShaderProgramv"))) { return (0); }
-   if (!gload_glBindProgramPipeline && !(gload_glBindProgramPipeline = (PFNGLBINDPROGRAMPIPELINEPROC) load("glBindProgramPipeline"))) { return (0); }
-   if (!gload_glDeleteProgramPipelines && !(gload_glDeleteProgramPipelines = (PFNGLDELETEPROGRAMPIPELINESPROC) load("glDeleteProgramPipelines"))) { return (0); }
-   if (!gload_glGenProgramPipelines && !(gload_glGenProgramPipelines = (PFNGLGENPROGRAMPIPELINESPROC) load("glGenProgramPipelines"))) { return (0); }
-   if (!gload_glIsProgramPipeline && !(gload_glIsProgramPipeline = (PFNGLISPROGRAMPIPELINEPROC) load("glIsProgramPipeline"))) { return (0); }
-   if (!gload_glGetProgramPipelineiv && !(gload_glGetProgramPipelineiv = (PFNGLGETPROGRAMPIPELINEIVPROC) load("glGetProgramPipelineiv"))) { return (0); }
-   if (!gload_glProgramParameteri && !(gload_glProgramParameteri = (PFNGLPROGRAMPARAMETERIPROC) load("glProgramParameteri"))) { return (0); }
-   if (!gload_glProgramUniform1i && !(gload_glProgramUniform1i = (PFNGLPROGRAMUNIFORM1IPROC) load("glProgramUniform1i"))) { return (0); }
-   if (!gload_glProgramUniform1iv && !(gload_glProgramUniform1iv = (PFNGLPROGRAMUNIFORM1IVPROC) load("glProgramUniform1iv"))) { return (0); }
-   if (!gload_glProgramUniform1f && !(gload_glProgramUniform1f = (PFNGLPROGRAMUNIFORM1FPROC) load("glProgramUniform1f"))) { return (0); }
-   if (!gload_glProgramUniform1fv && !(gload_glProgramUniform1fv = (PFNGLPROGRAMUNIFORM1FVPROC) load("glProgramUniform1fv"))) { return (0); }
-   if (!gload_glProgramUniform1d && !(gload_glProgramUniform1d = (PFNGLPROGRAMUNIFORM1DPROC) load("glProgramUniform1d"))) { return (0); }
-   if (!gload_glProgramUniform1dv && !(gload_glProgramUniform1dv = (PFNGLPROGRAMUNIFORM1DVPROC) load("glProgramUniform1dv"))) { return (0); }
-   if (!gload_glProgramUniform1ui && !(gload_glProgramUniform1ui = (PFNGLPROGRAMUNIFORM1UIPROC) load("glProgramUniform1ui"))) { return (0); }
-   if (!gload_glProgramUniform1uiv && !(gload_glProgramUniform1uiv = (PFNGLPROGRAMUNIFORM1UIVPROC) load("glProgramUniform1uiv"))) { return (0); }
-   if (!gload_glProgramUniform2i && !(gload_glProgramUniform2i = (PFNGLPROGRAMUNIFORM2IPROC) load("glProgramUniform2i"))) { return (0); }
-   if (!gload_glProgramUniform2iv && !(gload_glProgramUniform2iv = (PFNGLPROGRAMUNIFORM2IVPROC) load("glProgramUniform2iv"))) { return (0); }
-   if (!gload_glProgramUniform2f && !(gload_glProgramUniform2f = (PFNGLPROGRAMUNIFORM2FPROC) load("glProgramUniform2f"))) { return (0); }
-   if (!gload_glProgramUniform2fv && !(gload_glProgramUniform2fv = (PFNGLPROGRAMUNIFORM2FVPROC) load("glProgramUniform2fv"))) { return (0); }
-   if (!gload_glProgramUniform2d && !(gload_glProgramUniform2d = (PFNGLPROGRAMUNIFORM2DPROC) load("glProgramUniform2d"))) { return (0); }
-   if (!gload_glProgramUniform2dv && !(gload_glProgramUniform2dv = (PFNGLPROGRAMUNIFORM2DVPROC) load("glProgramUniform2dv"))) { return (0); }
-   if (!gload_glProgramUniform2ui && !(gload_glProgramUniform2ui = (PFNGLPROGRAMUNIFORM2UIPROC) load("glProgramUniform2ui"))) { return (0); }
-   if (!gload_glProgramUniform2uiv && !(gload_glProgramUniform2uiv = (PFNGLPROGRAMUNIFORM2UIVPROC) load("glProgramUniform2uiv"))) { return (0); }
-   if (!gload_glProgramUniform3i && !(gload_glProgramUniform3i = (PFNGLPROGRAMUNIFORM3IPROC) load("glProgramUniform3i"))) { return (0); }
-   if (!gload_glProgramUniform3iv && !(gload_glProgramUniform3iv = (PFNGLPROGRAMUNIFORM3IVPROC) load("glProgramUniform3iv"))) { return (0); }
-   if (!gload_glProgramUniform3f && !(gload_glProgramUniform3f = (PFNGLPROGRAMUNIFORM3FPROC) load("glProgramUniform3f"))) { return (0); }
-   if (!gload_glProgramUniform3fv && !(gload_glProgramUniform3fv = (PFNGLPROGRAMUNIFORM3FVPROC) load("glProgramUniform3fv"))) { return (0); }
-   if (!gload_glProgramUniform3d && !(gload_glProgramUniform3d = (PFNGLPROGRAMUNIFORM3DPROC) load("glProgramUniform3d"))) { return (0); }
-   if (!gload_glProgramUniform3dv && !(gload_glProgramUniform3dv = (PFNGLPROGRAMUNIFORM3DVPROC) load("glProgramUniform3dv"))) { return (0); }
-   if (!gload_glProgramUniform3ui && !(gload_glProgramUniform3ui = (PFNGLPROGRAMUNIFORM3UIPROC) load("glProgramUniform3ui"))) { return (0); }
-   if (!gload_glProgramUniform3uiv && !(gload_glProgramUniform3uiv = (PFNGLPROGRAMUNIFORM3UIVPROC) load("glProgramUniform3uiv"))) { return (0); }
-   if (!gload_glProgramUniform4i && !(gload_glProgramUniform4i = (PFNGLPROGRAMUNIFORM4IPROC) load("glProgramUniform4i"))) { return (0); }
-   if (!gload_glProgramUniform4iv && !(gload_glProgramUniform4iv = (PFNGLPROGRAMUNIFORM4IVPROC) load("glProgramUniform4iv"))) { return (0); }
-   if (!gload_glProgramUniform4f && !(gload_glProgramUniform4f = (PFNGLPROGRAMUNIFORM4FPROC) load("glProgramUniform4f"))) { return (0); }
-   if (!gload_glProgramUniform4fv && !(gload_glProgramUniform4fv = (PFNGLPROGRAMUNIFORM4FVPROC) load("glProgramUniform4fv"))) { return (0); }
-   if (!gload_glProgramUniform4d && !(gload_glProgramUniform4d = (PFNGLPROGRAMUNIFORM4DPROC) load("glProgramUniform4d"))) { return (0); }
-   if (!gload_glProgramUniform4dv && !(gload_glProgramUniform4dv = (PFNGLPROGRAMUNIFORM4DVPROC) load("glProgramUniform4dv"))) { return (0); }
-   if (!gload_glProgramUniform4ui && !(gload_glProgramUniform4ui = (PFNGLPROGRAMUNIFORM4UIPROC) load("glProgramUniform4ui"))) { return (0); }
-   if (!gload_glProgramUniform4uiv && !(gload_glProgramUniform4uiv = (PFNGLPROGRAMUNIFORM4UIVPROC) load("glProgramUniform4uiv"))) { return (0); }
-   if (!gload_glProgramUniformMatrix2fv && !(gload_glProgramUniformMatrix2fv = (PFNGLPROGRAMUNIFORMMATRIX2FVPROC) load("glProgramUniformMatrix2fv"))) { return (0); }
-   if (!gload_glProgramUniformMatrix3fv && !(gload_glProgramUniformMatrix3fv = (PFNGLPROGRAMUNIFORMMATRIX3FVPROC) load("glProgramUniformMatrix3fv"))) { return (0); }
-   if (!gload_glProgramUniformMatrix4fv && !(gload_glProgramUniformMatrix4fv = (PFNGLPROGRAMUNIFORMMATRIX4FVPROC) load("glProgramUniformMatrix4fv"))) { return (0); }
-   if (!gload_glProgramUniformMatrix2dv && !(gload_glProgramUniformMatrix2dv = (PFNGLPROGRAMUNIFORMMATRIX2DVPROC) load("glProgramUniformMatrix2dv"))) { return (0); }
-   if (!gload_glProgramUniformMatrix3dv && !(gload_glProgramUniformMatrix3dv = (PFNGLPROGRAMUNIFORMMATRIX3DVPROC) load("glProgramUniformMatrix3dv"))) { return (0); }
-   if (!gload_glProgramUniformMatrix4dv && !(gload_glProgramUniformMatrix4dv = (PFNGLPROGRAMUNIFORMMATRIX4DVPROC) load("glProgramUniformMatrix4dv"))) { return (0); }
-   if (!gload_glProgramUniformMatrix2x3fv && !(gload_glProgramUniformMatrix2x3fv = (PFNGLPROGRAMUNIFORMMATRIX2X3FVPROC) load("glProgramUniformMatrix2x3fv"))) { return (0); }
-   if (!gload_glProgramUniformMatrix3x2fv && !(gload_glProgramUniformMatrix3x2fv = (PFNGLPROGRAMUNIFORMMATRIX3X2FVPROC) load("glProgramUniformMatrix3x2fv"))) { return (0); }
-   if (!gload_glProgramUniformMatrix2x4fv && !(gload_glProgramUniformMatrix2x4fv = (PFNGLPROGRAMUNIFORMMATRIX2X4FVPROC) load("glProgramUniformMatrix2x4fv"))) { return (0); }
-   if (!gload_glProgramUniformMatrix4x2fv && !(gload_glProgramUniformMatrix4x2fv = (PFNGLPROGRAMUNIFORMMATRIX4X2FVPROC) load("glProgramUniformMatrix4x2fv"))) { return (0); }
-   if (!gload_glProgramUniformMatrix3x4fv && !(gload_glProgramUniformMatrix3x4fv = (PFNGLPROGRAMUNIFORMMATRIX3X4FVPROC) load("glProgramUniformMatrix3x4fv"))) { return (0); }
-   if (!gload_glProgramUniformMatrix4x3fv && !(gload_glProgramUniformMatrix4x3fv = (PFNGLPROGRAMUNIFORMMATRIX4X3FVPROC) load("glProgramUniformMatrix4x3fv"))) { return (0); }
-   if (!gload_glProgramUniformMatrix2x3dv && !(gload_glProgramUniformMatrix2x3dv = (PFNGLPROGRAMUNIFORMMATRIX2X3DVPROC) load("glProgramUniformMatrix2x3dv"))) { return (0); }
-   if (!gload_glProgramUniformMatrix3x2dv && !(gload_glProgramUniformMatrix3x2dv = (PFNGLPROGRAMUNIFORMMATRIX3X2DVPROC) load("glProgramUniformMatrix3x2dv"))) { return (0); }
-   if (!gload_glProgramUniformMatrix2x4dv && !(gload_glProgramUniformMatrix2x4dv = (PFNGLPROGRAMUNIFORMMATRIX2X4DVPROC) load("glProgramUniformMatrix2x4dv"))) { return (0); }
-   if (!gload_glProgramUniformMatrix4x2dv && !(gload_glProgramUniformMatrix4x2dv = (PFNGLPROGRAMUNIFORMMATRIX4X2DVPROC) load("glProgramUniformMatrix4x2dv"))) { return (0); }
-   if (!gload_glProgramUniformMatrix3x4dv && !(gload_glProgramUniformMatrix3x4dv = (PFNGLPROGRAMUNIFORMMATRIX3X4DVPROC) load("glProgramUniformMatrix3x4dv"))) { return (0); }
-   if (!gload_glProgramUniformMatrix4x3dv && !(gload_glProgramUniformMatrix4x3dv = (PFNGLPROGRAMUNIFORMMATRIX4X3DVPROC) load("glProgramUniformMatrix4x3dv"))) { return (0); }
-   if (!gload_glValidateProgramPipeline && !(gload_glValidateProgramPipeline = (PFNGLVALIDATEPROGRAMPIPELINEPROC) load("glValidateProgramPipeline"))) { return (0); }
-   if (!gload_glGetProgramPipelineInfoLog && !(gload_glGetProgramPipelineInfoLog = (PFNGLGETPROGRAMPIPELINEINFOLOGPROC) load("glGetProgramPipelineInfoLog"))) { return (0); }
-   if (!gload_glVertexAttribL1d && !(gload_glVertexAttribL1d = (PFNGLVERTEXATTRIBL1DPROC) load("glVertexAttribL1d"))) { return (0); }
-   if (!gload_glVertexAttribL2d && !(gload_glVertexAttribL2d = (PFNGLVERTEXATTRIBL2DPROC) load("glVertexAttribL2d"))) { return (0); }
-   if (!gload_glVertexAttribL3d && !(gload_glVertexAttribL3d = (PFNGLVERTEXATTRIBL3DPROC) load("glVertexAttribL3d"))) { return (0); }
-   if (!gload_glVertexAttribL4d && !(gload_glVertexAttribL4d = (PFNGLVERTEXATTRIBL4DPROC) load("glVertexAttribL4d"))) { return (0); }
-   if (!gload_glVertexAttribL1dv && !(gload_glVertexAttribL1dv = (PFNGLVERTEXATTRIBL1DVPROC) load("glVertexAttribL1dv"))) { return (0); }
-   if (!gload_glVertexAttribL2dv && !(gload_glVertexAttribL2dv = (PFNGLVERTEXATTRIBL2DVPROC) load("glVertexAttribL2dv"))) { return (0); }
-   if (!gload_glVertexAttribL3dv && !(gload_glVertexAttribL3dv = (PFNGLVERTEXATTRIBL3DVPROC) load("glVertexAttribL3dv"))) { return (0); }
-   if (!gload_glVertexAttribL4dv && !(gload_glVertexAttribL4dv = (PFNGLVERTEXATTRIBL4DVPROC) load("glVertexAttribL4dv"))) { return (0); }
-   if (!gload_glVertexAttribLPointer && !(gload_glVertexAttribLPointer = (PFNGLVERTEXATTRIBLPOINTERPROC) load("glVertexAttribLPointer"))) { return (0); }
-   if (!gload_glGetVertexAttribLdv && !(gload_glGetVertexAttribLdv = (PFNGLGETVERTEXATTRIBLDVPROC) load("glGetVertexAttribLdv"))) { return (0); }
-   if (!gload_glViewportArrayv && !(gload_glViewportArrayv = (PFNGLVIEWPORTARRAYVPROC) load("glViewportArrayv"))) { return (0); }
-   if (!gload_glViewportIndexedf && !(gload_glViewportIndexedf = (PFNGLVIEWPORTINDEXEDFPROC) load("glViewportIndexedf"))) { return (0); }
-   if (!gload_glViewportIndexedfv && !(gload_glViewportIndexedfv = (PFNGLVIEWPORTINDEXEDFVPROC) load("glViewportIndexedfv"))) { return (0); }
-   if (!gload_glScissorArrayv && !(gload_glScissorArrayv = (PFNGLSCISSORARRAYVPROC) load("glScissorArrayv"))) { return (0); }
-   if (!gload_glScissorIndexed && !(gload_glScissorIndexed = (PFNGLSCISSORINDEXEDPROC) load("glScissorIndexed"))) { return (0); }
-   if (!gload_glScissorIndexedv && !(gload_glScissorIndexedv = (PFNGLSCISSORINDEXEDVPROC) load("glScissorIndexedv"))) { return (0); }
-   if (!gload_glDepthRangeArrayv && !(gload_glDepthRangeArrayv = (PFNGLDEPTHRANGEARRAYVPROC) load("glDepthRangeArrayv"))) { return (0); }
-   if (!gload_glDepthRangeIndexed && !(gload_glDepthRangeIndexed = (PFNGLDEPTHRANGEINDEXEDPROC) load("glDepthRangeIndexed"))) { return (0); }
-   if (!gload_glGetFloati_v && !(gload_glGetFloati_v = (PFNGLGETFLOATI_VPROC) load("glGetFloati_v"))) { return (0); }
-   if (!gload_glGetDoublei_v && !(gload_glGetDoublei_v = (PFNGLGETDOUBLEI_VPROC) load("glGetDoublei_v"))) { return (0); }
-
-#  endif /* GL_VERSION_4_1 */
-#  if defined GL_VERSION_4_2
-
-   if (!gload_glDrawArraysInstancedBaseInstance && !(gload_glDrawArraysInstancedBaseInstance = (PFNGLDRAWARRAYSINSTANCEDBASEINSTANCEPROC) load("glDrawArraysInstancedBaseInstance"))) { return (0); }
-   if (!gload_glDrawElementsInstancedBaseInstance && !(gload_glDrawElementsInstancedBaseInstance = (PFNGLDRAWELEMENTSINSTANCEDBASEINSTANCEPROC) load("glDrawElementsInstancedBaseInstance"))) { return (0); }
-   if (!gload_glDrawElementsInstancedBaseVertexBaseInstance && !(gload_glDrawElementsInstancedBaseVertexBaseInstance = (PFNGLDRAWELEMENTSINSTANCEDBASEVERTEXBASEINSTANCEPROC) load("glDrawElementsInstancedBaseVertexBaseInstance"))) { return (0); }
-   if (!gload_glGetInternalformativ && !(gload_glGetInternalformativ = (PFNGLGETINTERNALFORMATIVPROC) load("glGetInternalformativ"))) { return (0); }
-   if (!gload_glGetActiveAtomicCounterBufferiv && !(gload_glGetActiveAtomicCounterBufferiv = (PFNGLGETACTIVEATOMICCOUNTERBUFFERIVPROC) load("glGetActiveAtomicCounterBufferiv"))) { return (0); }
-   if (!gload_glBindImageTexture && !(gload_glBindImageTexture = (PFNGLBINDIMAGETEXTUREPROC) load("glBindImageTexture"))) { return (0); }
-   if (!gload_glMemoryBarrier && !(gload_glMemoryBarrier = (PFNGLMEMORYBARRIERPROC) load("glMemoryBarrier"))) { return (0); }
-   if (!gload_glTexStorage1D && !(gload_glTexStorage1D = (PFNGLTEXSTORAGE1DPROC) load("glTexStorage1D"))) { return (0); }
-   if (!gload_glTexStorage2D && !(gload_glTexStorage2D = (PFNGLTEXSTORAGE2DPROC) load("glTexStorage2D"))) { return (0); }
-   if (!gload_glTexStorage3D && !(gload_glTexStorage3D = (PFNGLTEXSTORAGE3DPROC) load("glTexStorage3D"))) { return (0); }
-   if (!gload_glDrawTransformFeedbackInstanced && !(gload_glDrawTransformFeedbackInstanced = (PFNGLDRAWTRANSFORMFEEDBACKINSTANCEDPROC) load("glDrawTransformFeedbackInstanced"))) { return (0); }
-   if (!gload_glDrawTransformFeedbackStreamInstanced && !(gload_glDrawTransformFeedbackStreamInstanced = (PFNGLDRAWTRANSFORMFEEDBACKSTREAMINSTANCEDPROC) load("glDrawTransformFeedbackStreamInstanced"))) { return (0); }
-
-#  endif /* GL_VERSION_4_2 */
-#  if defined GL_VERSION_4_3
-
-   if (!gload_glClearBufferData && !(gload_glClearBufferData = (PFNGLCLEARBUFFERDATAPROC) load("glClearBufferData"))) { return (0); }
-   if (!gload_glClearBufferSubData && !(gload_glClearBufferSubData = (PFNGLCLEARBUFFERSUBDATAPROC) load("glClearBufferSubData"))) { return (0); }
-   if (!gload_glDispatchCompute && !(gload_glDispatchCompute = (PFNGLDISPATCHCOMPUTEPROC) load("glDispatchCompute"))) { return (0); }
-   if (!gload_glDispatchComputeIndirect && !(gload_glDispatchComputeIndirect = (PFNGLDISPATCHCOMPUTEINDIRECTPROC) load("glDispatchComputeIndirect"))) { return (0); }
-   if (!gload_glCopyImageSubData && !(gload_glCopyImageSubData = (PFNGLCOPYIMAGESUBDATAPROC) load("glCopyImageSubData"))) { return (0); }
-   if (!gload_glFramebufferParameteri && !(gload_glFramebufferParameteri = (PFNGLFRAMEBUFFERPARAMETERIPROC) load("glFramebufferParameteri"))) { return (0); }
-   if (!gload_glGetFramebufferParameteriv && !(gload_glGetFramebufferParameteriv = (PFNGLGETFRAMEBUFFERPARAMETERIVPROC) load("glGetFramebufferParameteriv"))) { return (0); }
-   if (!gload_glGetInternalformati64v && !(gload_glGetInternalformati64v = (PFNGLGETINTERNALFORMATI64VPROC) load("glGetInternalformati64v"))) { return (0); }
-   if (!gload_glInvalidateTexSubImage && !(gload_glInvalidateTexSubImage = (PFNGLINVALIDATETEXSUBIMAGEPROC) load("glInvalidateTexSubImage"))) { return (0); }
-   if (!gload_glInvalidateTexImage && !(gload_glInvalidateTexImage = (PFNGLINVALIDATETEXIMAGEPROC) load("glInvalidateTexImage"))) { return (0); }
-   if (!gload_glInvalidateBufferSubData && !(gload_glInvalidateBufferSubData = (PFNGLINVALIDATEBUFFERSUBDATAPROC) load("glInvalidateBufferSubData"))) { return (0); }
-   if (!gload_glInvalidateBufferData && !(gload_glInvalidateBufferData = (PFNGLINVALIDATEBUFFERDATAPROC) load("glInvalidateBufferData"))) { return (0); }
-   if (!gload_glInvalidateFramebuffer && !(gload_glInvalidateFramebuffer = (PFNGLINVALIDATEFRAMEBUFFERPROC) load("glInvalidateFramebuffer"))) { return (0); }
-   if (!gload_glInvalidateSubFramebuffer && !(gload_glInvalidateSubFramebuffer = (PFNGLINVALIDATESUBFRAMEBUFFERPROC) load("glInvalidateSubFramebuffer"))) { return (0); }
-   if (!gload_glMultiDrawArraysIndirect && !(gload_glMultiDrawArraysIndirect = (PFNGLMULTIDRAWARRAYSINDIRECTPROC) load("glMultiDrawArraysIndirect"))) { return (0); }
-   if (!gload_glMultiDrawElementsIndirect && !(gload_glMultiDrawElementsIndirect = (PFNGLMULTIDRAWELEMENTSINDIRECTPROC) load("glMultiDrawElementsIndirect"))) { return (0); }
-   if (!gload_glGetProgramInterfaceiv && !(gload_glGetProgramInterfaceiv = (PFNGLGETPROGRAMINTERFACEIVPROC) load("glGetProgramInterfaceiv"))) { return (0); }
-   if (!gload_glGetProgramResourceIndex && !(gload_glGetProgramResourceIndex = (PFNGLGETPROGRAMRESOURCEINDEXPROC) load("glGetProgramResourceIndex"))) { return (0); }
-   if (!gload_glGetProgramResourceName && !(gload_glGetProgramResourceName = (PFNGLGETPROGRAMRESOURCENAMEPROC) load("glGetProgramResourceName"))) { return (0); }
-   if (!gload_glGetProgramResourceiv && !(gload_glGetProgramResourceiv = (PFNGLGETPROGRAMRESOURCEIVPROC) load("glGetProgramResourceiv"))) { return (0); }
-   if (!gload_glGetProgramResourceLocation && !(gload_glGetProgramResourceLocation = (PFNGLGETPROGRAMRESOURCELOCATIONPROC) load("glGetProgramResourceLocation"))) { return (0); }
-   if (!gload_glGetProgramResourceLocationIndex && !(gload_glGetProgramResourceLocationIndex = (PFNGLGETPROGRAMRESOURCELOCATIONINDEXPROC) load("glGetProgramResourceLocationIndex"))) { return (0); }
-   if (!gload_glShaderStorageBlockBinding && !(gload_glShaderStorageBlockBinding = (PFNGLSHADERSTORAGEBLOCKBINDINGPROC) load("glShaderStorageBlockBinding"))) { return (0); }
-   if (!gload_glTexBufferRange && !(gload_glTexBufferRange = (PFNGLTEXBUFFERRANGEPROC) load("glTexBufferRange"))) { return (0); }
-   if (!gload_glTexStorage2DMultisample && !(gload_glTexStorage2DMultisample = (PFNGLTEXSTORAGE2DMULTISAMPLEPROC) load("glTexStorage2DMultisample"))) { return (0); }
-   if (!gload_glTexStorage3DMultisample && !(gload_glTexStorage3DMultisample = (PFNGLTEXSTORAGE3DMULTISAMPLEPROC) load("glTexStorage3DMultisample"))) { return (0); }
-   if (!gload_glTextureView && !(gload_glTextureView = (PFNGLTEXTUREVIEWPROC) load("glTextureView"))) { return (0); }
-   if (!gload_glBindVertexBuffer && !(gload_glBindVertexBuffer = (PFNGLBINDVERTEXBUFFERPROC) load("glBindVertexBuffer"))) { return (0); }
-   if (!gload_glVertexAttribFormat && !(gload_glVertexAttribFormat = (PFNGLVERTEXATTRIBFORMATPROC) load("glVertexAttribFormat"))) { return (0); }
-   if (!gload_glVertexAttribIFormat && !(gload_glVertexAttribIFormat = (PFNGLVERTEXATTRIBIFORMATPROC) load("glVertexAttribIFormat"))) { return (0); }
-   if (!gload_glVertexAttribLFormat && !(gload_glVertexAttribLFormat = (PFNGLVERTEXATTRIBLFORMATPROC) load("glVertexAttribLFormat"))) { return (0); }
-   if (!gload_glVertexAttribBinding && !(gload_glVertexAttribBinding = (PFNGLVERTEXATTRIBBINDINGPROC) load("glVertexAttribBinding"))) { return (0); }
-   if (!gload_glVertexBindingDivisor && !(gload_glVertexBindingDivisor = (PFNGLVERTEXBINDINGDIVISORPROC) load("glVertexBindingDivisor"))) { return (0); }
-   if (!gload_glDebugMessageControl && !(gload_glDebugMessageControl = (PFNGLDEBUGMESSAGECONTROLPROC) load("glDebugMessageControl"))) { return (0); }
-   if (!gload_glDebugMessageInsert && !(gload_glDebugMessageInsert = (PFNGLDEBUGMESSAGEINSERTPROC) load("glDebugMessageInsert"))) { return (0); }
-   if (!gload_glDebugMessageCallback && !(gload_glDebugMessageCallback = (PFNGLDEBUGMESSAGECALLBACKPROC) load("glDebugMessageCallback"))) { return (0); }
-   if (!gload_glGetDebugMessageLog && !(gload_glGetDebugMessageLog = (PFNGLGETDEBUGMESSAGELOGPROC) load("glGetDebugMessageLog"))) { return (0); }
-   if (!gload_glPushDebugGroup && !(gload_glPushDebugGroup = (PFNGLPUSHDEBUGGROUPPROC) load("glPushDebugGroup"))) { return (0); }
-   if (!gload_glPopDebugGroup && !(gload_glPopDebugGroup = (PFNGLPOPDEBUGGROUPPROC) load("glPopDebugGroup"))) { return (0); }
-   if (!gload_glObjectLabel && !(gload_glObjectLabel = (PFNGLOBJECTLABELPROC) load("glObjectLabel"))) { return (0); }
-   if (!gload_glGetObjectLabel && !(gload_glGetObjectLabel = (PFNGLGETOBJECTLABELPROC) load("glGetObjectLabel"))) { return (0); }
-   if (!gload_glObjectPtrLabel && !(gload_glObjectPtrLabel = (PFNGLOBJECTPTRLABELPROC) load("glObjectPtrLabel"))) { return (0); }
-   if (!gload_glGetObjectPtrLabel && !(gload_glGetObjectPtrLabel = (PFNGLGETOBJECTPTRLABELPROC) load("glGetObjectPtrLabel"))) { return (0); }
-   if (!gload_glGetPointerv && !(gload_glGetPointerv = (PFNGLGETPOINTERVPROC) load("glGetPointerv"))) { return (0); }
-
-#  endif /* GL_VERSION_4_3 */
-#  if defined GL_VERSION_4_4
-
-   if (!gload_glBufferStorage && !(gload_glBufferStorage = (PFNGLBUFFERSTORAGEPROC) load("glBufferStorage"))) { return (0); }
-   if (!gload_glClearTexImage && !(gload_glClearTexImage = (PFNGLCLEARTEXIMAGEPROC) load("glClearTexImage"))) { return (0); }
-   if (!gload_glClearTexSubImage && !(gload_glClearTexSubImage = (PFNGLCLEARTEXSUBIMAGEPROC) load("glClearTexSubImage"))) { return (0); }
-   if (!gload_glBindBuffersBase && !(gload_glBindBuffersBase = (PFNGLBINDBUFFERSBASEPROC) load("glBindBuffersBase"))) { return (0); }
-   if (!gload_glBindBuffersRange && !(gload_glBindBuffersRange = (PFNGLBINDBUFFERSRANGEPROC) load("glBindBuffersRange"))) { return (0); }
-   if (!gload_glBindTextures && !(gload_glBindTextures = (PFNGLBINDTEXTURESPROC) load("glBindTextures"))) { return (0); }
-   if (!gload_glBindSamplers && !(gload_glBindSamplers = (PFNGLBINDSAMPLERSPROC) load("glBindSamplers"))) { return (0); }
-   if (!gload_glBindImageTextures && !(gload_glBindImageTextures = (PFNGLBINDIMAGETEXTURESPROC) load("glBindImageTextures"))) { return (0); }
-   if (!gload_glBindVertexBuffers && !(gload_glBindVertexBuffers = (PFNGLBINDVERTEXBUFFERSPROC) load("glBindVertexBuffers"))) { return (0); }
-
-#  endif /* GL_VERSION_4_4 */
-#  if defined GL_VERSION_4_5
-
-   if (!gload_glClipControl && !(gload_glClipControl = (PFNGLCLIPCONTROLPROC) load("glClipControl"))) { return (0); }
-   if (!gload_glCreateTransformFeedbacks && !(gload_glCreateTransformFeedbacks = (PFNGLCREATETRANSFORMFEEDBACKSPROC) load("glCreateTransformFeedbacks"))) { return (0); }
-   if (!gload_glTransformFeedbackBufferBase && !(gload_glTransformFeedbackBufferBase = (PFNGLTRANSFORMFEEDBACKBUFFERBASEPROC) load("glTransformFeedbackBufferBase"))) { return (0); }
-   if (!gload_glTransformFeedbackBufferRange && !(gload_glTransformFeedbackBufferRange = (PFNGLTRANSFORMFEEDBACKBUFFERRANGEPROC) load("glTransformFeedbackBufferRange"))) { return (0); }
-   if (!gload_glGetTransformFeedbackiv && !(gload_glGetTransformFeedbackiv = (PFNGLGETTRANSFORMFEEDBACKIVPROC) load("glGetTransformFeedbackiv"))) { return (0); }
-   if (!gload_glGetTransformFeedbacki_v && !(gload_glGetTransformFeedbacki_v = (PFNGLGETTRANSFORMFEEDBACKI_VPROC) load("glGetTransformFeedbacki_v"))) { return (0); }
-   if (!gload_glGetTransformFeedbacki64_v && !(gload_glGetTransformFeedbacki64_v = (PFNGLGETTRANSFORMFEEDBACKI64_VPROC) load("glGetTransformFeedbacki64_v"))) { return (0); }
-   if (!gload_glCreateBuffers && !(gload_glCreateBuffers = (PFNGLCREATEBUFFERSPROC) load("glCreateBuffers"))) { return (0); }
-   if (!gload_glNamedBufferStorage && !(gload_glNamedBufferStorage = (PFNGLNAMEDBUFFERSTORAGEPROC) load("glNamedBufferStorage"))) { return (0); }
-   if (!gload_glNamedBufferData && !(gload_glNamedBufferData = (PFNGLNAMEDBUFFERDATAPROC) load("glNamedBufferData"))) { return (0); }
-   if (!gload_glNamedBufferSubData && !(gload_glNamedBufferSubData = (PFNGLNAMEDBUFFERSUBDATAPROC) load("glNamedBufferSubData"))) { return (0); }
-   if (!gload_glCopyNamedBufferSubData && !(gload_glCopyNamedBufferSubData = (PFNGLCOPYNAMEDBUFFERSUBDATAPROC) load("glCopyNamedBufferSubData"))) { return (0); }
-   if (!gload_glClearNamedBufferData && !(gload_glClearNamedBufferData = (PFNGLCLEARNAMEDBUFFERDATAPROC) load("glClearNamedBufferData"))) { return (0); }
-   if (!gload_glClearNamedBufferSubData && !(gload_glClearNamedBufferSubData = (PFNGLCLEARNAMEDBUFFERSUBDATAPROC) load("glClearNamedBufferSubData"))) { return (0); }
-   if (!gload_glMapNamedBuffer && !(gload_glMapNamedBuffer = (PFNGLMAPNAMEDBUFFERPROC) load("glMapNamedBuffer"))) { return (0); }
-   if (!gload_glMapNamedBufferRange && !(gload_glMapNamedBufferRange = (PFNGLMAPNAMEDBUFFERRANGEPROC) load("glMapNamedBufferRange"))) { return (0); }
-   if (!gload_glUnmapNamedBuffer && !(gload_glUnmapNamedBuffer = (PFNGLUNMAPNAMEDBUFFERPROC) load("glUnmapNamedBuffer"))) { return (0); }
-   if (!gload_glFlushMappedNamedBufferRange && !(gload_glFlushMappedNamedBufferRange = (PFNGLFLUSHMAPPEDNAMEDBUFFERRANGEPROC) load("glFlushMappedNamedBufferRange"))) { return (0); }
-   if (!gload_glGetNamedBufferParameteriv && !(gload_glGetNamedBufferParameteriv = (PFNGLGETNAMEDBUFFERPARAMETERIVPROC) load("glGetNamedBufferParameteriv"))) { return (0); }
-   if (!gload_glGetNamedBufferParameteri64v && !(gload_glGetNamedBufferParameteri64v = (PFNGLGETNAMEDBUFFERPARAMETERI64VPROC) load("glGetNamedBufferParameteri64v"))) { return (0); }
-   if (!gload_glGetNamedBufferPointerv && !(gload_glGetNamedBufferPointerv = (PFNGLGETNAMEDBUFFERPOINTERVPROC) load("glGetNamedBufferPointerv"))) { return (0); }
-   if (!gload_glGetNamedBufferSubData && !(gload_glGetNamedBufferSubData = (PFNGLGETNAMEDBUFFERSUBDATAPROC) load("glGetNamedBufferSubData"))) { return (0); }
-   if (!gload_glCreateFramebuffers && !(gload_glCreateFramebuffers = (PFNGLCREATEFRAMEBUFFERSPROC) load("glCreateFramebuffers"))) { return (0); }
-   if (!gload_glNamedFramebufferRenderbuffer && !(gload_glNamedFramebufferRenderbuffer = (PFNGLNAMEDFRAMEBUFFERRENDERBUFFERPROC) load("glNamedFramebufferRenderbuffer"))) { return (0); }
-   if (!gload_glNamedFramebufferParameteri && !(gload_glNamedFramebufferParameteri = (PFNGLNAMEDFRAMEBUFFERPARAMETERIPROC) load("glNamedFramebufferParameteri"))) { return (0); }
-   if (!gload_glNamedFramebufferTexture && !(gload_glNamedFramebufferTexture = (PFNGLNAMEDFRAMEBUFFERTEXTUREPROC) load("glNamedFramebufferTexture"))) { return (0); }
-   if (!gload_glNamedFramebufferTextureLayer && !(gload_glNamedFramebufferTextureLayer = (PFNGLNAMEDFRAMEBUFFERTEXTURELAYERPROC) load("glNamedFramebufferTextureLayer"))) { return (0); }
-   if (!gload_glNamedFramebufferDrawBuffer && !(gload_glNamedFramebufferDrawBuffer = (PFNGLNAMEDFRAMEBUFFERDRAWBUFFERPROC) load("glNamedFramebufferDrawBuffer"))) { return (0); }
-   if (!gload_glNamedFramebufferDrawBuffers && !(gload_glNamedFramebufferDrawBuffers = (PFNGLNAMEDFRAMEBUFFERDRAWBUFFERSPROC) load("glNamedFramebufferDrawBuffers"))) { return (0); }
-   if (!gload_glNamedFramebufferReadBuffer && !(gload_glNamedFramebufferReadBuffer = (PFNGLNAMEDFRAMEBUFFERREADBUFFERPROC) load("glNamedFramebufferReadBuffer"))) { return (0); }
-   if (!gload_glInvalidateNamedFramebufferData && !(gload_glInvalidateNamedFramebufferData = (PFNGLINVALIDATENAMEDFRAMEBUFFERDATAPROC) load("glInvalidateNamedFramebufferData"))) { return (0); }
-   if (!gload_glInvalidateNamedFramebufferSubData && !(gload_glInvalidateNamedFramebufferSubData = (PFNGLINVALIDATENAMEDFRAMEBUFFERSUBDATAPROC) load("glInvalidateNamedFramebufferSubData"))) { return (0); }
-   if (!gload_glClearNamedFramebufferiv && !(gload_glClearNamedFramebufferiv = (PFNGLCLEARNAMEDFRAMEBUFFERIVPROC) load("glClearNamedFramebufferiv"))) { return (0); }
-   if (!gload_glClearNamedFramebufferuiv && !(gload_glClearNamedFramebufferuiv = (PFNGLCLEARNAMEDFRAMEBUFFERUIVPROC) load("glClearNamedFramebufferuiv"))) { return (0); }
-   if (!gload_glClearNamedFramebufferfv && !(gload_glClearNamedFramebufferfv = (PFNGLCLEARNAMEDFRAMEBUFFERFVPROC) load("glClearNamedFramebufferfv"))) { return (0); }
-   if (!gload_glClearNamedFramebufferfi && !(gload_glClearNamedFramebufferfi = (PFNGLCLEARNAMEDFRAMEBUFFERFIPROC) load("glClearNamedFramebufferfi"))) { return (0); }
-   if (!gload_glBlitNamedFramebuffer && !(gload_glBlitNamedFramebuffer = (PFNGLBLITNAMEDFRAMEBUFFERPROC) load("glBlitNamedFramebuffer"))) { return (0); }
-   if (!gload_glCheckNamedFramebufferStatus && !(gload_glCheckNamedFramebufferStatus = (PFNGLCHECKNAMEDFRAMEBUFFERSTATUSPROC) load("glCheckNamedFramebufferStatus"))) { return (0); }
-   if (!gload_glGetNamedFramebufferParameteriv && !(gload_glGetNamedFramebufferParameteriv = (PFNGLGETNAMEDFRAMEBUFFERPARAMETERIVPROC) load("glGetNamedFramebufferParameteriv"))) { return (0); }
-   if (!gload_glGetNamedFramebufferAttachmentParameteriv && !(gload_glGetNamedFramebufferAttachmentParameteriv = (PFNGLGETNAMEDFRAMEBUFFERATTACHMENTPARAMETERIVPROC) load("glGetNamedFramebufferAttachmentParameteriv"))) { return (0); }
-   if (!gload_glCreateRenderbuffers && !(gload_glCreateRenderbuffers = (PFNGLCREATERENDERBUFFERSPROC) load("glCreateRenderbuffers"))) { return (0); }
-   if (!gload_glNamedRenderbufferStorage && !(gload_glNamedRenderbufferStorage = (PFNGLNAMEDRENDERBUFFERSTORAGEPROC) load("glNamedRenderbufferStorage"))) { return (0); }
-   if (!gload_glNamedRenderbufferStorageMultisample && !(gload_glNamedRenderbufferStorageMultisample = (PFNGLNAMEDRENDERBUFFERSTORAGEMULTISAMPLEPROC) load("glNamedRenderbufferStorageMultisample"))) { return (0); }
-   if (!gload_glGetNamedRenderbufferParameteriv && !(gload_glGetNamedRenderbufferParameteriv = (PFNGLGETNAMEDRENDERBUFFERPARAMETERIVPROC) load("glGetNamedRenderbufferParameteriv"))) { return (0); }
-   if (!gload_glCreateTextures && !(gload_glCreateTextures = (PFNGLCREATETEXTURESPROC) load("glCreateTextures"))) { return (0); }
-   if (!gload_glTextureBuffer && !(gload_glTextureBuffer = (PFNGLTEXTUREBUFFERPROC) load("glTextureBuffer"))) { return (0); }
-   if (!gload_glTextureBufferRange && !(gload_glTextureBufferRange = (PFNGLTEXTUREBUFFERRANGEPROC) load("glTextureBufferRange"))) { return (0); }
-   if (!gload_glTextureStorage1D && !(gload_glTextureStorage1D = (PFNGLTEXTURESTORAGE1DPROC) load("glTextureStorage1D"))) { return (0); }
-   if (!gload_glTextureStorage2D && !(gload_glTextureStorage2D = (PFNGLTEXTURESTORAGE2DPROC) load("glTextureStorage2D"))) { return (0); }
-   if (!gload_glTextureStorage3D && !(gload_glTextureStorage3D = (PFNGLTEXTURESTORAGE3DPROC) load("glTextureStorage3D"))) { return (0); }
-   if (!gload_glTextureStorage2DMultisample && !(gload_glTextureStorage2DMultisample = (PFNGLTEXTURESTORAGE2DMULTISAMPLEPROC) load("glTextureStorage2DMultisample"))) { return (0); }
-   if (!gload_glTextureStorage3DMultisample && !(gload_glTextureStorage3DMultisample = (PFNGLTEXTURESTORAGE3DMULTISAMPLEPROC) load("glTextureStorage3DMultisample"))) { return (0); }
-   if (!gload_glTextureSubImage1D && !(gload_glTextureSubImage1D = (PFNGLTEXTURESUBIMAGE1DPROC) load("glTextureSubImage1D"))) { return (0); }
-   if (!gload_glTextureSubImage2D && !(gload_glTextureSubImage2D = (PFNGLTEXTURESUBIMAGE2DPROC) load("glTextureSubImage2D"))) { return (0); }
-   if (!gload_glTextureSubImage3D && !(gload_glTextureSubImage3D = (PFNGLTEXTURESUBIMAGE3DPROC) load("glTextureSubImage3D"))) { return (0); }
-   if (!gload_glCompressedTextureSubImage1D && !(gload_glCompressedTextureSubImage1D = (PFNGLCOMPRESSEDTEXTURESUBIMAGE1DPROC) load("glCompressedTextureSubImage1D"))) { return (0); }
-   if (!gload_glCompressedTextureSubImage2D && !(gload_glCompressedTextureSubImage2D = (PFNGLCOMPRESSEDTEXTURESUBIMAGE2DPROC) load("glCompressedTextureSubImage2D"))) { return (0); }
-   if (!gload_glCompressedTextureSubImage3D && !(gload_glCompressedTextureSubImage3D = (PFNGLCOMPRESSEDTEXTURESUBIMAGE3DPROC) load("glCompressedTextureSubImage3D"))) { return (0); }
-   if (!gload_glCopyTextureSubImage1D && !(gload_glCopyTextureSubImage1D = (PFNGLCOPYTEXTURESUBIMAGE1DPROC) load("glCopyTextureSubImage1D"))) { return (0); }
-   if (!gload_glCopyTextureSubImage2D && !(gload_glCopyTextureSubImage2D = (PFNGLCOPYTEXTURESUBIMAGE2DPROC) load("glCopyTextureSubImage2D"))) { return (0); }
-   if (!gload_glCopyTextureSubImage3D && !(gload_glCopyTextureSubImage3D = (PFNGLCOPYTEXTURESUBIMAGE3DPROC) load("glCopyTextureSubImage3D"))) { return (0); }
-   if (!gload_glTextureParameterf && !(gload_glTextureParameterf = (PFNGLTEXTUREPARAMETERFPROC) load("glTextureParameterf"))) { return (0); }
-   if (!gload_glTextureParameterfv && !(gload_glTextureParameterfv = (PFNGLTEXTUREPARAMETERFVPROC) load("glTextureParameterfv"))) { return (0); }
-   if (!gload_glTextureParameteri && !(gload_glTextureParameteri = (PFNGLTEXTUREPARAMETERIPROC) load("glTextureParameteri"))) { return (0); }
-   if (!gload_glTextureParameterIiv && !(gload_glTextureParameterIiv = (PFNGLTEXTUREPARAMETERIIVPROC) load("glTextureParameterIiv"))) { return (0); }
-   if (!gload_glTextureParameterIuiv && !(gload_glTextureParameterIuiv = (PFNGLTEXTUREPARAMETERIUIVPROC) load("glTextureParameterIuiv"))) { return (0); }
-   if (!gload_glTextureParameteriv && !(gload_glTextureParameteriv = (PFNGLTEXTUREPARAMETERIVPROC) load("glTextureParameteriv"))) { return (0); }
-   if (!gload_glGenerateTextureMipmap && !(gload_glGenerateTextureMipmap = (PFNGLGENERATETEXTUREMIPMAPPROC) load("glGenerateTextureMipmap"))) { return (0); }
-   if (!gload_glBindTextureUnit && !(gload_glBindTextureUnit = (PFNGLBINDTEXTUREUNITPROC) load("glBindTextureUnit"))) { return (0); }
-   if (!gload_glGetTextureImage && !(gload_glGetTextureImage = (PFNGLGETTEXTUREIMAGEPROC) load("glGetTextureImage"))) { return (0); }
-   if (!gload_glGetCompressedTextureImage && !(gload_glGetCompressedTextureImage = (PFNGLGETCOMPRESSEDTEXTUREIMAGEPROC) load("glGetCompressedTextureImage"))) { return (0); }
-   if (!gload_glGetTextureLevelParameterfv && !(gload_glGetTextureLevelParameterfv = (PFNGLGETTEXTURELEVELPARAMETERFVPROC) load("glGetTextureLevelParameterfv"))) { return (0); }
-   if (!gload_glGetTextureLevelParameteriv && !(gload_glGetTextureLevelParameteriv = (PFNGLGETTEXTURELEVELPARAMETERIVPROC) load("glGetTextureLevelParameteriv"))) { return (0); }
-   if (!gload_glGetTextureParameterfv && !(gload_glGetTextureParameterfv = (PFNGLGETTEXTUREPARAMETERFVPROC) load("glGetTextureParameterfv"))) { return (0); }
-   if (!gload_glGetTextureParameterIiv && !(gload_glGetTextureParameterIiv = (PFNGLGETTEXTUREPARAMETERIIVPROC) load("glGetTextureParameterIiv"))) { return (0); }
-   if (!gload_glGetTextureParameterIuiv && !(gload_glGetTextureParameterIuiv = (PFNGLGETTEXTUREPARAMETERIUIVPROC) load("glGetTextureParameterIuiv"))) { return (0); }
-   if (!gload_glGetTextureParameteriv && !(gload_glGetTextureParameteriv = (PFNGLGETTEXTUREPARAMETERIVPROC) load("glGetTextureParameteriv"))) { return (0); }
-   if (!gload_glCreateVertexArrays && !(gload_glCreateVertexArrays = (PFNGLCREATEVERTEXARRAYSPROC) load("glCreateVertexArrays"))) { return (0); }
-   if (!gload_glDisableVertexArrayAttrib && !(gload_glDisableVertexArrayAttrib = (PFNGLDISABLEVERTEXARRAYATTRIBPROC) load("glDisableVertexArrayAttrib"))) { return (0); }
-   if (!gload_glEnableVertexArrayAttrib && !(gload_glEnableVertexArrayAttrib = (PFNGLENABLEVERTEXARRAYATTRIBPROC) load("glEnableVertexArrayAttrib"))) { return (0); }
-   if (!gload_glVertexArrayElementBuffer && !(gload_glVertexArrayElementBuffer = (PFNGLVERTEXARRAYELEMENTBUFFERPROC) load("glVertexArrayElementBuffer"))) { return (0); }
-   if (!gload_glVertexArrayVertexBuffer && !(gload_glVertexArrayVertexBuffer = (PFNGLVERTEXARRAYVERTEXBUFFERPROC) load("glVertexArrayVertexBuffer"))) { return (0); }
-   if (!gload_glVertexArrayVertexBuffers && !(gload_glVertexArrayVertexBuffers = (PFNGLVERTEXARRAYVERTEXBUFFERSPROC) load("glVertexArrayVertexBuffers"))) { return (0); }
-   if (!gload_glVertexArrayAttribBinding && !(gload_glVertexArrayAttribBinding = (PFNGLVERTEXARRAYATTRIBBINDINGPROC) load("glVertexArrayAttribBinding"))) { return (0); }
-   if (!gload_glVertexArrayAttribFormat && !(gload_glVertexArrayAttribFormat = (PFNGLVERTEXARRAYATTRIBFORMATPROC) load("glVertexArrayAttribFormat"))) { return (0); }
-   if (!gload_glVertexArrayAttribIFormat && !(gload_glVertexArrayAttribIFormat = (PFNGLVERTEXARRAYATTRIBIFORMATPROC) load("glVertexArrayAttribIFormat"))) { return (0); }
-   if (!gload_glVertexArrayAttribLFormat && !(gload_glVertexArrayAttribLFormat = (PFNGLVERTEXARRAYATTRIBLFORMATPROC) load("glVertexArrayAttribLFormat"))) { return (0); }
-   if (!gload_glVertexArrayBindingDivisor && !(gload_glVertexArrayBindingDivisor = (PFNGLVERTEXARRAYBINDINGDIVISORPROC) load("glVertexArrayBindingDivisor"))) { return (0); }
-   if (!gload_glGetVertexArrayiv && !(gload_glGetVertexArrayiv = (PFNGLGETVERTEXARRAYIVPROC) load("glGetVertexArrayiv"))) { return (0); }
-   if (!gload_glGetVertexArrayIndexediv && !(gload_glGetVertexArrayIndexediv = (PFNGLGETVERTEXARRAYINDEXEDIVPROC) load("glGetVertexArrayIndexediv"))) { return (0); }
-   if (!gload_glGetVertexArrayIndexed64iv && !(gload_glGetVertexArrayIndexed64iv = (PFNGLGETVERTEXARRAYINDEXED64IVPROC) load("glGetVertexArrayIndexed64iv"))) { return (0); }
-   if (!gload_glCreateSamplers && !(gload_glCreateSamplers = (PFNGLCREATESAMPLERSPROC) load("glCreateSamplers"))) { return (0); }
-   if (!gload_glCreateProgramPipelines && !(gload_glCreateProgramPipelines = (PFNGLCREATEPROGRAMPIPELINESPROC) load("glCreateProgramPipelines"))) { return (0); }
-   if (!gload_glCreateQueries && !(gload_glCreateQueries = (PFNGLCREATEQUERIESPROC) load("glCreateQueries"))) { return (0); }
-   if (!gload_glGetQueryBufferObjecti64v && !(gload_glGetQueryBufferObjecti64v = (PFNGLGETQUERYBUFFEROBJECTI64VPROC) load("glGetQueryBufferObjecti64v"))) { return (0); }
-   if (!gload_glGetQueryBufferObjectiv && !(gload_glGetQueryBufferObjectiv = (PFNGLGETQUERYBUFFEROBJECTIVPROC) load("glGetQueryBufferObjectiv"))) { return (0); }
-   if (!gload_glGetQueryBufferObjectui64v && !(gload_glGetQueryBufferObjectui64v = (PFNGLGETQUERYBUFFEROBJECTUI64VPROC) load("glGetQueryBufferObjectui64v"))) { return (0); }
-   if (!gload_glGetQueryBufferObjectuiv && !(gload_glGetQueryBufferObjectuiv = (PFNGLGETQUERYBUFFEROBJECTUIVPROC) load("glGetQueryBufferObjectuiv"))) { return (0); }
-   if (!gload_glMemoryBarrierByRegion && !(gload_glMemoryBarrierByRegion = (PFNGLMEMORYBARRIERBYREGIONPROC) load("glMemoryBarrierByRegion"))) { return (0); }
-   if (!gload_glGetTextureSubImage && !(gload_glGetTextureSubImage = (PFNGLGETTEXTURESUBIMAGEPROC) load("glGetTextureSubImage"))) { return (0); }
-   if (!gload_glGetCompressedTextureSubImage && !(gload_glGetCompressedTextureSubImage = (PFNGLGETCOMPRESSEDTEXTURESUBIMAGEPROC) load("glGetCompressedTextureSubImage"))) { return (0); }
-   if (!gload_glGetGraphicsResetStatus && !(gload_glGetGraphicsResetStatus = (PFNGLGETGRAPHICSRESETSTATUSPROC) load("glGetGraphicsResetStatus"))) { return (0); }
-   if (!gload_glGetnCompressedTexImage && !(gload_glGetnCompressedTexImage = (PFNGLGETNCOMPRESSEDTEXIMAGEPROC) load("glGetnCompressedTexImage"))) { return (0); }
-   if (!gload_glGetnTexImage && !(gload_glGetnTexImage = (PFNGLGETNTEXIMAGEPROC) load("glGetnTexImage"))) { return (0); }
-   if (!gload_glGetnUniformdv && !(gload_glGetnUniformdv = (PFNGLGETNUNIFORMDVPROC) load("glGetnUniformdv"))) { return (0); }
-   if (!gload_glGetnUniformfv && !(gload_glGetnUniformfv = (PFNGLGETNUNIFORMFVPROC) load("glGetnUniformfv"))) { return (0); }
-   if (!gload_glGetnUniformiv && !(gload_glGetnUniformiv = (PFNGLGETNUNIFORMIVPROC) load("glGetnUniformiv"))) { return (0); }
-   if (!gload_glGetnUniformuiv && !(gload_glGetnUniformuiv = (PFNGLGETNUNIFORMUIVPROC) load("glGetnUniformuiv"))) { return (0); }
-   if (!gload_glReadnPixels && !(gload_glReadnPixels = (PFNGLREADNPIXELSPROC) load("glReadnPixels"))) { return (0); }
-   if (!gload_glGetnMapdv && !(gload_glGetnMapdv = (PFNGLGETNMAPDVPROC) load("glGetnMapdv"))) { return (0); }
-   if (!gload_glGetnMapfv && !(gload_glGetnMapfv = (PFNGLGETNMAPFVPROC) load("glGetnMapfv"))) { return (0); }
-   if (!gload_glGetnMapiv && !(gload_glGetnMapiv = (PFNGLGETNMAPIVPROC) load("glGetnMapiv"))) { return (0); }
-   if (!gload_glGetnPixelMapfv && !(gload_glGetnPixelMapfv = (PFNGLGETNPIXELMAPFVPROC) load("glGetnPixelMapfv"))) { return (0); }
-   if (!gload_glGetnPixelMapuiv && !(gload_glGetnPixelMapuiv = (PFNGLGETNPIXELMAPUIVPROC) load("glGetnPixelMapuiv"))) { return (0); }
-   if (!gload_glGetnPixelMapusv && !(gload_glGetnPixelMapusv = (PFNGLGETNPIXELMAPUSVPROC) load("glGetnPixelMapusv"))) { return (0); }
-   if (!gload_glGetnPolygonStipple && !(gload_glGetnPolygonStipple = (PFNGLGETNPOLYGONSTIPPLEPROC) load("glGetnPolygonStipple"))) { return (0); }
-   if (!gload_glGetnColorTable && !(gload_glGetnColorTable = (PFNGLGETNCOLORTABLEPROC) load("glGetnColorTable"))) { return (0); }
-   if (!gload_glGetnConvolutionFilter && !(gload_glGetnConvolutionFilter = (PFNGLGETNCONVOLUTIONFILTERPROC) load("glGetnConvolutionFilter"))) { return (0); }
-   if (!gload_glGetnSeparableFilter && !(gload_glGetnSeparableFilter = (PFNGLGETNSEPARABLEFILTERPROC) load("glGetnSeparableFilter"))) { return (0); }
-   if (!gload_glGetnHistogram && !(gload_glGetnHistogram = (PFNGLGETNHISTOGRAMPROC) load("glGetnHistogram"))) { return (0); }
-   if (!gload_glGetnMinmax && !(gload_glGetnMinmax = (PFNGLGETNMINMAXPROC) load("glGetnMinmax"))) { return (0); }
-   if (!gload_glTextureBarrier && !(gload_glTextureBarrier = (PFNGLTEXTUREBARRIERPROC) load("glTextureBarrier"))) { return (0); }
-
-#  endif /* GL_VERSION_4_5 */
-#  if defined GL_VERSION_4_6
-
-   if (!gload_glSpecializeShader && !(gload_glSpecializeShader = (PFNGLSPECIALIZESHADERPROC) load("glSpecializeShader"))) { return (0); }
-   if (!gload_glMultiDrawArraysIndirectCount && !(gload_glMultiDrawArraysIndirectCount = (PFNGLMULTIDRAWARRAYSINDIRECTCOUNTPROC) load("glMultiDrawArraysIndirectCount"))) { return (0); }
-   if (!gload_glMultiDrawElementsIndirectCount && !(gload_glMultiDrawElementsIndirectCount = (PFNGLMULTIDRAWELEMENTSINDIRECTCOUNTPROC) load("glMultiDrawElementsIndirectCount"))) { return (0); }
-   if (!gload_glPolygonOffsetClamp && !(gload_glPolygonOffsetClamp = (PFNGLPOLYGONOFFSETCLAMPPROC) load("glPolygonOffsetClamp"))) { return (0); }
-
-#  endif /* GL_VERSION_4_6 */
-#  if defined GL_VERSION_ES_CM_1_0
-
-   if (!gload_glAlphaFunc && !(gload_glAlphaFunc = (PFNGLALPHAFUNCPROC) load("glAlphaFunc"))) { return (0); }
-   if (!gload_glClearColor && !(gload_glClearColor = (PFNGLCLEARCOLORPROC) load("glClearColor"))) { return (0); }
-   if (!gload_glClearDepthf && !(gload_glClearDepthf = (PFNGLCLEARDEPTHFPROC) load("glClearDepthf"))) { return (0); }
-   if (!gload_glClipPlanef && !(gload_glClipPlanef = (PFNGLCLIPPLANEFPROC) load("glClipPlanef"))) { return (0); }
-   if (!gload_glColor4f && !(gload_glColor4f = (PFNGLCOLOR4FPROC) load("glColor4f"))) { return (0); }
-   if (!gload_glDepthRangef && !(gload_glDepthRangef = (PFNGLDEPTHRANGEFPROC) load("glDepthRangef"))) { return (0); }
-   if (!gload_glFogf && !(gload_glFogf = (PFNGLFOGFPROC) load("glFogf"))) { return (0); }
-   if (!gload_glFogfv && !(gload_glFogfv = (PFNGLFOGFVPROC) load("glFogfv"))) { return (0); }
-   if (!gload_glFrustumf && !(gload_glFrustumf = (PFNGLFRUSTUMFPROC) load("glFrustumf"))) { return (0); }
-   if (!gload_glGetClipPlanef && !(gload_glGetClipPlanef = (PFNGLGETCLIPPLANEFPROC) load("glGetClipPlanef"))) { return (0); }
-   if (!gload_glGetFloatv && !(gload_glGetFloatv = (PFNGLGETFLOATVPROC) load("glGetFloatv"))) { return (0); }
-   if (!gload_glGetLightfv && !(gload_glGetLightfv = (PFNGLGETLIGHTFVPROC) load("glGetLightfv"))) { return (0); }
-   if (!gload_glGetMaterialfv && !(gload_glGetMaterialfv = (PFNGLGETMATERIALFVPROC) load("glGetMaterialfv"))) { return (0); }
-   if (!gload_glGetTexEnvfv && !(gload_glGetTexEnvfv = (PFNGLGETTEXENVFVPROC) load("glGetTexEnvfv"))) { return (0); }
-   if (!gload_glGetTexParameterfv && !(gload_glGetTexParameterfv = (PFNGLGETTEXPARAMETERFVPROC) load("glGetTexParameterfv"))) { return (0); }
-   if (!gload_glLightModelf && !(gload_glLightModelf = (PFNGLLIGHTMODELFPROC) load("glLightModelf"))) { return (0); }
-   if (!gload_glLightModelfv && !(gload_glLightModelfv = (PFNGLLIGHTMODELFVPROC) load("glLightModelfv"))) { return (0); }
-   if (!gload_glLightf && !(gload_glLightf = (PFNGLLIGHTFPROC) load("glLightf"))) { return (0); }
-   if (!gload_glLightfv && !(gload_glLightfv = (PFNGLLIGHTFVPROC) load("glLightfv"))) { return (0); }
-   if (!gload_glLineWidth && !(gload_glLineWidth = (PFNGLLINEWIDTHPROC) load("glLineWidth"))) { return (0); }
-   if (!gload_glLoadMatrixf && !(gload_glLoadMatrixf = (PFNGLLOADMATRIXFPROC) load("glLoadMatrixf"))) { return (0); }
-   if (!gload_glMaterialf && !(gload_glMaterialf = (PFNGLMATERIALFPROC) load("glMaterialf"))) { return (0); }
-   if (!gload_glMaterialfv && !(gload_glMaterialfv = (PFNGLMATERIALFVPROC) load("glMaterialfv"))) { return (0); }
-   if (!gload_glMultMatrixf && !(gload_glMultMatrixf = (PFNGLMULTMATRIXFPROC) load("glMultMatrixf"))) { return (0); }
-   if (!gload_glMultiTexCoord4f && !(gload_glMultiTexCoord4f = (PFNGLMULTITEXCOORD4FPROC) load("glMultiTexCoord4f"))) { return (0); }
-   if (!gload_glNormal3f && !(gload_glNormal3f = (PFNGLNORMAL3FPROC) load("glNormal3f"))) { return (0); }
-   if (!gload_glOrthof && !(gload_glOrthof = (PFNGLORTHOFPROC) load("glOrthof"))) { return (0); }
-   if (!gload_glPointParameterf && !(gload_glPointParameterf = (PFNGLPOINTPARAMETERFPROC) load("glPointParameterf"))) { return (0); }
-   if (!gload_glPointParameterfv && !(gload_glPointParameterfv = (PFNGLPOINTPARAMETERFVPROC) load("glPointParameterfv"))) { return (0); }
-   if (!gload_glPointSize && !(gload_glPointSize = (PFNGLPOINTSIZEPROC) load("glPointSize"))) { return (0); }
-   if (!gload_glPolygonOffset && !(gload_glPolygonOffset = (PFNGLPOLYGONOFFSETPROC) load("glPolygonOffset"))) { return (0); }
-   if (!gload_glRotatef && !(gload_glRotatef = (PFNGLROTATEFPROC) load("glRotatef"))) { return (0); }
-   if (!gload_glScalef && !(gload_glScalef = (PFNGLSCALEFPROC) load("glScalef"))) { return (0); }
-   if (!gload_glTexEnvf && !(gload_glTexEnvf = (PFNGLTEXENVFPROC) load("glTexEnvf"))) { return (0); }
-   if (!gload_glTexEnvfv && !(gload_glTexEnvfv = (PFNGLTEXENVFVPROC) load("glTexEnvfv"))) { return (0); }
-   if (!gload_glTexParameterf && !(gload_glTexParameterf = (PFNGLTEXPARAMETERFPROC) load("glTexParameterf"))) { return (0); }
-   if (!gload_glTexParameterfv && !(gload_glTexParameterfv = (PFNGLTEXPARAMETERFVPROC) load("glTexParameterfv"))) { return (0); }
-   if (!gload_glTranslatef && !(gload_glTranslatef = (PFNGLTRANSLATEFPROC) load("glTranslatef"))) { return (0); }
-   if (!gload_glActiveTexture && !(gload_glActiveTexture = (PFNGLACTIVETEXTUREPROC) load("glActiveTexture"))) { return (0); }
-   if (!gload_glAlphaFuncx && !(gload_glAlphaFuncx = (PFNGLALPHAFUNCXPROC) load("glAlphaFuncx"))) { return (0); }
-   if (!gload_glBindBuffer && !(gload_glBindBuffer = (PFNGLBINDBUFFERPROC) load("glBindBuffer"))) { return (0); }
-   if (!gload_glBindTexture && !(gload_glBindTexture = (PFNGLBINDTEXTUREPROC) load("glBindTexture"))) { return (0); }
-   if (!gload_glBlendFunc && !(gload_glBlendFunc = (PFNGLBLENDFUNCPROC) load("glBlendFunc"))) { return (0); }
-   if (!gload_glBufferData && !(gload_glBufferData = (PFNGLBUFFERDATAPROC) load("glBufferData"))) { return (0); }
-   if (!gload_glBufferSubData && !(gload_glBufferSubData = (PFNGLBUFFERSUBDATAPROC) load("glBufferSubData"))) { return (0); }
-   if (!gload_glClear && !(gload_glClear = (PFNGLCLEARPROC) load("glClear"))) { return (0); }
-   if (!gload_glClearColorx && !(gload_glClearColorx = (PFNGLCLEARCOLORXPROC) load("glClearColorx"))) { return (0); }
-   if (!gload_glClearDepthx && !(gload_glClearDepthx = (PFNGLCLEARDEPTHXPROC) load("glClearDepthx"))) { return (0); }
-   if (!gload_glClearStencil && !(gload_glClearStencil = (PFNGLCLEARSTENCILPROC) load("glClearStencil"))) { return (0); }
-   if (!gload_glClientActiveTexture && !(gload_glClientActiveTexture = (PFNGLCLIENTACTIVETEXTUREPROC) load("glClientActiveTexture"))) { return (0); }
-   if (!gload_glClipPlanex && !(gload_glClipPlanex = (PFNGLCLIPPLANEXPROC) load("glClipPlanex"))) { return (0); }
-   if (!gload_glColor4ub && !(gload_glColor4ub = (PFNGLCOLOR4UBPROC) load("glColor4ub"))) { return (0); }
-   if (!gload_glColor4x && !(gload_glColor4x = (PFNGLCOLOR4XPROC) load("glColor4x"))) { return (0); }
-   if (!gload_glColorMask && !(gload_glColorMask = (PFNGLCOLORMASKPROC) load("glColorMask"))) { return (0); }
-   if (!gload_glColorPointer && !(gload_glColorPointer = (PFNGLCOLORPOINTERPROC) load("glColorPointer"))) { return (0); }
-   if (!gload_glCompressedTexImage2D && !(gload_glCompressedTexImage2D = (PFNGLCOMPRESSEDTEXIMAGE2DPROC) load("glCompressedTexImage2D"))) { return (0); }
-   if (!gload_glCompressedTexSubImage2D && !(gload_glCompressedTexSubImage2D = (PFNGLCOMPRESSEDTEXSUBIMAGE2DPROC) load("glCompressedTexSubImage2D"))) { return (0); }
-   if (!gload_glCopyTexImage2D && !(gload_glCopyTexImage2D = (PFNGLCOPYTEXIMAGE2DPROC) load("glCopyTexImage2D"))) { return (0); }
-   if (!gload_glCopyTexSubImage2D && !(gload_glCopyTexSubImage2D = (PFNGLCOPYTEXSUBIMAGE2DPROC) load("glCopyTexSubImage2D"))) { return (0); }
-   if (!gload_glCullFace && !(gload_glCullFace = (PFNGLCULLFACEPROC) load("glCullFace"))) { return (0); }
-   if (!gload_glDeleteBuffers && !(gload_glDeleteBuffers = (PFNGLDELETEBUFFERSPROC) load("glDeleteBuffers"))) { return (0); }
-   if (!gload_glDeleteTextures && !(gload_glDeleteTextures = (PFNGLDELETETEXTURESPROC) load("glDeleteTextures"))) { return (0); }
-   if (!gload_glDepthFunc && !(gload_glDepthFunc = (PFNGLDEPTHFUNCPROC) load("glDepthFunc"))) { return (0); }
-   if (!gload_glDepthMask && !(gload_glDepthMask = (PFNGLDEPTHMASKPROC) load("glDepthMask"))) { return (0); }
-   if (!gload_glDepthRangex && !(gload_glDepthRangex = (PFNGLDEPTHRANGEXPROC) load("glDepthRangex"))) { return (0); }
-   if (!gload_glDisable && !(gload_glDisable = (PFNGLDISABLEPROC) load("glDisable"))) { return (0); }
-   if (!gload_glDisableClientState && !(gload_glDisableClientState = (PFNGLDISABLECLIENTSTATEPROC) load("glDisableClientState"))) { return (0); }
-   if (!gload_glDrawArrays && !(gload_glDrawArrays = (PFNGLDRAWARRAYSPROC) load("glDrawArrays"))) { return (0); }
-   if (!gload_glDrawElements && !(gload_glDrawElements = (PFNGLDRAWELEMENTSPROC) load("glDrawElements"))) { return (0); }
-   if (!gload_glEnable && !(gload_glEnable = (PFNGLENABLEPROC) load("glEnable"))) { return (0); }
-   if (!gload_glEnableClientState && !(gload_glEnableClientState = (PFNGLENABLECLIENTSTATEPROC) load("glEnableClientState"))) { return (0); }
-   if (!gload_glFinish && !(gload_glFinish = (PFNGLFINISHPROC) load("glFinish"))) { return (0); }
-   if (!gload_glFlush && !(gload_glFlush = (PFNGLFLUSHPROC) load("glFlush"))) { return (0); }
-   if (!gload_glFogx && !(gload_glFogx = (PFNGLFOGXPROC) load("glFogx"))) { return (0); }
-   if (!gload_glFogxv && !(gload_glFogxv = (PFNGLFOGXVPROC) load("glFogxv"))) { return (0); }
-   if (!gload_glFrontFace && !(gload_glFrontFace = (PFNGLFRONTFACEPROC) load("glFrontFace"))) { return (0); }
-   if (!gload_glFrustumx && !(gload_glFrustumx = (PFNGLFRUSTUMXPROC) load("glFrustumx"))) { return (0); }
-   if (!gload_glGetBooleanv && !(gload_glGetBooleanv = (PFNGLGETBOOLEANVPROC) load("glGetBooleanv"))) { return (0); }
-   if (!gload_glGetBufferParameteriv && !(gload_glGetBufferParameteriv = (PFNGLGETBUFFERPARAMETERIVPROC) load("glGetBufferParameteriv"))) { return (0); }
-   if (!gload_glGetClipPlanex && !(gload_glGetClipPlanex = (PFNGLGETCLIPPLANEXPROC) load("glGetClipPlanex"))) { return (0); }
-   if (!gload_glGenBuffers && !(gload_glGenBuffers = (PFNGLGENBUFFERSPROC) load("glGenBuffers"))) { return (0); }
-   if (!gload_glGenTextures && !(gload_glGenTextures = (PFNGLGENTEXTURESPROC) load("glGenTextures"))) { return (0); }
-   if (!gload_glGetError && !(gload_glGetError = (PFNGLGETERRORPROC) load("glGetError"))) { return (0); }
-   if (!gload_glGetFixedv && !(gload_glGetFixedv = (PFNGLGETFIXEDVPROC) load("glGetFixedv"))) { return (0); }
-   if (!gload_glGetIntegerv && !(gload_glGetIntegerv = (PFNGLGETINTEGERVPROC) load("glGetIntegerv"))) { return (0); }
-   if (!gload_glGetLightxv && !(gload_glGetLightxv = (PFNGLGETLIGHTXVPROC) load("glGetLightxv"))) { return (0); }
-   if (!gload_glGetMaterialxv && !(gload_glGetMaterialxv = (PFNGLGETMATERIALXVPROC) load("glGetMaterialxv"))) { return (0); }
-   if (!gload_glGetPointerv && !(gload_glGetPointerv = (PFNGLGETPOINTERVPROC) load("glGetPointerv"))) { return (0); }
-   if (!gload_glGetString && !(gload_glGetString = (PFNGLGETSTRINGPROC) load("glGetString"))) { return (0); }
-   if (!gload_glGetTexEnviv && !(gload_glGetTexEnviv = (PFNGLGETTEXENVIVPROC) load("glGetTexEnviv"))) { return (0); }
-   if (!gload_glGetTexEnvxv && !(gload_glGetTexEnvxv = (PFNGLGETTEXENVXVPROC) load("glGetTexEnvxv"))) { return (0); }
-   if (!gload_glGetTexParameteriv && !(gload_glGetTexParameteriv = (PFNGLGETTEXPARAMETERIVPROC) load("glGetTexParameteriv"))) { return (0); }
-   if (!gload_glGetTexParameterxv && !(gload_glGetTexParameterxv = (PFNGLGETTEXPARAMETERXVPROC) load("glGetTexParameterxv"))) { return (0); }
-   if (!gload_glHint && !(gload_glHint = (PFNGLHINTPROC) load("glHint"))) { return (0); }
-   if (!gload_glIsBuffer && !(gload_glIsBuffer = (PFNGLISBUFFERPROC) load("glIsBuffer"))) { return (0); }
-   if (!gload_glIsEnabled && !(gload_glIsEnabled = (PFNGLISENABLEDPROC) load("glIsEnabled"))) { return (0); }
-   if (!gload_glIsTexture && !(gload_glIsTexture = (PFNGLISTEXTUREPROC) load("glIsTexture"))) { return (0); }
-   if (!gload_glLightModelx && !(gload_glLightModelx = (PFNGLLIGHTMODELXPROC) load("glLightModelx"))) { return (0); }
-   if (!gload_glLightModelxv && !(gload_glLightModelxv = (PFNGLLIGHTMODELXVPROC) load("glLightModelxv"))) { return (0); }
-   if (!gload_glLightx && !(gload_glLightx = (PFNGLLIGHTXPROC) load("glLightx"))) { return (0); }
-   if (!gload_glLightxv && !(gload_glLightxv = (PFNGLLIGHTXVPROC) load("glLightxv"))) { return (0); }
-   if (!gload_glLineWidthx && !(gload_glLineWidthx = (PFNGLLINEWIDTHXPROC) load("glLineWidthx"))) { return (0); }
-   if (!gload_glLoadIdentity && !(gload_glLoadIdentity = (PFNGLLOADIDENTITYPROC) load("glLoadIdentity"))) { return (0); }
-   if (!gload_glLoadMatrixx && !(gload_glLoadMatrixx = (PFNGLLOADMATRIXXPROC) load("glLoadMatrixx"))) { return (0); }
-   if (!gload_glLogicOp && !(gload_glLogicOp = (PFNGLLOGICOPPROC) load("glLogicOp"))) { return (0); }
-   if (!gload_glMaterialx && !(gload_glMaterialx = (PFNGLMATERIALXPROC) load("glMaterialx"))) { return (0); }
-   if (!gload_glMaterialxv && !(gload_glMaterialxv = (PFNGLMATERIALXVPROC) load("glMaterialxv"))) { return (0); }
-   if (!gload_glMatrixMode && !(gload_glMatrixMode = (PFNGLMATRIXMODEPROC) load("glMatrixMode"))) { return (0); }
-   if (!gload_glMultMatrixx && !(gload_glMultMatrixx = (PFNGLMULTMATRIXXPROC) load("glMultMatrixx"))) { return (0); }
-   if (!gload_glMultiTexCoord4x && !(gload_glMultiTexCoord4x = (PFNGLMULTITEXCOORD4XPROC) load("glMultiTexCoord4x"))) { return (0); }
-   if (!gload_glNormal3x && !(gload_glNormal3x = (PFNGLNORMAL3XPROC) load("glNormal3x"))) { return (0); }
-   if (!gload_glNormalPointer && !(gload_glNormalPointer = (PFNGLNORMALPOINTERPROC) load("glNormalPointer"))) { return (0); }
-   if (!gload_glOrthox && !(gload_glOrthox = (PFNGLORTHOXPROC) load("glOrthox"))) { return (0); }
-   if (!gload_glPixelStorei && !(gload_glPixelStorei = (PFNGLPIXELSTOREIPROC) load("glPixelStorei"))) { return (0); }
-   if (!gload_glPointParameterx && !(gload_glPointParameterx = (PFNGLPOINTPARAMETERXPROC) load("glPointParameterx"))) { return (0); }
-   if (!gload_glPointParameterxv && !(gload_glPointParameterxv = (PFNGLPOINTPARAMETERXVPROC) load("glPointParameterxv"))) { return (0); }
-   if (!gload_glPointSizex && !(gload_glPointSizex = (PFNGLPOINTSIZEXPROC) load("glPointSizex"))) { return (0); }
-   if (!gload_glPolygonOffsetx && !(gload_glPolygonOffsetx = (PFNGLPOLYGONOFFSETXPROC) load("glPolygonOffsetx"))) { return (0); }
-   if (!gload_glPopMatrix && !(gload_glPopMatrix = (PFNGLPOPMATRIXPROC) load("glPopMatrix"))) { return (0); }
-   if (!gload_glPushMatrix && !(gload_glPushMatrix = (PFNGLPUSHMATRIXPROC) load("glPushMatrix"))) { return (0); }
-   if (!gload_glReadPixels && !(gload_glReadPixels = (PFNGLREADPIXELSPROC) load("glReadPixels"))) { return (0); }
-   if (!gload_glRotatex && !(gload_glRotatex = (PFNGLROTATEXPROC) load("glRotatex"))) { return (0); }
-   if (!gload_glSampleCoverage && !(gload_glSampleCoverage = (PFNGLSAMPLECOVERAGEPROC) load("glSampleCoverage"))) { return (0); }
-   if (!gload_glSampleCoveragex && !(gload_glSampleCoveragex = (PFNGLSAMPLECOVERAGEXPROC) load("glSampleCoveragex"))) { return (0); }
-   if (!gload_glScalex && !(gload_glScalex = (PFNGLSCALEXPROC) load("glScalex"))) { return (0); }
-   if (!gload_glScissor && !(gload_glScissor = (PFNGLSCISSORPROC) load("glScissor"))) { return (0); }
-   if (!gload_glShadeModel && !(gload_glShadeModel = (PFNGLSHADEMODELPROC) load("glShadeModel"))) { return (0); }
-   if (!gload_glStencilFunc && !(gload_glStencilFunc = (PFNGLSTENCILFUNCPROC) load("glStencilFunc"))) { return (0); }
-   if (!gload_glStencilMask && !(gload_glStencilMask = (PFNGLSTENCILMASKPROC) load("glStencilMask"))) { return (0); }
-   if (!gload_glStencilOp && !(gload_glStencilOp = (PFNGLSTENCILOPPROC) load("glStencilOp"))) { return (0); }
-   if (!gload_glTexCoordPointer && !(gload_glTexCoordPointer = (PFNGLTEXCOORDPOINTERPROC) load("glTexCoordPointer"))) { return (0); }
-   if (!gload_glTexEnvi && !(gload_glTexEnvi = (PFNGLTEXENVIPROC) load("glTexEnvi"))) { return (0); }
-   if (!gload_glTexEnvx && !(gload_glTexEnvx = (PFNGLTEXENVXPROC) load("glTexEnvx"))) { return (0); }
-   if (!gload_glTexEnviv && !(gload_glTexEnviv = (PFNGLTEXENVIVPROC) load("glTexEnviv"))) { return (0); }
-   if (!gload_glTexEnvxv && !(gload_glTexEnvxv = (PFNGLTEXENVXVPROC) load("glTexEnvxv"))) { return (0); }
-   if (!gload_glTexImage2D && !(gload_glTexImage2D = (PFNGLTEXIMAGE2DPROC) load("glTexImage2D"))) { return (0); }
-   if (!gload_glTexParameteri && !(gload_glTexParameteri = (PFNGLTEXPARAMETERIPROC) load("glTexParameteri"))) { return (0); }
-   if (!gload_glTexParameterx && !(gload_glTexParameterx = (PFNGLTEXPARAMETERXPROC) load("glTexParameterx"))) { return (0); }
-   if (!gload_glTexParameteriv && !(gload_glTexParameteriv = (PFNGLTEXPARAMETERIVPROC) load("glTexParameteriv"))) { return (0); }
-   if (!gload_glTexParameterxv && !(gload_glTexParameterxv = (PFNGLTEXPARAMETERXVPROC) load("glTexParameterxv"))) { return (0); }
-   if (!gload_glTexSubImage2D && !(gload_glTexSubImage2D = (PFNGLTEXSUBIMAGE2DPROC) load("glTexSubImage2D"))) { return (0); }
-   if (!gload_glTranslatex && !(gload_glTranslatex = (PFNGLTRANSLATEXPROC) load("glTranslatex"))) { return (0); }
-   if (!gload_glVertexPointer && !(gload_glVertexPointer = (PFNGLVERTEXPOINTERPROC) load("glVertexPointer"))) { return (0); }
-   if (!gload_glViewport && !(gload_glViewport = (PFNGLVIEWPORTPROC) load("glViewport"))) { return (0); }
-
-#  endif /* GL_VERSION_ES_CM_1_0 */
-#  if defined GL_ES_VERSION_2_0
-
-   if (!gload_glActiveTexture && !(gload_glActiveTexture = (PFNGLACTIVETEXTUREPROC) load("glActiveTexture"))) { return (0); }
-   if (!gload_glAttachShader && !(gload_glAttachShader = (PFNGLATTACHSHADERPROC) load("glAttachShader"))) { return (0); }
-   if (!gload_glBindAttribLocation && !(gload_glBindAttribLocation = (PFNGLBINDATTRIBLOCATIONPROC) load("glBindAttribLocation"))) { return (0); }
-   if (!gload_glBindBuffer && !(gload_glBindBuffer = (PFNGLBINDBUFFERPROC) load("glBindBuffer"))) { return (0); }
-   if (!gload_glBindFramebuffer && !(gload_glBindFramebuffer = (PFNGLBINDFRAMEBUFFERPROC) load("glBindFramebuffer"))) { return (0); }
-   if (!gload_glBindRenderbuffer && !(gload_glBindRenderbuffer = (PFNGLBINDRENDERBUFFERPROC) load("glBindRenderbuffer"))) { return (0); }
-   if (!gload_glBindTexture && !(gload_glBindTexture = (PFNGLBINDTEXTUREPROC) load("glBindTexture"))) { return (0); }
-   if (!gload_glBlendColor && !(gload_glBlendColor = (PFNGLBLENDCOLORPROC) load("glBlendColor"))) { return (0); }
-   if (!gload_glBlendEquation && !(gload_glBlendEquation = (PFNGLBLENDEQUATIONPROC) load("glBlendEquation"))) { return (0); }
-   if (!gload_glBlendEquationSeparate && !(gload_glBlendEquationSeparate = (PFNGLBLENDEQUATIONSEPARATEPROC) load("glBlendEquationSeparate"))) { return (0); }
-   if (!gload_glBlendFunc && !(gload_glBlendFunc = (PFNGLBLENDFUNCPROC) load("glBlendFunc"))) { return (0); }
-   if (!gload_glBlendFuncSeparate && !(gload_glBlendFuncSeparate = (PFNGLBLENDFUNCSEPARATEPROC) load("glBlendFuncSeparate"))) { return (0); }
-   if (!gload_glBufferData && !(gload_glBufferData = (PFNGLBUFFERDATAPROC) load("glBufferData"))) { return (0); }
-   if (!gload_glBufferSubData && !(gload_glBufferSubData = (PFNGLBUFFERSUBDATAPROC) load("glBufferSubData"))) { return (0); }
-   if (!gload_glCheckFramebufferStatus && !(gload_glCheckFramebufferStatus = (PFNGLCHECKFRAMEBUFFERSTATUSPROC) load("glCheckFramebufferStatus"))) { return (0); }
-   if (!gload_glClear && !(gload_glClear = (PFNGLCLEARPROC) load("glClear"))) { return (0); }
-   if (!gload_glClearColor && !(gload_glClearColor = (PFNGLCLEARCOLORPROC) load("glClearColor"))) { return (0); }
-   if (!gload_glClearDepthf && !(gload_glClearDepthf = (PFNGLCLEARDEPTHFPROC) load("glClearDepthf"))) { return (0); }
-   if (!gload_glClearStencil && !(gload_glClearStencil = (PFNGLCLEARSTENCILPROC) load("glClearStencil"))) { return (0); }
-   if (!gload_glColorMask && !(gload_glColorMask = (PFNGLCOLORMASKPROC) load("glColorMask"))) { return (0); }
-   if (!gload_glCompileShader && !(gload_glCompileShader = (PFNGLCOMPILESHADERPROC) load("glCompileShader"))) { return (0); }
-   if (!gload_glCompressedTexImage2D && !(gload_glCompressedTexImage2D = (PFNGLCOMPRESSEDTEXIMAGE2DPROC) load("glCompressedTexImage2D"))) { return (0); }
-   if (!gload_glCompressedTexSubImage2D && !(gload_glCompressedTexSubImage2D = (PFNGLCOMPRESSEDTEXSUBIMAGE2DPROC) load("glCompressedTexSubImage2D"))) { return (0); }
-   if (!gload_glCopyTexImage2D && !(gload_glCopyTexImage2D = (PFNGLCOPYTEXIMAGE2DPROC) load("glCopyTexImage2D"))) { return (0); }
-   if (!gload_glCopyTexSubImage2D && !(gload_glCopyTexSubImage2D = (PFNGLCOPYTEXSUBIMAGE2DPROC) load("glCopyTexSubImage2D"))) { return (0); }
-   if (!gload_glCreateProgram && !(gload_glCreateProgram = (PFNGLCREATEPROGRAMPROC) load("glCreateProgram"))) { return (0); }
-   if (!gload_glCreateShader && !(gload_glCreateShader = (PFNGLCREATESHADERPROC) load("glCreateShader"))) { return (0); }
-   if (!gload_glCullFace && !(gload_glCullFace = (PFNGLCULLFACEPROC) load("glCullFace"))) { return (0); }
-   if (!gload_glDeleteBuffers && !(gload_glDeleteBuffers = (PFNGLDELETEBUFFERSPROC) load("glDeleteBuffers"))) { return (0); }
-   if (!gload_glDeleteFramebuffers && !(gload_glDeleteFramebuffers = (PFNGLDELETEFRAMEBUFFERSPROC) load("glDeleteFramebuffers"))) { return (0); }
-   if (!gload_glDeleteProgram && !(gload_glDeleteProgram = (PFNGLDELETEPROGRAMPROC) load("glDeleteProgram"))) { return (0); }
-   if (!gload_glDeleteRenderbuffers && !(gload_glDeleteRenderbuffers = (PFNGLDELETERENDERBUFFERSPROC) load("glDeleteRenderbuffers"))) { return (0); }
-   if (!gload_glDeleteShader && !(gload_glDeleteShader = (PFNGLDELETESHADERPROC) load("glDeleteShader"))) { return (0); }
-   if (!gload_glDeleteTextures && !(gload_glDeleteTextures = (PFNGLDELETETEXTURESPROC) load("glDeleteTextures"))) { return (0); }
-   if (!gload_glDepthFunc && !(gload_glDepthFunc = (PFNGLDEPTHFUNCPROC) load("glDepthFunc"))) { return (0); }
-   if (!gload_glDepthMask && !(gload_glDepthMask = (PFNGLDEPTHMASKPROC) load("glDepthMask"))) { return (0); }
-   if (!gload_glDepthRangef && !(gload_glDepthRangef = (PFNGLDEPTHRANGEFPROC) load("glDepthRangef"))) { return (0); }
-   if (!gload_glDetachShader && !(gload_glDetachShader = (PFNGLDETACHSHADERPROC) load("glDetachShader"))) { return (0); }
-   if (!gload_glDisable && !(gload_glDisable = (PFNGLDISABLEPROC) load("glDisable"))) { return (0); }
-   if (!gload_glDisableVertexAttribArray && !(gload_glDisableVertexAttribArray = (PFNGLDISABLEVERTEXATTRIBARRAYPROC) load("glDisableVertexAttribArray"))) { return (0); }
-   if (!gload_glDrawArrays && !(gload_glDrawArrays = (PFNGLDRAWARRAYSPROC) load("glDrawArrays"))) { return (0); }
-   if (!gload_glDrawElements && !(gload_glDrawElements = (PFNGLDRAWELEMENTSPROC) load("glDrawElements"))) { return (0); }
-   if (!gload_glEnable && !(gload_glEnable = (PFNGLENABLEPROC) load("glEnable"))) { return (0); }
-   if (!gload_glEnableVertexAttribArray && !(gload_glEnableVertexAttribArray = (PFNGLENABLEVERTEXATTRIBARRAYPROC) load("glEnableVertexAttribArray"))) { return (0); }
-   if (!gload_glFinish && !(gload_glFinish = (PFNGLFINISHPROC) load("glFinish"))) { return (0); }
-   if (!gload_glFlush && !(gload_glFlush = (PFNGLFLUSHPROC) load("glFlush"))) { return (0); }
-   if (!gload_glFramebufferRenderbuffer && !(gload_glFramebufferRenderbuffer = (PFNGLFRAMEBUFFERRENDERBUFFERPROC) load("glFramebufferRenderbuffer"))) { return (0); }
-   if (!gload_glFramebufferTexture2D && !(gload_glFramebufferTexture2D = (PFNGLFRAMEBUFFERTEXTURE2DPROC) load("glFramebufferTexture2D"))) { return (0); }
-   if (!gload_glFrontFace && !(gload_glFrontFace = (PFNGLFRONTFACEPROC) load("glFrontFace"))) { return (0); }
-   if (!gload_glGenBuffers && !(gload_glGenBuffers = (PFNGLGENBUFFERSPROC) load("glGenBuffers"))) { return (0); }
-   if (!gload_glGenerateMipmap && !(gload_glGenerateMipmap = (PFNGLGENERATEMIPMAPPROC) load("glGenerateMipmap"))) { return (0); }
-   if (!gload_glGenFramebuffers && !(gload_glGenFramebuffers = (PFNGLGENFRAMEBUFFERSPROC) load("glGenFramebuffers"))) { return (0); }
-   if (!gload_glGenRenderbuffers && !(gload_glGenRenderbuffers = (PFNGLGENRENDERBUFFERSPROC) load("glGenRenderbuffers"))) { return (0); }
-   if (!gload_glGenTextures && !(gload_glGenTextures = (PFNGLGENTEXTURESPROC) load("glGenTextures"))) { return (0); }
-   if (!gload_glGetActiveAttrib && !(gload_glGetActiveAttrib = (PFNGLGETACTIVEATTRIBPROC) load("glGetActiveAttrib"))) { return (0); }
-   if (!gload_glGetActiveUniform && !(gload_glGetActiveUniform = (PFNGLGETACTIVEUNIFORMPROC) load("glGetActiveUniform"))) { return (0); }
-   if (!gload_glGetAttachedShaders && !(gload_glGetAttachedShaders = (PFNGLGETATTACHEDSHADERSPROC) load("glGetAttachedShaders"))) { return (0); }
-   if (!gload_glGetAttribLocation && !(gload_glGetAttribLocation = (PFNGLGETATTRIBLOCATIONPROC) load("glGetAttribLocation"))) { return (0); }
-   if (!gload_glGetBooleanv && !(gload_glGetBooleanv = (PFNGLGETBOOLEANVPROC) load("glGetBooleanv"))) { return (0); }
-   if (!gload_glGetBufferParameteriv && !(gload_glGetBufferParameteriv = (PFNGLGETBUFFERPARAMETERIVPROC) load("glGetBufferParameteriv"))) { return (0); }
-   if (!gload_glGetError && !(gload_glGetError = (PFNGLGETERRORPROC) load("glGetError"))) { return (0); }
-   if (!gload_glGetFloatv && !(gload_glGetFloatv = (PFNGLGETFLOATVPROC) load("glGetFloatv"))) { return (0); }
-   if (!gload_glGetFramebufferAttachmentParameteriv && !(gload_glGetFramebufferAttachmentParameteriv = (PFNGLGETFRAMEBUFFERATTACHMENTPARAMETERIVPROC) load("glGetFramebufferAttachmentParameteriv"))) { return (0); }
-   if (!gload_glGetIntegerv && !(gload_glGetIntegerv = (PFNGLGETINTEGERVPROC) load("glGetIntegerv"))) { return (0); }
-   if (!gload_glGetProgramiv && !(gload_glGetProgramiv = (PFNGLGETPROGRAMIVPROC) load("glGetProgramiv"))) { return (0); }
-   if (!gload_glGetProgramInfoLog && !(gload_glGetProgramInfoLog = (PFNGLGETPROGRAMINFOLOGPROC) load("glGetProgramInfoLog"))) { return (0); }
-   if (!gload_glGetRenderbufferParameteriv && !(gload_glGetRenderbufferParameteriv = (PFNGLGETRENDERBUFFERPARAMETERIVPROC) load("glGetRenderbufferParameteriv"))) { return (0); }
-   if (!gload_glGetShaderiv && !(gload_glGetShaderiv = (PFNGLGETSHADERIVPROC) load("glGetShaderiv"))) { return (0); }
-   if (!gload_glGetShaderInfoLog && !(gload_glGetShaderInfoLog = (PFNGLGETSHADERINFOLOGPROC) load("glGetShaderInfoLog"))) { return (0); }
-   if (!gload_glGetShaderPrecisionFormat && !(gload_glGetShaderPrecisionFormat = (PFNGLGETSHADERPRECISIONFORMATPROC) load("glGetShaderPrecisionFormat"))) { return (0); }
-   if (!gload_glGetShaderSource && !(gload_glGetShaderSource = (PFNGLGETSHADERSOURCEPROC) load("glGetShaderSource"))) { return (0); }
-   if (!gload_glGetString && !(gload_glGetString = (PFNGLGETSTRINGPROC) load("glGetString"))) { return (0); }
-   if (!gload_glGetTexParameterfv && !(gload_glGetTexParameterfv = (PFNGLGETTEXPARAMETERFVPROC) load("glGetTexParameterfv"))) { return (0); }
-   if (!gload_glGetTexParameteriv && !(gload_glGetTexParameteriv = (PFNGLGETTEXPARAMETERIVPROC) load("glGetTexParameteriv"))) { return (0); }
-   if (!gload_glGetUniformfv && !(gload_glGetUniformfv = (PFNGLGETUNIFORMFVPROC) load("glGetUniformfv"))) { return (0); }
-   if (!gload_glGetUniformiv && !(gload_glGetUniformiv = (PFNGLGETUNIFORMIVPROC) load("glGetUniformiv"))) { return (0); }
-   if (!gload_glGetUniformLocation && !(gload_glGetUniformLocation = (PFNGLGETUNIFORMLOCATIONPROC) load("glGetUniformLocation"))) { return (0); }
-   if (!gload_glGetVertexAttribfv && !(gload_glGetVertexAttribfv = (PFNGLGETVERTEXATTRIBFVPROC) load("glGetVertexAttribfv"))) { return (0); }
-   if (!gload_glGetVertexAttribiv && !(gload_glGetVertexAttribiv = (PFNGLGETVERTEXATTRIBIVPROC) load("glGetVertexAttribiv"))) { return (0); }
-   if (!gload_glGetVertexAttribPointerv && !(gload_glGetVertexAttribPointerv = (PFNGLGETVERTEXATTRIBPOINTERVPROC) load("glGetVertexAttribPointerv"))) { return (0); }
-   if (!gload_glHint && !(gload_glHint = (PFNGLHINTPROC) load("glHint"))) { return (0); }
-   if (!gload_glIsBuffer && !(gload_glIsBuffer = (PFNGLISBUFFERPROC) load("glIsBuffer"))) { return (0); }
-   if (!gload_glIsEnabled && !(gload_glIsEnabled = (PFNGLISENABLEDPROC) load("glIsEnabled"))) { return (0); }
-   if (!gload_glIsFramebuffer && !(gload_glIsFramebuffer = (PFNGLISFRAMEBUFFERPROC) load("glIsFramebuffer"))) { return (0); }
-   if (!gload_glIsProgram && !(gload_glIsProgram = (PFNGLISPROGRAMPROC) load("glIsProgram"))) { return (0); }
-   if (!gload_glIsRenderbuffer && !(gload_glIsRenderbuffer = (PFNGLISRENDERBUFFERPROC) load("glIsRenderbuffer"))) { return (0); }
-   if (!gload_glIsShader && !(gload_glIsShader = (PFNGLISSHADERPROC) load("glIsShader"))) { return (0); }
-   if (!gload_glIsTexture && !(gload_glIsTexture = (PFNGLISTEXTUREPROC) load("glIsTexture"))) { return (0); }
-   if (!gload_glLineWidth && !(gload_glLineWidth = (PFNGLLINEWIDTHPROC) load("glLineWidth"))) { return (0); }
-   if (!gload_glLinkProgram && !(gload_glLinkProgram = (PFNGLLINKPROGRAMPROC) load("glLinkProgram"))) { return (0); }
-   if (!gload_glPixelStorei && !(gload_glPixelStorei = (PFNGLPIXELSTOREIPROC) load("glPixelStorei"))) { return (0); }
-   if (!gload_glPolygonOffset && !(gload_glPolygonOffset = (PFNGLPOLYGONOFFSETPROC) load("glPolygonOffset"))) { return (0); }
-   if (!gload_glReadPixels && !(gload_glReadPixels = (PFNGLREADPIXELSPROC) load("glReadPixels"))) { return (0); }
-   if (!gload_glReleaseShaderCompiler && !(gload_glReleaseShaderCompiler = (PFNGLRELEASESHADERCOMPILERPROC) load("glReleaseShaderCompiler"))) { return (0); }
-   if (!gload_glRenderbufferStorage && !(gload_glRenderbufferStorage = (PFNGLRENDERBUFFERSTORAGEPROC) load("glRenderbufferStorage"))) { return (0); }
-   if (!gload_glSampleCoverage && !(gload_glSampleCoverage = (PFNGLSAMPLECOVERAGEPROC) load("glSampleCoverage"))) { return (0); }
-   if (!gload_glScissor && !(gload_glScissor = (PFNGLSCISSORPROC) load("glScissor"))) { return (0); }
-   if (!gload_glShaderBinary && !(gload_glShaderBinary = (PFNGLSHADERBINARYPROC) load("glShaderBinary"))) { return (0); }
-   if (!gload_glShaderSource && !(gload_glShaderSource = (PFNGLSHADERSOURCEPROC) load("glShaderSource"))) { return (0); }
-   if (!gload_glStencilFunc && !(gload_glStencilFunc = (PFNGLSTENCILFUNCPROC) load("glStencilFunc"))) { return (0); }
-   if (!gload_glStencilFuncSeparate && !(gload_glStencilFuncSeparate = (PFNGLSTENCILFUNCSEPARATEPROC) load("glStencilFuncSeparate"))) { return (0); }
-   if (!gload_glStencilMask && !(gload_glStencilMask = (PFNGLSTENCILMASKPROC) load("glStencilMask"))) { return (0); }
-   if (!gload_glStencilMaskSeparate && !(gload_glStencilMaskSeparate = (PFNGLSTENCILMASKSEPARATEPROC) load("glStencilMaskSeparate"))) { return (0); }
-   if (!gload_glStencilOp && !(gload_glStencilOp = (PFNGLSTENCILOPPROC) load("glStencilOp"))) { return (0); }
-   if (!gload_glStencilOpSeparate && !(gload_glStencilOpSeparate = (PFNGLSTENCILOPSEPARATEPROC) load("glStencilOpSeparate"))) { return (0); }
-   if (!gload_glTexImage2D && !(gload_glTexImage2D = (PFNGLTEXIMAGE2DPROC) load("glTexImage2D"))) { return (0); }
-   if (!gload_glTexParameterf && !(gload_glTexParameterf = (PFNGLTEXPARAMETERFPROC) load("glTexParameterf"))) { return (0); }
-   if (!gload_glTexParameterfv && !(gload_glTexParameterfv = (PFNGLTEXPARAMETERFVPROC) load("glTexParameterfv"))) { return (0); }
-   if (!gload_glTexParameteri && !(gload_glTexParameteri = (PFNGLTEXPARAMETERIPROC) load("glTexParameteri"))) { return (0); }
-   if (!gload_glTexParameteriv && !(gload_glTexParameteriv = (PFNGLTEXPARAMETERIVPROC) load("glTexParameteriv"))) { return (0); }
-   if (!gload_glTexSubImage2D && !(gload_glTexSubImage2D = (PFNGLTEXSUBIMAGE2DPROC) load("glTexSubImage2D"))) { return (0); }
-   if (!gload_glUniform1f && !(gload_glUniform1f = (PFNGLUNIFORM1FPROC) load("glUniform1f"))) { return (0); }
-   if (!gload_glUniform1fv && !(gload_glUniform1fv = (PFNGLUNIFORM1FVPROC) load("glUniform1fv"))) { return (0); }
-   if (!gload_glUniform1i && !(gload_glUniform1i = (PFNGLUNIFORM1IPROC) load("glUniform1i"))) { return (0); }
-   if (!gload_glUniform1iv && !(gload_glUniform1iv = (PFNGLUNIFORM1IVPROC) load("glUniform1iv"))) { return (0); }
-   if (!gload_glUniform2f && !(gload_glUniform2f = (PFNGLUNIFORM2FPROC) load("glUniform2f"))) { return (0); }
-   if (!gload_glUniform2fv && !(gload_glUniform2fv = (PFNGLUNIFORM2FVPROC) load("glUniform2fv"))) { return (0); }
-   if (!gload_glUniform2i && !(gload_glUniform2i = (PFNGLUNIFORM2IPROC) load("glUniform2i"))) { return (0); }
-   if (!gload_glUniform2iv && !(gload_glUniform2iv = (PFNGLUNIFORM2IVPROC) load("glUniform2iv"))) { return (0); }
-   if (!gload_glUniform3f && !(gload_glUniform3f = (PFNGLUNIFORM3FPROC) load("glUniform3f"))) { return (0); }
-   if (!gload_glUniform3fv && !(gload_glUniform3fv = (PFNGLUNIFORM3FVPROC) load("glUniform3fv"))) { return (0); }
-   if (!gload_glUniform3i && !(gload_glUniform3i = (PFNGLUNIFORM3IPROC) load("glUniform3i"))) { return (0); }
-   if (!gload_glUniform3iv && !(gload_glUniform3iv = (PFNGLUNIFORM3IVPROC) load("glUniform3iv"))) { return (0); }
-   if (!gload_glUniform4f && !(gload_glUniform4f = (PFNGLUNIFORM4FPROC) load("glUniform4f"))) { return (0); }
-   if (!gload_glUniform4fv && !(gload_glUniform4fv = (PFNGLUNIFORM4FVPROC) load("glUniform4fv"))) { return (0); }
-   if (!gload_glUniform4i && !(gload_glUniform4i = (PFNGLUNIFORM4IPROC) load("glUniform4i"))) { return (0); }
-   if (!gload_glUniform4iv && !(gload_glUniform4iv = (PFNGLUNIFORM4IVPROC) load("glUniform4iv"))) { return (0); }
-   if (!gload_glUniformMatrix2fv && !(gload_glUniformMatrix2fv = (PFNGLUNIFORMMATRIX2FVPROC) load("glUniformMatrix2fv"))) { return (0); }
-   if (!gload_glUniformMatrix3fv && !(gload_glUniformMatrix3fv = (PFNGLUNIFORMMATRIX3FVPROC) load("glUniformMatrix3fv"))) { return (0); }
-   if (!gload_glUniformMatrix4fv && !(gload_glUniformMatrix4fv = (PFNGLUNIFORMMATRIX4FVPROC) load("glUniformMatrix4fv"))) { return (0); }
-   if (!gload_glUseProgram && !(gload_glUseProgram = (PFNGLUSEPROGRAMPROC) load("glUseProgram"))) { return (0); }
-   if (!gload_glValidateProgram && !(gload_glValidateProgram = (PFNGLVALIDATEPROGRAMPROC) load("glValidateProgram"))) { return (0); }
-   if (!gload_glVertexAttrib1f && !(gload_glVertexAttrib1f = (PFNGLVERTEXATTRIB1FPROC) load("glVertexAttrib1f"))) { return (0); }
-   if (!gload_glVertexAttrib1fv && !(gload_glVertexAttrib1fv = (PFNGLVERTEXATTRIB1FVPROC) load("glVertexAttrib1fv"))) { return (0); }
-   if (!gload_glVertexAttrib2f && !(gload_glVertexAttrib2f = (PFNGLVERTEXATTRIB2FPROC) load("glVertexAttrib2f"))) { return (0); }
-   if (!gload_glVertexAttrib2fv && !(gload_glVertexAttrib2fv = (PFNGLVERTEXATTRIB2FVPROC) load("glVertexAttrib2fv"))) { return (0); }
-   if (!gload_glVertexAttrib3f && !(gload_glVertexAttrib3f = (PFNGLVERTEXATTRIB3FPROC) load("glVertexAttrib3f"))) { return (0); }
-   if (!gload_glVertexAttrib3fv && !(gload_glVertexAttrib3fv = (PFNGLVERTEXATTRIB3FVPROC) load("glVertexAttrib3fv"))) { return (0); }
-   if (!gload_glVertexAttrib4f && !(gload_glVertexAttrib4f = (PFNGLVERTEXATTRIB4FPROC) load("glVertexAttrib4f"))) { return (0); }
-   if (!gload_glVertexAttrib4fv && !(gload_glVertexAttrib4fv = (PFNGLVERTEXATTRIB4FVPROC) load("glVertexAttrib4fv"))) { return (0); }
-   if (!gload_glVertexAttribPointer && !(gload_glVertexAttribPointer = (PFNGLVERTEXATTRIBPOINTERPROC) load("glVertexAttribPointer"))) { return (0); }
-   if (!gload_glViewport && !(gload_glViewport = (PFNGLVIEWPORTPROC) load("glViewport"))) { return (0); }
-
-#  endif /* GL_ES_VERSION_2_0 */
-#  if defined GL_ES_VERSION_3_0
-
-   if (!gload_glReadBuffer && !(gload_glReadBuffer = (PFNGLREADBUFFERPROC) load("glReadBuffer"))) { return (0); }
-   if (!gload_glDrawRangeElements && !(gload_glDrawRangeElements = (PFNGLDRAWRANGEELEMENTSPROC) load("glDrawRangeElements"))) { return (0); }
-   if (!gload_glTexImage3D && !(gload_glTexImage3D = (PFNGLTEXIMAGE3DPROC) load("glTexImage3D"))) { return (0); }
-   if (!gload_glTexSubImage3D && !(gload_glTexSubImage3D = (PFNGLTEXSUBIMAGE3DPROC) load("glTexSubImage3D"))) { return (0); }
-   if (!gload_glCopyTexSubImage3D && !(gload_glCopyTexSubImage3D = (PFNGLCOPYTEXSUBIMAGE3DPROC) load("glCopyTexSubImage3D"))) { return (0); }
-   if (!gload_glCompressedTexImage3D && !(gload_glCompressedTexImage3D = (PFNGLCOMPRESSEDTEXIMAGE3DPROC) load("glCompressedTexImage3D"))) { return (0); }
-   if (!gload_glCompressedTexSubImage3D && !(gload_glCompressedTexSubImage3D = (PFNGLCOMPRESSEDTEXSUBIMAGE3DPROC) load("glCompressedTexSubImage3D"))) { return (0); }
-   if (!gload_glGenQueries && !(gload_glGenQueries = (PFNGLGENQUERIESPROC) load("glGenQueries"))) { return (0); }
-   if (!gload_glDeleteQueries && !(gload_glDeleteQueries = (PFNGLDELETEQUERIESPROC) load("glDeleteQueries"))) { return (0); }
-   if (!gload_glIsQuery && !(gload_glIsQuery = (PFNGLISQUERYPROC) load("glIsQuery"))) { return (0); }
-   if (!gload_glBeginQuery && !(gload_glBeginQuery = (PFNGLBEGINQUERYPROC) load("glBeginQuery"))) { return (0); }
-   if (!gload_glEndQuery && !(gload_glEndQuery = (PFNGLENDQUERYPROC) load("glEndQuery"))) { return (0); }
-   if (!gload_glGetQueryiv && !(gload_glGetQueryiv = (PFNGLGETQUERYIVPROC) load("glGetQueryiv"))) { return (0); }
-   if (!gload_glGetQueryObjectuiv && !(gload_glGetQueryObjectuiv = (PFNGLGETQUERYOBJECTUIVPROC) load("glGetQueryObjectuiv"))) { return (0); }
-   if (!gload_glUnmapBuffer && !(gload_glUnmapBuffer = (PFNGLUNMAPBUFFERPROC) load("glUnmapBuffer"))) { return (0); }
-   if (!gload_glGetBufferPointerv && !(gload_glGetBufferPointerv = (PFNGLGETBUFFERPOINTERVPROC) load("glGetBufferPointerv"))) { return (0); }
-   if (!gload_glDrawBuffers && !(gload_glDrawBuffers = (PFNGLDRAWBUFFERSPROC) load("glDrawBuffers"))) { return (0); }
-   if (!gload_glUniformMatrix2x3fv && !(gload_glUniformMatrix2x3fv = (PFNGLUNIFORMMATRIX2X3FVPROC) load("glUniformMatrix2x3fv"))) { return (0); }
-   if (!gload_glUniformMatrix3x2fv && !(gload_glUniformMatrix3x2fv = (PFNGLUNIFORMMATRIX3X2FVPROC) load("glUniformMatrix3x2fv"))) { return (0); }
-   if (!gload_glUniformMatrix2x4fv && !(gload_glUniformMatrix2x4fv = (PFNGLUNIFORMMATRIX2X4FVPROC) load("glUniformMatrix2x4fv"))) { return (0); }
-   if (!gload_glUniformMatrix4x2fv && !(gload_glUniformMatrix4x2fv = (PFNGLUNIFORMMATRIX4X2FVPROC) load("glUniformMatrix4x2fv"))) { return (0); }
-   if (!gload_glUniformMatrix3x4fv && !(gload_glUniformMatrix3x4fv = (PFNGLUNIFORMMATRIX3X4FVPROC) load("glUniformMatrix3x4fv"))) { return (0); }
-   if (!gload_glUniformMatrix4x3fv && !(gload_glUniformMatrix4x3fv = (PFNGLUNIFORMMATRIX4X3FVPROC) load("glUniformMatrix4x3fv"))) { return (0); }
-   if (!gload_glBlitFramebuffer && !(gload_glBlitFramebuffer = (PFNGLBLITFRAMEBUFFERPROC) load("glBlitFramebuffer"))) { return (0); }
-   if (!gload_glRenderbufferStorageMultisample && !(gload_glRenderbufferStorageMultisample = (PFNGLRENDERBUFFERSTORAGEMULTISAMPLEPROC) load("glRenderbufferStorageMultisample"))) { return (0); }
-   if (!gload_glFramebufferTextureLayer && !(gload_glFramebufferTextureLayer = (PFNGLFRAMEBUFFERTEXTURELAYERPROC) load("glFramebufferTextureLayer"))) { return (0); }
-   if (!gload_glMapBufferRange && !(gload_glMapBufferRange = (PFNGLMAPBUFFERRANGEPROC) load("glMapBufferRange"))) { return (0); }
-   if (!gload_glFlushMappedBufferRange && !(gload_glFlushMappedBufferRange = (PFNGLFLUSHMAPPEDBUFFERRANGEPROC) load("glFlushMappedBufferRange"))) { return (0); }
-   if (!gload_glBindVertexArray && !(gload_glBindVertexArray = (PFNGLBINDVERTEXARRAYPROC) load("glBindVertexArray"))) { return (0); }
-   if (!gload_glDeleteVertexArrays && !(gload_glDeleteVertexArrays = (PFNGLDELETEVERTEXARRAYSPROC) load("glDeleteVertexArrays"))) { return (0); }
-   if (!gload_glGenVertexArrays && !(gload_glGenVertexArrays = (PFNGLGENVERTEXARRAYSPROC) load("glGenVertexArrays"))) { return (0); }
-   if (!gload_glIsVertexArray && !(gload_glIsVertexArray = (PFNGLISVERTEXARRAYPROC) load("glIsVertexArray"))) { return (0); }
-   if (!gload_glGetIntegeri_v && !(gload_glGetIntegeri_v = (PFNGLGETINTEGERI_VPROC) load("glGetIntegeri_v"))) { return (0); }
-   if (!gload_glBeginTransformFeedback && !(gload_glBeginTransformFeedback = (PFNGLBEGINTRANSFORMFEEDBACKPROC) load("glBeginTransformFeedback"))) { return (0); }
-   if (!gload_glEndTransformFeedback && !(gload_glEndTransformFeedback = (PFNGLENDTRANSFORMFEEDBACKPROC) load("glEndTransformFeedback"))) { return (0); }
-   if (!gload_glBindBufferRange && !(gload_glBindBufferRange = (PFNGLBINDBUFFERRANGEPROC) load("glBindBufferRange"))) { return (0); }
-   if (!gload_glBindBufferBase && !(gload_glBindBufferBase = (PFNGLBINDBUFFERBASEPROC) load("glBindBufferBase"))) { return (0); }
-   if (!gload_glTransformFeedbackVaryings && !(gload_glTransformFeedbackVaryings = (PFNGLTRANSFORMFEEDBACKVARYINGSPROC) load("glTransformFeedbackVaryings"))) { return (0); }
-   if (!gload_glGetTransformFeedbackVarying && !(gload_glGetTransformFeedbackVarying = (PFNGLGETTRANSFORMFEEDBACKVARYINGPROC) load("glGetTransformFeedbackVarying"))) { return (0); }
-   if (!gload_glVertexAttribIPointer && !(gload_glVertexAttribIPointer = (PFNGLVERTEXATTRIBIPOINTERPROC) load("glVertexAttribIPointer"))) { return (0); }
-   if (!gload_glGetVertexAttribIiv && !(gload_glGetVertexAttribIiv = (PFNGLGETVERTEXATTRIBIIVPROC) load("glGetVertexAttribIiv"))) { return (0); }
-   if (!gload_glGetVertexAttribIuiv && !(gload_glGetVertexAttribIuiv = (PFNGLGETVERTEXATTRIBIUIVPROC) load("glGetVertexAttribIuiv"))) { return (0); }
-   if (!gload_glVertexAttribI4i && !(gload_glVertexAttribI4i = (PFNGLVERTEXATTRIBI4IPROC) load("glVertexAttribI4i"))) { return (0); }
-   if (!gload_glVertexAttribI4ui && !(gload_glVertexAttribI4ui = (PFNGLVERTEXATTRIBI4UIPROC) load("glVertexAttribI4ui"))) { return (0); }
-   if (!gload_glVertexAttribI4iv && !(gload_glVertexAttribI4iv = (PFNGLVERTEXATTRIBI4IVPROC) load("glVertexAttribI4iv"))) { return (0); }
-   if (!gload_glVertexAttribI4uiv && !(gload_glVertexAttribI4uiv = (PFNGLVERTEXATTRIBI4UIVPROC) load("glVertexAttribI4uiv"))) { return (0); }
-   if (!gload_glGetUniformuiv && !(gload_glGetUniformuiv = (PFNGLGETUNIFORMUIVPROC) load("glGetUniformuiv"))) { return (0); }
-   if (!gload_glGetFragDataLocation && !(gload_glGetFragDataLocation = (PFNGLGETFRAGDATALOCATIONPROC) load("glGetFragDataLocation"))) { return (0); }
-   if (!gload_glUniform1ui && !(gload_glUniform1ui = (PFNGLUNIFORM1UIPROC) load("glUniform1ui"))) { return (0); }
-   if (!gload_glUniform2ui && !(gload_glUniform2ui = (PFNGLUNIFORM2UIPROC) load("glUniform2ui"))) { return (0); }
-   if (!gload_glUniform3ui && !(gload_glUniform3ui = (PFNGLUNIFORM3UIPROC) load("glUniform3ui"))) { return (0); }
-   if (!gload_glUniform4ui && !(gload_glUniform4ui = (PFNGLUNIFORM4UIPROC) load("glUniform4ui"))) { return (0); }
-   if (!gload_glUniform1uiv && !(gload_glUniform1uiv = (PFNGLUNIFORM1UIVPROC) load("glUniform1uiv"))) { return (0); }
-   if (!gload_glUniform2uiv && !(gload_glUniform2uiv = (PFNGLUNIFORM2UIVPROC) load("glUniform2uiv"))) { return (0); }
-   if (!gload_glUniform3uiv && !(gload_glUniform3uiv = (PFNGLUNIFORM3UIVPROC) load("glUniform3uiv"))) { return (0); }
-   if (!gload_glUniform4uiv && !(gload_glUniform4uiv = (PFNGLUNIFORM4UIVPROC) load("glUniform4uiv"))) { return (0); }
-   if (!gload_glClearBufferiv && !(gload_glClearBufferiv = (PFNGLCLEARBUFFERIVPROC) load("glClearBufferiv"))) { return (0); }
-   if (!gload_glClearBufferuiv && !(gload_glClearBufferuiv = (PFNGLCLEARBUFFERUIVPROC) load("glClearBufferuiv"))) { return (0); }
-   if (!gload_glClearBufferfv && !(gload_glClearBufferfv = (PFNGLCLEARBUFFERFVPROC) load("glClearBufferfv"))) { return (0); }
-   if (!gload_glClearBufferfi && !(gload_glClearBufferfi = (PFNGLCLEARBUFFERFIPROC) load("glClearBufferfi"))) { return (0); }
-   if (!gload_glGetStringi && !(gload_glGetStringi = (PFNGLGETSTRINGIPROC) load("glGetStringi"))) { return (0); }
-   if (!gload_glCopyBufferSubData && !(gload_glCopyBufferSubData = (PFNGLCOPYBUFFERSUBDATAPROC) load("glCopyBufferSubData"))) { return (0); }
-   if (!gload_glGetUniformIndices && !(gload_glGetUniformIndices = (PFNGLGETUNIFORMINDICESPROC) load("glGetUniformIndices"))) { return (0); }
-   if (!gload_glGetActiveUniformsiv && !(gload_glGetActiveUniformsiv = (PFNGLGETACTIVEUNIFORMSIVPROC) load("glGetActiveUniformsiv"))) { return (0); }
-   if (!gload_glGetUniformBlockIndex && !(gload_glGetUniformBlockIndex = (PFNGLGETUNIFORMBLOCKINDEXPROC) load("glGetUniformBlockIndex"))) { return (0); }
-   if (!gload_glGetActiveUniformBlockiv && !(gload_glGetActiveUniformBlockiv = (PFNGLGETACTIVEUNIFORMBLOCKIVPROC) load("glGetActiveUniformBlockiv"))) { return (0); }
-   if (!gload_glGetActiveUniformBlockName && !(gload_glGetActiveUniformBlockName = (PFNGLGETACTIVEUNIFORMBLOCKNAMEPROC) load("glGetActiveUniformBlockName"))) { return (0); }
-   if (!gload_glUniformBlockBinding && !(gload_glUniformBlockBinding = (PFNGLUNIFORMBLOCKBINDINGPROC) load("glUniformBlockBinding"))) { return (0); }
-   if (!gload_glDrawArraysInstanced && !(gload_glDrawArraysInstanced = (PFNGLDRAWARRAYSINSTANCEDPROC) load("glDrawArraysInstanced"))) { return (0); }
-   if (!gload_glDrawElementsInstanced && !(gload_glDrawElementsInstanced = (PFNGLDRAWELEMENTSINSTANCEDPROC) load("glDrawElementsInstanced"))) { return (0); }
-   if (!gload_glFenceSync && !(gload_glFenceSync = (PFNGLFENCESYNCPROC) load("glFenceSync"))) { return (0); }
-   if (!gload_glIsSync && !(gload_glIsSync = (PFNGLISSYNCPROC) load("glIsSync"))) { return (0); }
-   if (!gload_glDeleteSync && !(gload_glDeleteSync = (PFNGLDELETESYNCPROC) load("glDeleteSync"))) { return (0); }
-   if (!gload_glClientWaitSync && !(gload_glClientWaitSync = (PFNGLCLIENTWAITSYNCPROC) load("glClientWaitSync"))) { return (0); }
-   if (!gload_glWaitSync && !(gload_glWaitSync = (PFNGLWAITSYNCPROC) load("glWaitSync"))) { return (0); }
-   if (!gload_glGetInteger64v && !(gload_glGetInteger64v = (PFNGLGETINTEGER64VPROC) load("glGetInteger64v"))) { return (0); }
-   if (!gload_glGetSynciv && !(gload_glGetSynciv = (PFNGLGETSYNCIVPROC) load("glGetSynciv"))) { return (0); }
-   if (!gload_glGetInteger64i_v && !(gload_glGetInteger64i_v = (PFNGLGETINTEGER64I_VPROC) load("glGetInteger64i_v"))) { return (0); }
-   if (!gload_glGetBufferParameteri64v && !(gload_glGetBufferParameteri64v = (PFNGLGETBUFFERPARAMETERI64VPROC) load("glGetBufferParameteri64v"))) { return (0); }
-   if (!gload_glGenSamplers && !(gload_glGenSamplers = (PFNGLGENSAMPLERSPROC) load("glGenSamplers"))) { return (0); }
-   if (!gload_glDeleteSamplers && !(gload_glDeleteSamplers = (PFNGLDELETESAMPLERSPROC) load("glDeleteSamplers"))) { return (0); }
-   if (!gload_glIsSampler && !(gload_glIsSampler = (PFNGLISSAMPLERPROC) load("glIsSampler"))) { return (0); }
-   if (!gload_glBindSampler && !(gload_glBindSampler = (PFNGLBINDSAMPLERPROC) load("glBindSampler"))) { return (0); }
-   if (!gload_glSamplerParameteri && !(gload_glSamplerParameteri = (PFNGLSAMPLERPARAMETERIPROC) load("glSamplerParameteri"))) { return (0); }
-   if (!gload_glSamplerParameteriv && !(gload_glSamplerParameteriv = (PFNGLSAMPLERPARAMETERIVPROC) load("glSamplerParameteriv"))) { return (0); }
-   if (!gload_glSamplerParameterf && !(gload_glSamplerParameterf = (PFNGLSAMPLERPARAMETERFPROC) load("glSamplerParameterf"))) { return (0); }
-   if (!gload_glSamplerParameterfv && !(gload_glSamplerParameterfv = (PFNGLSAMPLERPARAMETERFVPROC) load("glSamplerParameterfv"))) { return (0); }
-   if (!gload_glGetSamplerParameteriv && !(gload_glGetSamplerParameteriv = (PFNGLGETSAMPLERPARAMETERIVPROC) load("glGetSamplerParameteriv"))) { return (0); }
-   if (!gload_glGetSamplerParameterfv && !(gload_glGetSamplerParameterfv = (PFNGLGETSAMPLERPARAMETERFVPROC) load("glGetSamplerParameterfv"))) { return (0); }
-   if (!gload_glVertexAttribDivisor && !(gload_glVertexAttribDivisor = (PFNGLVERTEXATTRIBDIVISORPROC) load("glVertexAttribDivisor"))) { return (0); }
-   if (!gload_glBindTransformFeedback && !(gload_glBindTransformFeedback = (PFNGLBINDTRANSFORMFEEDBACKPROC) load("glBindTransformFeedback"))) { return (0); }
-   if (!gload_glDeleteTransformFeedbacks && !(gload_glDeleteTransformFeedbacks = (PFNGLDELETETRANSFORMFEEDBACKSPROC) load("glDeleteTransformFeedbacks"))) { return (0); }
-   if (!gload_glGenTransformFeedbacks && !(gload_glGenTransformFeedbacks = (PFNGLGENTRANSFORMFEEDBACKSPROC) load("glGenTransformFeedbacks"))) { return (0); }
-   if (!gload_glIsTransformFeedback && !(gload_glIsTransformFeedback = (PFNGLISTRANSFORMFEEDBACKPROC) load("glIsTransformFeedback"))) { return (0); }
-   if (!gload_glPauseTransformFeedback && !(gload_glPauseTransformFeedback = (PFNGLPAUSETRANSFORMFEEDBACKPROC) load("glPauseTransformFeedback"))) { return (0); }
-   if (!gload_glResumeTransformFeedback && !(gload_glResumeTransformFeedback = (PFNGLRESUMETRANSFORMFEEDBACKPROC) load("glResumeTransformFeedback"))) { return (0); }
-   if (!gload_glGetProgramBinary && !(gload_glGetProgramBinary = (PFNGLGETPROGRAMBINARYPROC) load("glGetProgramBinary"))) { return (0); }
-   if (!gload_glProgramBinary && !(gload_glProgramBinary = (PFNGLPROGRAMBINARYPROC) load("glProgramBinary"))) { return (0); }
-   if (!gload_glProgramParameteri && !(gload_glProgramParameteri = (PFNGLPROGRAMPARAMETERIPROC) load("glProgramParameteri"))) { return (0); }
-   if (!gload_glInvalidateFramebuffer && !(gload_glInvalidateFramebuffer = (PFNGLINVALIDATEFRAMEBUFFERPROC) load("glInvalidateFramebuffer"))) { return (0); }
-   if (!gload_glInvalidateSubFramebuffer && !(gload_glInvalidateSubFramebuffer = (PFNGLINVALIDATESUBFRAMEBUFFERPROC) load("glInvalidateSubFramebuffer"))) { return (0); }
-   if (!gload_glTexStorage2D && !(gload_glTexStorage2D = (PFNGLTEXSTORAGE2DPROC) load("glTexStorage2D"))) { return (0); }
-   if (!gload_glTexStorage3D && !(gload_glTexStorage3D = (PFNGLTEXSTORAGE3DPROC) load("glTexStorage3D"))) { return (0); }
-   if (!gload_glGetInternalformativ && !(gload_glGetInternalformativ = (PFNGLGETINTERNALFORMATIVPROC) load("glGetInternalformativ"))) { return (0); }
-
-#  endif /* GL_ES_VERSION_3_0 */
-#  if defined GL_ES_VERSION_3_1
-
-   if (!gload_glDispatchCompute && !(gload_glDispatchCompute = (PFNGLDISPATCHCOMPUTEPROC) load("glDispatchCompute"))) { return (0); }
-   if (!gload_glDispatchComputeIndirect && !(gload_glDispatchComputeIndirect = (PFNGLDISPATCHCOMPUTEINDIRECTPROC) load("glDispatchComputeIndirect"))) { return (0); }
-   if (!gload_glDrawArraysIndirect && !(gload_glDrawArraysIndirect = (PFNGLDRAWARRAYSINDIRECTPROC) load("glDrawArraysIndirect"))) { return (0); }
-   if (!gload_glDrawElementsIndirect && !(gload_glDrawElementsIndirect = (PFNGLDRAWELEMENTSINDIRECTPROC) load("glDrawElementsIndirect"))) { return (0); }
-   if (!gload_glFramebufferParameteri && !(gload_glFramebufferParameteri = (PFNGLFRAMEBUFFERPARAMETERIPROC) load("glFramebufferParameteri"))) { return (0); }
-   if (!gload_glGetFramebufferParameteriv && !(gload_glGetFramebufferParameteriv = (PFNGLGETFRAMEBUFFERPARAMETERIVPROC) load("glGetFramebufferParameteriv"))) { return (0); }
-   if (!gload_glGetProgramInterfaceiv && !(gload_glGetProgramInterfaceiv = (PFNGLGETPROGRAMINTERFACEIVPROC) load("glGetProgramInterfaceiv"))) { return (0); }
-   if (!gload_glGetProgramResourceIndex && !(gload_glGetProgramResourceIndex = (PFNGLGETPROGRAMRESOURCEINDEXPROC) load("glGetProgramResourceIndex"))) { return (0); }
-   if (!gload_glGetProgramResourceName && !(gload_glGetProgramResourceName = (PFNGLGETPROGRAMRESOURCENAMEPROC) load("glGetProgramResourceName"))) { return (0); }
-   if (!gload_glGetProgramResourceiv && !(gload_glGetProgramResourceiv = (PFNGLGETPROGRAMRESOURCEIVPROC) load("glGetProgramResourceiv"))) { return (0); }
-   if (!gload_glGetProgramResourceLocation && !(gload_glGetProgramResourceLocation = (PFNGLGETPROGRAMRESOURCELOCATIONPROC) load("glGetProgramResourceLocation"))) { return (0); }
-   if (!gload_glUseProgramStages && !(gload_glUseProgramStages = (PFNGLUSEPROGRAMSTAGESPROC) load("glUseProgramStages"))) { return (0); }
-   if (!gload_glActiveShaderProgram && !(gload_glActiveShaderProgram = (PFNGLACTIVESHADERPROGRAMPROC) load("glActiveShaderProgram"))) { return (0); }
-   if (!gload_glCreateShaderProgramv && !(gload_glCreateShaderProgramv = (PFNGLCREATESHADERPROGRAMVPROC) load("glCreateShaderProgramv"))) { return (0); }
-   if (!gload_glBindProgramPipeline && !(gload_glBindProgramPipeline = (PFNGLBINDPROGRAMPIPELINEPROC) load("glBindProgramPipeline"))) { return (0); }
-   if (!gload_glDeleteProgramPipelines && !(gload_glDeleteProgramPipelines = (PFNGLDELETEPROGRAMPIPELINESPROC) load("glDeleteProgramPipelines"))) { return (0); }
-   if (!gload_glGenProgramPipelines && !(gload_glGenProgramPipelines = (PFNGLGENPROGRAMPIPELINESPROC) load("glGenProgramPipelines"))) { return (0); }
-   if (!gload_glIsProgramPipeline && !(gload_glIsProgramPipeline = (PFNGLISPROGRAMPIPELINEPROC) load("glIsProgramPipeline"))) { return (0); }
-   if (!gload_glGetProgramPipelineiv && !(gload_glGetProgramPipelineiv = (PFNGLGETPROGRAMPIPELINEIVPROC) load("glGetProgramPipelineiv"))) { return (0); }
-   if (!gload_glProgramUniform1i && !(gload_glProgramUniform1i = (PFNGLPROGRAMUNIFORM1IPROC) load("glProgramUniform1i"))) { return (0); }
-   if (!gload_glProgramUniform2i && !(gload_glProgramUniform2i = (PFNGLPROGRAMUNIFORM2IPROC) load("glProgramUniform2i"))) { return (0); }
-   if (!gload_glProgramUniform3i && !(gload_glProgramUniform3i = (PFNGLPROGRAMUNIFORM3IPROC) load("glProgramUniform3i"))) { return (0); }
-   if (!gload_glProgramUniform4i && !(gload_glProgramUniform4i = (PFNGLPROGRAMUNIFORM4IPROC) load("glProgramUniform4i"))) { return (0); }
-   if (!gload_glProgramUniform1ui && !(gload_glProgramUniform1ui = (PFNGLPROGRAMUNIFORM1UIPROC) load("glProgramUniform1ui"))) { return (0); }
-   if (!gload_glProgramUniform2ui && !(gload_glProgramUniform2ui = (PFNGLPROGRAMUNIFORM2UIPROC) load("glProgramUniform2ui"))) { return (0); }
-   if (!gload_glProgramUniform3ui && !(gload_glProgramUniform3ui = (PFNGLPROGRAMUNIFORM3UIPROC) load("glProgramUniform3ui"))) { return (0); }
-   if (!gload_glProgramUniform4ui && !(gload_glProgramUniform4ui = (PFNGLPROGRAMUNIFORM4UIPROC) load("glProgramUniform4ui"))) { return (0); }
-   if (!gload_glProgramUniform1f && !(gload_glProgramUniform1f = (PFNGLPROGRAMUNIFORM1FPROC) load("glProgramUniform1f"))) { return (0); }
-   if (!gload_glProgramUniform2f && !(gload_glProgramUniform2f = (PFNGLPROGRAMUNIFORM2FPROC) load("glProgramUniform2f"))) { return (0); }
-   if (!gload_glProgramUniform3f && !(gload_glProgramUniform3f = (PFNGLPROGRAMUNIFORM3FPROC) load("glProgramUniform3f"))) { return (0); }
-   if (!gload_glProgramUniform4f && !(gload_glProgramUniform4f = (PFNGLPROGRAMUNIFORM4FPROC) load("glProgramUniform4f"))) { return (0); }
-   if (!gload_glProgramUniform1iv && !(gload_glProgramUniform1iv = (PFNGLPROGRAMUNIFORM1IVPROC) load("glProgramUniform1iv"))) { return (0); }
-   if (!gload_glProgramUniform2iv && !(gload_glProgramUniform2iv = (PFNGLPROGRAMUNIFORM2IVPROC) load("glProgramUniform2iv"))) { return (0); }
-   if (!gload_glProgramUniform3iv && !(gload_glProgramUniform3iv = (PFNGLPROGRAMUNIFORM3IVPROC) load("glProgramUniform3iv"))) { return (0); }
-   if (!gload_glProgramUniform4iv && !(gload_glProgramUniform4iv = (PFNGLPROGRAMUNIFORM4IVPROC) load("glProgramUniform4iv"))) { return (0); }
-   if (!gload_glProgramUniform1uiv && !(gload_glProgramUniform1uiv = (PFNGLPROGRAMUNIFORM1UIVPROC) load("glProgramUniform1uiv"))) { return (0); }
-   if (!gload_glProgramUniform2uiv && !(gload_glProgramUniform2uiv = (PFNGLPROGRAMUNIFORM2UIVPROC) load("glProgramUniform2uiv"))) { return (0); }
-   if (!gload_glProgramUniform3uiv && !(gload_glProgramUniform3uiv = (PFNGLPROGRAMUNIFORM3UIVPROC) load("glProgramUniform3uiv"))) { return (0); }
-   if (!gload_glProgramUniform4uiv && !(gload_glProgramUniform4uiv = (PFNGLPROGRAMUNIFORM4UIVPROC) load("glProgramUniform4uiv"))) { return (0); }
-   if (!gload_glProgramUniform1fv && !(gload_glProgramUniform1fv = (PFNGLPROGRAMUNIFORM1FVPROC) load("glProgramUniform1fv"))) { return (0); }
-   if (!gload_glProgramUniform2fv && !(gload_glProgramUniform2fv = (PFNGLPROGRAMUNIFORM2FVPROC) load("glProgramUniform2fv"))) { return (0); }
-   if (!gload_glProgramUniform3fv && !(gload_glProgramUniform3fv = (PFNGLPROGRAMUNIFORM3FVPROC) load("glProgramUniform3fv"))) { return (0); }
-   if (!gload_glProgramUniform4fv && !(gload_glProgramUniform4fv = (PFNGLPROGRAMUNIFORM4FVPROC) load("glProgramUniform4fv"))) { return (0); }
-   if (!gload_glProgramUniformMatrix2fv && !(gload_glProgramUniformMatrix2fv = (PFNGLPROGRAMUNIFORMMATRIX2FVPROC) load("glProgramUniformMatrix2fv"))) { return (0); }
-   if (!gload_glProgramUniformMatrix3fv && !(gload_glProgramUniformMatrix3fv = (PFNGLPROGRAMUNIFORMMATRIX3FVPROC) load("glProgramUniformMatrix3fv"))) { return (0); }
-   if (!gload_glProgramUniformMatrix4fv && !(gload_glProgramUniformMatrix4fv = (PFNGLPROGRAMUNIFORMMATRIX4FVPROC) load("glProgramUniformMatrix4fv"))) { return (0); }
-   if (!gload_glProgramUniformMatrix2x3fv && !(gload_glProgramUniformMatrix2x3fv = (PFNGLPROGRAMUNIFORMMATRIX2X3FVPROC) load("glProgramUniformMatrix2x3fv"))) { return (0); }
-   if (!gload_glProgramUniformMatrix3x2fv && !(gload_glProgramUniformMatrix3x2fv = (PFNGLPROGRAMUNIFORMMATRIX3X2FVPROC) load("glProgramUniformMatrix3x2fv"))) { return (0); }
-   if (!gload_glProgramUniformMatrix2x4fv && !(gload_glProgramUniformMatrix2x4fv = (PFNGLPROGRAMUNIFORMMATRIX2X4FVPROC) load("glProgramUniformMatrix2x4fv"))) { return (0); }
-   if (!gload_glProgramUniformMatrix4x2fv && !(gload_glProgramUniformMatrix4x2fv = (PFNGLPROGRAMUNIFORMMATRIX4X2FVPROC) load("glProgramUniformMatrix4x2fv"))) { return (0); }
-   if (!gload_glProgramUniformMatrix3x4fv && !(gload_glProgramUniformMatrix3x4fv = (PFNGLPROGRAMUNIFORMMATRIX3X4FVPROC) load("glProgramUniformMatrix3x4fv"))) { return (0); }
-   if (!gload_glProgramUniformMatrix4x3fv && !(gload_glProgramUniformMatrix4x3fv = (PFNGLPROGRAMUNIFORMMATRIX4X3FVPROC) load("glProgramUniformMatrix4x3fv"))) { return (0); }
-   if (!gload_glValidateProgramPipeline && !(gload_glValidateProgramPipeline = (PFNGLVALIDATEPROGRAMPIPELINEPROC) load("glValidateProgramPipeline"))) { return (0); }
-   if (!gload_glGetProgramPipelineInfoLog && !(gload_glGetProgramPipelineInfoLog = (PFNGLGETPROGRAMPIPELINEINFOLOGPROC) load("glGetProgramPipelineInfoLog"))) { return (0); }
-   if (!gload_glBindImageTexture && !(gload_glBindImageTexture = (PFNGLBINDIMAGETEXTUREPROC) load("glBindImageTexture"))) { return (0); }
-   if (!gload_glGetBooleani_v && !(gload_glGetBooleani_v = (PFNGLGETBOOLEANI_VPROC) load("glGetBooleani_v"))) { return (0); }
-   if (!gload_glMemoryBarrier && !(gload_glMemoryBarrier = (PFNGLMEMORYBARRIERPROC) load("glMemoryBarrier"))) { return (0); }
-   if (!gload_glMemoryBarrierByRegion && !(gload_glMemoryBarrierByRegion = (PFNGLMEMORYBARRIERBYREGIONPROC) load("glMemoryBarrierByRegion"))) { return (0); }
-   if (!gload_glTexStorage2DMultisample && !(gload_glTexStorage2DMultisample = (PFNGLTEXSTORAGE2DMULTISAMPLEPROC) load("glTexStorage2DMultisample"))) { return (0); }
-   if (!gload_glGetMultisamplefv && !(gload_glGetMultisamplefv = (PFNGLGETMULTISAMPLEFVPROC) load("glGetMultisamplefv"))) { return (0); }
-   if (!gload_glSampleMaski && !(gload_glSampleMaski = (PFNGLSAMPLEMASKIPROC) load("glSampleMaski"))) { return (0); }
-   if (!gload_glGetTexLevelParameteriv && !(gload_glGetTexLevelParameteriv = (PFNGLGETTEXLEVELPARAMETERIVPROC) load("glGetTexLevelParameteriv"))) { return (0); }
-   if (!gload_glGetTexLevelParameterfv && !(gload_glGetTexLevelParameterfv = (PFNGLGETTEXLEVELPARAMETERFVPROC) load("glGetTexLevelParameterfv"))) { return (0); }
-   if (!gload_glBindVertexBuffer && !(gload_glBindVertexBuffer = (PFNGLBINDVERTEXBUFFERPROC) load("glBindVertexBuffer"))) { return (0); }
-   if (!gload_glVertexAttribFormat && !(gload_glVertexAttribFormat = (PFNGLVERTEXATTRIBFORMATPROC) load("glVertexAttribFormat"))) { return (0); }
-   if (!gload_glVertexAttribIFormat && !(gload_glVertexAttribIFormat = (PFNGLVERTEXATTRIBIFORMATPROC) load("glVertexAttribIFormat"))) { return (0); }
-   if (!gload_glVertexAttribBinding && !(gload_glVertexAttribBinding = (PFNGLVERTEXATTRIBBINDINGPROC) load("glVertexAttribBinding"))) { return (0); }
-   if (!gload_glVertexBindingDivisor && !(gload_glVertexBindingDivisor = (PFNGLVERTEXBINDINGDIVISORPROC) load("glVertexBindingDivisor"))) { return (0); }
-
-#  endif /* GL_ES_VERSION_3_1 */
-#  if defined GL_ES_VERSION_3_2
-
-   if (!gload_glBlendBarrier && !(gload_glBlendBarrier = (PFNGLBLENDBARRIERPROC) load("glBlendBarrier"))) { return (0); }
-   if (!gload_glCopyImageSubData && !(gload_glCopyImageSubData = (PFNGLCOPYIMAGESUBDATAPROC) load("glCopyImageSubData"))) { return (0); }
-   if (!gload_glDebugMessageControl && !(gload_glDebugMessageControl = (PFNGLDEBUGMESSAGECONTROLPROC) load("glDebugMessageControl"))) { return (0); }
-   if (!gload_glDebugMessageInsert && !(gload_glDebugMessageInsert = (PFNGLDEBUGMESSAGEINSERTPROC) load("glDebugMessageInsert"))) { return (0); }
-   if (!gload_glDebugMessageCallback && !(gload_glDebugMessageCallback = (PFNGLDEBUGMESSAGECALLBACKPROC) load("glDebugMessageCallback"))) { return (0); }
-   if (!gload_glGetDebugMessageLog && !(gload_glGetDebugMessageLog = (PFNGLGETDEBUGMESSAGELOGPROC) load("glGetDebugMessageLog"))) { return (0); }
-   if (!gload_glPushDebugGroup && !(gload_glPushDebugGroup = (PFNGLPUSHDEBUGGROUPPROC) load("glPushDebugGroup"))) { return (0); }
-   if (!gload_glPopDebugGroup && !(gload_glPopDebugGroup = (PFNGLPOPDEBUGGROUPPROC) load("glPopDebugGroup"))) { return (0); }
-   if (!gload_glObjectLabel && !(gload_glObjectLabel = (PFNGLOBJECTLABELPROC) load("glObjectLabel"))) { return (0); }
-   if (!gload_glGetObjectLabel && !(gload_glGetObjectLabel = (PFNGLGETOBJECTLABELPROC) load("glGetObjectLabel"))) { return (0); }
-   if (!gload_glObjectPtrLabel && !(gload_glObjectPtrLabel = (PFNGLOBJECTPTRLABELPROC) load("glObjectPtrLabel"))) { return (0); }
-   if (!gload_glGetObjectPtrLabel && !(gload_glGetObjectPtrLabel = (PFNGLGETOBJECTPTRLABELPROC) load("glGetObjectPtrLabel"))) { return (0); }
-   if (!gload_glGetPointerv && !(gload_glGetPointerv = (PFNGLGETPOINTERVPROC) load("glGetPointerv"))) { return (0); }
-   if (!gload_glEnablei && !(gload_glEnablei = (PFNGLENABLEIPROC) load("glEnablei"))) { return (0); }
-   if (!gload_glDisablei && !(gload_glDisablei = (PFNGLDISABLEIPROC) load("glDisablei"))) { return (0); }
-   if (!gload_glBlendEquationi && !(gload_glBlendEquationi = (PFNGLBLENDEQUATIONIPROC) load("glBlendEquationi"))) { return (0); }
-   if (!gload_glBlendEquationSeparatei && !(gload_glBlendEquationSeparatei = (PFNGLBLENDEQUATIONSEPARATEIPROC) load("glBlendEquationSeparatei"))) { return (0); }
-   if (!gload_glBlendFunci && !(gload_glBlendFunci = (PFNGLBLENDFUNCIPROC) load("glBlendFunci"))) { return (0); }
-   if (!gload_glBlendFuncSeparatei && !(gload_glBlendFuncSeparatei = (PFNGLBLENDFUNCSEPARATEIPROC) load("glBlendFuncSeparatei"))) { return (0); }
-   if (!gload_glColorMaski && !(gload_glColorMaski = (PFNGLCOLORMASKIPROC) load("glColorMaski"))) { return (0); }
-   if (!gload_glIsEnabledi && !(gload_glIsEnabledi = (PFNGLISENABLEDIPROC) load("glIsEnabledi"))) { return (0); }
-   if (!gload_glDrawElementsBaseVertex && !(gload_glDrawElementsBaseVertex = (PFNGLDRAWELEMENTSBASEVERTEXPROC) load("glDrawElementsBaseVertex"))) { return (0); }
-   if (!gload_glDrawRangeElementsBaseVertex && !(gload_glDrawRangeElementsBaseVertex = (PFNGLDRAWRANGEELEMENTSBASEVERTEXPROC) load("glDrawRangeElementsBaseVertex"))) { return (0); }
-   if (!gload_glDrawElementsInstancedBaseVertex && !(gload_glDrawElementsInstancedBaseVertex = (PFNGLDRAWELEMENTSINSTANCEDBASEVERTEXPROC) load("glDrawElementsInstancedBaseVertex"))) { return (0); }
-   if (!gload_glFramebufferTexture && !(gload_glFramebufferTexture = (PFNGLFRAMEBUFFERTEXTUREPROC) load("glFramebufferTexture"))) { return (0); }
-   if (!gload_glPrimitiveBoundingBox && !(gload_glPrimitiveBoundingBox = (PFNGLPRIMITIVEBOUNDINGBOXPROC) load("glPrimitiveBoundingBox"))) { return (0); }
-   if (!gload_glGetGraphicsResetStatus && !(gload_glGetGraphicsResetStatus = (PFNGLGETGRAPHICSRESETSTATUSPROC) load("glGetGraphicsResetStatus"))) { return (0); }
-   if (!gload_glReadnPixels && !(gload_glReadnPixels = (PFNGLREADNPIXELSPROC) load("glReadnPixels"))) { return (0); }
-   if (!gload_glGetnUniformfv && !(gload_glGetnUniformfv = (PFNGLGETNUNIFORMFVPROC) load("glGetnUniformfv"))) { return (0); }
-   if (!gload_glGetnUniformiv && !(gload_glGetnUniformiv = (PFNGLGETNUNIFORMIVPROC) load("glGetnUniformiv"))) { return (0); }
-   if (!gload_glGetnUniformuiv && !(gload_glGetnUniformuiv = (PFNGLGETNUNIFORMUIVPROC) load("glGetnUniformuiv"))) { return (0); }
-   if (!gload_glMinSampleShading && !(gload_glMinSampleShading = (PFNGLMINSAMPLESHADINGPROC) load("glMinSampleShading"))) { return (0); }
-   if (!gload_glPatchParameteri && !(gload_glPatchParameteri = (PFNGLPATCHPARAMETERIPROC) load("glPatchParameteri"))) { return (0); }
-   if (!gload_glTexParameterIiv && !(gload_glTexParameterIiv = (PFNGLTEXPARAMETERIIVPROC) load("glTexParameterIiv"))) { return (0); }
-   if (!gload_glTexParameterIuiv && !(gload_glTexParameterIuiv = (PFNGLTEXPARAMETERIUIVPROC) load("glTexParameterIuiv"))) { return (0); }
-   if (!gload_glGetTexParameterIiv && !(gload_glGetTexParameterIiv = (PFNGLGETTEXPARAMETERIIVPROC) load("glGetTexParameterIiv"))) { return (0); }
-   if (!gload_glGetTexParameterIuiv && !(gload_glGetTexParameterIuiv = (PFNGLGETTEXPARAMETERIUIVPROC) load("glGetTexParameterIuiv"))) { return (0); }
-   if (!gload_glSamplerParameterIiv && !(gload_glSamplerParameterIiv = (PFNGLSAMPLERPARAMETERIIVPROC) load("glSamplerParameterIiv"))) { return (0); }
-   if (!gload_glSamplerParameterIuiv && !(gload_glSamplerParameterIuiv = (PFNGLSAMPLERPARAMETERIUIVPROC) load("glSamplerParameterIuiv"))) { return (0); }
-   if (!gload_glGetSamplerParameterIiv && !(gload_glGetSamplerParameterIiv = (PFNGLGETSAMPLERPARAMETERIIVPROC) load("glGetSamplerParameterIiv"))) { return (0); }
-   if (!gload_glGetSamplerParameterIuiv && !(gload_glGetSamplerParameterIuiv = (PFNGLGETSAMPLERPARAMETERIUIVPROC) load("glGetSamplerParameterIuiv"))) { return (0); }
-   if (!gload_glTexBuffer && !(gload_glTexBuffer = (PFNGLTEXBUFFERPROC) load("glTexBuffer"))) { return (0); }
-   if (!gload_glTexBufferRange && !(gload_glTexBufferRange = (PFNGLTEXBUFFERRANGEPROC) load("glTexBufferRange"))) { return (0); }
-   if (!gload_glTexStorage3DMultisample && !(gload_glTexStorage3DMultisample = (PFNGLTEXSTORAGE3DMULTISAMPLEPROC) load("glTexStorage3DMultisample"))) { return (0); }
-
-#  endif /* GL_ES_VERSION_3_2 */
-#  if defined GL_SC_VERSION_2_0
-
-   if (!gload_glActiveTexture && !(gload_glActiveTexture = (PFNGLACTIVETEXTUREPROC) load("glActiveTexture"))) { return (0); }
-   if (!gload_glBindBuffer && !(gload_glBindBuffer = (PFNGLBINDBUFFERPROC) load("glBindBuffer"))) { return (0); }
-   if (!gload_glBindFramebuffer && !(gload_glBindFramebuffer = (PFNGLBINDFRAMEBUFFERPROC) load("glBindFramebuffer"))) { return (0); }
-   if (!gload_glBindRenderbuffer && !(gload_glBindRenderbuffer = (PFNGLBINDRENDERBUFFERPROC) load("glBindRenderbuffer"))) { return (0); }
-   if (!gload_glBindTexture && !(gload_glBindTexture = (PFNGLBINDTEXTUREPROC) load("glBindTexture"))) { return (0); }
-   if (!gload_glBlendColor && !(gload_glBlendColor = (PFNGLBLENDCOLORPROC) load("glBlendColor"))) { return (0); }
-   if (!gload_glBlendEquation && !(gload_glBlendEquation = (PFNGLBLENDEQUATIONPROC) load("glBlendEquation"))) { return (0); }
-   if (!gload_glBlendEquationSeparate && !(gload_glBlendEquationSeparate = (PFNGLBLENDEQUATIONSEPARATEPROC) load("glBlendEquationSeparate"))) { return (0); }
-   if (!gload_glBlendFunc && !(gload_glBlendFunc = (PFNGLBLENDFUNCPROC) load("glBlendFunc"))) { return (0); }
-   if (!gload_glBlendFuncSeparate && !(gload_glBlendFuncSeparate = (PFNGLBLENDFUNCSEPARATEPROC) load("glBlendFuncSeparate"))) { return (0); }
-   if (!gload_glBufferData && !(gload_glBufferData = (PFNGLBUFFERDATAPROC) load("glBufferData"))) { return (0); }
-   if (!gload_glBufferSubData && !(gload_glBufferSubData = (PFNGLBUFFERSUBDATAPROC) load("glBufferSubData"))) { return (0); }
-   if (!gload_glCheckFramebufferStatus && !(gload_glCheckFramebufferStatus = (PFNGLCHECKFRAMEBUFFERSTATUSPROC) load("glCheckFramebufferStatus"))) { return (0); }
-   if (!gload_glClear && !(gload_glClear = (PFNGLCLEARPROC) load("glClear"))) { return (0); }
-   if (!gload_glClearColor && !(gload_glClearColor = (PFNGLCLEARCOLORPROC) load("glClearColor"))) { return (0); }
-   if (!gload_glClearDepthf && !(gload_glClearDepthf = (PFNGLCLEARDEPTHFPROC) load("glClearDepthf"))) { return (0); }
-   if (!gload_glClearStencil && !(gload_glClearStencil = (PFNGLCLEARSTENCILPROC) load("glClearStencil"))) { return (0); }
-   if (!gload_glColorMask && !(gload_glColorMask = (PFNGLCOLORMASKPROC) load("glColorMask"))) { return (0); }
-   if (!gload_glCompressedTexSubImage2D && !(gload_glCompressedTexSubImage2D = (PFNGLCOMPRESSEDTEXSUBIMAGE2DPROC) load("glCompressedTexSubImage2D"))) { return (0); }
-   if (!gload_glCreateProgram && !(gload_glCreateProgram = (PFNGLCREATEPROGRAMPROC) load("glCreateProgram"))) { return (0); }
-   if (!gload_glCullFace && !(gload_glCullFace = (PFNGLCULLFACEPROC) load("glCullFace"))) { return (0); }
-   if (!gload_glDepthFunc && !(gload_glDepthFunc = (PFNGLDEPTHFUNCPROC) load("glDepthFunc"))) { return (0); }
-   if (!gload_glDepthMask && !(gload_glDepthMask = (PFNGLDEPTHMASKPROC) load("glDepthMask"))) { return (0); }
-   if (!gload_glDepthRangef && !(gload_glDepthRangef = (PFNGLDEPTHRANGEFPROC) load("glDepthRangef"))) { return (0); }
-   if (!gload_glDisable && !(gload_glDisable = (PFNGLDISABLEPROC) load("glDisable"))) { return (0); }
-   if (!gload_glDisableVertexAttribArray && !(gload_glDisableVertexAttribArray = (PFNGLDISABLEVERTEXATTRIBARRAYPROC) load("glDisableVertexAttribArray"))) { return (0); }
-   if (!gload_glDrawArrays && !(gload_glDrawArrays = (PFNGLDRAWARRAYSPROC) load("glDrawArrays"))) { return (0); }
-   if (!gload_glDrawRangeElements && !(gload_glDrawRangeElements = (PFNGLDRAWRANGEELEMENTSPROC) load("glDrawRangeElements"))) { return (0); }
-   if (!gload_glEnable && !(gload_glEnable = (PFNGLENABLEPROC) load("glEnable"))) { return (0); }
-   if (!gload_glEnableVertexAttribArray && !(gload_glEnableVertexAttribArray = (PFNGLENABLEVERTEXATTRIBARRAYPROC) load("glEnableVertexAttribArray"))) { return (0); }
-   if (!gload_glFinish && !(gload_glFinish = (PFNGLFINISHPROC) load("glFinish"))) { return (0); }
-   if (!gload_glFlush && !(gload_glFlush = (PFNGLFLUSHPROC) load("glFlush"))) { return (0); }
-   if (!gload_glFramebufferRenderbuffer && !(gload_glFramebufferRenderbuffer = (PFNGLFRAMEBUFFERRENDERBUFFERPROC) load("glFramebufferRenderbuffer"))) { return (0); }
-   if (!gload_glFramebufferTexture2D && !(gload_glFramebufferTexture2D = (PFNGLFRAMEBUFFERTEXTURE2DPROC) load("glFramebufferTexture2D"))) { return (0); }
-   if (!gload_glFrontFace && !(gload_glFrontFace = (PFNGLFRONTFACEPROC) load("glFrontFace"))) { return (0); }
-   if (!gload_glGenBuffers && !(gload_glGenBuffers = (PFNGLGENBUFFERSPROC) load("glGenBuffers"))) { return (0); }
-   if (!gload_glGenerateMipmap && !(gload_glGenerateMipmap = (PFNGLGENERATEMIPMAPPROC) load("glGenerateMipmap"))) { return (0); }
-   if (!gload_glGenFramebuffers && !(gload_glGenFramebuffers = (PFNGLGENFRAMEBUFFERSPROC) load("glGenFramebuffers"))) { return (0); }
-   if (!gload_glGenRenderbuffers && !(gload_glGenRenderbuffers = (PFNGLGENRENDERBUFFERSPROC) load("glGenRenderbuffers"))) { return (0); }
-   if (!gload_glGenTextures && !(gload_glGenTextures = (PFNGLGENTEXTURESPROC) load("glGenTextures"))) { return (0); }
-   if (!gload_glGetAttribLocation && !(gload_glGetAttribLocation = (PFNGLGETATTRIBLOCATIONPROC) load("glGetAttribLocation"))) { return (0); }
-   if (!gload_glGetBooleanv && !(gload_glGetBooleanv = (PFNGLGETBOOLEANVPROC) load("glGetBooleanv"))) { return (0); }
-   if (!gload_glGetBufferParameteriv && !(gload_glGetBufferParameteriv = (PFNGLGETBUFFERPARAMETERIVPROC) load("glGetBufferParameteriv"))) { return (0); }
-   if (!gload_glGetError && !(gload_glGetError = (PFNGLGETERRORPROC) load("glGetError"))) { return (0); }
-   if (!gload_glGetFloatv && !(gload_glGetFloatv = (PFNGLGETFLOATVPROC) load("glGetFloatv"))) { return (0); }
-   if (!gload_glGetFramebufferAttachmentParameteriv && !(gload_glGetFramebufferAttachmentParameteriv = (PFNGLGETFRAMEBUFFERATTACHMENTPARAMETERIVPROC) load("glGetFramebufferAttachmentParameteriv"))) { return (0); }
-   if (!gload_glGetGraphicsResetStatus && !(gload_glGetGraphicsResetStatus = (PFNGLGETGRAPHICSRESETSTATUSPROC) load("glGetGraphicsResetStatus"))) { return (0); }
-   if (!gload_glGetIntegerv && !(gload_glGetIntegerv = (PFNGLGETINTEGERVPROC) load("glGetIntegerv"))) { return (0); }
-   if (!gload_glGetProgramiv && !(gload_glGetProgramiv = (PFNGLGETPROGRAMIVPROC) load("glGetProgramiv"))) { return (0); }
-   if (!gload_glGetRenderbufferParameteriv && !(gload_glGetRenderbufferParameteriv = (PFNGLGETRENDERBUFFERPARAMETERIVPROC) load("glGetRenderbufferParameteriv"))) { return (0); }
-   if (!gload_glGetString && !(gload_glGetString = (PFNGLGETSTRINGPROC) load("glGetString"))) { return (0); }
-   if (!gload_glGetTexParameterfv && !(gload_glGetTexParameterfv = (PFNGLGETTEXPARAMETERFVPROC) load("glGetTexParameterfv"))) { return (0); }
-   if (!gload_glGetTexParameteriv && !(gload_glGetTexParameteriv = (PFNGLGETTEXPARAMETERIVPROC) load("glGetTexParameteriv"))) { return (0); }
-   if (!gload_glGetnUniformfv && !(gload_glGetnUniformfv = (PFNGLGETNUNIFORMFVPROC) load("glGetnUniformfv"))) { return (0); }
-   if (!gload_glGetnUniformiv && !(gload_glGetnUniformiv = (PFNGLGETNUNIFORMIVPROC) load("glGetnUniformiv"))) { return (0); }
-   if (!gload_glGetUniformLocation && !(gload_glGetUniformLocation = (PFNGLGETUNIFORMLOCATIONPROC) load("glGetUniformLocation"))) { return (0); }
-   if (!gload_glGetVertexAttribfv && !(gload_glGetVertexAttribfv = (PFNGLGETVERTEXATTRIBFVPROC) load("glGetVertexAttribfv"))) { return (0); }
-   if (!gload_glGetVertexAttribiv && !(gload_glGetVertexAttribiv = (PFNGLGETVERTEXATTRIBIVPROC) load("glGetVertexAttribiv"))) { return (0); }
-   if (!gload_glGetVertexAttribPointerv && !(gload_glGetVertexAttribPointerv = (PFNGLGETVERTEXATTRIBPOINTERVPROC) load("glGetVertexAttribPointerv"))) { return (0); }
-   if (!gload_glHint && !(gload_glHint = (PFNGLHINTPROC) load("glHint"))) { return (0); }
-   if (!gload_glIsEnabled && !(gload_glIsEnabled = (PFNGLISENABLEDPROC) load("glIsEnabled"))) { return (0); }
-   if (!gload_glLineWidth && !(gload_glLineWidth = (PFNGLLINEWIDTHPROC) load("glLineWidth"))) { return (0); }
-   if (!gload_glPixelStorei && !(gload_glPixelStorei = (PFNGLPIXELSTOREIPROC) load("glPixelStorei"))) { return (0); }
-   if (!gload_glPolygonOffset && !(gload_glPolygonOffset = (PFNGLPOLYGONOFFSETPROC) load("glPolygonOffset"))) { return (0); }
-   if (!gload_glProgramBinary && !(gload_glProgramBinary = (PFNGLPROGRAMBINARYPROC) load("glProgramBinary"))) { return (0); }
-   if (!gload_glReadnPixels && !(gload_glReadnPixels = (PFNGLREADNPIXELSPROC) load("glReadnPixels"))) { return (0); }
-   if (!gload_glRenderbufferStorage && !(gload_glRenderbufferStorage = (PFNGLRENDERBUFFERSTORAGEPROC) load("glRenderbufferStorage"))) { return (0); }
-   if (!gload_glSampleCoverage && !(gload_glSampleCoverage = (PFNGLSAMPLECOVERAGEPROC) load("glSampleCoverage"))) { return (0); }
-   if (!gload_glScissor && !(gload_glScissor = (PFNGLSCISSORPROC) load("glScissor"))) { return (0); }
-   if (!gload_glStencilFunc && !(gload_glStencilFunc = (PFNGLSTENCILFUNCPROC) load("glStencilFunc"))) { return (0); }
-   if (!gload_glStencilFuncSeparate && !(gload_glStencilFuncSeparate = (PFNGLSTENCILFUNCSEPARATEPROC) load("glStencilFuncSeparate"))) { return (0); }
-   if (!gload_glStencilMask && !(gload_glStencilMask = (PFNGLSTENCILMASKPROC) load("glStencilMask"))) { return (0); }
-   if (!gload_glStencilMaskSeparate && !(gload_glStencilMaskSeparate = (PFNGLSTENCILMASKSEPARATEPROC) load("glStencilMaskSeparate"))) { return (0); }
-   if (!gload_glStencilOp && !(gload_glStencilOp = (PFNGLSTENCILOPPROC) load("glStencilOp"))) { return (0); }
-   if (!gload_glStencilOpSeparate && !(gload_glStencilOpSeparate = (PFNGLSTENCILOPSEPARATEPROC) load("glStencilOpSeparate"))) { return (0); }
-   if (!gload_glTexStorage2D && !(gload_glTexStorage2D = (PFNGLTEXSTORAGE2DPROC) load("glTexStorage2D"))) { return (0); }
-   if (!gload_glTexParameterf && !(gload_glTexParameterf = (PFNGLTEXPARAMETERFPROC) load("glTexParameterf"))) { return (0); }
-   if (!gload_glTexParameterfv && !(gload_glTexParameterfv = (PFNGLTEXPARAMETERFVPROC) load("glTexParameterfv"))) { return (0); }
-   if (!gload_glTexParameteri && !(gload_glTexParameteri = (PFNGLTEXPARAMETERIPROC) load("glTexParameteri"))) { return (0); }
-   if (!gload_glTexParameteriv && !(gload_glTexParameteriv = (PFNGLTEXPARAMETERIVPROC) load("glTexParameteriv"))) { return (0); }
-   if (!gload_glTexSubImage2D && !(gload_glTexSubImage2D = (PFNGLTEXSUBIMAGE2DPROC) load("glTexSubImage2D"))) { return (0); }
-   if (!gload_glUniform1f && !(gload_glUniform1f = (PFNGLUNIFORM1FPROC) load("glUniform1f"))) { return (0); }
-   if (!gload_glUniform1fv && !(gload_glUniform1fv = (PFNGLUNIFORM1FVPROC) load("glUniform1fv"))) { return (0); }
-   if (!gload_glUniform1i && !(gload_glUniform1i = (PFNGLUNIFORM1IPROC) load("glUniform1i"))) { return (0); }
-   if (!gload_glUniform1iv && !(gload_glUniform1iv = (PFNGLUNIFORM1IVPROC) load("glUniform1iv"))) { return (0); }
-   if (!gload_glUniform2f && !(gload_glUniform2f = (PFNGLUNIFORM2FPROC) load("glUniform2f"))) { return (0); }
-   if (!gload_glUniform2fv && !(gload_glUniform2fv = (PFNGLUNIFORM2FVPROC) load("glUniform2fv"))) { return (0); }
-   if (!gload_glUniform2i && !(gload_glUniform2i = (PFNGLUNIFORM2IPROC) load("glUniform2i"))) { return (0); }
-   if (!gload_glUniform2iv && !(gload_glUniform2iv = (PFNGLUNIFORM2IVPROC) load("glUniform2iv"))) { return (0); }
-   if (!gload_glUniform3f && !(gload_glUniform3f = (PFNGLUNIFORM3FPROC) load("glUniform3f"))) { return (0); }
-   if (!gload_glUniform3fv && !(gload_glUniform3fv = (PFNGLUNIFORM3FVPROC) load("glUniform3fv"))) { return (0); }
-   if (!gload_glUniform3i && !(gload_glUniform3i = (PFNGLUNIFORM3IPROC) load("glUniform3i"))) { return (0); }
-   if (!gload_glUniform3iv && !(gload_glUniform3iv = (PFNGLUNIFORM3IVPROC) load("glUniform3iv"))) { return (0); }
-   if (!gload_glUniform4f && !(gload_glUniform4f = (PFNGLUNIFORM4FPROC) load("glUniform4f"))) { return (0); }
-   if (!gload_glUniform4fv && !(gload_glUniform4fv = (PFNGLUNIFORM4FVPROC) load("glUniform4fv"))) { return (0); }
-   if (!gload_glUniform4i && !(gload_glUniform4i = (PFNGLUNIFORM4IPROC) load("glUniform4i"))) { return (0); }
-   if (!gload_glUniform4iv && !(gload_glUniform4iv = (PFNGLUNIFORM4IVPROC) load("glUniform4iv"))) { return (0); }
-   if (!gload_glUniformMatrix2fv && !(gload_glUniformMatrix2fv = (PFNGLUNIFORMMATRIX2FVPROC) load("glUniformMatrix2fv"))) { return (0); }
-   if (!gload_glUniformMatrix3fv && !(gload_glUniformMatrix3fv = (PFNGLUNIFORMMATRIX3FVPROC) load("glUniformMatrix3fv"))) { return (0); }
-   if (!gload_glUniformMatrix4fv && !(gload_glUniformMatrix4fv = (PFNGLUNIFORMMATRIX4FVPROC) load("glUniformMatrix4fv"))) { return (0); }
-   if (!gload_glUseProgram && !(gload_glUseProgram = (PFNGLUSEPROGRAMPROC) load("glUseProgram"))) { return (0); }
-   if (!gload_glVertexAttrib1f && !(gload_glVertexAttrib1f = (PFNGLVERTEXATTRIB1FPROC) load("glVertexAttrib1f"))) { return (0); }
-   if (!gload_glVertexAttrib1fv && !(gload_glVertexAttrib1fv = (PFNGLVERTEXATTRIB1FVPROC) load("glVertexAttrib1fv"))) { return (0); }
-   if (!gload_glVertexAttrib2f && !(gload_glVertexAttrib2f = (PFNGLVERTEXATTRIB2FPROC) load("glVertexAttrib2f"))) { return (0); }
-   if (!gload_glVertexAttrib2fv && !(gload_glVertexAttrib2fv = (PFNGLVERTEXATTRIB2FVPROC) load("glVertexAttrib2fv"))) { return (0); }
-   if (!gload_glVertexAttrib3f && !(gload_glVertexAttrib3f = (PFNGLVERTEXATTRIB3FPROC) load("glVertexAttrib3f"))) { return (0); }
-   if (!gload_glVertexAttrib3fv && !(gload_glVertexAttrib3fv = (PFNGLVERTEXATTRIB3FVPROC) load("glVertexAttrib3fv"))) { return (0); }
-   if (!gload_glVertexAttrib4f && !(gload_glVertexAttrib4f = (PFNGLVERTEXATTRIB4FPROC) load("glVertexAttrib4f"))) { return (0); }
-   if (!gload_glVertexAttrib4fv && !(gload_glVertexAttrib4fv = (PFNGLVERTEXATTRIB4FVPROC) load("glVertexAttrib4fv"))) { return (0); }
-   if (!gload_glVertexAttribPointer && !(gload_glVertexAttribPointer = (PFNGLVERTEXATTRIBPOINTERPROC) load("glVertexAttribPointer"))) { return (0); }
-   if (!gload_glViewport && !(gload_glViewport = (PFNGLVIEWPORTPROC) load("glViewport"))) { return (0); }
-
-#  endif /* GL_SC_VERSION_2_0 */
+        *g_nameaddr[i].addr = load(g_nameaddr[i].name);
+        if (!*g_nameaddr[i].addr) { return (0); }
+    }
 
     return (1);
 }
