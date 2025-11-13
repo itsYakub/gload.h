@@ -185,9 +185,9 @@ GLAPI void  *gloadGetProcAddress(const char *);
 #
 #  include <stdint.h>
 #  include <stddef.h>
-#  if defined (__linux__) || defined (__unix__)
+#  if defined (__linux__) || defined (__APPLE__)
 #   include <dlfcn.h>
-#  endif /* __linux__, __unix__ */
+#  endif /* __linux__, __APPLE__ */
 #  if defined (_WIN32)
 #   include <libloaderapi.h>
 #  endif /* _WIN32 */
@@ -197,22 +197,58 @@ GLAPI void  *gloadGetProcAddress(const char *);
 #  endif /* GLOAD_DLSYM, GLOAD_GLX, GLOAD_EGL, GLOAD_WGL */
 
 #  if defined (GLOAD_DLSYM)
-#   undef GLOAD_GLX
-#   undef GLOAD_GLX
-#   undef GLOAD_EGL
+#   if defined (GLOAD_GLX)
+#    error "Multiple backends selected: GLOAD_DLSYM and GLOAD_GLX."
+#   endif /* GLOAD_GLX */
+#   if defined (GLOAD_EGL)
+#    error "Multiple backends selected: GLOAD_DLSYM and GLOAD_EGL."
+#   endif /* GLOAD_EGL */
+#   if defined (GLOAD_WGL)
+#    error "Multiple backends selected: GLOAD_DLSYM and GLOAD_WGL."
+#   endif /* GLOAD_WGL */
 #  endif /* GLOAD_DLSYM */
 #
 #  if defined (GLOAD_GLX)
+#   if defined (GLOAD_DLSYM)
+#    error "Multiple backends selected: GLOAD_GLX and GLOAD_DLSYM."
+#   endif /* GLOAD_DLSYM */
+#   if defined (GLOAD_EGL)
+#    error "Multiple backends selected: GLOAD_GLX and GLOAD_EGL."
+#   endif /* GLOAD_EGL */
+#   if defined (GLOAD_WGL)
+#    error "Multiple backends selected: GLOAD_GLX and GLOAD_WGL."
+#   endif /* GLOAD_WGL */
+#
 #   include <GL/glx.h>
 #   include <GL/glxext.h>
 #  endif /* GLOAD_GLX */
 #
 #  if defined (GLOAD_EGL)
+#   if defined (GLOAD_DLSYM)
+#    error "Multiple backends selected: GLOAD_EGL and GLOAD_DLSYM."
+#   endif /* GLOAD_DLSYM */
+#   if defined (GLOAD_GLX)
+#    error "Multiple backends selected: GLOAD_EGL and GLOAD_GLX."
+#   endif /* GLOAD_GLX */
+#   if defined (GLOAD_WGL)
+#    error "Multiple backends selected: GLOAD_EGL and GLOAD_WGL."
+#   endif /* GLOAD_WGL */
+#
 #   include <EGL/egl.h>
 #   include <EGL/eglext.h>
 #  endif /* GLOAD_EGL */
 #
 #  if defined (GLOAD_WGL)
+#   if defined (GLOAD_DLSYM)
+#    error "Multiple backends selected: GLOAD_WGL and GLOAD_DLSYM."
+#   endif /* GLOAD_DLSYM */
+#   if defined (GLOAD_GLX)
+#    error "Multiple backends selected: GLOAD_WGL and GLOAD_GLX."
+#   endif /* GLOAD_EGL */
+#   if defined (GLOAD_WGL)
+#    error "Multiple backends selected: GLOAD_WGL and GLOAD_WGL."
+#   endif /* GLOAD_WGL */
+#
 #   include <wingdi.h>
 #  endif /* GLOAD_WGL */
 #
@@ -226,11 +262,8 @@ extern "C" {
  *  Global objects
  * * * * * * * * * * */
 
-#  if defined (GLOAD_DLSYM)
-
-static void *g_handle = 0;
-
-#  endif /* GLOAD_DLSYM */
+/* s_nameaddr - key-value-pair structure of proc. names and addresses. */
+/* g_nameaddr - array of s_nameaddr structures, null-terminated. */
 
 struct s_nameaddr {
     char    *name;
@@ -243,6 +276,9 @@ static struct s_nameaddr    g_nameaddr[] = {
 
     { 0, 0 }
 };
+
+/* g_handle - handle to shared/dynamic library. */    
+static void *g_handle = 0;
 
 /* SECTION:
  *  gload API
@@ -280,7 +316,6 @@ GLAPI int   gloadLoadGLLoader(t_gloadLoader load) {
 }
 
 GLAPI void  *gloadGetProcAddress(const char *name) {
-
     void        *proc;
     const char  *names[] = {
 
@@ -328,7 +363,6 @@ GLAPI void  *gloadGetProcAddress(const char *name) {
 
         if (!g_handle) { return (0); }
     }
-
 
 #  if defined (__linux__) || defined (__APPLE__)
 
