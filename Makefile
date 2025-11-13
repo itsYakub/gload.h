@@ -12,7 +12,7 @@ GENERATOR	= $(MK_ROOT)gen/$(MK_NAME)-gen.py
 
 .PHONY : all
 
-all : gen install
+all : remove gen install
 
 .PHONY : gen
 

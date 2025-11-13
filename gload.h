@@ -97,8 +97,8 @@
  *        - OpenGL Registry provided by KhronosGroup.
  *        
  *      This project is heavily inspired by the following projects:
- *      - nothings/stb: https://github.com/nothings/stb.git
- *      - Dav1dde/glad: https://github.com/Dav1dde/glad.git
+ *      - nothings/stb:  https://github.com/nothings/stb.git
+ *      - Dav1dde/glad:  https://github.com/Dav1dde/glad.git
  *      - macron/glbind: https://github.com/mackron/glbind.git
  *      - KhronosGroup/OpenGL-Registry: https://github.com/KhronosGroup/OpenGL-Registry.git
  *
@@ -10903,21 +10903,24 @@ GLAPI int   gloadLoadGLLoader(t_gloadLoader load) {
 }
 
 GLAPI void  *gloadGetProcAddress(const char *name) {
+
+#  if defined (GLOAD_DLSYM)
+
     void    *proc;
     
-#  if defined (__linux__) || defined (__APPLE__)
+#   if defined (__linux__) || defined (__APPLE__)
 
     const char  *names[] = {
 
-#   if defined (__linux__)
+#    if defined (__linux__)
 
         "libGL.so",
         "libGL.so.1",
         "libGL.so.1.7.0",
         0
 
-#   endif /* __linux__ */
-#   if defined (__APPLE__)
+#    endif /* __linux__ */
+#    if defined (__APPLE__)
 
         "../Frameworks/OpenGL.framework/OpenGL",
         "/Library/Frameworks/OpenGL.framework/OpenGL",
@@ -10925,7 +10928,7 @@ GLAPI void  *gloadGetProcAddress(const char *name) {
         "/System/Library/Frameworks/OpenGL.framework/Versions/Current/OpenGL"
         0
 
-#   endif /* __APPLE__ */
+#    endif /* __APPLE__ */
 
     };
     
@@ -10941,11 +10944,11 @@ GLAPI void  *gloadGetProcAddress(const char *name) {
     if (!proc) { return (0); }
 
 
-#  endif /* __linux__, __APPLE__ */
-#  if defined (_WIN32)
+#   endif /* __linux__, __APPLE__ */
+#   if defined (_WIN32)
 
     const char  *names[] = {
-        "opengl32.dll"
+        "opengl32.dll",
         0
     };
 
@@ -10960,9 +10963,19 @@ GLAPI void  *gloadGetProcAddress(const char *name) {
     proc = GetProcAddress(g_handle, name);
     if (!proc) { return (0); }
 
-#  endif /* _WIN32 */
+#   endif /* _WIN32 */
 
     return (proc);
+
+#  endif /* GLOAD_DLSYM */
+
+    /* NOTE:
+     *  If GLOAD_DLSYM isn't defined, the implementation of gloadGetProcAddress is unnecessary.
+     *  Default to using better-suited functions for this job.
+     * */
+
+    (void) name;
+    return (0);
 }
 
 /* SECTION:
