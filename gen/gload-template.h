@@ -185,6 +185,12 @@ GLAPI void  *gloadGetProcAddress(const char *);
 #
 #  include <stdint.h>
 #  include <stddef.h>
+#  if defined (__linux__) || defined (__unix__)
+#   include <dlfcn.h>
+#  endif /* __linux__, __unix__ */
+#  if defined (_WIN32)
+#   include <libloaderapi.h>
+#  endif /* _WIN32 */
 #
 #  if !defined (GLOAD_DLSYM) && !(defined (GLOAD_GLX) || defined (GLOAD_EGL) || defined (GLOAD_WGL))
 #   define GLOAD_DLSYM 1
@@ -194,13 +200,6 @@ GLAPI void  *gloadGetProcAddress(const char *);
 #   undef GLOAD_GLX
 #   undef GLOAD_GLX
 #   undef GLOAD_EGL
-#   if defined (__linux__) || defined (__unix__)
-#    include <dlfcn.h>
-#   endif /* __linux__, __unix__ */
-#
-#   if defined (_WIN32)
-#    include <libloaderapi.h>
-#   endif /* _WIN32 */
 #  endif /* GLOAD_DLSYM */
 #
 #  if defined (GLOAD_GLX)
@@ -282,23 +281,18 @@ GLAPI int   gloadLoadGLLoader(t_gloadLoader load) {
 
 GLAPI void  *gloadGetProcAddress(const char *name) {
 
-#  if defined (GLOAD_DLSYM)
-
-    void    *proc;
-    
-#   if defined (__linux__) || defined (__APPLE__)
-
+    void        *proc;
     const char  *names[] = {
 
-#    if defined (__linux__)
+#  if defined (__linux__)
 
         "libGL.so",
         "libGL.so.1",
         "libGL.so.1.7.0",
         0
 
-#    endif /* __linux__ */
-#    if defined (__APPLE__)
+#  endif /* __linux__ */
+#  if defined (__APPLE__)
 
         "../Frameworks/OpenGL.framework/OpenGL",
         "/Library/Frameworks/OpenGL.framework/OpenGL",
@@ -306,54 +300,49 @@ GLAPI void  *gloadGetProcAddress(const char *name) {
         "/System/Library/Frameworks/OpenGL.framework/Versions/Current/OpenGL"
         0
 
-#    endif /* __APPLE__ */
+#  endif /* __APPLE__ */
+#  if defined (_WIN32)
 
-    };
-    
-    if (!g_handle) {
-        for (size_t i = 0; !g_handle && names[i]; i++) {
-            g_handle = dlopen(names[i], RTLD_NOW | RTLD_GLOBAL);
-        }
-
-        if (!g_handle) { return (0); }
-    }
-
-    proc = dlsym(g_handle, name);
-    if (!proc) { return (0); }
-
-
-#   endif /* __linux__, __APPLE__ */
-#   if defined (_WIN32)
-
-    const char  *names[] = {
         "opengl32.dll",
         0
-    };
 
+#  endif /* _WIN32 */
+
+    };
+    
     if (!g_handle) {
         for (size_t i = 0; !g_handle && names[i]; i++) {
+
+#  if defined (__linux__) || defined (__APPLE__)
+
+            g_handle = dlopen(names[i], RTLD_NOW | RTLD_GLOBAL);
+
+#  endif /* __linux__, __APPLE__ */
+#  if defined (_WIN32)
+
             g_handle = LoadLibraryA(names[i]);
+
+#  endif /* _WIN32 */
+
         }
 
         if (!g_handle) { return (0); }
     }
+
+
+#  if defined (__linux__) || defined (__APPLE__)
+
+    proc = dlsym(g_handle, name);
+
+#  endif /* __linux__, __APPLE__ */
+#  if defined (_WIN32)
     
     proc = GetProcAddress(g_handle, name);
+
+#  endif /* _WIN32 */
+
     if (!proc) { return (0); }
-
-#   endif /* _WIN32 */
-
     return (proc);
-
-#  endif /* GLOAD_DLSYM */
-
-    /* NOTE:
-     *  If GLOAD_DLSYM isn't defined, the implementation of gloadGetProcAddress is unnecessary.
-     *  Default to using better-suited functions for this job.
-     * */
-
-    (void) name;
-    return (0);
 }
 
 /* SECTION:
