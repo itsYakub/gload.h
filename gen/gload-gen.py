@@ -339,17 +339,40 @@ def opengl_loader(parse: glParse):
     with open(g_opt['template'], 'r') as f:
         fstr = f.read()
 
-    fstr = fstr.replace('<<gload-version>>', g_version)
-    fstr = fstr.replace('<<gload-author>>', g_author)
-    fstr = fstr.replace('<<gload-licence>>', g_licence)
-    fstr = fstr.replace('<<gload-version-macro>>', template_version_macro(parse).replace('#', '# '))
-    fstr = fstr.replace('<<gload-typedef>>', template_typedefs(parse).replace('#', '# '))
-    fstr = fstr.replace('<<gload-enums>>', template_enums(parse).replace('#', '# '))
-    fstr = fstr.replace('<<gload-funcptr>>', template_funcptr(parse).replace('#', '# '))
-    fstr = fstr.replace('<<gload-loadfunc>>', template_loadfunc(parse).replace('#', '#  '))
-    fstr = fstr.replace('<<gload-declr-1>>', template_declr(parse, 1).replace('#', '# '))
-    fstr = fstr.replace('<<gload-declr-2>>', template_declr(parse, 2).replace('#', '# '))
-    fstr = fstr.replace('<<gload-declr-0>>', template_declr(parse, 0).replace('#', '#  '))
+    # There're probably better ways to replace template strings...
+    # ... but I couldn't be bothered looking for them.
+    # Maybe in the future I'll try to implement a better system.
+    fstr = fstr.replace(
+            '<<gload-version>>', g_version
+        ).replace(
+            '<<gload-author>>', g_author
+        ).replace(
+            '<<gload-licence>>', g_licence
+        ).replace(
+            '/* <<gload-version-macro>> */',
+            gload_version_macro(parse).replace('#', '# ')
+        ).replace(
+            '/* <<gload-typedef>> */',
+            gload_typedefs(parse).replace('#', '# ')
+        ).replace(
+            '/* <<gload-enums>> */',
+            gload_enums(parse).replace('#', '# ')
+        ).replace(
+            '/* <<gload-funcptr>> */',
+            gload_funcptr(parse).replace('#', '# ')
+        ).replace(
+            '/* <<gload-loadfunc>> */',
+            gload_loadfunc(parse).replace('#', '#  ')
+        ).replace(
+            '/* <<gload-declr-1>> */',
+            gload_declr(parse, 1).replace('#', '# ')
+        ).replace(
+            '/* <<gload-declr-2>> */',
+            gload_declr(parse, 2).replace('#', '# ')
+        ).replace(
+            '/* <<gload-declr-0>> */',
+            gload_declr(parse, 0).replace('#', '#  ')
+        )
 
     with open(g_opt['output'], 'w') as f:
         f.write(fstr)
@@ -359,7 +382,7 @@ def opengl_loader(parse: glParse):
 # SECTION: template
 # =================
 
-def template_version_macro(parse: glParse) -> str:
+def gload_version_macro(parse: glParse) -> str:
     result: str
 
     result = str()
@@ -368,7 +391,7 @@ def template_version_macro(parse: glParse) -> str:
     return (result.strip())
 
 
-def template_typedefs(parse: glParse) -> str:
+def gload_typedefs(parse: glParse) -> str:
     result: str
 
     result = str()
@@ -384,7 +407,7 @@ def template_typedefs(parse: glParse) -> str:
     return (result.strip())
 
 
-def template_funcptr(parse: glParse) -> str:
+def gload_funcptr(parse: glParse) -> str:
     result: str
 
     result = str()
@@ -411,7 +434,7 @@ def template_funcptr(parse: glParse) -> str:
     return (result.strip())
 
 
-def template_enums(parse: glParse) -> str:
+def gload_enums(parse: glParse) -> str:
     result: str
 
     result = str()
@@ -429,7 +452,7 @@ def template_enums(parse: glParse) -> str:
     return (result.strip())
 
 
-def template_declr(parse: glParse, mode: int) -> str:
+def gload_declr(parse: glParse, mode: int) -> str:
     result: str
 
     result = str()
@@ -472,7 +495,7 @@ def template_declr(parse: glParse, mode: int) -> str:
     return (result.strip())
 
 
-def template_loadfunc(parse: glParse) -> str:
+def gload_loadfunc(parse: glParse) -> str:
     result: str
 
     result = str()
