@@ -12,5 +12,7 @@ int main(void) {
     
     /* ... */
 
+    gloadUnloadGL();
+
     return (0);
 }

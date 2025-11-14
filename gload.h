@@ -184,6 +184,8 @@ extern "C" {
 typedef void    *(*t_gloadLoader)(const char *);
 
 GLAPI int   gloadLoadGL(void);
+GLAPI int   gloadUnloadGL(void);
+
 GLAPI int   gloadLoadGLLoader(t_gloadLoader);
 
 GLAPI void  *gloadGetProcAddress(const char *);
@@ -10942,6 +10944,25 @@ GLAPI int   gloadLoadGL(void) {
     return (gloadLoadGLLoader((t_gloadLoader) gloadGetProcAddress));
 #  endif /* GLOAD_DLSYM */
 
+}
+
+GLAPI int   gloadUnloadGL(void) {
+    if (g_handle) {
+
+#  if defined (__linux__) || defined (__APPLE__)
+
+        dlclose(g_handle), g_handle = 0;
+
+#  endif /* __linux__, __APPLE__ */
+#  if defined (_WIN32)
+
+        FreeLibrary(g_handle), g_handle = 0;
+
+#  endif /* _WIN32 */
+
+    }
+
+    return (1);
 }
 
 GLAPI int   gloadLoadGLLoader(t_gloadLoader load) {
