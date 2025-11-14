@@ -12,24 +12,29 @@ GENERATOR	= $(MK_ROOT)gen/$(MK_NAME)-gen.py
 
 .PHONY : all
 
-all : remove gen install
-
-.PHONY : gen
-
-gen :
-	python3 $(GENERATOR) -o $(TARGET)
+all : gen install
 
 .PHONY : install
 
 install :
-	mkdir /usr/local/include/$(MK_NAME)/
+	mkdir -p /usr/local/include/$(MK_NAME)/
 	cp -f $(TARGET) /usr/local/include/$(MK_NAME)/
-	ln -s /usr/local/include/$(MK_NAME)/$(MK_NAME).h /usr/local/include/$(MK_NAME).h
+	ln -nfs /usr/local/include/$(MK_NAME)/$(MK_NAME).h /usr/local/include/$(MK_NAME).h
 
 .PHONY : remove
 
 remove :
 	rm -rf /usr/local/include/$(MK_NAME)
 	rm -f /usr/local/include/$(MK_NAME).h
+
+.PHONY : gen
+
+gen :
+	python3 $(GENERATOR) -o $(TARGET)
+
+.PHONY : samples
+
+samples :
+	make -C $(MK_ROOT)samples/
 
 # ========

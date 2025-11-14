@@ -1,0 +1,41 @@
+#define GLOAD_IMPLEMENTATION
+#include <gload/gload.h>
+
+#include <GLFW/glfw3.h>
+
+
+
+int main(void) {
+    GLFWwindow  *window;
+
+    if (!glfwInit()) { return (1); }
+
+    window = glfwCreateWindow(800, 600, "gload.h - GLFW3 sample", 0, 0);
+    if (!window) { return (1); }
+
+    glfwMakeContextCurrent(window);
+
+    if (!gloadLoadGLLoader((t_gloadLoader) glfwGetProcAddress)) { return (1); }
+
+
+    while (!glfwWindowShouldClose(window)) {
+        glClearColor(0.1, 0.1, 0.1, 1.0);
+        glClear(GL_COLOR_BUFFER_BIT);
+
+
+        glBegin(GL_QUADS);
+            glVertex2f(-0.5,-0.5);
+            glVertex2f(-0.5, 0.5);
+            glVertex2f( 0.5, 0.5);
+            glVertex2f( 0.5,-0.5);
+        glEnd();
+
+
+        glfwSwapBuffers(window);
+        glfwPollEvents();
+    }
+
+
+    glfwTerminate();
+    return (0);
+}
