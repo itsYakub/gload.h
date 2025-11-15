@@ -183,11 +183,49 @@ extern "C" {
 
 typedef void    *(*t_gloadLoader)(const char *);
 
+/* `gloadLoadGL`:
+ *
+ * Perform a simple OpenGL (v.1.0 - v.4.6) and OpenGLES (v.1.0 - v.3.1) loading process.
+ * 
+ * `gloadLoadGL` auto-detects which backend should be used:
+ * `GLX`, `EGL`, `WGL` or `built-in` (using either `dlopen` or `LoadLibraryA`, depending on the platform).
+ *
+ * \returns `true` on success, `false` on failure.
+ * */
 GLAPI int   gloadLoadGL(void);
+
+/* `gloadLoadGL`:
+ *
+ * Unload OpenGL functions and dispose dynamic/shared object handle.
+ * This function will execute anything if `gloadGetProcAddress` was used at least once;
+ * for other backends (i.e. `GLX`, `EGL`, `WGL` and more) this function will simply return.
+ *
+ * \returns `true` on success, `false` on failure.
+ * */
 GLAPI int   gloadUnloadGL(void);
 
+/* `gloadLoadGLLoader`:
+ *
+ * Perform a simple OpenGL (v.1.0 - v.4.6) and OpenGLES (v.1.0 - v.3.1) loading process.
+ * 
+ * gloadLoadGLLoader expects a pointer to a `*GetProcAddress` function.
+ * Most, if not all opengl-oriented libraries support the propper version of `*GetProcAddress`
+ * and gload.h provides a built-in solution: `gloadGetProcAddress`.
+ *
+ * \param `t_gloadLoader load` - pointer to a loader function
+ * \returns `true` on success, `false` on failure.
+ * */
 GLAPI int   gloadLoadGLLoader(t_gloadLoader);
 
+/* `gloadGetProcAddress`:
+ *
+ * Retrieve the address of the OpenGL symbol from dynamic/shared object.
+ * Uses `dlopen` and `dlsym` for GNU/Linux and MacOS platform.
+ * Uses `LoadLibraryA` and `GetProcAddress` for Win32 platform.
+ *
+ * \param `const char *name` - name of the symbol
+ * \returns address of the symbol on success, null on failure
+ * */
 GLAPI void  *gloadGetProcAddress(const char *);
 
 /* SECTION:
@@ -10929,6 +10967,15 @@ static void *g_handle = 0;
  *  gload API
  * * * * * * * * * * */
 
+/* `gloadLoadGL`:
+ *
+ * Perform a simple OpenGL (v.1.0 - v.4.6) and OpenGLES (v.1.0 - v.3.1) loading process.
+ * 
+ * `gloadLoadGL` auto-detects which backend should be used:
+ * `GLX`, `EGL`, `WGL` or `built-in` (using either `dlopen` or `LoadLibraryA`, depending on the platform).
+ *
+ * \returns `true` on success, `false` on failure.
+ * */
 GLAPI int   gloadLoadGL(void) {
 
 #  if defined (GLOAD_GLX)
@@ -10946,6 +10993,14 @@ GLAPI int   gloadLoadGL(void) {
 
 }
 
+/* `gloadLoadGL`:
+ *
+ * Unload OpenGL functions and dispose dynamic/shared object handle.
+ * This function will execute anything if `gloadGetProcAddress` was used at least once;
+ * for other backends (i.e. `GLX`, `EGL`, `WGL` and more) this function will simply return.
+ *
+ * \returns `true` on success, `false` on failure.
+ * */
 GLAPI int   gloadUnloadGL(void) {
     if (g_handle) {
 
@@ -10965,6 +11020,17 @@ GLAPI int   gloadUnloadGL(void) {
     return (1);
 }
 
+/* `gloadLoadGLLoader`:
+ *
+ * Perform a simple OpenGL (v.1.0 - v.4.6) and OpenGLES (v.1.0 - v.3.1) loading process.
+ * 
+ * gloadLoadGLLoader expects a pointer to a `*GetProcAddress` function.
+ * Most, if not all opengl-oriented libraries support the propper version of `*GetProcAddress`
+ * and gload.h provides a built-in solution: `gloadGetProcAddress`.
+ *
+ * \param `t_gloadLoader load` - pointer to a loader function
+ * \returns `true` on success, `false` on failure.
+ * */
 GLAPI int   gloadLoadGLLoader(t_gloadLoader load) {
     if (!load) { return (0); }
 
@@ -10979,6 +11045,15 @@ GLAPI int   gloadLoadGLLoader(t_gloadLoader load) {
     return (1);
 }
 
+/* `gloadGetProcAddress`:
+ *
+ * Retrieve the address of the OpenGL symbol from dynamic/shared object.
+ * Uses `dlopen` and `dlsym` for GNU/Linux and MacOS platform.
+ * Uses `LoadLibraryA` and `GetProcAddress` for Win32 platform.
+ *
+ * \param `const char *name` - name of the symbol
+ * \returns address of the symbol on success, null on failure
+ * */
 GLAPI void  *gloadGetProcAddress(const char *name) {
     void        *proc;
     const char  *names[] = {
