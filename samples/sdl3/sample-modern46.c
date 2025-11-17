@@ -60,7 +60,6 @@ int main(void) {
     if (!context) { return (1); }
 
     if (!SDL_GL_MakeCurrent(window, context)) { return (1); }
-
     if (!gloadLoadGLLoader((t_gloadLoader) SDL_GL_GetProcAddress)) { return (1); }
     
 

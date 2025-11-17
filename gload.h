@@ -11041,10 +11041,8 @@ GLAPI int   gloadUnloadGL(void) {
  * \returns `true` on success, `false` on failure.
  * */
 GLAPI int   gloadLoadGLLoader(t_gloadLoader load) {
-    size_t  i;
-
     if (!load) { return (0); }
-    for (i = 0; g_nameaddr[i].addr; i++) {
+    for (size_t i = 0; g_nameaddr[i].addr; i++) {
         /* If the function is already loaded, skip it... */
         if (*g_nameaddr[i].addr) { continue; }
 
@@ -11094,8 +11092,7 @@ GLAPI void  *gloadGetProcAddress(const char *name) {
     };
     
     if (!g_handle) {
-        size_t  i;
-        for (i = 0; !g_handle && names[i]; i++) {
+        for (size_t i = 0; !g_handle && names[i]; i++) {
 
 #  if defined (__linux__) || defined (__APPLE__)
             g_handle = dlopen(names[i], RTLD_NOW | RTLD_GLOBAL);
