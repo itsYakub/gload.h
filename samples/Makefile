@@ -21,7 +21,6 @@ clean : clean-null
 clean : clean-glfw3
 clean : clean-sdl3
 	
-
 # ========
 
 .PHONY : null

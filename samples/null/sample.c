@@ -1,5 +1,5 @@
 #define GLOAD_IMPLEMENTATION
-#include <gload/gload.h>
+#include "./../../gload.h"
 
 
 int main(void) {

@@ -9101,8 +9101,15 @@ extern PFNGLVIEWPORTPROC gload_glViewport;
 #
 # if defined (GLOAD_IMPLEMENTATION)
 #
-#  include <stdint.h>
-#  include <stddef.h>
+#  if !defined (__cplusplus)
+#   include <stdint.h>
+#   include <stddef.h>
+#  else
+#   include <cstdint>
+#   include <cstddef>
+#   include <string>
+#  endif /* __cplusplus */
+#
 #  if defined (__linux__) || defined (__APPLE__)
 #   include <dlfcn.h>
 #  endif /* __linux__, __APPLE__ */
@@ -9184,8 +9191,14 @@ extern "C" {
 /* g_nameaddr - array of s_nameaddr structures, null-terminated. */
 
 struct s_nameaddr {
-    char    *name;
-    void    **addr;
+
+#  if !defined (__cplusplus)
+    char        *name;
+#  else
+    std::string name;
+#  endif /* __cplusplus */
+
+    void        **addr;
 };
 
 static struct s_nameaddr    g_nameaddr[] = {
@@ -11005,14 +11018,10 @@ GLAPI int   gloadUnloadGL(void) {
     if (g_handle) {
 
 #  if defined (__linux__) || defined (__APPLE__)
-
         dlclose(g_handle), g_handle = 0;
-
 #  endif /* __linux__, __APPLE__ */
 #  if defined (_WIN32)
-
         FreeLibrary(g_handle), g_handle = 0;
-
 #  endif /* _WIN32 */
 
     }
@@ -11034,11 +11043,16 @@ GLAPI int   gloadUnloadGL(void) {
 GLAPI int   gloadLoadGLLoader(t_gloadLoader load) {
     if (!load) { return (0); }
 
-    for (size_t i = 0; g_nameaddr[i].name && g_nameaddr[i].addr; i++) {
+    for (size_t i = 0; g_nameaddr[i].addr; i++) {
         /* If the function is already loaded, skip it... */
         if (*g_nameaddr[i].addr) { continue; }
 
+#  if !defined (__cplusplus)
         *g_nameaddr[i].addr = load(g_nameaddr[i].name);
+#  else
+        *g_nameaddr[i].addr = load(g_nameaddr[i].name.c_str());
+#  endif /* __cplusplus */
+
         if (!*g_nameaddr[i].addr) { return (0); }
     }
 
@@ -11059,27 +11073,21 @@ GLAPI void  *gloadGetProcAddress(const char *name) {
     const char  *names[] = {
 
 #  if defined (__linux__)
-
         "libGL.so",
         "libGL.so.1",
         "libGL.so.1.7.0",
         0
-
 #  endif /* __linux__ */
 #  if defined (__APPLE__)
-
         "../Frameworks/OpenGL.framework/OpenGL",
         "/Library/Frameworks/OpenGL.framework/OpenGL",
         "/System/Library/Frameworks/OpenGL.framework/OpenGL",
         "/System/Library/Frameworks/OpenGL.framework/Versions/Current/OpenGL"
         0
-
 #  endif /* __APPLE__ */
 #  if defined (_WIN32)
-
         "opengl32.dll",
         0
-
 #  endif /* _WIN32 */
 
     };
@@ -11088,14 +11096,10 @@ GLAPI void  *gloadGetProcAddress(const char *name) {
         for (size_t i = 0; !g_handle && names[i]; i++) {
 
 #  if defined (__linux__) || defined (__APPLE__)
-
             g_handle = dlopen(names[i], RTLD_NOW | RTLD_GLOBAL);
-
 #  endif /* __linux__, __APPLE__ */
 #  if defined (_WIN32)
-
             g_handle = LoadLibraryA(names[i]);
-
 #  endif /* _WIN32 */
 
         }
@@ -11104,14 +11108,10 @@ GLAPI void  *gloadGetProcAddress(const char *name) {
     }
 
 #  if defined (__linux__) || defined (__APPLE__)
-
     proc = dlsym(g_handle, name);
-
 #  endif /* __linux__, __APPLE__ */
 #  if defined (_WIN32)
-    
     proc = GetProcAddress(g_handle, name);
-
 #  endif /* _WIN32 */
 
     if (!proc) { return (0); }
