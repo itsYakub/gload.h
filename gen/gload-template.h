@@ -56,7 +56,34 @@
  *                  For unix-based system it would be: libdl, -ldl.
  *                  For win32 system: Kernel32.dll.
  *
+ *      #define GLOAD_VERBOSE
+ *          - TYPE:
+ *              OPTIONAL
+ *          - DESCRIPTION:
+ *              Enables info/warning/error logging to standard-output/standard-error.
  *  
+ *      #define GLOAD_VERBOSE_INFO
+ *          - TYPE:
+ *              OPTIONAL
+ *          - DESCRIPTION:
+ *              Enables info-logging to standard-output/standard-error.
+ *              Enabled by default if GLOAD_VERBOSE is defined.
+ *
+ *      #define GLOAD_VERBOSE_WARN
+ *          - TYPE:
+ *              OPTIONAL
+ *          - DESCRIPTION:
+ *              Enables warning-logging to standard-output/standard-error.
+ *              Enabled by default if GLOAD_VERBOSE is defined.
+ *
+ *      #define GLOAD_VERBOSE_ERROR
+ *          - TYPE:
+ *              OPTIONAL
+ *          - DESCRIPTION:
+ *              Enables error-logging to standard-output/standard-error.
+ *              Enabled by default if GLOAD_VERBOSE is defined.
+ *
+ *
  *
  *  Summary and Notes:
  *
@@ -224,9 +251,11 @@ GLAPI void  *gloadGetProcAddress(const char *);
 # if defined (GLOAD_IMPLEMENTATION)
 #
 #  if !defined (__cplusplus)
+#   include <stdio.h>
 #   include <stdint.h>
 #   include <stddef.h>
 #  else
+#   include <cstdio>
 #   include <cstdint>
 #   include <cstddef>
 #   include <string>
@@ -242,7 +271,7 @@ GLAPI void  *gloadGetProcAddress(const char *);
 #  if !defined (GLOAD_DLSYM) && !(defined (GLOAD_GLX) || defined (GLOAD_EGL) || defined (GLOAD_WGL))
 #   define GLOAD_DLSYM 1
 #  endif /* GLOAD_DLSYM, GLOAD_GLX, GLOAD_EGL, GLOAD_WGL */
-
+#
 #  if defined (GLOAD_DLSYM)
 #   if defined (GLOAD_GLX)
 #    error "Multiple backends selected: GLOAD_DLSYM and GLOAD_GLX."
@@ -298,6 +327,12 @@ GLAPI void  *gloadGetProcAddress(const char *);
 #
 #   include <wingdi.h>
 #  endif /* GLOAD_WGL */
+#
+#  if defined (GLOAD_VERBOSE)
+#   define GLOAD_VERBOSE_INFO 1
+#   define GLOAD_VERBOSE_WARN 1
+#   define GLOAD_VERBOSE_ERROR 1
+#  endif /* GLOAD_VERBOSE */
 #
 #  if defined (__cplusplus)
 
@@ -460,7 +495,15 @@ GLAPI void  *gloadGetProcAddress(const char *name) {
 
         }
 
-        if (!g_handle) { return (0); }
+        if (!g_handle) {
+
+#  if defined (GLOAD_VERBOSE_ERROR)
+            fprintf(stderr, "gload.h: could not load an OpenGL handle.\n");
+#  endif /* GLOAD_VERBOSE_ERROR */
+
+            return (0);
+
+        }
     }
 
 #  if defined (__linux__) || defined (__APPLE__)
@@ -470,7 +513,14 @@ GLAPI void  *gloadGetProcAddress(const char *name) {
     proc = GetProcAddress(g_handle, name);
 #  endif /* _WIN32 */
 
-    if (!proc) { return (0); }
+    if (!proc) {
+
+#  if defined (GLOAD_VERBOSE_ERROR)
+            fprintf(stderr, "gload.h: could not load a procedure: %s\n", name);
+#  endif /* GLOAD_VERBOSE_ERROR */
+    
+            return (0);
+    }
     return (proc);
 }
 
