@@ -55,7 +55,7 @@ int main(void) {
     settings.depthBits = 24;
     settings.stencilBits = 8;
 
-    sf::Window  window(sf::VideoMode( { 800, 600 } ), "gload.h - SFML sample", sf::Style::Default, settings);
+    sf::Window  window(sf::VideoMode( { 800, 600 } ), "gload.h - SFML sample", sf::Style::Titlebar | sf::Style::Close, settings);
 
     if (!window.setActive()) { return (1); }
     if (!gloadLoadGL()) { return (1); }

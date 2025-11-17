@@ -7,7 +7,7 @@
 
 
 int main(void) {
-    sf::Window  window(sf::VideoMode( { 800, 600 } ), "gload.h - SFML sample");
+    sf::Window  window(sf::VideoMode( { 800, 600 } ), "gload.h - SFML sample", sf::Style::Titlebar | sf::Style::Close);
     sf::Event   event;
 
     if (!window.setActive()) { return (1); }
