@@ -315,9 +315,9 @@ extern "C" {
 struct s_nameaddr {
 
 #  if !defined (__cplusplus)
-    char        *name;
+    const char          *name;
 #  else
-    std::string name;
+    const std::string   &name;
 #  endif /* __cplusplus */
 
     void        **addr;
@@ -398,9 +398,10 @@ GLAPI int   gloadUnloadGL(void) {
  * \returns `true` on success, `false` on failure.
  * */
 GLAPI int   gloadLoadGLLoader(t_gloadLoader load) {
-    if (!load) { return (0); }
+    size_t  i;
 
-    for (size_t i = 0; g_nameaddr[i].addr; i++) {
+    if (!load) { return (0); }
+    for (i = 0; g_nameaddr[i].addr; i++) {
         /* If the function is already loaded, skip it... */
         if (*g_nameaddr[i].addr) { continue; }
 
@@ -450,7 +451,8 @@ GLAPI void  *gloadGetProcAddress(const char *name) {
     };
     
     if (!g_handle) {
-        for (size_t i = 0; !g_handle && names[i]; i++) {
+        size_t  i;
+        for (i = 0; !g_handle && names[i]; i++) {
 
 #  if defined (__linux__) || defined (__APPLE__)
             g_handle = dlopen(names[i], RTLD_NOW | RTLD_GLOBAL);
