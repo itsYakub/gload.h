@@ -362,7 +362,7 @@ static struct s_nameaddr    g_nameaddr[] = {
     
 /* <<gload-nameaddr>> */
 
-    { 0, 0 }
+    { "", 0 }
 };
 
 /* g_handle - handle to shared/dynamic library. */    

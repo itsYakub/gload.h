@@ -11005,7 +11005,7 @@ static struct s_nameaddr    g_nameaddr[] = {
 
 #  endif /* GL_SC_VERSION_2_0 */
 
-    { 0, 0 }
+    { "", 0 }
 };
 
 /* g_handle - handle to shared/dynamic library. */    
