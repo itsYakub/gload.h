@@ -6,7 +6,7 @@
 #include <SFML/Window/Event.hpp>
 #include <SFML/Window/Window.hpp>
 #include <SFML/Window/VideoMode.hpp>
-#include <SFML/Window/WindowStyle.hpp>
+#include <SFML/Window/WindowEnums.hpp>
 #include <SFML/Window/ContextSettings.hpp>
 
 
@@ -47,23 +47,22 @@ static const std::vector<GLuint>  g_indices {
 
 
 
-int main(void) {
+int main(void) { 
     sf::ContextSettings settings;
     settings.attributeFlags = sf::ContextSettings::Core;
-    settings.majorVersion = 3;
-    settings.minorVersion = 3;
+    settings.majorVersion = 4;
+    settings.minorVersion = 6;
     settings.depthBits = 24;
     settings.stencilBits = 8;
-    
-    sf::Window  window(sf::VideoMode( { 800, 600 } ), "gload.h - SFML sample", sf::Style::Titlebar | sf::Style::Close, settings);
 
+    sf::Window  window(sf::VideoMode( { 800, 600 } ), "gload.h - SFML sample", sf::Style::Default, sf::State::Windowed, settings);
     if (!window.setActive()) { return (1); }
     if (!gloadLoadGL()) { return (1); }
     
     
     GLuint  shader,
             sh_v, sh_f;
-
+    
     sh_v = glCreateShader(GL_VERTEX_SHADER);
     sh_f = glCreateShader(GL_FRAGMENT_SHADER);
 
@@ -80,44 +79,27 @@ int main(void) {
 
     glDeleteShader(sh_v), sh_v = 0;
     glDeleteShader(sh_f), sh_f = 0;
-
+    
 
     GLuint  vao,
             vbo, ibo;
 
-    glGenVertexArrays(1, &vao);
-    glBindVertexArray(vao);
+    glCreateVertexArrays(1, &vao);
+    glCreateBuffers(1, &vbo);
+    glCreateBuffers(1, &ibo);
+    
+    glNamedBufferData(vbo, g_vertices.size() * sizeof(GLfloat), g_vertices.data(), GL_STATIC_DRAW);
+    glNamedBufferData(ibo, g_indices.size() * sizeof(GLuint), g_indices.data(), GL_STATIC_DRAW);
 
-    glGenBuffers(1, &vbo);
-    glGenBuffers(1, &ibo);
+    glEnableVertexArrayAttrib(vao, 0);
+    glVertexArrayAttribBinding(vao, 0, 0);
+    glVertexArrayAttribFormat(vao, 0, 3, GL_FLOAT, GL_FALSE, 0 * sizeof(GLfloat));
 
-    glBindBuffer(GL_ARRAY_BUFFER, vbo);
-    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ibo);
-
-    glBufferData(GL_ARRAY_BUFFER, g_vertices.size() * sizeof(GLfloat), g_vertices.data(), GL_STATIC_DRAW);
-    glBufferData(GL_ELEMENT_ARRAY_BUFFER, g_indices.size() * sizeof(GLuint), g_indices.data(), GL_STATIC_DRAW);
-
-    glEnableVertexAttribArray(0);
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(GLfloat), (void *) (0 * sizeof(GLfloat)));
-
-    glBindBuffer(GL_ARRAY_BUFFER, 0);
-    glBindVertexArray(0);
-    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
+    glVertexArrayVertexBuffer(vao, 0, vbo, 0, 3 * sizeof(GLfloat));
+    glVertexArrayElementBuffer(vao, ibo);
 
 
-    while (window.isOpen()) {
-        sf::Event   event;
-        while (window.pollEvent(event)) {
-            switch (event.type) {
-                case (sf::Event::Closed): {
-                    window.close();
-                } break;
-
-                default: { } break;
-            }
-        }
-        
-        
+    while (window.isOpen()) { 
         glClearColor(0.1, 0.1, 0.1, 1.0);
         glClear(GL_COLOR_BUFFER_BIT);
 
@@ -127,9 +109,12 @@ int main(void) {
         glDrawElements(GL_TRIANGLES, g_indices.size(), GL_UNSIGNED_INT, 0);
         glBindVertexArray(0);
         glUseProgram(0);
-
-
+        
+        
         window.display();
+        while (const std::optional event = window.pollEvent()) {
+            if (event->is<sf::Event::Closed>()) { window.close(); }
+        }
     }
     
     
@@ -139,6 +124,6 @@ int main(void) {
     glDeleteProgram(shader), shader = 0;
     
     if (!gloadUnloadGL()) { return (1); }
-    
+
     return (0);
 }

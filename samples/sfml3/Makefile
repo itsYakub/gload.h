@@ -5,7 +5,7 @@ MK_ROOT		= $(dir $(realpath $(firstword $(MAKEFILE_LIST))))
 # ========
 
 CC			= c++
-CFLAGS		= -Wall -Wextra -std=c++11 -ggdb3
+CFLAGS		= -Wall -Wextra -std=c++17 -ggdb3
 LFLAGS		= -lsfml-system -lsfml-window
 
 # ========

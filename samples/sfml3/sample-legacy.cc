@@ -1,31 +1,21 @@
 #define GLOAD_IMPLEMENTATION
 #include "./../../gload.h"
 
+#include <optional>
+
 #include <SFML/Window/Event.hpp>
 #include <SFML/Window/Window.hpp>
 #include <SFML/Window/VideoMode.hpp>
+#include <SFML/Window/WindowEnums.hpp>
+#include <SFML/Window/ContextSettings.hpp>
 
 
 int main(void) {
-    sf::Window  window(sf::VideoMode( { 800, 600 } ), "gload.h - SFML sample", sf::Style::Titlebar | sf::Style::Close);
-    sf::Event   event;
-
+    sf::Window  window(sf::VideoMode( { 800, 600 } ), "gload.h - SFML sample", sf::Style::Default, sf::State::Windowed);
     if (!window.setActive()) { return (1); }
     if (!gloadLoadGL()) { return (1); }
 
     while (window.isOpen()) {
-        window.display();
-        while (window.pollEvent(event)) {
-            switch (event.type) {
-                case (sf::Event::Closed): {
-                    window.close();
-                } break;
-
-                default: { } break;
-            }
-        }
-        
-        
         glClearColor(0.1, 0.1, 0.1, 1.0);
         glClear(GL_COLOR_BUFFER_BIT);
 
@@ -36,6 +26,12 @@ int main(void) {
             glVertex2f( 0.5, 0.5);
             glVertex2f( 0.5,-0.5);
         glEnd();
+        
+        
+        window.display();
+        while (const std::optional event = window.pollEvent()) {
+            if (event->is<sf::Event::Closed>()) { window.close(); }
+        }
     }
     
     if (!gloadUnloadGL()) { return (1); }
