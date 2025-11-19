@@ -84,6 +84,20 @@
  *              Enabled by default if GLOAD_VERBOSE is defined.
  *
  *
+ *  Constants:
+ *
+ *      GLOAD_PLATFORM
+ *          - TYPE:
+ *              String
+ *          - DESCRIPTION:
+ *              Name of the platform gload.h is used on as a string, compile detected.
+ *
+ *      GLOAD_VERSION
+ *          - TYPE:
+ *              String
+ *          - DESCRIPTION:
+ *              Current version of gload.h header file as a string.
+ *
  *
  *  Summary and Notes:
  *
@@ -128,6 +142,7 @@
  *      - Dav1dde/glad: https://github.com/Dav1dde/glad.git
  *      - macron/glbind: https://github.com/mackron/glbind.git
  *      - KhronosGroup/OpenGL-Registry: https://github.com/KhronosGroup/OpenGL-Registry.git
+ *
  *
  *      Cheers,
  *          <<gload-author>>
@@ -177,6 +192,26 @@ extern "C" {
 # if !defined (GLAPI)
 #  define GLAPI extern
 # endif /* GLAPI */
+#
+# if defined (__linux__)
+#  define GLOAD_LINUX 1
+#  define GLOAD_PLATFORM "linux"
+# endif /* __linux__ */
+# if defined (__APPLE__)
+#  define GLOAD_APPLE 1
+#  define GLOAD_PLATFORM "apple"
+# endif /* __APPLE__ */
+# if defined (_WIN32)
+#  define GLOAD_WIN32 1
+#  define GLOAD_PLATFORM "win32"
+# endif /* _WIN32 */
+# if !defined (GLOAD_LINUX) && !defined (GLOAD_APPLE) && !defined (GLOAD_WIN32)
+#  error "Unrecognized platform. Neither GNU/Linux, nor Apple, nor Win32 platforms were detected."
+# endif /* GLOAD_LINUX, GLOAD_APPLE, GLOAD_WIN32 */
+#
+# if !defined GLOAD_VERSION
+#  define GLOAD_VERSION "<<gload-version>>"
+# endif /* GLOAD_VERSION */
 #
 /* <<gload-version-macro>> */
 
@@ -261,12 +296,12 @@ GLAPI void  *gloadGetProcAddress(const char *);
 #   include <string>
 #  endif /* __cplusplus */
 #
-#  if defined (__linux__) || defined (__APPLE__)
+#  if defined (GLOAD_LINUX) || defined (GLOAD_APPLE)
 #   include <dlfcn.h>
-#  endif /* __linux__, __APPLE__ */
-#  if defined (_WIN32)
+#  endif /* GLOAD_LINUX, GLOAD_APPLE*/
+#  if defined (GLOAD_WIN32)
 #   include <libloaderapi.h>
-#  endif /* _WIN32 */
+#  endif /* GLOAD_WIN32 */
 #
 #  if !defined (GLOAD_DLSYM) && !(defined (GLOAD_GLX) || defined (GLOAD_EGL) || defined (GLOAD_WGL))
 #   define GLOAD_DLSYM 1
@@ -413,12 +448,12 @@ GLAPI int   gloadLoadGL(void) {
 GLAPI int   gloadUnloadGL(void) {
     if (g_handle) {
 
-#  if defined (__linux__) || defined (__APPLE__)
+#  if defined (GLOAD_LINUX) || defined (GLOAD_APPLE)
         dlclose(g_handle), g_handle = 0;
-#  endif /* __linux__, __APPLE__ */
-#  if defined (_WIN32)
+#  endif /* GLOAD_LINUX, GLOAD_APPLE */
+#  if defined (GLOAD_WIN32)
         FreeLibrary(g_handle), g_handle = 0;
-#  endif /* _WIN32 */
+#  endif /* GLOAD_WIN32 */
 
     }
 
@@ -467,20 +502,20 @@ GLAPI void  *gloadGetProcAddress(const char *name) {
     void        *proc;
     const char  *names[] = {
 
-#  if defined (__linux__)
+#  if defined (GLOAD_LINUX)
         "libGL.so",
         "libGL.so.1",
         "libGL.so.1.7.0",
         0
 #  endif /* __linux__ */
-#  if defined (__APPLE__)
+#  if defined (GLOAD_APPLE)
         "../Frameworks/OpenGL.framework/OpenGL",
         "/Library/Frameworks/OpenGL.framework/OpenGL",
         "/System/Library/Frameworks/OpenGL.framework/OpenGL",
         "/System/Library/Frameworks/OpenGL.framework/Versions/Current/OpenGL"
         0
 #  endif /* __APPLE__ */
-#  if defined (_WIN32)
+#  if defined (GLOAD_WIN32)
         "opengl32.dll",
         0
 #  endif /* _WIN32 */
@@ -490,12 +525,12 @@ GLAPI void  *gloadGetProcAddress(const char *name) {
     if (!g_handle) {
         for (size_t i = 0; !g_handle && names[i]; i++) {
 
-#  if defined (__linux__) || defined (__APPLE__)
+#  if defined (GLOAD_LINUX) || defined (GLOAD_APPLE)
             g_handle = dlopen(names[i], RTLD_NOW | RTLD_GLOBAL);
-#  endif /* __linux__, __APPLE__ */
-#  if defined (_WIN32)
+#  endif /* GLOAD_LINUX, GLOAD_APPLE */
+#  if defined (GLOAD_WIN32)
             g_handle = LoadLibraryA(names[i]);
-#  endif /* _WIN32 */
+#  endif /* GLOAD_WIN32 */
 
         }
 
@@ -510,12 +545,12 @@ GLAPI void  *gloadGetProcAddress(const char *name) {
         }
     }
 
-#  if defined (__linux__) || defined (__APPLE__)
+#  if defined (GLOAD_LINUX) || defined (GLOAD_APPLE)
     proc = dlsym(g_handle, name);
-#  endif /* __linux__, __APPLE__ */
-#  if defined (_WIN32)
+#  endif /* GLOAD_LINUX, GLOAD_APPLE */
+#  if defined (GLOAD_WIN32)
     proc = GetProcAddress(g_handle, name);
-#  endif /* _WIN32 */
+#  endif /* GLOAD_WIN32 */
 
     if (!proc) {
 
