@@ -247,7 +247,7 @@ typedef void    *(*t_gloadLoader)(const char *);
 
 /* `gloadLoadGL`:
  *
- * Perform a simple OpenGL (v.1.0 - v.4.6) and OpenGLES (v.1.0 - v.3.1) loading process.
+ * Perform a simple OpenGL (v.1.0 - v.4.6) and OpenGLES (v.1.0 - v.3.2) loading process.
  * 
  * `gloadLoadGL` auto-detects which backend should be used:
  * `GLX`, `EGL`, `WGL` or `built-in` (using either `dlopen` or `LoadLibraryA`, depending on the platform).
@@ -268,7 +268,7 @@ GLAPI int   gloadUnloadGL(void);
 
 /* `gloadLoadGLLoader`:
  *
- * Perform a simple OpenGL (v.1.0 - v.4.6) and OpenGLES (v.1.0 - v.3.1) loading process.
+ * Perform a simple OpenGL (v.1.0 - v.4.6) and OpenGLES (v.1.0 - v.3.2) loading process.
  * 
  * gloadLoadGLLoader expects a pointer to a `*GetProcAddress` function.
  * Most, if not all opengl-oriented libraries support the propper version of `*GetProcAddress`
@@ -11052,7 +11052,7 @@ static void *g_handle = 0;
 
 /* `gloadLoadGL`:
  *
- * Perform a simple OpenGL (v.1.0 - v.4.6) and OpenGLES (v.1.0 - v.3.1) loading process.
+ * Perform a simple OpenGL (v.1.0 - v.4.6) and OpenGLES (v.1.0 - v.3.2) loading process.
  * 
  * `gloadLoadGL` auto-detects which backend should be used:
  * `GLX`, `EGL`, `WGL` or `built-in` (using either `dlopen` or `LoadLibraryA`, depending on the platform).
@@ -11101,7 +11101,7 @@ GLAPI int   gloadUnloadGL(void) {
 
 /* `gloadLoadGLLoader`:
  *
- * Perform a simple OpenGL (v.1.0 - v.4.6) and OpenGLES (v.1.0 - v.3.1) loading process.
+ * Perform a simple OpenGL (v.1.0 - v.4.6) and OpenGLES (v.1.0 - v.3.2) loading process.
  * 
  * gloadLoadGLLoader expects a pointer to a `*GetProcAddress` function.
  * Most, if not all opengl-oriented libraries support the propper version of `*GetProcAddress`
