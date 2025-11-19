@@ -282,13 +282,9 @@ typedef char GLchar;
 typedef char GLcharARB;
 
 # if defined (__APPLE__)
-
 typedef void *GLhandleARB;
-
 # else
-
 typedef unsigned int GLhandleARB;
-
 # endif /* __APPLE__ */
 
 typedef khronos_uint16_t GLhalf;

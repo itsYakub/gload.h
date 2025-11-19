@@ -404,9 +404,9 @@ def gload_typedefs(parse: glParse) -> str:
         # case: #ifdef __APPLE__ ... #endif
         if '__APPLE__' in type.value:
             result = result \
-                .replace('#ifdef __APPLE__', '\n#if defined (__APPLE__)\n') \
-                .replace('#else', '\n#else\n') \
-                .replace('#endif', '\n#endif /* __APPLE__ */\n')
+                .replace('#ifdef __APPLE__', '\n#if defined (__APPLE__)') \
+                .replace('#else', '#else') \
+                .replace('#endif', '#endif /* __APPLE__ */\n')
     return (result.strip())
 
 
