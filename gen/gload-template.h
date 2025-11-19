@@ -193,7 +193,7 @@ typedef void    *(*t_gloadLoader)(const char *);
  * `gloadLoadGL` auto-detects which backend should be used:
  * `GLX`, `EGL`, `WGL` or `built-in` (using either `dlopen` or `LoadLibraryA`, depending on the platform).
  *
- * \returns `true` on success, `false` on failure.
+ * - return: `true` on success, `false` on failure.
  * */
 GLAPI int   gloadLoadGL(void);
 
@@ -203,7 +203,7 @@ GLAPI int   gloadLoadGL(void);
  * This function will execute anything if `gloadGetProcAddress` was used at least once;
  * for other backends (i.e. `GLX`, `EGL`, `WGL` and more) this function will simply return.
  *
- * \returns `true` on success, `false` on failure.
+ * - return: `true` on success, `false` on failure.
  * */
 GLAPI int   gloadUnloadGL(void);
 
@@ -215,8 +215,8 @@ GLAPI int   gloadUnloadGL(void);
  * Most, if not all opengl-oriented libraries support the propper version of `*GetProcAddress`
  * and gload.h provides a built-in solution: `gloadGetProcAddress`.
  *
- * \param `t_gloadLoader load` - pointer to a loader function
- * \returns `true` on success, `false` on failure.
+ * - param: `t_gloadLoader load` - pointer to a loader function
+ * - return: `true` on success, `false` on failure.
  * */
 GLAPI int   gloadLoadGLLoader(t_gloadLoader);
 
@@ -226,8 +226,8 @@ GLAPI int   gloadLoadGLLoader(t_gloadLoader);
  * Uses `dlopen` and `dlsym` for GNU/Linux and MacOS platform.
  * Uses `LoadLibraryA` and `GetProcAddress` for Win32 platform.
  *
- * \param `const char *name` - name of the symbol
- * \returns address of the symbol on success, null on failure
+ * - param: `const char *name` - name of the symbol
+ * - returns: address of the symbol on success, null on failure
  * */
 GLAPI void  *gloadGetProcAddress(const char *);
 
@@ -344,8 +344,8 @@ extern "C" {
  *  Global objects
  * * * * * * * * * * */
 
-/* s_nameaddr - key-value-pair structure of proc. names and addresses. */
-/* g_nameaddr - array of s_nameaddr structures, null-terminated. */
+/* `struct s_nameaddr` - key-value-pair structure of proc. names and addresses.
+ * */
 
 struct s_nameaddr {
 
@@ -358,6 +358,9 @@ struct s_nameaddr {
     void        **addr;
 };
 
+/* `static struct s_nameaddr g_nameaddr` - array of s_nameaddr structures, null-terminated.
+ * */
+
 static struct s_nameaddr    g_nameaddr[] = {
     
 /* <<gload-nameaddr>> */
@@ -365,7 +368,8 @@ static struct s_nameaddr    g_nameaddr[] = {
     { "", 0 }
 };
 
-/* g_handle - handle to shared/dynamic library. */    
+/* `static void *g_handle` - handle to shared/dynamic library.
+ * */
 static void *g_handle = 0;
 
 /* SECTION:
@@ -379,7 +383,7 @@ static void *g_handle = 0;
  * `gloadLoadGL` auto-detects which backend should be used:
  * `GLX`, `EGL`, `WGL` or `built-in` (using either `dlopen` or `LoadLibraryA`, depending on the platform).
  *
- * \returns `true` on success, `false` on failure.
+ * - return: `true` on success, `false` on failure.
  * */
 GLAPI int   gloadLoadGL(void) {
 
@@ -404,7 +408,7 @@ GLAPI int   gloadLoadGL(void) {
  * This function will execute anything if `gloadGetProcAddress` was used at least once;
  * for other backends (i.e. `GLX`, `EGL`, `WGL` and more) this function will simply return.
  *
- * \returns `true` on success, `false` on failure.
+ * - returns: `true` on success, `false` on failure.
  * */
 GLAPI int   gloadUnloadGL(void) {
     if (g_handle) {
@@ -429,8 +433,8 @@ GLAPI int   gloadUnloadGL(void) {
  * Most, if not all opengl-oriented libraries support the propper version of `*GetProcAddress`
  * and gload.h provides a built-in solution: `gloadGetProcAddress`.
  *
- * \param `t_gloadLoader load` - pointer to a loader function
- * \returns `true` on success, `false` on failure.
+ * - param: `t_gloadLoader load` - pointer to a loader function
+ * - return: `true` on success, `false` on failure.
  * */
 GLAPI int   gloadLoadGLLoader(t_gloadLoader load) {
     if (!load) { return (0); }
@@ -456,8 +460,8 @@ GLAPI int   gloadLoadGLLoader(t_gloadLoader load) {
  * Uses `dlopen` and `dlsym` for GNU/Linux and MacOS platform.
  * Uses `LoadLibraryA` and `GetProcAddress` for Win32 platform.
  *
- * \param `const char *name` - name of the symbol
- * \returns address of the symbol on success, null on failure
+ * - param: `const char *name` - name of the symbol
+ * - return: address of the symbol on success, null on failure
  * */
 GLAPI void  *gloadGetProcAddress(const char *name) {
     void        *proc;
