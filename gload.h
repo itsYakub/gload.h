@@ -6,10 +6,12 @@
  *      - version: 1.1
  *      - licence: GNU LESSER GENERAL PUBLIC LICENSE Version 3, 29 June 2007
  *
+ *
  *  OpenGL settings:
  *      - profile: core
- *      - version: 4.6
- *
+ *      - version: 4.6 (OpenGL)
+ *      - version: 3.2 (OpenGL ES)
+ *      - version: 2.0 (OpenGL SC)
  *
  *
  *  Configuration (can be defined by user):
@@ -196,31 +198,45 @@ extern "C" {
 #  define GLOAD_VERSION "1.1"
 # endif /* GLOAD_VERSION */
 #
-#  define GL_VERSION_1_0 1
-#  define GL_VERSION_1_1 1
-#  define GL_VERSION_1_2 1
-#  define GL_VERSION_1_3 1
-#  define GL_VERSION_1_4 1
-#  define GL_VERSION_1_5 1
-#  define GL_VERSION_2_0 1
-#  define GL_VERSION_2_1 1
-#  define GL_VERSION_3_0 1
-#  define GL_VERSION_3_1 1
-#  define GL_VERSION_3_2 1
-#  define GL_VERSION_3_3 1
-#  define GL_VERSION_4_0 1
-#  define GL_VERSION_4_1 1
-#  define GL_VERSION_4_2 1
-#  define GL_VERSION_4_3 1
-#  define GL_VERSION_4_4 1
-#  define GL_VERSION_4_5 1
-#  define GL_VERSION_4_6 1
-#  define GL_VERSION_ES_CM_1_0 1
-#  define GL_ES_VERSION_2_0 1
-#  define GL_ES_VERSION_3_0 1
-#  define GL_ES_VERSION_3_1 1
-#  define GL_ES_VERSION_3_2 1
-#  define GL_SC_VERSION_2_0 1
+# if !defined (GLOAD_GL_PROFILE)
+#  define GLOAD_GL_PROFILE "core"
+# endif /* GLOAD_GL_PROFILE */
+#
+# if !defined (GLOAD_GL_VERSION)
+#  define GLOAD_GL_VERSION "4.6"
+# endif /* GLOAD_GL_VERSION */
+# if !defined (GLOAD_GLES_VERSION)
+#  define GLOAD_GLES_VERSION "3.2"
+# endif /* GLOAD_GLES_VERSION */
+# if !defined (GLOAD_GLSC_VERSION)
+#  define GLOAD_GLSC_VERSION "2.0"
+# endif /* GLOAD_GLSC_VERSION */
+#
+# define GL_VERSION_1_0 1
+# define GL_VERSION_1_1 1
+# define GL_VERSION_1_2 1
+# define GL_VERSION_1_3 1
+# define GL_VERSION_1_4 1
+# define GL_VERSION_1_5 1
+# define GL_VERSION_2_0 1
+# define GL_VERSION_2_1 1
+# define GL_VERSION_3_0 1
+# define GL_VERSION_3_1 1
+# define GL_VERSION_3_2 1
+# define GL_VERSION_3_3 1
+# define GL_VERSION_4_0 1
+# define GL_VERSION_4_1 1
+# define GL_VERSION_4_2 1
+# define GL_VERSION_4_3 1
+# define GL_VERSION_4_4 1
+# define GL_VERSION_4_5 1
+# define GL_VERSION_4_6 1
+# define GL_VERSION_ES_CM_1_0 1
+# define GL_ES_VERSION_2_0 1
+# define GL_ES_VERSION_3_0 1
+# define GL_ES_VERSION_3_1 1
+# define GL_ES_VERSION_3_2 1
+# define GL_SC_VERSION_2_0 1
 
 /* SECTION:
  *  gload API

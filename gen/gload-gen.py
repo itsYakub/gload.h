@@ -12,6 +12,27 @@ g_version: str = '1.1'
 g_author: str = 'Jakub Oleksiak (yakubofficialmail@gmail.com)'
 g_licence: str = 'GNU LESSER GENERAL PUBLIC LICENSE Version 3, 29 June 2007'
 
+# Source: https://en.wikipedia.org/wiki/OpenGL#History
+g_gl_version_list: list = [
+    '1.0', '1.1', '1.2', '1.2.1', '1.3', '1.4', '1.5',
+    '2.0', '2.1',
+    '3.0', '3.1', '3.2', '3.3',
+    '4.0', '4.1', '4.2', '4.3', '4.4', '4.5', '4.6'
+]
+
+# Source: https://en.wikipedia.org/wiki/OpenGL_ES#Versions
+g_gles_version_list: list = [
+    '1.0', '1.1',
+    '2.0',
+    '3.0', '3.1', '3.2'
+]
+
+# Source: https://en.wikipedia.org/wiki/OpenGL_SC
+g_glsc_version_list: list = [
+    '1.0',
+    '2.0'
+]
+
 g_opts: str = 'hvo:p:'
 g_optl: list = [
     'help',     # -h, --help
@@ -22,7 +43,9 @@ g_optl: list = [
 g_opt: dict = {
     'output': f'{g_path}/gload.h',
     'profile': 'core',
-    'version': '4.6',
+    'version': g_gl_version_list[-1],
+    'version-es': g_gles_version_list[-1],
+    'version-sc': g_glsc_version_list[-1],
     'template': f'{g_path}/gload-template.h',
 }
 
@@ -358,6 +381,12 @@ def opengl_loader(parse: glParse):
         ).replace(
             '<<gload-licence>>', g_licence
         ).replace(
+            '/* <<gload-profile-macro>> */',
+            gload_profile_macro(parse).replace('#', '# ')
+        ).replace(
+            '/* <<gload-glversion-macro>> */',
+            gload_glversion_macro(parse).replace('#', '# ')
+        ).replace(
             '/* <<gload-version-macro>> */',
             gload_version_macro(parse).replace('#', '# ')
         ).replace(
@@ -388,6 +417,10 @@ def opengl_loader(parse: glParse):
             '<<gload-profile>>', g_opt['profile']
         ).replace(
             '<<gload-glversion>>', g_opt['version']
+        ).replace(
+            '<<gload-glesversion>>', g_opt['version-es']
+        ).replace(
+            '<<gload-glscversion>>', g_opt['version-sc']
         )
 
     with open(g_opt['output'], 'w') as f:
@@ -398,12 +431,34 @@ def opengl_loader(parse: glParse):
 # SECTION: template
 # =================
 
+def gload_profile_macro(parse: glParse) -> str:
+    result: str
+
+    result = '#if !defined (GLOAD_GL_PROFILE)\n'
+    result += f'# define GLOAD_GL_PROFILE \"{g_opt['profile']}\"\n'
+    result += '#endif /* GLOAD_GL_PROFILE */'
+    return (result.strip())
+
+def gload_glversion_macro(parse: glParse) -> str:
+    result: str
+
+    result = '#if !defined (GLOAD_GL_VERSION)\n'
+    result += f'# define GLOAD_GL_VERSION \"{g_opt['version']}\"\n'
+    result += '#endif /* GLOAD_GL_VERSION */\n'
+    result += '#if !defined (GLOAD_GLES_VERSION)\n'
+    result += f'# define GLOAD_GLES_VERSION \"{g_opt['version-es']}\"\n'
+    result += '#endif /* GLOAD_GLES_VERSION */\n'
+    result += '#if !defined (GLOAD_GLSC_VERSION)\n'
+    result += f'# define GLOAD_GLSC_VERSION \"{g_opt['version-sc']}\"\n'
+    result += '#endif /* GLOAD_GLSC_VERSION */'
+    return (result.strip())
+
 def gload_version_macro(parse: glParse) -> str:
     result: str
 
     result = str()
     for feat in parse.feat:
-        result += f'# define {feat.name} 1\n'
+        result += f'#define {feat.name} 1\n'
     return (result.strip())
 
 

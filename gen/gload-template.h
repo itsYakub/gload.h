@@ -9,7 +9,9 @@
  *
  *  OpenGL settings:
  *      - profile: <<gload-profile>>
- *      - version: <<gload-glversion>>
+ *      - version: <<gload-glversion>> (OpenGL)
+ *      - version: <<gload-glesversion>> (OpenGL ES)
+ *      - version: <<gload-glscversion>> (OpenGL SC)
  *
  *
  *  Configuration (can be defined by user):
@@ -101,6 +103,30 @@
  *              String
  *          - DESCRIPTION:
  *              Current version of gload.h header file as a string.
+ *
+ *      GLOAD_GL_PROFILE
+ *          - TYPE:
+ *              String
+ *          - DESCRIPTION:
+ *              Default profile of OpenGL and OpenGLES handled by gload.h.
+ *
+ *      GLOAD_GL_VERSION
+ *          - TYPE:
+ *              String
+ *          - DESCRIPTION:
+ *              Default version of OpenGL handled by gload.h.
+ *
+ *      GLOAD_GLES_VERSION
+ *          - TYPE:
+ *              String
+ *          - DESCRIPTION:
+ *              Default version of OpenGLES handled by gload.h.
+ *
+ *      GLOAD_GLSC_VERSION
+ *          - TYPE:
+ *              String
+ *          - DESCRIPTION:
+ *              Default version of OpenGLSC handled by gload.h.
  *
  *      GL_VERSION_...
  *          - TYPE:
@@ -195,6 +221,10 @@ extern "C" {
 # if !defined GLOAD_VERSION
 #  define GLOAD_VERSION "<<gload-version>>"
 # endif /* GLOAD_VERSION */
+#
+/* <<gload-profile-macro>> */
+#
+/* <<gload-glversion-macro>> */
 #
 /* <<gload-version-macro>> */
 
