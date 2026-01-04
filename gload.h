@@ -344,7 +344,7 @@ typedef unsigned short GLhalfNV;
 typedef GLintptr GLvdpauSurfaceNV;
 typedef void (APIENTRY *GLVULKANPROCNV)(void);
 
-# if defined GL_VERSION_1_0
+# if (GL_VERSION_1_0 == 1)
 # 
 #  define GL_DEPTH_BUFFER_BIT 0x00000100
 #  define GL_STENCIL_BUFFER_BIT 0x00000400
@@ -772,7 +772,7 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_LIGHT7 0x4007
 # 
 # endif /* GL_VERSION_1_0 */
-# if defined GL_VERSION_1_1
+# if (GL_VERSION_1_1 == 1)
 # 
 #  define GL_COLOR_LOGIC_OP 0x0BF2
 #  define GL_POLYGON_OFFSET_UNITS 0x2A00
@@ -880,7 +880,7 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_T4F_C4F_N3F_V4F 0x2A2D
 # 
 # endif /* GL_VERSION_1_1 */
-# if defined GL_VERSION_1_2
+# if (GL_VERSION_1_2 == 1)
 # 
 #  define GL_UNSIGNED_BYTE_3_3_2 0x8032
 #  define GL_UNSIGNED_SHORT_4_4_4_4 0x8033
@@ -925,7 +925,7 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_ALIASED_POINT_SIZE_RANGE 0x846D
 # 
 # endif /* GL_VERSION_1_2 */
-# if defined GL_VERSION_1_3
+# if (GL_VERSION_1_3 == 1)
 # 
 #  define GL_TEXTURE0 0x84C0
 #  define GL_TEXTURE1 0x84C1
@@ -1025,7 +1025,7 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_DOT3_RGBA 0x86AF
 # 
 # endif /* GL_VERSION_1_3 */
-# if defined GL_VERSION_1_4
+# if (GL_VERSION_1_4 == 1)
 # 
 #  define GL_BLEND_DST_RGB 0x80C8
 #  define GL_BLEND_SRC_RGB 0x80C9
@@ -1079,7 +1079,7 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_MAX 0x8008
 # 
 # endif /* GL_VERSION_1_4 */
-# if defined GL_VERSION_1_5
+# if (GL_VERSION_1_5 == 1)
 # 
 #  define GL_BUFFER_SIZE 0x8764
 #  define GL_BUFFER_USAGE 0x8765
@@ -1133,7 +1133,7 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_SRC2_ALPHA 0x858A
 # 
 # endif /* GL_VERSION_1_5 */
-# if defined GL_VERSION_2_0
+# if (GL_VERSION_2_0 == 1)
 # 
 #  define GL_BLEND_EQUATION_RGB 0x8009
 #  define GL_VERTEX_ATTRIB_ARRAY_ENABLED 0x8622
@@ -1221,7 +1221,7 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_MAX_TEXTURE_COORDS 0x8871
 # 
 # endif /* GL_VERSION_2_0 */
-# if defined GL_VERSION_2_1
+# if (GL_VERSION_2_1 == 1)
 # 
 #  define GL_PIXEL_PACK_BUFFER 0x88EB
 #  define GL_PIXEL_UNPACK_BUFFER 0x88EC
@@ -1248,7 +1248,7 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_COMPRESSED_SLUMINANCE_ALPHA 0x8C4B
 # 
 # endif /* GL_VERSION_2_1 */
-# if defined GL_VERSION_3_0
+# if (GL_VERSION_3_0 == 1)
 # 
 #  define GL_COMPARE_REF_TO_TEXTURE 0x884E
 #  define GL_CLIP_DISTANCE0 0x3000
@@ -1489,7 +1489,7 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_ALPHA_INTEGER 0x8D97
 # 
 # endif /* GL_VERSION_3_0 */
-# if defined GL_VERSION_3_1
+# if (GL_VERSION_3_1 == 1)
 # 
 #  define GL_SAMPLER_2D_RECT 0x8B63
 #  define GL_SAMPLER_2D_RECT_SHADOW 0x8B64
@@ -1554,7 +1554,7 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_INVALID_INDEX 0xFFFFFFFF
 # 
 # endif /* GL_VERSION_3_1 */
-# if defined GL_VERSION_3_2
+# if (GL_VERSION_3_2 == 1)
 # 
 #  define GL_CONTEXT_CORE_PROFILE_BIT 0x00000001
 #  define GL_CONTEXT_COMPATIBILITY_PROFILE_BIT 0x00000002
@@ -1622,7 +1622,7 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_MAX_INTEGER_SAMPLES 0x9110
 # 
 # endif /* GL_VERSION_3_2 */
-# if defined GL_VERSION_3_3
+# if (GL_VERSION_3_3 == 1)
 # 
 #  define GL_VERTEX_ATTRIB_ARRAY_DIVISOR 0x88FE
 #  define GL_SRC1_COLOR 0x88F9
@@ -1642,7 +1642,7 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_INT_2_10_10_10_REV 0x8D9F
 # 
 # endif /* GL_VERSION_3_3 */
-# if defined GL_VERSION_4_0
+# if (GL_VERSION_4_0 == 1)
 # 
 #  define GL_SAMPLE_SHADING 0x8C36
 #  define GL_MIN_SAMPLE_SHADING_VALUE 0x8C37
@@ -1725,7 +1725,7 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_MAX_VERTEX_STREAMS 0x8E71
 # 
 # endif /* GL_VERSION_4_0 */
-# if defined GL_VERSION_4_1
+# if (GL_VERSION_4_1 == 1)
 # 
 #  define GL_FIXED 0x140C
 #  define GL_IMPLEMENTATION_COLOR_READ_TYPE 0x8B9A
@@ -1764,7 +1764,7 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_UNDEFINED_VERTEX 0x8260
 # 
 # endif /* GL_VERSION_4_1 */
-# if defined GL_VERSION_4_2
+# if (GL_VERSION_4_2 == 1)
 # 
 #  define GL_COPY_READ_BUFFER_BINDING 0x8F36
 #  define GL_COPY_WRITE_BUFFER_BINDING 0x8F37
@@ -1880,7 +1880,7 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_TEXTURE_IMMUTABLE_FORMAT 0x912F
 # 
 # endif /* GL_VERSION_4_2 */
-# if defined GL_VERSION_4_3
+# if (GL_VERSION_4_3 == 1)
 # 
 #  define GL_NUM_SHADING_LANGUAGE_VERSIONS 0x82E9
 #  define GL_VERTEX_ATTRIB_ARRAY_LONG 0x874E
@@ -2146,7 +2146,7 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_STACK_OVERFLOW 0x0503
 # 
 # endif /* GL_VERSION_4_3 */
-# if defined GL_VERSION_4_4
+# if (GL_VERSION_4_4 == 1)
 # 
 #  define GL_MAX_VERTEX_ATTRIB_STRIDE 0x82E5
 #  define GL_PRIMITIVE_RESTART_FOR_PATCHES_SUPPORTED 0x8221
@@ -2175,7 +2175,7 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_UNSIGNED_INT_10F_11F_11F_REV 0x8C3B
 # 
 # endif /* GL_VERSION_4_4 */
-# if defined GL_VERSION_4_5
+# if (GL_VERSION_4_5 == 1)
 # 
 #  define GL_CONTEXT_LOST 0x0507
 #  define GL_LOWER_LEFT 0x8CA1
@@ -2230,7 +2230,7 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_CONTEXT_RELEASE_BEHAVIOR_FLUSH 0x82FC
 # 
 # endif /* GL_VERSION_4_5 */
-# if defined GL_VERSION_4_6
+# if (GL_VERSION_4_6 == 1)
 # 
 #  define GL_CONTEXT_RELEASE_BEHAVIOR 0x82FB
 #  define GL_NONE 0
@@ -2260,7 +2260,7 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_TRANSFORM_FEEDBACK_STREAM_OVERFLOW 0x82ED
 # 
 # endif /* GL_VERSION_4_6 */
-# if defined GL_VERSION_ES_CM_1_0
+# if (GL_VERSION_ES_CM_1_0 == 1)
 # 
 #  define GL_VERSION_ES_CL_1_0 1
 #  define GL_VERSION_ES_CM_1_1 1
@@ -2597,7 +2597,7 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_DOT3_RGBA 0x86AF
 # 
 # endif /* GL_VERSION_ES_CM_1_0 */
-# if defined GL_ES_VERSION_2_0
+# if (GL_ES_VERSION_2_0 == 1)
 # 
 #  define GL_DEPTH_BUFFER_BIT 0x00000100
 #  define GL_STENCIL_BUFFER_BIT 0x00000400
@@ -2902,7 +2902,7 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_INVALID_FRAMEBUFFER_OPERATION 0x0506
 # 
 # endif /* GL_ES_VERSION_2_0 */
-# if defined GL_ES_VERSION_3_0
+# if (GL_ES_VERSION_3_0 == 1)
 # 
 #  define GL_READ_BUFFER 0x0C02
 #  define GL_UNPACK_ROW_LENGTH 0x0CF2
@@ -3227,7 +3227,7 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_TEXTURE_IMMUTABLE_LEVELS 0x82DF
 # 
 # endif /* GL_ES_VERSION_3_0 */
-# if defined GL_ES_VERSION_3_1
+# if (GL_ES_VERSION_3_1 == 1)
 # 
 #  define GL_COMPUTE_SHADER 0x91B9
 #  define GL_MAX_COMPUTE_UNIFORM_BLOCKS 0x91BB
@@ -3408,7 +3408,7 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_MAX_VERTEX_ATTRIB_STRIDE 0x82E5
 # 
 # endif /* GL_ES_VERSION_3_1 */
-# if defined GL_ES_VERSION_3_2
+# if (GL_ES_VERSION_3_2 == 1)
 # 
 #  define GL_MULTISAMPLE_LINE_WIDTH_RANGE 0x9381
 #  define GL_MULTISAMPLE_LINE_WIDTH_GRANULARITY 0x9382
@@ -3625,7 +3625,7 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_UNSIGNED_INT_SAMPLER_2D_MULTISAMPLE_ARRAY 0x910D
 # 
 # endif /* GL_ES_VERSION_3_2 */
-# if defined GL_SC_VERSION_2_0
+# if (GL_SC_VERSION_2_0 == 1)
 # 
 #  define GL_DEPTH_BUFFER_BIT 0x00000100
 #  define GL_STENCIL_BUFFER_BIT 0x00000400
@@ -3902,7 +3902,7 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_LOSE_CONTEXT_ON_RESET 0x8252
 # 
 # endif /* GL_SC_VERSION_2_0 */
-# if defined GL_VERSION_1_0
+# if (GL_VERSION_1_0 == 1)
 
 typedef void (APIENTRYP PFNGLCULLFACEPROC) (GLenum);
 typedef void (APIENTRYP PFNGLFRONTFACEPROC) (GLenum);
@@ -4212,7 +4212,7 @@ typedef void (APIENTRYP PFNGLTRANSLATEDPROC) (GLdouble, GLdouble, GLdouble);
 typedef void (APIENTRYP PFNGLTRANSLATEFPROC) (GLfloat, GLfloat, GLfloat);
 
 # endif /* GL_VERSION_1_0 */
-# if defined GL_VERSION_1_1
+# if (GL_VERSION_1_1 == 1)
 
 typedef void (APIENTRYP PFNGLDRAWARRAYSPROC) (GLenum, GLint, GLsizei);
 typedef void (APIENTRYP PFNGLDRAWELEMENTSPROC) (GLenum, GLsizei, GLenum, const void *);
@@ -4246,7 +4246,7 @@ typedef void (APIENTRYP PFNGLPOPCLIENTATTRIBPROC) (void);
 typedef void (APIENTRYP PFNGLPUSHCLIENTATTRIBPROC) (GLbitfield);
 
 # endif /* GL_VERSION_1_1 */
-# if defined GL_VERSION_1_2
+# if (GL_VERSION_1_2 == 1)
 
 typedef void (APIENTRYP PFNGLDRAWRANGEELEMENTSPROC) (GLenum, GLuint, GLuint, GLsizei, GLenum, const void *);
 typedef void (APIENTRYP PFNGLTEXIMAGE3DPROC) (GLenum, GLint, GLint, GLsizei, GLsizei, GLsizei, GLint, GLenum, GLenum, const void *);
@@ -4254,7 +4254,7 @@ typedef void (APIENTRYP PFNGLTEXSUBIMAGE3DPROC) (GLenum, GLint, GLint, GLint, GL
 typedef void (APIENTRYP PFNGLCOPYTEXSUBIMAGE3DPROC) (GLenum, GLint, GLint, GLint, GLint, GLint, GLint, GLsizei, GLsizei);
 
 # endif /* GL_VERSION_1_2 */
-# if defined GL_VERSION_1_3
+# if (GL_VERSION_1_3 == 1)
 
 typedef void (APIENTRYP PFNGLACTIVETEXTUREPROC) (GLenum);
 typedef void (APIENTRYP PFNGLSAMPLECOVERAGEPROC) (GLfloat, GLboolean);
@@ -4304,7 +4304,7 @@ typedef void (APIENTRYP PFNGLMULTTRANSPOSEMATRIXFPROC) (const GLfloat *);
 typedef void (APIENTRYP PFNGLMULTTRANSPOSEMATRIXDPROC) (const GLdouble *);
 
 # endif /* GL_VERSION_1_3 */
-# if defined GL_VERSION_1_4
+# if (GL_VERSION_1_4 == 1)
 
 typedef void (APIENTRYP PFNGLBLENDFUNCSEPARATEPROC) (GLenum, GLenum, GLenum, GLenum);
 typedef void (APIENTRYP PFNGLMULTIDRAWARRAYSPROC) (GLenum, const GLint *, const GLsizei *, GLsizei);
@@ -4355,7 +4355,7 @@ typedef void (APIENTRYP PFNGLBLENDCOLORPROC) (GLfloat, GLfloat, GLfloat, GLfloat
 typedef void (APIENTRYP PFNGLBLENDEQUATIONPROC) (GLenum);
 
 # endif /* GL_VERSION_1_4 */
-# if defined GL_VERSION_1_5
+# if (GL_VERSION_1_5 == 1)
 
 typedef void (APIENTRYP PFNGLGENQUERIESPROC) (GLsizei, GLuint *);
 typedef void (APIENTRYP PFNGLDELETEQUERIESPROC) (GLsizei, const GLuint *);
@@ -4378,7 +4378,7 @@ typedef void (APIENTRYP PFNGLGETBUFFERPARAMETERIVPROC) (GLenum, GLenum, GLint *)
 typedef void (APIENTRYP PFNGLGETBUFFERPOINTERVPROC) (GLenum, GLenum, void **);
 
 # endif /* GL_VERSION_1_5 */
-# if defined GL_VERSION_2_0
+# if (GL_VERSION_2_0 == 1)
 
 typedef void (APIENTRYP PFNGLBLENDEQUATIONSEPARATEPROC) (GLenum, GLenum);
 typedef void (APIENTRYP PFNGLDRAWBUFFERSPROC) (GLsizei, const GLenum *);
@@ -4475,7 +4475,7 @@ typedef void (APIENTRYP PFNGLVERTEXATTRIB4USVPROC) (GLuint, const GLushort *);
 typedef void (APIENTRYP PFNGLVERTEXATTRIBPOINTERPROC) (GLuint, GLint, GLenum, GLboolean, GLsizei, const void *);
 
 # endif /* GL_VERSION_2_0 */
-# if defined GL_VERSION_2_1
+# if (GL_VERSION_2_1 == 1)
 
 typedef void (APIENTRYP PFNGLUNIFORMMATRIX2X3FVPROC) (GLint, GLsizei, GLboolean, const GLfloat *);
 typedef void (APIENTRYP PFNGLUNIFORMMATRIX3X2FVPROC) (GLint, GLsizei, GLboolean, const GLfloat *);
@@ -4485,7 +4485,7 @@ typedef void (APIENTRYP PFNGLUNIFORMMATRIX3X4FVPROC) (GLint, GLsizei, GLboolean,
 typedef void (APIENTRYP PFNGLUNIFORMMATRIX4X3FVPROC) (GLint, GLsizei, GLboolean, const GLfloat *);
 
 # endif /* GL_VERSION_2_1 */
-# if defined GL_VERSION_3_0
+# if (GL_VERSION_3_0 == 1)
 
 typedef void (APIENTRYP PFNGLCOLORMASKIPROC) (GLuint, GLboolean, GLboolean, GLboolean, GLboolean);
 typedef void (APIENTRYP PFNGLGETBOOLEANI_VPROC) (GLenum, GLuint, GLboolean *);
@@ -4573,7 +4573,7 @@ typedef void (APIENTRYP PFNGLGENVERTEXARRAYSPROC) (GLsizei, GLuint *);
 typedef GLboolean (APIENTRYP PFNGLISVERTEXARRAYPROC) (GLuint);
 
 # endif /* GL_VERSION_3_0 */
-# if defined GL_VERSION_3_1
+# if (GL_VERSION_3_1 == 1)
 
 typedef void (APIENTRYP PFNGLDRAWARRAYSINSTANCEDPROC) (GLenum, GLint, GLsizei, GLsizei);
 typedef void (APIENTRYP PFNGLDRAWELEMENTSINSTANCEDPROC) (GLenum, GLsizei, GLenum, const void *, GLsizei);
@@ -4592,7 +4592,7 @@ typedef void (APIENTRYP PFNGLBINDBUFFERBASEPROC) (GLenum, GLuint, GLuint);
 typedef void (APIENTRYP PFNGLGETINTEGERI_VPROC) (GLenum, GLuint, GLint *);
 
 # endif /* GL_VERSION_3_1 */
-# if defined GL_VERSION_3_2
+# if (GL_VERSION_3_2 == 1)
 
 typedef void (APIENTRYP PFNGLDRAWELEMENTSBASEVERTEXPROC) (GLenum, GLsizei, GLenum, const void *, GLint);
 typedef void (APIENTRYP PFNGLDRAWRANGEELEMENTSBASEVERTEXPROC) (GLenum, GLuint, GLuint, GLsizei, GLenum, const void *, GLint);
@@ -4615,7 +4615,7 @@ typedef void (APIENTRYP PFNGLGETMULTISAMPLEFVPROC) (GLenum, GLuint, GLfloat *);
 typedef void (APIENTRYP PFNGLSAMPLEMASKIPROC) (GLuint, GLbitfield);
 
 # endif /* GL_VERSION_3_2 */
-# if defined GL_VERSION_3_3
+# if (GL_VERSION_3_3 == 1)
 
 typedef void (APIENTRYP PFNGLBINDFRAGDATALOCATIONINDEXEDPROC) (GLuint, GLuint, GLuint, const GLchar *);
 typedef GLint (APIENTRYP PFNGLGETFRAGDATAINDEXPROC) (GLuint, const GLchar *);
@@ -4677,7 +4677,7 @@ typedef void (APIENTRYP PFNGLSECONDARYCOLORP3UIPROC) (GLenum, GLuint);
 typedef void (APIENTRYP PFNGLSECONDARYCOLORP3UIVPROC) (GLenum, const GLuint *);
 
 # endif /* GL_VERSION_3_3 */
-# if defined GL_VERSION_4_0
+# if (GL_VERSION_4_0 == 1)
 
 typedef void (APIENTRYP PFNGLMINSAMPLESHADINGPROC) (GLfloat);
 typedef void (APIENTRYP PFNGLBLENDEQUATIONIPROC) (GLuint, GLenum);
@@ -4727,7 +4727,7 @@ typedef void (APIENTRYP PFNGLENDQUERYINDEXEDPROC) (GLenum, GLuint);
 typedef void (APIENTRYP PFNGLGETQUERYINDEXEDIVPROC) (GLenum, GLuint, GLenum, GLint *);
 
 # endif /* GL_VERSION_4_0 */
-# if defined GL_VERSION_4_1
+# if (GL_VERSION_4_1 == 1)
 
 typedef void (APIENTRYP PFNGLRELEASESHADERCOMPILERPROC) (void);
 typedef void (APIENTRYP PFNGLSHADERBINARYPROC) (GLsizei, const GLuint *, GLenum, const void *, GLsizei);
@@ -4820,7 +4820,7 @@ typedef void (APIENTRYP PFNGLGETFLOATI_VPROC) (GLenum, GLuint, GLfloat *);
 typedef void (APIENTRYP PFNGLGETDOUBLEI_VPROC) (GLenum, GLuint, GLdouble *);
 
 # endif /* GL_VERSION_4_1 */
-# if defined GL_VERSION_4_2
+# if (GL_VERSION_4_2 == 1)
 
 typedef void (APIENTRYP PFNGLDRAWARRAYSINSTANCEDBASEINSTANCEPROC) (GLenum, GLint, GLsizei, GLsizei, GLuint);
 typedef void (APIENTRYP PFNGLDRAWELEMENTSINSTANCEDBASEINSTANCEPROC) (GLenum, GLsizei, GLenum, const void *, GLsizei, GLuint);
@@ -4836,7 +4836,7 @@ typedef void (APIENTRYP PFNGLDRAWTRANSFORMFEEDBACKINSTANCEDPROC) (GLenum, GLuint
 typedef void (APIENTRYP PFNGLDRAWTRANSFORMFEEDBACKSTREAMINSTANCEDPROC) (GLenum, GLuint, GLuint, GLsizei);
 
 # endif /* GL_VERSION_4_2 */
-# if defined GL_VERSION_4_3
+# if (GL_VERSION_4_3 == 1)
 
 typedef void (APIENTRYP PFNGLCLEARBUFFERDATAPROC) (GLenum, GLenum, GLenum, GLenum, const void *);
 typedef void (APIENTRYP PFNGLCLEARBUFFERSUBDATAPROC) (GLenum, GLenum, GLintptr, GLsizeiptr, GLenum, GLenum, const void *);
@@ -4884,7 +4884,7 @@ typedef void (APIENTRYP PFNGLGETOBJECTPTRLABELPROC) (const void *, GLsizei, GLsi
 typedef void (APIENTRYP PFNGLGETPOINTERVPROC) (GLenum, void **);
 
 # endif /* GL_VERSION_4_3 */
-# if defined GL_VERSION_4_4
+# if (GL_VERSION_4_4 == 1)
 
 typedef void (APIENTRYP PFNGLBUFFERSTORAGEPROC) (GLenum, GLsizeiptr, const void *, GLbitfield);
 typedef void (APIENTRYP PFNGLCLEARTEXIMAGEPROC) (GLuint, GLint, GLenum, GLenum, const void *);
@@ -4897,7 +4897,7 @@ typedef void (APIENTRYP PFNGLBINDIMAGETEXTURESPROC) (GLuint, GLsizei, const GLui
 typedef void (APIENTRYP PFNGLBINDVERTEXBUFFERSPROC) (GLuint, GLsizei, const GLuint *, const GLintptr *, const GLsizei *);
 
 # endif /* GL_VERSION_4_4 */
-# if defined GL_VERSION_4_5
+# if (GL_VERSION_4_5 == 1)
 
 typedef void (APIENTRYP PFNGLCLIPCONTROLPROC) (GLenum, GLenum);
 typedef void (APIENTRYP PFNGLCREATETRANSFORMFEEDBACKSPROC) (GLsizei, GLuint *);
@@ -5023,7 +5023,7 @@ typedef void (APIENTRYP PFNGLGETNMINMAXPROC) (GLenum, GLboolean, GLenum, GLenum,
 typedef void (APIENTRYP PFNGLTEXTUREBARRIERPROC) (void);
 
 # endif /* GL_VERSION_4_5 */
-# if defined GL_VERSION_4_6
+# if (GL_VERSION_4_6 == 1)
 
 typedef void (APIENTRYP PFNGLSPECIALIZESHADERPROC) (GLuint, const GLchar *, GLuint, const GLuint *, const GLuint *);
 typedef void (APIENTRYP PFNGLMULTIDRAWARRAYSINDIRECTCOUNTPROC) (GLenum, const void *, GLintptr, GLsizei, GLsizei);
@@ -5031,7 +5031,7 @@ typedef void (APIENTRYP PFNGLMULTIDRAWELEMENTSINDIRECTCOUNTPROC) (GLenum, GLenum
 typedef void (APIENTRYP PFNGLPOLYGONOFFSETCLAMPPROC) (GLfloat, GLfloat, GLfloat);
 
 # endif /* GL_VERSION_4_6 */
-# if defined GL_VERSION_ES_CM_1_0
+# if (GL_VERSION_ES_CM_1_0 == 1)
 
 typedef void (APIENTRYP PFNGLALPHAFUNCPROC) (GLenum, GLfloat);
 typedef void (APIENTRYP PFNGLCLEARCOLORPROC) (GLfloat, GLfloat, GLfloat, GLfloat);
@@ -5179,7 +5179,7 @@ typedef void (APIENTRYP PFNGLVERTEXPOINTERPROC) (GLint, GLenum, GLsizei, const v
 typedef void (APIENTRYP PFNGLVIEWPORTPROC) (GLint, GLint, GLsizei, GLsizei);
 
 # endif /* GL_VERSION_ES_CM_1_0 */
-# if defined GL_ES_VERSION_2_0
+# if (GL_ES_VERSION_2_0 == 1)
 
 typedef void (APIENTRYP PFNGLACTIVETEXTUREPROC) (GLenum);
 typedef void (APIENTRYP PFNGLATTACHSHADERPROC) (GLuint, GLuint);
@@ -5325,7 +5325,7 @@ typedef void (APIENTRYP PFNGLVERTEXATTRIBPOINTERPROC) (GLuint, GLint, GLenum, GL
 typedef void (APIENTRYP PFNGLVIEWPORTPROC) (GLint, GLint, GLsizei, GLsizei);
 
 # endif /* GL_ES_VERSION_2_0 */
-# if defined GL_ES_VERSION_3_0
+# if (GL_ES_VERSION_3_0 == 1)
 
 typedef void (APIENTRYP PFNGLREADBUFFERPROC) (GLenum);
 typedef void (APIENTRYP PFNGLDRAWRANGEELEMENTSPROC) (GLenum, GLuint, GLuint, GLsizei, GLenum, const void *);
@@ -5433,7 +5433,7 @@ typedef void (APIENTRYP PFNGLTEXSTORAGE3DPROC) (GLenum, GLsizei, GLenum, GLsizei
 typedef void (APIENTRYP PFNGLGETINTERNALFORMATIVPROC) (GLenum, GLenum, GLenum, GLsizei, GLint *);
 
 # endif /* GL_ES_VERSION_3_0 */
-# if defined GL_ES_VERSION_3_1
+# if (GL_ES_VERSION_3_1 == 1)
 
 typedef void (APIENTRYP PFNGLDISPATCHCOMPUTEPROC) (GLuint, GLuint, GLuint);
 typedef void (APIENTRYP PFNGLDISPATCHCOMPUTEINDIRECTPROC) (GLintptr);
@@ -5505,7 +5505,7 @@ typedef void (APIENTRYP PFNGLVERTEXATTRIBBINDINGPROC) (GLuint, GLuint);
 typedef void (APIENTRYP PFNGLVERTEXBINDINGDIVISORPROC) (GLuint, GLuint);
 
 # endif /* GL_ES_VERSION_3_1 */
-# if defined GL_ES_VERSION_3_2
+# if (GL_ES_VERSION_3_2 == 1)
 
 typedef void (APIENTRYP PFNGLBLENDBARRIERPROC) (void);
 typedef void (APIENTRYP PFNGLCOPYIMAGESUBDATAPROC) (GLuint, GLenum, GLint, GLint, GLint, GLint, GLuint, GLenum, GLint, GLint, GLint, GLint, GLsizei, GLsizei, GLsizei);
@@ -5553,7 +5553,7 @@ typedef void (APIENTRYP PFNGLTEXBUFFERRANGEPROC) (GLenum, GLenum, GLuint, GLintp
 typedef void (APIENTRYP PFNGLTEXSTORAGE3DMULTISAMPLEPROC) (GLenum, GLsizei, GLenum, GLsizei, GLsizei, GLsizei, GLboolean);
 
 # endif /* GL_ES_VERSION_3_2 */
-# if defined GL_SC_VERSION_2_0
+# if (GL_SC_VERSION_2_0 == 1)
 
 typedef void (APIENTRYP PFNGLACTIVETEXTUREPROC) (GLenum);
 typedef void (APIENTRYP PFNGLBINDBUFFERPROC) (GLenum, GLuint);
@@ -5668,7 +5668,7 @@ typedef void (APIENTRYP PFNGLVERTEXATTRIBPOINTERPROC) (GLuint, GLint, GLenum, GL
 typedef void (APIENTRYP PFNGLVIEWPORTPROC) (GLint, GLint, GLsizei, GLsizei);
 
 # endif /* GL_SC_VERSION_2_0 */
-# if defined GL_VERSION_1_0
+# if (GL_VERSION_1_0 == 1)
 
 extern PFNGLCULLFACEPROC gload_glCullFace;
 extern PFNGLFRONTFACEPROC gload_glFrontFace;
@@ -5978,7 +5978,7 @@ extern PFNGLTRANSLATEDPROC gload_glTranslated;
 extern PFNGLTRANSLATEFPROC gload_glTranslatef;
 
 # endif /* GL_VERSION_1_0 */
-# if defined GL_VERSION_1_1
+# if (GL_VERSION_1_1 == 1)
 
 extern PFNGLDRAWARRAYSPROC gload_glDrawArrays;
 extern PFNGLDRAWELEMENTSPROC gload_glDrawElements;
@@ -6012,7 +6012,7 @@ extern PFNGLPOPCLIENTATTRIBPROC gload_glPopClientAttrib;
 extern PFNGLPUSHCLIENTATTRIBPROC gload_glPushClientAttrib;
 
 # endif /* GL_VERSION_1_1 */
-# if defined GL_VERSION_1_2
+# if (GL_VERSION_1_2 == 1)
 
 extern PFNGLDRAWRANGEELEMENTSPROC gload_glDrawRangeElements;
 extern PFNGLTEXIMAGE3DPROC gload_glTexImage3D;
@@ -6020,7 +6020,7 @@ extern PFNGLTEXSUBIMAGE3DPROC gload_glTexSubImage3D;
 extern PFNGLCOPYTEXSUBIMAGE3DPROC gload_glCopyTexSubImage3D;
 
 # endif /* GL_VERSION_1_2 */
-# if defined GL_VERSION_1_3
+# if (GL_VERSION_1_3 == 1)
 
 extern PFNGLACTIVETEXTUREPROC gload_glActiveTexture;
 extern PFNGLSAMPLECOVERAGEPROC gload_glSampleCoverage;
@@ -6070,7 +6070,7 @@ extern PFNGLMULTTRANSPOSEMATRIXFPROC gload_glMultTransposeMatrixf;
 extern PFNGLMULTTRANSPOSEMATRIXDPROC gload_glMultTransposeMatrixd;
 
 # endif /* GL_VERSION_1_3 */
-# if defined GL_VERSION_1_4
+# if (GL_VERSION_1_4 == 1)
 
 extern PFNGLBLENDFUNCSEPARATEPROC gload_glBlendFuncSeparate;
 extern PFNGLMULTIDRAWARRAYSPROC gload_glMultiDrawArrays;
@@ -6121,7 +6121,7 @@ extern PFNGLBLENDCOLORPROC gload_glBlendColor;
 extern PFNGLBLENDEQUATIONPROC gload_glBlendEquation;
 
 # endif /* GL_VERSION_1_4 */
-# if defined GL_VERSION_1_5
+# if (GL_VERSION_1_5 == 1)
 
 extern PFNGLGENQUERIESPROC gload_glGenQueries;
 extern PFNGLDELETEQUERIESPROC gload_glDeleteQueries;
@@ -6144,7 +6144,7 @@ extern PFNGLGETBUFFERPARAMETERIVPROC gload_glGetBufferParameteriv;
 extern PFNGLGETBUFFERPOINTERVPROC gload_glGetBufferPointerv;
 
 # endif /* GL_VERSION_1_5 */
-# if defined GL_VERSION_2_0
+# if (GL_VERSION_2_0 == 1)
 
 extern PFNGLBLENDEQUATIONSEPARATEPROC gload_glBlendEquationSeparate;
 extern PFNGLDRAWBUFFERSPROC gload_glDrawBuffers;
@@ -6241,7 +6241,7 @@ extern PFNGLVERTEXATTRIB4USVPROC gload_glVertexAttrib4usv;
 extern PFNGLVERTEXATTRIBPOINTERPROC gload_glVertexAttribPointer;
 
 # endif /* GL_VERSION_2_0 */
-# if defined GL_VERSION_2_1
+# if (GL_VERSION_2_1 == 1)
 
 extern PFNGLUNIFORMMATRIX2X3FVPROC gload_glUniformMatrix2x3fv;
 extern PFNGLUNIFORMMATRIX3X2FVPROC gload_glUniformMatrix3x2fv;
@@ -6251,7 +6251,7 @@ extern PFNGLUNIFORMMATRIX3X4FVPROC gload_glUniformMatrix3x4fv;
 extern PFNGLUNIFORMMATRIX4X3FVPROC gload_glUniformMatrix4x3fv;
 
 # endif /* GL_VERSION_2_1 */
-# if defined GL_VERSION_3_0
+# if (GL_VERSION_3_0 == 1)
 
 extern PFNGLCOLORMASKIPROC gload_glColorMaski;
 extern PFNGLGETBOOLEANI_VPROC gload_glGetBooleani_v;
@@ -6339,7 +6339,7 @@ extern PFNGLGENVERTEXARRAYSPROC gload_glGenVertexArrays;
 extern PFNGLISVERTEXARRAYPROC gload_glIsVertexArray;
 
 # endif /* GL_VERSION_3_0 */
-# if defined GL_VERSION_3_1
+# if (GL_VERSION_3_1 == 1)
 
 extern PFNGLDRAWARRAYSINSTANCEDPROC gload_glDrawArraysInstanced;
 extern PFNGLDRAWELEMENTSINSTANCEDPROC gload_glDrawElementsInstanced;
@@ -6358,7 +6358,7 @@ extern PFNGLBINDBUFFERBASEPROC gload_glBindBufferBase;
 extern PFNGLGETINTEGERI_VPROC gload_glGetIntegeri_v;
 
 # endif /* GL_VERSION_3_1 */
-# if defined GL_VERSION_3_2
+# if (GL_VERSION_3_2 == 1)
 
 extern PFNGLDRAWELEMENTSBASEVERTEXPROC gload_glDrawElementsBaseVertex;
 extern PFNGLDRAWRANGEELEMENTSBASEVERTEXPROC gload_glDrawRangeElementsBaseVertex;
@@ -6381,7 +6381,7 @@ extern PFNGLGETMULTISAMPLEFVPROC gload_glGetMultisamplefv;
 extern PFNGLSAMPLEMASKIPROC gload_glSampleMaski;
 
 # endif /* GL_VERSION_3_2 */
-# if defined GL_VERSION_3_3
+# if (GL_VERSION_3_3 == 1)
 
 extern PFNGLBINDFRAGDATALOCATIONINDEXEDPROC gload_glBindFragDataLocationIndexed;
 extern PFNGLGETFRAGDATAINDEXPROC gload_glGetFragDataIndex;
@@ -6443,7 +6443,7 @@ extern PFNGLSECONDARYCOLORP3UIPROC gload_glSecondaryColorP3ui;
 extern PFNGLSECONDARYCOLORP3UIVPROC gload_glSecondaryColorP3uiv;
 
 # endif /* GL_VERSION_3_3 */
-# if defined GL_VERSION_4_0
+# if (GL_VERSION_4_0 == 1)
 
 extern PFNGLMINSAMPLESHADINGPROC gload_glMinSampleShading;
 extern PFNGLBLENDEQUATIONIPROC gload_glBlendEquationi;
@@ -6493,7 +6493,7 @@ extern PFNGLENDQUERYINDEXEDPROC gload_glEndQueryIndexed;
 extern PFNGLGETQUERYINDEXEDIVPROC gload_glGetQueryIndexediv;
 
 # endif /* GL_VERSION_4_0 */
-# if defined GL_VERSION_4_1
+# if (GL_VERSION_4_1 == 1)
 
 extern PFNGLRELEASESHADERCOMPILERPROC gload_glReleaseShaderCompiler;
 extern PFNGLSHADERBINARYPROC gload_glShaderBinary;
@@ -6586,7 +6586,7 @@ extern PFNGLGETFLOATI_VPROC gload_glGetFloati_v;
 extern PFNGLGETDOUBLEI_VPROC gload_glGetDoublei_v;
 
 # endif /* GL_VERSION_4_1 */
-# if defined GL_VERSION_4_2
+# if (GL_VERSION_4_2 == 1)
 
 extern PFNGLDRAWARRAYSINSTANCEDBASEINSTANCEPROC gload_glDrawArraysInstancedBaseInstance;
 extern PFNGLDRAWELEMENTSINSTANCEDBASEINSTANCEPROC gload_glDrawElementsInstancedBaseInstance;
@@ -6602,7 +6602,7 @@ extern PFNGLDRAWTRANSFORMFEEDBACKINSTANCEDPROC gload_glDrawTransformFeedbackInst
 extern PFNGLDRAWTRANSFORMFEEDBACKSTREAMINSTANCEDPROC gload_glDrawTransformFeedbackStreamInstanced;
 
 # endif /* GL_VERSION_4_2 */
-# if defined GL_VERSION_4_3
+# if (GL_VERSION_4_3 == 1)
 
 extern PFNGLCLEARBUFFERDATAPROC gload_glClearBufferData;
 extern PFNGLCLEARBUFFERSUBDATAPROC gload_glClearBufferSubData;
@@ -6650,7 +6650,7 @@ extern PFNGLGETOBJECTPTRLABELPROC gload_glGetObjectPtrLabel;
 extern PFNGLGETPOINTERVPROC gload_glGetPointerv;
 
 # endif /* GL_VERSION_4_3 */
-# if defined GL_VERSION_4_4
+# if (GL_VERSION_4_4 == 1)
 
 extern PFNGLBUFFERSTORAGEPROC gload_glBufferStorage;
 extern PFNGLCLEARTEXIMAGEPROC gload_glClearTexImage;
@@ -6663,7 +6663,7 @@ extern PFNGLBINDIMAGETEXTURESPROC gload_glBindImageTextures;
 extern PFNGLBINDVERTEXBUFFERSPROC gload_glBindVertexBuffers;
 
 # endif /* GL_VERSION_4_4 */
-# if defined GL_VERSION_4_5
+# if (GL_VERSION_4_5 == 1)
 
 extern PFNGLCLIPCONTROLPROC gload_glClipControl;
 extern PFNGLCREATETRANSFORMFEEDBACKSPROC gload_glCreateTransformFeedbacks;
@@ -6789,7 +6789,7 @@ extern PFNGLGETNMINMAXPROC gload_glGetnMinmax;
 extern PFNGLTEXTUREBARRIERPROC gload_glTextureBarrier;
 
 # endif /* GL_VERSION_4_5 */
-# if defined GL_VERSION_4_6
+# if (GL_VERSION_4_6 == 1)
 
 extern PFNGLSPECIALIZESHADERPROC gload_glSpecializeShader;
 extern PFNGLMULTIDRAWARRAYSINDIRECTCOUNTPROC gload_glMultiDrawArraysIndirectCount;
@@ -6797,7 +6797,7 @@ extern PFNGLMULTIDRAWELEMENTSINDIRECTCOUNTPROC gload_glMultiDrawElementsIndirect
 extern PFNGLPOLYGONOFFSETCLAMPPROC gload_glPolygonOffsetClamp;
 
 # endif /* GL_VERSION_4_6 */
-# if defined GL_VERSION_ES_CM_1_0
+# if (GL_VERSION_ES_CM_1_0 == 1)
 
 extern PFNGLALPHAFUNCPROC gload_glAlphaFunc;
 extern PFNGLCLEARCOLORPROC gload_glClearColor;
@@ -6945,7 +6945,7 @@ extern PFNGLVERTEXPOINTERPROC gload_glVertexPointer;
 extern PFNGLVIEWPORTPROC gload_glViewport;
 
 # endif /* GL_VERSION_ES_CM_1_0 */
-# if defined GL_ES_VERSION_2_0
+# if (GL_ES_VERSION_2_0 == 1)
 
 extern PFNGLACTIVETEXTUREPROC gload_glActiveTexture;
 extern PFNGLATTACHSHADERPROC gload_glAttachShader;
@@ -7091,7 +7091,7 @@ extern PFNGLVERTEXATTRIBPOINTERPROC gload_glVertexAttribPointer;
 extern PFNGLVIEWPORTPROC gload_glViewport;
 
 # endif /* GL_ES_VERSION_2_0 */
-# if defined GL_ES_VERSION_3_0
+# if (GL_ES_VERSION_3_0 == 1)
 
 extern PFNGLREADBUFFERPROC gload_glReadBuffer;
 extern PFNGLDRAWRANGEELEMENTSPROC gload_glDrawRangeElements;
@@ -7199,7 +7199,7 @@ extern PFNGLTEXSTORAGE3DPROC gload_glTexStorage3D;
 extern PFNGLGETINTERNALFORMATIVPROC gload_glGetInternalformativ;
 
 # endif /* GL_ES_VERSION_3_0 */
-# if defined GL_ES_VERSION_3_1
+# if (GL_ES_VERSION_3_1 == 1)
 
 extern PFNGLDISPATCHCOMPUTEPROC gload_glDispatchCompute;
 extern PFNGLDISPATCHCOMPUTEINDIRECTPROC gload_glDispatchComputeIndirect;
@@ -7271,7 +7271,7 @@ extern PFNGLVERTEXATTRIBBINDINGPROC gload_glVertexAttribBinding;
 extern PFNGLVERTEXBINDINGDIVISORPROC gload_glVertexBindingDivisor;
 
 # endif /* GL_ES_VERSION_3_1 */
-# if defined GL_ES_VERSION_3_2
+# if (GL_ES_VERSION_3_2 == 1)
 
 extern PFNGLBLENDBARRIERPROC gload_glBlendBarrier;
 extern PFNGLCOPYIMAGESUBDATAPROC gload_glCopyImageSubData;
@@ -7319,7 +7319,7 @@ extern PFNGLTEXBUFFERRANGEPROC gload_glTexBufferRange;
 extern PFNGLTEXSTORAGE3DMULTISAMPLEPROC gload_glTexStorage3DMultisample;
 
 # endif /* GL_ES_VERSION_3_2 */
-# if defined GL_SC_VERSION_2_0
+# if (GL_SC_VERSION_2_0 == 1)
 
 extern PFNGLACTIVETEXTUREPROC gload_glActiveTexture;
 extern PFNGLBINDBUFFERPROC gload_glBindBuffer;
@@ -7434,1722 +7434,1722 @@ extern PFNGLVERTEXATTRIBPOINTERPROC gload_glVertexAttribPointer;
 extern PFNGLVIEWPORTPROC gload_glViewport;
 
 # endif /* GL_SC_VERSION_2_0 */
-# if defined GL_VERSION_1_0
-#  define glCullFace gload_glCullFace
-#  define glFrontFace gload_glFrontFace
-#  define glHint gload_glHint
-#  define glLineWidth gload_glLineWidth
-#  define glPointSize gload_glPointSize
-#  define glPolygonMode gload_glPolygonMode
-#  define glScissor gload_glScissor
-#  define glTexParameterf gload_glTexParameterf
-#  define glTexParameterfv gload_glTexParameterfv
-#  define glTexParameteri gload_glTexParameteri
-#  define glTexParameteriv gload_glTexParameteriv
-#  define glTexImage1D gload_glTexImage1D
-#  define glTexImage2D gload_glTexImage2D
-#  define glDrawBuffer gload_glDrawBuffer
-#  define glClear gload_glClear
-#  define glClearColor gload_glClearColor
-#  define glClearStencil gload_glClearStencil
-#  define glClearDepth gload_glClearDepth
-#  define glStencilMask gload_glStencilMask
-#  define glColorMask gload_glColorMask
-#  define glDepthMask gload_glDepthMask
-#  define glDisable gload_glDisable
-#  define glEnable gload_glEnable
-#  define glFinish gload_glFinish
-#  define glFlush gload_glFlush
-#  define glBlendFunc gload_glBlendFunc
-#  define glLogicOp gload_glLogicOp
-#  define glStencilFunc gload_glStencilFunc
-#  define glStencilOp gload_glStencilOp
-#  define glDepthFunc gload_glDepthFunc
-#  define glPixelStoref gload_glPixelStoref
-#  define glPixelStorei gload_glPixelStorei
-#  define glReadBuffer gload_glReadBuffer
-#  define glReadPixels gload_glReadPixels
-#  define glGetBooleanv gload_glGetBooleanv
-#  define glGetDoublev gload_glGetDoublev
-#  define glGetError gload_glGetError
-#  define glGetFloatv gload_glGetFloatv
-#  define glGetIntegerv gload_glGetIntegerv
-#  define glGetString gload_glGetString
-#  define glGetTexImage gload_glGetTexImage
-#  define glGetTexParameterfv gload_glGetTexParameterfv
-#  define glGetTexParameteriv gload_glGetTexParameteriv
-#  define glGetTexLevelParameterfv gload_glGetTexLevelParameterfv
-#  define glGetTexLevelParameteriv gload_glGetTexLevelParameteriv
-#  define glIsEnabled gload_glIsEnabled
-#  define glDepthRange gload_glDepthRange
-#  define glViewport gload_glViewport
-#  define glNewList gload_glNewList
-#  define glEndList gload_glEndList
-#  define glCallList gload_glCallList
-#  define glCallLists gload_glCallLists
-#  define glDeleteLists gload_glDeleteLists
-#  define glGenLists gload_glGenLists
-#  define glListBase gload_glListBase
-#  define glBegin gload_glBegin
-#  define glBitmap gload_glBitmap
-#  define glColor3b gload_glColor3b
-#  define glColor3bv gload_glColor3bv
-#  define glColor3d gload_glColor3d
-#  define glColor3dv gload_glColor3dv
-#  define glColor3f gload_glColor3f
-#  define glColor3fv gload_glColor3fv
-#  define glColor3i gload_glColor3i
-#  define glColor3iv gload_glColor3iv
-#  define glColor3s gload_glColor3s
-#  define glColor3sv gload_glColor3sv
-#  define glColor3ub gload_glColor3ub
-#  define glColor3ubv gload_glColor3ubv
-#  define glColor3ui gload_glColor3ui
-#  define glColor3uiv gload_glColor3uiv
-#  define glColor3us gload_glColor3us
-#  define glColor3usv gload_glColor3usv
-#  define glColor4b gload_glColor4b
-#  define glColor4bv gload_glColor4bv
-#  define glColor4d gload_glColor4d
-#  define glColor4dv gload_glColor4dv
-#  define glColor4f gload_glColor4f
-#  define glColor4fv gload_glColor4fv
-#  define glColor4i gload_glColor4i
-#  define glColor4iv gload_glColor4iv
-#  define glColor4s gload_glColor4s
-#  define glColor4sv gload_glColor4sv
-#  define glColor4ub gload_glColor4ub
-#  define glColor4ubv gload_glColor4ubv
-#  define glColor4ui gload_glColor4ui
-#  define glColor4uiv gload_glColor4uiv
-#  define glColor4us gload_glColor4us
-#  define glColor4usv gload_glColor4usv
-#  define glEdgeFlag gload_glEdgeFlag
-#  define glEdgeFlagv gload_glEdgeFlagv
-#  define glEnd gload_glEnd
-#  define glIndexd gload_glIndexd
-#  define glIndexdv gload_glIndexdv
-#  define glIndexf gload_glIndexf
-#  define glIndexfv gload_glIndexfv
-#  define glIndexi gload_glIndexi
-#  define glIndexiv gload_glIndexiv
-#  define glIndexs gload_glIndexs
-#  define glIndexsv gload_glIndexsv
-#  define glNormal3b gload_glNormal3b
-#  define glNormal3bv gload_glNormal3bv
-#  define glNormal3d gload_glNormal3d
-#  define glNormal3dv gload_glNormal3dv
-#  define glNormal3f gload_glNormal3f
-#  define glNormal3fv gload_glNormal3fv
-#  define glNormal3i gload_glNormal3i
-#  define glNormal3iv gload_glNormal3iv
-#  define glNormal3s gload_glNormal3s
-#  define glNormal3sv gload_glNormal3sv
-#  define glRasterPos2d gload_glRasterPos2d
-#  define glRasterPos2dv gload_glRasterPos2dv
-#  define glRasterPos2f gload_glRasterPos2f
-#  define glRasterPos2fv gload_glRasterPos2fv
-#  define glRasterPos2i gload_glRasterPos2i
-#  define glRasterPos2iv gload_glRasterPos2iv
-#  define glRasterPos2s gload_glRasterPos2s
-#  define glRasterPos2sv gload_glRasterPos2sv
-#  define glRasterPos3d gload_glRasterPos3d
-#  define glRasterPos3dv gload_glRasterPos3dv
-#  define glRasterPos3f gload_glRasterPos3f
-#  define glRasterPos3fv gload_glRasterPos3fv
-#  define glRasterPos3i gload_glRasterPos3i
-#  define glRasterPos3iv gload_glRasterPos3iv
-#  define glRasterPos3s gload_glRasterPos3s
-#  define glRasterPos3sv gload_glRasterPos3sv
-#  define glRasterPos4d gload_glRasterPos4d
-#  define glRasterPos4dv gload_glRasterPos4dv
-#  define glRasterPos4f gload_glRasterPos4f
-#  define glRasterPos4fv gload_glRasterPos4fv
-#  define glRasterPos4i gload_glRasterPos4i
-#  define glRasterPos4iv gload_glRasterPos4iv
-#  define glRasterPos4s gload_glRasterPos4s
-#  define glRasterPos4sv gload_glRasterPos4sv
-#  define glRectd gload_glRectd
-#  define glRectdv gload_glRectdv
-#  define glRectf gload_glRectf
-#  define glRectfv gload_glRectfv
-#  define glRecti gload_glRecti
-#  define glRectiv gload_glRectiv
-#  define glRects gload_glRects
-#  define glRectsv gload_glRectsv
-#  define glTexCoord1d gload_glTexCoord1d
-#  define glTexCoord1dv gload_glTexCoord1dv
-#  define glTexCoord1f gload_glTexCoord1f
-#  define glTexCoord1fv gload_glTexCoord1fv
-#  define glTexCoord1i gload_glTexCoord1i
-#  define glTexCoord1iv gload_glTexCoord1iv
-#  define glTexCoord1s gload_glTexCoord1s
-#  define glTexCoord1sv gload_glTexCoord1sv
-#  define glTexCoord2d gload_glTexCoord2d
-#  define glTexCoord2dv gload_glTexCoord2dv
-#  define glTexCoord2f gload_glTexCoord2f
-#  define glTexCoord2fv gload_glTexCoord2fv
-#  define glTexCoord2i gload_glTexCoord2i
-#  define glTexCoord2iv gload_glTexCoord2iv
-#  define glTexCoord2s gload_glTexCoord2s
-#  define glTexCoord2sv gload_glTexCoord2sv
-#  define glTexCoord3d gload_glTexCoord3d
-#  define glTexCoord3dv gload_glTexCoord3dv
-#  define glTexCoord3f gload_glTexCoord3f
-#  define glTexCoord3fv gload_glTexCoord3fv
-#  define glTexCoord3i gload_glTexCoord3i
-#  define glTexCoord3iv gload_glTexCoord3iv
-#  define glTexCoord3s gload_glTexCoord3s
-#  define glTexCoord3sv gload_glTexCoord3sv
-#  define glTexCoord4d gload_glTexCoord4d
-#  define glTexCoord4dv gload_glTexCoord4dv
-#  define glTexCoord4f gload_glTexCoord4f
-#  define glTexCoord4fv gload_glTexCoord4fv
-#  define glTexCoord4i gload_glTexCoord4i
-#  define glTexCoord4iv gload_glTexCoord4iv
-#  define glTexCoord4s gload_glTexCoord4s
-#  define glTexCoord4sv gload_glTexCoord4sv
-#  define glVertex2d gload_glVertex2d
-#  define glVertex2dv gload_glVertex2dv
-#  define glVertex2f gload_glVertex2f
-#  define glVertex2fv gload_glVertex2fv
-#  define glVertex2i gload_glVertex2i
-#  define glVertex2iv gload_glVertex2iv
-#  define glVertex2s gload_glVertex2s
-#  define glVertex2sv gload_glVertex2sv
-#  define glVertex3d gload_glVertex3d
-#  define glVertex3dv gload_glVertex3dv
-#  define glVertex3f gload_glVertex3f
-#  define glVertex3fv gload_glVertex3fv
-#  define glVertex3i gload_glVertex3i
-#  define glVertex3iv gload_glVertex3iv
-#  define glVertex3s gload_glVertex3s
-#  define glVertex3sv gload_glVertex3sv
-#  define glVertex4d gload_glVertex4d
-#  define glVertex4dv gload_glVertex4dv
-#  define glVertex4f gload_glVertex4f
-#  define glVertex4fv gload_glVertex4fv
-#  define glVertex4i gload_glVertex4i
-#  define glVertex4iv gload_glVertex4iv
-#  define glVertex4s gload_glVertex4s
-#  define glVertex4sv gload_glVertex4sv
-#  define glClipPlane gload_glClipPlane
-#  define glColorMaterial gload_glColorMaterial
-#  define glFogf gload_glFogf
-#  define glFogfv gload_glFogfv
-#  define glFogi gload_glFogi
-#  define glFogiv gload_glFogiv
-#  define glLightf gload_glLightf
-#  define glLightfv gload_glLightfv
-#  define glLighti gload_glLighti
-#  define glLightiv gload_glLightiv
-#  define glLightModelf gload_glLightModelf
-#  define glLightModelfv gload_glLightModelfv
-#  define glLightModeli gload_glLightModeli
-#  define glLightModeliv gload_glLightModeliv
-#  define glLineStipple gload_glLineStipple
-#  define glMaterialf gload_glMaterialf
-#  define glMaterialfv gload_glMaterialfv
-#  define glMateriali gload_glMateriali
-#  define glMaterialiv gload_glMaterialiv
-#  define glPolygonStipple gload_glPolygonStipple
-#  define glShadeModel gload_glShadeModel
-#  define glTexEnvf gload_glTexEnvf
-#  define glTexEnvfv gload_glTexEnvfv
-#  define glTexEnvi gload_glTexEnvi
-#  define glTexEnviv gload_glTexEnviv
-#  define glTexGend gload_glTexGend
-#  define glTexGendv gload_glTexGendv
-#  define glTexGenf gload_glTexGenf
-#  define glTexGenfv gload_glTexGenfv
-#  define glTexGeni gload_glTexGeni
-#  define glTexGeniv gload_glTexGeniv
-#  define glFeedbackBuffer gload_glFeedbackBuffer
-#  define glSelectBuffer gload_glSelectBuffer
-#  define glRenderMode gload_glRenderMode
-#  define glInitNames gload_glInitNames
-#  define glLoadName gload_glLoadName
-#  define glPassThrough gload_glPassThrough
-#  define glPopName gload_glPopName
-#  define glPushName gload_glPushName
-#  define glClearAccum gload_glClearAccum
-#  define glClearIndex gload_glClearIndex
-#  define glIndexMask gload_glIndexMask
-#  define glAccum gload_glAccum
-#  define glPopAttrib gload_glPopAttrib
-#  define glPushAttrib gload_glPushAttrib
-#  define glMap1d gload_glMap1d
-#  define glMap1f gload_glMap1f
-#  define glMap2d gload_glMap2d
-#  define glMap2f gload_glMap2f
-#  define glMapGrid1d gload_glMapGrid1d
-#  define glMapGrid1f gload_glMapGrid1f
-#  define glMapGrid2d gload_glMapGrid2d
-#  define glMapGrid2f gload_glMapGrid2f
-#  define glEvalCoord1d gload_glEvalCoord1d
-#  define glEvalCoord1dv gload_glEvalCoord1dv
-#  define glEvalCoord1f gload_glEvalCoord1f
-#  define glEvalCoord1fv gload_glEvalCoord1fv
-#  define glEvalCoord2d gload_glEvalCoord2d
-#  define glEvalCoord2dv gload_glEvalCoord2dv
-#  define glEvalCoord2f gload_glEvalCoord2f
-#  define glEvalCoord2fv gload_glEvalCoord2fv
-#  define glEvalMesh1 gload_glEvalMesh1
-#  define glEvalPoint1 gload_glEvalPoint1
-#  define glEvalMesh2 gload_glEvalMesh2
-#  define glEvalPoint2 gload_glEvalPoint2
-#  define glAlphaFunc gload_glAlphaFunc
-#  define glPixelZoom gload_glPixelZoom
-#  define glPixelTransferf gload_glPixelTransferf
-#  define glPixelTransferi gload_glPixelTransferi
-#  define glPixelMapfv gload_glPixelMapfv
-#  define glPixelMapuiv gload_glPixelMapuiv
-#  define glPixelMapusv gload_glPixelMapusv
-#  define glCopyPixels gload_glCopyPixels
-#  define glDrawPixels gload_glDrawPixels
-#  define glGetClipPlane gload_glGetClipPlane
-#  define glGetLightfv gload_glGetLightfv
-#  define glGetLightiv gload_glGetLightiv
-#  define glGetMapdv gload_glGetMapdv
-#  define glGetMapfv gload_glGetMapfv
-#  define glGetMapiv gload_glGetMapiv
-#  define glGetMaterialfv gload_glGetMaterialfv
-#  define glGetMaterialiv gload_glGetMaterialiv
-#  define glGetPixelMapfv gload_glGetPixelMapfv
-#  define glGetPixelMapuiv gload_glGetPixelMapuiv
-#  define glGetPixelMapusv gload_glGetPixelMapusv
-#  define glGetPolygonStipple gload_glGetPolygonStipple
-#  define glGetTexEnvfv gload_glGetTexEnvfv
-#  define glGetTexEnviv gload_glGetTexEnviv
-#  define glGetTexGendv gload_glGetTexGendv
-#  define glGetTexGenfv gload_glGetTexGenfv
-#  define glGetTexGeniv gload_glGetTexGeniv
-#  define glIsList gload_glIsList
-#  define glFrustum gload_glFrustum
-#  define glLoadIdentity gload_glLoadIdentity
-#  define glLoadMatrixf gload_glLoadMatrixf
-#  define glLoadMatrixd gload_glLoadMatrixd
-#  define glMatrixMode gload_glMatrixMode
-#  define glMultMatrixf gload_glMultMatrixf
-#  define glMultMatrixd gload_glMultMatrixd
-#  define glOrtho gload_glOrtho
-#  define glPopMatrix gload_glPopMatrix
-#  define glPushMatrix gload_glPushMatrix
-#  define glRotated gload_glRotated
-#  define glRotatef gload_glRotatef
-#  define glScaled gload_glScaled
-#  define glScalef gload_glScalef
-#  define glTranslated gload_glTranslated
-#  define glTranslatef gload_glTranslatef
-# endif /* GL_VERSION_1_0 */
-# if defined GL_VERSION_1_1
-#  define glDrawArrays gload_glDrawArrays
-#  define glDrawElements gload_glDrawElements
-#  define glGetPointerv gload_glGetPointerv
-#  define glPolygonOffset gload_glPolygonOffset
-#  define glCopyTexImage1D gload_glCopyTexImage1D
-#  define glCopyTexImage2D gload_glCopyTexImage2D
-#  define glCopyTexSubImage1D gload_glCopyTexSubImage1D
-#  define glCopyTexSubImage2D gload_glCopyTexSubImage2D
-#  define glTexSubImage1D gload_glTexSubImage1D
-#  define glTexSubImage2D gload_glTexSubImage2D
-#  define glBindTexture gload_glBindTexture
-#  define glDeleteTextures gload_glDeleteTextures
-#  define glGenTextures gload_glGenTextures
-#  define glIsTexture gload_glIsTexture
-#  define glArrayElement gload_glArrayElement
-#  define glColorPointer gload_glColorPointer
-#  define glDisableClientState gload_glDisableClientState
-#  define glEdgeFlagPointer gload_glEdgeFlagPointer
-#  define glEnableClientState gload_glEnableClientState
-#  define glIndexPointer gload_glIndexPointer
-#  define glInterleavedArrays gload_glInterleavedArrays
-#  define glNormalPointer gload_glNormalPointer
-#  define glTexCoordPointer gload_glTexCoordPointer
-#  define glVertexPointer gload_glVertexPointer
-#  define glAreTexturesResident gload_glAreTexturesResident
-#  define glPrioritizeTextures gload_glPrioritizeTextures
-#  define glIndexub gload_glIndexub
-#  define glIndexubv gload_glIndexubv
-#  define glPopClientAttrib gload_glPopClientAttrib
-#  define glPushClientAttrib gload_glPushClientAttrib
-# endif /* GL_VERSION_1_1 */
-# if defined GL_VERSION_1_2
-#  define glDrawRangeElements gload_glDrawRangeElements
-#  define glTexImage3D gload_glTexImage3D
-#  define glTexSubImage3D gload_glTexSubImage3D
-#  define glCopyTexSubImage3D gload_glCopyTexSubImage3D
-# endif /* GL_VERSION_1_2 */
-# if defined GL_VERSION_1_3
-#  define glActiveTexture gload_glActiveTexture
-#  define glSampleCoverage gload_glSampleCoverage
-#  define glCompressedTexImage3D gload_glCompressedTexImage3D
-#  define glCompressedTexImage2D gload_glCompressedTexImage2D
-#  define glCompressedTexImage1D gload_glCompressedTexImage1D
-#  define glCompressedTexSubImage3D gload_glCompressedTexSubImage3D
-#  define glCompressedTexSubImage2D gload_glCompressedTexSubImage2D
-#  define glCompressedTexSubImage1D gload_glCompressedTexSubImage1D
-#  define glGetCompressedTexImage gload_glGetCompressedTexImage
-#  define glClientActiveTexture gload_glClientActiveTexture
-#  define glMultiTexCoord1d gload_glMultiTexCoord1d
-#  define glMultiTexCoord1dv gload_glMultiTexCoord1dv
-#  define glMultiTexCoord1f gload_glMultiTexCoord1f
-#  define glMultiTexCoord1fv gload_glMultiTexCoord1fv
-#  define glMultiTexCoord1i gload_glMultiTexCoord1i
-#  define glMultiTexCoord1iv gload_glMultiTexCoord1iv
-#  define glMultiTexCoord1s gload_glMultiTexCoord1s
-#  define glMultiTexCoord1sv gload_glMultiTexCoord1sv
-#  define glMultiTexCoord2d gload_glMultiTexCoord2d
-#  define glMultiTexCoord2dv gload_glMultiTexCoord2dv
-#  define glMultiTexCoord2f gload_glMultiTexCoord2f
-#  define glMultiTexCoord2fv gload_glMultiTexCoord2fv
-#  define glMultiTexCoord2i gload_glMultiTexCoord2i
-#  define glMultiTexCoord2iv gload_glMultiTexCoord2iv
-#  define glMultiTexCoord2s gload_glMultiTexCoord2s
-#  define glMultiTexCoord2sv gload_glMultiTexCoord2sv
-#  define glMultiTexCoord3d gload_glMultiTexCoord3d
-#  define glMultiTexCoord3dv gload_glMultiTexCoord3dv
-#  define glMultiTexCoord3f gload_glMultiTexCoord3f
-#  define glMultiTexCoord3fv gload_glMultiTexCoord3fv
-#  define glMultiTexCoord3i gload_glMultiTexCoord3i
-#  define glMultiTexCoord3iv gload_glMultiTexCoord3iv
-#  define glMultiTexCoord3s gload_glMultiTexCoord3s
-#  define glMultiTexCoord3sv gload_glMultiTexCoord3sv
-#  define glMultiTexCoord4d gload_glMultiTexCoord4d
-#  define glMultiTexCoord4dv gload_glMultiTexCoord4dv
-#  define glMultiTexCoord4f gload_glMultiTexCoord4f
-#  define glMultiTexCoord4fv gload_glMultiTexCoord4fv
-#  define glMultiTexCoord4i gload_glMultiTexCoord4i
-#  define glMultiTexCoord4iv gload_glMultiTexCoord4iv
-#  define glMultiTexCoord4s gload_glMultiTexCoord4s
-#  define glMultiTexCoord4sv gload_glMultiTexCoord4sv
-#  define glLoadTransposeMatrixf gload_glLoadTransposeMatrixf
-#  define glLoadTransposeMatrixd gload_glLoadTransposeMatrixd
-#  define glMultTransposeMatrixf gload_glMultTransposeMatrixf
-#  define glMultTransposeMatrixd gload_glMultTransposeMatrixd
-# endif /* GL_VERSION_1_3 */
-# if defined GL_VERSION_1_4
-#  define glBlendFuncSeparate gload_glBlendFuncSeparate
-#  define glMultiDrawArrays gload_glMultiDrawArrays
-#  define glMultiDrawElements gload_glMultiDrawElements
-#  define glPointParameterf gload_glPointParameterf
-#  define glPointParameterfv gload_glPointParameterfv
-#  define glPointParameteri gload_glPointParameteri
-#  define glPointParameteriv gload_glPointParameteriv
-#  define glFogCoordf gload_glFogCoordf
-#  define glFogCoordfv gload_glFogCoordfv
-#  define glFogCoordd gload_glFogCoordd
-#  define glFogCoorddv gload_glFogCoorddv
-#  define glFogCoordPointer gload_glFogCoordPointer
-#  define glSecondaryColor3b gload_glSecondaryColor3b
-#  define glSecondaryColor3bv gload_glSecondaryColor3bv
-#  define glSecondaryColor3d gload_glSecondaryColor3d
-#  define glSecondaryColor3dv gload_glSecondaryColor3dv
-#  define glSecondaryColor3f gload_glSecondaryColor3f
-#  define glSecondaryColor3fv gload_glSecondaryColor3fv
-#  define glSecondaryColor3i gload_glSecondaryColor3i
-#  define glSecondaryColor3iv gload_glSecondaryColor3iv
-#  define glSecondaryColor3s gload_glSecondaryColor3s
-#  define glSecondaryColor3sv gload_glSecondaryColor3sv
-#  define glSecondaryColor3ub gload_glSecondaryColor3ub
-#  define glSecondaryColor3ubv gload_glSecondaryColor3ubv
-#  define glSecondaryColor3ui gload_glSecondaryColor3ui
-#  define glSecondaryColor3uiv gload_glSecondaryColor3uiv
-#  define glSecondaryColor3us gload_glSecondaryColor3us
-#  define glSecondaryColor3usv gload_glSecondaryColor3usv
-#  define glSecondaryColorPointer gload_glSecondaryColorPointer
-#  define glWindowPos2d gload_glWindowPos2d
-#  define glWindowPos2dv gload_glWindowPos2dv
-#  define glWindowPos2f gload_glWindowPos2f
-#  define glWindowPos2fv gload_glWindowPos2fv
-#  define glWindowPos2i gload_glWindowPos2i
-#  define glWindowPos2iv gload_glWindowPos2iv
-#  define glWindowPos2s gload_glWindowPos2s
-#  define glWindowPos2sv gload_glWindowPos2sv
-#  define glWindowPos3d gload_glWindowPos3d
-#  define glWindowPos3dv gload_glWindowPos3dv
-#  define glWindowPos3f gload_glWindowPos3f
-#  define glWindowPos3fv gload_glWindowPos3fv
-#  define glWindowPos3i gload_glWindowPos3i
-#  define glWindowPos3iv gload_glWindowPos3iv
-#  define glWindowPos3s gload_glWindowPos3s
-#  define glWindowPos3sv gload_glWindowPos3sv
-#  define glBlendColor gload_glBlendColor
-#  define glBlendEquation gload_glBlendEquation
-# endif /* GL_VERSION_1_4 */
-# if defined GL_VERSION_1_5
-#  define glGenQueries gload_glGenQueries
-#  define glDeleteQueries gload_glDeleteQueries
-#  define glIsQuery gload_glIsQuery
-#  define glBeginQuery gload_glBeginQuery
-#  define glEndQuery gload_glEndQuery
-#  define glGetQueryiv gload_glGetQueryiv
-#  define glGetQueryObjectiv gload_glGetQueryObjectiv
-#  define glGetQueryObjectuiv gload_glGetQueryObjectuiv
-#  define glBindBuffer gload_glBindBuffer
-#  define glDeleteBuffers gload_glDeleteBuffers
-#  define glGenBuffers gload_glGenBuffers
-#  define glIsBuffer gload_glIsBuffer
-#  define glBufferData gload_glBufferData
-#  define glBufferSubData gload_glBufferSubData
-#  define glGetBufferSubData gload_glGetBufferSubData
-#  define glMapBuffer gload_glMapBuffer
-#  define glUnmapBuffer gload_glUnmapBuffer
-#  define glGetBufferParameteriv gload_glGetBufferParameteriv
-#  define glGetBufferPointerv gload_glGetBufferPointerv
-# endif /* GL_VERSION_1_5 */
-# if defined GL_VERSION_2_0
-#  define glBlendEquationSeparate gload_glBlendEquationSeparate
-#  define glDrawBuffers gload_glDrawBuffers
-#  define glStencilOpSeparate gload_glStencilOpSeparate
-#  define glStencilFuncSeparate gload_glStencilFuncSeparate
-#  define glStencilMaskSeparate gload_glStencilMaskSeparate
-#  define glAttachShader gload_glAttachShader
-#  define glBindAttribLocation gload_glBindAttribLocation
-#  define glCompileShader gload_glCompileShader
-#  define glCreateProgram gload_glCreateProgram
-#  define glCreateShader gload_glCreateShader
-#  define glDeleteProgram gload_glDeleteProgram
-#  define glDeleteShader gload_glDeleteShader
-#  define glDetachShader gload_glDetachShader
-#  define glDisableVertexAttribArray gload_glDisableVertexAttribArray
-#  define glEnableVertexAttribArray gload_glEnableVertexAttribArray
-#  define glGetActiveAttrib gload_glGetActiveAttrib
-#  define glGetActiveUniform gload_glGetActiveUniform
-#  define glGetAttachedShaders gload_glGetAttachedShaders
-#  define glGetAttribLocation gload_glGetAttribLocation
-#  define glGetProgramiv gload_glGetProgramiv
-#  define glGetProgramInfoLog gload_glGetProgramInfoLog
-#  define glGetShaderiv gload_glGetShaderiv
-#  define glGetShaderInfoLog gload_glGetShaderInfoLog
-#  define glGetShaderSource gload_glGetShaderSource
-#  define glGetUniformLocation gload_glGetUniformLocation
-#  define glGetUniformfv gload_glGetUniformfv
-#  define glGetUniformiv gload_glGetUniformiv
-#  define glGetVertexAttribdv gload_glGetVertexAttribdv
-#  define glGetVertexAttribfv gload_glGetVertexAttribfv
-#  define glGetVertexAttribiv gload_glGetVertexAttribiv
-#  define glGetVertexAttribPointerv gload_glGetVertexAttribPointerv
-#  define glIsProgram gload_glIsProgram
-#  define glIsShader gload_glIsShader
-#  define glLinkProgram gload_glLinkProgram
-#  define glShaderSource gload_glShaderSource
-#  define glUseProgram gload_glUseProgram
-#  define glUniform1f gload_glUniform1f
-#  define glUniform2f gload_glUniform2f
-#  define glUniform3f gload_glUniform3f
-#  define glUniform4f gload_glUniform4f
-#  define glUniform1i gload_glUniform1i
-#  define glUniform2i gload_glUniform2i
-#  define glUniform3i gload_glUniform3i
-#  define glUniform4i gload_glUniform4i
-#  define glUniform1fv gload_glUniform1fv
-#  define glUniform2fv gload_glUniform2fv
-#  define glUniform3fv gload_glUniform3fv
-#  define glUniform4fv gload_glUniform4fv
-#  define glUniform1iv gload_glUniform1iv
-#  define glUniform2iv gload_glUniform2iv
-#  define glUniform3iv gload_glUniform3iv
-#  define glUniform4iv gload_glUniform4iv
-#  define glUniformMatrix2fv gload_glUniformMatrix2fv
-#  define glUniformMatrix3fv gload_glUniformMatrix3fv
-#  define glUniformMatrix4fv gload_glUniformMatrix4fv
-#  define glValidateProgram gload_glValidateProgram
-#  define glVertexAttrib1d gload_glVertexAttrib1d
-#  define glVertexAttrib1dv gload_glVertexAttrib1dv
-#  define glVertexAttrib1f gload_glVertexAttrib1f
-#  define glVertexAttrib1fv gload_glVertexAttrib1fv
-#  define glVertexAttrib1s gload_glVertexAttrib1s
-#  define glVertexAttrib1sv gload_glVertexAttrib1sv
-#  define glVertexAttrib2d gload_glVertexAttrib2d
-#  define glVertexAttrib2dv gload_glVertexAttrib2dv
-#  define glVertexAttrib2f gload_glVertexAttrib2f
-#  define glVertexAttrib2fv gload_glVertexAttrib2fv
-#  define glVertexAttrib2s gload_glVertexAttrib2s
-#  define glVertexAttrib2sv gload_glVertexAttrib2sv
-#  define glVertexAttrib3d gload_glVertexAttrib3d
-#  define glVertexAttrib3dv gload_glVertexAttrib3dv
-#  define glVertexAttrib3f gload_glVertexAttrib3f
-#  define glVertexAttrib3fv gload_glVertexAttrib3fv
-#  define glVertexAttrib3s gload_glVertexAttrib3s
-#  define glVertexAttrib3sv gload_glVertexAttrib3sv
-#  define glVertexAttrib4Nbv gload_glVertexAttrib4Nbv
-#  define glVertexAttrib4Niv gload_glVertexAttrib4Niv
-#  define glVertexAttrib4Nsv gload_glVertexAttrib4Nsv
-#  define glVertexAttrib4Nub gload_glVertexAttrib4Nub
-#  define glVertexAttrib4Nubv gload_glVertexAttrib4Nubv
-#  define glVertexAttrib4Nuiv gload_glVertexAttrib4Nuiv
-#  define glVertexAttrib4Nusv gload_glVertexAttrib4Nusv
-#  define glVertexAttrib4bv gload_glVertexAttrib4bv
-#  define glVertexAttrib4d gload_glVertexAttrib4d
-#  define glVertexAttrib4dv gload_glVertexAttrib4dv
-#  define glVertexAttrib4f gload_glVertexAttrib4f
-#  define glVertexAttrib4fv gload_glVertexAttrib4fv
-#  define glVertexAttrib4iv gload_glVertexAttrib4iv
-#  define glVertexAttrib4s gload_glVertexAttrib4s
-#  define glVertexAttrib4sv gload_glVertexAttrib4sv
-#  define glVertexAttrib4ubv gload_glVertexAttrib4ubv
-#  define glVertexAttrib4uiv gload_glVertexAttrib4uiv
-#  define glVertexAttrib4usv gload_glVertexAttrib4usv
-#  define glVertexAttribPointer gload_glVertexAttribPointer
-# endif /* GL_VERSION_2_0 */
-# if defined GL_VERSION_2_1
-#  define glUniformMatrix2x3fv gload_glUniformMatrix2x3fv
-#  define glUniformMatrix3x2fv gload_glUniformMatrix3x2fv
-#  define glUniformMatrix2x4fv gload_glUniformMatrix2x4fv
-#  define glUniformMatrix4x2fv gload_glUniformMatrix4x2fv
-#  define glUniformMatrix3x4fv gload_glUniformMatrix3x4fv
-#  define glUniformMatrix4x3fv gload_glUniformMatrix4x3fv
-# endif /* GL_VERSION_2_1 */
-# if defined GL_VERSION_3_0
-#  define glColorMaski gload_glColorMaski
-#  define glGetBooleani_v gload_glGetBooleani_v
-#  define glGetIntegeri_v gload_glGetIntegeri_v
-#  define glEnablei gload_glEnablei
-#  define glDisablei gload_glDisablei
-#  define glIsEnabledi gload_glIsEnabledi
-#  define glBeginTransformFeedback gload_glBeginTransformFeedback
-#  define glEndTransformFeedback gload_glEndTransformFeedback
-#  define glBindBufferRange gload_glBindBufferRange
-#  define glBindBufferBase gload_glBindBufferBase
-#  define glTransformFeedbackVaryings gload_glTransformFeedbackVaryings
-#  define glGetTransformFeedbackVarying gload_glGetTransformFeedbackVarying
-#  define glClampColor gload_glClampColor
-#  define glBeginConditionalRender gload_glBeginConditionalRender
-#  define glEndConditionalRender gload_glEndConditionalRender
-#  define glVertexAttribIPointer gload_glVertexAttribIPointer
-#  define glGetVertexAttribIiv gload_glGetVertexAttribIiv
-#  define glGetVertexAttribIuiv gload_glGetVertexAttribIuiv
-#  define glVertexAttribI1i gload_glVertexAttribI1i
-#  define glVertexAttribI2i gload_glVertexAttribI2i
-#  define glVertexAttribI3i gload_glVertexAttribI3i
-#  define glVertexAttribI4i gload_glVertexAttribI4i
-#  define glVertexAttribI1ui gload_glVertexAttribI1ui
-#  define glVertexAttribI2ui gload_glVertexAttribI2ui
-#  define glVertexAttribI3ui gload_glVertexAttribI3ui
-#  define glVertexAttribI4ui gload_glVertexAttribI4ui
-#  define glVertexAttribI1iv gload_glVertexAttribI1iv
-#  define glVertexAttribI2iv gload_glVertexAttribI2iv
-#  define glVertexAttribI3iv gload_glVertexAttribI3iv
-#  define glVertexAttribI4iv gload_glVertexAttribI4iv
-#  define glVertexAttribI1uiv gload_glVertexAttribI1uiv
-#  define glVertexAttribI2uiv gload_glVertexAttribI2uiv
-#  define glVertexAttribI3uiv gload_glVertexAttribI3uiv
-#  define glVertexAttribI4uiv gload_glVertexAttribI4uiv
-#  define glVertexAttribI4bv gload_glVertexAttribI4bv
-#  define glVertexAttribI4sv gload_glVertexAttribI4sv
-#  define glVertexAttribI4ubv gload_glVertexAttribI4ubv
-#  define glVertexAttribI4usv gload_glVertexAttribI4usv
-#  define glGetUniformuiv gload_glGetUniformuiv
-#  define glBindFragDataLocation gload_glBindFragDataLocation
-#  define glGetFragDataLocation gload_glGetFragDataLocation
-#  define glUniform1ui gload_glUniform1ui
-#  define glUniform2ui gload_glUniform2ui
-#  define glUniform3ui gload_glUniform3ui
-#  define glUniform4ui gload_glUniform4ui
-#  define glUniform1uiv gload_glUniform1uiv
-#  define glUniform2uiv gload_glUniform2uiv
-#  define glUniform3uiv gload_glUniform3uiv
-#  define glUniform4uiv gload_glUniform4uiv
-#  define glTexParameterIiv gload_glTexParameterIiv
-#  define glTexParameterIuiv gload_glTexParameterIuiv
-#  define glGetTexParameterIiv gload_glGetTexParameterIiv
-#  define glGetTexParameterIuiv gload_glGetTexParameterIuiv
-#  define glClearBufferiv gload_glClearBufferiv
-#  define glClearBufferuiv gload_glClearBufferuiv
-#  define glClearBufferfv gload_glClearBufferfv
-#  define glClearBufferfi gload_glClearBufferfi
-#  define glGetStringi gload_glGetStringi
-#  define glIsRenderbuffer gload_glIsRenderbuffer
-#  define glBindRenderbuffer gload_glBindRenderbuffer
-#  define glDeleteRenderbuffers gload_glDeleteRenderbuffers
-#  define glGenRenderbuffers gload_glGenRenderbuffers
-#  define glRenderbufferStorage gload_glRenderbufferStorage
-#  define glGetRenderbufferParameteriv gload_glGetRenderbufferParameteriv
-#  define glIsFramebuffer gload_glIsFramebuffer
-#  define glBindFramebuffer gload_glBindFramebuffer
-#  define glDeleteFramebuffers gload_glDeleteFramebuffers
-#  define glGenFramebuffers gload_glGenFramebuffers
-#  define glCheckFramebufferStatus gload_glCheckFramebufferStatus
-#  define glFramebufferTexture1D gload_glFramebufferTexture1D
-#  define glFramebufferTexture2D gload_glFramebufferTexture2D
-#  define glFramebufferTexture3D gload_glFramebufferTexture3D
-#  define glFramebufferRenderbuffer gload_glFramebufferRenderbuffer
-#  define glGetFramebufferAttachmentParameteriv gload_glGetFramebufferAttachmentParameteriv
-#  define glGenerateMipmap gload_glGenerateMipmap
-#  define glBlitFramebuffer gload_glBlitFramebuffer
-#  define glRenderbufferStorageMultisample gload_glRenderbufferStorageMultisample
-#  define glFramebufferTextureLayer gload_glFramebufferTextureLayer
-#  define glMapBufferRange gload_glMapBufferRange
-#  define glFlushMappedBufferRange gload_glFlushMappedBufferRange
-#  define glBindVertexArray gload_glBindVertexArray
-#  define glDeleteVertexArrays gload_glDeleteVertexArrays
-#  define glGenVertexArrays gload_glGenVertexArrays
-#  define glIsVertexArray gload_glIsVertexArray
-# endif /* GL_VERSION_3_0 */
-# if defined GL_VERSION_3_1
-#  define glDrawArraysInstanced gload_glDrawArraysInstanced
-#  define glDrawElementsInstanced gload_glDrawElementsInstanced
-#  define glTexBuffer gload_glTexBuffer
-#  define glPrimitiveRestartIndex gload_glPrimitiveRestartIndex
-#  define glCopyBufferSubData gload_glCopyBufferSubData
-#  define glGetUniformIndices gload_glGetUniformIndices
-#  define glGetActiveUniformsiv gload_glGetActiveUniformsiv
-#  define glGetActiveUniformName gload_glGetActiveUniformName
-#  define glGetUniformBlockIndex gload_glGetUniformBlockIndex
-#  define glGetActiveUniformBlockiv gload_glGetActiveUniformBlockiv
-#  define glGetActiveUniformBlockName gload_glGetActiveUniformBlockName
-#  define glUniformBlockBinding gload_glUniformBlockBinding
-#  define glBindBufferRange gload_glBindBufferRange
-#  define glBindBufferBase gload_glBindBufferBase
-#  define glGetIntegeri_v gload_glGetIntegeri_v
-# endif /* GL_VERSION_3_1 */
-# if defined GL_VERSION_3_2
-#  define glDrawElementsBaseVertex gload_glDrawElementsBaseVertex
-#  define glDrawRangeElementsBaseVertex gload_glDrawRangeElementsBaseVertex
-#  define glDrawElementsInstancedBaseVertex gload_glDrawElementsInstancedBaseVertex
-#  define glMultiDrawElementsBaseVertex gload_glMultiDrawElementsBaseVertex
-#  define glProvokingVertex gload_glProvokingVertex
-#  define glFenceSync gload_glFenceSync
-#  define glIsSync gload_glIsSync
-#  define glDeleteSync gload_glDeleteSync
-#  define glClientWaitSync gload_glClientWaitSync
-#  define glWaitSync gload_glWaitSync
-#  define glGetInteger64v gload_glGetInteger64v
-#  define glGetSynciv gload_glGetSynciv
-#  define glGetInteger64i_v gload_glGetInteger64i_v
-#  define glGetBufferParameteri64v gload_glGetBufferParameteri64v
-#  define glFramebufferTexture gload_glFramebufferTexture
-#  define glTexImage2DMultisample gload_glTexImage2DMultisample
-#  define glTexImage3DMultisample gload_glTexImage3DMultisample
-#  define glGetMultisamplefv gload_glGetMultisamplefv
-#  define glSampleMaski gload_glSampleMaski
-# endif /* GL_VERSION_3_2 */
-# if defined GL_VERSION_3_3
-#  define glBindFragDataLocationIndexed gload_glBindFragDataLocationIndexed
-#  define glGetFragDataIndex gload_glGetFragDataIndex
-#  define glGenSamplers gload_glGenSamplers
-#  define glDeleteSamplers gload_glDeleteSamplers
-#  define glIsSampler gload_glIsSampler
-#  define glBindSampler gload_glBindSampler
-#  define glSamplerParameteri gload_glSamplerParameteri
-#  define glSamplerParameteriv gload_glSamplerParameteriv
-#  define glSamplerParameterf gload_glSamplerParameterf
-#  define glSamplerParameterfv gload_glSamplerParameterfv
-#  define glSamplerParameterIiv gload_glSamplerParameterIiv
-#  define glSamplerParameterIuiv gload_glSamplerParameterIuiv
-#  define glGetSamplerParameteriv gload_glGetSamplerParameteriv
-#  define glGetSamplerParameterIiv gload_glGetSamplerParameterIiv
-#  define glGetSamplerParameterfv gload_glGetSamplerParameterfv
-#  define glGetSamplerParameterIuiv gload_glGetSamplerParameterIuiv
-#  define glQueryCounter gload_glQueryCounter
-#  define glGetQueryObjecti64v gload_glGetQueryObjecti64v
-#  define glGetQueryObjectui64v gload_glGetQueryObjectui64v
-#  define glVertexAttribDivisor gload_glVertexAttribDivisor
-#  define glVertexAttribP1ui gload_glVertexAttribP1ui
-#  define glVertexAttribP1uiv gload_glVertexAttribP1uiv
-#  define glVertexAttribP2ui gload_glVertexAttribP2ui
-#  define glVertexAttribP2uiv gload_glVertexAttribP2uiv
-#  define glVertexAttribP3ui gload_glVertexAttribP3ui
-#  define glVertexAttribP3uiv gload_glVertexAttribP3uiv
-#  define glVertexAttribP4ui gload_glVertexAttribP4ui
-#  define glVertexAttribP4uiv gload_glVertexAttribP4uiv
-#  define glVertexP2ui gload_glVertexP2ui
-#  define glVertexP2uiv gload_glVertexP2uiv
-#  define glVertexP3ui gload_glVertexP3ui
-#  define glVertexP3uiv gload_glVertexP3uiv
-#  define glVertexP4ui gload_glVertexP4ui
-#  define glVertexP4uiv gload_glVertexP4uiv
-#  define glTexCoordP1ui gload_glTexCoordP1ui
-#  define glTexCoordP1uiv gload_glTexCoordP1uiv
-#  define glTexCoordP2ui gload_glTexCoordP2ui
-#  define glTexCoordP2uiv gload_glTexCoordP2uiv
-#  define glTexCoordP3ui gload_glTexCoordP3ui
-#  define glTexCoordP3uiv gload_glTexCoordP3uiv
-#  define glTexCoordP4ui gload_glTexCoordP4ui
-#  define glTexCoordP4uiv gload_glTexCoordP4uiv
-#  define glMultiTexCoordP1ui gload_glMultiTexCoordP1ui
-#  define glMultiTexCoordP1uiv gload_glMultiTexCoordP1uiv
-#  define glMultiTexCoordP2ui gload_glMultiTexCoordP2ui
-#  define glMultiTexCoordP2uiv gload_glMultiTexCoordP2uiv
-#  define glMultiTexCoordP3ui gload_glMultiTexCoordP3ui
-#  define glMultiTexCoordP3uiv gload_glMultiTexCoordP3uiv
-#  define glMultiTexCoordP4ui gload_glMultiTexCoordP4ui
-#  define glMultiTexCoordP4uiv gload_glMultiTexCoordP4uiv
-#  define glNormalP3ui gload_glNormalP3ui
-#  define glNormalP3uiv gload_glNormalP3uiv
-#  define glColorP3ui gload_glColorP3ui
-#  define glColorP3uiv gload_glColorP3uiv
-#  define glColorP4ui gload_glColorP4ui
-#  define glColorP4uiv gload_glColorP4uiv
-#  define glSecondaryColorP3ui gload_glSecondaryColorP3ui
-#  define glSecondaryColorP3uiv gload_glSecondaryColorP3uiv
-# endif /* GL_VERSION_3_3 */
-# if defined GL_VERSION_4_0
-#  define glMinSampleShading gload_glMinSampleShading
-#  define glBlendEquationi gload_glBlendEquationi
-#  define glBlendEquationSeparatei gload_glBlendEquationSeparatei
-#  define glBlendFunci gload_glBlendFunci
-#  define glBlendFuncSeparatei gload_glBlendFuncSeparatei
-#  define glDrawArraysIndirect gload_glDrawArraysIndirect
-#  define glDrawElementsIndirect gload_glDrawElementsIndirect
-#  define glUniform1d gload_glUniform1d
-#  define glUniform2d gload_glUniform2d
-#  define glUniform3d gload_glUniform3d
-#  define glUniform4d gload_glUniform4d
-#  define glUniform1dv gload_glUniform1dv
-#  define glUniform2dv gload_glUniform2dv
-#  define glUniform3dv gload_glUniform3dv
-#  define glUniform4dv gload_glUniform4dv
-#  define glUniformMatrix2dv gload_glUniformMatrix2dv
-#  define glUniformMatrix3dv gload_glUniformMatrix3dv
-#  define glUniformMatrix4dv gload_glUniformMatrix4dv
-#  define glUniformMatrix2x3dv gload_glUniformMatrix2x3dv
-#  define glUniformMatrix2x4dv gload_glUniformMatrix2x4dv
-#  define glUniformMatrix3x2dv gload_glUniformMatrix3x2dv
-#  define glUniformMatrix3x4dv gload_glUniformMatrix3x4dv
-#  define glUniformMatrix4x2dv gload_glUniformMatrix4x2dv
-#  define glUniformMatrix4x3dv gload_glUniformMatrix4x3dv
-#  define glGetUniformdv gload_glGetUniformdv
-#  define glGetSubroutineUniformLocation gload_glGetSubroutineUniformLocation
-#  define glGetSubroutineIndex gload_glGetSubroutineIndex
-#  define glGetActiveSubroutineUniformiv gload_glGetActiveSubroutineUniformiv
-#  define glGetActiveSubroutineUniformName gload_glGetActiveSubroutineUniformName
-#  define glGetActiveSubroutineName gload_glGetActiveSubroutineName
-#  define glUniformSubroutinesuiv gload_glUniformSubroutinesuiv
-#  define glGetUniformSubroutineuiv gload_glGetUniformSubroutineuiv
-#  define glGetProgramStageiv gload_glGetProgramStageiv
-#  define glPatchParameteri gload_glPatchParameteri
-#  define glPatchParameterfv gload_glPatchParameterfv
-#  define glBindTransformFeedback gload_glBindTransformFeedback
-#  define glDeleteTransformFeedbacks gload_glDeleteTransformFeedbacks
-#  define glGenTransformFeedbacks gload_glGenTransformFeedbacks
-#  define glIsTransformFeedback gload_glIsTransformFeedback
-#  define glPauseTransformFeedback gload_glPauseTransformFeedback
-#  define glResumeTransformFeedback gload_glResumeTransformFeedback
-#  define glDrawTransformFeedback gload_glDrawTransformFeedback
-#  define glDrawTransformFeedbackStream gload_glDrawTransformFeedbackStream
-#  define glBeginQueryIndexed gload_glBeginQueryIndexed
-#  define glEndQueryIndexed gload_glEndQueryIndexed
-#  define glGetQueryIndexediv gload_glGetQueryIndexediv
-# endif /* GL_VERSION_4_0 */
-# if defined GL_VERSION_4_1
-#  define glReleaseShaderCompiler gload_glReleaseShaderCompiler
-#  define glShaderBinary gload_glShaderBinary
-#  define glGetShaderPrecisionFormat gload_glGetShaderPrecisionFormat
-#  define glDepthRangef gload_glDepthRangef
-#  define glClearDepthf gload_glClearDepthf
-#  define glGetProgramBinary gload_glGetProgramBinary
-#  define glProgramBinary gload_glProgramBinary
-#  define glProgramParameteri gload_glProgramParameteri
-#  define glUseProgramStages gload_glUseProgramStages
-#  define glActiveShaderProgram gload_glActiveShaderProgram
-#  define glCreateShaderProgramv gload_glCreateShaderProgramv
-#  define glBindProgramPipeline gload_glBindProgramPipeline
-#  define glDeleteProgramPipelines gload_glDeleteProgramPipelines
-#  define glGenProgramPipelines gload_glGenProgramPipelines
-#  define glIsProgramPipeline gload_glIsProgramPipeline
-#  define glGetProgramPipelineiv gload_glGetProgramPipelineiv
-#  define glProgramParameteri gload_glProgramParameteri
-#  define glProgramUniform1i gload_glProgramUniform1i
-#  define glProgramUniform1iv gload_glProgramUniform1iv
-#  define glProgramUniform1f gload_glProgramUniform1f
-#  define glProgramUniform1fv gload_glProgramUniform1fv
-#  define glProgramUniform1d gload_glProgramUniform1d
-#  define glProgramUniform1dv gload_glProgramUniform1dv
-#  define glProgramUniform1ui gload_glProgramUniform1ui
-#  define glProgramUniform1uiv gload_glProgramUniform1uiv
-#  define glProgramUniform2i gload_glProgramUniform2i
-#  define glProgramUniform2iv gload_glProgramUniform2iv
-#  define glProgramUniform2f gload_glProgramUniform2f
-#  define glProgramUniform2fv gload_glProgramUniform2fv
-#  define glProgramUniform2d gload_glProgramUniform2d
-#  define glProgramUniform2dv gload_glProgramUniform2dv
-#  define glProgramUniform2ui gload_glProgramUniform2ui
-#  define glProgramUniform2uiv gload_glProgramUniform2uiv
-#  define glProgramUniform3i gload_glProgramUniform3i
-#  define glProgramUniform3iv gload_glProgramUniform3iv
-#  define glProgramUniform3f gload_glProgramUniform3f
-#  define glProgramUniform3fv gload_glProgramUniform3fv
-#  define glProgramUniform3d gload_glProgramUniform3d
-#  define glProgramUniform3dv gload_glProgramUniform3dv
-#  define glProgramUniform3ui gload_glProgramUniform3ui
-#  define glProgramUniform3uiv gload_glProgramUniform3uiv
-#  define glProgramUniform4i gload_glProgramUniform4i
-#  define glProgramUniform4iv gload_glProgramUniform4iv
-#  define glProgramUniform4f gload_glProgramUniform4f
-#  define glProgramUniform4fv gload_glProgramUniform4fv
-#  define glProgramUniform4d gload_glProgramUniform4d
-#  define glProgramUniform4dv gload_glProgramUniform4dv
-#  define glProgramUniform4ui gload_glProgramUniform4ui
-#  define glProgramUniform4uiv gload_glProgramUniform4uiv
-#  define glProgramUniformMatrix2fv gload_glProgramUniformMatrix2fv
-#  define glProgramUniformMatrix3fv gload_glProgramUniformMatrix3fv
-#  define glProgramUniformMatrix4fv gload_glProgramUniformMatrix4fv
-#  define glProgramUniformMatrix2dv gload_glProgramUniformMatrix2dv
-#  define glProgramUniformMatrix3dv gload_glProgramUniformMatrix3dv
-#  define glProgramUniformMatrix4dv gload_glProgramUniformMatrix4dv
-#  define glProgramUniformMatrix2x3fv gload_glProgramUniformMatrix2x3fv
-#  define glProgramUniformMatrix3x2fv gload_glProgramUniformMatrix3x2fv
-#  define glProgramUniformMatrix2x4fv gload_glProgramUniformMatrix2x4fv
-#  define glProgramUniformMatrix4x2fv gload_glProgramUniformMatrix4x2fv
-#  define glProgramUniformMatrix3x4fv gload_glProgramUniformMatrix3x4fv
-#  define glProgramUniformMatrix4x3fv gload_glProgramUniformMatrix4x3fv
-#  define glProgramUniformMatrix2x3dv gload_glProgramUniformMatrix2x3dv
-#  define glProgramUniformMatrix3x2dv gload_glProgramUniformMatrix3x2dv
-#  define glProgramUniformMatrix2x4dv gload_glProgramUniformMatrix2x4dv
-#  define glProgramUniformMatrix4x2dv gload_glProgramUniformMatrix4x2dv
-#  define glProgramUniformMatrix3x4dv gload_glProgramUniformMatrix3x4dv
-#  define glProgramUniformMatrix4x3dv gload_glProgramUniformMatrix4x3dv
-#  define glValidateProgramPipeline gload_glValidateProgramPipeline
-#  define glGetProgramPipelineInfoLog gload_glGetProgramPipelineInfoLog
-#  define glVertexAttribL1d gload_glVertexAttribL1d
-#  define glVertexAttribL2d gload_glVertexAttribL2d
-#  define glVertexAttribL3d gload_glVertexAttribL3d
-#  define glVertexAttribL4d gload_glVertexAttribL4d
-#  define glVertexAttribL1dv gload_glVertexAttribL1dv
-#  define glVertexAttribL2dv gload_glVertexAttribL2dv
-#  define glVertexAttribL3dv gload_glVertexAttribL3dv
-#  define glVertexAttribL4dv gload_glVertexAttribL4dv
-#  define glVertexAttribLPointer gload_glVertexAttribLPointer
-#  define glGetVertexAttribLdv gload_glGetVertexAttribLdv
-#  define glViewportArrayv gload_glViewportArrayv
-#  define glViewportIndexedf gload_glViewportIndexedf
-#  define glViewportIndexedfv gload_glViewportIndexedfv
-#  define glScissorArrayv gload_glScissorArrayv
-#  define glScissorIndexed gload_glScissorIndexed
-#  define glScissorIndexedv gload_glScissorIndexedv
-#  define glDepthRangeArrayv gload_glDepthRangeArrayv
-#  define glDepthRangeIndexed gload_glDepthRangeIndexed
-#  define glGetFloati_v gload_glGetFloati_v
-#  define glGetDoublei_v gload_glGetDoublei_v
-# endif /* GL_VERSION_4_1 */
-# if defined GL_VERSION_4_2
-#  define glDrawArraysInstancedBaseInstance gload_glDrawArraysInstancedBaseInstance
-#  define glDrawElementsInstancedBaseInstance gload_glDrawElementsInstancedBaseInstance
-#  define glDrawElementsInstancedBaseVertexBaseInstance gload_glDrawElementsInstancedBaseVertexBaseInstance
-#  define glGetInternalformativ gload_glGetInternalformativ
-#  define glGetActiveAtomicCounterBufferiv gload_glGetActiveAtomicCounterBufferiv
-#  define glBindImageTexture gload_glBindImageTexture
-#  define glMemoryBarrier gload_glMemoryBarrier
-#  define glTexStorage1D gload_glTexStorage1D
-#  define glTexStorage2D gload_glTexStorage2D
-#  define glTexStorage3D gload_glTexStorage3D
-#  define glDrawTransformFeedbackInstanced gload_glDrawTransformFeedbackInstanced
-#  define glDrawTransformFeedbackStreamInstanced gload_glDrawTransformFeedbackStreamInstanced
-# endif /* GL_VERSION_4_2 */
-# if defined GL_VERSION_4_3
-#  define glClearBufferData gload_glClearBufferData
-#  define glClearBufferSubData gload_glClearBufferSubData
-#  define glDispatchCompute gload_glDispatchCompute
-#  define glDispatchComputeIndirect gload_glDispatchComputeIndirect
-#  define glCopyImageSubData gload_glCopyImageSubData
-#  define glFramebufferParameteri gload_glFramebufferParameteri
-#  define glGetFramebufferParameteriv gload_glGetFramebufferParameteriv
-#  define glGetInternalformati64v gload_glGetInternalformati64v
-#  define glInvalidateTexSubImage gload_glInvalidateTexSubImage
-#  define glInvalidateTexImage gload_glInvalidateTexImage
-#  define glInvalidateBufferSubData gload_glInvalidateBufferSubData
-#  define glInvalidateBufferData gload_glInvalidateBufferData
-#  define glInvalidateFramebuffer gload_glInvalidateFramebuffer
-#  define glInvalidateSubFramebuffer gload_glInvalidateSubFramebuffer
-#  define glMultiDrawArraysIndirect gload_glMultiDrawArraysIndirect
-#  define glMultiDrawElementsIndirect gload_glMultiDrawElementsIndirect
-#  define glGetProgramInterfaceiv gload_glGetProgramInterfaceiv
-#  define glGetProgramResourceIndex gload_glGetProgramResourceIndex
-#  define glGetProgramResourceName gload_glGetProgramResourceName
-#  define glGetProgramResourceiv gload_glGetProgramResourceiv
-#  define glGetProgramResourceLocation gload_glGetProgramResourceLocation
-#  define glGetProgramResourceLocationIndex gload_glGetProgramResourceLocationIndex
-#  define glShaderStorageBlockBinding gload_glShaderStorageBlockBinding
-#  define glTexBufferRange gload_glTexBufferRange
-#  define glTexStorage2DMultisample gload_glTexStorage2DMultisample
-#  define glTexStorage3DMultisample gload_glTexStorage3DMultisample
-#  define glTextureView gload_glTextureView
-#  define glBindVertexBuffer gload_glBindVertexBuffer
-#  define glVertexAttribFormat gload_glVertexAttribFormat
-#  define glVertexAttribIFormat gload_glVertexAttribIFormat
-#  define glVertexAttribLFormat gload_glVertexAttribLFormat
-#  define glVertexAttribBinding gload_glVertexAttribBinding
-#  define glVertexBindingDivisor gload_glVertexBindingDivisor
-#  define glDebugMessageControl gload_glDebugMessageControl
-#  define glDebugMessageInsert gload_glDebugMessageInsert
-#  define glDebugMessageCallback gload_glDebugMessageCallback
-#  define glGetDebugMessageLog gload_glGetDebugMessageLog
-#  define glPushDebugGroup gload_glPushDebugGroup
-#  define glPopDebugGroup gload_glPopDebugGroup
-#  define glObjectLabel gload_glObjectLabel
-#  define glGetObjectLabel gload_glGetObjectLabel
-#  define glObjectPtrLabel gload_glObjectPtrLabel
-#  define glGetObjectPtrLabel gload_glGetObjectPtrLabel
-#  define glGetPointerv gload_glGetPointerv
-# endif /* GL_VERSION_4_3 */
-# if defined GL_VERSION_4_4
-#  define glBufferStorage gload_glBufferStorage
-#  define glClearTexImage gload_glClearTexImage
-#  define glClearTexSubImage gload_glClearTexSubImage
-#  define glBindBuffersBase gload_glBindBuffersBase
-#  define glBindBuffersRange gload_glBindBuffersRange
-#  define glBindTextures gload_glBindTextures
-#  define glBindSamplers gload_glBindSamplers
-#  define glBindImageTextures gload_glBindImageTextures
-#  define glBindVertexBuffers gload_glBindVertexBuffers
-# endif /* GL_VERSION_4_4 */
-# if defined GL_VERSION_4_5
-#  define glClipControl gload_glClipControl
-#  define glCreateTransformFeedbacks gload_glCreateTransformFeedbacks
-#  define glTransformFeedbackBufferBase gload_glTransformFeedbackBufferBase
-#  define glTransformFeedbackBufferRange gload_glTransformFeedbackBufferRange
-#  define glGetTransformFeedbackiv gload_glGetTransformFeedbackiv
-#  define glGetTransformFeedbacki_v gload_glGetTransformFeedbacki_v
-#  define glGetTransformFeedbacki64_v gload_glGetTransformFeedbacki64_v
-#  define glCreateBuffers gload_glCreateBuffers
-#  define glNamedBufferStorage gload_glNamedBufferStorage
-#  define glNamedBufferData gload_glNamedBufferData
-#  define glNamedBufferSubData gload_glNamedBufferSubData
-#  define glCopyNamedBufferSubData gload_glCopyNamedBufferSubData
-#  define glClearNamedBufferData gload_glClearNamedBufferData
-#  define glClearNamedBufferSubData gload_glClearNamedBufferSubData
-#  define glMapNamedBuffer gload_glMapNamedBuffer
-#  define glMapNamedBufferRange gload_glMapNamedBufferRange
-#  define glUnmapNamedBuffer gload_glUnmapNamedBuffer
-#  define glFlushMappedNamedBufferRange gload_glFlushMappedNamedBufferRange
-#  define glGetNamedBufferParameteriv gload_glGetNamedBufferParameteriv
-#  define glGetNamedBufferParameteri64v gload_glGetNamedBufferParameteri64v
-#  define glGetNamedBufferPointerv gload_glGetNamedBufferPointerv
-#  define glGetNamedBufferSubData gload_glGetNamedBufferSubData
-#  define glCreateFramebuffers gload_glCreateFramebuffers
-#  define glNamedFramebufferRenderbuffer gload_glNamedFramebufferRenderbuffer
-#  define glNamedFramebufferParameteri gload_glNamedFramebufferParameteri
-#  define glNamedFramebufferTexture gload_glNamedFramebufferTexture
-#  define glNamedFramebufferTextureLayer gload_glNamedFramebufferTextureLayer
-#  define glNamedFramebufferDrawBuffer gload_glNamedFramebufferDrawBuffer
-#  define glNamedFramebufferDrawBuffers gload_glNamedFramebufferDrawBuffers
-#  define glNamedFramebufferReadBuffer gload_glNamedFramebufferReadBuffer
-#  define glInvalidateNamedFramebufferData gload_glInvalidateNamedFramebufferData
-#  define glInvalidateNamedFramebufferSubData gload_glInvalidateNamedFramebufferSubData
-#  define glClearNamedFramebufferiv gload_glClearNamedFramebufferiv
-#  define glClearNamedFramebufferuiv gload_glClearNamedFramebufferuiv
-#  define glClearNamedFramebufferfv gload_glClearNamedFramebufferfv
-#  define glClearNamedFramebufferfi gload_glClearNamedFramebufferfi
-#  define glBlitNamedFramebuffer gload_glBlitNamedFramebuffer
-#  define glCheckNamedFramebufferStatus gload_glCheckNamedFramebufferStatus
-#  define glGetNamedFramebufferParameteriv gload_glGetNamedFramebufferParameteriv
-#  define glGetNamedFramebufferAttachmentParameteriv gload_glGetNamedFramebufferAttachmentParameteriv
-#  define glCreateRenderbuffers gload_glCreateRenderbuffers
-#  define glNamedRenderbufferStorage gload_glNamedRenderbufferStorage
-#  define glNamedRenderbufferStorageMultisample gload_glNamedRenderbufferStorageMultisample
-#  define glGetNamedRenderbufferParameteriv gload_glGetNamedRenderbufferParameteriv
-#  define glCreateTextures gload_glCreateTextures
-#  define glTextureBuffer gload_glTextureBuffer
-#  define glTextureBufferRange gload_glTextureBufferRange
-#  define glTextureStorage1D gload_glTextureStorage1D
-#  define glTextureStorage2D gload_glTextureStorage2D
-#  define glTextureStorage3D gload_glTextureStorage3D
-#  define glTextureStorage2DMultisample gload_glTextureStorage2DMultisample
-#  define glTextureStorage3DMultisample gload_glTextureStorage3DMultisample
-#  define glTextureSubImage1D gload_glTextureSubImage1D
-#  define glTextureSubImage2D gload_glTextureSubImage2D
-#  define glTextureSubImage3D gload_glTextureSubImage3D
-#  define glCompressedTextureSubImage1D gload_glCompressedTextureSubImage1D
-#  define glCompressedTextureSubImage2D gload_glCompressedTextureSubImage2D
-#  define glCompressedTextureSubImage3D gload_glCompressedTextureSubImage3D
-#  define glCopyTextureSubImage1D gload_glCopyTextureSubImage1D
-#  define glCopyTextureSubImage2D gload_glCopyTextureSubImage2D
-#  define glCopyTextureSubImage3D gload_glCopyTextureSubImage3D
-#  define glTextureParameterf gload_glTextureParameterf
-#  define glTextureParameterfv gload_glTextureParameterfv
-#  define glTextureParameteri gload_glTextureParameteri
-#  define glTextureParameterIiv gload_glTextureParameterIiv
-#  define glTextureParameterIuiv gload_glTextureParameterIuiv
-#  define glTextureParameteriv gload_glTextureParameteriv
-#  define glGenerateTextureMipmap gload_glGenerateTextureMipmap
-#  define glBindTextureUnit gload_glBindTextureUnit
-#  define glGetTextureImage gload_glGetTextureImage
-#  define glGetCompressedTextureImage gload_glGetCompressedTextureImage
-#  define glGetTextureLevelParameterfv gload_glGetTextureLevelParameterfv
-#  define glGetTextureLevelParameteriv gload_glGetTextureLevelParameteriv
-#  define glGetTextureParameterfv gload_glGetTextureParameterfv
-#  define glGetTextureParameterIiv gload_glGetTextureParameterIiv
-#  define glGetTextureParameterIuiv gload_glGetTextureParameterIuiv
-#  define glGetTextureParameteriv gload_glGetTextureParameteriv
-#  define glCreateVertexArrays gload_glCreateVertexArrays
-#  define glDisableVertexArrayAttrib gload_glDisableVertexArrayAttrib
-#  define glEnableVertexArrayAttrib gload_glEnableVertexArrayAttrib
-#  define glVertexArrayElementBuffer gload_glVertexArrayElementBuffer
-#  define glVertexArrayVertexBuffer gload_glVertexArrayVertexBuffer
-#  define glVertexArrayVertexBuffers gload_glVertexArrayVertexBuffers
-#  define glVertexArrayAttribBinding gload_glVertexArrayAttribBinding
-#  define glVertexArrayAttribFormat gload_glVertexArrayAttribFormat
-#  define glVertexArrayAttribIFormat gload_glVertexArrayAttribIFormat
-#  define glVertexArrayAttribLFormat gload_glVertexArrayAttribLFormat
-#  define glVertexArrayBindingDivisor gload_glVertexArrayBindingDivisor
-#  define glGetVertexArrayiv gload_glGetVertexArrayiv
-#  define glGetVertexArrayIndexediv gload_glGetVertexArrayIndexediv
-#  define glGetVertexArrayIndexed64iv gload_glGetVertexArrayIndexed64iv
-#  define glCreateSamplers gload_glCreateSamplers
-#  define glCreateProgramPipelines gload_glCreateProgramPipelines
-#  define glCreateQueries gload_glCreateQueries
-#  define glGetQueryBufferObjecti64v gload_glGetQueryBufferObjecti64v
-#  define glGetQueryBufferObjectiv gload_glGetQueryBufferObjectiv
-#  define glGetQueryBufferObjectui64v gload_glGetQueryBufferObjectui64v
-#  define glGetQueryBufferObjectuiv gload_glGetQueryBufferObjectuiv
-#  define glMemoryBarrierByRegion gload_glMemoryBarrierByRegion
-#  define glGetTextureSubImage gload_glGetTextureSubImage
-#  define glGetCompressedTextureSubImage gload_glGetCompressedTextureSubImage
-#  define glGetGraphicsResetStatus gload_glGetGraphicsResetStatus
-#  define glGetnCompressedTexImage gload_glGetnCompressedTexImage
-#  define glGetnTexImage gload_glGetnTexImage
-#  define glGetnUniformdv gload_glGetnUniformdv
-#  define glGetnUniformfv gload_glGetnUniformfv
-#  define glGetnUniformiv gload_glGetnUniformiv
-#  define glGetnUniformuiv gload_glGetnUniformuiv
-#  define glReadnPixels gload_glReadnPixels
-#  define glGetnMapdv gload_glGetnMapdv
-#  define glGetnMapfv gload_glGetnMapfv
-#  define glGetnMapiv gload_glGetnMapiv
-#  define glGetnPixelMapfv gload_glGetnPixelMapfv
-#  define glGetnPixelMapuiv gload_glGetnPixelMapuiv
-#  define glGetnPixelMapusv gload_glGetnPixelMapusv
-#  define glGetnPolygonStipple gload_glGetnPolygonStipple
-#  define glGetnColorTable gload_glGetnColorTable
-#  define glGetnConvolutionFilter gload_glGetnConvolutionFilter
-#  define glGetnSeparableFilter gload_glGetnSeparableFilter
-#  define glGetnHistogram gload_glGetnHistogram
-#  define glGetnMinmax gload_glGetnMinmax
-#  define glTextureBarrier gload_glTextureBarrier
-# endif /* GL_VERSION_4_5 */
-# if defined GL_VERSION_4_6
-#  define glSpecializeShader gload_glSpecializeShader
-#  define glMultiDrawArraysIndirectCount gload_glMultiDrawArraysIndirectCount
-#  define glMultiDrawElementsIndirectCount gload_glMultiDrawElementsIndirectCount
-#  define glPolygonOffsetClamp gload_glPolygonOffsetClamp
-# endif /* GL_VERSION_4_6 */
-# if defined GL_VERSION_ES_CM_1_0
-#  define glAlphaFunc gload_glAlphaFunc
-#  define glClearColor gload_glClearColor
-#  define glClearDepthf gload_glClearDepthf
-#  define glClipPlanef gload_glClipPlanef
-#  define glColor4f gload_glColor4f
-#  define glDepthRangef gload_glDepthRangef
-#  define glFogf gload_glFogf
-#  define glFogfv gload_glFogfv
-#  define glFrustumf gload_glFrustumf
-#  define glGetClipPlanef gload_glGetClipPlanef
-#  define glGetFloatv gload_glGetFloatv
-#  define glGetLightfv gload_glGetLightfv
-#  define glGetMaterialfv gload_glGetMaterialfv
-#  define glGetTexEnvfv gload_glGetTexEnvfv
-#  define glGetTexParameterfv gload_glGetTexParameterfv
-#  define glLightModelf gload_glLightModelf
-#  define glLightModelfv gload_glLightModelfv
-#  define glLightf gload_glLightf
-#  define glLightfv gload_glLightfv
-#  define glLineWidth gload_glLineWidth
-#  define glLoadMatrixf gload_glLoadMatrixf
-#  define glMaterialf gload_glMaterialf
-#  define glMaterialfv gload_glMaterialfv
-#  define glMultMatrixf gload_glMultMatrixf
-#  define glMultiTexCoord4f gload_glMultiTexCoord4f
-#  define glNormal3f gload_glNormal3f
-#  define glOrthof gload_glOrthof
-#  define glPointParameterf gload_glPointParameterf
-#  define glPointParameterfv gload_glPointParameterfv
-#  define glPointSize gload_glPointSize
-#  define glPolygonOffset gload_glPolygonOffset
-#  define glRotatef gload_glRotatef
-#  define glScalef gload_glScalef
-#  define glTexEnvf gload_glTexEnvf
-#  define glTexEnvfv gload_glTexEnvfv
-#  define glTexParameterf gload_glTexParameterf
-#  define glTexParameterfv gload_glTexParameterfv
-#  define glTranslatef gload_glTranslatef
-#  define glActiveTexture gload_glActiveTexture
-#  define glAlphaFuncx gload_glAlphaFuncx
-#  define glBindBuffer gload_glBindBuffer
-#  define glBindTexture gload_glBindTexture
-#  define glBlendFunc gload_glBlendFunc
-#  define glBufferData gload_glBufferData
-#  define glBufferSubData gload_glBufferSubData
-#  define glClear gload_glClear
-#  define glClearColorx gload_glClearColorx
-#  define glClearDepthx gload_glClearDepthx
-#  define glClearStencil gload_glClearStencil
-#  define glClientActiveTexture gload_glClientActiveTexture
-#  define glClipPlanex gload_glClipPlanex
-#  define glColor4ub gload_glColor4ub
-#  define glColor4x gload_glColor4x
-#  define glColorMask gload_glColorMask
-#  define glColorPointer gload_glColorPointer
-#  define glCompressedTexImage2D gload_glCompressedTexImage2D
-#  define glCompressedTexSubImage2D gload_glCompressedTexSubImage2D
-#  define glCopyTexImage2D gload_glCopyTexImage2D
-#  define glCopyTexSubImage2D gload_glCopyTexSubImage2D
-#  define glCullFace gload_glCullFace
-#  define glDeleteBuffers gload_glDeleteBuffers
-#  define glDeleteTextures gload_glDeleteTextures
-#  define glDepthFunc gload_glDepthFunc
-#  define glDepthMask gload_glDepthMask
-#  define glDepthRangex gload_glDepthRangex
-#  define glDisable gload_glDisable
-#  define glDisableClientState gload_glDisableClientState
-#  define glDrawArrays gload_glDrawArrays
-#  define glDrawElements gload_glDrawElements
-#  define glEnable gload_glEnable
-#  define glEnableClientState gload_glEnableClientState
-#  define glFinish gload_glFinish
-#  define glFlush gload_glFlush
-#  define glFogx gload_glFogx
-#  define glFogxv gload_glFogxv
-#  define glFrontFace gload_glFrontFace
-#  define glFrustumx gload_glFrustumx
-#  define glGetBooleanv gload_glGetBooleanv
-#  define glGetBufferParameteriv gload_glGetBufferParameteriv
-#  define glGetClipPlanex gload_glGetClipPlanex
-#  define glGenBuffers gload_glGenBuffers
-#  define glGenTextures gload_glGenTextures
-#  define glGetError gload_glGetError
-#  define glGetFixedv gload_glGetFixedv
-#  define glGetIntegerv gload_glGetIntegerv
-#  define glGetLightxv gload_glGetLightxv
-#  define glGetMaterialxv gload_glGetMaterialxv
-#  define glGetPointerv gload_glGetPointerv
-#  define glGetString gload_glGetString
-#  define glGetTexEnviv gload_glGetTexEnviv
-#  define glGetTexEnvxv gload_glGetTexEnvxv
-#  define glGetTexParameteriv gload_glGetTexParameteriv
-#  define glGetTexParameterxv gload_glGetTexParameterxv
-#  define glHint gload_glHint
-#  define glIsBuffer gload_glIsBuffer
-#  define glIsEnabled gload_glIsEnabled
-#  define glIsTexture gload_glIsTexture
-#  define glLightModelx gload_glLightModelx
-#  define glLightModelxv gload_glLightModelxv
-#  define glLightx gload_glLightx
-#  define glLightxv gload_glLightxv
-#  define glLineWidthx gload_glLineWidthx
-#  define glLoadIdentity gload_glLoadIdentity
-#  define glLoadMatrixx gload_glLoadMatrixx
-#  define glLogicOp gload_glLogicOp
-#  define glMaterialx gload_glMaterialx
-#  define glMaterialxv gload_glMaterialxv
-#  define glMatrixMode gload_glMatrixMode
-#  define glMultMatrixx gload_glMultMatrixx
-#  define glMultiTexCoord4x gload_glMultiTexCoord4x
-#  define glNormal3x gload_glNormal3x
-#  define glNormalPointer gload_glNormalPointer
-#  define glOrthox gload_glOrthox
-#  define glPixelStorei gload_glPixelStorei
-#  define glPointParameterx gload_glPointParameterx
-#  define glPointParameterxv gload_glPointParameterxv
-#  define glPointSizex gload_glPointSizex
-#  define glPolygonOffsetx gload_glPolygonOffsetx
-#  define glPopMatrix gload_glPopMatrix
-#  define glPushMatrix gload_glPushMatrix
-#  define glReadPixels gload_glReadPixels
-#  define glRotatex gload_glRotatex
-#  define glSampleCoverage gload_glSampleCoverage
-#  define glSampleCoveragex gload_glSampleCoveragex
-#  define glScalex gload_glScalex
-#  define glScissor gload_glScissor
-#  define glShadeModel gload_glShadeModel
-#  define glStencilFunc gload_glStencilFunc
-#  define glStencilMask gload_glStencilMask
-#  define glStencilOp gload_glStencilOp
-#  define glTexCoordPointer gload_glTexCoordPointer
-#  define glTexEnvi gload_glTexEnvi
-#  define glTexEnvx gload_glTexEnvx
-#  define glTexEnviv gload_glTexEnviv
-#  define glTexEnvxv gload_glTexEnvxv
-#  define glTexImage2D gload_glTexImage2D
-#  define glTexParameteri gload_glTexParameteri
-#  define glTexParameterx gload_glTexParameterx
-#  define glTexParameteriv gload_glTexParameteriv
-#  define glTexParameterxv gload_glTexParameterxv
-#  define glTexSubImage2D gload_glTexSubImage2D
-#  define glTranslatex gload_glTranslatex
-#  define glVertexPointer gload_glVertexPointer
-#  define glViewport gload_glViewport
-# endif /* GL_VERSION_ES_CM_1_0 */
-# if defined GL_ES_VERSION_2_0
-#  define glActiveTexture gload_glActiveTexture
-#  define glAttachShader gload_glAttachShader
-#  define glBindAttribLocation gload_glBindAttribLocation
-#  define glBindBuffer gload_glBindBuffer
-#  define glBindFramebuffer gload_glBindFramebuffer
-#  define glBindRenderbuffer gload_glBindRenderbuffer
-#  define glBindTexture gload_glBindTexture
-#  define glBlendColor gload_glBlendColor
-#  define glBlendEquation gload_glBlendEquation
-#  define glBlendEquationSeparate gload_glBlendEquationSeparate
-#  define glBlendFunc gload_glBlendFunc
-#  define glBlendFuncSeparate gload_glBlendFuncSeparate
-#  define glBufferData gload_glBufferData
-#  define glBufferSubData gload_glBufferSubData
-#  define glCheckFramebufferStatus gload_glCheckFramebufferStatus
-#  define glClear gload_glClear
-#  define glClearColor gload_glClearColor
-#  define glClearDepthf gload_glClearDepthf
-#  define glClearStencil gload_glClearStencil
-#  define glColorMask gload_glColorMask
-#  define glCompileShader gload_glCompileShader
-#  define glCompressedTexImage2D gload_glCompressedTexImage2D
-#  define glCompressedTexSubImage2D gload_glCompressedTexSubImage2D
-#  define glCopyTexImage2D gload_glCopyTexImage2D
-#  define glCopyTexSubImage2D gload_glCopyTexSubImage2D
-#  define glCreateProgram gload_glCreateProgram
-#  define glCreateShader gload_glCreateShader
-#  define glCullFace gload_glCullFace
-#  define glDeleteBuffers gload_glDeleteBuffers
-#  define glDeleteFramebuffers gload_glDeleteFramebuffers
-#  define glDeleteProgram gload_glDeleteProgram
-#  define glDeleteRenderbuffers gload_glDeleteRenderbuffers
-#  define glDeleteShader gload_glDeleteShader
-#  define glDeleteTextures gload_glDeleteTextures
-#  define glDepthFunc gload_glDepthFunc
-#  define glDepthMask gload_glDepthMask
-#  define glDepthRangef gload_glDepthRangef
-#  define glDetachShader gload_glDetachShader
-#  define glDisable gload_glDisable
-#  define glDisableVertexAttribArray gload_glDisableVertexAttribArray
-#  define glDrawArrays gload_glDrawArrays
-#  define glDrawElements gload_glDrawElements
-#  define glEnable gload_glEnable
-#  define glEnableVertexAttribArray gload_glEnableVertexAttribArray
-#  define glFinish gload_glFinish
-#  define glFlush gload_glFlush
-#  define glFramebufferRenderbuffer gload_glFramebufferRenderbuffer
-#  define glFramebufferTexture2D gload_glFramebufferTexture2D
-#  define glFrontFace gload_glFrontFace
-#  define glGenBuffers gload_glGenBuffers
-#  define glGenerateMipmap gload_glGenerateMipmap
-#  define glGenFramebuffers gload_glGenFramebuffers
-#  define glGenRenderbuffers gload_glGenRenderbuffers
-#  define glGenTextures gload_glGenTextures
-#  define glGetActiveAttrib gload_glGetActiveAttrib
-#  define glGetActiveUniform gload_glGetActiveUniform
-#  define glGetAttachedShaders gload_glGetAttachedShaders
-#  define glGetAttribLocation gload_glGetAttribLocation
-#  define glGetBooleanv gload_glGetBooleanv
-#  define glGetBufferParameteriv gload_glGetBufferParameteriv
-#  define glGetError gload_glGetError
-#  define glGetFloatv gload_glGetFloatv
-#  define glGetFramebufferAttachmentParameteriv gload_glGetFramebufferAttachmentParameteriv
-#  define glGetIntegerv gload_glGetIntegerv
-#  define glGetProgramiv gload_glGetProgramiv
-#  define glGetProgramInfoLog gload_glGetProgramInfoLog
-#  define glGetRenderbufferParameteriv gload_glGetRenderbufferParameteriv
-#  define glGetShaderiv gload_glGetShaderiv
-#  define glGetShaderInfoLog gload_glGetShaderInfoLog
-#  define glGetShaderPrecisionFormat gload_glGetShaderPrecisionFormat
-#  define glGetShaderSource gload_glGetShaderSource
-#  define glGetString gload_glGetString
-#  define glGetTexParameterfv gload_glGetTexParameterfv
-#  define glGetTexParameteriv gload_glGetTexParameteriv
-#  define glGetUniformfv gload_glGetUniformfv
-#  define glGetUniformiv gload_glGetUniformiv
-#  define glGetUniformLocation gload_glGetUniformLocation
-#  define glGetVertexAttribfv gload_glGetVertexAttribfv
-#  define glGetVertexAttribiv gload_glGetVertexAttribiv
-#  define glGetVertexAttribPointerv gload_glGetVertexAttribPointerv
-#  define glHint gload_glHint
-#  define glIsBuffer gload_glIsBuffer
-#  define glIsEnabled gload_glIsEnabled
-#  define glIsFramebuffer gload_glIsFramebuffer
-#  define glIsProgram gload_glIsProgram
-#  define glIsRenderbuffer gload_glIsRenderbuffer
-#  define glIsShader gload_glIsShader
-#  define glIsTexture gload_glIsTexture
-#  define glLineWidth gload_glLineWidth
-#  define glLinkProgram gload_glLinkProgram
-#  define glPixelStorei gload_glPixelStorei
-#  define glPolygonOffset gload_glPolygonOffset
-#  define glReadPixels gload_glReadPixels
-#  define glReleaseShaderCompiler gload_glReleaseShaderCompiler
-#  define glRenderbufferStorage gload_glRenderbufferStorage
-#  define glSampleCoverage gload_glSampleCoverage
-#  define glScissor gload_glScissor
-#  define glShaderBinary gload_glShaderBinary
-#  define glShaderSource gload_glShaderSource
-#  define glStencilFunc gload_glStencilFunc
-#  define glStencilFuncSeparate gload_glStencilFuncSeparate
-#  define glStencilMask gload_glStencilMask
-#  define glStencilMaskSeparate gload_glStencilMaskSeparate
-#  define glStencilOp gload_glStencilOp
-#  define glStencilOpSeparate gload_glStencilOpSeparate
-#  define glTexImage2D gload_glTexImage2D
-#  define glTexParameterf gload_glTexParameterf
-#  define glTexParameterfv gload_glTexParameterfv
-#  define glTexParameteri gload_glTexParameteri
-#  define glTexParameteriv gload_glTexParameteriv
-#  define glTexSubImage2D gload_glTexSubImage2D
-#  define glUniform1f gload_glUniform1f
-#  define glUniform1fv gload_glUniform1fv
-#  define glUniform1i gload_glUniform1i
-#  define glUniform1iv gload_glUniform1iv
-#  define glUniform2f gload_glUniform2f
-#  define glUniform2fv gload_glUniform2fv
-#  define glUniform2i gload_glUniform2i
-#  define glUniform2iv gload_glUniform2iv
-#  define glUniform3f gload_glUniform3f
-#  define glUniform3fv gload_glUniform3fv
-#  define glUniform3i gload_glUniform3i
-#  define glUniform3iv gload_glUniform3iv
-#  define glUniform4f gload_glUniform4f
-#  define glUniform4fv gload_glUniform4fv
-#  define glUniform4i gload_glUniform4i
-#  define glUniform4iv gload_glUniform4iv
-#  define glUniformMatrix2fv gload_glUniformMatrix2fv
-#  define glUniformMatrix3fv gload_glUniformMatrix3fv
-#  define glUniformMatrix4fv gload_glUniformMatrix4fv
-#  define glUseProgram gload_glUseProgram
-#  define glValidateProgram gload_glValidateProgram
-#  define glVertexAttrib1f gload_glVertexAttrib1f
-#  define glVertexAttrib1fv gload_glVertexAttrib1fv
-#  define glVertexAttrib2f gload_glVertexAttrib2f
-#  define glVertexAttrib2fv gload_glVertexAttrib2fv
-#  define glVertexAttrib3f gload_glVertexAttrib3f
-#  define glVertexAttrib3fv gload_glVertexAttrib3fv
-#  define glVertexAttrib4f gload_glVertexAttrib4f
-#  define glVertexAttrib4fv gload_glVertexAttrib4fv
-#  define glVertexAttribPointer gload_glVertexAttribPointer
-#  define glViewport gload_glViewport
-# endif /* GL_ES_VERSION_2_0 */
-# if defined GL_ES_VERSION_3_0
-#  define glReadBuffer gload_glReadBuffer
-#  define glDrawRangeElements gload_glDrawRangeElements
-#  define glTexImage3D gload_glTexImage3D
-#  define glTexSubImage3D gload_glTexSubImage3D
-#  define glCopyTexSubImage3D gload_glCopyTexSubImage3D
-#  define glCompressedTexImage3D gload_glCompressedTexImage3D
-#  define glCompressedTexSubImage3D gload_glCompressedTexSubImage3D
-#  define glGenQueries gload_glGenQueries
-#  define glDeleteQueries gload_glDeleteQueries
-#  define glIsQuery gload_glIsQuery
-#  define glBeginQuery gload_glBeginQuery
-#  define glEndQuery gload_glEndQuery
-#  define glGetQueryiv gload_glGetQueryiv
-#  define glGetQueryObjectuiv gload_glGetQueryObjectuiv
-#  define glUnmapBuffer gload_glUnmapBuffer
-#  define glGetBufferPointerv gload_glGetBufferPointerv
-#  define glDrawBuffers gload_glDrawBuffers
-#  define glUniformMatrix2x3fv gload_glUniformMatrix2x3fv
-#  define glUniformMatrix3x2fv gload_glUniformMatrix3x2fv
-#  define glUniformMatrix2x4fv gload_glUniformMatrix2x4fv
-#  define glUniformMatrix4x2fv gload_glUniformMatrix4x2fv
-#  define glUniformMatrix3x4fv gload_glUniformMatrix3x4fv
-#  define glUniformMatrix4x3fv gload_glUniformMatrix4x3fv
-#  define glBlitFramebuffer gload_glBlitFramebuffer
-#  define glRenderbufferStorageMultisample gload_glRenderbufferStorageMultisample
-#  define glFramebufferTextureLayer gload_glFramebufferTextureLayer
-#  define glMapBufferRange gload_glMapBufferRange
-#  define glFlushMappedBufferRange gload_glFlushMappedBufferRange
-#  define glBindVertexArray gload_glBindVertexArray
-#  define glDeleteVertexArrays gload_glDeleteVertexArrays
-#  define glGenVertexArrays gload_glGenVertexArrays
-#  define glIsVertexArray gload_glIsVertexArray
-#  define glGetIntegeri_v gload_glGetIntegeri_v
-#  define glBeginTransformFeedback gload_glBeginTransformFeedback
-#  define glEndTransformFeedback gload_glEndTransformFeedback
-#  define glBindBufferRange gload_glBindBufferRange
-#  define glBindBufferBase gload_glBindBufferBase
-#  define glTransformFeedbackVaryings gload_glTransformFeedbackVaryings
-#  define glGetTransformFeedbackVarying gload_glGetTransformFeedbackVarying
-#  define glVertexAttribIPointer gload_glVertexAttribIPointer
-#  define glGetVertexAttribIiv gload_glGetVertexAttribIiv
-#  define glGetVertexAttribIuiv gload_glGetVertexAttribIuiv
-#  define glVertexAttribI4i gload_glVertexAttribI4i
-#  define glVertexAttribI4ui gload_glVertexAttribI4ui
-#  define glVertexAttribI4iv gload_glVertexAttribI4iv
-#  define glVertexAttribI4uiv gload_glVertexAttribI4uiv
-#  define glGetUniformuiv gload_glGetUniformuiv
-#  define glGetFragDataLocation gload_glGetFragDataLocation
-#  define glUniform1ui gload_glUniform1ui
-#  define glUniform2ui gload_glUniform2ui
-#  define glUniform3ui gload_glUniform3ui
-#  define glUniform4ui gload_glUniform4ui
-#  define glUniform1uiv gload_glUniform1uiv
-#  define glUniform2uiv gload_glUniform2uiv
-#  define glUniform3uiv gload_glUniform3uiv
-#  define glUniform4uiv gload_glUniform4uiv
-#  define glClearBufferiv gload_glClearBufferiv
-#  define glClearBufferuiv gload_glClearBufferuiv
-#  define glClearBufferfv gload_glClearBufferfv
-#  define glClearBufferfi gload_glClearBufferfi
-#  define glGetStringi gload_glGetStringi
-#  define glCopyBufferSubData gload_glCopyBufferSubData
-#  define glGetUniformIndices gload_glGetUniformIndices
-#  define glGetActiveUniformsiv gload_glGetActiveUniformsiv
-#  define glGetUniformBlockIndex gload_glGetUniformBlockIndex
-#  define glGetActiveUniformBlockiv gload_glGetActiveUniformBlockiv
-#  define glGetActiveUniformBlockName gload_glGetActiveUniformBlockName
-#  define glUniformBlockBinding gload_glUniformBlockBinding
-#  define glDrawArraysInstanced gload_glDrawArraysInstanced
-#  define glDrawElementsInstanced gload_glDrawElementsInstanced
-#  define glFenceSync gload_glFenceSync
-#  define glIsSync gload_glIsSync
-#  define glDeleteSync gload_glDeleteSync
-#  define glClientWaitSync gload_glClientWaitSync
-#  define glWaitSync gload_glWaitSync
-#  define glGetInteger64v gload_glGetInteger64v
-#  define glGetSynciv gload_glGetSynciv
-#  define glGetInteger64i_v gload_glGetInteger64i_v
-#  define glGetBufferParameteri64v gload_glGetBufferParameteri64v
-#  define glGenSamplers gload_glGenSamplers
-#  define glDeleteSamplers gload_glDeleteSamplers
-#  define glIsSampler gload_glIsSampler
-#  define glBindSampler gload_glBindSampler
-#  define glSamplerParameteri gload_glSamplerParameteri
-#  define glSamplerParameteriv gload_glSamplerParameteriv
-#  define glSamplerParameterf gload_glSamplerParameterf
-#  define glSamplerParameterfv gload_glSamplerParameterfv
-#  define glGetSamplerParameteriv gload_glGetSamplerParameteriv
-#  define glGetSamplerParameterfv gload_glGetSamplerParameterfv
-#  define glVertexAttribDivisor gload_glVertexAttribDivisor
-#  define glBindTransformFeedback gload_glBindTransformFeedback
-#  define glDeleteTransformFeedbacks gload_glDeleteTransformFeedbacks
-#  define glGenTransformFeedbacks gload_glGenTransformFeedbacks
-#  define glIsTransformFeedback gload_glIsTransformFeedback
-#  define glPauseTransformFeedback gload_glPauseTransformFeedback
-#  define glResumeTransformFeedback gload_glResumeTransformFeedback
-#  define glGetProgramBinary gload_glGetProgramBinary
-#  define glProgramBinary gload_glProgramBinary
-#  define glProgramParameteri gload_glProgramParameteri
-#  define glInvalidateFramebuffer gload_glInvalidateFramebuffer
-#  define glInvalidateSubFramebuffer gload_glInvalidateSubFramebuffer
-#  define glTexStorage2D gload_glTexStorage2D
-#  define glTexStorage3D gload_glTexStorage3D
-#  define glGetInternalformativ gload_glGetInternalformativ
-# endif /* GL_ES_VERSION_3_0 */
-# if defined GL_ES_VERSION_3_1
-#  define glDispatchCompute gload_glDispatchCompute
-#  define glDispatchComputeIndirect gload_glDispatchComputeIndirect
-#  define glDrawArraysIndirect gload_glDrawArraysIndirect
-#  define glDrawElementsIndirect gload_glDrawElementsIndirect
-#  define glFramebufferParameteri gload_glFramebufferParameteri
-#  define glGetFramebufferParameteriv gload_glGetFramebufferParameteriv
-#  define glGetProgramInterfaceiv gload_glGetProgramInterfaceiv
-#  define glGetProgramResourceIndex gload_glGetProgramResourceIndex
-#  define glGetProgramResourceName gload_glGetProgramResourceName
-#  define glGetProgramResourceiv gload_glGetProgramResourceiv
-#  define glGetProgramResourceLocation gload_glGetProgramResourceLocation
-#  define glUseProgramStages gload_glUseProgramStages
-#  define glActiveShaderProgram gload_glActiveShaderProgram
-#  define glCreateShaderProgramv gload_glCreateShaderProgramv
-#  define glBindProgramPipeline gload_glBindProgramPipeline
-#  define glDeleteProgramPipelines gload_glDeleteProgramPipelines
-#  define glGenProgramPipelines gload_glGenProgramPipelines
-#  define glIsProgramPipeline gload_glIsProgramPipeline
-#  define glGetProgramPipelineiv gload_glGetProgramPipelineiv
-#  define glProgramUniform1i gload_glProgramUniform1i
-#  define glProgramUniform2i gload_glProgramUniform2i
-#  define glProgramUniform3i gload_glProgramUniform3i
-#  define glProgramUniform4i gload_glProgramUniform4i
-#  define glProgramUniform1ui gload_glProgramUniform1ui
-#  define glProgramUniform2ui gload_glProgramUniform2ui
-#  define glProgramUniform3ui gload_glProgramUniform3ui
-#  define glProgramUniform4ui gload_glProgramUniform4ui
-#  define glProgramUniform1f gload_glProgramUniform1f
-#  define glProgramUniform2f gload_glProgramUniform2f
-#  define glProgramUniform3f gload_glProgramUniform3f
-#  define glProgramUniform4f gload_glProgramUniform4f
-#  define glProgramUniform1iv gload_glProgramUniform1iv
-#  define glProgramUniform2iv gload_glProgramUniform2iv
-#  define glProgramUniform3iv gload_glProgramUniform3iv
-#  define glProgramUniform4iv gload_glProgramUniform4iv
-#  define glProgramUniform1uiv gload_glProgramUniform1uiv
-#  define glProgramUniform2uiv gload_glProgramUniform2uiv
-#  define glProgramUniform3uiv gload_glProgramUniform3uiv
-#  define glProgramUniform4uiv gload_glProgramUniform4uiv
-#  define glProgramUniform1fv gload_glProgramUniform1fv
-#  define glProgramUniform2fv gload_glProgramUniform2fv
-#  define glProgramUniform3fv gload_glProgramUniform3fv
-#  define glProgramUniform4fv gload_glProgramUniform4fv
-#  define glProgramUniformMatrix2fv gload_glProgramUniformMatrix2fv
-#  define glProgramUniformMatrix3fv gload_glProgramUniformMatrix3fv
-#  define glProgramUniformMatrix4fv gload_glProgramUniformMatrix4fv
-#  define glProgramUniformMatrix2x3fv gload_glProgramUniformMatrix2x3fv
-#  define glProgramUniformMatrix3x2fv gload_glProgramUniformMatrix3x2fv
-#  define glProgramUniformMatrix2x4fv gload_glProgramUniformMatrix2x4fv
-#  define glProgramUniformMatrix4x2fv gload_glProgramUniformMatrix4x2fv
-#  define glProgramUniformMatrix3x4fv gload_glProgramUniformMatrix3x4fv
-#  define glProgramUniformMatrix4x3fv gload_glProgramUniformMatrix4x3fv
-#  define glValidateProgramPipeline gload_glValidateProgramPipeline
-#  define glGetProgramPipelineInfoLog gload_glGetProgramPipelineInfoLog
-#  define glBindImageTexture gload_glBindImageTexture
-#  define glGetBooleani_v gload_glGetBooleani_v
-#  define glMemoryBarrier gload_glMemoryBarrier
-#  define glMemoryBarrierByRegion gload_glMemoryBarrierByRegion
-#  define glTexStorage2DMultisample gload_glTexStorage2DMultisample
-#  define glGetMultisamplefv gload_glGetMultisamplefv
-#  define glSampleMaski gload_glSampleMaski
-#  define glGetTexLevelParameteriv gload_glGetTexLevelParameteriv
-#  define glGetTexLevelParameterfv gload_glGetTexLevelParameterfv
-#  define glBindVertexBuffer gload_glBindVertexBuffer
-#  define glVertexAttribFormat gload_glVertexAttribFormat
-#  define glVertexAttribIFormat gload_glVertexAttribIFormat
-#  define glVertexAttribBinding gload_glVertexAttribBinding
-#  define glVertexBindingDivisor gload_glVertexBindingDivisor
-# endif /* GL_ES_VERSION_3_1 */
-# if defined GL_ES_VERSION_3_2
-#  define glBlendBarrier gload_glBlendBarrier
-#  define glCopyImageSubData gload_glCopyImageSubData
-#  define glDebugMessageControl gload_glDebugMessageControl
-#  define glDebugMessageInsert gload_glDebugMessageInsert
-#  define glDebugMessageCallback gload_glDebugMessageCallback
-#  define glGetDebugMessageLog gload_glGetDebugMessageLog
-#  define glPushDebugGroup gload_glPushDebugGroup
-#  define glPopDebugGroup gload_glPopDebugGroup
-#  define glObjectLabel gload_glObjectLabel
-#  define glGetObjectLabel gload_glGetObjectLabel
-#  define glObjectPtrLabel gload_glObjectPtrLabel
-#  define glGetObjectPtrLabel gload_glGetObjectPtrLabel
-#  define glGetPointerv gload_glGetPointerv
-#  define glEnablei gload_glEnablei
-#  define glDisablei gload_glDisablei
-#  define glBlendEquationi gload_glBlendEquationi
-#  define glBlendEquationSeparatei gload_glBlendEquationSeparatei
-#  define glBlendFunci gload_glBlendFunci
-#  define glBlendFuncSeparatei gload_glBlendFuncSeparatei
-#  define glColorMaski gload_glColorMaski
-#  define glIsEnabledi gload_glIsEnabledi
-#  define glDrawElementsBaseVertex gload_glDrawElementsBaseVertex
-#  define glDrawRangeElementsBaseVertex gload_glDrawRangeElementsBaseVertex
-#  define glDrawElementsInstancedBaseVertex gload_glDrawElementsInstancedBaseVertex
-#  define glFramebufferTexture gload_glFramebufferTexture
-#  define glPrimitiveBoundingBox gload_glPrimitiveBoundingBox
-#  define glGetGraphicsResetStatus gload_glGetGraphicsResetStatus
-#  define glReadnPixels gload_glReadnPixels
-#  define glGetnUniformfv gload_glGetnUniformfv
-#  define glGetnUniformiv gload_glGetnUniformiv
-#  define glGetnUniformuiv gload_glGetnUniformuiv
-#  define glMinSampleShading gload_glMinSampleShading
-#  define glPatchParameteri gload_glPatchParameteri
-#  define glTexParameterIiv gload_glTexParameterIiv
-#  define glTexParameterIuiv gload_glTexParameterIuiv
-#  define glGetTexParameterIiv gload_glGetTexParameterIiv
-#  define glGetTexParameterIuiv gload_glGetTexParameterIuiv
-#  define glSamplerParameterIiv gload_glSamplerParameterIiv
-#  define glSamplerParameterIuiv gload_glSamplerParameterIuiv
-#  define glGetSamplerParameterIiv gload_glGetSamplerParameterIiv
-#  define glGetSamplerParameterIuiv gload_glGetSamplerParameterIuiv
-#  define glTexBuffer gload_glTexBuffer
-#  define glTexBufferRange gload_glTexBufferRange
-#  define glTexStorage3DMultisample gload_glTexStorage3DMultisample
-# endif /* GL_ES_VERSION_3_2 */
-# if defined GL_SC_VERSION_2_0
-#  define glActiveTexture gload_glActiveTexture
-#  define glBindBuffer gload_glBindBuffer
-#  define glBindFramebuffer gload_glBindFramebuffer
-#  define glBindRenderbuffer gload_glBindRenderbuffer
-#  define glBindTexture gload_glBindTexture
-#  define glBlendColor gload_glBlendColor
-#  define glBlendEquation gload_glBlendEquation
-#  define glBlendEquationSeparate gload_glBlendEquationSeparate
-#  define glBlendFunc gload_glBlendFunc
-#  define glBlendFuncSeparate gload_glBlendFuncSeparate
-#  define glBufferData gload_glBufferData
-#  define glBufferSubData gload_glBufferSubData
-#  define glCheckFramebufferStatus gload_glCheckFramebufferStatus
-#  define glClear gload_glClear
-#  define glClearColor gload_glClearColor
-#  define glClearDepthf gload_glClearDepthf
-#  define glClearStencil gload_glClearStencil
-#  define glColorMask gload_glColorMask
-#  define glCompressedTexSubImage2D gload_glCompressedTexSubImage2D
-#  define glCreateProgram gload_glCreateProgram
-#  define glCullFace gload_glCullFace
-#  define glDepthFunc gload_glDepthFunc
-#  define glDepthMask gload_glDepthMask
-#  define glDepthRangef gload_glDepthRangef
-#  define glDisable gload_glDisable
-#  define glDisableVertexAttribArray gload_glDisableVertexAttribArray
-#  define glDrawArrays gload_glDrawArrays
-#  define glDrawRangeElements gload_glDrawRangeElements
-#  define glEnable gload_glEnable
-#  define glEnableVertexAttribArray gload_glEnableVertexAttribArray
-#  define glFinish gload_glFinish
-#  define glFlush gload_glFlush
-#  define glFramebufferRenderbuffer gload_glFramebufferRenderbuffer
-#  define glFramebufferTexture2D gload_glFramebufferTexture2D
-#  define glFrontFace gload_glFrontFace
-#  define glGenBuffers gload_glGenBuffers
-#  define glGenerateMipmap gload_glGenerateMipmap
-#  define glGenFramebuffers gload_glGenFramebuffers
-#  define glGenRenderbuffers gload_glGenRenderbuffers
-#  define glGenTextures gload_glGenTextures
-#  define glGetAttribLocation gload_glGetAttribLocation
-#  define glGetBooleanv gload_glGetBooleanv
-#  define glGetBufferParameteriv gload_glGetBufferParameteriv
-#  define glGetError gload_glGetError
-#  define glGetFloatv gload_glGetFloatv
-#  define glGetFramebufferAttachmentParameteriv gload_glGetFramebufferAttachmentParameteriv
-#  define glGetGraphicsResetStatus gload_glGetGraphicsResetStatus
-#  define glGetIntegerv gload_glGetIntegerv
-#  define glGetProgramiv gload_glGetProgramiv
-#  define glGetRenderbufferParameteriv gload_glGetRenderbufferParameteriv
-#  define glGetString gload_glGetString
-#  define glGetTexParameterfv gload_glGetTexParameterfv
-#  define glGetTexParameteriv gload_glGetTexParameteriv
-#  define glGetnUniformfv gload_glGetnUniformfv
-#  define glGetnUniformiv gload_glGetnUniformiv
-#  define glGetUniformLocation gload_glGetUniformLocation
-#  define glGetVertexAttribfv gload_glGetVertexAttribfv
-#  define glGetVertexAttribiv gload_glGetVertexAttribiv
-#  define glGetVertexAttribPointerv gload_glGetVertexAttribPointerv
-#  define glHint gload_glHint
-#  define glIsEnabled gload_glIsEnabled
-#  define glLineWidth gload_glLineWidth
-#  define glPixelStorei gload_glPixelStorei
-#  define glPolygonOffset gload_glPolygonOffset
-#  define glProgramBinary gload_glProgramBinary
-#  define glReadnPixels gload_glReadnPixels
-#  define glRenderbufferStorage gload_glRenderbufferStorage
-#  define glSampleCoverage gload_glSampleCoverage
-#  define glScissor gload_glScissor
-#  define glStencilFunc gload_glStencilFunc
-#  define glStencilFuncSeparate gload_glStencilFuncSeparate
-#  define glStencilMask gload_glStencilMask
-#  define glStencilMaskSeparate gload_glStencilMaskSeparate
-#  define glStencilOp gload_glStencilOp
-#  define glStencilOpSeparate gload_glStencilOpSeparate
-#  define glTexStorage2D gload_glTexStorage2D
-#  define glTexParameterf gload_glTexParameterf
-#  define glTexParameterfv gload_glTexParameterfv
-#  define glTexParameteri gload_glTexParameteri
-#  define glTexParameteriv gload_glTexParameteriv
-#  define glTexSubImage2D gload_glTexSubImage2D
-#  define glUniform1f gload_glUniform1f
-#  define glUniform1fv gload_glUniform1fv
-#  define glUniform1i gload_glUniform1i
-#  define glUniform1iv gload_glUniform1iv
-#  define glUniform2f gload_glUniform2f
-#  define glUniform2fv gload_glUniform2fv
-#  define glUniform2i gload_glUniform2i
-#  define glUniform2iv gload_glUniform2iv
-#  define glUniform3f gload_glUniform3f
-#  define glUniform3fv gload_glUniform3fv
-#  define glUniform3i gload_glUniform3i
-#  define glUniform3iv gload_glUniform3iv
-#  define glUniform4f gload_glUniform4f
-#  define glUniform4fv gload_glUniform4fv
-#  define glUniform4i gload_glUniform4i
-#  define glUniform4iv gload_glUniform4iv
-#  define glUniformMatrix2fv gload_glUniformMatrix2fv
-#  define glUniformMatrix3fv gload_glUniformMatrix3fv
-#  define glUniformMatrix4fv gload_glUniformMatrix4fv
-#  define glUseProgram gload_glUseProgram
-#  define glVertexAttrib1f gload_glVertexAttrib1f
-#  define glVertexAttrib1fv gload_glVertexAttrib1fv
-#  define glVertexAttrib2f gload_glVertexAttrib2f
-#  define glVertexAttrib2fv gload_glVertexAttrib2fv
-#  define glVertexAttrib3f gload_glVertexAttrib3f
-#  define glVertexAttrib3fv gload_glVertexAttrib3fv
-#  define glVertexAttrib4f gload_glVertexAttrib4f
-#  define glVertexAttrib4fv gload_glVertexAttrib4fv
-#  define glVertexAttribPointer gload_glVertexAttribPointer
-#  define glViewport gload_glViewport
-# endif /* GL_SC_VERSION_2_0 */
+#  if (GL_VERSION_1_0 == 1)
+#   define glCullFace gload_glCullFace
+#   define glFrontFace gload_glFrontFace
+#   define glHint gload_glHint
+#   define glLineWidth gload_glLineWidth
+#   define glPointSize gload_glPointSize
+#   define glPolygonMode gload_glPolygonMode
+#   define glScissor gload_glScissor
+#   define glTexParameterf gload_glTexParameterf
+#   define glTexParameterfv gload_glTexParameterfv
+#   define glTexParameteri gload_glTexParameteri
+#   define glTexParameteriv gload_glTexParameteriv
+#   define glTexImage1D gload_glTexImage1D
+#   define glTexImage2D gload_glTexImage2D
+#   define glDrawBuffer gload_glDrawBuffer
+#   define glClear gload_glClear
+#   define glClearColor gload_glClearColor
+#   define glClearStencil gload_glClearStencil
+#   define glClearDepth gload_glClearDepth
+#   define glStencilMask gload_glStencilMask
+#   define glColorMask gload_glColorMask
+#   define glDepthMask gload_glDepthMask
+#   define glDisable gload_glDisable
+#   define glEnable gload_glEnable
+#   define glFinish gload_glFinish
+#   define glFlush gload_glFlush
+#   define glBlendFunc gload_glBlendFunc
+#   define glLogicOp gload_glLogicOp
+#   define glStencilFunc gload_glStencilFunc
+#   define glStencilOp gload_glStencilOp
+#   define glDepthFunc gload_glDepthFunc
+#   define glPixelStoref gload_glPixelStoref
+#   define glPixelStorei gload_glPixelStorei
+#   define glReadBuffer gload_glReadBuffer
+#   define glReadPixels gload_glReadPixels
+#   define glGetBooleanv gload_glGetBooleanv
+#   define glGetDoublev gload_glGetDoublev
+#   define glGetError gload_glGetError
+#   define glGetFloatv gload_glGetFloatv
+#   define glGetIntegerv gload_glGetIntegerv
+#   define glGetString gload_glGetString
+#   define glGetTexImage gload_glGetTexImage
+#   define glGetTexParameterfv gload_glGetTexParameterfv
+#   define glGetTexParameteriv gload_glGetTexParameteriv
+#   define glGetTexLevelParameterfv gload_glGetTexLevelParameterfv
+#   define glGetTexLevelParameteriv gload_glGetTexLevelParameteriv
+#   define glIsEnabled gload_glIsEnabled
+#   define glDepthRange gload_glDepthRange
+#   define glViewport gload_glViewport
+#   define glNewList gload_glNewList
+#   define glEndList gload_glEndList
+#   define glCallList gload_glCallList
+#   define glCallLists gload_glCallLists
+#   define glDeleteLists gload_glDeleteLists
+#   define glGenLists gload_glGenLists
+#   define glListBase gload_glListBase
+#   define glBegin gload_glBegin
+#   define glBitmap gload_glBitmap
+#   define glColor3b gload_glColor3b
+#   define glColor3bv gload_glColor3bv
+#   define glColor3d gload_glColor3d
+#   define glColor3dv gload_glColor3dv
+#   define glColor3f gload_glColor3f
+#   define glColor3fv gload_glColor3fv
+#   define glColor3i gload_glColor3i
+#   define glColor3iv gload_glColor3iv
+#   define glColor3s gload_glColor3s
+#   define glColor3sv gload_glColor3sv
+#   define glColor3ub gload_glColor3ub
+#   define glColor3ubv gload_glColor3ubv
+#   define glColor3ui gload_glColor3ui
+#   define glColor3uiv gload_glColor3uiv
+#   define glColor3us gload_glColor3us
+#   define glColor3usv gload_glColor3usv
+#   define glColor4b gload_glColor4b
+#   define glColor4bv gload_glColor4bv
+#   define glColor4d gload_glColor4d
+#   define glColor4dv gload_glColor4dv
+#   define glColor4f gload_glColor4f
+#   define glColor4fv gload_glColor4fv
+#   define glColor4i gload_glColor4i
+#   define glColor4iv gload_glColor4iv
+#   define glColor4s gload_glColor4s
+#   define glColor4sv gload_glColor4sv
+#   define glColor4ub gload_glColor4ub
+#   define glColor4ubv gload_glColor4ubv
+#   define glColor4ui gload_glColor4ui
+#   define glColor4uiv gload_glColor4uiv
+#   define glColor4us gload_glColor4us
+#   define glColor4usv gload_glColor4usv
+#   define glEdgeFlag gload_glEdgeFlag
+#   define glEdgeFlagv gload_glEdgeFlagv
+#   define glEnd gload_glEnd
+#   define glIndexd gload_glIndexd
+#   define glIndexdv gload_glIndexdv
+#   define glIndexf gload_glIndexf
+#   define glIndexfv gload_glIndexfv
+#   define glIndexi gload_glIndexi
+#   define glIndexiv gload_glIndexiv
+#   define glIndexs gload_glIndexs
+#   define glIndexsv gload_glIndexsv
+#   define glNormal3b gload_glNormal3b
+#   define glNormal3bv gload_glNormal3bv
+#   define glNormal3d gload_glNormal3d
+#   define glNormal3dv gload_glNormal3dv
+#   define glNormal3f gload_glNormal3f
+#   define glNormal3fv gload_glNormal3fv
+#   define glNormal3i gload_glNormal3i
+#   define glNormal3iv gload_glNormal3iv
+#   define glNormal3s gload_glNormal3s
+#   define glNormal3sv gload_glNormal3sv
+#   define glRasterPos2d gload_glRasterPos2d
+#   define glRasterPos2dv gload_glRasterPos2dv
+#   define glRasterPos2f gload_glRasterPos2f
+#   define glRasterPos2fv gload_glRasterPos2fv
+#   define glRasterPos2i gload_glRasterPos2i
+#   define glRasterPos2iv gload_glRasterPos2iv
+#   define glRasterPos2s gload_glRasterPos2s
+#   define glRasterPos2sv gload_glRasterPos2sv
+#   define glRasterPos3d gload_glRasterPos3d
+#   define glRasterPos3dv gload_glRasterPos3dv
+#   define glRasterPos3f gload_glRasterPos3f
+#   define glRasterPos3fv gload_glRasterPos3fv
+#   define glRasterPos3i gload_glRasterPos3i
+#   define glRasterPos3iv gload_glRasterPos3iv
+#   define glRasterPos3s gload_glRasterPos3s
+#   define glRasterPos3sv gload_glRasterPos3sv
+#   define glRasterPos4d gload_glRasterPos4d
+#   define glRasterPos4dv gload_glRasterPos4dv
+#   define glRasterPos4f gload_glRasterPos4f
+#   define glRasterPos4fv gload_glRasterPos4fv
+#   define glRasterPos4i gload_glRasterPos4i
+#   define glRasterPos4iv gload_glRasterPos4iv
+#   define glRasterPos4s gload_glRasterPos4s
+#   define glRasterPos4sv gload_glRasterPos4sv
+#   define glRectd gload_glRectd
+#   define glRectdv gload_glRectdv
+#   define glRectf gload_glRectf
+#   define glRectfv gload_glRectfv
+#   define glRecti gload_glRecti
+#   define glRectiv gload_glRectiv
+#   define glRects gload_glRects
+#   define glRectsv gload_glRectsv
+#   define glTexCoord1d gload_glTexCoord1d
+#   define glTexCoord1dv gload_glTexCoord1dv
+#   define glTexCoord1f gload_glTexCoord1f
+#   define glTexCoord1fv gload_glTexCoord1fv
+#   define glTexCoord1i gload_glTexCoord1i
+#   define glTexCoord1iv gload_glTexCoord1iv
+#   define glTexCoord1s gload_glTexCoord1s
+#   define glTexCoord1sv gload_glTexCoord1sv
+#   define glTexCoord2d gload_glTexCoord2d
+#   define glTexCoord2dv gload_glTexCoord2dv
+#   define glTexCoord2f gload_glTexCoord2f
+#   define glTexCoord2fv gload_glTexCoord2fv
+#   define glTexCoord2i gload_glTexCoord2i
+#   define glTexCoord2iv gload_glTexCoord2iv
+#   define glTexCoord2s gload_glTexCoord2s
+#   define glTexCoord2sv gload_glTexCoord2sv
+#   define glTexCoord3d gload_glTexCoord3d
+#   define glTexCoord3dv gload_glTexCoord3dv
+#   define glTexCoord3f gload_glTexCoord3f
+#   define glTexCoord3fv gload_glTexCoord3fv
+#   define glTexCoord3i gload_glTexCoord3i
+#   define glTexCoord3iv gload_glTexCoord3iv
+#   define glTexCoord3s gload_glTexCoord3s
+#   define glTexCoord3sv gload_glTexCoord3sv
+#   define glTexCoord4d gload_glTexCoord4d
+#   define glTexCoord4dv gload_glTexCoord4dv
+#   define glTexCoord4f gload_glTexCoord4f
+#   define glTexCoord4fv gload_glTexCoord4fv
+#   define glTexCoord4i gload_glTexCoord4i
+#   define glTexCoord4iv gload_glTexCoord4iv
+#   define glTexCoord4s gload_glTexCoord4s
+#   define glTexCoord4sv gload_glTexCoord4sv
+#   define glVertex2d gload_glVertex2d
+#   define glVertex2dv gload_glVertex2dv
+#   define glVertex2f gload_glVertex2f
+#   define glVertex2fv gload_glVertex2fv
+#   define glVertex2i gload_glVertex2i
+#   define glVertex2iv gload_glVertex2iv
+#   define glVertex2s gload_glVertex2s
+#   define glVertex2sv gload_glVertex2sv
+#   define glVertex3d gload_glVertex3d
+#   define glVertex3dv gload_glVertex3dv
+#   define glVertex3f gload_glVertex3f
+#   define glVertex3fv gload_glVertex3fv
+#   define glVertex3i gload_glVertex3i
+#   define glVertex3iv gload_glVertex3iv
+#   define glVertex3s gload_glVertex3s
+#   define glVertex3sv gload_glVertex3sv
+#   define glVertex4d gload_glVertex4d
+#   define glVertex4dv gload_glVertex4dv
+#   define glVertex4f gload_glVertex4f
+#   define glVertex4fv gload_glVertex4fv
+#   define glVertex4i gload_glVertex4i
+#   define glVertex4iv gload_glVertex4iv
+#   define glVertex4s gload_glVertex4s
+#   define glVertex4sv gload_glVertex4sv
+#   define glClipPlane gload_glClipPlane
+#   define glColorMaterial gload_glColorMaterial
+#   define glFogf gload_glFogf
+#   define glFogfv gload_glFogfv
+#   define glFogi gload_glFogi
+#   define glFogiv gload_glFogiv
+#   define glLightf gload_glLightf
+#   define glLightfv gload_glLightfv
+#   define glLighti gload_glLighti
+#   define glLightiv gload_glLightiv
+#   define glLightModelf gload_glLightModelf
+#   define glLightModelfv gload_glLightModelfv
+#   define glLightModeli gload_glLightModeli
+#   define glLightModeliv gload_glLightModeliv
+#   define glLineStipple gload_glLineStipple
+#   define glMaterialf gload_glMaterialf
+#   define glMaterialfv gload_glMaterialfv
+#   define glMateriali gload_glMateriali
+#   define glMaterialiv gload_glMaterialiv
+#   define glPolygonStipple gload_glPolygonStipple
+#   define glShadeModel gload_glShadeModel
+#   define glTexEnvf gload_glTexEnvf
+#   define glTexEnvfv gload_glTexEnvfv
+#   define glTexEnvi gload_glTexEnvi
+#   define glTexEnviv gload_glTexEnviv
+#   define glTexGend gload_glTexGend
+#   define glTexGendv gload_glTexGendv
+#   define glTexGenf gload_glTexGenf
+#   define glTexGenfv gload_glTexGenfv
+#   define glTexGeni gload_glTexGeni
+#   define glTexGeniv gload_glTexGeniv
+#   define glFeedbackBuffer gload_glFeedbackBuffer
+#   define glSelectBuffer gload_glSelectBuffer
+#   define glRenderMode gload_glRenderMode
+#   define glInitNames gload_glInitNames
+#   define glLoadName gload_glLoadName
+#   define glPassThrough gload_glPassThrough
+#   define glPopName gload_glPopName
+#   define glPushName gload_glPushName
+#   define glClearAccum gload_glClearAccum
+#   define glClearIndex gload_glClearIndex
+#   define glIndexMask gload_glIndexMask
+#   define glAccum gload_glAccum
+#   define glPopAttrib gload_glPopAttrib
+#   define glPushAttrib gload_glPushAttrib
+#   define glMap1d gload_glMap1d
+#   define glMap1f gload_glMap1f
+#   define glMap2d gload_glMap2d
+#   define glMap2f gload_glMap2f
+#   define glMapGrid1d gload_glMapGrid1d
+#   define glMapGrid1f gload_glMapGrid1f
+#   define glMapGrid2d gload_glMapGrid2d
+#   define glMapGrid2f gload_glMapGrid2f
+#   define glEvalCoord1d gload_glEvalCoord1d
+#   define glEvalCoord1dv gload_glEvalCoord1dv
+#   define glEvalCoord1f gload_glEvalCoord1f
+#   define glEvalCoord1fv gload_glEvalCoord1fv
+#   define glEvalCoord2d gload_glEvalCoord2d
+#   define glEvalCoord2dv gload_glEvalCoord2dv
+#   define glEvalCoord2f gload_glEvalCoord2f
+#   define glEvalCoord2fv gload_glEvalCoord2fv
+#   define glEvalMesh1 gload_glEvalMesh1
+#   define glEvalPoint1 gload_glEvalPoint1
+#   define glEvalMesh2 gload_glEvalMesh2
+#   define glEvalPoint2 gload_glEvalPoint2
+#   define glAlphaFunc gload_glAlphaFunc
+#   define glPixelZoom gload_glPixelZoom
+#   define glPixelTransferf gload_glPixelTransferf
+#   define glPixelTransferi gload_glPixelTransferi
+#   define glPixelMapfv gload_glPixelMapfv
+#   define glPixelMapuiv gload_glPixelMapuiv
+#   define glPixelMapusv gload_glPixelMapusv
+#   define glCopyPixels gload_glCopyPixels
+#   define glDrawPixels gload_glDrawPixels
+#   define glGetClipPlane gload_glGetClipPlane
+#   define glGetLightfv gload_glGetLightfv
+#   define glGetLightiv gload_glGetLightiv
+#   define glGetMapdv gload_glGetMapdv
+#   define glGetMapfv gload_glGetMapfv
+#   define glGetMapiv gload_glGetMapiv
+#   define glGetMaterialfv gload_glGetMaterialfv
+#   define glGetMaterialiv gload_glGetMaterialiv
+#   define glGetPixelMapfv gload_glGetPixelMapfv
+#   define glGetPixelMapuiv gload_glGetPixelMapuiv
+#   define glGetPixelMapusv gload_glGetPixelMapusv
+#   define glGetPolygonStipple gload_glGetPolygonStipple
+#   define glGetTexEnvfv gload_glGetTexEnvfv
+#   define glGetTexEnviv gload_glGetTexEnviv
+#   define glGetTexGendv gload_glGetTexGendv
+#   define glGetTexGenfv gload_glGetTexGenfv
+#   define glGetTexGeniv gload_glGetTexGeniv
+#   define glIsList gload_glIsList
+#   define glFrustum gload_glFrustum
+#   define glLoadIdentity gload_glLoadIdentity
+#   define glLoadMatrixf gload_glLoadMatrixf
+#   define glLoadMatrixd gload_glLoadMatrixd
+#   define glMatrixMode gload_glMatrixMode
+#   define glMultMatrixf gload_glMultMatrixf
+#   define glMultMatrixd gload_glMultMatrixd
+#   define glOrtho gload_glOrtho
+#   define glPopMatrix gload_glPopMatrix
+#   define glPushMatrix gload_glPushMatrix
+#   define glRotated gload_glRotated
+#   define glRotatef gload_glRotatef
+#   define glScaled gload_glScaled
+#   define glScalef gload_glScalef
+#   define glTranslated gload_glTranslated
+#   define glTranslatef gload_glTranslatef
+#  endif /* GL_VERSION_1_0 */
+#  if (GL_VERSION_1_1 == 1)
+#   define glDrawArrays gload_glDrawArrays
+#   define glDrawElements gload_glDrawElements
+#   define glGetPointerv gload_glGetPointerv
+#   define glPolygonOffset gload_glPolygonOffset
+#   define glCopyTexImage1D gload_glCopyTexImage1D
+#   define glCopyTexImage2D gload_glCopyTexImage2D
+#   define glCopyTexSubImage1D gload_glCopyTexSubImage1D
+#   define glCopyTexSubImage2D gload_glCopyTexSubImage2D
+#   define glTexSubImage1D gload_glTexSubImage1D
+#   define glTexSubImage2D gload_glTexSubImage2D
+#   define glBindTexture gload_glBindTexture
+#   define glDeleteTextures gload_glDeleteTextures
+#   define glGenTextures gload_glGenTextures
+#   define glIsTexture gload_glIsTexture
+#   define glArrayElement gload_glArrayElement
+#   define glColorPointer gload_glColorPointer
+#   define glDisableClientState gload_glDisableClientState
+#   define glEdgeFlagPointer gload_glEdgeFlagPointer
+#   define glEnableClientState gload_glEnableClientState
+#   define glIndexPointer gload_glIndexPointer
+#   define glInterleavedArrays gload_glInterleavedArrays
+#   define glNormalPointer gload_glNormalPointer
+#   define glTexCoordPointer gload_glTexCoordPointer
+#   define glVertexPointer gload_glVertexPointer
+#   define glAreTexturesResident gload_glAreTexturesResident
+#   define glPrioritizeTextures gload_glPrioritizeTextures
+#   define glIndexub gload_glIndexub
+#   define glIndexubv gload_glIndexubv
+#   define glPopClientAttrib gload_glPopClientAttrib
+#   define glPushClientAttrib gload_glPushClientAttrib
+#  endif /* GL_VERSION_1_1 */
+#  if (GL_VERSION_1_2 == 1)
+#   define glDrawRangeElements gload_glDrawRangeElements
+#   define glTexImage3D gload_glTexImage3D
+#   define glTexSubImage3D gload_glTexSubImage3D
+#   define glCopyTexSubImage3D gload_glCopyTexSubImage3D
+#  endif /* GL_VERSION_1_2 */
+#  if (GL_VERSION_1_3 == 1)
+#   define glActiveTexture gload_glActiveTexture
+#   define glSampleCoverage gload_glSampleCoverage
+#   define glCompressedTexImage3D gload_glCompressedTexImage3D
+#   define glCompressedTexImage2D gload_glCompressedTexImage2D
+#   define glCompressedTexImage1D gload_glCompressedTexImage1D
+#   define glCompressedTexSubImage3D gload_glCompressedTexSubImage3D
+#   define glCompressedTexSubImage2D gload_glCompressedTexSubImage2D
+#   define glCompressedTexSubImage1D gload_glCompressedTexSubImage1D
+#   define glGetCompressedTexImage gload_glGetCompressedTexImage
+#   define glClientActiveTexture gload_glClientActiveTexture
+#   define glMultiTexCoord1d gload_glMultiTexCoord1d
+#   define glMultiTexCoord1dv gload_glMultiTexCoord1dv
+#   define glMultiTexCoord1f gload_glMultiTexCoord1f
+#   define glMultiTexCoord1fv gload_glMultiTexCoord1fv
+#   define glMultiTexCoord1i gload_glMultiTexCoord1i
+#   define glMultiTexCoord1iv gload_glMultiTexCoord1iv
+#   define glMultiTexCoord1s gload_glMultiTexCoord1s
+#   define glMultiTexCoord1sv gload_glMultiTexCoord1sv
+#   define glMultiTexCoord2d gload_glMultiTexCoord2d
+#   define glMultiTexCoord2dv gload_glMultiTexCoord2dv
+#   define glMultiTexCoord2f gload_glMultiTexCoord2f
+#   define glMultiTexCoord2fv gload_glMultiTexCoord2fv
+#   define glMultiTexCoord2i gload_glMultiTexCoord2i
+#   define glMultiTexCoord2iv gload_glMultiTexCoord2iv
+#   define glMultiTexCoord2s gload_glMultiTexCoord2s
+#   define glMultiTexCoord2sv gload_glMultiTexCoord2sv
+#   define glMultiTexCoord3d gload_glMultiTexCoord3d
+#   define glMultiTexCoord3dv gload_glMultiTexCoord3dv
+#   define glMultiTexCoord3f gload_glMultiTexCoord3f
+#   define glMultiTexCoord3fv gload_glMultiTexCoord3fv
+#   define glMultiTexCoord3i gload_glMultiTexCoord3i
+#   define glMultiTexCoord3iv gload_glMultiTexCoord3iv
+#   define glMultiTexCoord3s gload_glMultiTexCoord3s
+#   define glMultiTexCoord3sv gload_glMultiTexCoord3sv
+#   define glMultiTexCoord4d gload_glMultiTexCoord4d
+#   define glMultiTexCoord4dv gload_glMultiTexCoord4dv
+#   define glMultiTexCoord4f gload_glMultiTexCoord4f
+#   define glMultiTexCoord4fv gload_glMultiTexCoord4fv
+#   define glMultiTexCoord4i gload_glMultiTexCoord4i
+#   define glMultiTexCoord4iv gload_glMultiTexCoord4iv
+#   define glMultiTexCoord4s gload_glMultiTexCoord4s
+#   define glMultiTexCoord4sv gload_glMultiTexCoord4sv
+#   define glLoadTransposeMatrixf gload_glLoadTransposeMatrixf
+#   define glLoadTransposeMatrixd gload_glLoadTransposeMatrixd
+#   define glMultTransposeMatrixf gload_glMultTransposeMatrixf
+#   define glMultTransposeMatrixd gload_glMultTransposeMatrixd
+#  endif /* GL_VERSION_1_3 */
+#  if (GL_VERSION_1_4 == 1)
+#   define glBlendFuncSeparate gload_glBlendFuncSeparate
+#   define glMultiDrawArrays gload_glMultiDrawArrays
+#   define glMultiDrawElements gload_glMultiDrawElements
+#   define glPointParameterf gload_glPointParameterf
+#   define glPointParameterfv gload_glPointParameterfv
+#   define glPointParameteri gload_glPointParameteri
+#   define glPointParameteriv gload_glPointParameteriv
+#   define glFogCoordf gload_glFogCoordf
+#   define glFogCoordfv gload_glFogCoordfv
+#   define glFogCoordd gload_glFogCoordd
+#   define glFogCoorddv gload_glFogCoorddv
+#   define glFogCoordPointer gload_glFogCoordPointer
+#   define glSecondaryColor3b gload_glSecondaryColor3b
+#   define glSecondaryColor3bv gload_glSecondaryColor3bv
+#   define glSecondaryColor3d gload_glSecondaryColor3d
+#   define glSecondaryColor3dv gload_glSecondaryColor3dv
+#   define glSecondaryColor3f gload_glSecondaryColor3f
+#   define glSecondaryColor3fv gload_glSecondaryColor3fv
+#   define glSecondaryColor3i gload_glSecondaryColor3i
+#   define glSecondaryColor3iv gload_glSecondaryColor3iv
+#   define glSecondaryColor3s gload_glSecondaryColor3s
+#   define glSecondaryColor3sv gload_glSecondaryColor3sv
+#   define glSecondaryColor3ub gload_glSecondaryColor3ub
+#   define glSecondaryColor3ubv gload_glSecondaryColor3ubv
+#   define glSecondaryColor3ui gload_glSecondaryColor3ui
+#   define glSecondaryColor3uiv gload_glSecondaryColor3uiv
+#   define glSecondaryColor3us gload_glSecondaryColor3us
+#   define glSecondaryColor3usv gload_glSecondaryColor3usv
+#   define glSecondaryColorPointer gload_glSecondaryColorPointer
+#   define glWindowPos2d gload_glWindowPos2d
+#   define glWindowPos2dv gload_glWindowPos2dv
+#   define glWindowPos2f gload_glWindowPos2f
+#   define glWindowPos2fv gload_glWindowPos2fv
+#   define glWindowPos2i gload_glWindowPos2i
+#   define glWindowPos2iv gload_glWindowPos2iv
+#   define glWindowPos2s gload_glWindowPos2s
+#   define glWindowPos2sv gload_glWindowPos2sv
+#   define glWindowPos3d gload_glWindowPos3d
+#   define glWindowPos3dv gload_glWindowPos3dv
+#   define glWindowPos3f gload_glWindowPos3f
+#   define glWindowPos3fv gload_glWindowPos3fv
+#   define glWindowPos3i gload_glWindowPos3i
+#   define glWindowPos3iv gload_glWindowPos3iv
+#   define glWindowPos3s gload_glWindowPos3s
+#   define glWindowPos3sv gload_glWindowPos3sv
+#   define glBlendColor gload_glBlendColor
+#   define glBlendEquation gload_glBlendEquation
+#  endif /* GL_VERSION_1_4 */
+#  if (GL_VERSION_1_5 == 1)
+#   define glGenQueries gload_glGenQueries
+#   define glDeleteQueries gload_glDeleteQueries
+#   define glIsQuery gload_glIsQuery
+#   define glBeginQuery gload_glBeginQuery
+#   define glEndQuery gload_glEndQuery
+#   define glGetQueryiv gload_glGetQueryiv
+#   define glGetQueryObjectiv gload_glGetQueryObjectiv
+#   define glGetQueryObjectuiv gload_glGetQueryObjectuiv
+#   define glBindBuffer gload_glBindBuffer
+#   define glDeleteBuffers gload_glDeleteBuffers
+#   define glGenBuffers gload_glGenBuffers
+#   define glIsBuffer gload_glIsBuffer
+#   define glBufferData gload_glBufferData
+#   define glBufferSubData gload_glBufferSubData
+#   define glGetBufferSubData gload_glGetBufferSubData
+#   define glMapBuffer gload_glMapBuffer
+#   define glUnmapBuffer gload_glUnmapBuffer
+#   define glGetBufferParameteriv gload_glGetBufferParameteriv
+#   define glGetBufferPointerv gload_glGetBufferPointerv
+#  endif /* GL_VERSION_1_5 */
+#  if (GL_VERSION_2_0 == 1)
+#   define glBlendEquationSeparate gload_glBlendEquationSeparate
+#   define glDrawBuffers gload_glDrawBuffers
+#   define glStencilOpSeparate gload_glStencilOpSeparate
+#   define glStencilFuncSeparate gload_glStencilFuncSeparate
+#   define glStencilMaskSeparate gload_glStencilMaskSeparate
+#   define glAttachShader gload_glAttachShader
+#   define glBindAttribLocation gload_glBindAttribLocation
+#   define glCompileShader gload_glCompileShader
+#   define glCreateProgram gload_glCreateProgram
+#   define glCreateShader gload_glCreateShader
+#   define glDeleteProgram gload_glDeleteProgram
+#   define glDeleteShader gload_glDeleteShader
+#   define glDetachShader gload_glDetachShader
+#   define glDisableVertexAttribArray gload_glDisableVertexAttribArray
+#   define glEnableVertexAttribArray gload_glEnableVertexAttribArray
+#   define glGetActiveAttrib gload_glGetActiveAttrib
+#   define glGetActiveUniform gload_glGetActiveUniform
+#   define glGetAttachedShaders gload_glGetAttachedShaders
+#   define glGetAttribLocation gload_glGetAttribLocation
+#   define glGetProgramiv gload_glGetProgramiv
+#   define glGetProgramInfoLog gload_glGetProgramInfoLog
+#   define glGetShaderiv gload_glGetShaderiv
+#   define glGetShaderInfoLog gload_glGetShaderInfoLog
+#   define glGetShaderSource gload_glGetShaderSource
+#   define glGetUniformLocation gload_glGetUniformLocation
+#   define glGetUniformfv gload_glGetUniformfv
+#   define glGetUniformiv gload_glGetUniformiv
+#   define glGetVertexAttribdv gload_glGetVertexAttribdv
+#   define glGetVertexAttribfv gload_glGetVertexAttribfv
+#   define glGetVertexAttribiv gload_glGetVertexAttribiv
+#   define glGetVertexAttribPointerv gload_glGetVertexAttribPointerv
+#   define glIsProgram gload_glIsProgram
+#   define glIsShader gload_glIsShader
+#   define glLinkProgram gload_glLinkProgram
+#   define glShaderSource gload_glShaderSource
+#   define glUseProgram gload_glUseProgram
+#   define glUniform1f gload_glUniform1f
+#   define glUniform2f gload_glUniform2f
+#   define glUniform3f gload_glUniform3f
+#   define glUniform4f gload_glUniform4f
+#   define glUniform1i gload_glUniform1i
+#   define glUniform2i gload_glUniform2i
+#   define glUniform3i gload_glUniform3i
+#   define glUniform4i gload_glUniform4i
+#   define glUniform1fv gload_glUniform1fv
+#   define glUniform2fv gload_glUniform2fv
+#   define glUniform3fv gload_glUniform3fv
+#   define glUniform4fv gload_glUniform4fv
+#   define glUniform1iv gload_glUniform1iv
+#   define glUniform2iv gload_glUniform2iv
+#   define glUniform3iv gload_glUniform3iv
+#   define glUniform4iv gload_glUniform4iv
+#   define glUniformMatrix2fv gload_glUniformMatrix2fv
+#   define glUniformMatrix3fv gload_glUniformMatrix3fv
+#   define glUniformMatrix4fv gload_glUniformMatrix4fv
+#   define glValidateProgram gload_glValidateProgram
+#   define glVertexAttrib1d gload_glVertexAttrib1d
+#   define glVertexAttrib1dv gload_glVertexAttrib1dv
+#   define glVertexAttrib1f gload_glVertexAttrib1f
+#   define glVertexAttrib1fv gload_glVertexAttrib1fv
+#   define glVertexAttrib1s gload_glVertexAttrib1s
+#   define glVertexAttrib1sv gload_glVertexAttrib1sv
+#   define glVertexAttrib2d gload_glVertexAttrib2d
+#   define glVertexAttrib2dv gload_glVertexAttrib2dv
+#   define glVertexAttrib2f gload_glVertexAttrib2f
+#   define glVertexAttrib2fv gload_glVertexAttrib2fv
+#   define glVertexAttrib2s gload_glVertexAttrib2s
+#   define glVertexAttrib2sv gload_glVertexAttrib2sv
+#   define glVertexAttrib3d gload_glVertexAttrib3d
+#   define glVertexAttrib3dv gload_glVertexAttrib3dv
+#   define glVertexAttrib3f gload_glVertexAttrib3f
+#   define glVertexAttrib3fv gload_glVertexAttrib3fv
+#   define glVertexAttrib3s gload_glVertexAttrib3s
+#   define glVertexAttrib3sv gload_glVertexAttrib3sv
+#   define glVertexAttrib4Nbv gload_glVertexAttrib4Nbv
+#   define glVertexAttrib4Niv gload_glVertexAttrib4Niv
+#   define glVertexAttrib4Nsv gload_glVertexAttrib4Nsv
+#   define glVertexAttrib4Nub gload_glVertexAttrib4Nub
+#   define glVertexAttrib4Nubv gload_glVertexAttrib4Nubv
+#   define glVertexAttrib4Nuiv gload_glVertexAttrib4Nuiv
+#   define glVertexAttrib4Nusv gload_glVertexAttrib4Nusv
+#   define glVertexAttrib4bv gload_glVertexAttrib4bv
+#   define glVertexAttrib4d gload_glVertexAttrib4d
+#   define glVertexAttrib4dv gload_glVertexAttrib4dv
+#   define glVertexAttrib4f gload_glVertexAttrib4f
+#   define glVertexAttrib4fv gload_glVertexAttrib4fv
+#   define glVertexAttrib4iv gload_glVertexAttrib4iv
+#   define glVertexAttrib4s gload_glVertexAttrib4s
+#   define glVertexAttrib4sv gload_glVertexAttrib4sv
+#   define glVertexAttrib4ubv gload_glVertexAttrib4ubv
+#   define glVertexAttrib4uiv gload_glVertexAttrib4uiv
+#   define glVertexAttrib4usv gload_glVertexAttrib4usv
+#   define glVertexAttribPointer gload_glVertexAttribPointer
+#  endif /* GL_VERSION_2_0 */
+#  if (GL_VERSION_2_1 == 1)
+#   define glUniformMatrix2x3fv gload_glUniformMatrix2x3fv
+#   define glUniformMatrix3x2fv gload_glUniformMatrix3x2fv
+#   define glUniformMatrix2x4fv gload_glUniformMatrix2x4fv
+#   define glUniformMatrix4x2fv gload_glUniformMatrix4x2fv
+#   define glUniformMatrix3x4fv gload_glUniformMatrix3x4fv
+#   define glUniformMatrix4x3fv gload_glUniformMatrix4x3fv
+#  endif /* GL_VERSION_2_1 */
+#  if (GL_VERSION_3_0 == 1)
+#   define glColorMaski gload_glColorMaski
+#   define glGetBooleani_v gload_glGetBooleani_v
+#   define glGetIntegeri_v gload_glGetIntegeri_v
+#   define glEnablei gload_glEnablei
+#   define glDisablei gload_glDisablei
+#   define glIsEnabledi gload_glIsEnabledi
+#   define glBeginTransformFeedback gload_glBeginTransformFeedback
+#   define glEndTransformFeedback gload_glEndTransformFeedback
+#   define glBindBufferRange gload_glBindBufferRange
+#   define glBindBufferBase gload_glBindBufferBase
+#   define glTransformFeedbackVaryings gload_glTransformFeedbackVaryings
+#   define glGetTransformFeedbackVarying gload_glGetTransformFeedbackVarying
+#   define glClampColor gload_glClampColor
+#   define glBeginConditionalRender gload_glBeginConditionalRender
+#   define glEndConditionalRender gload_glEndConditionalRender
+#   define glVertexAttribIPointer gload_glVertexAttribIPointer
+#   define glGetVertexAttribIiv gload_glGetVertexAttribIiv
+#   define glGetVertexAttribIuiv gload_glGetVertexAttribIuiv
+#   define glVertexAttribI1i gload_glVertexAttribI1i
+#   define glVertexAttribI2i gload_glVertexAttribI2i
+#   define glVertexAttribI3i gload_glVertexAttribI3i
+#   define glVertexAttribI4i gload_glVertexAttribI4i
+#   define glVertexAttribI1ui gload_glVertexAttribI1ui
+#   define glVertexAttribI2ui gload_glVertexAttribI2ui
+#   define glVertexAttribI3ui gload_glVertexAttribI3ui
+#   define glVertexAttribI4ui gload_glVertexAttribI4ui
+#   define glVertexAttribI1iv gload_glVertexAttribI1iv
+#   define glVertexAttribI2iv gload_glVertexAttribI2iv
+#   define glVertexAttribI3iv gload_glVertexAttribI3iv
+#   define glVertexAttribI4iv gload_glVertexAttribI4iv
+#   define glVertexAttribI1uiv gload_glVertexAttribI1uiv
+#   define glVertexAttribI2uiv gload_glVertexAttribI2uiv
+#   define glVertexAttribI3uiv gload_glVertexAttribI3uiv
+#   define glVertexAttribI4uiv gload_glVertexAttribI4uiv
+#   define glVertexAttribI4bv gload_glVertexAttribI4bv
+#   define glVertexAttribI4sv gload_glVertexAttribI4sv
+#   define glVertexAttribI4ubv gload_glVertexAttribI4ubv
+#   define glVertexAttribI4usv gload_glVertexAttribI4usv
+#   define glGetUniformuiv gload_glGetUniformuiv
+#   define glBindFragDataLocation gload_glBindFragDataLocation
+#   define glGetFragDataLocation gload_glGetFragDataLocation
+#   define glUniform1ui gload_glUniform1ui
+#   define glUniform2ui gload_glUniform2ui
+#   define glUniform3ui gload_glUniform3ui
+#   define glUniform4ui gload_glUniform4ui
+#   define glUniform1uiv gload_glUniform1uiv
+#   define glUniform2uiv gload_glUniform2uiv
+#   define glUniform3uiv gload_glUniform3uiv
+#   define glUniform4uiv gload_glUniform4uiv
+#   define glTexParameterIiv gload_glTexParameterIiv
+#   define glTexParameterIuiv gload_glTexParameterIuiv
+#   define glGetTexParameterIiv gload_glGetTexParameterIiv
+#   define glGetTexParameterIuiv gload_glGetTexParameterIuiv
+#   define glClearBufferiv gload_glClearBufferiv
+#   define glClearBufferuiv gload_glClearBufferuiv
+#   define glClearBufferfv gload_glClearBufferfv
+#   define glClearBufferfi gload_glClearBufferfi
+#   define glGetStringi gload_glGetStringi
+#   define glIsRenderbuffer gload_glIsRenderbuffer
+#   define glBindRenderbuffer gload_glBindRenderbuffer
+#   define glDeleteRenderbuffers gload_glDeleteRenderbuffers
+#   define glGenRenderbuffers gload_glGenRenderbuffers
+#   define glRenderbufferStorage gload_glRenderbufferStorage
+#   define glGetRenderbufferParameteriv gload_glGetRenderbufferParameteriv
+#   define glIsFramebuffer gload_glIsFramebuffer
+#   define glBindFramebuffer gload_glBindFramebuffer
+#   define glDeleteFramebuffers gload_glDeleteFramebuffers
+#   define glGenFramebuffers gload_glGenFramebuffers
+#   define glCheckFramebufferStatus gload_glCheckFramebufferStatus
+#   define glFramebufferTexture1D gload_glFramebufferTexture1D
+#   define glFramebufferTexture2D gload_glFramebufferTexture2D
+#   define glFramebufferTexture3D gload_glFramebufferTexture3D
+#   define glFramebufferRenderbuffer gload_glFramebufferRenderbuffer
+#   define glGetFramebufferAttachmentParameteriv gload_glGetFramebufferAttachmentParameteriv
+#   define glGenerateMipmap gload_glGenerateMipmap
+#   define glBlitFramebuffer gload_glBlitFramebuffer
+#   define glRenderbufferStorageMultisample gload_glRenderbufferStorageMultisample
+#   define glFramebufferTextureLayer gload_glFramebufferTextureLayer
+#   define glMapBufferRange gload_glMapBufferRange
+#   define glFlushMappedBufferRange gload_glFlushMappedBufferRange
+#   define glBindVertexArray gload_glBindVertexArray
+#   define glDeleteVertexArrays gload_glDeleteVertexArrays
+#   define glGenVertexArrays gload_glGenVertexArrays
+#   define glIsVertexArray gload_glIsVertexArray
+#  endif /* GL_VERSION_3_0 */
+#  if (GL_VERSION_3_1 == 1)
+#   define glDrawArraysInstanced gload_glDrawArraysInstanced
+#   define glDrawElementsInstanced gload_glDrawElementsInstanced
+#   define glTexBuffer gload_glTexBuffer
+#   define glPrimitiveRestartIndex gload_glPrimitiveRestartIndex
+#   define glCopyBufferSubData gload_glCopyBufferSubData
+#   define glGetUniformIndices gload_glGetUniformIndices
+#   define glGetActiveUniformsiv gload_glGetActiveUniformsiv
+#   define glGetActiveUniformName gload_glGetActiveUniformName
+#   define glGetUniformBlockIndex gload_glGetUniformBlockIndex
+#   define glGetActiveUniformBlockiv gload_glGetActiveUniformBlockiv
+#   define glGetActiveUniformBlockName gload_glGetActiveUniformBlockName
+#   define glUniformBlockBinding gload_glUniformBlockBinding
+#   define glBindBufferRange gload_glBindBufferRange
+#   define glBindBufferBase gload_glBindBufferBase
+#   define glGetIntegeri_v gload_glGetIntegeri_v
+#  endif /* GL_VERSION_3_1 */
+#  if (GL_VERSION_3_2 == 1)
+#   define glDrawElementsBaseVertex gload_glDrawElementsBaseVertex
+#   define glDrawRangeElementsBaseVertex gload_glDrawRangeElementsBaseVertex
+#   define glDrawElementsInstancedBaseVertex gload_glDrawElementsInstancedBaseVertex
+#   define glMultiDrawElementsBaseVertex gload_glMultiDrawElementsBaseVertex
+#   define glProvokingVertex gload_glProvokingVertex
+#   define glFenceSync gload_glFenceSync
+#   define glIsSync gload_glIsSync
+#   define glDeleteSync gload_glDeleteSync
+#   define glClientWaitSync gload_glClientWaitSync
+#   define glWaitSync gload_glWaitSync
+#   define glGetInteger64v gload_glGetInteger64v
+#   define glGetSynciv gload_glGetSynciv
+#   define glGetInteger64i_v gload_glGetInteger64i_v
+#   define glGetBufferParameteri64v gload_glGetBufferParameteri64v
+#   define glFramebufferTexture gload_glFramebufferTexture
+#   define glTexImage2DMultisample gload_glTexImage2DMultisample
+#   define glTexImage3DMultisample gload_glTexImage3DMultisample
+#   define glGetMultisamplefv gload_glGetMultisamplefv
+#   define glSampleMaski gload_glSampleMaski
+#  endif /* GL_VERSION_3_2 */
+#  if (GL_VERSION_3_3 == 1)
+#   define glBindFragDataLocationIndexed gload_glBindFragDataLocationIndexed
+#   define glGetFragDataIndex gload_glGetFragDataIndex
+#   define glGenSamplers gload_glGenSamplers
+#   define glDeleteSamplers gload_glDeleteSamplers
+#   define glIsSampler gload_glIsSampler
+#   define glBindSampler gload_glBindSampler
+#   define glSamplerParameteri gload_glSamplerParameteri
+#   define glSamplerParameteriv gload_glSamplerParameteriv
+#   define glSamplerParameterf gload_glSamplerParameterf
+#   define glSamplerParameterfv gload_glSamplerParameterfv
+#   define glSamplerParameterIiv gload_glSamplerParameterIiv
+#   define glSamplerParameterIuiv gload_glSamplerParameterIuiv
+#   define glGetSamplerParameteriv gload_glGetSamplerParameteriv
+#   define glGetSamplerParameterIiv gload_glGetSamplerParameterIiv
+#   define glGetSamplerParameterfv gload_glGetSamplerParameterfv
+#   define glGetSamplerParameterIuiv gload_glGetSamplerParameterIuiv
+#   define glQueryCounter gload_glQueryCounter
+#   define glGetQueryObjecti64v gload_glGetQueryObjecti64v
+#   define glGetQueryObjectui64v gload_glGetQueryObjectui64v
+#   define glVertexAttribDivisor gload_glVertexAttribDivisor
+#   define glVertexAttribP1ui gload_glVertexAttribP1ui
+#   define glVertexAttribP1uiv gload_glVertexAttribP1uiv
+#   define glVertexAttribP2ui gload_glVertexAttribP2ui
+#   define glVertexAttribP2uiv gload_glVertexAttribP2uiv
+#   define glVertexAttribP3ui gload_glVertexAttribP3ui
+#   define glVertexAttribP3uiv gload_glVertexAttribP3uiv
+#   define glVertexAttribP4ui gload_glVertexAttribP4ui
+#   define glVertexAttribP4uiv gload_glVertexAttribP4uiv
+#   define glVertexP2ui gload_glVertexP2ui
+#   define glVertexP2uiv gload_glVertexP2uiv
+#   define glVertexP3ui gload_glVertexP3ui
+#   define glVertexP3uiv gload_glVertexP3uiv
+#   define glVertexP4ui gload_glVertexP4ui
+#   define glVertexP4uiv gload_glVertexP4uiv
+#   define glTexCoordP1ui gload_glTexCoordP1ui
+#   define glTexCoordP1uiv gload_glTexCoordP1uiv
+#   define glTexCoordP2ui gload_glTexCoordP2ui
+#   define glTexCoordP2uiv gload_glTexCoordP2uiv
+#   define glTexCoordP3ui gload_glTexCoordP3ui
+#   define glTexCoordP3uiv gload_glTexCoordP3uiv
+#   define glTexCoordP4ui gload_glTexCoordP4ui
+#   define glTexCoordP4uiv gload_glTexCoordP4uiv
+#   define glMultiTexCoordP1ui gload_glMultiTexCoordP1ui
+#   define glMultiTexCoordP1uiv gload_glMultiTexCoordP1uiv
+#   define glMultiTexCoordP2ui gload_glMultiTexCoordP2ui
+#   define glMultiTexCoordP2uiv gload_glMultiTexCoordP2uiv
+#   define glMultiTexCoordP3ui gload_glMultiTexCoordP3ui
+#   define glMultiTexCoordP3uiv gload_glMultiTexCoordP3uiv
+#   define glMultiTexCoordP4ui gload_glMultiTexCoordP4ui
+#   define glMultiTexCoordP4uiv gload_glMultiTexCoordP4uiv
+#   define glNormalP3ui gload_glNormalP3ui
+#   define glNormalP3uiv gload_glNormalP3uiv
+#   define glColorP3ui gload_glColorP3ui
+#   define glColorP3uiv gload_glColorP3uiv
+#   define glColorP4ui gload_glColorP4ui
+#   define glColorP4uiv gload_glColorP4uiv
+#   define glSecondaryColorP3ui gload_glSecondaryColorP3ui
+#   define glSecondaryColorP3uiv gload_glSecondaryColorP3uiv
+#  endif /* GL_VERSION_3_3 */
+#  if (GL_VERSION_4_0 == 1)
+#   define glMinSampleShading gload_glMinSampleShading
+#   define glBlendEquationi gload_glBlendEquationi
+#   define glBlendEquationSeparatei gload_glBlendEquationSeparatei
+#   define glBlendFunci gload_glBlendFunci
+#   define glBlendFuncSeparatei gload_glBlendFuncSeparatei
+#   define glDrawArraysIndirect gload_glDrawArraysIndirect
+#   define glDrawElementsIndirect gload_glDrawElementsIndirect
+#   define glUniform1d gload_glUniform1d
+#   define glUniform2d gload_glUniform2d
+#   define glUniform3d gload_glUniform3d
+#   define glUniform4d gload_glUniform4d
+#   define glUniform1dv gload_glUniform1dv
+#   define glUniform2dv gload_glUniform2dv
+#   define glUniform3dv gload_glUniform3dv
+#   define glUniform4dv gload_glUniform4dv
+#   define glUniformMatrix2dv gload_glUniformMatrix2dv
+#   define glUniformMatrix3dv gload_glUniformMatrix3dv
+#   define glUniformMatrix4dv gload_glUniformMatrix4dv
+#   define glUniformMatrix2x3dv gload_glUniformMatrix2x3dv
+#   define glUniformMatrix2x4dv gload_glUniformMatrix2x4dv
+#   define glUniformMatrix3x2dv gload_glUniformMatrix3x2dv
+#   define glUniformMatrix3x4dv gload_glUniformMatrix3x4dv
+#   define glUniformMatrix4x2dv gload_glUniformMatrix4x2dv
+#   define glUniformMatrix4x3dv gload_glUniformMatrix4x3dv
+#   define glGetUniformdv gload_glGetUniformdv
+#   define glGetSubroutineUniformLocation gload_glGetSubroutineUniformLocation
+#   define glGetSubroutineIndex gload_glGetSubroutineIndex
+#   define glGetActiveSubroutineUniformiv gload_glGetActiveSubroutineUniformiv
+#   define glGetActiveSubroutineUniformName gload_glGetActiveSubroutineUniformName
+#   define glGetActiveSubroutineName gload_glGetActiveSubroutineName
+#   define glUniformSubroutinesuiv gload_glUniformSubroutinesuiv
+#   define glGetUniformSubroutineuiv gload_glGetUniformSubroutineuiv
+#   define glGetProgramStageiv gload_glGetProgramStageiv
+#   define glPatchParameteri gload_glPatchParameteri
+#   define glPatchParameterfv gload_glPatchParameterfv
+#   define glBindTransformFeedback gload_glBindTransformFeedback
+#   define glDeleteTransformFeedbacks gload_glDeleteTransformFeedbacks
+#   define glGenTransformFeedbacks gload_glGenTransformFeedbacks
+#   define glIsTransformFeedback gload_glIsTransformFeedback
+#   define glPauseTransformFeedback gload_glPauseTransformFeedback
+#   define glResumeTransformFeedback gload_glResumeTransformFeedback
+#   define glDrawTransformFeedback gload_glDrawTransformFeedback
+#   define glDrawTransformFeedbackStream gload_glDrawTransformFeedbackStream
+#   define glBeginQueryIndexed gload_glBeginQueryIndexed
+#   define glEndQueryIndexed gload_glEndQueryIndexed
+#   define glGetQueryIndexediv gload_glGetQueryIndexediv
+#  endif /* GL_VERSION_4_0 */
+#  if (GL_VERSION_4_1 == 1)
+#   define glReleaseShaderCompiler gload_glReleaseShaderCompiler
+#   define glShaderBinary gload_glShaderBinary
+#   define glGetShaderPrecisionFormat gload_glGetShaderPrecisionFormat
+#   define glDepthRangef gload_glDepthRangef
+#   define glClearDepthf gload_glClearDepthf
+#   define glGetProgramBinary gload_glGetProgramBinary
+#   define glProgramBinary gload_glProgramBinary
+#   define glProgramParameteri gload_glProgramParameteri
+#   define glUseProgramStages gload_glUseProgramStages
+#   define glActiveShaderProgram gload_glActiveShaderProgram
+#   define glCreateShaderProgramv gload_glCreateShaderProgramv
+#   define glBindProgramPipeline gload_glBindProgramPipeline
+#   define glDeleteProgramPipelines gload_glDeleteProgramPipelines
+#   define glGenProgramPipelines gload_glGenProgramPipelines
+#   define glIsProgramPipeline gload_glIsProgramPipeline
+#   define glGetProgramPipelineiv gload_glGetProgramPipelineiv
+#   define glProgramParameteri gload_glProgramParameteri
+#   define glProgramUniform1i gload_glProgramUniform1i
+#   define glProgramUniform1iv gload_glProgramUniform1iv
+#   define glProgramUniform1f gload_glProgramUniform1f
+#   define glProgramUniform1fv gload_glProgramUniform1fv
+#   define glProgramUniform1d gload_glProgramUniform1d
+#   define glProgramUniform1dv gload_glProgramUniform1dv
+#   define glProgramUniform1ui gload_glProgramUniform1ui
+#   define glProgramUniform1uiv gload_glProgramUniform1uiv
+#   define glProgramUniform2i gload_glProgramUniform2i
+#   define glProgramUniform2iv gload_glProgramUniform2iv
+#   define glProgramUniform2f gload_glProgramUniform2f
+#   define glProgramUniform2fv gload_glProgramUniform2fv
+#   define glProgramUniform2d gload_glProgramUniform2d
+#   define glProgramUniform2dv gload_glProgramUniform2dv
+#   define glProgramUniform2ui gload_glProgramUniform2ui
+#   define glProgramUniform2uiv gload_glProgramUniform2uiv
+#   define glProgramUniform3i gload_glProgramUniform3i
+#   define glProgramUniform3iv gload_glProgramUniform3iv
+#   define glProgramUniform3f gload_glProgramUniform3f
+#   define glProgramUniform3fv gload_glProgramUniform3fv
+#   define glProgramUniform3d gload_glProgramUniform3d
+#   define glProgramUniform3dv gload_glProgramUniform3dv
+#   define glProgramUniform3ui gload_glProgramUniform3ui
+#   define glProgramUniform3uiv gload_glProgramUniform3uiv
+#   define glProgramUniform4i gload_glProgramUniform4i
+#   define glProgramUniform4iv gload_glProgramUniform4iv
+#   define glProgramUniform4f gload_glProgramUniform4f
+#   define glProgramUniform4fv gload_glProgramUniform4fv
+#   define glProgramUniform4d gload_glProgramUniform4d
+#   define glProgramUniform4dv gload_glProgramUniform4dv
+#   define glProgramUniform4ui gload_glProgramUniform4ui
+#   define glProgramUniform4uiv gload_glProgramUniform4uiv
+#   define glProgramUniformMatrix2fv gload_glProgramUniformMatrix2fv
+#   define glProgramUniformMatrix3fv gload_glProgramUniformMatrix3fv
+#   define glProgramUniformMatrix4fv gload_glProgramUniformMatrix4fv
+#   define glProgramUniformMatrix2dv gload_glProgramUniformMatrix2dv
+#   define glProgramUniformMatrix3dv gload_glProgramUniformMatrix3dv
+#   define glProgramUniformMatrix4dv gload_glProgramUniformMatrix4dv
+#   define glProgramUniformMatrix2x3fv gload_glProgramUniformMatrix2x3fv
+#   define glProgramUniformMatrix3x2fv gload_glProgramUniformMatrix3x2fv
+#   define glProgramUniformMatrix2x4fv gload_glProgramUniformMatrix2x4fv
+#   define glProgramUniformMatrix4x2fv gload_glProgramUniformMatrix4x2fv
+#   define glProgramUniformMatrix3x4fv gload_glProgramUniformMatrix3x4fv
+#   define glProgramUniformMatrix4x3fv gload_glProgramUniformMatrix4x3fv
+#   define glProgramUniformMatrix2x3dv gload_glProgramUniformMatrix2x3dv
+#   define glProgramUniformMatrix3x2dv gload_glProgramUniformMatrix3x2dv
+#   define glProgramUniformMatrix2x4dv gload_glProgramUniformMatrix2x4dv
+#   define glProgramUniformMatrix4x2dv gload_glProgramUniformMatrix4x2dv
+#   define glProgramUniformMatrix3x4dv gload_glProgramUniformMatrix3x4dv
+#   define glProgramUniformMatrix4x3dv gload_glProgramUniformMatrix4x3dv
+#   define glValidateProgramPipeline gload_glValidateProgramPipeline
+#   define glGetProgramPipelineInfoLog gload_glGetProgramPipelineInfoLog
+#   define glVertexAttribL1d gload_glVertexAttribL1d
+#   define glVertexAttribL2d gload_glVertexAttribL2d
+#   define glVertexAttribL3d gload_glVertexAttribL3d
+#   define glVertexAttribL4d gload_glVertexAttribL4d
+#   define glVertexAttribL1dv gload_glVertexAttribL1dv
+#   define glVertexAttribL2dv gload_glVertexAttribL2dv
+#   define glVertexAttribL3dv gload_glVertexAttribL3dv
+#   define glVertexAttribL4dv gload_glVertexAttribL4dv
+#   define glVertexAttribLPointer gload_glVertexAttribLPointer
+#   define glGetVertexAttribLdv gload_glGetVertexAttribLdv
+#   define glViewportArrayv gload_glViewportArrayv
+#   define glViewportIndexedf gload_glViewportIndexedf
+#   define glViewportIndexedfv gload_glViewportIndexedfv
+#   define glScissorArrayv gload_glScissorArrayv
+#   define glScissorIndexed gload_glScissorIndexed
+#   define glScissorIndexedv gload_glScissorIndexedv
+#   define glDepthRangeArrayv gload_glDepthRangeArrayv
+#   define glDepthRangeIndexed gload_glDepthRangeIndexed
+#   define glGetFloati_v gload_glGetFloati_v
+#   define glGetDoublei_v gload_glGetDoublei_v
+#  endif /* GL_VERSION_4_1 */
+#  if (GL_VERSION_4_2 == 1)
+#   define glDrawArraysInstancedBaseInstance gload_glDrawArraysInstancedBaseInstance
+#   define glDrawElementsInstancedBaseInstance gload_glDrawElementsInstancedBaseInstance
+#   define glDrawElementsInstancedBaseVertexBaseInstance gload_glDrawElementsInstancedBaseVertexBaseInstance
+#   define glGetInternalformativ gload_glGetInternalformativ
+#   define glGetActiveAtomicCounterBufferiv gload_glGetActiveAtomicCounterBufferiv
+#   define glBindImageTexture gload_glBindImageTexture
+#   define glMemoryBarrier gload_glMemoryBarrier
+#   define glTexStorage1D gload_glTexStorage1D
+#   define glTexStorage2D gload_glTexStorage2D
+#   define glTexStorage3D gload_glTexStorage3D
+#   define glDrawTransformFeedbackInstanced gload_glDrawTransformFeedbackInstanced
+#   define glDrawTransformFeedbackStreamInstanced gload_glDrawTransformFeedbackStreamInstanced
+#  endif /* GL_VERSION_4_2 */
+#  if (GL_VERSION_4_3 == 1)
+#   define glClearBufferData gload_glClearBufferData
+#   define glClearBufferSubData gload_glClearBufferSubData
+#   define glDispatchCompute gload_glDispatchCompute
+#   define glDispatchComputeIndirect gload_glDispatchComputeIndirect
+#   define glCopyImageSubData gload_glCopyImageSubData
+#   define glFramebufferParameteri gload_glFramebufferParameteri
+#   define glGetFramebufferParameteriv gload_glGetFramebufferParameteriv
+#   define glGetInternalformati64v gload_glGetInternalformati64v
+#   define glInvalidateTexSubImage gload_glInvalidateTexSubImage
+#   define glInvalidateTexImage gload_glInvalidateTexImage
+#   define glInvalidateBufferSubData gload_glInvalidateBufferSubData
+#   define glInvalidateBufferData gload_glInvalidateBufferData
+#   define glInvalidateFramebuffer gload_glInvalidateFramebuffer
+#   define glInvalidateSubFramebuffer gload_glInvalidateSubFramebuffer
+#   define glMultiDrawArraysIndirect gload_glMultiDrawArraysIndirect
+#   define glMultiDrawElementsIndirect gload_glMultiDrawElementsIndirect
+#   define glGetProgramInterfaceiv gload_glGetProgramInterfaceiv
+#   define glGetProgramResourceIndex gload_glGetProgramResourceIndex
+#   define glGetProgramResourceName gload_glGetProgramResourceName
+#   define glGetProgramResourceiv gload_glGetProgramResourceiv
+#   define glGetProgramResourceLocation gload_glGetProgramResourceLocation
+#   define glGetProgramResourceLocationIndex gload_glGetProgramResourceLocationIndex
+#   define glShaderStorageBlockBinding gload_glShaderStorageBlockBinding
+#   define glTexBufferRange gload_glTexBufferRange
+#   define glTexStorage2DMultisample gload_glTexStorage2DMultisample
+#   define glTexStorage3DMultisample gload_glTexStorage3DMultisample
+#   define glTextureView gload_glTextureView
+#   define glBindVertexBuffer gload_glBindVertexBuffer
+#   define glVertexAttribFormat gload_glVertexAttribFormat
+#   define glVertexAttribIFormat gload_glVertexAttribIFormat
+#   define glVertexAttribLFormat gload_glVertexAttribLFormat
+#   define glVertexAttribBinding gload_glVertexAttribBinding
+#   define glVertexBindingDivisor gload_glVertexBindingDivisor
+#   define glDebugMessageControl gload_glDebugMessageControl
+#   define glDebugMessageInsert gload_glDebugMessageInsert
+#   define glDebugMessageCallback gload_glDebugMessageCallback
+#   define glGetDebugMessageLog gload_glGetDebugMessageLog
+#   define glPushDebugGroup gload_glPushDebugGroup
+#   define glPopDebugGroup gload_glPopDebugGroup
+#   define glObjectLabel gload_glObjectLabel
+#   define glGetObjectLabel gload_glGetObjectLabel
+#   define glObjectPtrLabel gload_glObjectPtrLabel
+#   define glGetObjectPtrLabel gload_glGetObjectPtrLabel
+#   define glGetPointerv gload_glGetPointerv
+#  endif /* GL_VERSION_4_3 */
+#  if (GL_VERSION_4_4 == 1)
+#   define glBufferStorage gload_glBufferStorage
+#   define glClearTexImage gload_glClearTexImage
+#   define glClearTexSubImage gload_glClearTexSubImage
+#   define glBindBuffersBase gload_glBindBuffersBase
+#   define glBindBuffersRange gload_glBindBuffersRange
+#   define glBindTextures gload_glBindTextures
+#   define glBindSamplers gload_glBindSamplers
+#   define glBindImageTextures gload_glBindImageTextures
+#   define glBindVertexBuffers gload_glBindVertexBuffers
+#  endif /* GL_VERSION_4_4 */
+#  if (GL_VERSION_4_5 == 1)
+#   define glClipControl gload_glClipControl
+#   define glCreateTransformFeedbacks gload_glCreateTransformFeedbacks
+#   define glTransformFeedbackBufferBase gload_glTransformFeedbackBufferBase
+#   define glTransformFeedbackBufferRange gload_glTransformFeedbackBufferRange
+#   define glGetTransformFeedbackiv gload_glGetTransformFeedbackiv
+#   define glGetTransformFeedbacki_v gload_glGetTransformFeedbacki_v
+#   define glGetTransformFeedbacki64_v gload_glGetTransformFeedbacki64_v
+#   define glCreateBuffers gload_glCreateBuffers
+#   define glNamedBufferStorage gload_glNamedBufferStorage
+#   define glNamedBufferData gload_glNamedBufferData
+#   define glNamedBufferSubData gload_glNamedBufferSubData
+#   define glCopyNamedBufferSubData gload_glCopyNamedBufferSubData
+#   define glClearNamedBufferData gload_glClearNamedBufferData
+#   define glClearNamedBufferSubData gload_glClearNamedBufferSubData
+#   define glMapNamedBuffer gload_glMapNamedBuffer
+#   define glMapNamedBufferRange gload_glMapNamedBufferRange
+#   define glUnmapNamedBuffer gload_glUnmapNamedBuffer
+#   define glFlushMappedNamedBufferRange gload_glFlushMappedNamedBufferRange
+#   define glGetNamedBufferParameteriv gload_glGetNamedBufferParameteriv
+#   define glGetNamedBufferParameteri64v gload_glGetNamedBufferParameteri64v
+#   define glGetNamedBufferPointerv gload_glGetNamedBufferPointerv
+#   define glGetNamedBufferSubData gload_glGetNamedBufferSubData
+#   define glCreateFramebuffers gload_glCreateFramebuffers
+#   define glNamedFramebufferRenderbuffer gload_glNamedFramebufferRenderbuffer
+#   define glNamedFramebufferParameteri gload_glNamedFramebufferParameteri
+#   define glNamedFramebufferTexture gload_glNamedFramebufferTexture
+#   define glNamedFramebufferTextureLayer gload_glNamedFramebufferTextureLayer
+#   define glNamedFramebufferDrawBuffer gload_glNamedFramebufferDrawBuffer
+#   define glNamedFramebufferDrawBuffers gload_glNamedFramebufferDrawBuffers
+#   define glNamedFramebufferReadBuffer gload_glNamedFramebufferReadBuffer
+#   define glInvalidateNamedFramebufferData gload_glInvalidateNamedFramebufferData
+#   define glInvalidateNamedFramebufferSubData gload_glInvalidateNamedFramebufferSubData
+#   define glClearNamedFramebufferiv gload_glClearNamedFramebufferiv
+#   define glClearNamedFramebufferuiv gload_glClearNamedFramebufferuiv
+#   define glClearNamedFramebufferfv gload_glClearNamedFramebufferfv
+#   define glClearNamedFramebufferfi gload_glClearNamedFramebufferfi
+#   define glBlitNamedFramebuffer gload_glBlitNamedFramebuffer
+#   define glCheckNamedFramebufferStatus gload_glCheckNamedFramebufferStatus
+#   define glGetNamedFramebufferParameteriv gload_glGetNamedFramebufferParameteriv
+#   define glGetNamedFramebufferAttachmentParameteriv gload_glGetNamedFramebufferAttachmentParameteriv
+#   define glCreateRenderbuffers gload_glCreateRenderbuffers
+#   define glNamedRenderbufferStorage gload_glNamedRenderbufferStorage
+#   define glNamedRenderbufferStorageMultisample gload_glNamedRenderbufferStorageMultisample
+#   define glGetNamedRenderbufferParameteriv gload_glGetNamedRenderbufferParameteriv
+#   define glCreateTextures gload_glCreateTextures
+#   define glTextureBuffer gload_glTextureBuffer
+#   define glTextureBufferRange gload_glTextureBufferRange
+#   define glTextureStorage1D gload_glTextureStorage1D
+#   define glTextureStorage2D gload_glTextureStorage2D
+#   define glTextureStorage3D gload_glTextureStorage3D
+#   define glTextureStorage2DMultisample gload_glTextureStorage2DMultisample
+#   define glTextureStorage3DMultisample gload_glTextureStorage3DMultisample
+#   define glTextureSubImage1D gload_glTextureSubImage1D
+#   define glTextureSubImage2D gload_glTextureSubImage2D
+#   define glTextureSubImage3D gload_glTextureSubImage3D
+#   define glCompressedTextureSubImage1D gload_glCompressedTextureSubImage1D
+#   define glCompressedTextureSubImage2D gload_glCompressedTextureSubImage2D
+#   define glCompressedTextureSubImage3D gload_glCompressedTextureSubImage3D
+#   define glCopyTextureSubImage1D gload_glCopyTextureSubImage1D
+#   define glCopyTextureSubImage2D gload_glCopyTextureSubImage2D
+#   define glCopyTextureSubImage3D gload_glCopyTextureSubImage3D
+#   define glTextureParameterf gload_glTextureParameterf
+#   define glTextureParameterfv gload_glTextureParameterfv
+#   define glTextureParameteri gload_glTextureParameteri
+#   define glTextureParameterIiv gload_glTextureParameterIiv
+#   define glTextureParameterIuiv gload_glTextureParameterIuiv
+#   define glTextureParameteriv gload_glTextureParameteriv
+#   define glGenerateTextureMipmap gload_glGenerateTextureMipmap
+#   define glBindTextureUnit gload_glBindTextureUnit
+#   define glGetTextureImage gload_glGetTextureImage
+#   define glGetCompressedTextureImage gload_glGetCompressedTextureImage
+#   define glGetTextureLevelParameterfv gload_glGetTextureLevelParameterfv
+#   define glGetTextureLevelParameteriv gload_glGetTextureLevelParameteriv
+#   define glGetTextureParameterfv gload_glGetTextureParameterfv
+#   define glGetTextureParameterIiv gload_glGetTextureParameterIiv
+#   define glGetTextureParameterIuiv gload_glGetTextureParameterIuiv
+#   define glGetTextureParameteriv gload_glGetTextureParameteriv
+#   define glCreateVertexArrays gload_glCreateVertexArrays
+#   define glDisableVertexArrayAttrib gload_glDisableVertexArrayAttrib
+#   define glEnableVertexArrayAttrib gload_glEnableVertexArrayAttrib
+#   define glVertexArrayElementBuffer gload_glVertexArrayElementBuffer
+#   define glVertexArrayVertexBuffer gload_glVertexArrayVertexBuffer
+#   define glVertexArrayVertexBuffers gload_glVertexArrayVertexBuffers
+#   define glVertexArrayAttribBinding gload_glVertexArrayAttribBinding
+#   define glVertexArrayAttribFormat gload_glVertexArrayAttribFormat
+#   define glVertexArrayAttribIFormat gload_glVertexArrayAttribIFormat
+#   define glVertexArrayAttribLFormat gload_glVertexArrayAttribLFormat
+#   define glVertexArrayBindingDivisor gload_glVertexArrayBindingDivisor
+#   define glGetVertexArrayiv gload_glGetVertexArrayiv
+#   define glGetVertexArrayIndexediv gload_glGetVertexArrayIndexediv
+#   define glGetVertexArrayIndexed64iv gload_glGetVertexArrayIndexed64iv
+#   define glCreateSamplers gload_glCreateSamplers
+#   define glCreateProgramPipelines gload_glCreateProgramPipelines
+#   define glCreateQueries gload_glCreateQueries
+#   define glGetQueryBufferObjecti64v gload_glGetQueryBufferObjecti64v
+#   define glGetQueryBufferObjectiv gload_glGetQueryBufferObjectiv
+#   define glGetQueryBufferObjectui64v gload_glGetQueryBufferObjectui64v
+#   define glGetQueryBufferObjectuiv gload_glGetQueryBufferObjectuiv
+#   define glMemoryBarrierByRegion gload_glMemoryBarrierByRegion
+#   define glGetTextureSubImage gload_glGetTextureSubImage
+#   define glGetCompressedTextureSubImage gload_glGetCompressedTextureSubImage
+#   define glGetGraphicsResetStatus gload_glGetGraphicsResetStatus
+#   define glGetnCompressedTexImage gload_glGetnCompressedTexImage
+#   define glGetnTexImage gload_glGetnTexImage
+#   define glGetnUniformdv gload_glGetnUniformdv
+#   define glGetnUniformfv gload_glGetnUniformfv
+#   define glGetnUniformiv gload_glGetnUniformiv
+#   define glGetnUniformuiv gload_glGetnUniformuiv
+#   define glReadnPixels gload_glReadnPixels
+#   define glGetnMapdv gload_glGetnMapdv
+#   define glGetnMapfv gload_glGetnMapfv
+#   define glGetnMapiv gload_glGetnMapiv
+#   define glGetnPixelMapfv gload_glGetnPixelMapfv
+#   define glGetnPixelMapuiv gload_glGetnPixelMapuiv
+#   define glGetnPixelMapusv gload_glGetnPixelMapusv
+#   define glGetnPolygonStipple gload_glGetnPolygonStipple
+#   define glGetnColorTable gload_glGetnColorTable
+#   define glGetnConvolutionFilter gload_glGetnConvolutionFilter
+#   define glGetnSeparableFilter gload_glGetnSeparableFilter
+#   define glGetnHistogram gload_glGetnHistogram
+#   define glGetnMinmax gload_glGetnMinmax
+#   define glTextureBarrier gload_glTextureBarrier
+#  endif /* GL_VERSION_4_5 */
+#  if (GL_VERSION_4_6 == 1)
+#   define glSpecializeShader gload_glSpecializeShader
+#   define glMultiDrawArraysIndirectCount gload_glMultiDrawArraysIndirectCount
+#   define glMultiDrawElementsIndirectCount gload_glMultiDrawElementsIndirectCount
+#   define glPolygonOffsetClamp gload_glPolygonOffsetClamp
+#  endif /* GL_VERSION_4_6 */
+#  if (GL_VERSION_ES_CM_1_0 == 1)
+#   define glAlphaFunc gload_glAlphaFunc
+#   define glClearColor gload_glClearColor
+#   define glClearDepthf gload_glClearDepthf
+#   define glClipPlanef gload_glClipPlanef
+#   define glColor4f gload_glColor4f
+#   define glDepthRangef gload_glDepthRangef
+#   define glFogf gload_glFogf
+#   define glFogfv gload_glFogfv
+#   define glFrustumf gload_glFrustumf
+#   define glGetClipPlanef gload_glGetClipPlanef
+#   define glGetFloatv gload_glGetFloatv
+#   define glGetLightfv gload_glGetLightfv
+#   define glGetMaterialfv gload_glGetMaterialfv
+#   define glGetTexEnvfv gload_glGetTexEnvfv
+#   define glGetTexParameterfv gload_glGetTexParameterfv
+#   define glLightModelf gload_glLightModelf
+#   define glLightModelfv gload_glLightModelfv
+#   define glLightf gload_glLightf
+#   define glLightfv gload_glLightfv
+#   define glLineWidth gload_glLineWidth
+#   define glLoadMatrixf gload_glLoadMatrixf
+#   define glMaterialf gload_glMaterialf
+#   define glMaterialfv gload_glMaterialfv
+#   define glMultMatrixf gload_glMultMatrixf
+#   define glMultiTexCoord4f gload_glMultiTexCoord4f
+#   define glNormal3f gload_glNormal3f
+#   define glOrthof gload_glOrthof
+#   define glPointParameterf gload_glPointParameterf
+#   define glPointParameterfv gload_glPointParameterfv
+#   define glPointSize gload_glPointSize
+#   define glPolygonOffset gload_glPolygonOffset
+#   define glRotatef gload_glRotatef
+#   define glScalef gload_glScalef
+#   define glTexEnvf gload_glTexEnvf
+#   define glTexEnvfv gload_glTexEnvfv
+#   define glTexParameterf gload_glTexParameterf
+#   define glTexParameterfv gload_glTexParameterfv
+#   define glTranslatef gload_glTranslatef
+#   define glActiveTexture gload_glActiveTexture
+#   define glAlphaFuncx gload_glAlphaFuncx
+#   define glBindBuffer gload_glBindBuffer
+#   define glBindTexture gload_glBindTexture
+#   define glBlendFunc gload_glBlendFunc
+#   define glBufferData gload_glBufferData
+#   define glBufferSubData gload_glBufferSubData
+#   define glClear gload_glClear
+#   define glClearColorx gload_glClearColorx
+#   define glClearDepthx gload_glClearDepthx
+#   define glClearStencil gload_glClearStencil
+#   define glClientActiveTexture gload_glClientActiveTexture
+#   define glClipPlanex gload_glClipPlanex
+#   define glColor4ub gload_glColor4ub
+#   define glColor4x gload_glColor4x
+#   define glColorMask gload_glColorMask
+#   define glColorPointer gload_glColorPointer
+#   define glCompressedTexImage2D gload_glCompressedTexImage2D
+#   define glCompressedTexSubImage2D gload_glCompressedTexSubImage2D
+#   define glCopyTexImage2D gload_glCopyTexImage2D
+#   define glCopyTexSubImage2D gload_glCopyTexSubImage2D
+#   define glCullFace gload_glCullFace
+#   define glDeleteBuffers gload_glDeleteBuffers
+#   define glDeleteTextures gload_glDeleteTextures
+#   define glDepthFunc gload_glDepthFunc
+#   define glDepthMask gload_glDepthMask
+#   define glDepthRangex gload_glDepthRangex
+#   define glDisable gload_glDisable
+#   define glDisableClientState gload_glDisableClientState
+#   define glDrawArrays gload_glDrawArrays
+#   define glDrawElements gload_glDrawElements
+#   define glEnable gload_glEnable
+#   define glEnableClientState gload_glEnableClientState
+#   define glFinish gload_glFinish
+#   define glFlush gload_glFlush
+#   define glFogx gload_glFogx
+#   define glFogxv gload_glFogxv
+#   define glFrontFace gload_glFrontFace
+#   define glFrustumx gload_glFrustumx
+#   define glGetBooleanv gload_glGetBooleanv
+#   define glGetBufferParameteriv gload_glGetBufferParameteriv
+#   define glGetClipPlanex gload_glGetClipPlanex
+#   define glGenBuffers gload_glGenBuffers
+#   define glGenTextures gload_glGenTextures
+#   define glGetError gload_glGetError
+#   define glGetFixedv gload_glGetFixedv
+#   define glGetIntegerv gload_glGetIntegerv
+#   define glGetLightxv gload_glGetLightxv
+#   define glGetMaterialxv gload_glGetMaterialxv
+#   define glGetPointerv gload_glGetPointerv
+#   define glGetString gload_glGetString
+#   define glGetTexEnviv gload_glGetTexEnviv
+#   define glGetTexEnvxv gload_glGetTexEnvxv
+#   define glGetTexParameteriv gload_glGetTexParameteriv
+#   define glGetTexParameterxv gload_glGetTexParameterxv
+#   define glHint gload_glHint
+#   define glIsBuffer gload_glIsBuffer
+#   define glIsEnabled gload_glIsEnabled
+#   define glIsTexture gload_glIsTexture
+#   define glLightModelx gload_glLightModelx
+#   define glLightModelxv gload_glLightModelxv
+#   define glLightx gload_glLightx
+#   define glLightxv gload_glLightxv
+#   define glLineWidthx gload_glLineWidthx
+#   define glLoadIdentity gload_glLoadIdentity
+#   define glLoadMatrixx gload_glLoadMatrixx
+#   define glLogicOp gload_glLogicOp
+#   define glMaterialx gload_glMaterialx
+#   define glMaterialxv gload_glMaterialxv
+#   define glMatrixMode gload_glMatrixMode
+#   define glMultMatrixx gload_glMultMatrixx
+#   define glMultiTexCoord4x gload_glMultiTexCoord4x
+#   define glNormal3x gload_glNormal3x
+#   define glNormalPointer gload_glNormalPointer
+#   define glOrthox gload_glOrthox
+#   define glPixelStorei gload_glPixelStorei
+#   define glPointParameterx gload_glPointParameterx
+#   define glPointParameterxv gload_glPointParameterxv
+#   define glPointSizex gload_glPointSizex
+#   define glPolygonOffsetx gload_glPolygonOffsetx
+#   define glPopMatrix gload_glPopMatrix
+#   define glPushMatrix gload_glPushMatrix
+#   define glReadPixels gload_glReadPixels
+#   define glRotatex gload_glRotatex
+#   define glSampleCoverage gload_glSampleCoverage
+#   define glSampleCoveragex gload_glSampleCoveragex
+#   define glScalex gload_glScalex
+#   define glScissor gload_glScissor
+#   define glShadeModel gload_glShadeModel
+#   define glStencilFunc gload_glStencilFunc
+#   define glStencilMask gload_glStencilMask
+#   define glStencilOp gload_glStencilOp
+#   define glTexCoordPointer gload_glTexCoordPointer
+#   define glTexEnvi gload_glTexEnvi
+#   define glTexEnvx gload_glTexEnvx
+#   define glTexEnviv gload_glTexEnviv
+#   define glTexEnvxv gload_glTexEnvxv
+#   define glTexImage2D gload_glTexImage2D
+#   define glTexParameteri gload_glTexParameteri
+#   define glTexParameterx gload_glTexParameterx
+#   define glTexParameteriv gload_glTexParameteriv
+#   define glTexParameterxv gload_glTexParameterxv
+#   define glTexSubImage2D gload_glTexSubImage2D
+#   define glTranslatex gload_glTranslatex
+#   define glVertexPointer gload_glVertexPointer
+#   define glViewport gload_glViewport
+#  endif /* GL_VERSION_ES_CM_1_0 */
+#  if (GL_ES_VERSION_2_0 == 1)
+#   define glActiveTexture gload_glActiveTexture
+#   define glAttachShader gload_glAttachShader
+#   define glBindAttribLocation gload_glBindAttribLocation
+#   define glBindBuffer gload_glBindBuffer
+#   define glBindFramebuffer gload_glBindFramebuffer
+#   define glBindRenderbuffer gload_glBindRenderbuffer
+#   define glBindTexture gload_glBindTexture
+#   define glBlendColor gload_glBlendColor
+#   define glBlendEquation gload_glBlendEquation
+#   define glBlendEquationSeparate gload_glBlendEquationSeparate
+#   define glBlendFunc gload_glBlendFunc
+#   define glBlendFuncSeparate gload_glBlendFuncSeparate
+#   define glBufferData gload_glBufferData
+#   define glBufferSubData gload_glBufferSubData
+#   define glCheckFramebufferStatus gload_glCheckFramebufferStatus
+#   define glClear gload_glClear
+#   define glClearColor gload_glClearColor
+#   define glClearDepthf gload_glClearDepthf
+#   define glClearStencil gload_glClearStencil
+#   define glColorMask gload_glColorMask
+#   define glCompileShader gload_glCompileShader
+#   define glCompressedTexImage2D gload_glCompressedTexImage2D
+#   define glCompressedTexSubImage2D gload_glCompressedTexSubImage2D
+#   define glCopyTexImage2D gload_glCopyTexImage2D
+#   define glCopyTexSubImage2D gload_glCopyTexSubImage2D
+#   define glCreateProgram gload_glCreateProgram
+#   define glCreateShader gload_glCreateShader
+#   define glCullFace gload_glCullFace
+#   define glDeleteBuffers gload_glDeleteBuffers
+#   define glDeleteFramebuffers gload_glDeleteFramebuffers
+#   define glDeleteProgram gload_glDeleteProgram
+#   define glDeleteRenderbuffers gload_glDeleteRenderbuffers
+#   define glDeleteShader gload_glDeleteShader
+#   define glDeleteTextures gload_glDeleteTextures
+#   define glDepthFunc gload_glDepthFunc
+#   define glDepthMask gload_glDepthMask
+#   define glDepthRangef gload_glDepthRangef
+#   define glDetachShader gload_glDetachShader
+#   define glDisable gload_glDisable
+#   define glDisableVertexAttribArray gload_glDisableVertexAttribArray
+#   define glDrawArrays gload_glDrawArrays
+#   define glDrawElements gload_glDrawElements
+#   define glEnable gload_glEnable
+#   define glEnableVertexAttribArray gload_glEnableVertexAttribArray
+#   define glFinish gload_glFinish
+#   define glFlush gload_glFlush
+#   define glFramebufferRenderbuffer gload_glFramebufferRenderbuffer
+#   define glFramebufferTexture2D gload_glFramebufferTexture2D
+#   define glFrontFace gload_glFrontFace
+#   define glGenBuffers gload_glGenBuffers
+#   define glGenerateMipmap gload_glGenerateMipmap
+#   define glGenFramebuffers gload_glGenFramebuffers
+#   define glGenRenderbuffers gload_glGenRenderbuffers
+#   define glGenTextures gload_glGenTextures
+#   define glGetActiveAttrib gload_glGetActiveAttrib
+#   define glGetActiveUniform gload_glGetActiveUniform
+#   define glGetAttachedShaders gload_glGetAttachedShaders
+#   define glGetAttribLocation gload_glGetAttribLocation
+#   define glGetBooleanv gload_glGetBooleanv
+#   define glGetBufferParameteriv gload_glGetBufferParameteriv
+#   define glGetError gload_glGetError
+#   define glGetFloatv gload_glGetFloatv
+#   define glGetFramebufferAttachmentParameteriv gload_glGetFramebufferAttachmentParameteriv
+#   define glGetIntegerv gload_glGetIntegerv
+#   define glGetProgramiv gload_glGetProgramiv
+#   define glGetProgramInfoLog gload_glGetProgramInfoLog
+#   define glGetRenderbufferParameteriv gload_glGetRenderbufferParameteriv
+#   define glGetShaderiv gload_glGetShaderiv
+#   define glGetShaderInfoLog gload_glGetShaderInfoLog
+#   define glGetShaderPrecisionFormat gload_glGetShaderPrecisionFormat
+#   define glGetShaderSource gload_glGetShaderSource
+#   define glGetString gload_glGetString
+#   define glGetTexParameterfv gload_glGetTexParameterfv
+#   define glGetTexParameteriv gload_glGetTexParameteriv
+#   define glGetUniformfv gload_glGetUniformfv
+#   define glGetUniformiv gload_glGetUniformiv
+#   define glGetUniformLocation gload_glGetUniformLocation
+#   define glGetVertexAttribfv gload_glGetVertexAttribfv
+#   define glGetVertexAttribiv gload_glGetVertexAttribiv
+#   define glGetVertexAttribPointerv gload_glGetVertexAttribPointerv
+#   define glHint gload_glHint
+#   define glIsBuffer gload_glIsBuffer
+#   define glIsEnabled gload_glIsEnabled
+#   define glIsFramebuffer gload_glIsFramebuffer
+#   define glIsProgram gload_glIsProgram
+#   define glIsRenderbuffer gload_glIsRenderbuffer
+#   define glIsShader gload_glIsShader
+#   define glIsTexture gload_glIsTexture
+#   define glLineWidth gload_glLineWidth
+#   define glLinkProgram gload_glLinkProgram
+#   define glPixelStorei gload_glPixelStorei
+#   define glPolygonOffset gload_glPolygonOffset
+#   define glReadPixels gload_glReadPixels
+#   define glReleaseShaderCompiler gload_glReleaseShaderCompiler
+#   define glRenderbufferStorage gload_glRenderbufferStorage
+#   define glSampleCoverage gload_glSampleCoverage
+#   define glScissor gload_glScissor
+#   define glShaderBinary gload_glShaderBinary
+#   define glShaderSource gload_glShaderSource
+#   define glStencilFunc gload_glStencilFunc
+#   define glStencilFuncSeparate gload_glStencilFuncSeparate
+#   define glStencilMask gload_glStencilMask
+#   define glStencilMaskSeparate gload_glStencilMaskSeparate
+#   define glStencilOp gload_glStencilOp
+#   define glStencilOpSeparate gload_glStencilOpSeparate
+#   define glTexImage2D gload_glTexImage2D
+#   define glTexParameterf gload_glTexParameterf
+#   define glTexParameterfv gload_glTexParameterfv
+#   define glTexParameteri gload_glTexParameteri
+#   define glTexParameteriv gload_glTexParameteriv
+#   define glTexSubImage2D gload_glTexSubImage2D
+#   define glUniform1f gload_glUniform1f
+#   define glUniform1fv gload_glUniform1fv
+#   define glUniform1i gload_glUniform1i
+#   define glUniform1iv gload_glUniform1iv
+#   define glUniform2f gload_glUniform2f
+#   define glUniform2fv gload_glUniform2fv
+#   define glUniform2i gload_glUniform2i
+#   define glUniform2iv gload_glUniform2iv
+#   define glUniform3f gload_glUniform3f
+#   define glUniform3fv gload_glUniform3fv
+#   define glUniform3i gload_glUniform3i
+#   define glUniform3iv gload_glUniform3iv
+#   define glUniform4f gload_glUniform4f
+#   define glUniform4fv gload_glUniform4fv
+#   define glUniform4i gload_glUniform4i
+#   define glUniform4iv gload_glUniform4iv
+#   define glUniformMatrix2fv gload_glUniformMatrix2fv
+#   define glUniformMatrix3fv gload_glUniformMatrix3fv
+#   define glUniformMatrix4fv gload_glUniformMatrix4fv
+#   define glUseProgram gload_glUseProgram
+#   define glValidateProgram gload_glValidateProgram
+#   define glVertexAttrib1f gload_glVertexAttrib1f
+#   define glVertexAttrib1fv gload_glVertexAttrib1fv
+#   define glVertexAttrib2f gload_glVertexAttrib2f
+#   define glVertexAttrib2fv gload_glVertexAttrib2fv
+#   define glVertexAttrib3f gload_glVertexAttrib3f
+#   define glVertexAttrib3fv gload_glVertexAttrib3fv
+#   define glVertexAttrib4f gload_glVertexAttrib4f
+#   define glVertexAttrib4fv gload_glVertexAttrib4fv
+#   define glVertexAttribPointer gload_glVertexAttribPointer
+#   define glViewport gload_glViewport
+#  endif /* GL_ES_VERSION_2_0 */
+#  if (GL_ES_VERSION_3_0 == 1)
+#   define glReadBuffer gload_glReadBuffer
+#   define glDrawRangeElements gload_glDrawRangeElements
+#   define glTexImage3D gload_glTexImage3D
+#   define glTexSubImage3D gload_glTexSubImage3D
+#   define glCopyTexSubImage3D gload_glCopyTexSubImage3D
+#   define glCompressedTexImage3D gload_glCompressedTexImage3D
+#   define glCompressedTexSubImage3D gload_glCompressedTexSubImage3D
+#   define glGenQueries gload_glGenQueries
+#   define glDeleteQueries gload_glDeleteQueries
+#   define glIsQuery gload_glIsQuery
+#   define glBeginQuery gload_glBeginQuery
+#   define glEndQuery gload_glEndQuery
+#   define glGetQueryiv gload_glGetQueryiv
+#   define glGetQueryObjectuiv gload_glGetQueryObjectuiv
+#   define glUnmapBuffer gload_glUnmapBuffer
+#   define glGetBufferPointerv gload_glGetBufferPointerv
+#   define glDrawBuffers gload_glDrawBuffers
+#   define glUniformMatrix2x3fv gload_glUniformMatrix2x3fv
+#   define glUniformMatrix3x2fv gload_glUniformMatrix3x2fv
+#   define glUniformMatrix2x4fv gload_glUniformMatrix2x4fv
+#   define glUniformMatrix4x2fv gload_glUniformMatrix4x2fv
+#   define glUniformMatrix3x4fv gload_glUniformMatrix3x4fv
+#   define glUniformMatrix4x3fv gload_glUniformMatrix4x3fv
+#   define glBlitFramebuffer gload_glBlitFramebuffer
+#   define glRenderbufferStorageMultisample gload_glRenderbufferStorageMultisample
+#   define glFramebufferTextureLayer gload_glFramebufferTextureLayer
+#   define glMapBufferRange gload_glMapBufferRange
+#   define glFlushMappedBufferRange gload_glFlushMappedBufferRange
+#   define glBindVertexArray gload_glBindVertexArray
+#   define glDeleteVertexArrays gload_glDeleteVertexArrays
+#   define glGenVertexArrays gload_glGenVertexArrays
+#   define glIsVertexArray gload_glIsVertexArray
+#   define glGetIntegeri_v gload_glGetIntegeri_v
+#   define glBeginTransformFeedback gload_glBeginTransformFeedback
+#   define glEndTransformFeedback gload_glEndTransformFeedback
+#   define glBindBufferRange gload_glBindBufferRange
+#   define glBindBufferBase gload_glBindBufferBase
+#   define glTransformFeedbackVaryings gload_glTransformFeedbackVaryings
+#   define glGetTransformFeedbackVarying gload_glGetTransformFeedbackVarying
+#   define glVertexAttribIPointer gload_glVertexAttribIPointer
+#   define glGetVertexAttribIiv gload_glGetVertexAttribIiv
+#   define glGetVertexAttribIuiv gload_glGetVertexAttribIuiv
+#   define glVertexAttribI4i gload_glVertexAttribI4i
+#   define glVertexAttribI4ui gload_glVertexAttribI4ui
+#   define glVertexAttribI4iv gload_glVertexAttribI4iv
+#   define glVertexAttribI4uiv gload_glVertexAttribI4uiv
+#   define glGetUniformuiv gload_glGetUniformuiv
+#   define glGetFragDataLocation gload_glGetFragDataLocation
+#   define glUniform1ui gload_glUniform1ui
+#   define glUniform2ui gload_glUniform2ui
+#   define glUniform3ui gload_glUniform3ui
+#   define glUniform4ui gload_glUniform4ui
+#   define glUniform1uiv gload_glUniform1uiv
+#   define glUniform2uiv gload_glUniform2uiv
+#   define glUniform3uiv gload_glUniform3uiv
+#   define glUniform4uiv gload_glUniform4uiv
+#   define glClearBufferiv gload_glClearBufferiv
+#   define glClearBufferuiv gload_glClearBufferuiv
+#   define glClearBufferfv gload_glClearBufferfv
+#   define glClearBufferfi gload_glClearBufferfi
+#   define glGetStringi gload_glGetStringi
+#   define glCopyBufferSubData gload_glCopyBufferSubData
+#   define glGetUniformIndices gload_glGetUniformIndices
+#   define glGetActiveUniformsiv gload_glGetActiveUniformsiv
+#   define glGetUniformBlockIndex gload_glGetUniformBlockIndex
+#   define glGetActiveUniformBlockiv gload_glGetActiveUniformBlockiv
+#   define glGetActiveUniformBlockName gload_glGetActiveUniformBlockName
+#   define glUniformBlockBinding gload_glUniformBlockBinding
+#   define glDrawArraysInstanced gload_glDrawArraysInstanced
+#   define glDrawElementsInstanced gload_glDrawElementsInstanced
+#   define glFenceSync gload_glFenceSync
+#   define glIsSync gload_glIsSync
+#   define glDeleteSync gload_glDeleteSync
+#   define glClientWaitSync gload_glClientWaitSync
+#   define glWaitSync gload_glWaitSync
+#   define glGetInteger64v gload_glGetInteger64v
+#   define glGetSynciv gload_glGetSynciv
+#   define glGetInteger64i_v gload_glGetInteger64i_v
+#   define glGetBufferParameteri64v gload_glGetBufferParameteri64v
+#   define glGenSamplers gload_glGenSamplers
+#   define glDeleteSamplers gload_glDeleteSamplers
+#   define glIsSampler gload_glIsSampler
+#   define glBindSampler gload_glBindSampler
+#   define glSamplerParameteri gload_glSamplerParameteri
+#   define glSamplerParameteriv gload_glSamplerParameteriv
+#   define glSamplerParameterf gload_glSamplerParameterf
+#   define glSamplerParameterfv gload_glSamplerParameterfv
+#   define glGetSamplerParameteriv gload_glGetSamplerParameteriv
+#   define glGetSamplerParameterfv gload_glGetSamplerParameterfv
+#   define glVertexAttribDivisor gload_glVertexAttribDivisor
+#   define glBindTransformFeedback gload_glBindTransformFeedback
+#   define glDeleteTransformFeedbacks gload_glDeleteTransformFeedbacks
+#   define glGenTransformFeedbacks gload_glGenTransformFeedbacks
+#   define glIsTransformFeedback gload_glIsTransformFeedback
+#   define glPauseTransformFeedback gload_glPauseTransformFeedback
+#   define glResumeTransformFeedback gload_glResumeTransformFeedback
+#   define glGetProgramBinary gload_glGetProgramBinary
+#   define glProgramBinary gload_glProgramBinary
+#   define glProgramParameteri gload_glProgramParameteri
+#   define glInvalidateFramebuffer gload_glInvalidateFramebuffer
+#   define glInvalidateSubFramebuffer gload_glInvalidateSubFramebuffer
+#   define glTexStorage2D gload_glTexStorage2D
+#   define glTexStorage3D gload_glTexStorage3D
+#   define glGetInternalformativ gload_glGetInternalformativ
+#  endif /* GL_ES_VERSION_3_0 */
+#  if (GL_ES_VERSION_3_1 == 1)
+#   define glDispatchCompute gload_glDispatchCompute
+#   define glDispatchComputeIndirect gload_glDispatchComputeIndirect
+#   define glDrawArraysIndirect gload_glDrawArraysIndirect
+#   define glDrawElementsIndirect gload_glDrawElementsIndirect
+#   define glFramebufferParameteri gload_glFramebufferParameteri
+#   define glGetFramebufferParameteriv gload_glGetFramebufferParameteriv
+#   define glGetProgramInterfaceiv gload_glGetProgramInterfaceiv
+#   define glGetProgramResourceIndex gload_glGetProgramResourceIndex
+#   define glGetProgramResourceName gload_glGetProgramResourceName
+#   define glGetProgramResourceiv gload_glGetProgramResourceiv
+#   define glGetProgramResourceLocation gload_glGetProgramResourceLocation
+#   define glUseProgramStages gload_glUseProgramStages
+#   define glActiveShaderProgram gload_glActiveShaderProgram
+#   define glCreateShaderProgramv gload_glCreateShaderProgramv
+#   define glBindProgramPipeline gload_glBindProgramPipeline
+#   define glDeleteProgramPipelines gload_glDeleteProgramPipelines
+#   define glGenProgramPipelines gload_glGenProgramPipelines
+#   define glIsProgramPipeline gload_glIsProgramPipeline
+#   define glGetProgramPipelineiv gload_glGetProgramPipelineiv
+#   define glProgramUniform1i gload_glProgramUniform1i
+#   define glProgramUniform2i gload_glProgramUniform2i
+#   define glProgramUniform3i gload_glProgramUniform3i
+#   define glProgramUniform4i gload_glProgramUniform4i
+#   define glProgramUniform1ui gload_glProgramUniform1ui
+#   define glProgramUniform2ui gload_glProgramUniform2ui
+#   define glProgramUniform3ui gload_glProgramUniform3ui
+#   define glProgramUniform4ui gload_glProgramUniform4ui
+#   define glProgramUniform1f gload_glProgramUniform1f
+#   define glProgramUniform2f gload_glProgramUniform2f
+#   define glProgramUniform3f gload_glProgramUniform3f
+#   define glProgramUniform4f gload_glProgramUniform4f
+#   define glProgramUniform1iv gload_glProgramUniform1iv
+#   define glProgramUniform2iv gload_glProgramUniform2iv
+#   define glProgramUniform3iv gload_glProgramUniform3iv
+#   define glProgramUniform4iv gload_glProgramUniform4iv
+#   define glProgramUniform1uiv gload_glProgramUniform1uiv
+#   define glProgramUniform2uiv gload_glProgramUniform2uiv
+#   define glProgramUniform3uiv gload_glProgramUniform3uiv
+#   define glProgramUniform4uiv gload_glProgramUniform4uiv
+#   define glProgramUniform1fv gload_glProgramUniform1fv
+#   define glProgramUniform2fv gload_glProgramUniform2fv
+#   define glProgramUniform3fv gload_glProgramUniform3fv
+#   define glProgramUniform4fv gload_glProgramUniform4fv
+#   define glProgramUniformMatrix2fv gload_glProgramUniformMatrix2fv
+#   define glProgramUniformMatrix3fv gload_glProgramUniformMatrix3fv
+#   define glProgramUniformMatrix4fv gload_glProgramUniformMatrix4fv
+#   define glProgramUniformMatrix2x3fv gload_glProgramUniformMatrix2x3fv
+#   define glProgramUniformMatrix3x2fv gload_glProgramUniformMatrix3x2fv
+#   define glProgramUniformMatrix2x4fv gload_glProgramUniformMatrix2x4fv
+#   define glProgramUniformMatrix4x2fv gload_glProgramUniformMatrix4x2fv
+#   define glProgramUniformMatrix3x4fv gload_glProgramUniformMatrix3x4fv
+#   define glProgramUniformMatrix4x3fv gload_glProgramUniformMatrix4x3fv
+#   define glValidateProgramPipeline gload_glValidateProgramPipeline
+#   define glGetProgramPipelineInfoLog gload_glGetProgramPipelineInfoLog
+#   define glBindImageTexture gload_glBindImageTexture
+#   define glGetBooleani_v gload_glGetBooleani_v
+#   define glMemoryBarrier gload_glMemoryBarrier
+#   define glMemoryBarrierByRegion gload_glMemoryBarrierByRegion
+#   define glTexStorage2DMultisample gload_glTexStorage2DMultisample
+#   define glGetMultisamplefv gload_glGetMultisamplefv
+#   define glSampleMaski gload_glSampleMaski
+#   define glGetTexLevelParameteriv gload_glGetTexLevelParameteriv
+#   define glGetTexLevelParameterfv gload_glGetTexLevelParameterfv
+#   define glBindVertexBuffer gload_glBindVertexBuffer
+#   define glVertexAttribFormat gload_glVertexAttribFormat
+#   define glVertexAttribIFormat gload_glVertexAttribIFormat
+#   define glVertexAttribBinding gload_glVertexAttribBinding
+#   define glVertexBindingDivisor gload_glVertexBindingDivisor
+#  endif /* GL_ES_VERSION_3_1 */
+#  if (GL_ES_VERSION_3_2 == 1)
+#   define glBlendBarrier gload_glBlendBarrier
+#   define glCopyImageSubData gload_glCopyImageSubData
+#   define glDebugMessageControl gload_glDebugMessageControl
+#   define glDebugMessageInsert gload_glDebugMessageInsert
+#   define glDebugMessageCallback gload_glDebugMessageCallback
+#   define glGetDebugMessageLog gload_glGetDebugMessageLog
+#   define glPushDebugGroup gload_glPushDebugGroup
+#   define glPopDebugGroup gload_glPopDebugGroup
+#   define glObjectLabel gload_glObjectLabel
+#   define glGetObjectLabel gload_glGetObjectLabel
+#   define glObjectPtrLabel gload_glObjectPtrLabel
+#   define glGetObjectPtrLabel gload_glGetObjectPtrLabel
+#   define glGetPointerv gload_glGetPointerv
+#   define glEnablei gload_glEnablei
+#   define glDisablei gload_glDisablei
+#   define glBlendEquationi gload_glBlendEquationi
+#   define glBlendEquationSeparatei gload_glBlendEquationSeparatei
+#   define glBlendFunci gload_glBlendFunci
+#   define glBlendFuncSeparatei gload_glBlendFuncSeparatei
+#   define glColorMaski gload_glColorMaski
+#   define glIsEnabledi gload_glIsEnabledi
+#   define glDrawElementsBaseVertex gload_glDrawElementsBaseVertex
+#   define glDrawRangeElementsBaseVertex gload_glDrawRangeElementsBaseVertex
+#   define glDrawElementsInstancedBaseVertex gload_glDrawElementsInstancedBaseVertex
+#   define glFramebufferTexture gload_glFramebufferTexture
+#   define glPrimitiveBoundingBox gload_glPrimitiveBoundingBox
+#   define glGetGraphicsResetStatus gload_glGetGraphicsResetStatus
+#   define glReadnPixels gload_glReadnPixels
+#   define glGetnUniformfv gload_glGetnUniformfv
+#   define glGetnUniformiv gload_glGetnUniformiv
+#   define glGetnUniformuiv gload_glGetnUniformuiv
+#   define glMinSampleShading gload_glMinSampleShading
+#   define glPatchParameteri gload_glPatchParameteri
+#   define glTexParameterIiv gload_glTexParameterIiv
+#   define glTexParameterIuiv gload_glTexParameterIuiv
+#   define glGetTexParameterIiv gload_glGetTexParameterIiv
+#   define glGetTexParameterIuiv gload_glGetTexParameterIuiv
+#   define glSamplerParameterIiv gload_glSamplerParameterIiv
+#   define glSamplerParameterIuiv gload_glSamplerParameterIuiv
+#   define glGetSamplerParameterIiv gload_glGetSamplerParameterIiv
+#   define glGetSamplerParameterIuiv gload_glGetSamplerParameterIuiv
+#   define glTexBuffer gload_glTexBuffer
+#   define glTexBufferRange gload_glTexBufferRange
+#   define glTexStorage3DMultisample gload_glTexStorage3DMultisample
+#  endif /* GL_ES_VERSION_3_2 */
+#  if (GL_SC_VERSION_2_0 == 1)
+#   define glActiveTexture gload_glActiveTexture
+#   define glBindBuffer gload_glBindBuffer
+#   define glBindFramebuffer gload_glBindFramebuffer
+#   define glBindRenderbuffer gload_glBindRenderbuffer
+#   define glBindTexture gload_glBindTexture
+#   define glBlendColor gload_glBlendColor
+#   define glBlendEquation gload_glBlendEquation
+#   define glBlendEquationSeparate gload_glBlendEquationSeparate
+#   define glBlendFunc gload_glBlendFunc
+#   define glBlendFuncSeparate gload_glBlendFuncSeparate
+#   define glBufferData gload_glBufferData
+#   define glBufferSubData gload_glBufferSubData
+#   define glCheckFramebufferStatus gload_glCheckFramebufferStatus
+#   define glClear gload_glClear
+#   define glClearColor gload_glClearColor
+#   define glClearDepthf gload_glClearDepthf
+#   define glClearStencil gload_glClearStencil
+#   define glColorMask gload_glColorMask
+#   define glCompressedTexSubImage2D gload_glCompressedTexSubImage2D
+#   define glCreateProgram gload_glCreateProgram
+#   define glCullFace gload_glCullFace
+#   define glDepthFunc gload_glDepthFunc
+#   define glDepthMask gload_glDepthMask
+#   define glDepthRangef gload_glDepthRangef
+#   define glDisable gload_glDisable
+#   define glDisableVertexAttribArray gload_glDisableVertexAttribArray
+#   define glDrawArrays gload_glDrawArrays
+#   define glDrawRangeElements gload_glDrawRangeElements
+#   define glEnable gload_glEnable
+#   define glEnableVertexAttribArray gload_glEnableVertexAttribArray
+#   define glFinish gload_glFinish
+#   define glFlush gload_glFlush
+#   define glFramebufferRenderbuffer gload_glFramebufferRenderbuffer
+#   define glFramebufferTexture2D gload_glFramebufferTexture2D
+#   define glFrontFace gload_glFrontFace
+#   define glGenBuffers gload_glGenBuffers
+#   define glGenerateMipmap gload_glGenerateMipmap
+#   define glGenFramebuffers gload_glGenFramebuffers
+#   define glGenRenderbuffers gload_glGenRenderbuffers
+#   define glGenTextures gload_glGenTextures
+#   define glGetAttribLocation gload_glGetAttribLocation
+#   define glGetBooleanv gload_glGetBooleanv
+#   define glGetBufferParameteriv gload_glGetBufferParameteriv
+#   define glGetError gload_glGetError
+#   define glGetFloatv gload_glGetFloatv
+#   define glGetFramebufferAttachmentParameteriv gload_glGetFramebufferAttachmentParameteriv
+#   define glGetGraphicsResetStatus gload_glGetGraphicsResetStatus
+#   define glGetIntegerv gload_glGetIntegerv
+#   define glGetProgramiv gload_glGetProgramiv
+#   define glGetRenderbufferParameteriv gload_glGetRenderbufferParameteriv
+#   define glGetString gload_glGetString
+#   define glGetTexParameterfv gload_glGetTexParameterfv
+#   define glGetTexParameteriv gload_glGetTexParameteriv
+#   define glGetnUniformfv gload_glGetnUniformfv
+#   define glGetnUniformiv gload_glGetnUniformiv
+#   define glGetUniformLocation gload_glGetUniformLocation
+#   define glGetVertexAttribfv gload_glGetVertexAttribfv
+#   define glGetVertexAttribiv gload_glGetVertexAttribiv
+#   define glGetVertexAttribPointerv gload_glGetVertexAttribPointerv
+#   define glHint gload_glHint
+#   define glIsEnabled gload_glIsEnabled
+#   define glLineWidth gload_glLineWidth
+#   define glPixelStorei gload_glPixelStorei
+#   define glPolygonOffset gload_glPolygonOffset
+#   define glProgramBinary gload_glProgramBinary
+#   define glReadnPixels gload_glReadnPixels
+#   define glRenderbufferStorage gload_glRenderbufferStorage
+#   define glSampleCoverage gload_glSampleCoverage
+#   define glScissor gload_glScissor
+#   define glStencilFunc gload_glStencilFunc
+#   define glStencilFuncSeparate gload_glStencilFuncSeparate
+#   define glStencilMask gload_glStencilMask
+#   define glStencilMaskSeparate gload_glStencilMaskSeparate
+#   define glStencilOp gload_glStencilOp
+#   define glStencilOpSeparate gload_glStencilOpSeparate
+#   define glTexStorage2D gload_glTexStorage2D
+#   define glTexParameterf gload_glTexParameterf
+#   define glTexParameterfv gload_glTexParameterfv
+#   define glTexParameteri gload_glTexParameteri
+#   define glTexParameteriv gload_glTexParameteriv
+#   define glTexSubImage2D gload_glTexSubImage2D
+#   define glUniform1f gload_glUniform1f
+#   define glUniform1fv gload_glUniform1fv
+#   define glUniform1i gload_glUniform1i
+#   define glUniform1iv gload_glUniform1iv
+#   define glUniform2f gload_glUniform2f
+#   define glUniform2fv gload_glUniform2fv
+#   define glUniform2i gload_glUniform2i
+#   define glUniform2iv gload_glUniform2iv
+#   define glUniform3f gload_glUniform3f
+#   define glUniform3fv gload_glUniform3fv
+#   define glUniform3i gload_glUniform3i
+#   define glUniform3iv gload_glUniform3iv
+#   define glUniform4f gload_glUniform4f
+#   define glUniform4fv gload_glUniform4fv
+#   define glUniform4i gload_glUniform4i
+#   define glUniform4iv gload_glUniform4iv
+#   define glUniformMatrix2fv gload_glUniformMatrix2fv
+#   define glUniformMatrix3fv gload_glUniformMatrix3fv
+#   define glUniformMatrix4fv gload_glUniformMatrix4fv
+#   define glUseProgram gload_glUseProgram
+#   define glVertexAttrib1f gload_glVertexAttrib1f
+#   define glVertexAttrib1fv gload_glVertexAttrib1fv
+#   define glVertexAttrib2f gload_glVertexAttrib2f
+#   define glVertexAttrib2fv gload_glVertexAttrib2fv
+#   define glVertexAttrib3f gload_glVertexAttrib3f
+#   define glVertexAttrib3fv gload_glVertexAttrib3fv
+#   define glVertexAttrib4f gload_glVertexAttrib4f
+#   define glVertexAttrib4fv gload_glVertexAttrib4fv
+#   define glVertexAttribPointer gload_glVertexAttribPointer
+#   define glViewport gload_glViewport
+#  endif /* GL_SC_VERSION_2_0 */
 #
 # if defined (__cplusplus)
 
@@ -9272,7 +9272,7 @@ struct s_nameaddr {
 
 static struct s_nameaddr    g_nameaddr[] = {
     
-#  if defined GL_VERSION_1_0
+#  if (GL_VERSION_1_0 == 1)
 
    { "glCullFace", (void **) &gload_glCullFace },
    { "glFrontFace", (void **) &gload_glFrontFace },
@@ -9582,7 +9582,7 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glTranslatef", (void **) &gload_glTranslatef },
 
 #  endif /* GL_VERSION_1_0 */
-#  if defined GL_VERSION_1_1
+#  if (GL_VERSION_1_1 == 1)
 
    { "glDrawArrays", (void **) &gload_glDrawArrays },
    { "glDrawElements", (void **) &gload_glDrawElements },
@@ -9616,7 +9616,7 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glPushClientAttrib", (void **) &gload_glPushClientAttrib },
 
 #  endif /* GL_VERSION_1_1 */
-#  if defined GL_VERSION_1_2
+#  if (GL_VERSION_1_2 == 1)
 
    { "glDrawRangeElements", (void **) &gload_glDrawRangeElements },
    { "glTexImage3D", (void **) &gload_glTexImage3D },
@@ -9624,7 +9624,7 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glCopyTexSubImage3D", (void **) &gload_glCopyTexSubImage3D },
 
 #  endif /* GL_VERSION_1_2 */
-#  if defined GL_VERSION_1_3
+#  if (GL_VERSION_1_3 == 1)
 
    { "glActiveTexture", (void **) &gload_glActiveTexture },
    { "glSampleCoverage", (void **) &gload_glSampleCoverage },
@@ -9674,7 +9674,7 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glMultTransposeMatrixd", (void **) &gload_glMultTransposeMatrixd },
 
 #  endif /* GL_VERSION_1_3 */
-#  if defined GL_VERSION_1_4
+#  if (GL_VERSION_1_4 == 1)
 
    { "glBlendFuncSeparate", (void **) &gload_glBlendFuncSeparate },
    { "glMultiDrawArrays", (void **) &gload_glMultiDrawArrays },
@@ -9725,7 +9725,7 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glBlendEquation", (void **) &gload_glBlendEquation },
 
 #  endif /* GL_VERSION_1_4 */
-#  if defined GL_VERSION_1_5
+#  if (GL_VERSION_1_5 == 1)
 
    { "glGenQueries", (void **) &gload_glGenQueries },
    { "glDeleteQueries", (void **) &gload_glDeleteQueries },
@@ -9748,7 +9748,7 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glGetBufferPointerv", (void **) &gload_glGetBufferPointerv },
 
 #  endif /* GL_VERSION_1_5 */
-#  if defined GL_VERSION_2_0
+#  if (GL_VERSION_2_0 == 1)
 
    { "glBlendEquationSeparate", (void **) &gload_glBlendEquationSeparate },
    { "glDrawBuffers", (void **) &gload_glDrawBuffers },
@@ -9845,7 +9845,7 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glVertexAttribPointer", (void **) &gload_glVertexAttribPointer },
 
 #  endif /* GL_VERSION_2_0 */
-#  if defined GL_VERSION_2_1
+#  if (GL_VERSION_2_1 == 1)
 
    { "glUniformMatrix2x3fv", (void **) &gload_glUniformMatrix2x3fv },
    { "glUniformMatrix3x2fv", (void **) &gload_glUniformMatrix3x2fv },
@@ -9855,7 +9855,7 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glUniformMatrix4x3fv", (void **) &gload_glUniformMatrix4x3fv },
 
 #  endif /* GL_VERSION_2_1 */
-#  if defined GL_VERSION_3_0
+#  if (GL_VERSION_3_0 == 1)
 
    { "glColorMaski", (void **) &gload_glColorMaski },
    { "glGetBooleani_v", (void **) &gload_glGetBooleani_v },
@@ -9943,7 +9943,7 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glIsVertexArray", (void **) &gload_glIsVertexArray },
 
 #  endif /* GL_VERSION_3_0 */
-#  if defined GL_VERSION_3_1
+#  if (GL_VERSION_3_1 == 1)
 
    { "glDrawArraysInstanced", (void **) &gload_glDrawArraysInstanced },
    { "glDrawElementsInstanced", (void **) &gload_glDrawElementsInstanced },
@@ -9962,7 +9962,7 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glGetIntegeri_v", (void **) &gload_glGetIntegeri_v },
 
 #  endif /* GL_VERSION_3_1 */
-#  if defined GL_VERSION_3_2
+#  if (GL_VERSION_3_2 == 1)
 
    { "glDrawElementsBaseVertex", (void **) &gload_glDrawElementsBaseVertex },
    { "glDrawRangeElementsBaseVertex", (void **) &gload_glDrawRangeElementsBaseVertex },
@@ -9985,7 +9985,7 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glSampleMaski", (void **) &gload_glSampleMaski },
 
 #  endif /* GL_VERSION_3_2 */
-#  if defined GL_VERSION_3_3
+#  if (GL_VERSION_3_3 == 1)
 
    { "glBindFragDataLocationIndexed", (void **) &gload_glBindFragDataLocationIndexed },
    { "glGetFragDataIndex", (void **) &gload_glGetFragDataIndex },
@@ -10047,7 +10047,7 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glSecondaryColorP3uiv", (void **) &gload_glSecondaryColorP3uiv },
 
 #  endif /* GL_VERSION_3_3 */
-#  if defined GL_VERSION_4_0
+#  if (GL_VERSION_4_0 == 1)
 
    { "glMinSampleShading", (void **) &gload_glMinSampleShading },
    { "glBlendEquationi", (void **) &gload_glBlendEquationi },
@@ -10097,7 +10097,7 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glGetQueryIndexediv", (void **) &gload_glGetQueryIndexediv },
 
 #  endif /* GL_VERSION_4_0 */
-#  if defined GL_VERSION_4_1
+#  if (GL_VERSION_4_1 == 1)
 
    { "glReleaseShaderCompiler", (void **) &gload_glReleaseShaderCompiler },
    { "glShaderBinary", (void **) &gload_glShaderBinary },
@@ -10190,7 +10190,7 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glGetDoublei_v", (void **) &gload_glGetDoublei_v },
 
 #  endif /* GL_VERSION_4_1 */
-#  if defined GL_VERSION_4_2
+#  if (GL_VERSION_4_2 == 1)
 
    { "glDrawArraysInstancedBaseInstance", (void **) &gload_glDrawArraysInstancedBaseInstance },
    { "glDrawElementsInstancedBaseInstance", (void **) &gload_glDrawElementsInstancedBaseInstance },
@@ -10206,7 +10206,7 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glDrawTransformFeedbackStreamInstanced", (void **) &gload_glDrawTransformFeedbackStreamInstanced },
 
 #  endif /* GL_VERSION_4_2 */
-#  if defined GL_VERSION_4_3
+#  if (GL_VERSION_4_3 == 1)
 
    { "glClearBufferData", (void **) &gload_glClearBufferData },
    { "glClearBufferSubData", (void **) &gload_glClearBufferSubData },
@@ -10254,7 +10254,7 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glGetPointerv", (void **) &gload_glGetPointerv },
 
 #  endif /* GL_VERSION_4_3 */
-#  if defined GL_VERSION_4_4
+#  if (GL_VERSION_4_4 == 1)
 
    { "glBufferStorage", (void **) &gload_glBufferStorage },
    { "glClearTexImage", (void **) &gload_glClearTexImage },
@@ -10267,7 +10267,7 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glBindVertexBuffers", (void **) &gload_glBindVertexBuffers },
 
 #  endif /* GL_VERSION_4_4 */
-#  if defined GL_VERSION_4_5
+#  if (GL_VERSION_4_5 == 1)
 
    { "glClipControl", (void **) &gload_glClipControl },
    { "glCreateTransformFeedbacks", (void **) &gload_glCreateTransformFeedbacks },
@@ -10393,7 +10393,7 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glTextureBarrier", (void **) &gload_glTextureBarrier },
 
 #  endif /* GL_VERSION_4_5 */
-#  if defined GL_VERSION_4_6
+#  if (GL_VERSION_4_6 == 1)
 
    { "glSpecializeShader", (void **) &gload_glSpecializeShader },
    { "glMultiDrawArraysIndirectCount", (void **) &gload_glMultiDrawArraysIndirectCount },
@@ -10401,7 +10401,7 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glPolygonOffsetClamp", (void **) &gload_glPolygonOffsetClamp },
 
 #  endif /* GL_VERSION_4_6 */
-#  if defined GL_VERSION_ES_CM_1_0
+#  if (GL_VERSION_ES_CM_1_0 == 1)
 
    { "glAlphaFunc", (void **) &gload_glAlphaFunc },
    { "glClearColor", (void **) &gload_glClearColor },
@@ -10549,7 +10549,7 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glViewport", (void **) &gload_glViewport },
 
 #  endif /* GL_VERSION_ES_CM_1_0 */
-#  if defined GL_ES_VERSION_2_0
+#  if (GL_ES_VERSION_2_0 == 1)
 
    { "glActiveTexture", (void **) &gload_glActiveTexture },
    { "glAttachShader", (void **) &gload_glAttachShader },
@@ -10695,7 +10695,7 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glViewport", (void **) &gload_glViewport },
 
 #  endif /* GL_ES_VERSION_2_0 */
-#  if defined GL_ES_VERSION_3_0
+#  if (GL_ES_VERSION_3_0 == 1)
 
    { "glReadBuffer", (void **) &gload_glReadBuffer },
    { "glDrawRangeElements", (void **) &gload_glDrawRangeElements },
@@ -10803,7 +10803,7 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glGetInternalformativ", (void **) &gload_glGetInternalformativ },
 
 #  endif /* GL_ES_VERSION_3_0 */
-#  if defined GL_ES_VERSION_3_1
+#  if (GL_ES_VERSION_3_1 == 1)
 
    { "glDispatchCompute", (void **) &gload_glDispatchCompute },
    { "glDispatchComputeIndirect", (void **) &gload_glDispatchComputeIndirect },
@@ -10875,7 +10875,7 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glVertexBindingDivisor", (void **) &gload_glVertexBindingDivisor },
 
 #  endif /* GL_ES_VERSION_3_1 */
-#  if defined GL_ES_VERSION_3_2
+#  if (GL_ES_VERSION_3_2 == 1)
 
    { "glBlendBarrier", (void **) &gload_glBlendBarrier },
    { "glCopyImageSubData", (void **) &gload_glCopyImageSubData },
@@ -10923,7 +10923,7 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glTexStorage3DMultisample", (void **) &gload_glTexStorage3DMultisample },
 
 #  endif /* GL_ES_VERSION_3_2 */
-#  if defined GL_SC_VERSION_2_0
+#  if (GL_SC_VERSION_2_0 == 1)
 
    { "glActiveTexture", (void **) &gload_glActiveTexture },
    { "glBindBuffer", (void **) &gload_glBindBuffer },
@@ -11206,7 +11206,7 @@ GLAPI void  *gloadGetProcAddress(const char *name) {
  *  OpenGL API
  * * * * * * */
 
-#  if defined GL_VERSION_1_0
+# if (GL_VERSION_1_0 == 1)
 
 PFNGLCULLFACEPROC gload_glCullFace;
 PFNGLFRONTFACEPROC gload_glFrontFace;
@@ -11515,8 +11515,8 @@ PFNGLSCALEFPROC gload_glScalef;
 PFNGLTRANSLATEDPROC gload_glTranslated;
 PFNGLTRANSLATEFPROC gload_glTranslatef;
 
-#  endif /* GL_VERSION_1_0 */
-#  if defined GL_VERSION_1_1
+# endif /* GL_VERSION_1_0 */
+# if (GL_VERSION_1_1 == 1)
 
 PFNGLDRAWARRAYSPROC gload_glDrawArrays;
 PFNGLDRAWELEMENTSPROC gload_glDrawElements;
@@ -11549,16 +11549,16 @@ PFNGLINDEXUBVPROC gload_glIndexubv;
 PFNGLPOPCLIENTATTRIBPROC gload_glPopClientAttrib;
 PFNGLPUSHCLIENTATTRIBPROC gload_glPushClientAttrib;
 
-#  endif /* GL_VERSION_1_1 */
-#  if defined GL_VERSION_1_2
+# endif /* GL_VERSION_1_1 */
+# if (GL_VERSION_1_2 == 1)
 
 PFNGLDRAWRANGEELEMENTSPROC gload_glDrawRangeElements;
 PFNGLTEXIMAGE3DPROC gload_glTexImage3D;
 PFNGLTEXSUBIMAGE3DPROC gload_glTexSubImage3D;
 PFNGLCOPYTEXSUBIMAGE3DPROC gload_glCopyTexSubImage3D;
 
-#  endif /* GL_VERSION_1_2 */
-#  if defined GL_VERSION_1_3
+# endif /* GL_VERSION_1_2 */
+# if (GL_VERSION_1_3 == 1)
 
 PFNGLACTIVETEXTUREPROC gload_glActiveTexture;
 PFNGLSAMPLECOVERAGEPROC gload_glSampleCoverage;
@@ -11607,8 +11607,8 @@ PFNGLLOADTRANSPOSEMATRIXDPROC gload_glLoadTransposeMatrixd;
 PFNGLMULTTRANSPOSEMATRIXFPROC gload_glMultTransposeMatrixf;
 PFNGLMULTTRANSPOSEMATRIXDPROC gload_glMultTransposeMatrixd;
 
-#  endif /* GL_VERSION_1_3 */
-#  if defined GL_VERSION_1_4
+# endif /* GL_VERSION_1_3 */
+# if (GL_VERSION_1_4 == 1)
 
 PFNGLBLENDFUNCSEPARATEPROC gload_glBlendFuncSeparate;
 PFNGLMULTIDRAWARRAYSPROC gload_glMultiDrawArrays;
@@ -11658,8 +11658,8 @@ PFNGLWINDOWPOS3SVPROC gload_glWindowPos3sv;
 PFNGLBLENDCOLORPROC gload_glBlendColor;
 PFNGLBLENDEQUATIONPROC gload_glBlendEquation;
 
-#  endif /* GL_VERSION_1_4 */
-#  if defined GL_VERSION_1_5
+# endif /* GL_VERSION_1_4 */
+# if (GL_VERSION_1_5 == 1)
 
 PFNGLGENQUERIESPROC gload_glGenQueries;
 PFNGLDELETEQUERIESPROC gload_glDeleteQueries;
@@ -11681,8 +11681,8 @@ PFNGLUNMAPBUFFERPROC gload_glUnmapBuffer;
 PFNGLGETBUFFERPARAMETERIVPROC gload_glGetBufferParameteriv;
 PFNGLGETBUFFERPOINTERVPROC gload_glGetBufferPointerv;
 
-#  endif /* GL_VERSION_1_5 */
-#  if defined GL_VERSION_2_0
+# endif /* GL_VERSION_1_5 */
+# if (GL_VERSION_2_0 == 1)
 
 PFNGLBLENDEQUATIONSEPARATEPROC gload_glBlendEquationSeparate;
 PFNGLDRAWBUFFERSPROC gload_glDrawBuffers;
@@ -11778,8 +11778,8 @@ PFNGLVERTEXATTRIB4UIVPROC gload_glVertexAttrib4uiv;
 PFNGLVERTEXATTRIB4USVPROC gload_glVertexAttrib4usv;
 PFNGLVERTEXATTRIBPOINTERPROC gload_glVertexAttribPointer;
 
-#  endif /* GL_VERSION_2_0 */
-#  if defined GL_VERSION_2_1
+# endif /* GL_VERSION_2_0 */
+# if (GL_VERSION_2_1 == 1)
 
 PFNGLUNIFORMMATRIX2X3FVPROC gload_glUniformMatrix2x3fv;
 PFNGLUNIFORMMATRIX3X2FVPROC gload_glUniformMatrix3x2fv;
@@ -11788,8 +11788,8 @@ PFNGLUNIFORMMATRIX4X2FVPROC gload_glUniformMatrix4x2fv;
 PFNGLUNIFORMMATRIX3X4FVPROC gload_glUniformMatrix3x4fv;
 PFNGLUNIFORMMATRIX4X3FVPROC gload_glUniformMatrix4x3fv;
 
-#  endif /* GL_VERSION_2_1 */
-#  if defined GL_VERSION_3_0
+# endif /* GL_VERSION_2_1 */
+# if (GL_VERSION_3_0 == 1)
 
 PFNGLCOLORMASKIPROC gload_glColorMaski;
 PFNGLGETBOOLEANI_VPROC gload_glGetBooleani_v;
@@ -11876,8 +11876,8 @@ PFNGLDELETEVERTEXARRAYSPROC gload_glDeleteVertexArrays;
 PFNGLGENVERTEXARRAYSPROC gload_glGenVertexArrays;
 PFNGLISVERTEXARRAYPROC gload_glIsVertexArray;
 
-#  endif /* GL_VERSION_3_0 */
-#  if defined GL_VERSION_3_1
+# endif /* GL_VERSION_3_0 */
+# if (GL_VERSION_3_1 == 1)
 
 PFNGLDRAWARRAYSINSTANCEDPROC gload_glDrawArraysInstanced;
 PFNGLDRAWELEMENTSINSTANCEDPROC gload_glDrawElementsInstanced;
@@ -11895,8 +11895,8 @@ extern PFNGLBINDBUFFERRANGEPROC gload_glBindBufferRange;
 extern PFNGLBINDBUFFERBASEPROC gload_glBindBufferBase;
 extern PFNGLGETINTEGERI_VPROC gload_glGetIntegeri_v;
 
-#  endif /* GL_VERSION_3_1 */
-#  if defined GL_VERSION_3_2
+# endif /* GL_VERSION_3_1 */
+# if (GL_VERSION_3_2 == 1)
 
 PFNGLDRAWELEMENTSBASEVERTEXPROC gload_glDrawElementsBaseVertex;
 PFNGLDRAWRANGEELEMENTSBASEVERTEXPROC gload_glDrawRangeElementsBaseVertex;
@@ -11918,8 +11918,8 @@ PFNGLTEXIMAGE3DMULTISAMPLEPROC gload_glTexImage3DMultisample;
 PFNGLGETMULTISAMPLEFVPROC gload_glGetMultisamplefv;
 PFNGLSAMPLEMASKIPROC gload_glSampleMaski;
 
-#  endif /* GL_VERSION_3_2 */
-#  if defined GL_VERSION_3_3
+# endif /* GL_VERSION_3_2 */
+# if (GL_VERSION_3_3 == 1)
 
 PFNGLBINDFRAGDATALOCATIONINDEXEDPROC gload_glBindFragDataLocationIndexed;
 PFNGLGETFRAGDATAINDEXPROC gload_glGetFragDataIndex;
@@ -11980,8 +11980,8 @@ PFNGLCOLORP4UIVPROC gload_glColorP4uiv;
 PFNGLSECONDARYCOLORP3UIPROC gload_glSecondaryColorP3ui;
 PFNGLSECONDARYCOLORP3UIVPROC gload_glSecondaryColorP3uiv;
 
-#  endif /* GL_VERSION_3_3 */
-#  if defined GL_VERSION_4_0
+# endif /* GL_VERSION_3_3 */
+# if (GL_VERSION_4_0 == 1)
 
 PFNGLMINSAMPLESHADINGPROC gload_glMinSampleShading;
 PFNGLBLENDEQUATIONIPROC gload_glBlendEquationi;
@@ -12030,8 +12030,8 @@ PFNGLBEGINQUERYINDEXEDPROC gload_glBeginQueryIndexed;
 PFNGLENDQUERYINDEXEDPROC gload_glEndQueryIndexed;
 PFNGLGETQUERYINDEXEDIVPROC gload_glGetQueryIndexediv;
 
-#  endif /* GL_VERSION_4_0 */
-#  if defined GL_VERSION_4_1
+# endif /* GL_VERSION_4_0 */
+# if (GL_VERSION_4_1 == 1)
 
 PFNGLRELEASESHADERCOMPILERPROC gload_glReleaseShaderCompiler;
 PFNGLSHADERBINARYPROC gload_glShaderBinary;
@@ -12123,8 +12123,8 @@ PFNGLDEPTHRANGEINDEXEDPROC gload_glDepthRangeIndexed;
 PFNGLGETFLOATI_VPROC gload_glGetFloati_v;
 PFNGLGETDOUBLEI_VPROC gload_glGetDoublei_v;
 
-#  endif /* GL_VERSION_4_1 */
-#  if defined GL_VERSION_4_2
+# endif /* GL_VERSION_4_1 */
+# if (GL_VERSION_4_2 == 1)
 
 PFNGLDRAWARRAYSINSTANCEDBASEINSTANCEPROC gload_glDrawArraysInstancedBaseInstance;
 PFNGLDRAWELEMENTSINSTANCEDBASEINSTANCEPROC gload_glDrawElementsInstancedBaseInstance;
@@ -12139,8 +12139,8 @@ PFNGLTEXSTORAGE3DPROC gload_glTexStorage3D;
 PFNGLDRAWTRANSFORMFEEDBACKINSTANCEDPROC gload_glDrawTransformFeedbackInstanced;
 PFNGLDRAWTRANSFORMFEEDBACKSTREAMINSTANCEDPROC gload_glDrawTransformFeedbackStreamInstanced;
 
-#  endif /* GL_VERSION_4_2 */
-#  if defined GL_VERSION_4_3
+# endif /* GL_VERSION_4_2 */
+# if (GL_VERSION_4_3 == 1)
 
 PFNGLCLEARBUFFERDATAPROC gload_glClearBufferData;
 PFNGLCLEARBUFFERSUBDATAPROC gload_glClearBufferSubData;
@@ -12187,8 +12187,8 @@ PFNGLOBJECTPTRLABELPROC gload_glObjectPtrLabel;
 PFNGLGETOBJECTPTRLABELPROC gload_glGetObjectPtrLabel;
 extern PFNGLGETPOINTERVPROC gload_glGetPointerv;
 
-#  endif /* GL_VERSION_4_3 */
-#  if defined GL_VERSION_4_4
+# endif /* GL_VERSION_4_3 */
+# if (GL_VERSION_4_4 == 1)
 
 PFNGLBUFFERSTORAGEPROC gload_glBufferStorage;
 PFNGLCLEARTEXIMAGEPROC gload_glClearTexImage;
@@ -12200,8 +12200,8 @@ PFNGLBINDSAMPLERSPROC gload_glBindSamplers;
 PFNGLBINDIMAGETEXTURESPROC gload_glBindImageTextures;
 PFNGLBINDVERTEXBUFFERSPROC gload_glBindVertexBuffers;
 
-#  endif /* GL_VERSION_4_4 */
-#  if defined GL_VERSION_4_5
+# endif /* GL_VERSION_4_4 */
+# if (GL_VERSION_4_5 == 1)
 
 PFNGLCLIPCONTROLPROC gload_glClipControl;
 PFNGLCREATETRANSFORMFEEDBACKSPROC gload_glCreateTransformFeedbacks;
@@ -12326,16 +12326,16 @@ PFNGLGETNHISTOGRAMPROC gload_glGetnHistogram;
 PFNGLGETNMINMAXPROC gload_glGetnMinmax;
 PFNGLTEXTUREBARRIERPROC gload_glTextureBarrier;
 
-#  endif /* GL_VERSION_4_5 */
-#  if defined GL_VERSION_4_6
+# endif /* GL_VERSION_4_5 */
+# if (GL_VERSION_4_6 == 1)
 
 PFNGLSPECIALIZESHADERPROC gload_glSpecializeShader;
 PFNGLMULTIDRAWARRAYSINDIRECTCOUNTPROC gload_glMultiDrawArraysIndirectCount;
 PFNGLMULTIDRAWELEMENTSINDIRECTCOUNTPROC gload_glMultiDrawElementsIndirectCount;
 PFNGLPOLYGONOFFSETCLAMPPROC gload_glPolygonOffsetClamp;
 
-#  endif /* GL_VERSION_4_6 */
-#  if defined GL_VERSION_ES_CM_1_0
+# endif /* GL_VERSION_4_6 */
+# if (GL_VERSION_ES_CM_1_0 == 1)
 
 extern PFNGLALPHAFUNCPROC gload_glAlphaFunc;
 extern PFNGLCLEARCOLORPROC gload_glClearColor;
@@ -12482,8 +12482,8 @@ PFNGLTRANSLATEXPROC gload_glTranslatex;
 extern PFNGLVERTEXPOINTERPROC gload_glVertexPointer;
 extern PFNGLVIEWPORTPROC gload_glViewport;
 
-#  endif /* GL_VERSION_ES_CM_1_0 */
-#  if defined GL_ES_VERSION_2_0
+# endif /* GL_VERSION_ES_CM_1_0 */
+# if (GL_ES_VERSION_2_0 == 1)
 
 extern PFNGLACTIVETEXTUREPROC gload_glActiveTexture;
 extern PFNGLATTACHSHADERPROC gload_glAttachShader;
@@ -12628,8 +12628,8 @@ extern PFNGLVERTEXATTRIB4FVPROC gload_glVertexAttrib4fv;
 extern PFNGLVERTEXATTRIBPOINTERPROC gload_glVertexAttribPointer;
 extern PFNGLVIEWPORTPROC gload_glViewport;
 
-#  endif /* GL_ES_VERSION_2_0 */
-#  if defined GL_ES_VERSION_3_0
+# endif /* GL_ES_VERSION_2_0 */
+# if (GL_ES_VERSION_3_0 == 1)
 
 extern PFNGLREADBUFFERPROC gload_glReadBuffer;
 extern PFNGLDRAWRANGEELEMENTSPROC gload_glDrawRangeElements;
@@ -12736,8 +12736,8 @@ extern PFNGLTEXSTORAGE2DPROC gload_glTexStorage2D;
 extern PFNGLTEXSTORAGE3DPROC gload_glTexStorage3D;
 extern PFNGLGETINTERNALFORMATIVPROC gload_glGetInternalformativ;
 
-#  endif /* GL_ES_VERSION_3_0 */
-#  if defined GL_ES_VERSION_3_1
+# endif /* GL_ES_VERSION_3_0 */
+# if (GL_ES_VERSION_3_1 == 1)
 
 extern PFNGLDISPATCHCOMPUTEPROC gload_glDispatchCompute;
 extern PFNGLDISPATCHCOMPUTEINDIRECTPROC gload_glDispatchComputeIndirect;
@@ -12808,8 +12808,8 @@ extern PFNGLVERTEXATTRIBIFORMATPROC gload_glVertexAttribIFormat;
 extern PFNGLVERTEXATTRIBBINDINGPROC gload_glVertexAttribBinding;
 extern PFNGLVERTEXBINDINGDIVISORPROC gload_glVertexBindingDivisor;
 
-#  endif /* GL_ES_VERSION_3_1 */
-#  if defined GL_ES_VERSION_3_2
+# endif /* GL_ES_VERSION_3_1 */
+# if (GL_ES_VERSION_3_2 == 1)
 
 PFNGLBLENDBARRIERPROC gload_glBlendBarrier;
 extern PFNGLCOPYIMAGESUBDATAPROC gload_glCopyImageSubData;
@@ -12856,8 +12856,8 @@ extern PFNGLTEXBUFFERPROC gload_glTexBuffer;
 extern PFNGLTEXBUFFERRANGEPROC gload_glTexBufferRange;
 extern PFNGLTEXSTORAGE3DMULTISAMPLEPROC gload_glTexStorage3DMultisample;
 
-#  endif /* GL_ES_VERSION_3_2 */
-#  if defined GL_SC_VERSION_2_0
+# endif /* GL_ES_VERSION_3_2 */
+# if (GL_SC_VERSION_2_0 == 1)
 
 extern PFNGLACTIVETEXTUREPROC gload_glActiveTexture;
 extern PFNGLBINDBUFFERPROC gload_glBindBuffer;
@@ -12971,7 +12971,7 @@ extern PFNGLVERTEXATTRIB4FVPROC gload_glVertexAttrib4fv;
 extern PFNGLVERTEXATTRIBPOINTERPROC gload_glVertexAttribPointer;
 extern PFNGLVIEWPORTPROC gload_glViewport;
 
-#  endif /* GL_SC_VERSION_2_0 */
+# endif /* GL_SC_VERSION_2_0 */
 #
 #  if defined (__cplusplus)
 

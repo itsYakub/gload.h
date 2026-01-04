@@ -12,14 +12,17 @@ g_version: str = '1.1'
 g_author: str = 'Jakub Oleksiak (yakubofficialmail@gmail.com)'
 g_licence: str = 'GNU LESSER GENERAL PUBLIC LICENSE Version 3, 29 June 2007'
 
-g_opts: str = 'hvo:'
+g_opts: str = 'hvo:p:'
 g_optl: list = [
     'help',     # -h, --help
     'version',  # -v, --version
     'output=',  # -o, --output
+    'profile=', # -p, --profile
 ]
 g_opt: dict = {
     'output': f'{g_path}/gload.h',
+    'profile': 'core',
+    'version': '4.6',
     'template': f'{g_path}/gload-template.h',
 }
 
@@ -54,6 +57,12 @@ def gl_getopt():
                     print(f'{__file__}: invalid path: {arg}')
                     sys.exit(1)
                 g_opt['output'] = arg
+
+        elif opt in ('-p', '--profile'):
+            if arg not in ('core', 'compatibility'):
+                print(f'{__file__}: invalid profile: {arg} (expected: core/compatibility)')
+                sys.exit(1)
+            g_opt['profile'] = arg
 
         elif opt in ('-h', '--help'):
             print('help')
@@ -367,14 +376,14 @@ def opengl_loader(parse: glParse):
             '/* <<gload-loadfunc>> */',
             gload_loadfunc(parse).replace('#', '#  ')
         ).replace(
+            '/* <<gload-declr-0>> */',
+            gload_declr(parse, 0).replace('#', '# ')
+        ).replace(
             '/* <<gload-declr-1>> */',
             gload_declr(parse, 1).replace('#', '# ')
         ).replace(
             '/* <<gload-declr-2>> */',
-            gload_declr(parse, 2).replace('#', '# ')
-        ).replace(
-            '/* <<gload-declr-0>> */',
-            gload_declr(parse, 0).replace('#', '#  ')
+            gload_declr(parse, 2).replace('#', '#  ')
         )
 
     with open(g_opt['output'], 'w') as f:
@@ -415,7 +424,7 @@ def gload_funcptr(parse: glParse) -> str:
 
     result = str()
     for feat in parse.feat:
-        result += f'#if defined {feat.name}\n\n'
+        result += f'#if ({feat.name} == 1)\n\n'
 
         for req in feat.req:
             for c_str in req.cmds:
@@ -442,7 +451,7 @@ def gload_enums(parse: glParse) -> str:
 
     result = str()
     for feat in parse.feat:
-        result += f'#if defined {feat.name}\n#\n'
+        result += f'#if ({feat.name} == 1)\n#\n'
 
         for req in feat.req:
             for e_str in req.enums:
@@ -460,7 +469,7 @@ def gload_declr(parse: glParse, mode: int) -> str:
 
     result = str()
     for feat in parse.feat:
-        result += f'#if defined {feat.name}\n\n'
+        result += f'#if ({feat.name} == 1)\n\n'
         # strip the last newline if we print macros...
         if mode == 2:
             result = result[:-1]
@@ -503,7 +512,7 @@ def gload_nameaddr(parse: glParse) -> str:
 
     result = str()
     for feat in parse.feat:
-        result += f'#if defined {feat.name}\n\n'
+        result += f'#if ({feat.name} == 1)\n\n'
 
         for req in feat.req:
             for c_str in req.cmds:
@@ -522,7 +531,7 @@ def gload_loadfunc(parse: glParse) -> str:
 
     result = str()
     for feat in parse.feat:
-        result += f'#if defined {feat.name}\n\n'
+        result += f'#if ({feat.name} == 1)\n\n'
 
         for req in feat.req:
             for c_str in req.cmds:
