@@ -384,6 +384,10 @@ def opengl_loader(parse: glParse):
         ).replace(
             '/* <<gload-declr-2>> */',
             gload_declr(parse, 2).replace('#', '#  ')
+        ).replace(
+            '<<gload-profile>>', g_opt['profile']
+        ).replace(
+            '<<gload-glversion>>', g_opt['version']
         )
 
     with open(g_opt['output'], 'w') as f:

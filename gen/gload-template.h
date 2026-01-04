@@ -2,13 +2,17 @@
  *
  *  gload.h: OpenGL API Loader:
  *
- *      - version: <<gload-version>>
  *      - made by: <<gload-author>>
+ *      - version: <<gload-version>>
  *      - licence: <<gload-licence>>
  *
  *
+ *  OpenGL settings:
+ *      - profile: <<gload-profile>>
+ *      - version: <<gload-glversion>>
  *
- *  Configuration:
+ *
+ *  Configuration (can be defined by user):
  *
  *      #define GLOAD_IMPLEMENTATION
  *          - TYPE:
@@ -84,7 +88,7 @@
  *              Enabled by default if GLOAD_VERBOSE is defined.
  *
  *
- *  Constants:
+ *  Constants (MUST NOT be defined by user):
  *
  *      GLOAD_PLATFORM
  *          - TYPE:
@@ -98,51 +102,30 @@
  *          - DESCRIPTION:
  *              Current version of gload.h header file as a string.
  *
+ *      GL_VERSION_...
+ *          - TYPE:
+ *              Integer
+ *          - DESCRIPTION:
+ *              Compile-time version detection of OpenGL.
+ *              Value of '1' means OpenGL version is handled by gload.h.
+ *              Value of '0' means OpenGL version should not be handled by gload.h.
+ *
  *
  *  Summary and Notes:
  *
  *      This is gload.h: single-header only OpenGL loader for Windows, MacOS and Linux systems.
  *      The goal of this library is simple: provide users with drag-n-drop solution for loading
- *      legacy and modern OpenGL functions, including OpenGLES1, OpenGLES2 and OpenGLES3.
+ *      legacy and modern OpenGL and OpenGLES functions.
  *
- *      gload.h is generated based on the OpenGL Registry for core and compatibility profiles,
- *      hosted by KhronosGroup on their github account:
+ *      gload.h is generated based on the OpenGL Registry, hosted by KhronosGroup.
+ *      Generator is made in python3 on GNU/Linux platform. It works with latest python3 versios.
+ *      Source:
  *      - https://github.com/KhronosGroup/OpenGL-Registry.git
  *
- *      But you'd ask: "Why would you create another OpenGL loader when we have glad, glut, glew...?".
- *      Well, the answer is pretty simple:
-*
- *      - I wrote an OpenGL loader in the past: glapi.h. I wasn't completely happy with it,
- *        python script was clumsy, templating sucked and a lot more problems.
- *        I wanted to start fresh, with experience from the past and with inspiration from other projects.
- *
- *      - I was curious why do we need OpenGL loaders in the first place:
- *        I wanted to learn why, or even is it necessary to use loaders in the first place.
- *        I've even looked through libGL.so file looking at the symbols stored in it,
- *        figuring out why should I use, for example, glad instead of classing linking (-lGL).
- *        The answer is pretty simple:
- *
- *        - OpenGL is a specification, not a library by itself. Implementation for the specification is left
- *          to the GPU vendor like nVidia or AMD;
- *        - Leaving an implementation to the GPU vendor allows us to easily switch between implementations
- *          if we so desire;
- *        - Actually, there's a possibility of using modern OpenGL functions by just linking with the .so file.
- *          It is risky however, as the implementation doesn't have to live there. Implementation is guaranteed
- *          to live in the GPU space, that's why it's safer to use loaders.
- *
- *      - It is a nice exercise of building a propper library and practicing python scripting.
- *        Especially if we'd like to create such a project with as little dependencies as possible.
- *        This project is solely dependent on these few external resources:
- *        - C/C++ standard library;
- *        - python's standard library;
- *        - OpenGL Registry provided by KhronosGroup.
- *        
  *      This project is heavily inspired by the following projects:
  *      - nothings/stb: https://github.com/nothings/stb.git
  *      - Dav1dde/glad: https://github.com/Dav1dde/glad.git
  *      - macron/glbind: https://github.com/mackron/glbind.git
- *      - KhronosGroup/OpenGL-Registry: https://github.com/KhronosGroup/OpenGL-Registry.git
- *
  *
  *      Cheers,
  *          <<gload-author>>
@@ -400,6 +383,7 @@ static struct s_nameaddr    g_nameaddr[] = {
     
 /* <<gload-nameaddr>> */
 
+    /* null-terminator */
     { "", 0 }
 };
 
