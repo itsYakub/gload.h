@@ -163,21 +163,62 @@
 #endif /* __cplusplus */
 #
 #if !defined (_gload_h_)
+# define _gload_h_ 1
 #
 # if defined (__gl_h_)
 #  error "#include <GL/gl.h> detected. To ensure a proper usage of this loader, remove the include."
 # endif /* __gl_h_ */
+# define __gl_h_ 1
+#
 # if defined (__gl_glext_h_)
 #  error "#include <GL/glext.h> detected. To ensure a proper usage of this loader, remove the include."
 # endif /* __gl_glext_h_ */
+# define __gl_glext_h_ 1
+#
 # if defined (__gl_glcorearb_h_)
 #  error "#include <GL/glcorearb.h> detected. To ensure a proper usage of this loader, remove the include."
 # endif /* __gl_glcorearb_h_ */
-#
-# define _gload_h_ 1
-# define __gl_h_ 1
-# define __gl_glext_h_ 1
 # define __gl_glcorearb_h_ 1
+#
+# if defined (__gles2_gl2_h_)
+#  error "#include <GLES2/gl2.h> detected. To ensure a proper usage of this loader, remove the include."
+# endif /* __gles2_gl2_h_ */
+# define __gles2_gl2_h_ 1
+#
+# if defined (__gles2_gl2ext_h_)
+#  error "#include <GLES2/gl2ext.h> detected. To ensure a proper usage of this loader, remove the include."
+# endif /* __gles2_gl2ext_h_ */
+# define __gles2_gl2ext_h_ 1
+#
+# if defined (__gl2platform_h_)
+#  error "#include <GLES2/gl2platform.h> detected. To ensure a proper usage of this loader, remove the include."
+# endif /* __gl2platform_h_ */
+# define __gl2platform_h_ 1
+#
+# if defined (__gles3_gl3_h_)
+#  error "#include <GLES3/gl3.h> detected. To ensure a proper usage of this loader, remove the include."
+# endif /* __gles3_gl3_h_ */
+# define __gles3_gl3_h_ 1
+#
+# if defined (__gles3_gl31_h_)
+#  error "#include <GLES3/gl31.h> detected. To ensure a proper usage of this loader, remove the include."
+# endif /* __gles3_gl31_h_ */
+# define __gles3_gl31_h_ 1
+#
+# if defined (__gles3_gl32_h_)
+#  error "#include <GLES3/gl32.h> detected. To ensure a proper usage of this loader, remove the include."
+# endif /* __gles3_gl32_h_ */
+# define __gles3_gl32_h_ 1
+#
+# if defined (__gles3_gl3ext_h_)
+#  error "#include <GLES3/gl3ext.h> detected. To ensure a proper usage of this loader, remove the include."
+# endif /* __gles3_gl3ext_h_ */
+# define __gles3_gl3ext_h_ 1
+#
+# if defined (__gl3platform_h_)
+#  error "#include <GLES3/gl3platform.h> detected. To ensure a proper usage of this loader, remove the include."
+# endif /* __gl3platform_h_ */
+# define __gl3platform_h_ 1
 #
 # if defined (__cplusplus)
 
