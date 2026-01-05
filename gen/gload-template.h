@@ -266,8 +266,6 @@ extern "C" {
 /* <<gload-profile-macro>> */
 #
 /* <<gload-glversion-macro>> */
-#
-/* <<gload-version-macro>> */
 
 /* SECTION:
  *  gload API
@@ -324,6 +322,10 @@ GLAPI void  *gloadGetProcAddress(const char *);
  *  OpenGL API
  * * * * * * */
 
+/* <<gload-version-macro>> */
+#
+/* <<gload-extension-macro>> */
+#
 /* <<gload-typedef>> */
 
 /* <<gload-enums>> */
