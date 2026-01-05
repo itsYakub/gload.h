@@ -8,13 +8,13 @@
 
 int main(void) {
     sf::Window  window(sf::VideoMode( { 800, 600 } ), "gload.h - SFML sample", sf::Style::Titlebar | sf::Style::Close);
-    sf::Event   event;
-
     if (!window.setActive()) { return (1); }
     if (!gloadLoadGL()) { return (1); }
 
     while (window.isOpen()) {
         window.display();
+
+        sf::Event event = { };
         while (window.pollEvent(event)) {
             switch (event.type) {
                 case (sf::Event::Closed): {

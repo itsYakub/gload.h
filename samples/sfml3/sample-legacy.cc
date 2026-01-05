@@ -11,7 +11,7 @@
 
 
 int main(void) {
-    sf::Window  window(sf::VideoMode( { 800, 600 } ), "gload.h - SFML sample", sf::Style::Default, sf::State::Windowed);
+    sf::Window window(sf::VideoMode( { 800, 600 } ), "gload.h - SFML sample", sf::Style::Default, sf::State::Windowed);
     if (!window.setActive()) { return (1); }
     if (!gloadLoadGL()) { return (1); }
 

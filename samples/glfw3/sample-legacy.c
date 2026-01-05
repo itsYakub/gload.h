@@ -6,11 +6,9 @@
 
 
 int main(void) {
-    GLFWwindow  *window;
-
     if (!glfwInit()) { return (1); }
 
-    window = glfwCreateWindow(800, 600, "gload.h - GLFW3 sample", 0, 0);
+    GLFWwindow *window = glfwCreateWindow(800, 600, "gload.h - GLFW3 sample", 0, 0);
     if (!window) { return (1); }
 
     glfwMakeContextCurrent(window);

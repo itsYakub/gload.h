@@ -9,7 +9,7 @@ static const GLchar *g_vertex_glsl =
 "#version 330 core\n"
 "\n"
 "layout (location=0)\n"
-"in vec3    a_pos;\n"
+"in vec3 a_pos;\n"
 "\n"
 "void main() {\n"
 "   gl_Position = vec4(a_pos, 1.0);\n"
@@ -19,7 +19,7 @@ static const GLchar *g_vertex_glsl =
 static const GLchar *g_fragment_glsl =
 "#version 330 core\n"
 "\n"
-"out vec4   f_col;\n"
+"out vec4 f_col;\n"
 "\n"
 "void main() {\n"
 "   f_col = vec4(1.0, 1.0, 1.0, 1.0);\n"
@@ -42,14 +42,13 @@ GLuint  g_indices[] = {
 
 
 int main(void) {
-    GLFWwindow  *window;
-
     if (!glfwInit()) { return (1); }
 
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 6);
+    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
-    window = glfwCreateWindow(800, 600, "gload.h - GLFW3 sample", 0, 0);
+    GLFWwindow *window = glfwCreateWindow(800, 600, "gload.h - GLFW3 sample", 0, 0);
     if (!window) { return (1); }
 
     glfwMakeContextCurrent(window);
@@ -57,11 +56,8 @@ int main(void) {
     if (!gloadLoadGLLoader((t_gloadLoader) glfwGetProcAddress)) { return (1); }
     
 
-    GLuint      shader,
-                sh_v, sh_f;
-    
-    sh_v = glCreateShader(GL_VERTEX_SHADER);
-    sh_f = glCreateShader(GL_FRAGMENT_SHADER);
+    GLuint sh_v = glCreateShader(GL_VERTEX_SHADER);
+    GLuint sh_f = glCreateShader(GL_FRAGMENT_SHADER);
 
     glShaderSource(sh_v, 1, &g_vertex_glsl, 0);
     glShaderSource(sh_f, 1, &g_fragment_glsl, 0);
@@ -69,7 +65,7 @@ int main(void) {
     glCompileShader(sh_v);
     glCompileShader(sh_f);
 
-    shader = glCreateProgram();
+    GLuint shader = glCreateProgram();
     glAttachShader(shader, sh_v);
     glAttachShader(shader, sh_f);
     glLinkProgram(shader);
@@ -78,10 +74,10 @@ int main(void) {
     glDeleteShader(sh_f), sh_f = 0;
     
 
-    GLuint      vao,
-                vbo, ibo;
-
+    GLuint vao;
     glCreateVertexArrays(1, &vao);
+                
+    GLuint vbo, ibo;
     glCreateBuffers(1, &vbo);
     glCreateBuffers(1, &ibo);
     
