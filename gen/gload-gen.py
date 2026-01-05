@@ -423,60 +423,98 @@ def opengl_loader(parse: glParse):
     with open(g_opt['template'], 'r') as f:
         fstr = f.read()
 
-    # There're probably better ways to replace template strings...
-    # ... but I couldn't be bothered looking for them.
-    # Maybe in the future I'll try to implement a better system.
-    fstr = fstr.replace(
-            '<<gload-version>>', g_version
-        ).replace(
-            '<<gload-author>>', g_author
-        ).replace(
-            '<<gload-licence>>', g_licence
-        ).replace(
-            '/* <<gload-profile-macro>> */',
-            gload_profile_macro().replace('#', '# ')
-        ).replace(
-            '/* <<gload-glversion-macro>> */',
-            gload_glversion_macro().replace('#', '# ')
-        ).replace(
-            '/* <<gload-version-macro>> */',
-            gload_version_macro(parse.feat).replace('#', '# ')
-        ).replace(
-            '/* <<gload-extension-macro>> */',
-            gload_extension_macro(parse.ext).replace('#', '# ')
-        ).replace(
-            '/* <<gload-typedef>> */',
-            gload_typedefs(parse.types).replace('#', '# ')
-        ).replace(
-            '/* <<gload-enums>> */',
-            gload_enums(parse.feat, parse.enums).replace('#', '# ')
-        ).replace(
-            '/* <<gload-funcptr>> */',
-            gload_funcptr(parse.feat, parse.cmds).replace('#', '# ')
-        ).replace(
-            '/* <<gload-nameaddr>> */',
-            gload_nameaddr(parse.feat, parse.cmds).replace('#', '#  ')
-        ).replace(
-            '/* <<gload-loadfunc>> */',
-            gload_loadfunc(parse.feat, parse.cmds).replace('#', '#  ')
-        ).replace(
-            '/* <<gload-declr-0>> */',
-            gload_declr(parse.feat, parse.cmds, 0).replace('#', '# ')
-        ).replace(
-            '/* <<gload-declr-1>> */',
-            gload_declr(parse.feat, parse.cmds, 1).replace('#', '# ')
-        ).replace(
-            '/* <<gload-declr-2>> */',
-            gload_declr(parse.feat, parse.cmds, 2).replace('#', '# ')
-        ).replace(
-            '<<gload-profile>>', g_opt['profile']
-        ).replace(
-            '<<gload-glversion>>', g_opt['version']
-        ).replace(
-            '<<gload-glesversion>>', g_opt['version-es']
-        ).replace(
-            '<<gload-glscversion>>', g_opt['version-sc']
-        )
+    # <<gload-version>>
+    fstr = fstr.replace('<<gload-version>>', g_version)
+
+    # <<gload-author>>
+    fstr = fstr.replace('<<gload-author>>', g_author)
+
+    # <<gload-licence>>
+    fstr = fstr.replace('<<gload-licence>>', g_licence)
+
+    # <<gload-profile>>
+    fstr = fstr.replace('<<gload-profile>>', g_opt['profile'])
+
+    # <<gload-profile-macro>>
+    template = gload_profile_macro()
+    template = template.replace('#', '# ')
+    fstr = fstr.replace('/* <<gload-profile-macro>> */', template)
+
+    # <<gload-glversion>>
+    fstr = fstr.replace('<<gload-glversion>>', g_opt['version'])
+
+    # <<gload-glesversion>>
+    fstr = fstr.replace('<<gload-glesversion>>', g_opt['version-es'])
+
+    # <<gload-glscversion>>
+    fstr = fstr.replace('<<gload-glscversion>>', g_opt['version-sc'])
+
+    # <<gload-glversion-macro>>
+    template = gload_glversion_macro()
+    template = template.replace('#', '# ')
+    fstr = fstr.replace('/* <<gload-glversion-macro>> */', template)
+
+    # <<gload-version>>
+    fstr = fstr.replace('<<gload-version>>', g_version)
+
+    # <<gload-version-macro>>
+    template = gload_version_macro(parse.feat, parse.ext)
+    template = template.replace('#', '# ')
+    fstr = fstr.replace('/* <<gload-version-macro>> */', template)
+
+    # <<gload-typedef>>
+    template = gload_typedefs(parse.types)
+    template = template.replace('#', '# ')
+    fstr = fstr.replace('/* <<gload-typedef>> */', template)
+
+    # <<gload-enums>>
+    template = gload_enums(parse.feat, parse.enums)
+    template += '\n'
+    template += gload_enums(parse.ext, parse.enums)
+    template = template.replace('#', '# ')
+    fstr = fstr.replace('/* <<gload-enums>> */', template)
+
+    # <<gload-funcptr>>
+    template = gload_funcptr(parse.feat, parse.cmds)
+    template += '\n'
+    template += gload_funcptr(parse.ext, parse.cmds)
+    template = template.replace('#', '# ')
+    fstr = fstr.replace('/* <<gload-funcptr>> */', template)
+
+    # <<glaod-nameaddr>>
+    template = gload_nameaddr(parse.feat, parse.cmds)
+    template += '\n'
+    template += gload_nameaddr(parse.ext, parse.cmds)
+    template = template.replace('#', '# ')
+    fstr = fstr.replace('/* <<gload-nameaddr>> */', template)
+
+    # <<gload-loadfunc>>
+    template = gload_loadfunc(parse.feat, parse.cmds)
+    template += '\n'
+    template += gload_loadfunc(parse.ext, parse.cmds)
+    template = template.replace('#', '# ')
+    fstr = fstr.replace('/* <<gload-loadfunc>> */', template)
+
+    # <<gload-declr-0>>
+    template = gload_declr(parse.feat, parse.cmds, 0)
+    template += '\n'
+    template += gload_declr(parse.ext, parse.cmds, 0)
+    template = template.replace('#', '# ')
+    fstr = fstr.replace('/* <<gload-declr-0>> */', template)
+
+    # <<gload-declr-1>>
+    template = gload_declr(parse.feat, parse.cmds, 1)
+    template += '\n'
+    template += gload_declr(parse.ext, parse.cmds, 1)
+    template = template.replace('#', '# ')
+    fstr = fstr.replace('/* <<gload-declr-1>> */', template)
+
+    # <<gload-declr-2>>
+    template = gload_declr(parse.feat, parse.cmds, 2)
+    template += '\n'
+    template += gload_declr(parse.ext, parse.cmds, 2)
+    template = template.replace('#', '# ')
+    fstr = fstr.replace('/* <<gload-declr-2>> */', template)
 
     with open(g_opt['output'], 'w') as f:
         f.write(fstr)
@@ -516,22 +554,15 @@ def gload_glversion_macro() -> str:
 
     return (result.strip())
 
-def gload_version_macro(feats: list[glFeat]) -> str:
+def gload_version_macro(feats: list[glFeat], exts: list[glExt]) -> str:
     result: str
 
     result = str()
     for feat in feats:
-        result += f'#define {feat.name} 1\n'
-    return (result.strip())
-
-def gload_extension_macro(exts: list[glExt]) -> str:
-    result: str
-
-    result = str()
+        result += f'#define {feat.name}\n'
     for ext in exts:
-        result += f'#define {ext.name} 1\n'
+        result += f'#define {ext.name}\n'
     return (result.strip())
-
 
 def gload_typedefs(types: list[glType]) -> str:
     result: str
@@ -549,14 +580,14 @@ def gload_typedefs(types: list[glType]) -> str:
     return (result.strip())
 
 
-def gload_funcptr(feats: list[glFeat], cmds: list[glCmd]) -> str:
+def gload_funcptr(lst, cmds: list[glCmd]) -> str:
     result: str
 
     result = str()
-    for feat in feats:
-        result += f'#if ({feat.name} == 1)\n\n'
+    for child in lst:
+        result += f'#if defined ({child.name})\n\n'
 
-        for req in feat.req:
+        for req in child.req:
             for c_str in req.cmds:
                 cmd: glCmd
                 func: str
@@ -572,39 +603,38 @@ def gload_funcptr(feats: list[glFeat], cmds: list[glCmd]) -> str:
                     func += 'void'
                 func += ');\n'
                 result += func
-        result += f'\n#endif /* {feat.name} */\n'
+        result += f'\n#endif /* {child.name} */\n'
     return (result.strip())
 
 
-def gload_enums(feats: list[glFeat], enums: list[glEnum]) -> str:
+def gload_enums(lst, enums: list[glEnum]) -> str:
     result: str
 
     result = str()
-    for feat in feats:
-        result += f'#if ({feat.name} == 1)\n#\n'
-
-        for req in feat.req:
+    for child in lst:
+        result += f'#if defined ({child.name})\n#\n'
+        for req in child.req:
             for e_str in req.enums:
                 enum: glEnum
 
                 enum = next(enum for enum in enums if enum.name == e_str)
                 result += f'# define {enum.name} {enum.value}\n'
 
-        result += f'#\n#endif /* {feat.name} */\n'
+        result += f'#\n#endif /* {child.name} */\n'
     return (result.strip())
 
 
-def gload_declr(feats: list[glFeat], cmds: list[glCmd], mode: int) -> str:
+def gload_declr(lst, cmds: list[glCmd], mode: int) -> str:
     result: str
 
     result = str()
-    for feat in feats:
-        result += f'#if ({feat.name} == 1)\n\n'
+    for child in lst:
+        result += f'#if defined ({child.name})\n\n'
         # strip the last newline if we print macros...
         if mode == 2:
             result = result[:-1]
 
-        for req in feat.req:
+        for req in child.req:
             for c_str in req.cmds:
                 cmd: glCmd
                 func: str
@@ -633,18 +663,18 @@ def gload_declr(feats: list[glFeat], cmds: list[glCmd], mode: int) -> str:
         # add a newline if we're not printing macros...
         if mode != 2:
             result += '\n'
-        result += f'#endif /* {feat.name} */\n'
+        result += f'#endif /* {child.name} */\n'
     return (result.strip())
 
 
-def gload_nameaddr(feats: list[glFeat], cmds: list[glCmd]) -> str:
+def gload_nameaddr(lst, cmds: list[glCmd]) -> str:
     result: str
 
     result = str()
-    for feat in feats:
-        result += f'#if ({feat.name} == 1)\n\n'
+    for child in lst:
+        result += f'#if defined ({child.name})\n\n'
 
-        for req in feat.req:
+        for req in child.req:
             for c_str in req.cmds:
                 cmd: glCmd
                 name: str
@@ -652,29 +682,29 @@ def gload_nameaddr(feats: list[glFeat], cmds: list[glCmd]) -> str:
                 cmd = next(cmd for cmd in cmds if cmd.name == c_str)
                 name = f'   {{ \"{cmd.name}\", (void **) &gload_{cmd.name} }},\n'
                 result += name
-        result += f'\n#endif /* {feat.name} */\n'
+        result += f'\n#endif /* {child.name} */\n'
     return (result.strip())
 
 
-def gload_loadfunc(feats: list[glFeat], cmds: list[glCmd]) -> str:
+def gload_loadfunc(lst, cmds: list[glCmd]) -> str:
     result: str
 
     result = str()
-    for feat in feats:
-        result += f'#if ({feat.name} == 1)\n\n'
+    for child in lst:
+        result += f'#if defined ({child.name})\n\n'
 
-        for req in feat.req:
+        for req in child.req:
             for c_str in req.cmds:
                 cmd: glCmd
                 name: str
 
                 cmd = next(cmd for cmd in cmds if cmd.name == c_str)
-                name = f'   if (!gload_{cmd.name} && '
+                name = f'   if defined (!gload_{cmd.name} && '
                 name += f'!(gload_{cmd.name} = '
                 name += f'(PFN{cmd.name.upper()}PROC) load(\"{cmd.name}\"))) '
                 name += '{ return (0); }\n'
                 result += name
-        result += f'\n#endif /* {feat.name} */\n'
+        result += f'\n#endif /* {child.name} */\n'
     return (result.strip())
 
 

@@ -324,8 +324,6 @@ GLAPI void  *gloadGetProcAddress(const char *);
 
 /* <<gload-version-macro>> */
 #
-/* <<gload-extension-macro>> */
-#
 /* <<gload-typedef>> */
 
 /* <<gload-enums>> */
