@@ -3,7 +3,7 @@
  *  gload.h: OpenGL API Loader:
  *
  *      - made by: Jakub Oleksiak (yakubofficialmail@gmail.com)
- *      - version: 1.1
+ *      - version: 1.2
  *      - licence: GNU LESSER GENERAL PUBLIC LICENSE Version 3, 29 June 2007
  *
  *
@@ -260,7 +260,7 @@ extern "C" {
 # endif /* GLOAD_LINUX, GLOAD_APPLE, GLOAD_WIN32 */
 #
 # if !defined GLOAD_VERSION
-#  define GLOAD_VERSION "1.1"
+#  define GLOAD_VERSION "1.2"
 # endif /* GLOAD_VERSION */
 #
 # if !defined (GLOAD_GL_PROFILE)

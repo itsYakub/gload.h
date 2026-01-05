@@ -8,7 +8,7 @@ import xml.etree.ElementTree as ET
 
 g_path: str = os.path.dirname(__file__)
 g_name: str = 'gload.h'
-g_version: str = '1.1'
+g_version: str = '1.2'
 g_author: str = 'Jakub Oleksiak (yakubofficialmail@gmail.com)'
 g_licence: str = 'GNU LESSER GENERAL PUBLIC LICENSE Version 3, 29 June 2007'
 
