@@ -585,6 +585,12 @@ def gload_funcptr(lst, cmds: list[glCmd]) -> str:
 
     result = str()
     for child in lst:
+        # check if 'cmds' list of current child's requiremens is greater than 0...
+        # ...if not, we don't bother adding it to gload.h...
+        if len(child.req) == 1:
+            if len(child.req[0].cmds) == 0:
+                continue
+
         result += f'#if defined ({child.name})\n\n'
 
         for req in child.req:
@@ -612,6 +618,12 @@ def gload_enums(lst, enums: list[glEnum]) -> str:
 
     result = str()
     for child in lst:
+        # check if 'enums' list of current child's requiremens is greater than 0...
+        # ...if not, we don't bother adding it to gload.h...
+        if len(child.req) == 1:
+            if len(child.req[0].enums) == 0:
+                continue
+
         result += f'#if defined ({child.name})\n#\n'
         for req in child.req:
             for e_str in req.enums:
@@ -629,6 +641,12 @@ def gload_declr(lst, cmds: list[glCmd], mode: int) -> str:
 
     result = str()
     for child in lst:
+        # check if 'cmds' list of current child's requiremens is greater than 0...
+        # ...if not, we don't bother adding it to gload.h...
+        if len(child.req) == 1:
+            if len(child.req[0].cmds) == 0:
+                continue
+
         result += f'#if defined ({child.name})\n\n'
         # strip the last newline if we print macros...
         if mode == 2:
@@ -672,6 +690,12 @@ def gload_nameaddr(lst, cmds: list[glCmd]) -> str:
 
     result = str()
     for child in lst:
+        # check if 'cmds' list of current child's requiremens is greater than 0...
+        # ...if not, we don't bother adding it to gload.h...
+        if len(child.req) == 1:
+            if len(child.req[0].cmds) == 0:
+                continue
+
         result += f'#if defined ({child.name})\n\n'
 
         for req in child.req:
@@ -691,6 +715,12 @@ def gload_loadfunc(lst, cmds: list[glCmd]) -> str:
 
     result = str()
     for child in lst:
+        # check if 'cmds' list of current child's requiremens is greater than 0...
+        # ...if not, we don't bother adding it to gload.h...
+        if len(child.req) == 1:
+            if len(child.req[0].cmds) == 0:
+                continue
+
         result += f'#if defined ({child.name})\n\n'
 
         for req in child.req:

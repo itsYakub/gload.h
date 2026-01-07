@@ -4691,10 +4691,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_MULTISAMPLE_BIT_3DFX 0x20000000
 # 
 # endif /* GL_3DFX_multisample */
-# if defined (GL_3DFX_tbuffer)
-# 
-# 
-# endif /* GL_3DFX_tbuffer */
 # if defined (GL_3DFX_texture_compression_FXT1)
 # 
 #  define GL_COMPRESSED_RGB_FXT1_3DFX 0x86B0
@@ -4744,10 +4740,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_DEPTH_CLAMP_FAR_AMD 0x901F
 # 
 # endif /* GL_AMD_depth_clamp_separate */
-# if defined (GL_AMD_draw_buffers_blend)
-# 
-# 
-# endif /* GL_AMD_draw_buffers_blend */
 # if defined (GL_AMD_framebuffer_multisample_advanced)
 # 
 #  define GL_RENDERBUFFER_STORAGE_SAMPLES_AMD 0x91B2
@@ -4828,10 +4820,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_RGBA8UI 0x8D7C
 # 
 # endif /* GL_AMD_interleaved_elements */
-# if defined (GL_AMD_multi_draw_indirect)
-# 
-# 
-# endif /* GL_AMD_multi_draw_indirect */
 # if defined (GL_AMD_name_gen_delete)
 # 
 #  define GL_DATA_BUFFER_AMD 0x9151
@@ -4926,10 +4914,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_CONTINUOUS_AMD 0x9007
 # 
 # endif /* GL_AMD_vertex_shader_tessellator */
-# if defined (GL_ANDROID_extension_pack_es31a)
-# 
-# 
-# endif /* GL_ANDROID_extension_pack_es31a */
 # if defined (GL_ANGLE_depth_texture)
 # 
 #  define GL_DEPTH_COMPONENT 0x1902
@@ -5016,10 +5000,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_CLIP_DISTANCE7_APPLE 0x3007
 # 
 # endif /* GL_APPLE_clip_distance */
-# if defined (GL_APPLE_copy_texture_levels)
-# 
-# 
-# endif /* GL_APPLE_copy_texture_levels */
 # if defined (GL_APPLE_element_array)
 # 
 #  define GL_ELEMENT_ARRAY_APPLE 0x8A0C
@@ -5237,10 +5217,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_MAX_ELEMENT_INDEX 0x8D6B
 # 
 # endif /* GL_ARB_ES3_compatibility */
-# if defined (GL_ARB_base_instance)
-# 
-# 
-# endif /* GL_ARB_base_instance */
 # if defined (GL_ARB_bindless_texture)
 # 
 #  define GL_UNSIGNED_INT64_ARB 0x140F
@@ -5274,10 +5250,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_SYNC_CL_EVENT_COMPLETE_ARB 0x8241
 # 
 # endif /* GL_ARB_cl_event */
-# if defined (GL_ARB_clear_buffer_object)
-# 
-# 
-# endif /* GL_ARB_clear_buffer_object */
 # if defined (GL_ARB_clear_texture)
 # 
 #  define GL_CLEAR_TEXTURE 0x9365
@@ -5302,10 +5274,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_FIXED_ONLY_ARB 0x891D
 # 
 # endif /* GL_ARB_color_buffer_float */
-# if defined (GL_ARB_compatibility)
-# 
-# 
-# endif /* GL_ARB_compatibility */
 # if defined (GL_ARB_compressed_texture_pixel_storage)
 # 
 #  define GL_UNPACK_COMPRESSED_BLOCK_WIDTH 0x9127
@@ -5362,10 +5330,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_COPY_WRITE_BUFFER 0x8F37
 # 
 # endif /* GL_ARB_copy_buffer */
-# if defined (GL_ARB_copy_image)
-# 
-# 
-# endif /* GL_ARB_copy_image */
 # if defined (GL_ARB_cull_distance)
 # 
 #  define GL_MAX_CULL_DISTANCES 0x82F9
@@ -5457,24 +5421,12 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_DRAW_BUFFER15_ARB 0x8834
 # 
 # endif /* GL_ARB_draw_buffers */
-# if defined (GL_ARB_draw_buffers_blend)
-# 
-# 
-# endif /* GL_ARB_draw_buffers_blend */
-# if defined (GL_ARB_draw_elements_base_vertex)
-# 
-# 
-# endif /* GL_ARB_draw_elements_base_vertex */
 # if defined (GL_ARB_draw_indirect)
 # 
 #  define GL_DRAW_INDIRECT_BUFFER 0x8F3F
 #  define GL_DRAW_INDIRECT_BUFFER_BINDING 0x8F43
 # 
 # endif /* GL_ARB_draw_indirect */
-# if defined (GL_ARB_draw_instanced)
-# 
-# 
-# endif /* GL_ARB_draw_instanced */
 # if defined (GL_ARB_enhanced_layouts)
 # 
 #  define GL_LOCATION_COMPONENT 0x934A
@@ -5704,10 +5656,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_PROGRAM_BINARY_FORMATS 0x87FF
 # 
 # endif /* GL_ARB_get_program_binary */
-# if defined (GL_ARB_get_texture_sub_image)
-# 
-# 
-# endif /* GL_ARB_get_texture_sub_image */
 # if defined (GL_ARB_gl_spirv)
 # 
 #  define GL_SHADER_BINARY_FORMAT_SPIR_V_ARB 0x9551
@@ -5996,10 +5944,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_VIEW_CLASS_ASTC_12x12_RGBA 0x9395
 # 
 # endif /* GL_ARB_internalformat_query2 */
-# if defined (GL_ARB_invalidate_subdata)
-# 
-# 
-# endif /* GL_ARB_invalidate_subdata */
 # if defined (GL_ARB_map_buffer_alignment)
 # 
 #  define GL_MIN_MAP_BUFFER_ALIGNMENT 0x90BC
@@ -6029,14 +5973,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_MATRIX_INDEX_ARRAY_POINTER_ARB 0x8849
 # 
 # endif /* GL_ARB_matrix_palette */
-# if defined (GL_ARB_multi_bind)
-# 
-# 
-# endif /* GL_ARB_multi_bind */
-# if defined (GL_ARB_multi_draw_indirect)
-# 
-# 
-# endif /* GL_ARB_multi_draw_indirect */
 # if defined (GL_ARB_multisample)
 # 
 #  define GL_MULTISAMPLE_ARB 0x809D
@@ -6570,10 +6506,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_TESS_CONTROL_SHADER 0x8E88
 # 
 # endif /* GL_ARB_tessellation_shader */
-# if defined (GL_ARB_texture_barrier)
-# 
-# 
-# endif /* GL_ARB_texture_barrier */
 # if defined (GL_ARB_texture_border_clamp)
 # 
 #  define GL_CLAMP_TO_BORDER_ARB 0x812D
@@ -6820,10 +6752,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_TEXTURE_IMMUTABLE_FORMAT 0x912F
 # 
 # endif /* GL_ARB_texture_storage */
-# if defined (GL_ARB_texture_storage_multisample)
-# 
-# 
-# endif /* GL_ARB_texture_storage_multisample */
 # if defined (GL_ARB_texture_swizzle)
 # 
 #  define GL_TEXTURE_SWIZZLE_R 0x8E42
@@ -6862,10 +6790,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_MAX_VERTEX_STREAMS 0x8E71
 # 
 # endif /* GL_ARB_transform_feedback3 */
-# if defined (GL_ARB_transform_feedback_instanced)
-# 
-# 
-# endif /* GL_ARB_transform_feedback_instanced */
 # if defined (GL_ARB_transform_feedback_overflow_query)
 # 
 #  define GL_TRANSFORM_FEEDBACK_OVERFLOW_ARB 0x82EC
@@ -7177,10 +7101,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_PROVOKING_VERTEX 0x8E4F
 # 
 # endif /* GL_ARB_viewport_array */
-# if defined (GL_ARB_window_pos)
-# 
-# 
-# endif /* GL_ARB_window_pos */
 # if defined (GL_ARM_mali_program_binary)
 # 
 #  define GL_MALI_PROGRAM_BINARY_ARM 0x8F61
@@ -7361,10 +7281,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_BIAS_BIT_ATI 0x00000008
 # 
 # endif /* GL_ATI_fragment_shader */
-# if defined (GL_ATI_map_object_buffer)
-# 
-# 
-# endif /* GL_ATI_map_object_buffer */
 # if defined (GL_ATI_meminfo)
 # 
 #  define GL_VBO_FREE_MEMORY_ATI 0x87FB
@@ -7445,10 +7361,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_ARRAY_OBJECT_OFFSET_ATI 0x8767
 # 
 # endif /* GL_ATI_vertex_array_object */
-# if defined (GL_ATI_vertex_attrib_array_object)
-# 
-# 
-# endif /* GL_ATI_vertex_attrib_array_object */
 # if defined (GL_ATI_vertex_streams)
 # 
 #  define GL_MAX_VERTEX_STREAMS_ATI 0x876B
@@ -7507,10 +7419,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_ABGR_EXT 0x8000
 # 
 # endif /* GL_EXT_abgr */
-# if defined (GL_EXT_base_instance)
-# 
-# 
-# endif /* GL_EXT_base_instance */
 # if defined (GL_EXT_bgra)
 # 
 #  define GL_BGR_EXT 0x80E0
@@ -7588,10 +7496,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_BUFFER_STORAGE_FLAGS_EXT 0x8220
 # 
 # endif /* GL_EXT_buffer_storage */
-# if defined (GL_EXT_clear_texture)
-# 
-# 
-# endif /* GL_EXT_clear_texture */
 # if defined (GL_EXT_clip_control)
 # 
 #  define GL_LOWER_LEFT_EXT 0x8CA1
@@ -7640,10 +7544,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_UNSIGNED_NORMALIZED_EXT 0x8C17
 # 
 # endif /* GL_EXT_color_buffer_half_float */
-# if defined (GL_EXT_color_subtable)
-# 
-# 
-# endif /* GL_EXT_color_subtable */
 # if defined (GL_EXT_compiled_vertex_array)
 # 
 #  define GL_ARRAY_ELEMENT_LOCK_FIRST_EXT 0x81A8
@@ -7692,14 +7592,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_MAP2_BINORMAL_EXT 0x8447
 # 
 # endif /* GL_EXT_coordinate_frame */
-# if defined (GL_EXT_copy_image)
-# 
-# 
-# endif /* GL_EXT_copy_image */
-# if defined (GL_EXT_copy_texture)
-# 
-# 
-# endif /* GL_EXT_copy_texture */
 # if defined (GL_EXT_cull_vertex)
 # 
 #  define GL_CULL_VERTEX_EXT 0x81AA
@@ -7719,10 +7611,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_TRANSFORM_FEEDBACK 0x8E22
 # 
 # endif /* GL_EXT_debug_label */
-# if defined (GL_EXT_debug_marker)
-# 
-# 
-# endif /* GL_EXT_debug_marker */
 # if defined (GL_EXT_depth_bounds_test)
 # 
 #  define GL_DEPTH_BOUNDS_TEST_EXT 0x8890
@@ -7797,10 +7685,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_COLOR_ATTACHMENT15_EXT 0x8CEF
 # 
 # endif /* GL_EXT_draw_buffers */
-# if defined (GL_EXT_draw_buffers2)
-# 
-# 
-# endif /* GL_EXT_draw_buffers2 */
 # if defined (GL_EXT_draw_buffers_indexed)
 # 
 #  define GL_BLEND_EQUATION_RGB 0x8009
@@ -7833,28 +7717,12 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_SRC_ALPHA_SATURATE 0x0308
 # 
 # endif /* GL_EXT_draw_buffers_indexed */
-# if defined (GL_EXT_draw_elements_base_vertex)
-# 
-# 
-# endif /* GL_EXT_draw_elements_base_vertex */
-# if defined (GL_EXT_draw_instanced)
-# 
-# 
-# endif /* GL_EXT_draw_instanced */
 # if defined (GL_EXT_draw_range_elements)
 # 
 #  define GL_MAX_ELEMENTS_VERTICES_EXT 0x80E8
 #  define GL_MAX_ELEMENTS_INDICES_EXT 0x80E9
 # 
 # endif /* GL_EXT_draw_range_elements */
-# if defined (GL_EXT_draw_transform_feedback)
-# 
-# 
-# endif /* GL_EXT_draw_transform_feedback */
-# if defined (GL_EXT_external_buffer)
-# 
-# 
-# endif /* GL_EXT_external_buffer */
 # if defined (GL_EXT_fog_coord)
 # 
 #  define GL_FOG_COORDINATE_SOURCE_EXT 0x8450
@@ -7906,10 +7774,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_READ_FRAMEBUFFER_BINDING_EXT 0x8CAA
 # 
 # endif /* GL_EXT_framebuffer_blit */
-# if defined (GL_EXT_framebuffer_blit_layers)
-# 
-# 
-# endif /* GL_EXT_framebuffer_blit_layers */
 # if defined (GL_EXT_framebuffer_multisample)
 # 
 #  define GL_RENDERBUFFER_SAMPLES_EXT 0x8CAB
@@ -8045,10 +7909,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_PROGRAM_POINT_SIZE_EXT 0x8642
 # 
 # endif /* GL_EXT_geometry_shader4 */
-# if defined (GL_EXT_gpu_program_parameters)
-# 
-# 
-# endif /* GL_EXT_gpu_program_parameters */
 # if defined (GL_EXT_gpu_shader4)
 # 
 #  define GL_SAMPLER_1D_ARRAY_EXT 0x8DC0
@@ -8257,14 +8117,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_TASK_SHADER_EXT 0x959F
 # 
 # endif /* GL_EXT_mesh_shader */
-# if defined (GL_EXT_multi_draw_arrays)
-# 
-# 
-# endif /* GL_EXT_multi_draw_arrays */
-# if defined (GL_EXT_multi_draw_indirect)
-# 
-# 
-# endif /* GL_EXT_multi_draw_indirect */
 # if defined (GL_EXT_multisample)
 # 
 #  define GL_MULTISAMPLE_EXT 0x809D
@@ -8300,10 +8152,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_MAX_SAMPLES_EXT 0x8D57
 # 
 # endif /* GL_EXT_multisampled_render_to_texture */
-# if defined (GL_EXT_multisampled_render_to_texture2)
-# 
-# 
-# endif /* GL_EXT_multisampled_render_to_texture2 */
 # if defined (GL_EXT_multiview_draw_buffers)
 # 
 #  define GL_COLOR_ATTACHMENT_EXT 0x90F0
@@ -8682,10 +8530,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_DECR_WRAP_EXT 0x8508
 # 
 # endif /* GL_EXT_stencil_wrap */
-# if defined (GL_EXT_subtexture)
-# 
-# 
-# endif /* GL_EXT_subtexture */
 # if defined (GL_EXT_tessellation_shader)
 # 
 #  define GL_PATCHES_EXT 0x000E
@@ -9463,10 +9307,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_VERTEX_WEIGHT_ARRAY_POINTER_EXT 0x8510
 # 
 # endif /* GL_EXT_vertex_weighting */
-# if defined (GL_EXT_win32_keyed_mutex)
-# 
-# 
-# endif /* GL_EXT_win32_keyed_mutex */
 # if defined (GL_EXT_window_rectangles)
 # 
 #  define GL_INCLUSIVE_EXT 0x8F10
@@ -9487,14 +9327,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_GCCSO_SHADER_BINARY_FJ 0x9260
 # 
 # endif /* GL_FJ_shader_binary_GCCSO */
-# if defined (GL_GREMEDY_frame_terminator)
-# 
-# 
-# endif /* GL_GREMEDY_frame_terminator */
-# if defined (GL_GREMEDY_string_marker)
-# 
-# 
-# endif /* GL_GREMEDY_string_marker */
 # if defined (GL_HP_convolution_border_modes)
 # 
 #  define GL_IGNORE_BORDER_HP 0x8150
@@ -9550,10 +9382,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_CULL_VERTEX_IBM 103050
 # 
 # endif /* GL_IBM_cull_vertex */
-# if defined (GL_IBM_multimode_draw_arrays)
-# 
-# 
-# endif /* GL_IBM_multimode_draw_arrays */
 # if defined (GL_IBM_rasterpos_clip)
 # 
 #  define GL_RASTER_POSITION_UNCLIPPED_IBM 0x19262
@@ -9590,10 +9418,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_SECONDARY_COLOR_ARRAY_LIST_STRIDE_IBM 103087
 # 
 # endif /* GL_IBM_vertex_array_lists */
-# if defined (GL_IMG_bindless_texture)
-# 
-# 
-# endif /* GL_IMG_bindless_texture */
 # if defined (GL_IMG_framebuffer_downsample)
 # 
 #  define GL_FRAMEBUFFER_INCOMPLETE_MULTISAMPLE_AND_DOWNSAMPLE_IMG 0x913C
@@ -9681,10 +9505,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_PVRIC_SIGNATURE_MISMATCH_IMG 0x8EA3
 # 
 # endif /* GL_IMG_pvric_end_to_end_signature */
-# if defined (GL_INGR_blend_func_separate)
-# 
-# 
-# endif /* GL_INGR_blend_func_separate */
 # if defined (GL_INGR_color_clamp)
 # 
 #  define GL_RED_MIN_CLAMP_INGR 0x8560
@@ -9707,10 +9527,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_CONSERVATIVE_RASTERIZATION_INTEL 0x83FE
 # 
 # endif /* GL_INTEL_conservative_rasterization */
-# if defined (GL_INTEL_framebuffer_CMAA)
-# 
-# 
-# endif /* GL_INTEL_framebuffer_CMAA */
 # if defined (GL_INTEL_map_texture)
 # 
 #  define GL_TEXTURE_MEMORY_LAYOUT_INTEL 0x83FF
@@ -10030,10 +9846,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_PROGRAM_BINARY_FORMAT_MESA 0x875F
 # 
 # endif /* GL_MESA_program_binary_formats */
-# if defined (GL_MESA_resize_buffers)
-# 
-# 
-# endif /* GL_MESA_resize_buffers */
 # if defined (GL_MESA_sampler_objects)
 # 
 #  define GL_SAMPLER_BINDING 0x8919
@@ -10051,10 +9863,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_TILE_RASTER_ORDER_INCREASING_Y_MESA 0x8BBA
 # 
 # endif /* GL_MESA_tile_raster_order */
-# if defined (GL_MESA_window_pos)
-# 
-# 
-# endif /* GL_MESA_window_pos */
 # if defined (GL_MESA_ycbcr_texture)
 # 
 #  define GL_UNSIGNED_SHORT_8_8_MESA 0x85BA
@@ -10067,10 +9875,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_EXTERNAL_STORAGE_BIT_NVX 0x2000
 # 
 # endif /* GL_NVX_cross_process_interop */
-# if defined (GL_NVX_conditional_render)
-# 
-# 
-# endif /* GL_NVX_conditional_render */
 # if defined (GL_NVX_gpu_memory_info)
 # 
 #  define GL_GPU_MEMORY_INFO_DEDICATED_VIDMEM_NVX 0x9047
@@ -10094,18 +9898,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_ALPHA_TO_COVERAGE_DITHER_MODE_NV 0x92BF
 # 
 # endif /* GL_NV_alpha_to_coverage_dither_control */
-# if defined (GL_NV_bindless_multi_draw_indirect)
-# 
-# 
-# endif /* GL_NV_bindless_multi_draw_indirect */
-# if defined (GL_NV_bindless_multi_draw_indirect_count)
-# 
-# 
-# endif /* GL_NV_bindless_multi_draw_indirect_count */
-# if defined (GL_NV_bindless_texture)
-# 
-# 
-# endif /* GL_NV_bindless_texture */
 # if defined (GL_NV_blend_equation_advanced)
 # 
 #  define GL_BLEND_OVERLAP_NV 0x9281
@@ -10255,10 +10047,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_DEPTH_STENCIL_TO_BGRA_NV 0x886F
 # 
 # endif /* GL_NV_copy_depth_to_color */
-# if defined (GL_NV_copy_image)
-# 
-# 
-# endif /* GL_NV_copy_image */
 # if defined (GL_NV_coverage_sample)
 # 
 #  define GL_COVERAGE_COMPONENT_NV 0x8ED0
@@ -10333,18 +10121,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_COLOR_ATTACHMENT15_NV 0x8CEF
 # 
 # endif /* GL_NV_draw_buffers */
-# if defined (GL_NV_draw_instanced)
-# 
-# 
-# endif /* GL_NV_draw_instanced */
-# if defined (GL_NV_draw_texture)
-# 
-# 
-# endif /* GL_NV_draw_texture */
-# if defined (GL_NV_draw_vulkan_image)
-# 
-# 
-# endif /* GL_NV_draw_vulkan_image */
 # if defined (GL_NV_evaluators)
 # 
 #  define GL_EVAL_2D_NV 0x86C0
@@ -10631,10 +10407,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_UPLOAD_GPU_MASK_NVX 0x954A
 # 
 # endif /* GL_NVX_gpu_multicast2 */
-# if defined (GL_NVX_progress_fence)
-# 
-# 
-# endif /* GL_NVX_progress_fence */
 # if defined (GL_NV_memory_attachment)
 # 
 #  define GL_ATTACHED_MEMORY_OBJECT_NV 0x95A4
@@ -10989,10 +10761,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_QUERY_RESOURCE_BUFFEROBJECT_NV 0x9547
 # 
 # endif /* GL_NV_query_resource */
-# if defined (GL_NV_query_resource_tag)
-# 
-# 
-# endif /* GL_NV_query_resource_tag */
 # if defined (GL_NV_read_buffer)
 # 
 #  define GL_READ_BUFFER_NV 0x0C02
@@ -11188,10 +10956,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_REFLECTION_MAP_NV 0x8512
 # 
 # endif /* GL_NV_texgen_reflection */
-# if defined (GL_NV_texture_barrier)
-# 
-# 
-# endif /* GL_NV_texture_barrier */
 # if defined (GL_NV_texture_border_clamp)
 # 
 #  define GL_TEXTURE_BORDER_COLOR_NV 0x1004
@@ -11387,10 +11151,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_WRITE_DISCARD_NV 0x88BE
 # 
 # endif /* GL_NV_vdpau_interop */
-# if defined (GL_NV_vdpau_interop2)
-# 
-# 
-# endif /* GL_NV_vdpau_interop2 */
 # if defined (GL_NV_vertex_array_range)
 # 
 #  define GL_VERTEX_ARRAY_RANGE_NV 0x851D
@@ -11611,10 +11371,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_PACK_SKIP_PIXELS_NV 0x0D04
 # 
 # endif /* GL_NV_pack_subimage */
-# if defined (GL_OES_EGL_image)
-# 
-# 
-# endif /* GL_OES_EGL_image */
 # if defined (GL_OES_EGL_image_external)
 # 
 #  define GL_TEXTURE_EXTERNAL_OES 0x8D65
@@ -11669,10 +11425,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_PALETTE8_RGB5_A1_OES 0x8B99
 # 
 # endif /* GL_OES_compressed_paletted_texture */
-# if defined (GL_OES_copy_image)
-# 
-# 
-# endif /* GL_OES_copy_image */
 # if defined (GL_OES_depth24)
 # 
 #  define GL_DEPTH_COMPONENT24_OES 0x81A6
@@ -11722,10 +11474,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_SRC_ALPHA_SATURATE 0x0308
 # 
 # endif /* GL_OES_draw_buffers_indexed */
-# if defined (GL_OES_draw_elements_base_vertex)
-# 
-# 
-# endif /* GL_OES_draw_elements_base_vertex */
 # if defined (GL_OES_draw_texture)
 # 
 #  define GL_TEXTURE_CROP_RECT_OES 0x8B9D
@@ -11741,10 +11489,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_FIXED_OES 0x140C
 # 
 # endif /* GL_OES_fixed_point */
-# if defined (GL_OES_fragment_precision_high)
-# 
-# 
-# endif /* GL_OES_fragment_precision_high */
 # if defined (GL_OES_framebuffer_object)
 # 
 #  define GL_NONE_OES 0
@@ -11888,10 +11632,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_PRIMITIVE_BOUNDING_BOX_OES 0x92BE
 # 
 # endif /* GL_OES_primitive_bounding_box */
-# if defined (GL_OES_query_matrix)
-# 
-# 
-# endif /* GL_OES_query_matrix */
 # if defined (GL_OES_read_format)
 # 
 #  define GL_IMPLEMENTATION_COLOR_READ_TYPE_OES 0x8B9A
@@ -11936,10 +11676,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_FRAGMENT_INTERPOLATION_OFFSET_BITS_OES 0x8E5D
 # 
 # endif /* GL_OES_shader_multisample_interpolation */
-# if defined (GL_OES_single_precision)
-# 
-# 
-# endif /* GL_OES_single_precision */
 # if defined (GL_OES_standard_derivatives)
 # 
 #  define GL_FRAGMENT_SHADER_DERIVATIVE_HINT_OES 0x8B8B
@@ -12235,10 +11971,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_FRAMEBUFFER_INCOMPLETE_VIEW_TARGETS_OVR 0x9633
 # 
 # endif /* GL_OVR_multiview */
-# if defined (GL_OVR_multiview_multisampled_render_to_texture)
-# 
-# 
-# endif /* GL_OVR_multiview_multisampled_render_to_texture */
 # if defined (GL_PGI_misc_hints)
 # 
 #  define GL_PREFER_DOUBLEBUFFER_HINT_PGI 0x1A1F8
@@ -12304,10 +12036,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_RENDER_DIRECT_TO_FRAMEBUFFER_QCOM 0x8FB3
 # 
 # endif /* GL_QCOM_binning_control */
-# if defined (GL_QCOM_driver_control)
-# 
-# 
-# endif /* GL_QCOM_driver_control */
 # if defined (GL_QCOM_extended_get)
 # 
 #  define GL_TEXTURE_WIDTH_QCOM 0x8BD2
@@ -12323,10 +12051,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_STATE_RESTORE 0x8BDC
 # 
 # endif /* GL_QCOM_extended_get */
-# if defined (GL_QCOM_extended_get2)
-# 
-# 
-# endif /* GL_QCOM_extended_get2 */
 # if defined (GL_QCOM_framebuffer_foveated)
 # 
 #  define GL_FOVEATION_ENABLE_BIT_QCOM 0x00000001
@@ -12340,10 +12064,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_FOVEATION_SCALED_BIN_METHOD_BIT_QCOM 0x00000002
 # 
 # endif /* GL_QCOM_motion_estimation */
-# if defined (GL_QCOM_frame_extrapolation)
-# 
-# 
-# endif /* GL_QCOM_frame_extrapolation */
 # if defined (GL_QCOM_texture_foveated)
 # 
 #  define GL_FOVEATION_ENABLE_BIT_QCOM 0x00000001
@@ -12666,10 +12386,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_DEPTH_COMPONENT32_SGIX 0x81A7
 # 
 # endif /* GL_SGIX_depth_texture */
-# if defined (GL_SGIX_flush_raster)
-# 
-# 
-# endif /* GL_SGIX_flush_raster */
 # if defined (GL_SGIX_fog_offset)
 # 
 #  define GL_FOG_OFFSET_SGIX 0x8198
@@ -12707,10 +12423,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_MAX_FRAMEZOOM_FACTOR_SGIX 0x818D
 # 
 # endif /* GL_SGIX_framezoom */
-# if defined (GL_SGIX_igloo_interface)
-# 
-# 
-# endif /* GL_SGIX_igloo_interface */
 # if defined (GL_SGIX_instruments)
 # 
 #  define GL_INSTRUMENT_BUFFER_POINTER_SGIX 0x8180
@@ -12813,10 +12525,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_PIXEL_SUBSAMPLE_4242_SGIX 0x85A4
 # 
 # endif /* GL_SGIX_subsample */
-# if defined (GL_SGIX_tag_sample_buffer)
-# 
-# 
-# endif /* GL_SGIX_tag_sample_buffer */
 # if defined (GL_SGIX_texture_add_env)
 # 
 #  define GL_TEXTURE_ENV_BIAS_SGIX 0x80BE
@@ -12957,10 +12665,6 @@ typedef void (APIENTRY *GLVULKANPROCNV)(void);
 #  define GL_R1UI_T2F_C4F_N3F_V3F_SUN 0x85CB
 # 
 # endif /* GL_SUN_triangle_list */
-# if defined (GL_SUN_vertex)
-# 
-# 
-# endif /* GL_SUN_vertex */
 # if defined (GL_VIV_shader_binary)
 # 
 #  define GL_SHADER_BINARY_VIV 0x8FC4
@@ -14743,31 +14447,11 @@ typedef void (APIENTRYP PFNGLVERTEXATTRIBPOINTERPROC) (GLuint, GLint, GLenum, GL
 typedef void (APIENTRYP PFNGLVIEWPORTPROC) (GLint, GLint, GLsizei, GLsizei);
 
 # endif /* GL_SC_VERSION_2_0 */
-# if defined (GL_3DFX_multisample)
-
-
-# endif /* GL_3DFX_multisample */
 # if defined (GL_3DFX_tbuffer)
 
 typedef void (APIENTRYP PFNGLTBUFFERMASK3DFXPROC) (GLuint);
 
 # endif /* GL_3DFX_tbuffer */
-# if defined (GL_3DFX_texture_compression_FXT1)
-
-
-# endif /* GL_3DFX_texture_compression_FXT1 */
-# if defined (GL_AMD_blend_minmax_factor)
-
-
-# endif /* GL_AMD_blend_minmax_factor */
-# if defined (GL_AMD_compressed_3DC_texture)
-
-
-# endif /* GL_AMD_compressed_3DC_texture */
-# if defined (GL_AMD_compressed_ATC_texture)
-
-
-# endif /* GL_AMD_compressed_ATC_texture */
 # if defined (GL_AMD_debug_output)
 
 typedef void (APIENTRYP PFNGLDEBUGMESSAGEENABLEAMDPROC) (GLenum, GLenum, GLsizei, const GLuint *, GLboolean);
@@ -14776,10 +14460,6 @@ typedef void (APIENTRYP PFNGLDEBUGMESSAGECALLBACKAMDPROC) (GLDEBUGPROCAMD, void 
 typedef GLuint (APIENTRYP PFNGLGETDEBUGMESSAGELOGAMDPROC) (GLuint, GLsizei, GLenum *, GLenum *, GLuint *, GLsizei *, GLchar *);
 
 # endif /* GL_AMD_debug_output */
-# if defined (GL_AMD_depth_clamp_separate)
-
-
-# endif /* GL_AMD_depth_clamp_separate */
 # if defined (GL_AMD_draw_buffers_blend)
 
 typedef void (APIENTRYP PFNGLBLENDFUNCINDEXEDAMDPROC) (GLuint, GLenum, GLenum);
@@ -14802,10 +14482,6 @@ typedef void (APIENTRYP PFNGLGETFRAMEBUFFERPARAMETERFVAMDPROC) (GLenum, GLenum, 
 typedef void (APIENTRYP PFNGLGETNAMEDFRAMEBUFFERPARAMETERFVAMDPROC) (GLuint, GLenum, GLuint, GLuint, GLsizei, GLfloat *);
 
 # endif /* GL_AMD_framebuffer_sample_positions */
-# if defined (GL_AMD_gpu_shader_half_float)
-
-
-# endif /* GL_AMD_gpu_shader_half_float */
 # if defined (GL_AMD_gpu_shader_int64)
 
 typedef void (APIENTRYP PFNGLUNIFORM1I64NVPROC) (GLint, GLint64EXT);
@@ -14882,27 +14558,11 @@ typedef void (APIENTRYP PFNGLENDPERFMONITORAMDPROC) (GLuint);
 typedef void (APIENTRYP PFNGLGETPERFMONITORCOUNTERDATAAMDPROC) (GLuint, GLenum, GLsizei, GLuint *, GLint *);
 
 # endif /* GL_AMD_performance_monitor */
-# if defined (GL_AMD_pinned_memory)
-
-
-# endif /* GL_AMD_pinned_memory */
-# if defined (GL_AMD_program_binary_Z400)
-
-
-# endif /* GL_AMD_program_binary_Z400 */
-# if defined (GL_AMD_query_buffer_object)
-
-
-# endif /* GL_AMD_query_buffer_object */
 # if defined (GL_AMD_sample_positions)
 
 typedef void (APIENTRYP PFNGLSETMULTISAMPLEFVAMDPROC) (GLenum, GLuint, const GLfloat *);
 
 # endif /* GL_AMD_sample_positions */
-# if defined (GL_AMD_seamless_cubemap_per_texture)
-
-
-# endif /* GL_AMD_seamless_cubemap_per_texture */
 # if defined (GL_AMD_sparse_texture)
 
 typedef void (APIENTRYP PFNGLTEXSTORAGESPARSEAMDPROC) (GLenum, GLenum, GLsizei, GLsizei, GLsizei, GLsizei, GLbitfield);
@@ -14914,24 +14574,12 @@ typedef void (APIENTRYP PFNGLTEXTURESTORAGESPARSEAMDPROC) (GLuint, GLenum, GLenu
 typedef void (APIENTRYP PFNGLSTENCILOPVALUEAMDPROC) (GLenum, GLuint);
 
 # endif /* GL_AMD_stencil_operation_extended */
-# if defined (GL_AMD_transform_feedback4)
-
-
-# endif /* GL_AMD_transform_feedback4 */
 # if defined (GL_AMD_vertex_shader_tessellator)
 
 typedef void (APIENTRYP PFNGLTESSELLATIONFACTORAMDPROC) (GLfloat);
 typedef void (APIENTRYP PFNGLTESSELLATIONMODEAMDPROC) (GLenum);
 
 # endif /* GL_AMD_vertex_shader_tessellator */
-# if defined (GL_ANDROID_extension_pack_es31a)
-
-
-# endif /* GL_ANDROID_extension_pack_es31a */
-# if defined (GL_ANGLE_depth_texture)
-
-
-# endif /* GL_ANGLE_depth_texture */
 # if defined (GL_ANGLE_framebuffer_blit)
 
 typedef void (APIENTRYP PFNGLBLITFRAMEBUFFERANGLEPROC) (GLint, GLint, GLint, GLint, GLint, GLint, GLint, GLint, GLbitfield, GLenum);
@@ -14949,43 +14597,11 @@ typedef void (APIENTRYP PFNGLDRAWELEMENTSINSTANCEDANGLEPROC) (GLenum, GLsizei, G
 typedef void (APIENTRYP PFNGLVERTEXATTRIBDIVISORANGLEPROC) (GLuint, GLuint);
 
 # endif /* GL_ANGLE_instanced_arrays */
-# if defined (GL_ANGLE_pack_reverse_row_order)
-
-
-# endif /* GL_ANGLE_pack_reverse_row_order */
-# if defined (GL_ANGLE_program_binary)
-
-
-# endif /* GL_ANGLE_program_binary */
-# if defined (GL_ANGLE_texture_compression_dxt3)
-
-
-# endif /* GL_ANGLE_texture_compression_dxt3 */
-# if defined (GL_ANGLE_texture_compression_dxt5)
-
-
-# endif /* GL_ANGLE_texture_compression_dxt5 */
-# if defined (GL_ANGLE_texture_usage)
-
-
-# endif /* GL_ANGLE_texture_usage */
 # if defined (GL_ANGLE_translated_shader_source)
 
 typedef void (APIENTRYP PFNGLGETTRANSLATEDSHADERSOURCEANGLEPROC) (GLuint, GLsizei, GLsizei *, GLchar *);
 
 # endif /* GL_ANGLE_translated_shader_source */
-# if defined (GL_APPLE_aux_depth_stencil)
-
-
-# endif /* GL_APPLE_aux_depth_stencil */
-# if defined (GL_APPLE_client_storage)
-
-
-# endif /* GL_APPLE_client_storage */
-# if defined (GL_APPLE_clip_distance)
-
-
-# endif /* GL_APPLE_clip_distance */
 # if defined (GL_APPLE_copy_texture_levels)
 
 typedef void (APIENTRYP PFNGLCOPYTEXTURELEVELSAPPLEPROC) (GLuint, GLuint, GLint, GLsizei);
@@ -15012,10 +14628,6 @@ typedef GLboolean (APIENTRYP PFNGLTESTOBJECTAPPLEPROC) (GLenum, GLuint);
 typedef void (APIENTRYP PFNGLFINISHOBJECTAPPLEPROC) (GLenum, GLint);
 
 # endif /* GL_APPLE_fence */
-# if defined (GL_APPLE_float_pixels)
-
-
-# endif /* GL_APPLE_float_pixels */
 # if defined (GL_APPLE_flush_buffer_range)
 
 typedef void (APIENTRYP PFNGLBUFFERPARAMETERIAPPLEPROC) (GLenum, GLenum, GLint);
@@ -15039,14 +14651,6 @@ typedef void (APIENTRYP PFNGLGETOBJECTPARAMETERIVAPPLEPROC) (GLenum, GLuint, GLe
 
 
 # endif /* GL_APPLE_rgb_422 */
-# if defined (GL_APPLE_row_bytes)
-
-
-# endif /* GL_APPLE_row_bytes */
-# if defined (GL_APPLE_specular_vector)
-
-
-# endif /* GL_APPLE_specular_vector */
 # if defined (GL_APPLE_sync)
 
 typedef GLsync (APIENTRYP PFNGLFENCESYNCAPPLEPROC) (GLenum, GLbitfield);
@@ -15062,24 +14666,12 @@ typedef void (APIENTRYP PFNGLGETSYNCIVAPPLEPROC) (GLsync, GLenum, GLsizei, GLsiz
 
 
 # endif /* GL_APPLE_texture_format_BGRA8888 */
-# if defined (GL_APPLE_texture_max_level)
-
-
-# endif /* GL_APPLE_texture_max_level */
-# if defined (GL_APPLE_texture_packed_float)
-
-
-# endif /* GL_APPLE_texture_packed_float */
 # if defined (GL_APPLE_texture_range)
 
 typedef void (APIENTRYP PFNGLTEXTURERANGEAPPLEPROC) (GLenum, GLsizei, const void *);
 typedef void (APIENTRYP PFNGLGETTEXPARAMETERPOINTERVAPPLEPROC) (GLenum, GLenum, void **);
 
 # endif /* GL_APPLE_texture_range */
-# if defined (GL_APPLE_transform_hint)
-
-
-# endif /* GL_APPLE_transform_hint */
 # if defined (GL_APPLE_vertex_array_object)
 
 typedef void (APIENTRYP PFNGLBINDVERTEXARRAYAPPLEPROC) (GLuint);
@@ -15106,10 +14698,6 @@ typedef void (APIENTRYP PFNGLMAPVERTEXATTRIB2DAPPLEPROC) (GLuint, GLuint, GLdoub
 typedef void (APIENTRYP PFNGLMAPVERTEXATTRIB2FAPPLEPROC) (GLuint, GLuint, GLfloat, GLfloat, GLint, GLint, GLfloat, GLfloat, GLint, GLint, const GLfloat *);
 
 # endif /* GL_APPLE_vertex_program_evaluators */
-# if defined (GL_APPLE_ycbcr_422)
-
-
-# endif /* GL_APPLE_ycbcr_422 */
 # if defined (GL_ARB_ES2_compatibility)
 
 typedef void (APIENTRYP PFNGLRELEASESHADERCOMPILERPROC) (void);
@@ -15129,10 +14717,6 @@ typedef void (APIENTRYP PFNGLMEMORYBARRIERBYREGIONPROC) (GLbitfield);
 typedef void (APIENTRYP PFNGLPRIMITIVEBOUNDINGBOXARBPROC) (GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat);
 
 # endif /* GL_ARB_ES3_2_compatibility */
-# if defined (GL_ARB_ES3_compatibility)
-
-
-# endif /* GL_ARB_ES3_compatibility */
 # if defined (GL_ARB_base_instance)
 
 typedef void (APIENTRYP PFNGLDRAWARRAYSINSTANCEDBASEINSTANCEPROC) (GLenum, GLint, GLsizei, GLsizei, GLuint);
@@ -15198,14 +14782,6 @@ typedef void (APIENTRYP PFNGLCLIPCONTROLPROC) (GLenum, GLenum);
 typedef void (APIENTRYP PFNGLCLAMPCOLORARBPROC) (GLenum, GLenum);
 
 # endif /* GL_ARB_color_buffer_float */
-# if defined (GL_ARB_compatibility)
-
-
-# endif /* GL_ARB_compatibility */
-# if defined (GL_ARB_compressed_texture_pixel_storage)
-
-
-# endif /* GL_ARB_compressed_texture_pixel_storage */
 # if defined (GL_ARB_compute_shader)
 
 typedef void (APIENTRYP PFNGLDISPATCHCOMPUTEPROC) (GLuint, GLuint, GLuint);
@@ -15217,10 +14793,6 @@ typedef void (APIENTRYP PFNGLDISPATCHCOMPUTEINDIRECTPROC) (GLintptr);
 typedef void (APIENTRYP PFNGLDISPATCHCOMPUTEGROUPSIZEARBPROC) (GLuint, GLuint, GLuint, GLuint, GLuint, GLuint);
 
 # endif /* GL_ARB_compute_variable_group_size */
-# if defined (GL_ARB_conditional_render_inverted)
-
-
-# endif /* GL_ARB_conditional_render_inverted */
 # if defined (GL_ARB_copy_buffer)
 
 typedef void (APIENTRYP PFNGLCOPYBUFFERSUBDATAPROC) (GLenum, GLenum, GLintptr, GLintptr, GLsizeiptr);
@@ -15231,10 +14803,6 @@ typedef void (APIENTRYP PFNGLCOPYBUFFERSUBDATAPROC) (GLenum, GLenum, GLintptr, G
 typedef void (APIENTRYP PFNGLCOPYIMAGESUBDATAPROC) (GLuint, GLenum, GLint, GLint, GLint, GLint, GLuint, GLenum, GLint, GLint, GLint, GLint, GLsizei, GLsizei, GLsizei);
 
 # endif /* GL_ARB_copy_image */
-# if defined (GL_ARB_cull_distance)
-
-
-# endif /* GL_ARB_cull_distance */
 # if defined (GL_ARB_debug_output)
 
 typedef void (APIENTRYP PFNGLDEBUGMESSAGECONTROLARBPROC) (GLenum, GLenum, GLenum, GLsizei, const GLuint *, GLboolean);
@@ -15243,18 +14811,6 @@ typedef void (APIENTRYP PFNGLDEBUGMESSAGECALLBACKARBPROC) (GLDEBUGPROCARB, const
 typedef GLuint (APIENTRYP PFNGLGETDEBUGMESSAGELOGARBPROC) (GLuint, GLsizei, GLenum *, GLenum *, GLuint *, GLenum *, GLsizei *, GLchar *);
 
 # endif /* GL_ARB_debug_output */
-# if defined (GL_ARB_depth_buffer_float)
-
-
-# endif /* GL_ARB_depth_buffer_float */
-# if defined (GL_ARB_depth_clamp)
-
-
-# endif /* GL_ARB_depth_clamp */
-# if defined (GL_ARB_depth_texture)
-
-
-# endif /* GL_ARB_depth_texture */
 # if defined (GL_ARB_direct_state_access)
 
 typedef void (APIENTRYP PFNGLCREATETRANSFORMFEEDBACKSPROC) (GLsizei, GLuint *);
@@ -15389,14 +14945,6 @@ typedef void (APIENTRYP PFNGLDRAWARRAYSINSTANCEDARBPROC) (GLenum, GLint, GLsizei
 typedef void (APIENTRYP PFNGLDRAWELEMENTSINSTANCEDARBPROC) (GLenum, GLsizei, GLenum, const void *, GLsizei);
 
 # endif /* GL_ARB_draw_instanced */
-# if defined (GL_ARB_enhanced_layouts)
-
-
-# endif /* GL_ARB_enhanced_layouts */
-# if defined (GL_ARB_explicit_uniform_location)
-
-
-# endif /* GL_ARB_explicit_uniform_location */
 # if defined (GL_ARB_fragment_program)
 
 typedef void (APIENTRYP PFNGLPROGRAMSTRINGARBPROC) (GLenum, GLenum, GLsizei, const void *);
@@ -15420,10 +14968,6 @@ typedef void (APIENTRYP PFNGLGETPROGRAMSTRINGARBPROC) (GLenum, GLenum, void *);
 typedef GLboolean (APIENTRYP PFNGLISPROGRAMARBPROC) (GLuint);
 
 # endif /* GL_ARB_fragment_program */
-# if defined (GL_ARB_fragment_shader)
-
-
-# endif /* GL_ARB_fragment_shader */
 # if defined (GL_ARB_framebuffer_no_attachments)
 
 typedef void (APIENTRYP PFNGLFRAMEBUFFERPARAMETERIPROC) (GLenum, GLenum, GLint);
@@ -15454,10 +14998,6 @@ typedef void (APIENTRYP PFNGLRENDERBUFFERSTORAGEMULTISAMPLEPROC) (GLenum, GLsize
 typedef void (APIENTRYP PFNGLFRAMEBUFFERTEXTURELAYERPROC) (GLenum, GLenum, GLuint, GLint, GLint);
 
 # endif /* GL_ARB_framebuffer_object */
-# if defined (GL_ARB_framebuffer_sRGB)
-
-
-# endif /* GL_ARB_framebuffer_sRGB */
 # if defined (GL_ARB_geometry_shader4)
 
 typedef void (APIENTRYP PFNGLPROGRAMPARAMETERIARBPROC) (GLuint, GLenum, GLint);
@@ -15484,10 +15024,6 @@ typedef void (APIENTRYP PFNGLGETCOMPRESSEDTEXTURESUBIMAGEPROC) (GLuint, GLint, G
 typedef void (APIENTRYP PFNGLSPECIALIZESHADERARBPROC) (GLuint, const GLchar *, GLuint, const GLuint *, const GLuint *);
 
 # endif /* GL_ARB_gl_spirv */
-# if defined (GL_ARB_gpu_shader5)
-
-
-# endif /* GL_ARB_gpu_shader5 */
 # if defined (GL_ARB_gpu_shader_fp64)
 
 typedef void (APIENTRYP PFNGLUNIFORM1DPROC) (GLint, GLdouble);
@@ -15550,14 +15086,6 @@ typedef void (APIENTRYP PFNGLPROGRAMUNIFORM3UI64VARBPROC) (GLuint, GLint, GLsize
 typedef void (APIENTRYP PFNGLPROGRAMUNIFORM4UI64VARBPROC) (GLuint, GLint, GLsizei, const GLuint64 *);
 
 # endif /* GL_ARB_gpu_shader_int64 */
-# if defined (GL_ARB_half_float_pixel)
-
-
-# endif /* GL_ARB_half_float_pixel */
-# if defined (GL_ARB_half_float_vertex)
-
-
-# endif /* GL_ARB_half_float_vertex */
 # if defined (GL_ARB_imaging)
 
 typedef void (APIENTRYP PFNGLBLENDCOLORPROC) (GLfloat, GLfloat, GLfloat, GLfloat);
@@ -15627,10 +15155,6 @@ typedef void (APIENTRYP PFNGLINVALIDATEFRAMEBUFFERPROC) (GLenum, GLsizei, const 
 typedef void (APIENTRYP PFNGLINVALIDATESUBFRAMEBUFFERPROC) (GLenum, GLsizei, const GLenum *, GLint, GLint, GLsizei, GLsizei);
 
 # endif /* GL_ARB_invalidate_subdata */
-# if defined (GL_ARB_map_buffer_alignment)
-
-
-# endif /* GL_ARB_map_buffer_alignment */
 # if defined (GL_ARB_map_buffer_range)
 
 typedef void * (APIENTRYP PFNGLMAPBUFFERRANGEPROC) (GLenum, GLintptr, GLsizeiptr, GLbitfield);
@@ -15717,33 +15241,17 @@ typedef void (APIENTRYP PFNGLGETQUERYOBJECTIVARBPROC) (GLuint, GLenum, GLint *);
 typedef void (APIENTRYP PFNGLGETQUERYOBJECTUIVARBPROC) (GLuint, GLenum, GLuint *);
 
 # endif /* GL_ARB_occlusion_query */
-# if defined (GL_ARB_occlusion_query2)
-
-
-# endif /* GL_ARB_occlusion_query2 */
 # if defined (GL_ARB_parallel_shader_compile)
 
 typedef void (APIENTRYP PFNGLMAXSHADERCOMPILERTHREADSARBPROC) (GLuint);
 
 # endif /* GL_ARB_parallel_shader_compile */
-# if defined (GL_ARB_pipeline_statistics_query)
-
-
-# endif /* GL_ARB_pipeline_statistics_query */
-# if defined (GL_ARB_pixel_buffer_object)
-
-
-# endif /* GL_ARB_pixel_buffer_object */
 # if defined (GL_ARB_point_parameters)
 
 typedef void (APIENTRYP PFNGLPOINTPARAMETERFARBPROC) (GLenum, GLfloat);
 typedef void (APIENTRYP PFNGLPOINTPARAMETERFVARBPROC) (GLenum, const GLfloat *);
 
 # endif /* GL_ARB_point_parameters */
-# if defined (GL_ARB_point_sprite)
-
-
-# endif /* GL_ARB_point_sprite */
 # if defined (GL_ARB_polygon_offset_clamp)
 
 typedef void (APIENTRYP PFNGLPOLYGONOFFSETCLAMPPROC) (GLfloat, GLfloat, GLfloat);
@@ -15764,10 +15272,6 @@ typedef GLint (APIENTRYP PFNGLGETPROGRAMRESOURCELOCATIONINDEXPROC) (GLuint, GLen
 typedef void (APIENTRYP PFNGLPROVOKINGVERTEXPROC) (GLenum);
 
 # endif /* GL_ARB_provoking_vertex */
-# if defined (GL_ARB_query_buffer_object)
-
-
-# endif /* GL_ARB_query_buffer_object */
 # if defined (GL_ARB_robustness)
 
 typedef GLenum (APIENTRYP PFNGLGETGRAPHICSRESETSTATUSARBPROC) (void);
@@ -15822,14 +15326,6 @@ typedef void (APIENTRYP PFNGLGETSAMPLERPARAMETERFVPROC) (GLuint, GLenum, GLfloat
 typedef void (APIENTRYP PFNGLGETSAMPLERPARAMETERIUIVPROC) (GLuint, GLenum, GLuint *);
 
 # endif /* GL_ARB_sampler_objects */
-# if defined (GL_ARB_seamless_cube_map)
-
-
-# endif /* GL_ARB_seamless_cube_map */
-# if defined (GL_ARB_seamless_cubemap_per_texture)
-
-
-# endif /* GL_ARB_seamless_cubemap_per_texture */
 # if defined (GL_ARB_separate_shader_objects)
 
 typedef void (APIENTRYP PFNGLUSEPROGRAMSTAGESPROC) (GLuint, GLbitfield, GLuint);
@@ -15966,10 +15462,6 @@ typedef void (APIENTRYP PFNGLGETUNIFORMSUBROUTINEUIVPROC) (GLenum, GLint, GLuint
 typedef void (APIENTRYP PFNGLGETPROGRAMSTAGEIVPROC) (GLuint, GLenum, GLenum, GLint *);
 
 # endif /* GL_ARB_shader_subroutine */
-# if defined (GL_ARB_shading_language_100)
-
-
-# endif /* GL_ARB_shading_language_100 */
 # if defined (GL_ARB_shading_language_include)
 
 typedef void (APIENTRYP PFNGLNAMEDSTRINGARBPROC) (GLenum, GLint, const GLchar *, GLint, const GLchar *);
@@ -15980,14 +15472,6 @@ typedef void (APIENTRYP PFNGLGETNAMEDSTRINGARBPROC) (GLint, const GLchar *, GLsi
 typedef void (APIENTRYP PFNGLGETNAMEDSTRINGIVARBPROC) (GLint, const GLchar *, GLenum, GLint *);
 
 # endif /* GL_ARB_shading_language_include */
-# if defined (GL_ARB_shadow)
-
-
-# endif /* GL_ARB_shadow */
-# if defined (GL_ARB_shadow_ambient)
-
-
-# endif /* GL_ARB_shadow_ambient */
 # if defined (GL_ARB_sparse_buffer)
 
 typedef void (APIENTRYP PFNGLBUFFERPAGECOMMITMENTARBPROC) (GLenum, GLintptr, GLsizeiptr, GLboolean);
@@ -16000,14 +15484,6 @@ typedef void (APIENTRYP PFNGLNAMEDBUFFERPAGECOMMITMENTARBPROC) (GLuint, GLintptr
 typedef void (APIENTRYP PFNGLTEXPAGECOMMITMENTARBPROC) (GLenum, GLint, GLint, GLint, GLint, GLsizei, GLsizei, GLsizei, GLboolean);
 
 # endif /* GL_ARB_sparse_texture */
-# if defined (GL_ARB_spirv_extensions)
-
-
-# endif /* GL_ARB_spirv_extensions */
-# if defined (GL_ARB_stencil_texturing)
-
-
-# endif /* GL_ARB_stencil_texturing */
 # if defined (GL_ARB_sync)
 
 typedef GLsync (APIENTRYP PFNGLFENCESYNCPROC) (GLenum, GLbitfield);
@@ -16030,19 +15506,11 @@ typedef void (APIENTRYP PFNGLPATCHPARAMETERFVPROC) (GLenum, const GLfloat *);
 typedef void (APIENTRYP PFNGLTEXTUREBARRIERPROC) (void);
 
 # endif /* GL_ARB_texture_barrier */
-# if defined (GL_ARB_texture_border_clamp)
-
-
-# endif /* GL_ARB_texture_border_clamp */
 # if defined (GL_ARB_texture_buffer_object)
 
 typedef void (APIENTRYP PFNGLTEXBUFFERARBPROC) (GLenum, GLenum, GLuint);
 
 # endif /* GL_ARB_texture_buffer_object */
-# if defined (GL_ARB_texture_buffer_object_rgb32)
-
-
-# endif /* GL_ARB_texture_buffer_object_rgb32 */
 # if defined (GL_ARB_texture_buffer_range)
 
 typedef void (APIENTRYP PFNGLTEXBUFFERRANGEPROC) (GLenum, GLenum, GLuint, GLintptr, GLsizeiptr);
@@ -16059,54 +15527,6 @@ typedef void (APIENTRYP PFNGLCOMPRESSEDTEXSUBIMAGE1DARBPROC) (GLenum, GLint, GLi
 typedef void (APIENTRYP PFNGLGETCOMPRESSEDTEXIMAGEARBPROC) (GLenum, GLint, void *);
 
 # endif /* GL_ARB_texture_compression */
-# if defined (GL_ARB_texture_compression_bptc)
-
-
-# endif /* GL_ARB_texture_compression_bptc */
-# if defined (GL_ARB_texture_compression_rgtc)
-
-
-# endif /* GL_ARB_texture_compression_rgtc */
-# if defined (GL_ARB_texture_cube_map)
-
-
-# endif /* GL_ARB_texture_cube_map */
-# if defined (GL_ARB_texture_cube_map_array)
-
-
-# endif /* GL_ARB_texture_cube_map_array */
-# if defined (GL_ARB_texture_env_combine)
-
-
-# endif /* GL_ARB_texture_env_combine */
-# if defined (GL_ARB_texture_env_dot3)
-
-
-# endif /* GL_ARB_texture_env_dot3 */
-# if defined (GL_ARB_texture_filter_anisotropic)
-
-
-# endif /* GL_ARB_texture_filter_anisotropic */
-# if defined (GL_ARB_texture_filter_minmax)
-
-
-# endif /* GL_ARB_texture_filter_minmax */
-# if defined (GL_ARB_texture_float)
-
-
-# endif /* GL_ARB_texture_float */
-# if defined (GL_ARB_texture_gather)
-
-
-# endif /* GL_ARB_texture_gather */
-# if defined (GL_ARB_texture_mirror_clamp_to_edge)
-
-
-# endif /* GL_ARB_texture_mirror_clamp_to_edge */
-# if defined (GL_ARB_texture_mirrored_repeat)
-
-
-# endif /* GL_ARB_texture_mirrored_repeat */
 # if defined (GL_ARB_texture_multisample)
 
 typedef void (APIENTRYP PFNGLTEXIMAGE2DMULTISAMPLEPROC) (GLenum, GLsizei, GLenum, GLsizei, GLsizei, GLboolean);
@@ -16115,22 +15535,6 @@ typedef void (APIENTRYP PFNGLGETMULTISAMPLEFVPROC) (GLenum, GLuint, GLfloat *);
 typedef void (APIENTRYP PFNGLSAMPLEMASKIPROC) (GLuint, GLbitfield);
 
 # endif /* GL_ARB_texture_multisample */
-# if defined (GL_ARB_texture_rectangle)
-
-
-# endif /* GL_ARB_texture_rectangle */
-# if defined (GL_ARB_texture_rg)
-
-
-# endif /* GL_ARB_texture_rg */
-# if defined (GL_ARB_texture_rgb10_a2ui)
-
-
-# endif /* GL_ARB_texture_rgb10_a2ui */
-# if defined (GL_ARB_texture_stencil8)
-
-
-# endif /* GL_ARB_texture_stencil8 */
 # if defined (GL_ARB_texture_storage)
 
 typedef void (APIENTRYP PFNGLTEXSTORAGE1DPROC) (GLenum, GLsizei, GLenum, GLsizei);
@@ -16144,10 +15548,6 @@ typedef void (APIENTRYP PFNGLTEXSTORAGE2DMULTISAMPLEPROC) (GLenum, GLsizei, GLen
 typedef void (APIENTRYP PFNGLTEXSTORAGE3DMULTISAMPLEPROC) (GLenum, GLsizei, GLenum, GLsizei, GLsizei, GLsizei, GLboolean);
 
 # endif /* GL_ARB_texture_storage_multisample */
-# if defined (GL_ARB_texture_swizzle)
-
-
-# endif /* GL_ARB_texture_swizzle */
 # if defined (GL_ARB_texture_view)
 
 typedef void (APIENTRYP PFNGLTEXTUREVIEWPROC) (GLuint, GLenum, GLuint, GLenum, GLuint, GLuint, GLuint, GLuint);
@@ -16185,10 +15585,6 @@ typedef void (APIENTRYP PFNGLDRAWTRANSFORMFEEDBACKINSTANCEDPROC) (GLenum, GLuint
 typedef void (APIENTRYP PFNGLDRAWTRANSFORMFEEDBACKSTREAMINSTANCEDPROC) (GLenum, GLuint, GLuint, GLsizei);
 
 # endif /* GL_ARB_transform_feedback_instanced */
-# if defined (GL_ARB_transform_feedback_overflow_query)
-
-
-# endif /* GL_ARB_transform_feedback_overflow_query */
 # if defined (GL_ARB_transpose_matrix)
 
 typedef void (APIENTRYP PFNGLLOADTRANSPOSEMATRIXFARBPROC) (const GLfloat *);
@@ -16211,10 +15607,6 @@ typedef void (APIENTRYP PFNGLBINDBUFFERBASEPROC) (GLenum, GLuint, GLuint);
 typedef void (APIENTRYP PFNGLGETINTEGERI_VPROC) (GLenum, GLuint, GLint *);
 
 # endif /* GL_ARB_uniform_buffer_object */
-# if defined (GL_ARB_vertex_array_bgra)
-
-
-# endif /* GL_ARB_vertex_array_bgra */
 # if defined (GL_ARB_vertex_array_object)
 
 typedef void (APIENTRYP PFNGLBINDVERTEXARRAYPROC) (GLuint);
@@ -16392,10 +15784,6 @@ typedef void (APIENTRYP PFNGLGETVERTEXATTRIBIVARBPROC) (GLuint, GLenum, GLint *)
 typedef void (APIENTRYP PFNGLGETVERTEXATTRIBPOINTERVARBPROC) (GLuint, GLenum, void **);
 
 # endif /* GL_ARB_vertex_shader */
-# if defined (GL_ARB_vertex_type_10f_11f_11f_rev)
-
-
-# endif /* GL_ARB_vertex_type_10f_11f_11f_rev */
 # if defined (GL_ARB_vertex_type_2_10_10_10_rev)
 
 typedef void (APIENTRYP PFNGLVERTEXATTRIBP1UIPROC) (GLuint, GLenum, GLboolean, GLuint);
@@ -16474,27 +15862,11 @@ typedef void (APIENTRYP PFNGLWINDOWPOS3SARBPROC) (GLshort, GLshort, GLshort);
 typedef void (APIENTRYP PFNGLWINDOWPOS3SVARBPROC) (const GLshort *);
 
 # endif /* GL_ARB_window_pos */
-# if defined (GL_ARM_mali_program_binary)
-
-
-# endif /* GL_ARM_mali_program_binary */
-# if defined (GL_ARM_mali_shader_binary)
-
-
-# endif /* GL_ARM_mali_shader_binary */
 # if defined (GL_ARM_shader_core_properties)
 
 typedef void (APIENTRYP PFNGLMAXACTIVESHADERCORESARMPROC) (GLuint);
 
 # endif /* GL_ARM_shader_core_properties */
-# if defined (GL_ARM_shader_framebuffer_fetch)
-
-
-# endif /* GL_ARM_shader_framebuffer_fetch */
-# if defined (GL_ARM_texture_unnormalized_coordinates)
-
-
-# endif /* GL_ARM_texture_unnormalized_coordinates */
 # if defined (GL_ATI_draw_buffers)
 
 typedef void (APIENTRYP PFNGLDRAWBUFFERSATIPROC) (GLsizei, const GLenum *);
@@ -16539,14 +15911,6 @@ typedef void * (APIENTRYP PFNGLMAPOBJECTBUFFERATIPROC) (GLuint);
 typedef void (APIENTRYP PFNGLUNMAPOBJECTBUFFERATIPROC) (GLuint);
 
 # endif /* GL_ATI_map_object_buffer */
-# if defined (GL_ATI_meminfo)
-
-
-# endif /* GL_ATI_meminfo */
-# if defined (GL_ATI_pixel_format_float)
-
-
-# endif /* GL_ATI_pixel_format_float */
 # if defined (GL_ATI_pn_triangles)
 
 typedef void (APIENTRYP PFNGLPNTRIANGLESIATIPROC) (GLenum, GLint);
@@ -16559,22 +15923,6 @@ typedef void (APIENTRYP PFNGLSTENCILOPSEPARATEATIPROC) (GLenum, GLenum, GLenum, 
 typedef void (APIENTRYP PFNGLSTENCILFUNCSEPARATEATIPROC) (GLenum, GLenum, GLint, GLuint);
 
 # endif /* GL_ATI_separate_stencil */
-# if defined (GL_ATI_text_fragment_shader)
-
-
-# endif /* GL_ATI_text_fragment_shader */
-# if defined (GL_ATI_texture_env_combine3)
-
-
-# endif /* GL_ATI_texture_env_combine3 */
-# if defined (GL_ATI_texture_float)
-
-
-# endif /* GL_ATI_texture_float */
-# if defined (GL_ATI_texture_mirror_once)
-
-
-# endif /* GL_ATI_texture_mirror_once */
 # if defined (GL_ATI_vertex_array_object)
 
 typedef GLuint (APIENTRYP PFNGLNEWOBJECTBUFFERATIPROC) (GLsizei, const void *, GLenum);
@@ -16647,36 +15995,12 @@ typedef void (APIENTRYP PFNGLVERTEXBLENDENVIATIPROC) (GLenum, GLint);
 typedef void (APIENTRYP PFNGLVERTEXBLENDENVFATIPROC) (GLenum, GLfloat);
 
 # endif /* GL_ATI_vertex_streams */
-# if defined (GL_DMP_program_binary)
-
-
-# endif /* GL_DMP_program_binary */
-# if defined (GL_DMP_shader_binary)
-
-
-# endif /* GL_DMP_shader_binary */
-# if defined (GL_EXT_422_pixels)
-
-
-# endif /* GL_EXT_422_pixels */
 # if defined (GL_EXT_EGL_image_storage)
 
 typedef void (APIENTRYP PFNGLEGLIMAGETARGETTEXSTORAGEEXTPROC) (GLenum, GLeglImageOES, const GLint *);
 typedef void (APIENTRYP PFNGLEGLIMAGETARGETTEXTURESTORAGEEXTPROC) (GLuint, GLeglImageOES, const GLint *);
 
 # endif /* GL_EXT_EGL_image_storage */
-# if defined (GL_EXT_EGL_image_storage_compression)
-
-
-# endif /* GL_EXT_EGL_image_storage_compression */
-# if defined (GL_EXT_YUV_target)
-
-
-# endif /* GL_EXT_YUV_target */
-# if defined (GL_EXT_abgr)
-
-
-# endif /* GL_EXT_abgr */
 # if defined (GL_EXT_base_instance)
 
 typedef void (APIENTRYP PFNGLDRAWARRAYSINSTANCEDBASEINSTANCEEXTPROC) (GLenum, GLint, GLsizei, GLsizei, GLuint);
@@ -16684,10 +16008,6 @@ typedef void (APIENTRYP PFNGLDRAWELEMENTSINSTANCEDBASEINSTANCEEXTPROC) (GLenum, 
 typedef void (APIENTRYP PFNGLDRAWELEMENTSINSTANCEDBASEVERTEXBASEINSTANCEEXTPROC) (GLenum, GLsizei, GLenum, const void *, GLsizei, GLint, GLuint);
 
 # endif /* GL_EXT_base_instance */
-# if defined (GL_EXT_bgra)
-
-
-# endif /* GL_EXT_bgra */
 # if defined (GL_EXT_bindable_uniform)
 
 typedef void (APIENTRYP PFNGLUNIFORMBUFFEREXTPROC) (GLuint, GLint, GLuint);
@@ -16723,10 +16043,6 @@ typedef void (APIENTRYP PFNGLBLENDFUNCSEPARATEEXTPROC) (GLenum, GLenum, GLenum, 
 typedef void (APIENTRYP PFNGLBLENDEQUATIONEXTPROC) (GLenum);
 
 # endif /* GL_EXT_blend_minmax */
-# if defined (GL_EXT_blend_subtract)
-
-
-# endif /* GL_EXT_blend_subtract */
 # if defined (GL_EXT_buffer_storage)
 
 typedef void (APIENTRYP PFNGLBUFFERSTORAGEEXTPROC) (GLenum, GLsizeiptr, const void *, GLbitfield);
@@ -16743,22 +16059,6 @@ typedef void (APIENTRYP PFNGLCLEARTEXSUBIMAGEEXTPROC) (GLuint, GLint, GLint, GLi
 typedef void (APIENTRYP PFNGLCLIPCONTROLEXTPROC) (GLenum, GLenum);
 
 # endif /* GL_EXT_clip_control */
-# if defined (GL_EXT_clip_cull_distance)
-
-
-# endif /* GL_EXT_clip_cull_distance */
-# if defined (GL_EXT_clip_volume_hint)
-
-
-# endif /* GL_EXT_clip_volume_hint */
-# if defined (GL_EXT_cmyka)
-
-
-# endif /* GL_EXT_cmyka */
-# if defined (GL_EXT_color_buffer_half_float)
-
-
-# endif /* GL_EXT_color_buffer_half_float */
 # if defined (GL_EXT_color_subtable)
 
 typedef void (APIENTRYP PFNGLCOLORSUBTABLEEXTPROC) (GLenum, GLsizei, GLsizei, GLenum, GLenum, const void *);
@@ -16852,10 +16152,6 @@ typedef void (APIENTRYP PFNGLPOPGROUPMARKEREXTPROC) (void);
 typedef void (APIENTRYP PFNGLDEPTHBOUNDSEXTPROC) (GLclampd, GLclampd);
 
 # endif /* GL_EXT_depth_bounds_test */
-# if defined (GL_EXT_depth_clamp)
-
-
-# endif /* GL_EXT_depth_clamp */
 # if defined (GL_EXT_direct_state_access)
 
 typedef void (APIENTRYP PFNGLMATRIXLOADFEXTPROC) (GLenum, const GLfloat *);
@@ -17227,10 +16523,6 @@ typedef void (APIENTRYP PFNGLBLITFRAMEBUFFERLAYEREXTPROC) (GLint, GLint, GLint, 
 typedef void (APIENTRYP PFNGLRENDERBUFFERSTORAGEMULTISAMPLEEXTPROC) (GLenum, GLsizei, GLenum, GLsizei, GLsizei);
 
 # endif /* GL_EXT_framebuffer_multisample */
-# if defined (GL_EXT_framebuffer_multisample_blit_scaled)
-
-
-# endif /* GL_EXT_framebuffer_multisample_blit_scaled */
 # if defined (GL_EXT_framebuffer_object)
 
 typedef GLboolean (APIENTRYP PFNGLISRENDERBUFFEREXTPROC) (GLuint);
@@ -17252,10 +16544,6 @@ typedef void (APIENTRYP PFNGLGETFRAMEBUFFERATTACHMENTPARAMETERIVEXTPROC) (GLenum
 typedef void (APIENTRYP PFNGLGENERATEMIPMAPEXTPROC) (GLenum);
 
 # endif /* GL_EXT_framebuffer_object */
-# if defined (GL_EXT_framebuffer_sRGB)
-
-
-# endif /* GL_EXT_framebuffer_sRGB */
 # if defined (GL_EXT_geometry_shader)
 
 typedef void (APIENTRYP PFNGLFRAMEBUFFERTEXTUREEXTPROC) (GLenum, GLenum, GLuint, GLint);
@@ -17324,10 +16612,6 @@ typedef void (APIENTRYP PFNGLRESETHISTOGRAMEXTPROC) (GLenum);
 typedef void (APIENTRYP PFNGLRESETMINMAXEXTPROC) (GLenum);
 
 # endif /* GL_EXT_histogram */
-# if defined (GL_EXT_index_array_formats)
-
-
-# endif /* GL_EXT_index_array_formats */
 # if defined (GL_EXT_index_func)
 
 typedef void (APIENTRYP PFNGLINDEXFUNCEXTPROC) (GLenum, GLclampf);
@@ -17418,20 +16702,12 @@ typedef void (APIENTRYP PFNGLSAMPLEMASKEXTPROC) (GLclampf, GLboolean);
 typedef void (APIENTRYP PFNGLSAMPLEPATTERNEXTPROC) (GLenum);
 
 # endif /* GL_EXT_multisample */
-# if defined (GL_EXT_multisampled_compatibility)
-
-
-# endif /* GL_EXT_multisampled_compatibility */
 # if defined (GL_EXT_multisampled_render_to_texture)
 
 typedef void (APIENTRYP PFNGLRENDERBUFFERSTORAGEMULTISAMPLEEXTPROC) (GLenum, GLsizei, GLenum, GLsizei, GLsizei);
 typedef void (APIENTRYP PFNGLFRAMEBUFFERTEXTURE2DMULTISAMPLEEXTPROC) (GLenum, GLenum, GLenum, GLuint, GLint, GLsizei);
 
 # endif /* GL_EXT_multisampled_render_to_texture */
-# if defined (GL_EXT_multisampled_render_to_texture2)
-
-
-# endif /* GL_EXT_multisampled_render_to_texture2 */
 # if defined (GL_EXT_multiview_draw_buffers)
 
 typedef void (APIENTRYP PFNGLREADBUFFERINDEXEDEXTPROC) (GLenum, GLint);
@@ -17450,18 +16726,6 @@ typedef void (APIENTRYP PFNGLGETQUERYIVEXTPROC) (GLenum, GLenum, GLint *);
 typedef void (APIENTRYP PFNGLGETQUERYOBJECTUIVEXTPROC) (GLuint, GLenum, GLuint *);
 
 # endif /* GL_EXT_occlusion_query_boolean */
-# if defined (GL_EXT_packed_depth_stencil)
-
-
-# endif /* GL_EXT_packed_depth_stencil */
-# if defined (GL_EXT_packed_float)
-
-
-# endif /* GL_EXT_packed_float */
-# if defined (GL_EXT_packed_pixels)
-
-
-# endif /* GL_EXT_packed_pixels */
 # if defined (GL_EXT_paletted_texture)
 
 typedef void (APIENTRYP PFNGLCOLORTABLEEXTPROC) (GLenum, GLenum, GLsizei, GLenum, GLenum, const void *);
@@ -17470,10 +16734,6 @@ typedef void (APIENTRYP PFNGLGETCOLORTABLEPARAMETERIVEXTPROC) (GLenum, GLenum, G
 typedef void (APIENTRYP PFNGLGETCOLORTABLEPARAMETERFVEXTPROC) (GLenum, GLenum, GLfloat *);
 
 # endif /* GL_EXT_paletted_texture */
-# if defined (GL_EXT_pixel_buffer_object)
-
-
-# endif /* GL_EXT_pixel_buffer_object */
 # if defined (GL_EXT_pixel_transform)
 
 typedef void (APIENTRYP PFNGLPIXELTRANSFORMPARAMETERIEXTPROC) (GLenum, GLenum, GLint);
@@ -17505,36 +16765,16 @@ typedef void (APIENTRYP PFNGLPOLYGONOFFSETCLAMPEXTPROC) (GLfloat, GLfloat, GLflo
 typedef void (APIENTRYP PFNGLPRIMITIVEBOUNDINGBOXEXTPROC) (GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat);
 
 # endif /* GL_EXT_primitive_bounding_box */
-# if defined (GL_EXT_protected_textures)
-
-
-# endif /* GL_EXT_protected_textures */
 # if defined (GL_EXT_provoking_vertex)
 
 typedef void (APIENTRYP PFNGLPROVOKINGVERTEXEXTPROC) (GLenum);
 
 # endif /* GL_EXT_provoking_vertex */
-# if defined (GL_EXT_pvrtc_sRGB)
-
-
-# endif /* GL_EXT_pvrtc_sRGB */
 # if defined (GL_EXT_raster_multisample)
 
 typedef void (APIENTRYP PFNGLRASTERSAMPLESEXTPROC) (GLuint, GLboolean);
 
 # endif /* GL_EXT_raster_multisample */
-# if defined (GL_EXT_read_format_bgra)
-
-
-# endif /* GL_EXT_read_format_bgra */
-# if defined (GL_EXT_render_snorm)
-
-
-# endif /* GL_EXT_render_snorm */
-# if defined (GL_EXT_rescale_normal)
-
-
-# endif /* GL_EXT_rescale_normal */
 # if defined (GL_EXT_robustness)
 
 typedef GLenum (APIENTRYP PFNGLGETGRAPHICSRESETSTATUSEXTPROC) (void);
@@ -17567,14 +16807,6 @@ typedef void (APIENTRYP PFNGLIMPORTSEMAPHOREWIN32HANDLEEXTPROC) (GLuint, GLenum,
 typedef void (APIENTRYP PFNGLIMPORTSEMAPHOREWIN32NAMEEXTPROC) (GLuint, GLenum, const void *);
 
 # endif /* GL_EXT_semaphore_win32 */
-# if defined (GL_EXT_sRGB)
-
-
-# endif /* GL_EXT_sRGB */
-# if defined (GL_EXT_sRGB_write_control)
-
-
-# endif /* GL_EXT_sRGB_write_control */
 # if defined (GL_EXT_secondary_color)
 
 typedef void (APIENTRYP PFNGLSECONDARYCOLOR3BEXTPROC) (GLbyte, GLbyte, GLbyte);
@@ -17647,14 +16879,6 @@ typedef void (APIENTRYP PFNGLPROGRAMUNIFORMMATRIX3X4FVEXTPROC) (GLuint, GLint, G
 typedef void (APIENTRYP PFNGLPROGRAMUNIFORMMATRIX4X3FVEXTPROC) (GLuint, GLint, GLsizei, GLboolean, const GLfloat *);
 
 # endif /* GL_EXT_separate_shader_objects */
-# if defined (GL_EXT_separate_specular_color)
-
-
-# endif /* GL_EXT_separate_specular_color */
-# if defined (GL_EXT_shader_framebuffer_fetch)
-
-
-# endif /* GL_EXT_shader_framebuffer_fetch */
 # if defined (GL_EXT_shader_framebuffer_fetch_non_coherent)
 
 typedef void (APIENTRYP PFNGLFRAMEBUFFERFETCHBARRIEREXTPROC) (void);
@@ -17666,10 +16890,6 @@ typedef void (APIENTRYP PFNGLBINDIMAGETEXTUREEXTPROC) (GLuint, GLuint, GLint, GL
 typedef void (APIENTRYP PFNGLMEMORYBARRIEREXTPROC) (GLbitfield);
 
 # endif /* GL_EXT_shader_image_load_store */
-# if defined (GL_EXT_shader_pixel_local_storage)
-
-
-# endif /* GL_EXT_shader_pixel_local_storage */
 # if defined (GL_EXT_shader_pixel_local_storage2)
 
 typedef void (APIENTRYP PFNGLFRAMEBUFFERPIXELLOCALSTORAGESIZEEXTPROC) (GLuint, GLsizei);
@@ -17677,14 +16897,6 @@ typedef GLsizei (APIENTRYP PFNGLGETFRAMEBUFFERPIXELLOCALSTORAGESIZEEXTPROC) (GLu
 typedef void (APIENTRYP PFNGLCLEARPIXELLOCALSTORAGEUIEXTPROC) (GLsizei, GLsizei, const GLuint *);
 
 # endif /* GL_EXT_shader_pixel_local_storage2 */
-# if defined (GL_EXT_shadow_samplers)
-
-
-# endif /* GL_EXT_shadow_samplers */
-# if defined (GL_EXT_shared_texture_palette)
-
-
-# endif /* GL_EXT_shared_texture_palette */
 # if defined (GL_EXT_sparse_texture)
 
 typedef void (APIENTRYP PFNGLTEXPAGECOMMITMENTEXTPROC) (GLenum, GLint, GLint, GLint, GLint, GLsizei, GLsizei, GLsizei, GLboolean);
@@ -17700,10 +16912,6 @@ typedef void (APIENTRYP PFNGLSTENCILCLEARTAGEXTPROC) (GLsizei, GLuint);
 typedef void (APIENTRYP PFNGLACTIVESTENCILFACEEXTPROC) (GLenum);
 
 # endif /* GL_EXT_stencil_two_side */
-# if defined (GL_EXT_stencil_wrap)
-
-
-# endif /* GL_EXT_stencil_wrap */
 # if defined (GL_EXT_subtexture)
 
 typedef void (APIENTRYP PFNGLTEXSUBIMAGE1DEXTPROC) (GLenum, GLint, GLint, GLsizei, GLenum, GLenum, const void *);
@@ -17715,10 +16923,6 @@ typedef void (APIENTRYP PFNGLTEXSUBIMAGE2DEXTPROC) (GLenum, GLint, GLint, GLint,
 typedef void (APIENTRYP PFNGLPATCHPARAMETERIEXTPROC) (GLenum, GLint);
 
 # endif /* GL_EXT_tessellation_shader */
-# if defined (GL_EXT_texture)
-
-
-# endif /* GL_EXT_texture */
 # if defined (GL_EXT_texture3D)
 
 typedef void (APIENTRYP PFNGLTEXIMAGE3DEXTPROC) (GLenum, GLint, GLenum, GLsizei, GLsizei, GLsizei, GLint, GLenum, GLenum, const void *);
@@ -17753,66 +16957,6 @@ typedef void (APIENTRYP PFNGLTEXBUFFERRANGEEXTPROC) (GLenum, GLenum, GLuint, GLi
 typedef void (APIENTRYP PFNGLTEXBUFFEREXTPROC) (GLenum, GLenum, GLuint);
 
 # endif /* GL_EXT_texture_buffer_object */
-# if defined (GL_EXT_texture_compression_astc_decode_mode)
-
-
-# endif /* GL_EXT_texture_compression_astc_decode_mode */
-# if defined (GL_EXT_texture_compression_bptc)
-
-
-# endif /* GL_EXT_texture_compression_bptc */
-# if defined (GL_EXT_texture_compression_dxt1)
-
-
-# endif /* GL_EXT_texture_compression_dxt1 */
-# if defined (GL_EXT_texture_compression_latc)
-
-
-# endif /* GL_EXT_texture_compression_latc */
-# if defined (GL_EXT_texture_compression_rgtc)
-
-
-# endif /* GL_EXT_texture_compression_rgtc */
-# if defined (GL_EXT_texture_compression_s3tc)
-
-
-# endif /* GL_EXT_texture_compression_s3tc */
-# if defined (GL_EXT_texture_compression_s3tc_srgb)
-
-
-# endif /* GL_EXT_texture_compression_s3tc_srgb */
-# if defined (GL_EXT_texture_cube_map)
-
-
-# endif /* GL_EXT_texture_cube_map */
-# if defined (GL_EXT_texture_cube_map_array)
-
-
-# endif /* GL_EXT_texture_cube_map_array */
-# if defined (GL_EXT_texture_env_combine)
-
-
-# endif /* GL_EXT_texture_env_combine */
-# if defined (GL_EXT_texture_env_dot3)
-
-
-# endif /* GL_EXT_texture_env_dot3 */
-# if defined (GL_EXT_texture_filter_anisotropic)
-
-
-# endif /* GL_EXT_texture_filter_anisotropic */
-# if defined (GL_EXT_texture_filter_minmax)
-
-
-# endif /* GL_EXT_texture_filter_minmax */
-# if defined (GL_EXT_texture_format_BGRA8888)
-
-
-# endif /* GL_EXT_texture_format_BGRA8888 */
-# if defined (GL_EXT_texture_format_sRGB_override)
-
-
-# endif /* GL_EXT_texture_format_sRGB_override */
 # if defined (GL_EXT_texture_integer)
 
 typedef void (APIENTRYP PFNGLTEXPARAMETERIIVEXTPROC) (GLenum, GLenum, const GLint *);
@@ -17823,22 +16967,6 @@ typedef void (APIENTRYP PFNGLCLEARCOLORIIEXTPROC) (GLint, GLint, GLint, GLint);
 typedef void (APIENTRYP PFNGLCLEARCOLORIUIEXTPROC) (GLuint, GLuint, GLuint, GLuint);
 
 # endif /* GL_EXT_texture_integer */
-# if defined (GL_EXT_texture_lod_bias)
-
-
-# endif /* GL_EXT_texture_lod_bias */
-# if defined (GL_EXT_texture_mirror_clamp)
-
-
-# endif /* GL_EXT_texture_mirror_clamp */
-# if defined (GL_EXT_texture_mirror_clamp_to_edge)
-
-
-# endif /* GL_EXT_texture_mirror_clamp_to_edge */
-# if defined (GL_EXT_texture_norm16)
-
-
-# endif /* GL_EXT_texture_norm16 */
 # if defined (GL_EXT_texture_object)
 
 typedef GLboolean (APIENTRYP PFNGLARETEXTURESRESIDENTEXTPROC) (GLsizei, const GLuint *, GLboolean *);
@@ -17854,34 +16982,10 @@ typedef void (APIENTRYP PFNGLPRIORITIZETEXTURESEXTPROC) (GLsizei, const GLuint *
 typedef void (APIENTRYP PFNGLTEXTURENORMALEXTPROC) (GLenum);
 
 # endif /* GL_EXT_texture_perturb_normal */
-# if defined (GL_EXT_texture_rg)
-
-
-# endif /* GL_EXT_texture_rg */
 # if defined (GL_EXT_texture_sRGB)
 
 
 # endif /* GL_EXT_texture_sRGB */
-# if defined (GL_EXT_texture_sRGB_R8)
-
-
-# endif /* GL_EXT_texture_sRGB_R8 */
-# if defined (GL_EXT_texture_sRGB_RG8)
-
-
-# endif /* GL_EXT_texture_sRGB_RG8 */
-# if defined (GL_EXT_texture_sRGB_decode)
-
-
-# endif /* GL_EXT_texture_sRGB_decode */
-# if defined (GL_EXT_texture_shared_exponent)
-
-
-# endif /* GL_EXT_texture_shared_exponent */
-# if defined (GL_EXT_texture_snorm)
-
-
-# endif /* GL_EXT_texture_snorm */
 # if defined (GL_EXT_texture_storage)
 
 typedef void (APIENTRYP PFNGLTEXSTORAGE1DEXTPROC) (GLenum, GLsizei, GLenum, GLsizei);
@@ -17898,14 +17002,6 @@ typedef void (APIENTRYP PFNGLTEXSTORAGEATTRIBS2DEXTPROC) (GLenum, GLsizei, GLenu
 typedef void (APIENTRYP PFNGLTEXSTORAGEATTRIBS3DEXTPROC) (GLenum, GLsizei, GLenum, GLsizei, GLsizei, GLsizei, const GLint *);
 
 # endif /* GL_EXT_texture_storage_compression */
-# if defined (GL_EXT_texture_swizzle)
-
-
-# endif /* GL_EXT_texture_swizzle */
-# if defined (GL_EXT_texture_type_2_10_10_10_REV)
-
-
-# endif /* GL_EXT_texture_type_2_10_10_10_REV */
 # if defined (GL_EXT_texture_view)
 
 typedef void (APIENTRYP PFNGLTEXTUREVIEWEXTPROC) (GLuint, GLenum, GLuint, GLenum, GLuint, GLuint, GLuint, GLuint);
@@ -17935,10 +17031,6 @@ typedef void (APIENTRYP PFNGLTRANSFORMFEEDBACKVARYINGSEXTPROC) (GLuint, GLsizei,
 typedef void (APIENTRYP PFNGLGETTRANSFORMFEEDBACKVARYINGEXTPROC) (GLuint, GLuint, GLsizei, GLsizei *, GLsizei *, GLenum *, GLchar *);
 
 # endif /* GL_EXT_transform_feedback */
-# if defined (GL_EXT_unpack_subimage)
-
-
-# endif /* GL_EXT_unpack_subimage */
 # if defined (GL_EXT_vertex_array)
 
 typedef void (APIENTRYP PFNGLARRAYELEMENTEXTPROC) (GLint);
@@ -17952,10 +17044,6 @@ typedef void (APIENTRYP PFNGLTEXCOORDPOINTEREXTPROC) (GLint, GLenum, GLsizei, GL
 typedef void (APIENTRYP PFNGLVERTEXPOINTEREXTPROC) (GLint, GLenum, GLsizei, GLsizei, const void *);
 
 # endif /* GL_EXT_vertex_array */
-# if defined (GL_EXT_vertex_array_bgra)
-
-
-# endif /* GL_EXT_vertex_array_bgra */
 # if defined (GL_EXT_vertex_attrib_64bit)
 
 typedef void (APIENTRYP PFNGLVERTEXATTRIBL1DEXTPROC) (GLuint, GLdouble);
@@ -18039,10 +17127,6 @@ typedef void (APIENTRYP PFNGLWINDOWRECTANGLESEXTPROC) (GLenum, GLsizei, const GL
 typedef GLsync (APIENTRYP PFNGLIMPORTSYNCEXTPROC) (GLenum, GLintptr, GLbitfield);
 
 # endif /* GL_EXT_x11_sync_object */
-# if defined (GL_FJ_shader_binary_GCCSO)
-
-
-# endif /* GL_FJ_shader_binary_GCCSO */
 # if defined (GL_GREMEDY_frame_terminator)
 
 typedef void (APIENTRYP PFNGLFRAMETERMINATORGREMEDYPROC) (void);
@@ -18053,10 +17137,6 @@ typedef void (APIENTRYP PFNGLFRAMETERMINATORGREMEDYPROC) (void);
 typedef void (APIENTRYP PFNGLSTRINGMARKERGREMEDYPROC) (GLsizei, const void *);
 
 # endif /* GL_GREMEDY_string_marker */
-# if defined (GL_HP_convolution_border_modes)
-
-
-# endif /* GL_HP_convolution_border_modes */
 # if defined (GL_HP_image_transform)
 
 typedef void (APIENTRYP PFNGLIMAGETRANSFORMPARAMETERIHPPROC) (GLenum, GLenum, GLint);
@@ -18067,45 +17147,17 @@ typedef void (APIENTRYP PFNGLGETIMAGETRANSFORMPARAMETERIVHPPROC) (GLenum, GLenum
 typedef void (APIENTRYP PFNGLGETIMAGETRANSFORMPARAMETERFVHPPROC) (GLenum, GLenum, GLfloat *);
 
 # endif /* GL_HP_image_transform */
-# if defined (GL_HP_occlusion_test)
-
-
-# endif /* GL_HP_occlusion_test */
-# if defined (GL_HP_texture_lighting)
-
-
-# endif /* GL_HP_texture_lighting */
-# if defined (GL_HUAWEI_program_binary)
-
-
-# endif /* GL_HUAWEI_program_binary */
-# if defined (GL_HUAWEI_shader_binary)
-
-
-# endif /* GL_HUAWEI_shader_binary */
-# if defined (GL_IBM_cull_vertex)
-
-
-# endif /* GL_IBM_cull_vertex */
 # if defined (GL_IBM_multimode_draw_arrays)
 
 typedef void (APIENTRYP PFNGLMULTIMODEDRAWARRAYSIBMPROC) (const GLenum *, const GLint *, const GLsizei *, GLsizei, GLint);
 typedef void (APIENTRYP PFNGLMULTIMODEDRAWELEMENTSIBMPROC) (const GLenum *, const GLsizei *, GLenum, const void *const*, GLsizei, GLint);
 
 # endif /* GL_IBM_multimode_draw_arrays */
-# if defined (GL_IBM_rasterpos_clip)
-
-
-# endif /* GL_IBM_rasterpos_clip */
 # if defined (GL_IBM_static_data)
 
 typedef void (APIENTRYP PFNGLFLUSHSTATICDATAIBMPROC) (GLenum);
 
 # endif /* GL_IBM_static_data */
-# if defined (GL_IBM_texture_mirrored_repeat)
-
-
-# endif /* GL_IBM_texture_mirrored_repeat */
 # if defined (GL_IBM_vertex_array_lists)
 
 typedef void (APIENTRYP PFNGLCOLORPOINTERLISTIBMPROC) (GLint, GLenum, GLint, const void **, GLint);
@@ -18140,65 +17192,17 @@ typedef void (APIENTRYP PFNGLRENDERBUFFERSTORAGEMULTISAMPLEIMGPROC) (GLenum, GLs
 typedef void (APIENTRYP PFNGLFRAMEBUFFERTEXTURE2DMULTISAMPLEIMGPROC) (GLenum, GLenum, GLenum, GLuint, GLint, GLsizei);
 
 # endif /* GL_IMG_multisampled_render_to_texture */
-# if defined (GL_IMG_program_binary)
-
-
-# endif /* GL_IMG_program_binary */
-# if defined (GL_IMG_read_format)
-
-
-# endif /* GL_IMG_read_format */
-# if defined (GL_IMG_shader_binary)
-
-
-# endif /* GL_IMG_shader_binary */
-# if defined (GL_IMG_texture_compression_pvrtc)
-
-
-# endif /* GL_IMG_texture_compression_pvrtc */
-# if defined (GL_IMG_texture_compression_pvrtc2)
-
-
-# endif /* GL_IMG_texture_compression_pvrtc2 */
-# if defined (GL_IMG_texture_env_enhanced_fixed_function)
-
-
-# endif /* GL_IMG_texture_env_enhanced_fixed_function */
-# if defined (GL_IMG_texture_filter_cubic)
-
-
-# endif /* GL_IMG_texture_filter_cubic */
 # if defined (GL_IMG_user_clip_plane)
 
 typedef void (APIENTRYP PFNGLCLIPPLANEFIMGPROC) (GLenum, const GLfloat *);
 typedef void (APIENTRYP PFNGLCLIPPLANEXIMGPROC) (GLenum, const GLfixed *);
 
 # endif /* GL_IMG_user_clip_plane */
-# if defined (GL_IMG_tile_region_protection)
-
-
-# endif /* GL_IMG_tile_region_protection */
-# if defined (GL_IMG_pvric_end_to_end_signature)
-
-
-# endif /* GL_IMG_pvric_end_to_end_signature */
 # if defined (GL_INGR_blend_func_separate)
 
 typedef void (APIENTRYP PFNGLBLENDFUNCSEPARATEINGRPROC) (GLenum, GLenum, GLenum, GLenum);
 
 # endif /* GL_INGR_blend_func_separate */
-# if defined (GL_INGR_color_clamp)
-
-
-# endif /* GL_INGR_color_clamp */
-# if defined (GL_INGR_interlace_read)
-
-
-# endif /* GL_INGR_interlace_read */
-# if defined (GL_INTEL_conservative_rasterization)
-
-
-# endif /* GL_INTEL_conservative_rasterization */
 # if defined (GL_INTEL_framebuffer_CMAA)
 
 typedef void (APIENTRYP PFNGLAPPLYFRAMEBUFFERATTACHMENTCMAAINTELPROC) (void);
@@ -18211,10 +17215,6 @@ typedef void (APIENTRYP PFNGLUNMAPTEXTURE2DINTELPROC) (GLuint, GLint);
 typedef void * (APIENTRYP PFNGLMAPTEXTURE2DINTELPROC) (GLuint, GLint, GLbitfield, GLint *, GLenum *);
 
 # endif /* GL_INTEL_map_texture */
-# if defined (GL_INTEL_blackhole_render)
-
-
-# endif /* GL_INTEL_blackhole_render */
 # if defined (GL_INTEL_parallel_arrays)
 
 typedef void (APIENTRYP PFNGLVERTEXPOINTERVINTELPROC) (GLint, GLenum, const void **);
@@ -18242,10 +17242,6 @@ typedef void (APIENTRYP PFNGLGETPERFQUERYINFOINTELPROC) (GLuint, GLuint, GLchar 
 typedef void (APIENTRYP PFNGLBLENDBARRIERKHRPROC) (void);
 
 # endif /* GL_KHR_blend_equation_advanced */
-# if defined (GL_KHR_blend_equation_advanced_coherent)
-
-
-# endif /* GL_KHR_blend_equation_advanced_coherent */
 # if defined (GL_KHR_context_flush_control)
 
 
@@ -18276,10 +17272,6 @@ typedef void (APIENTRYP PFNGLGETOBJECTPTRLABELKHRPROC) (const void *, GLsizei, G
 typedef void (APIENTRYP PFNGLGETPOINTERVKHRPROC) (GLenum, void **);
 
 # endif /* GL_KHR_debug */
-# if defined (GL_KHR_no_error)
-
-
-# endif /* GL_KHR_no_error */
 # if defined (GL_KHR_robustness)
 
 typedef GLenum (APIENTRYP PFNGLGETGRAPHICSRESETSTATUSPROC) (void);
@@ -18294,53 +17286,17 @@ typedef void (APIENTRYP PFNGLGETNUNIFORMIVKHRPROC) (GLuint, GLint, GLsizei, GLin
 typedef void (APIENTRYP PFNGLGETNUNIFORMUIVKHRPROC) (GLuint, GLint, GLsizei, GLuint *);
 
 # endif /* GL_KHR_robustness */
-# if defined (GL_KHR_shader_subgroup)
-
-
-# endif /* GL_KHR_shader_subgroup */
-# if defined (GL_KHR_texture_compression_astc_hdr)
-
-
-# endif /* GL_KHR_texture_compression_astc_hdr */
-# if defined (GL_KHR_texture_compression_astc_ldr)
-
-
-# endif /* GL_KHR_texture_compression_astc_ldr */
 # if defined (GL_KHR_parallel_shader_compile)
 
 typedef void (APIENTRYP PFNGLMAXSHADERCOMPILERTHREADSKHRPROC) (GLuint);
 
 # endif /* GL_KHR_parallel_shader_compile */
-# if defined (GL_MESAX_texture_stack)
-
-
-# endif /* GL_MESAX_texture_stack */
-# if defined (GL_MESA_bgra)
-
-
-# endif /* GL_MESA_bgra */
-# if defined (GL_MESA_framebuffer_flip_x)
-
-
-# endif /* GL_MESA_framebuffer_flip_x */
 # if defined (GL_MESA_framebuffer_flip_y)
 
 typedef void (APIENTRYP PFNGLFRAMEBUFFERPARAMETERIMESAPROC) (GLenum, GLenum, GLint);
 typedef void (APIENTRYP PFNGLGETFRAMEBUFFERPARAMETERIVMESAPROC) (GLenum, GLenum, GLint *);
 
 # endif /* GL_MESA_framebuffer_flip_y */
-# if defined (GL_MESA_framebuffer_swap_xy)
-
-
-# endif /* GL_MESA_framebuffer_swap_xy */
-# if defined (GL_MESA_pack_invert)
-
-
-# endif /* GL_MESA_pack_invert */
-# if defined (GL_MESA_program_binary_formats)
-
-
-# endif /* GL_MESA_program_binary_formats */
 # if defined (GL_MESA_resize_buffers)
 
 typedef void (APIENTRYP PFNGLRESIZEBUFFERSMESAPROC) (void);
@@ -18360,14 +17316,6 @@ typedef void (APIENTRYP PFNGLGETSAMPLERPARAMETERIVPROC) (GLuint, GLenum, GLint *
 typedef void (APIENTRYP PFNGLGETSAMPLERPARAMETERFVPROC) (GLuint, GLenum, GLfloat *);
 
 # endif /* GL_MESA_sampler_objects */
-# if defined (GL_MESA_texture_const_bandwidth)
-
-
-# endif /* GL_MESA_texture_const_bandwidth */
-# if defined (GL_MESA_tile_raster_order)
-
-
-# endif /* GL_MESA_tile_raster_order */
 # if defined (GL_MESA_window_pos)
 
 typedef void (APIENTRYP PFNGLWINDOWPOS2DMESAPROC) (GLdouble, GLdouble);
@@ -18396,24 +17344,12 @@ typedef void (APIENTRYP PFNGLWINDOWPOS4SMESAPROC) (GLshort, GLshort, GLshort, GL
 typedef void (APIENTRYP PFNGLWINDOWPOS4SVMESAPROC) (const GLshort *);
 
 # endif /* GL_MESA_window_pos */
-# if defined (GL_MESA_ycbcr_texture)
-
-
-# endif /* GL_MESA_ycbcr_texture */
-# if defined (GL_NVX_cross_process_interop)
-
-
-# endif /* GL_NVX_cross_process_interop */
 # if defined (GL_NVX_conditional_render)
 
 typedef void (APIENTRYP PFNGLBEGINCONDITIONALRENDERNVXPROC) (GLuint);
 typedef void (APIENTRYP PFNGLENDCONDITIONALRENDERNVXPROC) (void);
 
 # endif /* GL_NVX_conditional_render */
-# if defined (GL_NVX_gpu_memory_info)
-
-
-# endif /* GL_NVX_gpu_memory_info */
 # if defined (GL_NVX_linked_gpu_multicast)
 
 typedef void (APIENTRYP PFNGLLGPUNAMEDBUFFERSUBDATANVXPROC) (GLbitfield, GLuint, GLintptr, GLsizeiptr, const void *);
@@ -18461,14 +17397,6 @@ typedef void (APIENTRYP PFNGLBLENDPARAMETERINVPROC) (GLenum, GLint);
 typedef void (APIENTRYP PFNGLBLENDBARRIERNVPROC) (void);
 
 # endif /* GL_NV_blend_equation_advanced */
-# if defined (GL_NV_blend_equation_advanced_coherent)
-
-
-# endif /* GL_NV_blend_equation_advanced_coherent */
-# if defined (GL_NV_blend_minmax_factor)
-
-
-# endif /* GL_NV_blend_minmax_factor */
 # if defined (GL_NV_clip_space_w_scaling)
 
 typedef void (APIENTRYP PFNGLVIEWPORTPOSITIONWSCALENVPROC) (GLuint, GLfloat, GLfloat);
@@ -18495,10 +17423,6 @@ typedef void (APIENTRYP PFNGLCOMPILECOMMANDLISTNVPROC) (GLuint);
 typedef void (APIENTRYP PFNGLCALLCOMMANDLISTNVPROC) (GLuint);
 
 # endif /* GL_NV_command_list */
-# if defined (GL_NV_compute_program5)
-
-
-# endif /* GL_NV_compute_program5 */
 # if defined (GL_NV_conditional_render)
 
 typedef void (APIENTRYP PFNGLBEGINCONDITIONALRENDERNVPROC) (GLuint, GLenum);
@@ -18515,10 +17439,6 @@ typedef void (APIENTRYP PFNGLSUBPIXELPRECISIONBIASNVPROC) (GLuint, GLuint);
 typedef void (APIENTRYP PFNGLCONSERVATIVERASTERPARAMETERFNVPROC) (GLenum, GLfloat);
 
 # endif /* GL_NV_conservative_raster_dilate */
-# if defined (GL_NV_conservative_raster_pre_snap)
-
-
-# endif /* GL_NV_conservative_raster_pre_snap */
 # if defined (GL_NV_conservative_raster_pre_snap_triangles)
 
 typedef void (APIENTRYP PFNGLCONSERVATIVERASTERPARAMETERINVPROC) (GLenum, GLint);
@@ -18529,10 +17449,6 @@ typedef void (APIENTRYP PFNGLCONSERVATIVERASTERPARAMETERINVPROC) (GLenum, GLint)
 typedef void (APIENTRYP PFNGLCOPYBUFFERSUBDATANVPROC) (GLenum, GLenum, GLintptr, GLintptr, GLsizeiptr);
 
 # endif /* GL_NV_copy_buffer */
-# if defined (GL_NV_copy_depth_to_color)
-
-
-# endif /* GL_NV_copy_depth_to_color */
 # if defined (GL_NV_copy_image)
 
 typedef void (APIENTRYP PFNGLCOPYIMAGESUBDATANVPROC) (GLuint, GLenum, GLint, GLint, GLint, GLint, GLuint, GLenum, GLint, GLint, GLint, GLint, GLsizei, GLsizei, GLsizei);
@@ -18544,10 +17460,6 @@ typedef void (APIENTRYP PFNGLCOVERAGEMASKNVPROC) (GLboolean);
 typedef void (APIENTRYP PFNGLCOVERAGEOPERATIONNVPROC) (GLenum);
 
 # endif /* GL_NV_coverage_sample */
-# if defined (GL_NV_deep_texture3D)
-
-
-# endif /* GL_NV_deep_texture3D */
 # if defined (GL_NV_depth_buffer_float)
 
 typedef void (APIENTRYP PFNGLDEPTHRANGEDNVPROC) (GLdouble, GLdouble);
@@ -18555,14 +17467,6 @@ typedef void (APIENTRYP PFNGLCLEARDEPTHDNVPROC) (GLdouble);
 typedef void (APIENTRYP PFNGLDEPTHBOUNDSDNVPROC) (GLdouble, GLdouble);
 
 # endif /* GL_NV_depth_buffer_float */
-# if defined (GL_NV_depth_clamp)
-
-
-# endif /* GL_NV_depth_clamp */
-# if defined (GL_NV_depth_nonlinear)
-
-
-# endif /* GL_NV_depth_nonlinear */
 # if defined (GL_NV_draw_buffers)
 
 typedef void (APIENTRYP PFNGLDRAWBUFFERSNVPROC) (GLsizei, const GLenum *);
@@ -18608,10 +17512,6 @@ typedef void (APIENTRYP PFNGLSAMPLEMASKINDEXEDNVPROC) (GLuint, GLbitfield);
 typedef void (APIENTRYP PFNGLTEXRENDERBUFFERNVPROC) (GLenum, GLuint);
 
 # endif /* GL_NV_explicit_multisample */
-# if defined (GL_NV_fbo_color_attachments)
-
-
-# endif /* GL_NV_fbo_color_attachments */
 # if defined (GL_NV_fence)
 
 typedef void (APIENTRYP PFNGLDELETEFENCESNVPROC) (GLsizei, const GLuint *);
@@ -18623,18 +17523,6 @@ typedef void (APIENTRYP PFNGLFINISHFENCENVPROC) (GLuint);
 typedef void (APIENTRYP PFNGLSETFENCENVPROC) (GLuint, GLenum);
 
 # endif /* GL_NV_fence */
-# if defined (GL_NV_fill_rectangle)
-
-
-# endif /* GL_NV_fill_rectangle */
-# if defined (GL_NV_float_buffer)
-
-
-# endif /* GL_NV_float_buffer */
-# if defined (GL_NV_fog_distance)
-
-
-# endif /* GL_NV_fog_distance */
 # if defined (GL_NV_fragment_coverage_to_color)
 
 typedef void (APIENTRYP PFNGLFRAGMENTCOVERAGECOLORNVPROC) (GLuint);
@@ -18650,10 +17538,6 @@ typedef void (APIENTRYP PFNGLGETPROGRAMNAMEDPARAMETERFVNVPROC) (GLuint, GLsizei,
 typedef void (APIENTRYP PFNGLGETPROGRAMNAMEDPARAMETERDVNVPROC) (GLuint, GLsizei, const GLubyte *, GLdouble *);
 
 # endif /* GL_NV_fragment_program */
-# if defined (GL_NV_fragment_program2)
-
-
-# endif /* GL_NV_fragment_program2 */
 # if defined (GL_NV_framebuffer_blit)
 
 typedef void (APIENTRYP PFNGLBLITFRAMEBUFFERNVPROC) (GLint, GLint, GLint, GLint, GLint, GLint, GLint, GLint, GLbitfield, GLenum);
@@ -18808,10 +17692,6 @@ typedef void (APIENTRYP PFNGLVERTEXATTRIBDIVISORNVPROC) (GLuint, GLuint);
 typedef void (APIENTRYP PFNGLGETINTERNALFORMATSAMPLEIVNVPROC) (GLenum, GLenum, GLsizei, GLenum, GLsizei, GLint *);
 
 # endif /* GL_NV_internalformat_sample_query */
-# if defined (GL_NV_light_max_exponent)
-
-
-# endif /* GL_NV_light_max_exponent */
 # if defined (GL_NV_gpu_multicast)
 
 typedef void (APIENTRYP PFNGLRENDERGPUMASKNVPROC) (GLbitfield);
@@ -18872,14 +17752,6 @@ typedef void (APIENTRYP PFNGLMULTIDRAWMESHTASKSINDIRECTNVPROC) (GLintptr, GLsize
 typedef void (APIENTRYP PFNGLMULTIDRAWMESHTASKSINDIRECTCOUNTNVPROC) (GLintptr, GLintptr, GLsizei, GLsizei);
 
 # endif /* GL_NV_mesh_shader */
-# if defined (GL_NV_multisample_coverage)
-
-
-# endif /* GL_NV_multisample_coverage */
-# if defined (GL_NV_multisample_filter_hint)
-
-
-# endif /* GL_NV_multisample_filter_hint */
 # if defined (GL_NV_non_square_matrices)
 
 typedef void (APIENTRYP PFNGLUNIFORMMATRIX2X3FVNVPROC) (GLint, GLsizei, GLboolean, const GLfloat *);
@@ -18901,10 +17773,6 @@ typedef void (APIENTRYP PFNGLGETOCCLUSIONQUERYIVNVPROC) (GLuint, GLenum, GLint *
 typedef void (APIENTRYP PFNGLGETOCCLUSIONQUERYUIVNVPROC) (GLuint, GLenum, GLuint *);
 
 # endif /* GL_NV_occlusion_query */
-# if defined (GL_NV_packed_depth_stencil)
-
-
-# endif /* GL_NV_packed_depth_stencil */
 # if defined (GL_NV_parameter_buffer_object)
 
 typedef void (APIENTRYP PFNGLPROGRAMBUFFERPARAMETERSFVNVPROC) (GLenum, GLuint, GLuint, GLsizei, const GLfloat *);
@@ -18999,20 +17867,12 @@ typedef void (APIENTRYP PFNGLMATRIXTRANSLATEFEXTPROC) (GLenum, GLfloat, GLfloat,
 typedef void (APIENTRYP PFNGLMATRIXTRANSLATEDEXTPROC) (GLenum, GLdouble, GLdouble, GLdouble);
 
 # endif /* GL_NV_path_rendering */
-# if defined (GL_NV_path_rendering_shared_edge)
-
-
-# endif /* GL_NV_path_rendering_shared_edge */
 # if defined (GL_NV_pixel_data_range)
 
 typedef void (APIENTRYP PFNGLPIXELDATARANGENVPROC) (GLenum, GLsizei, const void *);
 typedef void (APIENTRYP PFNGLFLUSHPIXELDATARANGENVPROC) (GLenum);
 
 # endif /* GL_NV_pixel_data_range */
-# if defined (GL_NV_pixel_buffer_object)
-
-
-# endif /* GL_NV_pixel_buffer_object */
 # if defined (GL_NV_point_sprite)
 
 typedef void (APIENTRYP PFNGLPOINTPARAMETERINVPROC) (GLenum, GLint);
@@ -19040,10 +17900,6 @@ typedef void (APIENTRYP PFNGLPRIMITIVERESTARTNVPROC) (void);
 typedef void (APIENTRYP PFNGLPRIMITIVERESTARTINDEXNVPROC) (GLuint);
 
 # endif /* GL_NV_primitive_restart */
-# if defined (GL_NV_primitive_shading_rate)
-
-
-# endif /* GL_NV_primitive_shading_rate */
 # if defined (GL_NV_query_resource)
 
 typedef GLint (APIENTRYP PFNGLQUERYRESOURCENVPROC) (GLenum, GLint, GLuint, GLint *);
@@ -19084,18 +17940,6 @@ typedef void (APIENTRYP PFNGLCOMBINERSTAGEPARAMETERFVNVPROC) (GLenum, GLenum, co
 typedef void (APIENTRYP PFNGLGETCOMBINERSTAGEPARAMETERFVNVPROC) (GLenum, GLenum, GLfloat *);
 
 # endif /* GL_NV_register_combiners2 */
-# if defined (GL_NV_representative_fragment_test)
-
-
-# endif /* GL_NV_representative_fragment_test */
-# if defined (GL_NV_robustness_video_memory_purge)
-
-
-# endif /* GL_NV_robustness_video_memory_purge */
-# if defined (GL_NV_sRGB_formats)
-
-
-# endif /* GL_NV_sRGB_formats */
 # if defined (GL_NV_sample_locations)
 
 typedef void (APIENTRYP PFNGLFRAMEBUFFERSAMPLELOCATIONSFVNVPROC) (GLenum, GLuint, GLsizei, const GLfloat *);
@@ -19127,18 +17971,6 @@ typedef void (APIENTRYP PFNGLPROGRAMUNIFORMUI64NVPROC) (GLuint, GLint, GLuint64E
 typedef void (APIENTRYP PFNGLPROGRAMUNIFORMUI64VNVPROC) (GLuint, GLint, GLsizei, const GLuint64EXT *);
 
 # endif /* GL_NV_shader_buffer_load */
-# if defined (GL_NV_shader_buffer_store)
-
-
-# endif /* GL_NV_shader_buffer_store */
-# if defined (GL_NV_shader_subgroup_partitioned)
-
-
-# endif /* GL_NV_shader_subgroup_partitioned */
-# if defined (GL_NV_shader_thread_group)
-
-
-# endif /* GL_NV_shader_thread_group */
 # if defined (GL_NV_shading_rate_image)
 
 typedef void (APIENTRYP PFNGLBINDSHADINGRATEIMAGENVPROC) (GLuint);
@@ -19150,43 +17982,11 @@ typedef void (APIENTRYP PFNGLSHADINGRATESAMPLEORDERNVPROC) (GLenum);
 typedef void (APIENTRYP PFNGLSHADINGRATESAMPLEORDERCUSTOMNVPROC) (GLenum, GLuint, const GLint *);
 
 # endif /* GL_NV_shading_rate_image */
-# if defined (GL_NV_shadow_samplers_array)
-
-
-# endif /* GL_NV_shadow_samplers_array */
-# if defined (GL_NV_shadow_samplers_cube)
-
-
-# endif /* GL_NV_shadow_samplers_cube */
-# if defined (GL_NV_tessellation_program5)
-
-
-# endif /* GL_NV_tessellation_program5 */
-# if defined (GL_NV_texgen_emboss)
-
-
-# endif /* GL_NV_texgen_emboss */
-# if defined (GL_NV_texgen_reflection)
-
-
-# endif /* GL_NV_texgen_reflection */
 # if defined (GL_NV_texture_barrier)
 
 typedef void (APIENTRYP PFNGLTEXTUREBARRIERNVPROC) (void);
 
 # endif /* GL_NV_texture_barrier */
-# if defined (GL_NV_texture_border_clamp)
-
-
-# endif /* GL_NV_texture_border_clamp */
-# if defined (GL_NV_texture_env_combine4)
-
-
-# endif /* GL_NV_texture_env_combine4 */
-# if defined (GL_NV_texture_expand_normal)
-
-
-# endif /* GL_NV_texture_expand_normal */
 # if defined (GL_NV_texture_multisample)
 
 typedef void (APIENTRYP PFNGLTEXIMAGE2DMULTISAMPLECOVERAGENVPROC) (GLenum, GLsizei, GLsizei, GLint, GLsizei, GLsizei, GLboolean);
@@ -19197,22 +17997,6 @@ typedef void (APIENTRYP PFNGLTEXTUREIMAGE2DMULTISAMPLECOVERAGENVPROC) (GLuint, G
 typedef void (APIENTRYP PFNGLTEXTUREIMAGE3DMULTISAMPLECOVERAGENVPROC) (GLuint, GLenum, GLsizei, GLsizei, GLint, GLsizei, GLsizei, GLsizei, GLboolean);
 
 # endif /* GL_NV_texture_multisample */
-# if defined (GL_NV_texture_rectangle)
-
-
-# endif /* GL_NV_texture_rectangle */
-# if defined (GL_NV_texture_shader)
-
-
-# endif /* GL_NV_texture_shader */
-# if defined (GL_NV_texture_shader2)
-
-
-# endif /* GL_NV_texture_shader2 */
-# if defined (GL_NV_texture_shader3)
-
-
-# endif /* GL_NV_texture_shader3 */
 # if defined (GL_NV_transform_feedback)
 
 typedef void (APIENTRYP PFNGLBEGINTRANSFORMFEEDBACKNVPROC) (GLenum);
@@ -19240,10 +18024,6 @@ typedef void (APIENTRYP PFNGLRESUMETRANSFORMFEEDBACKNVPROC) (void);
 typedef void (APIENTRYP PFNGLDRAWTRANSFORMFEEDBACKNVPROC) (GLenum, GLuint);
 
 # endif /* GL_NV_transform_feedback2 */
-# if defined (GL_NV_uniform_buffer_unified_memory)
-
-
-# endif /* GL_NV_uniform_buffer_unified_memory */
 # if defined (GL_NV_vdpau_interop)
 
 typedef void (APIENTRYP PFNGLVDPAUINITNVPROC) (const void *, const void *);
@@ -19269,10 +18049,6 @@ typedef void (APIENTRYP PFNGLFLUSHVERTEXARRAYRANGENVPROC) (void);
 typedef void (APIENTRYP PFNGLVERTEXARRAYRANGENVPROC) (GLsizei, const void *);
 
 # endif /* GL_NV_vertex_array_range */
-# if defined (GL_NV_vertex_array_range2)
-
-
-# endif /* GL_NV_vertex_array_range2 */
 # if defined (GL_NV_vertex_attrib_integer_64bit)
 
 typedef void (APIENTRYP PFNGLVERTEXATTRIBL1I64NVPROC) (GLuint, GLint64EXT);
@@ -19380,14 +18156,6 @@ typedef void (APIENTRYP PFNGLVERTEXATTRIBS4SVNVPROC) (GLuint, GLsizei, const GLs
 typedef void (APIENTRYP PFNGLVERTEXATTRIBS4UBVNVPROC) (GLuint, GLsizei, const GLubyte *);
 
 # endif /* GL_NV_vertex_program */
-# if defined (GL_NV_vertex_program2_option)
-
-
-# endif /* GL_NV_vertex_program2_option */
-# if defined (GL_NV_vertex_program3)
-
-
-# endif /* GL_NV_vertex_program3 */
 # if defined (GL_NV_vertex_program4)
 
 typedef void (APIENTRYP PFNGLVERTEXATTRIBI1IEXTPROC) (GLuint, GLint);
@@ -19452,10 +18220,6 @@ typedef GLboolean (APIENTRYP PFNGLISENABLEDINVPROC) (GLenum, GLuint);
 typedef void (APIENTRYP PFNGLVIEWPORTSWIZZLENVPROC) (GLuint, GLenum, GLenum, GLenum, GLenum);
 
 # endif /* GL_NV_viewport_swizzle */
-# if defined (GL_NV_pack_subimage)
-
-
-# endif /* GL_NV_pack_subimage */
 # if defined (GL_OES_EGL_image)
 
 typedef void (APIENTRYP PFNGLEGLIMAGETARGETTEXTURE2DOESPROC) (GLenum, GLeglImageOES);
@@ -19508,31 +18272,11 @@ typedef void (APIENTRYP PFNGLVERTEX4BOESPROC) (GLbyte, GLbyte, GLbyte, GLbyte);
 typedef void (APIENTRYP PFNGLVERTEX4BVOESPROC) (const GLbyte *);
 
 # endif /* GL_OES_byte_coordinates */
-# if defined (GL_OES_compressed_ETC1_RGB8_texture)
-
-
-# endif /* GL_OES_compressed_ETC1_RGB8_texture */
-# if defined (GL_OES_compressed_paletted_texture)
-
-
-# endif /* GL_OES_compressed_paletted_texture */
 # if defined (GL_OES_copy_image)
 
 typedef void (APIENTRYP PFNGLCOPYIMAGESUBDATAOESPROC) (GLuint, GLenum, GLint, GLint, GLint, GLint, GLuint, GLenum, GLint, GLint, GLint, GLint, GLsizei, GLsizei, GLsizei);
 
 # endif /* GL_OES_copy_image */
-# if defined (GL_OES_depth24)
-
-
-# endif /* GL_OES_depth24 */
-# if defined (GL_OES_depth32)
-
-
-# endif /* GL_OES_depth32 */
-# if defined (GL_OES_depth_texture)
-
-
-# endif /* GL_OES_depth_texture */
 # if defined (GL_OES_draw_buffers_indexed)
 
 typedef void (APIENTRYP PFNGLENABLEIOESPROC) (GLenum, GLuint);
@@ -19565,10 +18309,6 @@ typedef void (APIENTRYP PFNGLDRAWTEXFOESPROC) (GLfloat, GLfloat, GLfloat, GLfloa
 typedef void (APIENTRYP PFNGLDRAWTEXFVOESPROC) (const GLfloat *);
 
 # endif /* GL_OES_draw_texture */
-# if defined (GL_OES_element_index_uint)
-
-
-# endif /* GL_OES_element_index_uint */
 # if defined (GL_OES_fixed_point)
 
 typedef void (APIENTRYP PFNGLALPHAFUNCXOESPROC) (GLenum, GLfixed);
@@ -19680,10 +18420,6 @@ typedef void (APIENTRYP PFNGLVERTEX4XOESPROC) (GLfixed, GLfixed, GLfixed);
 typedef void (APIENTRYP PFNGLVERTEX4XVOESPROC) (const GLfixed *);
 
 # endif /* GL_OES_fixed_point */
-# if defined (GL_OES_fragment_precision_high)
-
-
-# endif /* GL_OES_fragment_precision_high */
 # if defined (GL_OES_framebuffer_object)
 
 typedef GLboolean (APIENTRYP PFNGLISRENDERBUFFEROESPROC) (GLuint);
@@ -19721,10 +18457,6 @@ typedef GLboolean (APIENTRYP PFNGLUNMAPBUFFEROESPROC) (GLenum);
 typedef void (APIENTRYP PFNGLGETBUFFERPOINTERVOESPROC) (GLenum, GLenum, void **);
 
 # endif /* GL_OES_mapbuffer */
-# if defined (GL_OES_matrix_get)
-
-
-# endif /* GL_OES_matrix_get */
 # if defined (GL_OES_matrix_palette)
 
 typedef void (APIENTRYP PFNGLCURRENTPALETTEMATRIXOESPROC) (GLuint);
@@ -19733,19 +18465,11 @@ typedef void (APIENTRYP PFNGLMATRIXINDEXPOINTEROESPROC) (GLint, GLenum, GLsizei,
 typedef void (APIENTRYP PFNGLWEIGHTPOINTEROESPROC) (GLint, GLenum, GLsizei, const void *);
 
 # endif /* GL_OES_matrix_palette */
-# if defined (GL_OES_packed_depth_stencil)
-
-
-# endif /* GL_OES_packed_depth_stencil */
 # if defined (GL_OES_point_size_array)
 
 typedef void (APIENTRYP PFNGLPOINTSIZEPOINTEROESPROC) (GLenum, GLsizei, const void *);
 
 # endif /* GL_OES_point_size_array */
-# if defined (GL_OES_point_sprite)
-
-
-# endif /* GL_OES_point_sprite */
 # if defined (GL_OES_primitive_bounding_box)
 
 typedef void (APIENTRYP PFNGLPRIMITIVEBOUNDINGBOXOESPROC) (GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat);
@@ -19756,27 +18480,11 @@ typedef void (APIENTRYP PFNGLPRIMITIVEBOUNDINGBOXOESPROC) (GLfloat, GLfloat, GLf
 typedef GLbitfield (APIENTRYP PFNGLQUERYMATRIXXOESPROC) (GLfixed *, GLint *);
 
 # endif /* GL_OES_query_matrix */
-# if defined (GL_OES_read_format)
-
-
-# endif /* GL_OES_read_format */
-# if defined (GL_OES_required_internalformat)
-
-
-# endif /* GL_OES_required_internalformat */
-# if defined (GL_OES_rgb8_rgba8)
-
-
-# endif /* GL_OES_rgb8_rgba8 */
 # if defined (GL_OES_sample_shading)
 
 typedef void (APIENTRYP PFNGLMINSAMPLESHADINGOESPROC) (GLfloat);
 
 # endif /* GL_OES_sample_shading */
-# if defined (GL_OES_shader_multisample_interpolation)
-
-
-# endif /* GL_OES_shader_multisample_interpolation */
 # if defined (GL_OES_single_precision)
 
 typedef void (APIENTRYP PFNGLCLEARDEPTHFOESPROC) (GLclampf);
@@ -19787,30 +18495,6 @@ typedef void (APIENTRYP PFNGLGETCLIPPLANEFOESPROC) (GLenum, GLfloat *);
 typedef void (APIENTRYP PFNGLORTHOFOESPROC) (GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat);
 
 # endif /* GL_OES_single_precision */
-# if defined (GL_OES_standard_derivatives)
-
-
-# endif /* GL_OES_standard_derivatives */
-# if defined (GL_OES_stencil1)
-
-
-# endif /* GL_OES_stencil1 */
-# if defined (GL_OES_stencil4)
-
-
-# endif /* GL_OES_stencil4 */
-# if defined (GL_OES_stencil8)
-
-
-# endif /* GL_OES_stencil8 */
-# if defined (GL_OES_stencil_wrap)
-
-
-# endif /* GL_OES_stencil_wrap */
-# if defined (GL_OES_surfaceless_context)
-
-
-# endif /* GL_OES_surfaceless_context */
 # if defined (GL_OES_tessellation_shader)
 
 typedef void (APIENTRYP PFNGLPATCHPARAMETERIOESPROC) (GLenum, GLint);
@@ -19844,10 +18528,6 @@ typedef void (APIENTRYP PFNGLTEXBUFFEROESPROC) (GLenum, GLenum, GLuint);
 typedef void (APIENTRYP PFNGLTEXBUFFERRANGEOESPROC) (GLenum, GLenum, GLuint, GLintptr, GLsizeiptr);
 
 # endif /* GL_OES_texture_buffer */
-# if defined (GL_OES_texture_compression_astc)
-
-
-# endif /* GL_OES_texture_compression_astc */
 # if defined (GL_OES_texture_cube_map)
 
 typedef void (APIENTRYP PFNGLTEXGENFOESPROC) (GLenum, GLenum, GLfloat);
@@ -19861,26 +18541,6 @@ typedef void (APIENTRYP PFNGLGETTEXGENIVOESPROC) (GLenum, GLenum, GLint *);
 typedef void (APIENTRYP PFNGLGETTEXGENXVOESPROC) (GLenum, GLenum, GLfixed *);
 
 # endif /* GL_OES_texture_cube_map */
-# if defined (GL_OES_texture_cube_map_array)
-
-
-# endif /* GL_OES_texture_cube_map_array */
-# if defined (GL_OES_texture_float)
-
-
-# endif /* GL_OES_texture_float */
-# if defined (GL_OES_texture_half_float)
-
-
-# endif /* GL_OES_texture_half_float */
-# if defined (GL_OES_texture_mirrored_repeat)
-
-
-# endif /* GL_OES_texture_mirrored_repeat */
-# if defined (GL_OES_texture_stencil8)
-
-
-# endif /* GL_OES_texture_stencil8 */
 # if defined (GL_OES_texture_storage_multisample_2d_array)
 
 typedef void (APIENTRYP PFNGLTEXSTORAGE3DMULTISAMPLEOESPROC) (GLenum, GLsizei, GLenum, GLsizei, GLsizei, GLsizei, GLboolean);
@@ -19899,14 +18559,6 @@ typedef void (APIENTRYP PFNGLGENVERTEXARRAYSOESPROC) (GLsizei, GLuint *);
 typedef GLboolean (APIENTRYP PFNGLISVERTEXARRAYOESPROC) (GLuint);
 
 # endif /* GL_OES_vertex_array_object */
-# if defined (GL_OES_vertex_half_float)
-
-
-# endif /* GL_OES_vertex_half_float */
-# if defined (GL_OES_vertex_type_10_10_10_2)
-
-
-# endif /* GL_OES_vertex_type_10_10_10_2 */
 # if defined (GL_OES_viewport_array)
 
 typedef void (APIENTRYP PFNGLVIEWPORTARRAYVOESPROC) (GLuint, GLsizei, const GLfloat *);
@@ -19923,18 +18575,6 @@ typedef void (APIENTRYP PFNGLDISABLEIOESPROC) (GLenum, GLuint);
 typedef GLboolean (APIENTRYP PFNGLISENABLEDIOESPROC) (GLenum, GLuint);
 
 # endif /* GL_OES_viewport_array */
-# if defined (GL_OML_interlace)
-
-
-# endif /* GL_OML_interlace */
-# if defined (GL_OML_resample)
-
-
-# endif /* GL_OML_resample */
-# if defined (GL_OML_subsample)
-
-
-# endif /* GL_OML_subsample */
 # if defined (GL_OVR_multiview)
 
 typedef void (APIENTRYP PFNGLFRAMEBUFFERTEXTUREMULTIVIEWOVRPROC) (GLenum, GLenum, GLuint, GLint, GLint, GLsizei);
@@ -19951,19 +18591,11 @@ typedef void (APIENTRYP PFNGLFRAMEBUFFERTEXTUREMULTISAMPLEMULTIVIEWOVRPROC) (GLe
 typedef void (APIENTRYP PFNGLHINTPGIPROC) (GLenum, GLint);
 
 # endif /* GL_PGI_misc_hints */
-# if defined (GL_PGI_vertex_hints)
-
-
-# endif /* GL_PGI_vertex_hints */
 # if defined (GL_QCOM_alpha_test)
 
 typedef void (APIENTRYP PFNGLALPHAFUNCQCOMPROC) (GLenum, GLclampf);
 
 # endif /* GL_QCOM_alpha_test */
-# if defined (GL_QCOM_binning_control)
-
-
-# endif /* GL_QCOM_binning_control */
 # if defined (GL_QCOM_driver_control)
 
 typedef void (APIENTRYP PFNGLGETDRIVERCONTROLSQCOMPROC) (GLint *, GLsizei, GLuint *);
@@ -20014,26 +18646,6 @@ typedef void (APIENTRYP PFNGLEXTRAPOLATETEX2DQCOMPROC) (GLuint, GLuint, GLuint, 
 typedef void (APIENTRYP PFNGLTEXTUREFOVEATIONPARAMETERSQCOMPROC) (GLuint, GLuint, GLuint, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat);
 
 # endif /* GL_QCOM_texture_foveated */
-# if defined (GL_QCOM_texture_foveated2)
-
-
-# endif /* GL_QCOM_texture_foveated2 */
-# if defined (GL_QCOM_texture_foveated_subsampled_layout)
-
-
-# endif /* GL_QCOM_texture_foveated_subsampled_layout */
-# if defined (GL_QCOM_ycbcr_degamma)
-
-
-# endif /* GL_QCOM_ycbcr_degamma */
-# if defined (GL_QCOM_texture_lod_bias)
-
-
-# endif /* GL_QCOM_texture_lod_bias */
-# if defined (GL_QCOM_perfmon_global_mode)
-
-
-# endif /* GL_QCOM_perfmon_global_mode */
 # if defined (GL_QCOM_shader_framebuffer_fetch_noncoherent)
 
 typedef void (APIENTRYP PFNGLFRAMEBUFFERFETCHBARRIERQCOMPROC) (void);
@@ -20050,18 +18662,6 @@ typedef void (APIENTRYP PFNGLSTARTTILINGQCOMPROC) (GLuint, GLuint, GLuint, GLuin
 typedef void (APIENTRYP PFNGLENDTILINGQCOMPROC) (GLbitfield);
 
 # endif /* GL_QCOM_tiled_rendering */
-# if defined (GL_QCOM_writeonly_rendering)
-
-
-# endif /* GL_QCOM_writeonly_rendering */
-# if defined (GL_REND_screen_coordinates)
-
-
-# endif /* GL_REND_screen_coordinates */
-# if defined (GL_S3_s3tc)
-
-
-# endif /* GL_S3_s3tc */
 # if defined (GL_SGIS_detail_texture)
 
 typedef void (APIENTRYP PFNGLDETAILTEXFUNCSGISPROC) (GLenum, GLsizei, const GLfloat *);
@@ -20074,10 +18674,6 @@ typedef void (APIENTRYP PFNGLFOGFUNCSGISPROC) (GLsizei, const GLfloat *);
 typedef void (APIENTRYP PFNGLGETFOGFUNCSGISPROC) (GLfloat *);
 
 # endif /* GL_SGIS_fog_function */
-# if defined (GL_SGIS_generate_mipmap)
-
-
-# endif /* GL_SGIS_generate_mipmap */
 # if defined (GL_SGIS_multisample)
 
 typedef void (APIENTRYP PFNGLSAMPLEMASKSGISPROC) (GLclampf, GLboolean);
@@ -20094,10 +18690,6 @@ typedef void (APIENTRYP PFNGLGETPIXELTEXGENPARAMETERIVSGISPROC) (GLenum, GLint *
 typedef void (APIENTRYP PFNGLGETPIXELTEXGENPARAMETERFVSGISPROC) (GLenum, GLfloat *);
 
 # endif /* GL_SGIS_pixel_texture */
-# if defined (GL_SGIS_point_line_texgen)
-
-
-# endif /* GL_SGIS_point_line_texgen */
 # if defined (GL_SGIS_point_parameters)
 
 typedef void (APIENTRYP PFNGLPOINTPARAMETERFSGISPROC) (GLenum, GLfloat);
@@ -20116,33 +18708,17 @@ typedef void (APIENTRYP PFNGLTEXIMAGE4DSGISPROC) (GLenum, GLint, GLenum, GLsizei
 typedef void (APIENTRYP PFNGLTEXSUBIMAGE4DSGISPROC) (GLenum, GLint, GLint, GLint, GLint, GLint, GLsizei, GLsizei, GLsizei, GLsizei, GLenum, GLenum, const void *);
 
 # endif /* GL_SGIS_texture4D */
-# if defined (GL_SGIS_texture_border_clamp)
-
-
-# endif /* GL_SGIS_texture_border_clamp */
 # if defined (GL_SGIS_texture_color_mask)
 
 typedef void (APIENTRYP PFNGLTEXTURECOLORMASKSGISPROC) (GLboolean, GLboolean, GLboolean, GLboolean);
 
 # endif /* GL_SGIS_texture_color_mask */
-# if defined (GL_SGIS_texture_edge_clamp)
-
-
-# endif /* GL_SGIS_texture_edge_clamp */
 # if defined (GL_SGIS_texture_filter4)
 
 typedef void (APIENTRYP PFNGLGETTEXFILTERFUNCSGISPROC) (GLenum, GLenum, GLfloat *);
 typedef void (APIENTRYP PFNGLTEXFILTERFUNCSGISPROC) (GLenum, GLenum, GLsizei, const GLfloat *);
 
 # endif /* GL_SGIS_texture_filter4 */
-# if defined (GL_SGIS_texture_lod)
-
-
-# endif /* GL_SGIS_texture_lod */
-# if defined (GL_SGIS_texture_select)
-
-
-# endif /* GL_SGIS_texture_select */
 # if defined (GL_SGIX_async)
 
 typedef void (APIENTRYP PFNGLASYNCMARKERSGIXPROC) (GLuint);
@@ -20153,43 +18729,11 @@ typedef void (APIENTRYP PFNGLDELETEASYNCMARKERSSGIXPROC) (GLuint, GLsizei);
 typedef GLboolean (APIENTRYP PFNGLISASYNCMARKERSGIXPROC) (GLuint);
 
 # endif /* GL_SGIX_async */
-# if defined (GL_SGIX_async_histogram)
-
-
-# endif /* GL_SGIX_async_histogram */
-# if defined (GL_SGIX_async_pixel)
-
-
-# endif /* GL_SGIX_async_pixel */
-# if defined (GL_SGIX_blend_alpha_minmax)
-
-
-# endif /* GL_SGIX_blend_alpha_minmax */
-# if defined (GL_SGIX_calligraphic_fragment)
-
-
-# endif /* GL_SGIX_calligraphic_fragment */
-# if defined (GL_SGIX_clipmap)
-
-
-# endif /* GL_SGIX_clipmap */
-# if defined (GL_SGIX_convolution_accuracy)
-
-
-# endif /* GL_SGIX_convolution_accuracy */
-# if defined (GL_SGIX_depth_texture)
-
-
-# endif /* GL_SGIX_depth_texture */
 # if defined (GL_SGIX_flush_raster)
 
 typedef void (APIENTRYP PFNGLFLUSHRASTERSGIXPROC) (void);
 
 # endif /* GL_SGIX_flush_raster */
-# if defined (GL_SGIX_fog_offset)
-
-
-# endif /* GL_SGIX_fog_offset */
 # if defined (GL_SGIX_fragment_lighting)
 
 typedef void (APIENTRYP PFNGLFRAGMENTCOLORMATERIALSGIXPROC) (GLenum, GLenum);
@@ -20232,14 +18776,6 @@ typedef void (APIENTRYP PFNGLSTARTINSTRUMENTSSGIXPROC) (void);
 typedef void (APIENTRYP PFNGLSTOPINSTRUMENTSSGIXPROC) (GLint);
 
 # endif /* GL_SGIX_instruments */
-# if defined (GL_SGIX_interlace)
-
-
-# endif /* GL_SGIX_interlace */
-# if defined (GL_SGIX_ir_instrument1)
-
-
-# endif /* GL_SGIX_ir_instrument1 */
 # if defined (GL_SGIX_list_priority)
 
 typedef void (APIENTRYP PFNGLGETLISTPARAMETERFVSGIXPROC) (GLuint, GLenum, GLfloat *);
@@ -20255,10 +18791,6 @@ typedef void (APIENTRYP PFNGLLISTPARAMETERIVSGIXPROC) (GLuint, GLenum, const GLi
 typedef void (APIENTRYP PFNGLPIXELTEXGENSGIXPROC) (GLenum);
 
 # endif /* GL_SGIX_pixel_texture */
-# if defined (GL_SGIX_pixel_tiles)
-
-
-# endif /* GL_SGIX_pixel_tiles */
 # if defined (GL_SGIX_polynomial_ffd)
 
 typedef void (APIENTRYP PFNGLDEFORMATIONMAP3DSGIXPROC) (GLenum, GLdouble, GLdouble, GLint, GLint, GLdouble, GLdouble, GLint, GLint, GLdouble, GLdouble, GLint, GLint, const GLdouble *);
@@ -20272,22 +18804,6 @@ typedef void (APIENTRYP PFNGLLOADIDENTITYDEFORMATIONMAPSGIXPROC) (GLbitfield);
 typedef void (APIENTRYP PFNGLREFERENCEPLANESGIXPROC) (const GLdouble *);
 
 # endif /* GL_SGIX_reference_plane */
-# if defined (GL_SGIX_resample)
-
-
-# endif /* GL_SGIX_resample */
-# if defined (GL_SGIX_scalebias_hint)
-
-
-# endif /* GL_SGIX_scalebias_hint */
-# if defined (GL_SGIX_shadow)
-
-
-# endif /* GL_SGIX_shadow */
-# if defined (GL_SGIX_shadow_ambient)
-
-
-# endif /* GL_SGIX_shadow_ambient */
 # if defined (GL_SGIX_sprite)
 
 typedef void (APIENTRYP PFNGLSPRITEPARAMETERFSGIXPROC) (GLenum, GLfloat);
@@ -20296,51 +18812,11 @@ typedef void (APIENTRYP PFNGLSPRITEPARAMETERISGIXPROC) (GLenum, GLint);
 typedef void (APIENTRYP PFNGLSPRITEPARAMETERIVSGIXPROC) (GLenum, const GLint *);
 
 # endif /* GL_SGIX_sprite */
-# if defined (GL_SGIX_subsample)
-
-
-# endif /* GL_SGIX_subsample */
 # if defined (GL_SGIX_tag_sample_buffer)
 
 typedef void (APIENTRYP PFNGLTAGSAMPLEBUFFERSGIXPROC) (void);
 
 # endif /* GL_SGIX_tag_sample_buffer */
-# if defined (GL_SGIX_texture_add_env)
-
-
-# endif /* GL_SGIX_texture_add_env */
-# if defined (GL_SGIX_texture_coordinate_clamp)
-
-
-# endif /* GL_SGIX_texture_coordinate_clamp */
-# if defined (GL_SGIX_texture_lod_bias)
-
-
-# endif /* GL_SGIX_texture_lod_bias */
-# if defined (GL_SGIX_texture_multi_buffer)
-
-
-# endif /* GL_SGIX_texture_multi_buffer */
-# if defined (GL_SGIX_texture_scale_bias)
-
-
-# endif /* GL_SGIX_texture_scale_bias */
-# if defined (GL_SGIX_vertex_preclip)
-
-
-# endif /* GL_SGIX_vertex_preclip */
-# if defined (GL_SGIX_ycrcb)
-
-
-# endif /* GL_SGIX_ycrcb */
-# if defined (GL_SGIX_ycrcba)
-
-
-# endif /* GL_SGIX_ycrcba */
-# if defined (GL_SGI_color_matrix)
-
-
-# endif /* GL_SGI_color_matrix */
 # if defined (GL_SGI_color_table)
 
 typedef void (APIENTRYP PFNGLCOLORTABLESGIPROC) (GLenum, GLenum, GLsizei, GLenum, GLenum, const void *);
@@ -20352,19 +18828,11 @@ typedef void (APIENTRYP PFNGLGETCOLORTABLEPARAMETERFVSGIPROC) (GLenum, GLenum, G
 typedef void (APIENTRYP PFNGLGETCOLORTABLEPARAMETERIVSGIPROC) (GLenum, GLenum, GLint *);
 
 # endif /* GL_SGI_color_table */
-# if defined (GL_SGI_texture_color_table)
-
-
-# endif /* GL_SGI_texture_color_table */
 # if defined (GL_SUNX_constant_data)
 
 typedef void (APIENTRYP PFNGLFINISHTEXTURESUNXPROC) (void);
 
 # endif /* GL_SUNX_constant_data */
-# if defined (GL_SUN_convolution_border_modes)
-
-
-# endif /* GL_SUN_convolution_border_modes */
 # if defined (GL_SUN_global_alpha)
 
 typedef void (APIENTRYP PFNGLGLOBALALPHAFACTORBSUNPROC) (GLbyte);
@@ -20382,10 +18850,6 @@ typedef void (APIENTRYP PFNGLGLOBALALPHAFACTORUISUNPROC) (GLuint);
 typedef void (APIENTRYP PFNGLDRAWMESHARRAYSSUNPROC) (GLenum, GLint, GLsizei, GLsizei);
 
 # endif /* GL_SUN_mesh_array */
-# if defined (GL_SUN_slice_accum)
-
-
-# endif /* GL_SUN_slice_accum */
 # if defined (GL_SUN_triangle_list)
 
 typedef void (APIENTRYP PFNGLREPLACEMENTCODEUISUNPROC) (GLuint);
@@ -20441,18 +18905,6 @@ typedef void (APIENTRYP PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FS
 typedef void (APIENTRYP PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC) (const GLuint *, const GLfloat *, const GLfloat *, const GLfloat *, const GLfloat *);
 
 # endif /* GL_SUN_vertex */
-# if defined (GL_VIV_shader_binary)
-
-
-# endif /* GL_VIV_shader_binary */
-# if defined (GL_WIN_phong_shading)
-
-
-# endif /* GL_WIN_phong_shading */
-# if defined (GL_WIN_specular_fog)
-
-
-# endif /* GL_WIN_specular_fog */
 # if defined (GL_VERSION_1_0)
 
 extern PFNGLCULLFACEPROC gload_glCullFace;
@@ -22219,31 +20671,11 @@ extern PFNGLVERTEXATTRIBPOINTERPROC gload_glVertexAttribPointer;
 extern PFNGLVIEWPORTPROC gload_glViewport;
 
 # endif /* GL_SC_VERSION_2_0 */
-# if defined (GL_3DFX_multisample)
-
-
-# endif /* GL_3DFX_multisample */
 # if defined (GL_3DFX_tbuffer)
 
 extern PFNGLTBUFFERMASK3DFXPROC gload_glTbufferMask3DFX;
 
 # endif /* GL_3DFX_tbuffer */
-# if defined (GL_3DFX_texture_compression_FXT1)
-
-
-# endif /* GL_3DFX_texture_compression_FXT1 */
-# if defined (GL_AMD_blend_minmax_factor)
-
-
-# endif /* GL_AMD_blend_minmax_factor */
-# if defined (GL_AMD_compressed_3DC_texture)
-
-
-# endif /* GL_AMD_compressed_3DC_texture */
-# if defined (GL_AMD_compressed_ATC_texture)
-
-
-# endif /* GL_AMD_compressed_ATC_texture */
 # if defined (GL_AMD_debug_output)
 
 extern PFNGLDEBUGMESSAGEENABLEAMDPROC gload_glDebugMessageEnableAMD;
@@ -22252,10 +20684,6 @@ extern PFNGLDEBUGMESSAGECALLBACKAMDPROC gload_glDebugMessageCallbackAMD;
 extern PFNGLGETDEBUGMESSAGELOGAMDPROC gload_glGetDebugMessageLogAMD;
 
 # endif /* GL_AMD_debug_output */
-# if defined (GL_AMD_depth_clamp_separate)
-
-
-# endif /* GL_AMD_depth_clamp_separate */
 # if defined (GL_AMD_draw_buffers_blend)
 
 extern PFNGLBLENDFUNCINDEXEDAMDPROC gload_glBlendFuncIndexedAMD;
@@ -22278,10 +20706,6 @@ extern PFNGLGETFRAMEBUFFERPARAMETERFVAMDPROC gload_glGetFramebufferParameterfvAM
 extern PFNGLGETNAMEDFRAMEBUFFERPARAMETERFVAMDPROC gload_glGetNamedFramebufferParameterfvAMD;
 
 # endif /* GL_AMD_framebuffer_sample_positions */
-# if defined (GL_AMD_gpu_shader_half_float)
-
-
-# endif /* GL_AMD_gpu_shader_half_float */
 # if defined (GL_AMD_gpu_shader_int64)
 
 extern PFNGLUNIFORM1I64NVPROC gload_glUniform1i64NV;
@@ -22358,27 +20782,11 @@ extern PFNGLENDPERFMONITORAMDPROC gload_glEndPerfMonitorAMD;
 extern PFNGLGETPERFMONITORCOUNTERDATAAMDPROC gload_glGetPerfMonitorCounterDataAMD;
 
 # endif /* GL_AMD_performance_monitor */
-# if defined (GL_AMD_pinned_memory)
-
-
-# endif /* GL_AMD_pinned_memory */
-# if defined (GL_AMD_program_binary_Z400)
-
-
-# endif /* GL_AMD_program_binary_Z400 */
-# if defined (GL_AMD_query_buffer_object)
-
-
-# endif /* GL_AMD_query_buffer_object */
 # if defined (GL_AMD_sample_positions)
 
 extern PFNGLSETMULTISAMPLEFVAMDPROC gload_glSetMultisamplefvAMD;
 
 # endif /* GL_AMD_sample_positions */
-# if defined (GL_AMD_seamless_cubemap_per_texture)
-
-
-# endif /* GL_AMD_seamless_cubemap_per_texture */
 # if defined (GL_AMD_sparse_texture)
 
 extern PFNGLTEXSTORAGESPARSEAMDPROC gload_glTexStorageSparseAMD;
@@ -22390,24 +20798,12 @@ extern PFNGLTEXTURESTORAGESPARSEAMDPROC gload_glTextureStorageSparseAMD;
 extern PFNGLSTENCILOPVALUEAMDPROC gload_glStencilOpValueAMD;
 
 # endif /* GL_AMD_stencil_operation_extended */
-# if defined (GL_AMD_transform_feedback4)
-
-
-# endif /* GL_AMD_transform_feedback4 */
 # if defined (GL_AMD_vertex_shader_tessellator)
 
 extern PFNGLTESSELLATIONFACTORAMDPROC gload_glTessellationFactorAMD;
 extern PFNGLTESSELLATIONMODEAMDPROC gload_glTessellationModeAMD;
 
 # endif /* GL_AMD_vertex_shader_tessellator */
-# if defined (GL_ANDROID_extension_pack_es31a)
-
-
-# endif /* GL_ANDROID_extension_pack_es31a */
-# if defined (GL_ANGLE_depth_texture)
-
-
-# endif /* GL_ANGLE_depth_texture */
 # if defined (GL_ANGLE_framebuffer_blit)
 
 extern PFNGLBLITFRAMEBUFFERANGLEPROC gload_glBlitFramebufferANGLE;
@@ -22425,43 +20821,11 @@ extern PFNGLDRAWELEMENTSINSTANCEDANGLEPROC gload_glDrawElementsInstancedANGLE;
 extern PFNGLVERTEXATTRIBDIVISORANGLEPROC gload_glVertexAttribDivisorANGLE;
 
 # endif /* GL_ANGLE_instanced_arrays */
-# if defined (GL_ANGLE_pack_reverse_row_order)
-
-
-# endif /* GL_ANGLE_pack_reverse_row_order */
-# if defined (GL_ANGLE_program_binary)
-
-
-# endif /* GL_ANGLE_program_binary */
-# if defined (GL_ANGLE_texture_compression_dxt3)
-
-
-# endif /* GL_ANGLE_texture_compression_dxt3 */
-# if defined (GL_ANGLE_texture_compression_dxt5)
-
-
-# endif /* GL_ANGLE_texture_compression_dxt5 */
-# if defined (GL_ANGLE_texture_usage)
-
-
-# endif /* GL_ANGLE_texture_usage */
 # if defined (GL_ANGLE_translated_shader_source)
 
 extern PFNGLGETTRANSLATEDSHADERSOURCEANGLEPROC gload_glGetTranslatedShaderSourceANGLE;
 
 # endif /* GL_ANGLE_translated_shader_source */
-# if defined (GL_APPLE_aux_depth_stencil)
-
-
-# endif /* GL_APPLE_aux_depth_stencil */
-# if defined (GL_APPLE_client_storage)
-
-
-# endif /* GL_APPLE_client_storage */
-# if defined (GL_APPLE_clip_distance)
-
-
-# endif /* GL_APPLE_clip_distance */
 # if defined (GL_APPLE_copy_texture_levels)
 
 extern PFNGLCOPYTEXTURELEVELSAPPLEPROC gload_glCopyTextureLevelsAPPLE;
@@ -22488,10 +20852,6 @@ extern PFNGLTESTOBJECTAPPLEPROC gload_glTestObjectAPPLE;
 extern PFNGLFINISHOBJECTAPPLEPROC gload_glFinishObjectAPPLE;
 
 # endif /* GL_APPLE_fence */
-# if defined (GL_APPLE_float_pixels)
-
-
-# endif /* GL_APPLE_float_pixels */
 # if defined (GL_APPLE_flush_buffer_range)
 
 extern PFNGLBUFFERPARAMETERIAPPLEPROC gload_glBufferParameteriAPPLE;
@@ -22515,14 +20875,6 @@ extern PFNGLGETOBJECTPARAMETERIVAPPLEPROC gload_glGetObjectParameterivAPPLE;
 
 
 # endif /* GL_APPLE_rgb_422 */
-# if defined (GL_APPLE_row_bytes)
-
-
-# endif /* GL_APPLE_row_bytes */
-# if defined (GL_APPLE_specular_vector)
-
-
-# endif /* GL_APPLE_specular_vector */
 # if defined (GL_APPLE_sync)
 
 extern PFNGLFENCESYNCAPPLEPROC gload_glFenceSyncAPPLE;
@@ -22538,24 +20890,12 @@ extern PFNGLGETSYNCIVAPPLEPROC gload_glGetSyncivAPPLE;
 
 
 # endif /* GL_APPLE_texture_format_BGRA8888 */
-# if defined (GL_APPLE_texture_max_level)
-
-
-# endif /* GL_APPLE_texture_max_level */
-# if defined (GL_APPLE_texture_packed_float)
-
-
-# endif /* GL_APPLE_texture_packed_float */
 # if defined (GL_APPLE_texture_range)
 
 extern PFNGLTEXTURERANGEAPPLEPROC gload_glTextureRangeAPPLE;
 extern PFNGLGETTEXPARAMETERPOINTERVAPPLEPROC gload_glGetTexParameterPointervAPPLE;
 
 # endif /* GL_APPLE_texture_range */
-# if defined (GL_APPLE_transform_hint)
-
-
-# endif /* GL_APPLE_transform_hint */
 # if defined (GL_APPLE_vertex_array_object)
 
 extern PFNGLBINDVERTEXARRAYAPPLEPROC gload_glBindVertexArrayAPPLE;
@@ -22582,10 +20922,6 @@ extern PFNGLMAPVERTEXATTRIB2DAPPLEPROC gload_glMapVertexAttrib2dAPPLE;
 extern PFNGLMAPVERTEXATTRIB2FAPPLEPROC gload_glMapVertexAttrib2fAPPLE;
 
 # endif /* GL_APPLE_vertex_program_evaluators */
-# if defined (GL_APPLE_ycbcr_422)
-
-
-# endif /* GL_APPLE_ycbcr_422 */
 # if defined (GL_ARB_ES2_compatibility)
 
 extern PFNGLRELEASESHADERCOMPILERPROC gload_glReleaseShaderCompiler;
@@ -22605,10 +20941,6 @@ extern PFNGLMEMORYBARRIERBYREGIONPROC gload_glMemoryBarrierByRegion;
 extern PFNGLPRIMITIVEBOUNDINGBOXARBPROC gload_glPrimitiveBoundingBoxARB;
 
 # endif /* GL_ARB_ES3_2_compatibility */
-# if defined (GL_ARB_ES3_compatibility)
-
-
-# endif /* GL_ARB_ES3_compatibility */
 # if defined (GL_ARB_base_instance)
 
 extern PFNGLDRAWARRAYSINSTANCEDBASEINSTANCEPROC gload_glDrawArraysInstancedBaseInstance;
@@ -22674,14 +21006,6 @@ extern PFNGLCLIPCONTROLPROC gload_glClipControl;
 extern PFNGLCLAMPCOLORARBPROC gload_glClampColorARB;
 
 # endif /* GL_ARB_color_buffer_float */
-# if defined (GL_ARB_compatibility)
-
-
-# endif /* GL_ARB_compatibility */
-# if defined (GL_ARB_compressed_texture_pixel_storage)
-
-
-# endif /* GL_ARB_compressed_texture_pixel_storage */
 # if defined (GL_ARB_compute_shader)
 
 extern PFNGLDISPATCHCOMPUTEPROC gload_glDispatchCompute;
@@ -22693,10 +21017,6 @@ extern PFNGLDISPATCHCOMPUTEINDIRECTPROC gload_glDispatchComputeIndirect;
 extern PFNGLDISPATCHCOMPUTEGROUPSIZEARBPROC gload_glDispatchComputeGroupSizeARB;
 
 # endif /* GL_ARB_compute_variable_group_size */
-# if defined (GL_ARB_conditional_render_inverted)
-
-
-# endif /* GL_ARB_conditional_render_inverted */
 # if defined (GL_ARB_copy_buffer)
 
 extern PFNGLCOPYBUFFERSUBDATAPROC gload_glCopyBufferSubData;
@@ -22707,10 +21027,6 @@ extern PFNGLCOPYBUFFERSUBDATAPROC gload_glCopyBufferSubData;
 extern PFNGLCOPYIMAGESUBDATAPROC gload_glCopyImageSubData;
 
 # endif /* GL_ARB_copy_image */
-# if defined (GL_ARB_cull_distance)
-
-
-# endif /* GL_ARB_cull_distance */
 # if defined (GL_ARB_debug_output)
 
 extern PFNGLDEBUGMESSAGECONTROLARBPROC gload_glDebugMessageControlARB;
@@ -22719,18 +21035,6 @@ extern PFNGLDEBUGMESSAGECALLBACKARBPROC gload_glDebugMessageCallbackARB;
 extern PFNGLGETDEBUGMESSAGELOGARBPROC gload_glGetDebugMessageLogARB;
 
 # endif /* GL_ARB_debug_output */
-# if defined (GL_ARB_depth_buffer_float)
-
-
-# endif /* GL_ARB_depth_buffer_float */
-# if defined (GL_ARB_depth_clamp)
-
-
-# endif /* GL_ARB_depth_clamp */
-# if defined (GL_ARB_depth_texture)
-
-
-# endif /* GL_ARB_depth_texture */
 # if defined (GL_ARB_direct_state_access)
 
 extern PFNGLCREATETRANSFORMFEEDBACKSPROC gload_glCreateTransformFeedbacks;
@@ -22865,14 +21169,6 @@ extern PFNGLDRAWARRAYSINSTANCEDARBPROC gload_glDrawArraysInstancedARB;
 extern PFNGLDRAWELEMENTSINSTANCEDARBPROC gload_glDrawElementsInstancedARB;
 
 # endif /* GL_ARB_draw_instanced */
-# if defined (GL_ARB_enhanced_layouts)
-
-
-# endif /* GL_ARB_enhanced_layouts */
-# if defined (GL_ARB_explicit_uniform_location)
-
-
-# endif /* GL_ARB_explicit_uniform_location */
 # if defined (GL_ARB_fragment_program)
 
 extern PFNGLPROGRAMSTRINGARBPROC gload_glProgramStringARB;
@@ -22896,10 +21192,6 @@ extern PFNGLGETPROGRAMSTRINGARBPROC gload_glGetProgramStringARB;
 extern PFNGLISPROGRAMARBPROC gload_glIsProgramARB;
 
 # endif /* GL_ARB_fragment_program */
-# if defined (GL_ARB_fragment_shader)
-
-
-# endif /* GL_ARB_fragment_shader */
 # if defined (GL_ARB_framebuffer_no_attachments)
 
 extern PFNGLFRAMEBUFFERPARAMETERIPROC gload_glFramebufferParameteri;
@@ -22930,10 +21222,6 @@ extern PFNGLRENDERBUFFERSTORAGEMULTISAMPLEPROC gload_glRenderbufferStorageMultis
 extern PFNGLFRAMEBUFFERTEXTURELAYERPROC gload_glFramebufferTextureLayer;
 
 # endif /* GL_ARB_framebuffer_object */
-# if defined (GL_ARB_framebuffer_sRGB)
-
-
-# endif /* GL_ARB_framebuffer_sRGB */
 # if defined (GL_ARB_geometry_shader4)
 
 extern PFNGLPROGRAMPARAMETERIARBPROC gload_glProgramParameteriARB;
@@ -22960,10 +21248,6 @@ extern PFNGLGETCOMPRESSEDTEXTURESUBIMAGEPROC gload_glGetCompressedTextureSubImag
 extern PFNGLSPECIALIZESHADERARBPROC gload_glSpecializeShaderARB;
 
 # endif /* GL_ARB_gl_spirv */
-# if defined (GL_ARB_gpu_shader5)
-
-
-# endif /* GL_ARB_gpu_shader5 */
 # if defined (GL_ARB_gpu_shader_fp64)
 
 extern PFNGLUNIFORM1DPROC gload_glUniform1d;
@@ -23026,14 +21310,6 @@ extern PFNGLPROGRAMUNIFORM3UI64VARBPROC gload_glProgramUniform3ui64vARB;
 extern PFNGLPROGRAMUNIFORM4UI64VARBPROC gload_glProgramUniform4ui64vARB;
 
 # endif /* GL_ARB_gpu_shader_int64 */
-# if defined (GL_ARB_half_float_pixel)
-
-
-# endif /* GL_ARB_half_float_pixel */
-# if defined (GL_ARB_half_float_vertex)
-
-
-# endif /* GL_ARB_half_float_vertex */
 # if defined (GL_ARB_imaging)
 
 extern PFNGLBLENDCOLORPROC gload_glBlendColor;
@@ -23103,10 +21379,6 @@ extern PFNGLINVALIDATEFRAMEBUFFERPROC gload_glInvalidateFramebuffer;
 extern PFNGLINVALIDATESUBFRAMEBUFFERPROC gload_glInvalidateSubFramebuffer;
 
 # endif /* GL_ARB_invalidate_subdata */
-# if defined (GL_ARB_map_buffer_alignment)
-
-
-# endif /* GL_ARB_map_buffer_alignment */
 # if defined (GL_ARB_map_buffer_range)
 
 extern PFNGLMAPBUFFERRANGEPROC gload_glMapBufferRange;
@@ -23193,33 +21465,17 @@ extern PFNGLGETQUERYOBJECTIVARBPROC gload_glGetQueryObjectivARB;
 extern PFNGLGETQUERYOBJECTUIVARBPROC gload_glGetQueryObjectuivARB;
 
 # endif /* GL_ARB_occlusion_query */
-# if defined (GL_ARB_occlusion_query2)
-
-
-# endif /* GL_ARB_occlusion_query2 */
 # if defined (GL_ARB_parallel_shader_compile)
 
 extern PFNGLMAXSHADERCOMPILERTHREADSARBPROC gload_glMaxShaderCompilerThreadsARB;
 
 # endif /* GL_ARB_parallel_shader_compile */
-# if defined (GL_ARB_pipeline_statistics_query)
-
-
-# endif /* GL_ARB_pipeline_statistics_query */
-# if defined (GL_ARB_pixel_buffer_object)
-
-
-# endif /* GL_ARB_pixel_buffer_object */
 # if defined (GL_ARB_point_parameters)
 
 extern PFNGLPOINTPARAMETERFARBPROC gload_glPointParameterfARB;
 extern PFNGLPOINTPARAMETERFVARBPROC gload_glPointParameterfvARB;
 
 # endif /* GL_ARB_point_parameters */
-# if defined (GL_ARB_point_sprite)
-
-
-# endif /* GL_ARB_point_sprite */
 # if defined (GL_ARB_polygon_offset_clamp)
 
 extern PFNGLPOLYGONOFFSETCLAMPPROC gload_glPolygonOffsetClamp;
@@ -23240,10 +21496,6 @@ extern PFNGLGETPROGRAMRESOURCELOCATIONINDEXPROC gload_glGetProgramResourceLocati
 extern PFNGLPROVOKINGVERTEXPROC gload_glProvokingVertex;
 
 # endif /* GL_ARB_provoking_vertex */
-# if defined (GL_ARB_query_buffer_object)
-
-
-# endif /* GL_ARB_query_buffer_object */
 # if defined (GL_ARB_robustness)
 
 extern PFNGLGETGRAPHICSRESETSTATUSARBPROC gload_glGetGraphicsResetStatusARB;
@@ -23298,14 +21550,6 @@ extern PFNGLGETSAMPLERPARAMETERFVPROC gload_glGetSamplerParameterfv;
 extern PFNGLGETSAMPLERPARAMETERIUIVPROC gload_glGetSamplerParameterIuiv;
 
 # endif /* GL_ARB_sampler_objects */
-# if defined (GL_ARB_seamless_cube_map)
-
-
-# endif /* GL_ARB_seamless_cube_map */
-# if defined (GL_ARB_seamless_cubemap_per_texture)
-
-
-# endif /* GL_ARB_seamless_cubemap_per_texture */
 # if defined (GL_ARB_separate_shader_objects)
 
 extern PFNGLUSEPROGRAMSTAGESPROC gload_glUseProgramStages;
@@ -23442,10 +21686,6 @@ extern PFNGLGETUNIFORMSUBROUTINEUIVPROC gload_glGetUniformSubroutineuiv;
 extern PFNGLGETPROGRAMSTAGEIVPROC gload_glGetProgramStageiv;
 
 # endif /* GL_ARB_shader_subroutine */
-# if defined (GL_ARB_shading_language_100)
-
-
-# endif /* GL_ARB_shading_language_100 */
 # if defined (GL_ARB_shading_language_include)
 
 extern PFNGLNAMEDSTRINGARBPROC gload_glNamedStringARB;
@@ -23456,14 +21696,6 @@ extern PFNGLGETNAMEDSTRINGARBPROC gload_glGetNamedStringARB;
 extern PFNGLGETNAMEDSTRINGIVARBPROC gload_glGetNamedStringivARB;
 
 # endif /* GL_ARB_shading_language_include */
-# if defined (GL_ARB_shadow)
-
-
-# endif /* GL_ARB_shadow */
-# if defined (GL_ARB_shadow_ambient)
-
-
-# endif /* GL_ARB_shadow_ambient */
 # if defined (GL_ARB_sparse_buffer)
 
 extern PFNGLBUFFERPAGECOMMITMENTARBPROC gload_glBufferPageCommitmentARB;
@@ -23476,14 +21708,6 @@ extern PFNGLNAMEDBUFFERPAGECOMMITMENTARBPROC gload_glNamedBufferPageCommitmentAR
 extern PFNGLTEXPAGECOMMITMENTARBPROC gload_glTexPageCommitmentARB;
 
 # endif /* GL_ARB_sparse_texture */
-# if defined (GL_ARB_spirv_extensions)
-
-
-# endif /* GL_ARB_spirv_extensions */
-# if defined (GL_ARB_stencil_texturing)
-
-
-# endif /* GL_ARB_stencil_texturing */
 # if defined (GL_ARB_sync)
 
 extern PFNGLFENCESYNCPROC gload_glFenceSync;
@@ -23506,19 +21730,11 @@ extern PFNGLPATCHPARAMETERFVPROC gload_glPatchParameterfv;
 extern PFNGLTEXTUREBARRIERPROC gload_glTextureBarrier;
 
 # endif /* GL_ARB_texture_barrier */
-# if defined (GL_ARB_texture_border_clamp)
-
-
-# endif /* GL_ARB_texture_border_clamp */
 # if defined (GL_ARB_texture_buffer_object)
 
 extern PFNGLTEXBUFFERARBPROC gload_glTexBufferARB;
 
 # endif /* GL_ARB_texture_buffer_object */
-# if defined (GL_ARB_texture_buffer_object_rgb32)
-
-
-# endif /* GL_ARB_texture_buffer_object_rgb32 */
 # if defined (GL_ARB_texture_buffer_range)
 
 extern PFNGLTEXBUFFERRANGEPROC gload_glTexBufferRange;
@@ -23535,54 +21751,6 @@ extern PFNGLCOMPRESSEDTEXSUBIMAGE1DARBPROC gload_glCompressedTexSubImage1DARB;
 extern PFNGLGETCOMPRESSEDTEXIMAGEARBPROC gload_glGetCompressedTexImageARB;
 
 # endif /* GL_ARB_texture_compression */
-# if defined (GL_ARB_texture_compression_bptc)
-
-
-# endif /* GL_ARB_texture_compression_bptc */
-# if defined (GL_ARB_texture_compression_rgtc)
-
-
-# endif /* GL_ARB_texture_compression_rgtc */
-# if defined (GL_ARB_texture_cube_map)
-
-
-# endif /* GL_ARB_texture_cube_map */
-# if defined (GL_ARB_texture_cube_map_array)
-
-
-# endif /* GL_ARB_texture_cube_map_array */
-# if defined (GL_ARB_texture_env_combine)
-
-
-# endif /* GL_ARB_texture_env_combine */
-# if defined (GL_ARB_texture_env_dot3)
-
-
-# endif /* GL_ARB_texture_env_dot3 */
-# if defined (GL_ARB_texture_filter_anisotropic)
-
-
-# endif /* GL_ARB_texture_filter_anisotropic */
-# if defined (GL_ARB_texture_filter_minmax)
-
-
-# endif /* GL_ARB_texture_filter_minmax */
-# if defined (GL_ARB_texture_float)
-
-
-# endif /* GL_ARB_texture_float */
-# if defined (GL_ARB_texture_gather)
-
-
-# endif /* GL_ARB_texture_gather */
-# if defined (GL_ARB_texture_mirror_clamp_to_edge)
-
-
-# endif /* GL_ARB_texture_mirror_clamp_to_edge */
-# if defined (GL_ARB_texture_mirrored_repeat)
-
-
-# endif /* GL_ARB_texture_mirrored_repeat */
 # if defined (GL_ARB_texture_multisample)
 
 extern PFNGLTEXIMAGE2DMULTISAMPLEPROC gload_glTexImage2DMultisample;
@@ -23591,22 +21759,6 @@ extern PFNGLGETMULTISAMPLEFVPROC gload_glGetMultisamplefv;
 extern PFNGLSAMPLEMASKIPROC gload_glSampleMaski;
 
 # endif /* GL_ARB_texture_multisample */
-# if defined (GL_ARB_texture_rectangle)
-
-
-# endif /* GL_ARB_texture_rectangle */
-# if defined (GL_ARB_texture_rg)
-
-
-# endif /* GL_ARB_texture_rg */
-# if defined (GL_ARB_texture_rgb10_a2ui)
-
-
-# endif /* GL_ARB_texture_rgb10_a2ui */
-# if defined (GL_ARB_texture_stencil8)
-
-
-# endif /* GL_ARB_texture_stencil8 */
 # if defined (GL_ARB_texture_storage)
 
 extern PFNGLTEXSTORAGE1DPROC gload_glTexStorage1D;
@@ -23620,10 +21772,6 @@ extern PFNGLTEXSTORAGE2DMULTISAMPLEPROC gload_glTexStorage2DMultisample;
 extern PFNGLTEXSTORAGE3DMULTISAMPLEPROC gload_glTexStorage3DMultisample;
 
 # endif /* GL_ARB_texture_storage_multisample */
-# if defined (GL_ARB_texture_swizzle)
-
-
-# endif /* GL_ARB_texture_swizzle */
 # if defined (GL_ARB_texture_view)
 
 extern PFNGLTEXTUREVIEWPROC gload_glTextureView;
@@ -23661,10 +21809,6 @@ extern PFNGLDRAWTRANSFORMFEEDBACKINSTANCEDPROC gload_glDrawTransformFeedbackInst
 extern PFNGLDRAWTRANSFORMFEEDBACKSTREAMINSTANCEDPROC gload_glDrawTransformFeedbackStreamInstanced;
 
 # endif /* GL_ARB_transform_feedback_instanced */
-# if defined (GL_ARB_transform_feedback_overflow_query)
-
-
-# endif /* GL_ARB_transform_feedback_overflow_query */
 # if defined (GL_ARB_transpose_matrix)
 
 extern PFNGLLOADTRANSPOSEMATRIXFARBPROC gload_glLoadTransposeMatrixfARB;
@@ -23687,10 +21831,6 @@ extern PFNGLBINDBUFFERBASEPROC gload_glBindBufferBase;
 extern PFNGLGETINTEGERI_VPROC gload_glGetIntegeri_v;
 
 # endif /* GL_ARB_uniform_buffer_object */
-# if defined (GL_ARB_vertex_array_bgra)
-
-
-# endif /* GL_ARB_vertex_array_bgra */
 # if defined (GL_ARB_vertex_array_object)
 
 extern PFNGLBINDVERTEXARRAYPROC gload_glBindVertexArray;
@@ -23868,10 +22008,6 @@ extern PFNGLGETVERTEXATTRIBIVARBPROC gload_glGetVertexAttribivARB;
 extern PFNGLGETVERTEXATTRIBPOINTERVARBPROC gload_glGetVertexAttribPointervARB;
 
 # endif /* GL_ARB_vertex_shader */
-# if defined (GL_ARB_vertex_type_10f_11f_11f_rev)
-
-
-# endif /* GL_ARB_vertex_type_10f_11f_11f_rev */
 # if defined (GL_ARB_vertex_type_2_10_10_10_rev)
 
 extern PFNGLVERTEXATTRIBP1UIPROC gload_glVertexAttribP1ui;
@@ -23950,27 +22086,11 @@ extern PFNGLWINDOWPOS3SARBPROC gload_glWindowPos3sARB;
 extern PFNGLWINDOWPOS3SVARBPROC gload_glWindowPos3svARB;
 
 # endif /* GL_ARB_window_pos */
-# if defined (GL_ARM_mali_program_binary)
-
-
-# endif /* GL_ARM_mali_program_binary */
-# if defined (GL_ARM_mali_shader_binary)
-
-
-# endif /* GL_ARM_mali_shader_binary */
 # if defined (GL_ARM_shader_core_properties)
 
 extern PFNGLMAXACTIVESHADERCORESARMPROC gload_glMaxActiveShaderCoresARM;
 
 # endif /* GL_ARM_shader_core_properties */
-# if defined (GL_ARM_shader_framebuffer_fetch)
-
-
-# endif /* GL_ARM_shader_framebuffer_fetch */
-# if defined (GL_ARM_texture_unnormalized_coordinates)
-
-
-# endif /* GL_ARM_texture_unnormalized_coordinates */
 # if defined (GL_ATI_draw_buffers)
 
 extern PFNGLDRAWBUFFERSATIPROC gload_glDrawBuffersATI;
@@ -24015,14 +22135,6 @@ extern PFNGLMAPOBJECTBUFFERATIPROC gload_glMapObjectBufferATI;
 extern PFNGLUNMAPOBJECTBUFFERATIPROC gload_glUnmapObjectBufferATI;
 
 # endif /* GL_ATI_map_object_buffer */
-# if defined (GL_ATI_meminfo)
-
-
-# endif /* GL_ATI_meminfo */
-# if defined (GL_ATI_pixel_format_float)
-
-
-# endif /* GL_ATI_pixel_format_float */
 # if defined (GL_ATI_pn_triangles)
 
 extern PFNGLPNTRIANGLESIATIPROC gload_glPNTrianglesiATI;
@@ -24035,22 +22147,6 @@ extern PFNGLSTENCILOPSEPARATEATIPROC gload_glStencilOpSeparateATI;
 extern PFNGLSTENCILFUNCSEPARATEATIPROC gload_glStencilFuncSeparateATI;
 
 # endif /* GL_ATI_separate_stencil */
-# if defined (GL_ATI_text_fragment_shader)
-
-
-# endif /* GL_ATI_text_fragment_shader */
-# if defined (GL_ATI_texture_env_combine3)
-
-
-# endif /* GL_ATI_texture_env_combine3 */
-# if defined (GL_ATI_texture_float)
-
-
-# endif /* GL_ATI_texture_float */
-# if defined (GL_ATI_texture_mirror_once)
-
-
-# endif /* GL_ATI_texture_mirror_once */
 # if defined (GL_ATI_vertex_array_object)
 
 extern PFNGLNEWOBJECTBUFFERATIPROC gload_glNewObjectBufferATI;
@@ -24123,36 +22219,12 @@ extern PFNGLVERTEXBLENDENVIATIPROC gload_glVertexBlendEnviATI;
 extern PFNGLVERTEXBLENDENVFATIPROC gload_glVertexBlendEnvfATI;
 
 # endif /* GL_ATI_vertex_streams */
-# if defined (GL_DMP_program_binary)
-
-
-# endif /* GL_DMP_program_binary */
-# if defined (GL_DMP_shader_binary)
-
-
-# endif /* GL_DMP_shader_binary */
-# if defined (GL_EXT_422_pixels)
-
-
-# endif /* GL_EXT_422_pixels */
 # if defined (GL_EXT_EGL_image_storage)
 
 extern PFNGLEGLIMAGETARGETTEXSTORAGEEXTPROC gload_glEGLImageTargetTexStorageEXT;
 extern PFNGLEGLIMAGETARGETTEXTURESTORAGEEXTPROC gload_glEGLImageTargetTextureStorageEXT;
 
 # endif /* GL_EXT_EGL_image_storage */
-# if defined (GL_EXT_EGL_image_storage_compression)
-
-
-# endif /* GL_EXT_EGL_image_storage_compression */
-# if defined (GL_EXT_YUV_target)
-
-
-# endif /* GL_EXT_YUV_target */
-# if defined (GL_EXT_abgr)
-
-
-# endif /* GL_EXT_abgr */
 # if defined (GL_EXT_base_instance)
 
 extern PFNGLDRAWARRAYSINSTANCEDBASEINSTANCEEXTPROC gload_glDrawArraysInstancedBaseInstanceEXT;
@@ -24160,10 +22232,6 @@ extern PFNGLDRAWELEMENTSINSTANCEDBASEINSTANCEEXTPROC gload_glDrawElementsInstanc
 extern PFNGLDRAWELEMENTSINSTANCEDBASEVERTEXBASEINSTANCEEXTPROC gload_glDrawElementsInstancedBaseVertexBaseInstanceEXT;
 
 # endif /* GL_EXT_base_instance */
-# if defined (GL_EXT_bgra)
-
-
-# endif /* GL_EXT_bgra */
 # if defined (GL_EXT_bindable_uniform)
 
 extern PFNGLUNIFORMBUFFEREXTPROC gload_glUniformBufferEXT;
@@ -24199,10 +22267,6 @@ extern PFNGLBLENDFUNCSEPARATEEXTPROC gload_glBlendFuncSeparateEXT;
 extern PFNGLBLENDEQUATIONEXTPROC gload_glBlendEquationEXT;
 
 # endif /* GL_EXT_blend_minmax */
-# if defined (GL_EXT_blend_subtract)
-
-
-# endif /* GL_EXT_blend_subtract */
 # if defined (GL_EXT_buffer_storage)
 
 extern PFNGLBUFFERSTORAGEEXTPROC gload_glBufferStorageEXT;
@@ -24219,22 +22283,6 @@ extern PFNGLCLEARTEXSUBIMAGEEXTPROC gload_glClearTexSubImageEXT;
 extern PFNGLCLIPCONTROLEXTPROC gload_glClipControlEXT;
 
 # endif /* GL_EXT_clip_control */
-# if defined (GL_EXT_clip_cull_distance)
-
-
-# endif /* GL_EXT_clip_cull_distance */
-# if defined (GL_EXT_clip_volume_hint)
-
-
-# endif /* GL_EXT_clip_volume_hint */
-# if defined (GL_EXT_cmyka)
-
-
-# endif /* GL_EXT_cmyka */
-# if defined (GL_EXT_color_buffer_half_float)
-
-
-# endif /* GL_EXT_color_buffer_half_float */
 # if defined (GL_EXT_color_subtable)
 
 extern PFNGLCOLORSUBTABLEEXTPROC gload_glColorSubTableEXT;
@@ -24328,10 +22376,6 @@ extern PFNGLPOPGROUPMARKEREXTPROC gload_glPopGroupMarkerEXT;
 extern PFNGLDEPTHBOUNDSEXTPROC gload_glDepthBoundsEXT;
 
 # endif /* GL_EXT_depth_bounds_test */
-# if defined (GL_EXT_depth_clamp)
-
-
-# endif /* GL_EXT_depth_clamp */
 # if defined (GL_EXT_direct_state_access)
 
 extern PFNGLMATRIXLOADFEXTPROC gload_glMatrixLoadfEXT;
@@ -24703,10 +22747,6 @@ extern PFNGLBLITFRAMEBUFFERLAYEREXTPROC gload_glBlitFramebufferLayerEXT;
 extern PFNGLRENDERBUFFERSTORAGEMULTISAMPLEEXTPROC gload_glRenderbufferStorageMultisampleEXT;
 
 # endif /* GL_EXT_framebuffer_multisample */
-# if defined (GL_EXT_framebuffer_multisample_blit_scaled)
-
-
-# endif /* GL_EXT_framebuffer_multisample_blit_scaled */
 # if defined (GL_EXT_framebuffer_object)
 
 extern PFNGLISRENDERBUFFEREXTPROC gload_glIsRenderbufferEXT;
@@ -24728,10 +22768,6 @@ extern PFNGLGETFRAMEBUFFERATTACHMENTPARAMETERIVEXTPROC gload_glGetFramebufferAtt
 extern PFNGLGENERATEMIPMAPEXTPROC gload_glGenerateMipmapEXT;
 
 # endif /* GL_EXT_framebuffer_object */
-# if defined (GL_EXT_framebuffer_sRGB)
-
-
-# endif /* GL_EXT_framebuffer_sRGB */
 # if defined (GL_EXT_geometry_shader)
 
 extern PFNGLFRAMEBUFFERTEXTUREEXTPROC gload_glFramebufferTextureEXT;
@@ -24800,10 +22836,6 @@ extern PFNGLRESETHISTOGRAMEXTPROC gload_glResetHistogramEXT;
 extern PFNGLRESETMINMAXEXTPROC gload_glResetMinmaxEXT;
 
 # endif /* GL_EXT_histogram */
-# if defined (GL_EXT_index_array_formats)
-
-
-# endif /* GL_EXT_index_array_formats */
 # if defined (GL_EXT_index_func)
 
 extern PFNGLINDEXFUNCEXTPROC gload_glIndexFuncEXT;
@@ -24894,20 +22926,12 @@ extern PFNGLSAMPLEMASKEXTPROC gload_glSampleMaskEXT;
 extern PFNGLSAMPLEPATTERNEXTPROC gload_glSamplePatternEXT;
 
 # endif /* GL_EXT_multisample */
-# if defined (GL_EXT_multisampled_compatibility)
-
-
-# endif /* GL_EXT_multisampled_compatibility */
 # if defined (GL_EXT_multisampled_render_to_texture)
 
 extern PFNGLRENDERBUFFERSTORAGEMULTISAMPLEEXTPROC gload_glRenderbufferStorageMultisampleEXT;
 extern PFNGLFRAMEBUFFERTEXTURE2DMULTISAMPLEEXTPROC gload_glFramebufferTexture2DMultisampleEXT;
 
 # endif /* GL_EXT_multisampled_render_to_texture */
-# if defined (GL_EXT_multisampled_render_to_texture2)
-
-
-# endif /* GL_EXT_multisampled_render_to_texture2 */
 # if defined (GL_EXT_multiview_draw_buffers)
 
 extern PFNGLREADBUFFERINDEXEDEXTPROC gload_glReadBufferIndexedEXT;
@@ -24926,18 +22950,6 @@ extern PFNGLGETQUERYIVEXTPROC gload_glGetQueryivEXT;
 extern PFNGLGETQUERYOBJECTUIVEXTPROC gload_glGetQueryObjectuivEXT;
 
 # endif /* GL_EXT_occlusion_query_boolean */
-# if defined (GL_EXT_packed_depth_stencil)
-
-
-# endif /* GL_EXT_packed_depth_stencil */
-# if defined (GL_EXT_packed_float)
-
-
-# endif /* GL_EXT_packed_float */
-# if defined (GL_EXT_packed_pixels)
-
-
-# endif /* GL_EXT_packed_pixels */
 # if defined (GL_EXT_paletted_texture)
 
 extern PFNGLCOLORTABLEEXTPROC gload_glColorTableEXT;
@@ -24946,10 +22958,6 @@ extern PFNGLGETCOLORTABLEPARAMETERIVEXTPROC gload_glGetColorTableParameterivEXT;
 extern PFNGLGETCOLORTABLEPARAMETERFVEXTPROC gload_glGetColorTableParameterfvEXT;
 
 # endif /* GL_EXT_paletted_texture */
-# if defined (GL_EXT_pixel_buffer_object)
-
-
-# endif /* GL_EXT_pixel_buffer_object */
 # if defined (GL_EXT_pixel_transform)
 
 extern PFNGLPIXELTRANSFORMPARAMETERIEXTPROC gload_glPixelTransformParameteriEXT;
@@ -24981,36 +22989,16 @@ extern PFNGLPOLYGONOFFSETCLAMPEXTPROC gload_glPolygonOffsetClampEXT;
 extern PFNGLPRIMITIVEBOUNDINGBOXEXTPROC gload_glPrimitiveBoundingBoxEXT;
 
 # endif /* GL_EXT_primitive_bounding_box */
-# if defined (GL_EXT_protected_textures)
-
-
-# endif /* GL_EXT_protected_textures */
 # if defined (GL_EXT_provoking_vertex)
 
 extern PFNGLPROVOKINGVERTEXEXTPROC gload_glProvokingVertexEXT;
 
 # endif /* GL_EXT_provoking_vertex */
-# if defined (GL_EXT_pvrtc_sRGB)
-
-
-# endif /* GL_EXT_pvrtc_sRGB */
 # if defined (GL_EXT_raster_multisample)
 
 extern PFNGLRASTERSAMPLESEXTPROC gload_glRasterSamplesEXT;
 
 # endif /* GL_EXT_raster_multisample */
-# if defined (GL_EXT_read_format_bgra)
-
-
-# endif /* GL_EXT_read_format_bgra */
-# if defined (GL_EXT_render_snorm)
-
-
-# endif /* GL_EXT_render_snorm */
-# if defined (GL_EXT_rescale_normal)
-
-
-# endif /* GL_EXT_rescale_normal */
 # if defined (GL_EXT_robustness)
 
 extern PFNGLGETGRAPHICSRESETSTATUSEXTPROC gload_glGetGraphicsResetStatusEXT;
@@ -25043,14 +23031,6 @@ extern PFNGLIMPORTSEMAPHOREWIN32HANDLEEXTPROC gload_glImportSemaphoreWin32Handle
 extern PFNGLIMPORTSEMAPHOREWIN32NAMEEXTPROC gload_glImportSemaphoreWin32NameEXT;
 
 # endif /* GL_EXT_semaphore_win32 */
-# if defined (GL_EXT_sRGB)
-
-
-# endif /* GL_EXT_sRGB */
-# if defined (GL_EXT_sRGB_write_control)
-
-
-# endif /* GL_EXT_sRGB_write_control */
 # if defined (GL_EXT_secondary_color)
 
 extern PFNGLSECONDARYCOLOR3BEXTPROC gload_glSecondaryColor3bEXT;
@@ -25123,14 +23103,6 @@ extern PFNGLPROGRAMUNIFORMMATRIX3X4FVEXTPROC gload_glProgramUniformMatrix3x4fvEX
 extern PFNGLPROGRAMUNIFORMMATRIX4X3FVEXTPROC gload_glProgramUniformMatrix4x3fvEXT;
 
 # endif /* GL_EXT_separate_shader_objects */
-# if defined (GL_EXT_separate_specular_color)
-
-
-# endif /* GL_EXT_separate_specular_color */
-# if defined (GL_EXT_shader_framebuffer_fetch)
-
-
-# endif /* GL_EXT_shader_framebuffer_fetch */
 # if defined (GL_EXT_shader_framebuffer_fetch_non_coherent)
 
 extern PFNGLFRAMEBUFFERFETCHBARRIEREXTPROC gload_glFramebufferFetchBarrierEXT;
@@ -25142,10 +23114,6 @@ extern PFNGLBINDIMAGETEXTUREEXTPROC gload_glBindImageTextureEXT;
 extern PFNGLMEMORYBARRIEREXTPROC gload_glMemoryBarrierEXT;
 
 # endif /* GL_EXT_shader_image_load_store */
-# if defined (GL_EXT_shader_pixel_local_storage)
-
-
-# endif /* GL_EXT_shader_pixel_local_storage */
 # if defined (GL_EXT_shader_pixel_local_storage2)
 
 extern PFNGLFRAMEBUFFERPIXELLOCALSTORAGESIZEEXTPROC gload_glFramebufferPixelLocalStorageSizeEXT;
@@ -25153,14 +23121,6 @@ extern PFNGLGETFRAMEBUFFERPIXELLOCALSTORAGESIZEEXTPROC gload_glGetFramebufferPix
 extern PFNGLCLEARPIXELLOCALSTORAGEUIEXTPROC gload_glClearPixelLocalStorageuiEXT;
 
 # endif /* GL_EXT_shader_pixel_local_storage2 */
-# if defined (GL_EXT_shadow_samplers)
-
-
-# endif /* GL_EXT_shadow_samplers */
-# if defined (GL_EXT_shared_texture_palette)
-
-
-# endif /* GL_EXT_shared_texture_palette */
 # if defined (GL_EXT_sparse_texture)
 
 extern PFNGLTEXPAGECOMMITMENTEXTPROC gload_glTexPageCommitmentEXT;
@@ -25176,10 +23136,6 @@ extern PFNGLSTENCILCLEARTAGEXTPROC gload_glStencilClearTagEXT;
 extern PFNGLACTIVESTENCILFACEEXTPROC gload_glActiveStencilFaceEXT;
 
 # endif /* GL_EXT_stencil_two_side */
-# if defined (GL_EXT_stencil_wrap)
-
-
-# endif /* GL_EXT_stencil_wrap */
 # if defined (GL_EXT_subtexture)
 
 extern PFNGLTEXSUBIMAGE1DEXTPROC gload_glTexSubImage1DEXT;
@@ -25191,10 +23147,6 @@ extern PFNGLTEXSUBIMAGE2DEXTPROC gload_glTexSubImage2DEXT;
 extern PFNGLPATCHPARAMETERIEXTPROC gload_glPatchParameteriEXT;
 
 # endif /* GL_EXT_tessellation_shader */
-# if defined (GL_EXT_texture)
-
-
-# endif /* GL_EXT_texture */
 # if defined (GL_EXT_texture3D)
 
 extern PFNGLTEXIMAGE3DEXTPROC gload_glTexImage3DEXT;
@@ -25229,66 +23181,6 @@ extern PFNGLTEXBUFFERRANGEEXTPROC gload_glTexBufferRangeEXT;
 extern PFNGLTEXBUFFEREXTPROC gload_glTexBufferEXT;
 
 # endif /* GL_EXT_texture_buffer_object */
-# if defined (GL_EXT_texture_compression_astc_decode_mode)
-
-
-# endif /* GL_EXT_texture_compression_astc_decode_mode */
-# if defined (GL_EXT_texture_compression_bptc)
-
-
-# endif /* GL_EXT_texture_compression_bptc */
-# if defined (GL_EXT_texture_compression_dxt1)
-
-
-# endif /* GL_EXT_texture_compression_dxt1 */
-# if defined (GL_EXT_texture_compression_latc)
-
-
-# endif /* GL_EXT_texture_compression_latc */
-# if defined (GL_EXT_texture_compression_rgtc)
-
-
-# endif /* GL_EXT_texture_compression_rgtc */
-# if defined (GL_EXT_texture_compression_s3tc)
-
-
-# endif /* GL_EXT_texture_compression_s3tc */
-# if defined (GL_EXT_texture_compression_s3tc_srgb)
-
-
-# endif /* GL_EXT_texture_compression_s3tc_srgb */
-# if defined (GL_EXT_texture_cube_map)
-
-
-# endif /* GL_EXT_texture_cube_map */
-# if defined (GL_EXT_texture_cube_map_array)
-
-
-# endif /* GL_EXT_texture_cube_map_array */
-# if defined (GL_EXT_texture_env_combine)
-
-
-# endif /* GL_EXT_texture_env_combine */
-# if defined (GL_EXT_texture_env_dot3)
-
-
-# endif /* GL_EXT_texture_env_dot3 */
-# if defined (GL_EXT_texture_filter_anisotropic)
-
-
-# endif /* GL_EXT_texture_filter_anisotropic */
-# if defined (GL_EXT_texture_filter_minmax)
-
-
-# endif /* GL_EXT_texture_filter_minmax */
-# if defined (GL_EXT_texture_format_BGRA8888)
-
-
-# endif /* GL_EXT_texture_format_BGRA8888 */
-# if defined (GL_EXT_texture_format_sRGB_override)
-
-
-# endif /* GL_EXT_texture_format_sRGB_override */
 # if defined (GL_EXT_texture_integer)
 
 extern PFNGLTEXPARAMETERIIVEXTPROC gload_glTexParameterIivEXT;
@@ -25299,22 +23191,6 @@ extern PFNGLCLEARCOLORIIEXTPROC gload_glClearColorIiEXT;
 extern PFNGLCLEARCOLORIUIEXTPROC gload_glClearColorIuiEXT;
 
 # endif /* GL_EXT_texture_integer */
-# if defined (GL_EXT_texture_lod_bias)
-
-
-# endif /* GL_EXT_texture_lod_bias */
-# if defined (GL_EXT_texture_mirror_clamp)
-
-
-# endif /* GL_EXT_texture_mirror_clamp */
-# if defined (GL_EXT_texture_mirror_clamp_to_edge)
-
-
-# endif /* GL_EXT_texture_mirror_clamp_to_edge */
-# if defined (GL_EXT_texture_norm16)
-
-
-# endif /* GL_EXT_texture_norm16 */
 # if defined (GL_EXT_texture_object)
 
 extern PFNGLARETEXTURESRESIDENTEXTPROC gload_glAreTexturesResidentEXT;
@@ -25330,34 +23206,10 @@ extern PFNGLPRIORITIZETEXTURESEXTPROC gload_glPrioritizeTexturesEXT;
 extern PFNGLTEXTURENORMALEXTPROC gload_glTextureNormalEXT;
 
 # endif /* GL_EXT_texture_perturb_normal */
-# if defined (GL_EXT_texture_rg)
-
-
-# endif /* GL_EXT_texture_rg */
 # if defined (GL_EXT_texture_sRGB)
 
 
 # endif /* GL_EXT_texture_sRGB */
-# if defined (GL_EXT_texture_sRGB_R8)
-
-
-# endif /* GL_EXT_texture_sRGB_R8 */
-# if defined (GL_EXT_texture_sRGB_RG8)
-
-
-# endif /* GL_EXT_texture_sRGB_RG8 */
-# if defined (GL_EXT_texture_sRGB_decode)
-
-
-# endif /* GL_EXT_texture_sRGB_decode */
-# if defined (GL_EXT_texture_shared_exponent)
-
-
-# endif /* GL_EXT_texture_shared_exponent */
-# if defined (GL_EXT_texture_snorm)
-
-
-# endif /* GL_EXT_texture_snorm */
 # if defined (GL_EXT_texture_storage)
 
 extern PFNGLTEXSTORAGE1DEXTPROC gload_glTexStorage1DEXT;
@@ -25374,14 +23226,6 @@ extern PFNGLTEXSTORAGEATTRIBS2DEXTPROC gload_glTexStorageAttribs2DEXT;
 extern PFNGLTEXSTORAGEATTRIBS3DEXTPROC gload_glTexStorageAttribs3DEXT;
 
 # endif /* GL_EXT_texture_storage_compression */
-# if defined (GL_EXT_texture_swizzle)
-
-
-# endif /* GL_EXT_texture_swizzle */
-# if defined (GL_EXT_texture_type_2_10_10_10_REV)
-
-
-# endif /* GL_EXT_texture_type_2_10_10_10_REV */
 # if defined (GL_EXT_texture_view)
 
 extern PFNGLTEXTUREVIEWEXTPROC gload_glTextureViewEXT;
@@ -25411,10 +23255,6 @@ extern PFNGLTRANSFORMFEEDBACKVARYINGSEXTPROC gload_glTransformFeedbackVaryingsEX
 extern PFNGLGETTRANSFORMFEEDBACKVARYINGEXTPROC gload_glGetTransformFeedbackVaryingEXT;
 
 # endif /* GL_EXT_transform_feedback */
-# if defined (GL_EXT_unpack_subimage)
-
-
-# endif /* GL_EXT_unpack_subimage */
 # if defined (GL_EXT_vertex_array)
 
 extern PFNGLARRAYELEMENTEXTPROC gload_glArrayElementEXT;
@@ -25428,10 +23268,6 @@ extern PFNGLTEXCOORDPOINTEREXTPROC gload_glTexCoordPointerEXT;
 extern PFNGLVERTEXPOINTEREXTPROC gload_glVertexPointerEXT;
 
 # endif /* GL_EXT_vertex_array */
-# if defined (GL_EXT_vertex_array_bgra)
-
-
-# endif /* GL_EXT_vertex_array_bgra */
 # if defined (GL_EXT_vertex_attrib_64bit)
 
 extern PFNGLVERTEXATTRIBL1DEXTPROC gload_glVertexAttribL1dEXT;
@@ -25515,10 +23351,6 @@ extern PFNGLWINDOWRECTANGLESEXTPROC gload_glWindowRectanglesEXT;
 extern PFNGLIMPORTSYNCEXTPROC gload_glImportSyncEXT;
 
 # endif /* GL_EXT_x11_sync_object */
-# if defined (GL_FJ_shader_binary_GCCSO)
-
-
-# endif /* GL_FJ_shader_binary_GCCSO */
 # if defined (GL_GREMEDY_frame_terminator)
 
 extern PFNGLFRAMETERMINATORGREMEDYPROC gload_glFrameTerminatorGREMEDY;
@@ -25529,10 +23361,6 @@ extern PFNGLFRAMETERMINATORGREMEDYPROC gload_glFrameTerminatorGREMEDY;
 extern PFNGLSTRINGMARKERGREMEDYPROC gload_glStringMarkerGREMEDY;
 
 # endif /* GL_GREMEDY_string_marker */
-# if defined (GL_HP_convolution_border_modes)
-
-
-# endif /* GL_HP_convolution_border_modes */
 # if defined (GL_HP_image_transform)
 
 extern PFNGLIMAGETRANSFORMPARAMETERIHPPROC gload_glImageTransformParameteriHP;
@@ -25543,45 +23371,17 @@ extern PFNGLGETIMAGETRANSFORMPARAMETERIVHPPROC gload_glGetImageTransformParamete
 extern PFNGLGETIMAGETRANSFORMPARAMETERFVHPPROC gload_glGetImageTransformParameterfvHP;
 
 # endif /* GL_HP_image_transform */
-# if defined (GL_HP_occlusion_test)
-
-
-# endif /* GL_HP_occlusion_test */
-# if defined (GL_HP_texture_lighting)
-
-
-# endif /* GL_HP_texture_lighting */
-# if defined (GL_HUAWEI_program_binary)
-
-
-# endif /* GL_HUAWEI_program_binary */
-# if defined (GL_HUAWEI_shader_binary)
-
-
-# endif /* GL_HUAWEI_shader_binary */
-# if defined (GL_IBM_cull_vertex)
-
-
-# endif /* GL_IBM_cull_vertex */
 # if defined (GL_IBM_multimode_draw_arrays)
 
 extern PFNGLMULTIMODEDRAWARRAYSIBMPROC gload_glMultiModeDrawArraysIBM;
 extern PFNGLMULTIMODEDRAWELEMENTSIBMPROC gload_glMultiModeDrawElementsIBM;
 
 # endif /* GL_IBM_multimode_draw_arrays */
-# if defined (GL_IBM_rasterpos_clip)
-
-
-# endif /* GL_IBM_rasterpos_clip */
 # if defined (GL_IBM_static_data)
 
 extern PFNGLFLUSHSTATICDATAIBMPROC gload_glFlushStaticDataIBM;
 
 # endif /* GL_IBM_static_data */
-# if defined (GL_IBM_texture_mirrored_repeat)
-
-
-# endif /* GL_IBM_texture_mirrored_repeat */
 # if defined (GL_IBM_vertex_array_lists)
 
 extern PFNGLCOLORPOINTERLISTIBMPROC gload_glColorPointerListIBM;
@@ -25616,65 +23416,17 @@ extern PFNGLRENDERBUFFERSTORAGEMULTISAMPLEIMGPROC gload_glRenderbufferStorageMul
 extern PFNGLFRAMEBUFFERTEXTURE2DMULTISAMPLEIMGPROC gload_glFramebufferTexture2DMultisampleIMG;
 
 # endif /* GL_IMG_multisampled_render_to_texture */
-# if defined (GL_IMG_program_binary)
-
-
-# endif /* GL_IMG_program_binary */
-# if defined (GL_IMG_read_format)
-
-
-# endif /* GL_IMG_read_format */
-# if defined (GL_IMG_shader_binary)
-
-
-# endif /* GL_IMG_shader_binary */
-# if defined (GL_IMG_texture_compression_pvrtc)
-
-
-# endif /* GL_IMG_texture_compression_pvrtc */
-# if defined (GL_IMG_texture_compression_pvrtc2)
-
-
-# endif /* GL_IMG_texture_compression_pvrtc2 */
-# if defined (GL_IMG_texture_env_enhanced_fixed_function)
-
-
-# endif /* GL_IMG_texture_env_enhanced_fixed_function */
-# if defined (GL_IMG_texture_filter_cubic)
-
-
-# endif /* GL_IMG_texture_filter_cubic */
 # if defined (GL_IMG_user_clip_plane)
 
 extern PFNGLCLIPPLANEFIMGPROC gload_glClipPlanefIMG;
 extern PFNGLCLIPPLANEXIMGPROC gload_glClipPlanexIMG;
 
 # endif /* GL_IMG_user_clip_plane */
-# if defined (GL_IMG_tile_region_protection)
-
-
-# endif /* GL_IMG_tile_region_protection */
-# if defined (GL_IMG_pvric_end_to_end_signature)
-
-
-# endif /* GL_IMG_pvric_end_to_end_signature */
 # if defined (GL_INGR_blend_func_separate)
 
 extern PFNGLBLENDFUNCSEPARATEINGRPROC gload_glBlendFuncSeparateINGR;
 
 # endif /* GL_INGR_blend_func_separate */
-# if defined (GL_INGR_color_clamp)
-
-
-# endif /* GL_INGR_color_clamp */
-# if defined (GL_INGR_interlace_read)
-
-
-# endif /* GL_INGR_interlace_read */
-# if defined (GL_INTEL_conservative_rasterization)
-
-
-# endif /* GL_INTEL_conservative_rasterization */
 # if defined (GL_INTEL_framebuffer_CMAA)
 
 extern PFNGLAPPLYFRAMEBUFFERATTACHMENTCMAAINTELPROC gload_glApplyFramebufferAttachmentCMAAINTEL;
@@ -25687,10 +23439,6 @@ extern PFNGLUNMAPTEXTURE2DINTELPROC gload_glUnmapTexture2DINTEL;
 extern PFNGLMAPTEXTURE2DINTELPROC gload_glMapTexture2DINTEL;
 
 # endif /* GL_INTEL_map_texture */
-# if defined (GL_INTEL_blackhole_render)
-
-
-# endif /* GL_INTEL_blackhole_render */
 # if defined (GL_INTEL_parallel_arrays)
 
 extern PFNGLVERTEXPOINTERVINTELPROC gload_glVertexPointervINTEL;
@@ -25718,10 +23466,6 @@ extern PFNGLGETPERFQUERYINFOINTELPROC gload_glGetPerfQueryInfoINTEL;
 extern PFNGLBLENDBARRIERKHRPROC gload_glBlendBarrierKHR;
 
 # endif /* GL_KHR_blend_equation_advanced */
-# if defined (GL_KHR_blend_equation_advanced_coherent)
-
-
-# endif /* GL_KHR_blend_equation_advanced_coherent */
 # if defined (GL_KHR_context_flush_control)
 
 
@@ -25752,10 +23496,6 @@ extern PFNGLGETOBJECTPTRLABELKHRPROC gload_glGetObjectPtrLabelKHR;
 extern PFNGLGETPOINTERVKHRPROC gload_glGetPointervKHR;
 
 # endif /* GL_KHR_debug */
-# if defined (GL_KHR_no_error)
-
-
-# endif /* GL_KHR_no_error */
 # if defined (GL_KHR_robustness)
 
 extern PFNGLGETGRAPHICSRESETSTATUSPROC gload_glGetGraphicsResetStatus;
@@ -25770,53 +23510,17 @@ extern PFNGLGETNUNIFORMIVKHRPROC gload_glGetnUniformivKHR;
 extern PFNGLGETNUNIFORMUIVKHRPROC gload_glGetnUniformuivKHR;
 
 # endif /* GL_KHR_robustness */
-# if defined (GL_KHR_shader_subgroup)
-
-
-# endif /* GL_KHR_shader_subgroup */
-# if defined (GL_KHR_texture_compression_astc_hdr)
-
-
-# endif /* GL_KHR_texture_compression_astc_hdr */
-# if defined (GL_KHR_texture_compression_astc_ldr)
-
-
-# endif /* GL_KHR_texture_compression_astc_ldr */
 # if defined (GL_KHR_parallel_shader_compile)
 
 extern PFNGLMAXSHADERCOMPILERTHREADSKHRPROC gload_glMaxShaderCompilerThreadsKHR;
 
 # endif /* GL_KHR_parallel_shader_compile */
-# if defined (GL_MESAX_texture_stack)
-
-
-# endif /* GL_MESAX_texture_stack */
-# if defined (GL_MESA_bgra)
-
-
-# endif /* GL_MESA_bgra */
-# if defined (GL_MESA_framebuffer_flip_x)
-
-
-# endif /* GL_MESA_framebuffer_flip_x */
 # if defined (GL_MESA_framebuffer_flip_y)
 
 extern PFNGLFRAMEBUFFERPARAMETERIMESAPROC gload_glFramebufferParameteriMESA;
 extern PFNGLGETFRAMEBUFFERPARAMETERIVMESAPROC gload_glGetFramebufferParameterivMESA;
 
 # endif /* GL_MESA_framebuffer_flip_y */
-# if defined (GL_MESA_framebuffer_swap_xy)
-
-
-# endif /* GL_MESA_framebuffer_swap_xy */
-# if defined (GL_MESA_pack_invert)
-
-
-# endif /* GL_MESA_pack_invert */
-# if defined (GL_MESA_program_binary_formats)
-
-
-# endif /* GL_MESA_program_binary_formats */
 # if defined (GL_MESA_resize_buffers)
 
 extern PFNGLRESIZEBUFFERSMESAPROC gload_glResizeBuffersMESA;
@@ -25836,14 +23540,6 @@ extern PFNGLGETSAMPLERPARAMETERIVPROC gload_glGetSamplerParameteriv;
 extern PFNGLGETSAMPLERPARAMETERFVPROC gload_glGetSamplerParameterfv;
 
 # endif /* GL_MESA_sampler_objects */
-# if defined (GL_MESA_texture_const_bandwidth)
-
-
-# endif /* GL_MESA_texture_const_bandwidth */
-# if defined (GL_MESA_tile_raster_order)
-
-
-# endif /* GL_MESA_tile_raster_order */
 # if defined (GL_MESA_window_pos)
 
 extern PFNGLWINDOWPOS2DMESAPROC gload_glWindowPos2dMESA;
@@ -25872,24 +23568,12 @@ extern PFNGLWINDOWPOS4SMESAPROC gload_glWindowPos4sMESA;
 extern PFNGLWINDOWPOS4SVMESAPROC gload_glWindowPos4svMESA;
 
 # endif /* GL_MESA_window_pos */
-# if defined (GL_MESA_ycbcr_texture)
-
-
-# endif /* GL_MESA_ycbcr_texture */
-# if defined (GL_NVX_cross_process_interop)
-
-
-# endif /* GL_NVX_cross_process_interop */
 # if defined (GL_NVX_conditional_render)
 
 extern PFNGLBEGINCONDITIONALRENDERNVXPROC gload_glBeginConditionalRenderNVX;
 extern PFNGLENDCONDITIONALRENDERNVXPROC gload_glEndConditionalRenderNVX;
 
 # endif /* GL_NVX_conditional_render */
-# if defined (GL_NVX_gpu_memory_info)
-
-
-# endif /* GL_NVX_gpu_memory_info */
 # if defined (GL_NVX_linked_gpu_multicast)
 
 extern PFNGLLGPUNAMEDBUFFERSUBDATANVXPROC gload_glLGPUNamedBufferSubDataNVX;
@@ -25937,14 +23621,6 @@ extern PFNGLBLENDPARAMETERINVPROC gload_glBlendParameteriNV;
 extern PFNGLBLENDBARRIERNVPROC gload_glBlendBarrierNV;
 
 # endif /* GL_NV_blend_equation_advanced */
-# if defined (GL_NV_blend_equation_advanced_coherent)
-
-
-# endif /* GL_NV_blend_equation_advanced_coherent */
-# if defined (GL_NV_blend_minmax_factor)
-
-
-# endif /* GL_NV_blend_minmax_factor */
 # if defined (GL_NV_clip_space_w_scaling)
 
 extern PFNGLVIEWPORTPOSITIONWSCALENVPROC gload_glViewportPositionWScaleNV;
@@ -25971,10 +23647,6 @@ extern PFNGLCOMPILECOMMANDLISTNVPROC gload_glCompileCommandListNV;
 extern PFNGLCALLCOMMANDLISTNVPROC gload_glCallCommandListNV;
 
 # endif /* GL_NV_command_list */
-# if defined (GL_NV_compute_program5)
-
-
-# endif /* GL_NV_compute_program5 */
 # if defined (GL_NV_conditional_render)
 
 extern PFNGLBEGINCONDITIONALRENDERNVPROC gload_glBeginConditionalRenderNV;
@@ -25991,10 +23663,6 @@ extern PFNGLSUBPIXELPRECISIONBIASNVPROC gload_glSubpixelPrecisionBiasNV;
 extern PFNGLCONSERVATIVERASTERPARAMETERFNVPROC gload_glConservativeRasterParameterfNV;
 
 # endif /* GL_NV_conservative_raster_dilate */
-# if defined (GL_NV_conservative_raster_pre_snap)
-
-
-# endif /* GL_NV_conservative_raster_pre_snap */
 # if defined (GL_NV_conservative_raster_pre_snap_triangles)
 
 extern PFNGLCONSERVATIVERASTERPARAMETERINVPROC gload_glConservativeRasterParameteriNV;
@@ -26005,10 +23673,6 @@ extern PFNGLCONSERVATIVERASTERPARAMETERINVPROC gload_glConservativeRasterParamet
 extern PFNGLCOPYBUFFERSUBDATANVPROC gload_glCopyBufferSubDataNV;
 
 # endif /* GL_NV_copy_buffer */
-# if defined (GL_NV_copy_depth_to_color)
-
-
-# endif /* GL_NV_copy_depth_to_color */
 # if defined (GL_NV_copy_image)
 
 extern PFNGLCOPYIMAGESUBDATANVPROC gload_glCopyImageSubDataNV;
@@ -26020,10 +23684,6 @@ extern PFNGLCOVERAGEMASKNVPROC gload_glCoverageMaskNV;
 extern PFNGLCOVERAGEOPERATIONNVPROC gload_glCoverageOperationNV;
 
 # endif /* GL_NV_coverage_sample */
-# if defined (GL_NV_deep_texture3D)
-
-
-# endif /* GL_NV_deep_texture3D */
 # if defined (GL_NV_depth_buffer_float)
 
 extern PFNGLDEPTHRANGEDNVPROC gload_glDepthRangedNV;
@@ -26031,14 +23691,6 @@ extern PFNGLCLEARDEPTHDNVPROC gload_glClearDepthdNV;
 extern PFNGLDEPTHBOUNDSDNVPROC gload_glDepthBoundsdNV;
 
 # endif /* GL_NV_depth_buffer_float */
-# if defined (GL_NV_depth_clamp)
-
-
-# endif /* GL_NV_depth_clamp */
-# if defined (GL_NV_depth_nonlinear)
-
-
-# endif /* GL_NV_depth_nonlinear */
 # if defined (GL_NV_draw_buffers)
 
 extern PFNGLDRAWBUFFERSNVPROC gload_glDrawBuffersNV;
@@ -26084,10 +23736,6 @@ extern PFNGLSAMPLEMASKINDEXEDNVPROC gload_glSampleMaskIndexedNV;
 extern PFNGLTEXRENDERBUFFERNVPROC gload_glTexRenderbufferNV;
 
 # endif /* GL_NV_explicit_multisample */
-# if defined (GL_NV_fbo_color_attachments)
-
-
-# endif /* GL_NV_fbo_color_attachments */
 # if defined (GL_NV_fence)
 
 extern PFNGLDELETEFENCESNVPROC gload_glDeleteFencesNV;
@@ -26099,18 +23747,6 @@ extern PFNGLFINISHFENCENVPROC gload_glFinishFenceNV;
 extern PFNGLSETFENCENVPROC gload_glSetFenceNV;
 
 # endif /* GL_NV_fence */
-# if defined (GL_NV_fill_rectangle)
-
-
-# endif /* GL_NV_fill_rectangle */
-# if defined (GL_NV_float_buffer)
-
-
-# endif /* GL_NV_float_buffer */
-# if defined (GL_NV_fog_distance)
-
-
-# endif /* GL_NV_fog_distance */
 # if defined (GL_NV_fragment_coverage_to_color)
 
 extern PFNGLFRAGMENTCOVERAGECOLORNVPROC gload_glFragmentCoverageColorNV;
@@ -26126,10 +23762,6 @@ extern PFNGLGETPROGRAMNAMEDPARAMETERFVNVPROC gload_glGetProgramNamedParameterfvN
 extern PFNGLGETPROGRAMNAMEDPARAMETERDVNVPROC gload_glGetProgramNamedParameterdvNV;
 
 # endif /* GL_NV_fragment_program */
-# if defined (GL_NV_fragment_program2)
-
-
-# endif /* GL_NV_fragment_program2 */
 # if defined (GL_NV_framebuffer_blit)
 
 extern PFNGLBLITFRAMEBUFFERNVPROC gload_glBlitFramebufferNV;
@@ -26284,10 +23916,6 @@ extern PFNGLVERTEXATTRIBDIVISORNVPROC gload_glVertexAttribDivisorNV;
 extern PFNGLGETINTERNALFORMATSAMPLEIVNVPROC gload_glGetInternalformatSampleivNV;
 
 # endif /* GL_NV_internalformat_sample_query */
-# if defined (GL_NV_light_max_exponent)
-
-
-# endif /* GL_NV_light_max_exponent */
 # if defined (GL_NV_gpu_multicast)
 
 extern PFNGLRENDERGPUMASKNVPROC gload_glRenderGpuMaskNV;
@@ -26348,14 +23976,6 @@ extern PFNGLMULTIDRAWMESHTASKSINDIRECTNVPROC gload_glMultiDrawMeshTasksIndirectN
 extern PFNGLMULTIDRAWMESHTASKSINDIRECTCOUNTNVPROC gload_glMultiDrawMeshTasksIndirectCountNV;
 
 # endif /* GL_NV_mesh_shader */
-# if defined (GL_NV_multisample_coverage)
-
-
-# endif /* GL_NV_multisample_coverage */
-# if defined (GL_NV_multisample_filter_hint)
-
-
-# endif /* GL_NV_multisample_filter_hint */
 # if defined (GL_NV_non_square_matrices)
 
 extern PFNGLUNIFORMMATRIX2X3FVNVPROC gload_glUniformMatrix2x3fvNV;
@@ -26377,10 +23997,6 @@ extern PFNGLGETOCCLUSIONQUERYIVNVPROC gload_glGetOcclusionQueryivNV;
 extern PFNGLGETOCCLUSIONQUERYUIVNVPROC gload_glGetOcclusionQueryuivNV;
 
 # endif /* GL_NV_occlusion_query */
-# if defined (GL_NV_packed_depth_stencil)
-
-
-# endif /* GL_NV_packed_depth_stencil */
 # if defined (GL_NV_parameter_buffer_object)
 
 extern PFNGLPROGRAMBUFFERPARAMETERSFVNVPROC gload_glProgramBufferParametersfvNV;
@@ -26475,20 +24091,12 @@ extern PFNGLMATRIXTRANSLATEFEXTPROC gload_glMatrixTranslatefEXT;
 extern PFNGLMATRIXTRANSLATEDEXTPROC gload_glMatrixTranslatedEXT;
 
 # endif /* GL_NV_path_rendering */
-# if defined (GL_NV_path_rendering_shared_edge)
-
-
-# endif /* GL_NV_path_rendering_shared_edge */
 # if defined (GL_NV_pixel_data_range)
 
 extern PFNGLPIXELDATARANGENVPROC gload_glPixelDataRangeNV;
 extern PFNGLFLUSHPIXELDATARANGENVPROC gload_glFlushPixelDataRangeNV;
 
 # endif /* GL_NV_pixel_data_range */
-# if defined (GL_NV_pixel_buffer_object)
-
-
-# endif /* GL_NV_pixel_buffer_object */
 # if defined (GL_NV_point_sprite)
 
 extern PFNGLPOINTPARAMETERINVPROC gload_glPointParameteriNV;
@@ -26516,10 +24124,6 @@ extern PFNGLPRIMITIVERESTARTNVPROC gload_glPrimitiveRestartNV;
 extern PFNGLPRIMITIVERESTARTINDEXNVPROC gload_glPrimitiveRestartIndexNV;
 
 # endif /* GL_NV_primitive_restart */
-# if defined (GL_NV_primitive_shading_rate)
-
-
-# endif /* GL_NV_primitive_shading_rate */
 # if defined (GL_NV_query_resource)
 
 extern PFNGLQUERYRESOURCENVPROC gload_glQueryResourceNV;
@@ -26560,18 +24164,6 @@ extern PFNGLCOMBINERSTAGEPARAMETERFVNVPROC gload_glCombinerStageParameterfvNV;
 extern PFNGLGETCOMBINERSTAGEPARAMETERFVNVPROC gload_glGetCombinerStageParameterfvNV;
 
 # endif /* GL_NV_register_combiners2 */
-# if defined (GL_NV_representative_fragment_test)
-
-
-# endif /* GL_NV_representative_fragment_test */
-# if defined (GL_NV_robustness_video_memory_purge)
-
-
-# endif /* GL_NV_robustness_video_memory_purge */
-# if defined (GL_NV_sRGB_formats)
-
-
-# endif /* GL_NV_sRGB_formats */
 # if defined (GL_NV_sample_locations)
 
 extern PFNGLFRAMEBUFFERSAMPLELOCATIONSFVNVPROC gload_glFramebufferSampleLocationsfvNV;
@@ -26603,18 +24195,6 @@ extern PFNGLPROGRAMUNIFORMUI64NVPROC gload_glProgramUniformui64NV;
 extern PFNGLPROGRAMUNIFORMUI64VNVPROC gload_glProgramUniformui64vNV;
 
 # endif /* GL_NV_shader_buffer_load */
-# if defined (GL_NV_shader_buffer_store)
-
-
-# endif /* GL_NV_shader_buffer_store */
-# if defined (GL_NV_shader_subgroup_partitioned)
-
-
-# endif /* GL_NV_shader_subgroup_partitioned */
-# if defined (GL_NV_shader_thread_group)
-
-
-# endif /* GL_NV_shader_thread_group */
 # if defined (GL_NV_shading_rate_image)
 
 extern PFNGLBINDSHADINGRATEIMAGENVPROC gload_glBindShadingRateImageNV;
@@ -26626,43 +24206,11 @@ extern PFNGLSHADINGRATESAMPLEORDERNVPROC gload_glShadingRateSampleOrderNV;
 extern PFNGLSHADINGRATESAMPLEORDERCUSTOMNVPROC gload_glShadingRateSampleOrderCustomNV;
 
 # endif /* GL_NV_shading_rate_image */
-# if defined (GL_NV_shadow_samplers_array)
-
-
-# endif /* GL_NV_shadow_samplers_array */
-# if defined (GL_NV_shadow_samplers_cube)
-
-
-# endif /* GL_NV_shadow_samplers_cube */
-# if defined (GL_NV_tessellation_program5)
-
-
-# endif /* GL_NV_tessellation_program5 */
-# if defined (GL_NV_texgen_emboss)
-
-
-# endif /* GL_NV_texgen_emboss */
-# if defined (GL_NV_texgen_reflection)
-
-
-# endif /* GL_NV_texgen_reflection */
 # if defined (GL_NV_texture_barrier)
 
 extern PFNGLTEXTUREBARRIERNVPROC gload_glTextureBarrierNV;
 
 # endif /* GL_NV_texture_barrier */
-# if defined (GL_NV_texture_border_clamp)
-
-
-# endif /* GL_NV_texture_border_clamp */
-# if defined (GL_NV_texture_env_combine4)
-
-
-# endif /* GL_NV_texture_env_combine4 */
-# if defined (GL_NV_texture_expand_normal)
-
-
-# endif /* GL_NV_texture_expand_normal */
 # if defined (GL_NV_texture_multisample)
 
 extern PFNGLTEXIMAGE2DMULTISAMPLECOVERAGENVPROC gload_glTexImage2DMultisampleCoverageNV;
@@ -26673,22 +24221,6 @@ extern PFNGLTEXTUREIMAGE2DMULTISAMPLECOVERAGENVPROC gload_glTextureImage2DMultis
 extern PFNGLTEXTUREIMAGE3DMULTISAMPLECOVERAGENVPROC gload_glTextureImage3DMultisampleCoverageNV;
 
 # endif /* GL_NV_texture_multisample */
-# if defined (GL_NV_texture_rectangle)
-
-
-# endif /* GL_NV_texture_rectangle */
-# if defined (GL_NV_texture_shader)
-
-
-# endif /* GL_NV_texture_shader */
-# if defined (GL_NV_texture_shader2)
-
-
-# endif /* GL_NV_texture_shader2 */
-# if defined (GL_NV_texture_shader3)
-
-
-# endif /* GL_NV_texture_shader3 */
 # if defined (GL_NV_transform_feedback)
 
 extern PFNGLBEGINTRANSFORMFEEDBACKNVPROC gload_glBeginTransformFeedbackNV;
@@ -26716,10 +24248,6 @@ extern PFNGLRESUMETRANSFORMFEEDBACKNVPROC gload_glResumeTransformFeedbackNV;
 extern PFNGLDRAWTRANSFORMFEEDBACKNVPROC gload_glDrawTransformFeedbackNV;
 
 # endif /* GL_NV_transform_feedback2 */
-# if defined (GL_NV_uniform_buffer_unified_memory)
-
-
-# endif /* GL_NV_uniform_buffer_unified_memory */
 # if defined (GL_NV_vdpau_interop)
 
 extern PFNGLVDPAUINITNVPROC gload_glVDPAUInitNV;
@@ -26745,10 +24273,6 @@ extern PFNGLFLUSHVERTEXARRAYRANGENVPROC gload_glFlushVertexArrayRangeNV;
 extern PFNGLVERTEXARRAYRANGENVPROC gload_glVertexArrayRangeNV;
 
 # endif /* GL_NV_vertex_array_range */
-# if defined (GL_NV_vertex_array_range2)
-
-
-# endif /* GL_NV_vertex_array_range2 */
 # if defined (GL_NV_vertex_attrib_integer_64bit)
 
 extern PFNGLVERTEXATTRIBL1I64NVPROC gload_glVertexAttribL1i64NV;
@@ -26856,14 +24380,6 @@ extern PFNGLVERTEXATTRIBS4SVNVPROC gload_glVertexAttribs4svNV;
 extern PFNGLVERTEXATTRIBS4UBVNVPROC gload_glVertexAttribs4ubvNV;
 
 # endif /* GL_NV_vertex_program */
-# if defined (GL_NV_vertex_program2_option)
-
-
-# endif /* GL_NV_vertex_program2_option */
-# if defined (GL_NV_vertex_program3)
-
-
-# endif /* GL_NV_vertex_program3 */
 # if defined (GL_NV_vertex_program4)
 
 extern PFNGLVERTEXATTRIBI1IEXTPROC gload_glVertexAttribI1iEXT;
@@ -26928,10 +24444,6 @@ extern PFNGLISENABLEDINVPROC gload_glIsEnablediNV;
 extern PFNGLVIEWPORTSWIZZLENVPROC gload_glViewportSwizzleNV;
 
 # endif /* GL_NV_viewport_swizzle */
-# if defined (GL_NV_pack_subimage)
-
-
-# endif /* GL_NV_pack_subimage */
 # if defined (GL_OES_EGL_image)
 
 extern PFNGLEGLIMAGETARGETTEXTURE2DOESPROC gload_glEGLImageTargetTexture2DOES;
@@ -26984,31 +24496,11 @@ extern PFNGLVERTEX4BOESPROC gload_glVertex4bOES;
 extern PFNGLVERTEX4BVOESPROC gload_glVertex4bvOES;
 
 # endif /* GL_OES_byte_coordinates */
-# if defined (GL_OES_compressed_ETC1_RGB8_texture)
-
-
-# endif /* GL_OES_compressed_ETC1_RGB8_texture */
-# if defined (GL_OES_compressed_paletted_texture)
-
-
-# endif /* GL_OES_compressed_paletted_texture */
 # if defined (GL_OES_copy_image)
 
 extern PFNGLCOPYIMAGESUBDATAOESPROC gload_glCopyImageSubDataOES;
 
 # endif /* GL_OES_copy_image */
-# if defined (GL_OES_depth24)
-
-
-# endif /* GL_OES_depth24 */
-# if defined (GL_OES_depth32)
-
-
-# endif /* GL_OES_depth32 */
-# if defined (GL_OES_depth_texture)
-
-
-# endif /* GL_OES_depth_texture */
 # if defined (GL_OES_draw_buffers_indexed)
 
 extern PFNGLENABLEIOESPROC gload_glEnableiOES;
@@ -27041,10 +24533,6 @@ extern PFNGLDRAWTEXFOESPROC gload_glDrawTexfOES;
 extern PFNGLDRAWTEXFVOESPROC gload_glDrawTexfvOES;
 
 # endif /* GL_OES_draw_texture */
-# if defined (GL_OES_element_index_uint)
-
-
-# endif /* GL_OES_element_index_uint */
 # if defined (GL_OES_fixed_point)
 
 extern PFNGLALPHAFUNCXOESPROC gload_glAlphaFuncxOES;
@@ -27156,10 +24644,6 @@ extern PFNGLVERTEX4XOESPROC gload_glVertex4xOES;
 extern PFNGLVERTEX4XVOESPROC gload_glVertex4xvOES;
 
 # endif /* GL_OES_fixed_point */
-# if defined (GL_OES_fragment_precision_high)
-
-
-# endif /* GL_OES_fragment_precision_high */
 # if defined (GL_OES_framebuffer_object)
 
 extern PFNGLISRENDERBUFFEROESPROC gload_glIsRenderbufferOES;
@@ -27197,10 +24681,6 @@ extern PFNGLUNMAPBUFFEROESPROC gload_glUnmapBufferOES;
 extern PFNGLGETBUFFERPOINTERVOESPROC gload_glGetBufferPointervOES;
 
 # endif /* GL_OES_mapbuffer */
-# if defined (GL_OES_matrix_get)
-
-
-# endif /* GL_OES_matrix_get */
 # if defined (GL_OES_matrix_palette)
 
 extern PFNGLCURRENTPALETTEMATRIXOESPROC gload_glCurrentPaletteMatrixOES;
@@ -27209,19 +24689,11 @@ extern PFNGLMATRIXINDEXPOINTEROESPROC gload_glMatrixIndexPointerOES;
 extern PFNGLWEIGHTPOINTEROESPROC gload_glWeightPointerOES;
 
 # endif /* GL_OES_matrix_palette */
-# if defined (GL_OES_packed_depth_stencil)
-
-
-# endif /* GL_OES_packed_depth_stencil */
 # if defined (GL_OES_point_size_array)
 
 extern PFNGLPOINTSIZEPOINTEROESPROC gload_glPointSizePointerOES;
 
 # endif /* GL_OES_point_size_array */
-# if defined (GL_OES_point_sprite)
-
-
-# endif /* GL_OES_point_sprite */
 # if defined (GL_OES_primitive_bounding_box)
 
 extern PFNGLPRIMITIVEBOUNDINGBOXOESPROC gload_glPrimitiveBoundingBoxOES;
@@ -27232,27 +24704,11 @@ extern PFNGLPRIMITIVEBOUNDINGBOXOESPROC gload_glPrimitiveBoundingBoxOES;
 extern PFNGLQUERYMATRIXXOESPROC gload_glQueryMatrixxOES;
 
 # endif /* GL_OES_query_matrix */
-# if defined (GL_OES_read_format)
-
-
-# endif /* GL_OES_read_format */
-# if defined (GL_OES_required_internalformat)
-
-
-# endif /* GL_OES_required_internalformat */
-# if defined (GL_OES_rgb8_rgba8)
-
-
-# endif /* GL_OES_rgb8_rgba8 */
 # if defined (GL_OES_sample_shading)
 
 extern PFNGLMINSAMPLESHADINGOESPROC gload_glMinSampleShadingOES;
 
 # endif /* GL_OES_sample_shading */
-# if defined (GL_OES_shader_multisample_interpolation)
-
-
-# endif /* GL_OES_shader_multisample_interpolation */
 # if defined (GL_OES_single_precision)
 
 extern PFNGLCLEARDEPTHFOESPROC gload_glClearDepthfOES;
@@ -27263,30 +24719,6 @@ extern PFNGLGETCLIPPLANEFOESPROC gload_glGetClipPlanefOES;
 extern PFNGLORTHOFOESPROC gload_glOrthofOES;
 
 # endif /* GL_OES_single_precision */
-# if defined (GL_OES_standard_derivatives)
-
-
-# endif /* GL_OES_standard_derivatives */
-# if defined (GL_OES_stencil1)
-
-
-# endif /* GL_OES_stencil1 */
-# if defined (GL_OES_stencil4)
-
-
-# endif /* GL_OES_stencil4 */
-# if defined (GL_OES_stencil8)
-
-
-# endif /* GL_OES_stencil8 */
-# if defined (GL_OES_stencil_wrap)
-
-
-# endif /* GL_OES_stencil_wrap */
-# if defined (GL_OES_surfaceless_context)
-
-
-# endif /* GL_OES_surfaceless_context */
 # if defined (GL_OES_tessellation_shader)
 
 extern PFNGLPATCHPARAMETERIOESPROC gload_glPatchParameteriOES;
@@ -27320,10 +24752,6 @@ extern PFNGLTEXBUFFEROESPROC gload_glTexBufferOES;
 extern PFNGLTEXBUFFERRANGEOESPROC gload_glTexBufferRangeOES;
 
 # endif /* GL_OES_texture_buffer */
-# if defined (GL_OES_texture_compression_astc)
-
-
-# endif /* GL_OES_texture_compression_astc */
 # if defined (GL_OES_texture_cube_map)
 
 extern PFNGLTEXGENFOESPROC gload_glTexGenfOES;
@@ -27337,26 +24765,6 @@ extern PFNGLGETTEXGENIVOESPROC gload_glGetTexGenivOES;
 extern PFNGLGETTEXGENXVOESPROC gload_glGetTexGenxvOES;
 
 # endif /* GL_OES_texture_cube_map */
-# if defined (GL_OES_texture_cube_map_array)
-
-
-# endif /* GL_OES_texture_cube_map_array */
-# if defined (GL_OES_texture_float)
-
-
-# endif /* GL_OES_texture_float */
-# if defined (GL_OES_texture_half_float)
-
-
-# endif /* GL_OES_texture_half_float */
-# if defined (GL_OES_texture_mirrored_repeat)
-
-
-# endif /* GL_OES_texture_mirrored_repeat */
-# if defined (GL_OES_texture_stencil8)
-
-
-# endif /* GL_OES_texture_stencil8 */
 # if defined (GL_OES_texture_storage_multisample_2d_array)
 
 extern PFNGLTEXSTORAGE3DMULTISAMPLEOESPROC gload_glTexStorage3DMultisampleOES;
@@ -27375,14 +24783,6 @@ extern PFNGLGENVERTEXARRAYSOESPROC gload_glGenVertexArraysOES;
 extern PFNGLISVERTEXARRAYOESPROC gload_glIsVertexArrayOES;
 
 # endif /* GL_OES_vertex_array_object */
-# if defined (GL_OES_vertex_half_float)
-
-
-# endif /* GL_OES_vertex_half_float */
-# if defined (GL_OES_vertex_type_10_10_10_2)
-
-
-# endif /* GL_OES_vertex_type_10_10_10_2 */
 # if defined (GL_OES_viewport_array)
 
 extern PFNGLVIEWPORTARRAYVOESPROC gload_glViewportArrayvOES;
@@ -27399,18 +24799,6 @@ extern PFNGLDISABLEIOESPROC gload_glDisableiOES;
 extern PFNGLISENABLEDIOESPROC gload_glIsEnablediOES;
 
 # endif /* GL_OES_viewport_array */
-# if defined (GL_OML_interlace)
-
-
-# endif /* GL_OML_interlace */
-# if defined (GL_OML_resample)
-
-
-# endif /* GL_OML_resample */
-# if defined (GL_OML_subsample)
-
-
-# endif /* GL_OML_subsample */
 # if defined (GL_OVR_multiview)
 
 extern PFNGLFRAMEBUFFERTEXTUREMULTIVIEWOVRPROC gload_glFramebufferTextureMultiviewOVR;
@@ -27427,19 +24815,11 @@ extern PFNGLFRAMEBUFFERTEXTUREMULTISAMPLEMULTIVIEWOVRPROC gload_glFramebufferTex
 extern PFNGLHINTPGIPROC gload_glHintPGI;
 
 # endif /* GL_PGI_misc_hints */
-# if defined (GL_PGI_vertex_hints)
-
-
-# endif /* GL_PGI_vertex_hints */
 # if defined (GL_QCOM_alpha_test)
 
 extern PFNGLALPHAFUNCQCOMPROC gload_glAlphaFuncQCOM;
 
 # endif /* GL_QCOM_alpha_test */
-# if defined (GL_QCOM_binning_control)
-
-
-# endif /* GL_QCOM_binning_control */
 # if defined (GL_QCOM_driver_control)
 
 extern PFNGLGETDRIVERCONTROLSQCOMPROC gload_glGetDriverControlsQCOM;
@@ -27490,26 +24870,6 @@ extern PFNGLEXTRAPOLATETEX2DQCOMPROC gload_glExtrapolateTex2DQCOM;
 extern PFNGLTEXTUREFOVEATIONPARAMETERSQCOMPROC gload_glTextureFoveationParametersQCOM;
 
 # endif /* GL_QCOM_texture_foveated */
-# if defined (GL_QCOM_texture_foveated2)
-
-
-# endif /* GL_QCOM_texture_foveated2 */
-# if defined (GL_QCOM_texture_foveated_subsampled_layout)
-
-
-# endif /* GL_QCOM_texture_foveated_subsampled_layout */
-# if defined (GL_QCOM_ycbcr_degamma)
-
-
-# endif /* GL_QCOM_ycbcr_degamma */
-# if defined (GL_QCOM_texture_lod_bias)
-
-
-# endif /* GL_QCOM_texture_lod_bias */
-# if defined (GL_QCOM_perfmon_global_mode)
-
-
-# endif /* GL_QCOM_perfmon_global_mode */
 # if defined (GL_QCOM_shader_framebuffer_fetch_noncoherent)
 
 extern PFNGLFRAMEBUFFERFETCHBARRIERQCOMPROC gload_glFramebufferFetchBarrierQCOM;
@@ -27526,18 +24886,6 @@ extern PFNGLSTARTTILINGQCOMPROC gload_glStartTilingQCOM;
 extern PFNGLENDTILINGQCOMPROC gload_glEndTilingQCOM;
 
 # endif /* GL_QCOM_tiled_rendering */
-# if defined (GL_QCOM_writeonly_rendering)
-
-
-# endif /* GL_QCOM_writeonly_rendering */
-# if defined (GL_REND_screen_coordinates)
-
-
-# endif /* GL_REND_screen_coordinates */
-# if defined (GL_S3_s3tc)
-
-
-# endif /* GL_S3_s3tc */
 # if defined (GL_SGIS_detail_texture)
 
 extern PFNGLDETAILTEXFUNCSGISPROC gload_glDetailTexFuncSGIS;
@@ -27550,10 +24898,6 @@ extern PFNGLFOGFUNCSGISPROC gload_glFogFuncSGIS;
 extern PFNGLGETFOGFUNCSGISPROC gload_glGetFogFuncSGIS;
 
 # endif /* GL_SGIS_fog_function */
-# if defined (GL_SGIS_generate_mipmap)
-
-
-# endif /* GL_SGIS_generate_mipmap */
 # if defined (GL_SGIS_multisample)
 
 extern PFNGLSAMPLEMASKSGISPROC gload_glSampleMaskSGIS;
@@ -27570,10 +24914,6 @@ extern PFNGLGETPIXELTEXGENPARAMETERIVSGISPROC gload_glGetPixelTexGenParameterivS
 extern PFNGLGETPIXELTEXGENPARAMETERFVSGISPROC gload_glGetPixelTexGenParameterfvSGIS;
 
 # endif /* GL_SGIS_pixel_texture */
-# if defined (GL_SGIS_point_line_texgen)
-
-
-# endif /* GL_SGIS_point_line_texgen */
 # if defined (GL_SGIS_point_parameters)
 
 extern PFNGLPOINTPARAMETERFSGISPROC gload_glPointParameterfSGIS;
@@ -27592,33 +24932,17 @@ extern PFNGLTEXIMAGE4DSGISPROC gload_glTexImage4DSGIS;
 extern PFNGLTEXSUBIMAGE4DSGISPROC gload_glTexSubImage4DSGIS;
 
 # endif /* GL_SGIS_texture4D */
-# if defined (GL_SGIS_texture_border_clamp)
-
-
-# endif /* GL_SGIS_texture_border_clamp */
 # if defined (GL_SGIS_texture_color_mask)
 
 extern PFNGLTEXTURECOLORMASKSGISPROC gload_glTextureColorMaskSGIS;
 
 # endif /* GL_SGIS_texture_color_mask */
-# if defined (GL_SGIS_texture_edge_clamp)
-
-
-# endif /* GL_SGIS_texture_edge_clamp */
 # if defined (GL_SGIS_texture_filter4)
 
 extern PFNGLGETTEXFILTERFUNCSGISPROC gload_glGetTexFilterFuncSGIS;
 extern PFNGLTEXFILTERFUNCSGISPROC gload_glTexFilterFuncSGIS;
 
 # endif /* GL_SGIS_texture_filter4 */
-# if defined (GL_SGIS_texture_lod)
-
-
-# endif /* GL_SGIS_texture_lod */
-# if defined (GL_SGIS_texture_select)
-
-
-# endif /* GL_SGIS_texture_select */
 # if defined (GL_SGIX_async)
 
 extern PFNGLASYNCMARKERSGIXPROC gload_glAsyncMarkerSGIX;
@@ -27629,43 +24953,11 @@ extern PFNGLDELETEASYNCMARKERSSGIXPROC gload_glDeleteAsyncMarkersSGIX;
 extern PFNGLISASYNCMARKERSGIXPROC gload_glIsAsyncMarkerSGIX;
 
 # endif /* GL_SGIX_async */
-# if defined (GL_SGIX_async_histogram)
-
-
-# endif /* GL_SGIX_async_histogram */
-# if defined (GL_SGIX_async_pixel)
-
-
-# endif /* GL_SGIX_async_pixel */
-# if defined (GL_SGIX_blend_alpha_minmax)
-
-
-# endif /* GL_SGIX_blend_alpha_minmax */
-# if defined (GL_SGIX_calligraphic_fragment)
-
-
-# endif /* GL_SGIX_calligraphic_fragment */
-# if defined (GL_SGIX_clipmap)
-
-
-# endif /* GL_SGIX_clipmap */
-# if defined (GL_SGIX_convolution_accuracy)
-
-
-# endif /* GL_SGIX_convolution_accuracy */
-# if defined (GL_SGIX_depth_texture)
-
-
-# endif /* GL_SGIX_depth_texture */
 # if defined (GL_SGIX_flush_raster)
 
 extern PFNGLFLUSHRASTERSGIXPROC gload_glFlushRasterSGIX;
 
 # endif /* GL_SGIX_flush_raster */
-# if defined (GL_SGIX_fog_offset)
-
-
-# endif /* GL_SGIX_fog_offset */
 # if defined (GL_SGIX_fragment_lighting)
 
 extern PFNGLFRAGMENTCOLORMATERIALSGIXPROC gload_glFragmentColorMaterialSGIX;
@@ -27708,14 +25000,6 @@ extern PFNGLSTARTINSTRUMENTSSGIXPROC gload_glStartInstrumentsSGIX;
 extern PFNGLSTOPINSTRUMENTSSGIXPROC gload_glStopInstrumentsSGIX;
 
 # endif /* GL_SGIX_instruments */
-# if defined (GL_SGIX_interlace)
-
-
-# endif /* GL_SGIX_interlace */
-# if defined (GL_SGIX_ir_instrument1)
-
-
-# endif /* GL_SGIX_ir_instrument1 */
 # if defined (GL_SGIX_list_priority)
 
 extern PFNGLGETLISTPARAMETERFVSGIXPROC gload_glGetListParameterfvSGIX;
@@ -27731,10 +25015,6 @@ extern PFNGLLISTPARAMETERIVSGIXPROC gload_glListParameterivSGIX;
 extern PFNGLPIXELTEXGENSGIXPROC gload_glPixelTexGenSGIX;
 
 # endif /* GL_SGIX_pixel_texture */
-# if defined (GL_SGIX_pixel_tiles)
-
-
-# endif /* GL_SGIX_pixel_tiles */
 # if defined (GL_SGIX_polynomial_ffd)
 
 extern PFNGLDEFORMATIONMAP3DSGIXPROC gload_glDeformationMap3dSGIX;
@@ -27748,22 +25028,6 @@ extern PFNGLLOADIDENTITYDEFORMATIONMAPSGIXPROC gload_glLoadIdentityDeformationMa
 extern PFNGLREFERENCEPLANESGIXPROC gload_glReferencePlaneSGIX;
 
 # endif /* GL_SGIX_reference_plane */
-# if defined (GL_SGIX_resample)
-
-
-# endif /* GL_SGIX_resample */
-# if defined (GL_SGIX_scalebias_hint)
-
-
-# endif /* GL_SGIX_scalebias_hint */
-# if defined (GL_SGIX_shadow)
-
-
-# endif /* GL_SGIX_shadow */
-# if defined (GL_SGIX_shadow_ambient)
-
-
-# endif /* GL_SGIX_shadow_ambient */
 # if defined (GL_SGIX_sprite)
 
 extern PFNGLSPRITEPARAMETERFSGIXPROC gload_glSpriteParameterfSGIX;
@@ -27772,51 +25036,11 @@ extern PFNGLSPRITEPARAMETERISGIXPROC gload_glSpriteParameteriSGIX;
 extern PFNGLSPRITEPARAMETERIVSGIXPROC gload_glSpriteParameterivSGIX;
 
 # endif /* GL_SGIX_sprite */
-# if defined (GL_SGIX_subsample)
-
-
-# endif /* GL_SGIX_subsample */
 # if defined (GL_SGIX_tag_sample_buffer)
 
 extern PFNGLTAGSAMPLEBUFFERSGIXPROC gload_glTagSampleBufferSGIX;
 
 # endif /* GL_SGIX_tag_sample_buffer */
-# if defined (GL_SGIX_texture_add_env)
-
-
-# endif /* GL_SGIX_texture_add_env */
-# if defined (GL_SGIX_texture_coordinate_clamp)
-
-
-# endif /* GL_SGIX_texture_coordinate_clamp */
-# if defined (GL_SGIX_texture_lod_bias)
-
-
-# endif /* GL_SGIX_texture_lod_bias */
-# if defined (GL_SGIX_texture_multi_buffer)
-
-
-# endif /* GL_SGIX_texture_multi_buffer */
-# if defined (GL_SGIX_texture_scale_bias)
-
-
-# endif /* GL_SGIX_texture_scale_bias */
-# if defined (GL_SGIX_vertex_preclip)
-
-
-# endif /* GL_SGIX_vertex_preclip */
-# if defined (GL_SGIX_ycrcb)
-
-
-# endif /* GL_SGIX_ycrcb */
-# if defined (GL_SGIX_ycrcba)
-
-
-# endif /* GL_SGIX_ycrcba */
-# if defined (GL_SGI_color_matrix)
-
-
-# endif /* GL_SGI_color_matrix */
 # if defined (GL_SGI_color_table)
 
 extern PFNGLCOLORTABLESGIPROC gload_glColorTableSGI;
@@ -27828,19 +25052,11 @@ extern PFNGLGETCOLORTABLEPARAMETERFVSGIPROC gload_glGetColorTableParameterfvSGI;
 extern PFNGLGETCOLORTABLEPARAMETERIVSGIPROC gload_glGetColorTableParameterivSGI;
 
 # endif /* GL_SGI_color_table */
-# if defined (GL_SGI_texture_color_table)
-
-
-# endif /* GL_SGI_texture_color_table */
 # if defined (GL_SUNX_constant_data)
 
 extern PFNGLFINISHTEXTURESUNXPROC gload_glFinishTextureSUNX;
 
 # endif /* GL_SUNX_constant_data */
-# if defined (GL_SUN_convolution_border_modes)
-
-
-# endif /* GL_SUN_convolution_border_modes */
 # if defined (GL_SUN_global_alpha)
 
 extern PFNGLGLOBALALPHAFACTORBSUNPROC gload_glGlobalAlphaFactorbSUN;
@@ -27858,10 +25074,6 @@ extern PFNGLGLOBALALPHAFACTORUISUNPROC gload_glGlobalAlphaFactoruiSUN;
 extern PFNGLDRAWMESHARRAYSSUNPROC gload_glDrawMeshArraysSUN;
 
 # endif /* GL_SUN_mesh_array */
-# if defined (GL_SUN_slice_accum)
-
-
-# endif /* GL_SUN_slice_accum */
 # if defined (GL_SUN_triangle_list)
 
 extern PFNGLREPLACEMENTCODEUISUNPROC gload_glReplacementCodeuiSUN;
@@ -27917,18 +25129,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FSUNPROC gload_glRe
 extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fvSUN;
 
 # endif /* GL_SUN_vertex */
-# if defined (GL_VIV_shader_binary)
-
-
-# endif /* GL_VIV_shader_binary */
-# if defined (GL_WIN_phong_shading)
-
-
-# endif /* GL_WIN_phong_shading */
-# if defined (GL_WIN_specular_fog)
-
-
-# endif /* GL_WIN_specular_fog */
 # if defined (GL_VERSION_1_0)
 #  define glCullFace gload_glCullFace
 #  define glFrontFace gload_glFrontFace
@@ -29645,27 +26845,15 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glVertexAttribPointer gload_glVertexAttribPointer
 #  define glViewport gload_glViewport
 # endif /* GL_SC_VERSION_2_0 */
-# if defined (GL_3DFX_multisample)
-# endif /* GL_3DFX_multisample */
 # if defined (GL_3DFX_tbuffer)
 #  define glTbufferMask3DFX gload_glTbufferMask3DFX
 # endif /* GL_3DFX_tbuffer */
-# if defined (GL_3DFX_texture_compression_FXT1)
-# endif /* GL_3DFX_texture_compression_FXT1 */
-# if defined (GL_AMD_blend_minmax_factor)
-# endif /* GL_AMD_blend_minmax_factor */
-# if defined (GL_AMD_compressed_3DC_texture)
-# endif /* GL_AMD_compressed_3DC_texture */
-# if defined (GL_AMD_compressed_ATC_texture)
-# endif /* GL_AMD_compressed_ATC_texture */
 # if defined (GL_AMD_debug_output)
 #  define glDebugMessageEnableAMD gload_glDebugMessageEnableAMD
 #  define glDebugMessageInsertAMD gload_glDebugMessageInsertAMD
 #  define glDebugMessageCallbackAMD gload_glDebugMessageCallbackAMD
 #  define glGetDebugMessageLogAMD gload_glGetDebugMessageLogAMD
 # endif /* GL_AMD_debug_output */
-# if defined (GL_AMD_depth_clamp_separate)
-# endif /* GL_AMD_depth_clamp_separate */
 # if defined (GL_AMD_draw_buffers_blend)
 #  define glBlendFuncIndexedAMD gload_glBlendFuncIndexedAMD
 #  define glBlendFuncSeparateIndexedAMD gload_glBlendFuncSeparateIndexedAMD
@@ -29682,8 +26870,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glGetFramebufferParameterfvAMD gload_glGetFramebufferParameterfvAMD
 #  define glGetNamedFramebufferParameterfvAMD gload_glGetNamedFramebufferParameterfvAMD
 # endif /* GL_AMD_framebuffer_sample_positions */
-# if defined (GL_AMD_gpu_shader_half_float)
-# endif /* GL_AMD_gpu_shader_half_float */
 # if defined (GL_AMD_gpu_shader_int64)
 #  define glUniform1i64NV gload_glUniform1i64NV
 #  define glUniform2i64NV gload_glUniform2i64NV
@@ -29748,17 +26934,9 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glEndPerfMonitorAMD gload_glEndPerfMonitorAMD
 #  define glGetPerfMonitorCounterDataAMD gload_glGetPerfMonitorCounterDataAMD
 # endif /* GL_AMD_performance_monitor */
-# if defined (GL_AMD_pinned_memory)
-# endif /* GL_AMD_pinned_memory */
-# if defined (GL_AMD_program_binary_Z400)
-# endif /* GL_AMD_program_binary_Z400 */
-# if defined (GL_AMD_query_buffer_object)
-# endif /* GL_AMD_query_buffer_object */
 # if defined (GL_AMD_sample_positions)
 #  define glSetMultisamplefvAMD gload_glSetMultisamplefvAMD
 # endif /* GL_AMD_sample_positions */
-# if defined (GL_AMD_seamless_cubemap_per_texture)
-# endif /* GL_AMD_seamless_cubemap_per_texture */
 # if defined (GL_AMD_sparse_texture)
 #  define glTexStorageSparseAMD gload_glTexStorageSparseAMD
 #  define glTextureStorageSparseAMD gload_glTextureStorageSparseAMD
@@ -29766,16 +26944,10 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 # if defined (GL_AMD_stencil_operation_extended)
 #  define glStencilOpValueAMD gload_glStencilOpValueAMD
 # endif /* GL_AMD_stencil_operation_extended */
-# if defined (GL_AMD_transform_feedback4)
-# endif /* GL_AMD_transform_feedback4 */
 # if defined (GL_AMD_vertex_shader_tessellator)
 #  define glTessellationFactorAMD gload_glTessellationFactorAMD
 #  define glTessellationModeAMD gload_glTessellationModeAMD
 # endif /* GL_AMD_vertex_shader_tessellator */
-# if defined (GL_ANDROID_extension_pack_es31a)
-# endif /* GL_ANDROID_extension_pack_es31a */
-# if defined (GL_ANGLE_depth_texture)
-# endif /* GL_ANGLE_depth_texture */
 # if defined (GL_ANGLE_framebuffer_blit)
 #  define glBlitFramebufferANGLE gload_glBlitFramebufferANGLE
 # endif /* GL_ANGLE_framebuffer_blit */
@@ -29787,25 +26959,9 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glDrawElementsInstancedANGLE gload_glDrawElementsInstancedANGLE
 #  define glVertexAttribDivisorANGLE gload_glVertexAttribDivisorANGLE
 # endif /* GL_ANGLE_instanced_arrays */
-# if defined (GL_ANGLE_pack_reverse_row_order)
-# endif /* GL_ANGLE_pack_reverse_row_order */
-# if defined (GL_ANGLE_program_binary)
-# endif /* GL_ANGLE_program_binary */
-# if defined (GL_ANGLE_texture_compression_dxt3)
-# endif /* GL_ANGLE_texture_compression_dxt3 */
-# if defined (GL_ANGLE_texture_compression_dxt5)
-# endif /* GL_ANGLE_texture_compression_dxt5 */
-# if defined (GL_ANGLE_texture_usage)
-# endif /* GL_ANGLE_texture_usage */
 # if defined (GL_ANGLE_translated_shader_source)
 #  define glGetTranslatedShaderSourceANGLE gload_glGetTranslatedShaderSourceANGLE
 # endif /* GL_ANGLE_translated_shader_source */
-# if defined (GL_APPLE_aux_depth_stencil)
-# endif /* GL_APPLE_aux_depth_stencil */
-# if defined (GL_APPLE_client_storage)
-# endif /* GL_APPLE_client_storage */
-# if defined (GL_APPLE_clip_distance)
-# endif /* GL_APPLE_clip_distance */
 # if defined (GL_APPLE_copy_texture_levels)
 #  define glCopyTextureLevelsAPPLE gload_glCopyTextureLevelsAPPLE
 # endif /* GL_APPLE_copy_texture_levels */
@@ -29826,8 +26982,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glTestObjectAPPLE gload_glTestObjectAPPLE
 #  define glFinishObjectAPPLE gload_glFinishObjectAPPLE
 # endif /* GL_APPLE_fence */
-# if defined (GL_APPLE_float_pixels)
-# endif /* GL_APPLE_float_pixels */
 # if defined (GL_APPLE_flush_buffer_range)
 #  define glBufferParameteriAPPLE gload_glBufferParameteriAPPLE
 #  define glFlushMappedBufferRangeAPPLE gload_glFlushMappedBufferRangeAPPLE
@@ -29843,10 +26997,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 # endif /* GL_APPLE_object_purgeable */
 # if defined (GL_APPLE_rgb_422)
 # endif /* GL_APPLE_rgb_422 */
-# if defined (GL_APPLE_row_bytes)
-# endif /* GL_APPLE_row_bytes */
-# if defined (GL_APPLE_specular_vector)
-# endif /* GL_APPLE_specular_vector */
 # if defined (GL_APPLE_sync)
 #  define glFenceSyncAPPLE gload_glFenceSyncAPPLE
 #  define glIsSyncAPPLE gload_glIsSyncAPPLE
@@ -29858,16 +27008,10 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 # endif /* GL_APPLE_sync */
 # if defined (GL_APPLE_texture_format_BGRA8888)
 # endif /* GL_APPLE_texture_format_BGRA8888 */
-# if defined (GL_APPLE_texture_max_level)
-# endif /* GL_APPLE_texture_max_level */
-# if defined (GL_APPLE_texture_packed_float)
-# endif /* GL_APPLE_texture_packed_float */
 # if defined (GL_APPLE_texture_range)
 #  define glTextureRangeAPPLE gload_glTextureRangeAPPLE
 #  define glGetTexParameterPointervAPPLE gload_glGetTexParameterPointervAPPLE
 # endif /* GL_APPLE_texture_range */
-# if defined (GL_APPLE_transform_hint)
-# endif /* GL_APPLE_transform_hint */
 # if defined (GL_APPLE_vertex_array_object)
 #  define glBindVertexArrayAPPLE gload_glBindVertexArrayAPPLE
 #  define glDeleteVertexArraysAPPLE gload_glDeleteVertexArraysAPPLE
@@ -29888,8 +27032,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glMapVertexAttrib2dAPPLE gload_glMapVertexAttrib2dAPPLE
 #  define glMapVertexAttrib2fAPPLE gload_glMapVertexAttrib2fAPPLE
 # endif /* GL_APPLE_vertex_program_evaluators */
-# if defined (GL_APPLE_ycbcr_422)
-# endif /* GL_APPLE_ycbcr_422 */
 # if defined (GL_ARB_ES2_compatibility)
 #  define glReleaseShaderCompiler gload_glReleaseShaderCompiler
 #  define glShaderBinary gload_glShaderBinary
@@ -29903,8 +27045,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 # if defined (GL_ARB_ES3_2_compatibility)
 #  define glPrimitiveBoundingBoxARB gload_glPrimitiveBoundingBoxARB
 # endif /* GL_ARB_ES3_2_compatibility */
-# if defined (GL_ARB_ES3_compatibility)
-# endif /* GL_ARB_ES3_compatibility */
 # if defined (GL_ARB_base_instance)
 #  define glDrawArraysInstancedBaseInstance gload_glDrawArraysInstancedBaseInstance
 #  define glDrawElementsInstancedBaseInstance gload_glDrawElementsInstancedBaseInstance
@@ -29952,10 +27092,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 # if defined (GL_ARB_color_buffer_float)
 #  define glClampColorARB gload_glClampColorARB
 # endif /* GL_ARB_color_buffer_float */
-# if defined (GL_ARB_compatibility)
-# endif /* GL_ARB_compatibility */
-# if defined (GL_ARB_compressed_texture_pixel_storage)
-# endif /* GL_ARB_compressed_texture_pixel_storage */
 # if defined (GL_ARB_compute_shader)
 #  define glDispatchCompute gload_glDispatchCompute
 #  define glDispatchComputeIndirect gload_glDispatchComputeIndirect
@@ -29963,28 +27099,18 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 # if defined (GL_ARB_compute_variable_group_size)
 #  define glDispatchComputeGroupSizeARB gload_glDispatchComputeGroupSizeARB
 # endif /* GL_ARB_compute_variable_group_size */
-# if defined (GL_ARB_conditional_render_inverted)
-# endif /* GL_ARB_conditional_render_inverted */
 # if defined (GL_ARB_copy_buffer)
 #  define glCopyBufferSubData gload_glCopyBufferSubData
 # endif /* GL_ARB_copy_buffer */
 # if defined (GL_ARB_copy_image)
 #  define glCopyImageSubData gload_glCopyImageSubData
 # endif /* GL_ARB_copy_image */
-# if defined (GL_ARB_cull_distance)
-# endif /* GL_ARB_cull_distance */
 # if defined (GL_ARB_debug_output)
 #  define glDebugMessageControlARB gload_glDebugMessageControlARB
 #  define glDebugMessageInsertARB gload_glDebugMessageInsertARB
 #  define glDebugMessageCallbackARB gload_glDebugMessageCallbackARB
 #  define glGetDebugMessageLogARB gload_glGetDebugMessageLogARB
 # endif /* GL_ARB_debug_output */
-# if defined (GL_ARB_depth_buffer_float)
-# endif /* GL_ARB_depth_buffer_float */
-# if defined (GL_ARB_depth_clamp)
-# endif /* GL_ARB_depth_clamp */
-# if defined (GL_ARB_depth_texture)
-# endif /* GL_ARB_depth_texture */
 # if defined (GL_ARB_direct_state_access)
 #  define glCreateTransformFeedbacks gload_glCreateTransformFeedbacks
 #  define glTransformFeedbackBufferBase gload_glTransformFeedbackBufferBase
@@ -30107,10 +27233,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glDrawArraysInstancedARB gload_glDrawArraysInstancedARB
 #  define glDrawElementsInstancedARB gload_glDrawElementsInstancedARB
 # endif /* GL_ARB_draw_instanced */
-# if defined (GL_ARB_enhanced_layouts)
-# endif /* GL_ARB_enhanced_layouts */
-# if defined (GL_ARB_explicit_uniform_location)
-# endif /* GL_ARB_explicit_uniform_location */
 # if defined (GL_ARB_fragment_program)
 #  define glProgramStringARB gload_glProgramStringARB
 #  define glBindProgramARB gload_glBindProgramARB
@@ -30132,8 +27254,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glGetProgramStringARB gload_glGetProgramStringARB
 #  define glIsProgramARB gload_glIsProgramARB
 # endif /* GL_ARB_fragment_program */
-# if defined (GL_ARB_fragment_shader)
-# endif /* GL_ARB_fragment_shader */
 # if defined (GL_ARB_framebuffer_no_attachments)
 #  define glFramebufferParameteri gload_glFramebufferParameteri
 #  define glGetFramebufferParameteriv gload_glGetFramebufferParameteriv
@@ -30160,8 +27280,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glRenderbufferStorageMultisample gload_glRenderbufferStorageMultisample
 #  define glFramebufferTextureLayer gload_glFramebufferTextureLayer
 # endif /* GL_ARB_framebuffer_object */
-# if defined (GL_ARB_framebuffer_sRGB)
-# endif /* GL_ARB_framebuffer_sRGB */
 # if defined (GL_ARB_geometry_shader4)
 #  define glProgramParameteriARB gload_glProgramParameteriARB
 #  define glFramebufferTextureARB gload_glFramebufferTextureARB
@@ -30180,8 +27298,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 # if defined (GL_ARB_gl_spirv)
 #  define glSpecializeShaderARB gload_glSpecializeShaderARB
 # endif /* GL_ARB_gl_spirv */
-# if defined (GL_ARB_gpu_shader5)
-# endif /* GL_ARB_gpu_shader5 */
 # if defined (GL_ARB_gpu_shader_fp64)
 #  define glUniform1d gload_glUniform1d
 #  define glUniform2d gload_glUniform2d
@@ -30240,10 +27356,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glProgramUniform3ui64vARB gload_glProgramUniform3ui64vARB
 #  define glProgramUniform4ui64vARB gload_glProgramUniform4ui64vARB
 # endif /* GL_ARB_gpu_shader_int64 */
-# if defined (GL_ARB_half_float_pixel)
-# endif /* GL_ARB_half_float_pixel */
-# if defined (GL_ARB_half_float_vertex)
-# endif /* GL_ARB_half_float_vertex */
 # if defined (GL_ARB_imaging)
 #  define glBlendColor gload_glBlendColor
 #  define glBlendEquation gload_glBlendEquation
@@ -30301,8 +27413,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glInvalidateFramebuffer gload_glInvalidateFramebuffer
 #  define glInvalidateSubFramebuffer gload_glInvalidateSubFramebuffer
 # endif /* GL_ARB_invalidate_subdata */
-# if defined (GL_ARB_map_buffer_alignment)
-# endif /* GL_ARB_map_buffer_alignment */
 # if defined (GL_ARB_map_buffer_range)
 #  define glMapBufferRange gload_glMapBufferRange
 #  define glFlushMappedBufferRange gload_glFlushMappedBufferRange
@@ -30375,21 +27485,13 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glGetQueryObjectivARB gload_glGetQueryObjectivARB
 #  define glGetQueryObjectuivARB gload_glGetQueryObjectuivARB
 # endif /* GL_ARB_occlusion_query */
-# if defined (GL_ARB_occlusion_query2)
-# endif /* GL_ARB_occlusion_query2 */
 # if defined (GL_ARB_parallel_shader_compile)
 #  define glMaxShaderCompilerThreadsARB gload_glMaxShaderCompilerThreadsARB
 # endif /* GL_ARB_parallel_shader_compile */
-# if defined (GL_ARB_pipeline_statistics_query)
-# endif /* GL_ARB_pipeline_statistics_query */
-# if defined (GL_ARB_pixel_buffer_object)
-# endif /* GL_ARB_pixel_buffer_object */
 # if defined (GL_ARB_point_parameters)
 #  define glPointParameterfARB gload_glPointParameterfARB
 #  define glPointParameterfvARB gload_glPointParameterfvARB
 # endif /* GL_ARB_point_parameters */
-# if defined (GL_ARB_point_sprite)
-# endif /* GL_ARB_point_sprite */
 # if defined (GL_ARB_polygon_offset_clamp)
 #  define glPolygonOffsetClamp gload_glPolygonOffsetClamp
 # endif /* GL_ARB_polygon_offset_clamp */
@@ -30404,8 +27506,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 # if defined (GL_ARB_provoking_vertex)
 #  define glProvokingVertex gload_glProvokingVertex
 # endif /* GL_ARB_provoking_vertex */
-# if defined (GL_ARB_query_buffer_object)
-# endif /* GL_ARB_query_buffer_object */
 # if defined (GL_ARB_robustness)
 #  define glGetGraphicsResetStatusARB gload_glGetGraphicsResetStatusARB
 #  define glGetnTexImageARB gload_glGetnTexImageARB
@@ -30452,10 +27552,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glGetSamplerParameterfv gload_glGetSamplerParameterfv
 #  define glGetSamplerParameterIuiv gload_glGetSamplerParameterIuiv
 # endif /* GL_ARB_sampler_objects */
-# if defined (GL_ARB_seamless_cube_map)
-# endif /* GL_ARB_seamless_cube_map */
-# if defined (GL_ARB_seamless_cubemap_per_texture)
-# endif /* GL_ARB_seamless_cubemap_per_texture */
 # if defined (GL_ARB_separate_shader_objects)
 #  define glUseProgramStages gload_glUseProgramStages
 #  define glActiveShaderProgram gload_glActiveShaderProgram
@@ -30580,8 +27676,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glGetUniformSubroutineuiv gload_glGetUniformSubroutineuiv
 #  define glGetProgramStageiv gload_glGetProgramStageiv
 # endif /* GL_ARB_shader_subroutine */
-# if defined (GL_ARB_shading_language_100)
-# endif /* GL_ARB_shading_language_100 */
 # if defined (GL_ARB_shading_language_include)
 #  define glNamedStringARB gload_glNamedStringARB
 #  define glDeleteNamedStringARB gload_glDeleteNamedStringARB
@@ -30590,10 +27684,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glGetNamedStringARB gload_glGetNamedStringARB
 #  define glGetNamedStringivARB gload_glGetNamedStringivARB
 # endif /* GL_ARB_shading_language_include */
-# if defined (GL_ARB_shadow)
-# endif /* GL_ARB_shadow */
-# if defined (GL_ARB_shadow_ambient)
-# endif /* GL_ARB_shadow_ambient */
 # if defined (GL_ARB_sparse_buffer)
 #  define glBufferPageCommitmentARB gload_glBufferPageCommitmentARB
 #  define glNamedBufferPageCommitmentEXT gload_glNamedBufferPageCommitmentEXT
@@ -30602,10 +27692,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 # if defined (GL_ARB_sparse_texture)
 #  define glTexPageCommitmentARB gload_glTexPageCommitmentARB
 # endif /* GL_ARB_sparse_texture */
-# if defined (GL_ARB_spirv_extensions)
-# endif /* GL_ARB_spirv_extensions */
-# if defined (GL_ARB_stencil_texturing)
-# endif /* GL_ARB_stencil_texturing */
 # if defined (GL_ARB_sync)
 #  define glFenceSync gload_glFenceSync
 #  define glIsSync gload_glIsSync
@@ -30622,13 +27708,9 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 # if defined (GL_ARB_texture_barrier)
 #  define glTextureBarrier gload_glTextureBarrier
 # endif /* GL_ARB_texture_barrier */
-# if defined (GL_ARB_texture_border_clamp)
-# endif /* GL_ARB_texture_border_clamp */
 # if defined (GL_ARB_texture_buffer_object)
 #  define glTexBufferARB gload_glTexBufferARB
 # endif /* GL_ARB_texture_buffer_object */
-# if defined (GL_ARB_texture_buffer_object_rgb32)
-# endif /* GL_ARB_texture_buffer_object_rgb32 */
 # if defined (GL_ARB_texture_buffer_range)
 #  define glTexBufferRange gload_glTexBufferRange
 # endif /* GL_ARB_texture_buffer_range */
@@ -30641,44 +27723,12 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glCompressedTexSubImage1DARB gload_glCompressedTexSubImage1DARB
 #  define glGetCompressedTexImageARB gload_glGetCompressedTexImageARB
 # endif /* GL_ARB_texture_compression */
-# if defined (GL_ARB_texture_compression_bptc)
-# endif /* GL_ARB_texture_compression_bptc */
-# if defined (GL_ARB_texture_compression_rgtc)
-# endif /* GL_ARB_texture_compression_rgtc */
-# if defined (GL_ARB_texture_cube_map)
-# endif /* GL_ARB_texture_cube_map */
-# if defined (GL_ARB_texture_cube_map_array)
-# endif /* GL_ARB_texture_cube_map_array */
-# if defined (GL_ARB_texture_env_combine)
-# endif /* GL_ARB_texture_env_combine */
-# if defined (GL_ARB_texture_env_dot3)
-# endif /* GL_ARB_texture_env_dot3 */
-# if defined (GL_ARB_texture_filter_anisotropic)
-# endif /* GL_ARB_texture_filter_anisotropic */
-# if defined (GL_ARB_texture_filter_minmax)
-# endif /* GL_ARB_texture_filter_minmax */
-# if defined (GL_ARB_texture_float)
-# endif /* GL_ARB_texture_float */
-# if defined (GL_ARB_texture_gather)
-# endif /* GL_ARB_texture_gather */
-# if defined (GL_ARB_texture_mirror_clamp_to_edge)
-# endif /* GL_ARB_texture_mirror_clamp_to_edge */
-# if defined (GL_ARB_texture_mirrored_repeat)
-# endif /* GL_ARB_texture_mirrored_repeat */
 # if defined (GL_ARB_texture_multisample)
 #  define glTexImage2DMultisample gload_glTexImage2DMultisample
 #  define glTexImage3DMultisample gload_glTexImage3DMultisample
 #  define glGetMultisamplefv gload_glGetMultisamplefv
 #  define glSampleMaski gload_glSampleMaski
 # endif /* GL_ARB_texture_multisample */
-# if defined (GL_ARB_texture_rectangle)
-# endif /* GL_ARB_texture_rectangle */
-# if defined (GL_ARB_texture_rg)
-# endif /* GL_ARB_texture_rg */
-# if defined (GL_ARB_texture_rgb10_a2ui)
-# endif /* GL_ARB_texture_rgb10_a2ui */
-# if defined (GL_ARB_texture_stencil8)
-# endif /* GL_ARB_texture_stencil8 */
 # if defined (GL_ARB_texture_storage)
 #  define glTexStorage1D gload_glTexStorage1D
 #  define glTexStorage2D gload_glTexStorage2D
@@ -30688,8 +27738,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glTexStorage2DMultisample gload_glTexStorage2DMultisample
 #  define glTexStorage3DMultisample gload_glTexStorage3DMultisample
 # endif /* GL_ARB_texture_storage_multisample */
-# if defined (GL_ARB_texture_swizzle)
-# endif /* GL_ARB_texture_swizzle */
 # if defined (GL_ARB_texture_view)
 #  define glTextureView gload_glTextureView
 # endif /* GL_ARB_texture_view */
@@ -30717,8 +27765,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glDrawTransformFeedbackInstanced gload_glDrawTransformFeedbackInstanced
 #  define glDrawTransformFeedbackStreamInstanced gload_glDrawTransformFeedbackStreamInstanced
 # endif /* GL_ARB_transform_feedback_instanced */
-# if defined (GL_ARB_transform_feedback_overflow_query)
-# endif /* GL_ARB_transform_feedback_overflow_query */
 # if defined (GL_ARB_transpose_matrix)
 #  define glLoadTransposeMatrixfARB gload_glLoadTransposeMatrixfARB
 #  define glLoadTransposeMatrixdARB gload_glLoadTransposeMatrixdARB
@@ -30737,8 +27783,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glBindBufferBase gload_glBindBufferBase
 #  define glGetIntegeri_v gload_glGetIntegeri_v
 # endif /* GL_ARB_uniform_buffer_object */
-# if defined (GL_ARB_vertex_array_bgra)
-# endif /* GL_ARB_vertex_array_bgra */
 # if defined (GL_ARB_vertex_array_object)
 #  define glBindVertexArray gload_glBindVertexArray
 #  define glDeleteVertexArrays gload_glDeleteVertexArrays
@@ -30902,8 +27946,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glGetVertexAttribivARB gload_glGetVertexAttribivARB
 #  define glGetVertexAttribPointervARB gload_glGetVertexAttribPointervARB
 # endif /* GL_ARB_vertex_shader */
-# if defined (GL_ARB_vertex_type_10f_11f_11f_rev)
-# endif /* GL_ARB_vertex_type_10f_11f_11f_rev */
 # if defined (GL_ARB_vertex_type_2_10_10_10_rev)
 #  define glVertexAttribP1ui gload_glVertexAttribP1ui
 #  define glVertexAttribP1uiv gload_glVertexAttribP1uiv
@@ -30976,17 +28018,9 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glWindowPos3sARB gload_glWindowPos3sARB
 #  define glWindowPos3svARB gload_glWindowPos3svARB
 # endif /* GL_ARB_window_pos */
-# if defined (GL_ARM_mali_program_binary)
-# endif /* GL_ARM_mali_program_binary */
-# if defined (GL_ARM_mali_shader_binary)
-# endif /* GL_ARM_mali_shader_binary */
 # if defined (GL_ARM_shader_core_properties)
 #  define glMaxActiveShaderCoresARM gload_glMaxActiveShaderCoresARM
 # endif /* GL_ARM_shader_core_properties */
-# if defined (GL_ARM_shader_framebuffer_fetch)
-# endif /* GL_ARM_shader_framebuffer_fetch */
-# if defined (GL_ARM_texture_unnormalized_coordinates)
-# endif /* GL_ARM_texture_unnormalized_coordinates */
 # if defined (GL_ATI_draw_buffers)
 #  define glDrawBuffersATI gload_glDrawBuffersATI
 # endif /* GL_ATI_draw_buffers */
@@ -31021,10 +28055,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glMapObjectBufferATI gload_glMapObjectBufferATI
 #  define glUnmapObjectBufferATI gload_glUnmapObjectBufferATI
 # endif /* GL_ATI_map_object_buffer */
-# if defined (GL_ATI_meminfo)
-# endif /* GL_ATI_meminfo */
-# if defined (GL_ATI_pixel_format_float)
-# endif /* GL_ATI_pixel_format_float */
 # if defined (GL_ATI_pn_triangles)
 #  define glPNTrianglesiATI gload_glPNTrianglesiATI
 #  define glPNTrianglesfATI gload_glPNTrianglesfATI
@@ -31033,14 +28063,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glStencilOpSeparateATI gload_glStencilOpSeparateATI
 #  define glStencilFuncSeparateATI gload_glStencilFuncSeparateATI
 # endif /* GL_ATI_separate_stencil */
-# if defined (GL_ATI_text_fragment_shader)
-# endif /* GL_ATI_text_fragment_shader */
-# if defined (GL_ATI_texture_env_combine3)
-# endif /* GL_ATI_texture_env_combine3 */
-# if defined (GL_ATI_texture_float)
-# endif /* GL_ATI_texture_float */
-# if defined (GL_ATI_texture_mirror_once)
-# endif /* GL_ATI_texture_mirror_once */
 # if defined (GL_ATI_vertex_array_object)
 #  define glNewObjectBufferATI gload_glNewObjectBufferATI
 #  define glIsObjectBufferATI gload_glIsObjectBufferATI
@@ -31107,29 +28129,15 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glVertexBlendEnviATI gload_glVertexBlendEnviATI
 #  define glVertexBlendEnvfATI gload_glVertexBlendEnvfATI
 # endif /* GL_ATI_vertex_streams */
-# if defined (GL_DMP_program_binary)
-# endif /* GL_DMP_program_binary */
-# if defined (GL_DMP_shader_binary)
-# endif /* GL_DMP_shader_binary */
-# if defined (GL_EXT_422_pixels)
-# endif /* GL_EXT_422_pixels */
 # if defined (GL_EXT_EGL_image_storage)
 #  define glEGLImageTargetTexStorageEXT gload_glEGLImageTargetTexStorageEXT
 #  define glEGLImageTargetTextureStorageEXT gload_glEGLImageTargetTextureStorageEXT
 # endif /* GL_EXT_EGL_image_storage */
-# if defined (GL_EXT_EGL_image_storage_compression)
-# endif /* GL_EXT_EGL_image_storage_compression */
-# if defined (GL_EXT_YUV_target)
-# endif /* GL_EXT_YUV_target */
-# if defined (GL_EXT_abgr)
-# endif /* GL_EXT_abgr */
 # if defined (GL_EXT_base_instance)
 #  define glDrawArraysInstancedBaseInstanceEXT gload_glDrawArraysInstancedBaseInstanceEXT
 #  define glDrawElementsInstancedBaseInstanceEXT gload_glDrawElementsInstancedBaseInstanceEXT
 #  define glDrawElementsInstancedBaseVertexBaseInstanceEXT gload_glDrawElementsInstancedBaseVertexBaseInstanceEXT
 # endif /* GL_EXT_base_instance */
-# if defined (GL_EXT_bgra)
-# endif /* GL_EXT_bgra */
 # if defined (GL_EXT_bindable_uniform)
 #  define glUniformBufferEXT gload_glUniformBufferEXT
 #  define glGetUniformBufferSizeEXT gload_glGetUniformBufferSizeEXT
@@ -31153,8 +28161,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 # if defined (GL_EXT_blend_minmax)
 #  define glBlendEquationEXT gload_glBlendEquationEXT
 # endif /* GL_EXT_blend_minmax */
-# if defined (GL_EXT_blend_subtract)
-# endif /* GL_EXT_blend_subtract */
 # if defined (GL_EXT_buffer_storage)
 #  define glBufferStorageEXT gload_glBufferStorageEXT
 # endif /* GL_EXT_buffer_storage */
@@ -31165,14 +28171,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 # if defined (GL_EXT_clip_control)
 #  define glClipControlEXT gload_glClipControlEXT
 # endif /* GL_EXT_clip_control */
-# if defined (GL_EXT_clip_cull_distance)
-# endif /* GL_EXT_clip_cull_distance */
-# if defined (GL_EXT_clip_volume_hint)
-# endif /* GL_EXT_clip_volume_hint */
-# if defined (GL_EXT_cmyka)
-# endif /* GL_EXT_cmyka */
-# if defined (GL_EXT_color_buffer_half_float)
-# endif /* GL_EXT_color_buffer_half_float */
 # if defined (GL_EXT_color_subtable)
 #  define glColorSubTableEXT gload_glColorSubTableEXT
 #  define glCopyColorSubTableEXT gload_glCopyColorSubTableEXT
@@ -31246,8 +28244,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 # if defined (GL_EXT_depth_bounds_test)
 #  define glDepthBoundsEXT gload_glDepthBoundsEXT
 # endif /* GL_EXT_depth_bounds_test */
-# if defined (GL_EXT_depth_clamp)
-# endif /* GL_EXT_depth_clamp */
 # if defined (GL_EXT_direct_state_access)
 #  define glMatrixLoadfEXT gload_glMatrixLoadfEXT
 #  define glMatrixLoaddEXT gload_glMatrixLoaddEXT
@@ -31587,8 +28583,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 # if defined (GL_EXT_framebuffer_multisample)
 #  define glRenderbufferStorageMultisampleEXT gload_glRenderbufferStorageMultisampleEXT
 # endif /* GL_EXT_framebuffer_multisample */
-# if defined (GL_EXT_framebuffer_multisample_blit_scaled)
-# endif /* GL_EXT_framebuffer_multisample_blit_scaled */
 # if defined (GL_EXT_framebuffer_object)
 #  define glIsRenderbufferEXT gload_glIsRenderbufferEXT
 #  define glBindRenderbufferEXT gload_glBindRenderbufferEXT
@@ -31608,8 +28602,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glGetFramebufferAttachmentParameterivEXT gload_glGetFramebufferAttachmentParameterivEXT
 #  define glGenerateMipmapEXT gload_glGenerateMipmapEXT
 # endif /* GL_EXT_framebuffer_object */
-# if defined (GL_EXT_framebuffer_sRGB)
-# endif /* GL_EXT_framebuffer_sRGB */
 # if defined (GL_EXT_geometry_shader)
 #  define glFramebufferTextureEXT gload_glFramebufferTextureEXT
 # endif /* GL_EXT_geometry_shader */
@@ -31668,8 +28660,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glResetHistogramEXT gload_glResetHistogramEXT
 #  define glResetMinmaxEXT gload_glResetMinmaxEXT
 # endif /* GL_EXT_histogram */
-# if defined (GL_EXT_index_array_formats)
-# endif /* GL_EXT_index_array_formats */
 # if defined (GL_EXT_index_func)
 #  define glIndexFuncEXT gload_glIndexFuncEXT
 # endif /* GL_EXT_index_func */
@@ -31736,14 +28726,10 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glSampleMaskEXT gload_glSampleMaskEXT
 #  define glSamplePatternEXT gload_glSamplePatternEXT
 # endif /* GL_EXT_multisample */
-# if defined (GL_EXT_multisampled_compatibility)
-# endif /* GL_EXT_multisampled_compatibility */
 # if defined (GL_EXT_multisampled_render_to_texture)
 #  define glRenderbufferStorageMultisampleEXT gload_glRenderbufferStorageMultisampleEXT
 #  define glFramebufferTexture2DMultisampleEXT gload_glFramebufferTexture2DMultisampleEXT
 # endif /* GL_EXT_multisampled_render_to_texture */
-# if defined (GL_EXT_multisampled_render_to_texture2)
-# endif /* GL_EXT_multisampled_render_to_texture2 */
 # if defined (GL_EXT_multiview_draw_buffers)
 #  define glReadBufferIndexedEXT gload_glReadBufferIndexedEXT
 #  define glDrawBuffersIndexedEXT gload_glDrawBuffersIndexedEXT
@@ -31758,20 +28744,12 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glGetQueryivEXT gload_glGetQueryivEXT
 #  define glGetQueryObjectuivEXT gload_glGetQueryObjectuivEXT
 # endif /* GL_EXT_occlusion_query_boolean */
-# if defined (GL_EXT_packed_depth_stencil)
-# endif /* GL_EXT_packed_depth_stencil */
-# if defined (GL_EXT_packed_float)
-# endif /* GL_EXT_packed_float */
-# if defined (GL_EXT_packed_pixels)
-# endif /* GL_EXT_packed_pixels */
 # if defined (GL_EXT_paletted_texture)
 #  define glColorTableEXT gload_glColorTableEXT
 #  define glGetColorTableEXT gload_glGetColorTableEXT
 #  define glGetColorTableParameterivEXT gload_glGetColorTableParameterivEXT
 #  define glGetColorTableParameterfvEXT gload_glGetColorTableParameterfvEXT
 # endif /* GL_EXT_paletted_texture */
-# if defined (GL_EXT_pixel_buffer_object)
-# endif /* GL_EXT_pixel_buffer_object */
 # if defined (GL_EXT_pixel_transform)
 #  define glPixelTransformParameteriEXT gload_glPixelTransformParameteriEXT
 #  define glPixelTransformParameterfEXT gload_glPixelTransformParameterfEXT
@@ -31793,22 +28771,12 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 # if defined (GL_EXT_primitive_bounding_box)
 #  define glPrimitiveBoundingBoxEXT gload_glPrimitiveBoundingBoxEXT
 # endif /* GL_EXT_primitive_bounding_box */
-# if defined (GL_EXT_protected_textures)
-# endif /* GL_EXT_protected_textures */
 # if defined (GL_EXT_provoking_vertex)
 #  define glProvokingVertexEXT gload_glProvokingVertexEXT
 # endif /* GL_EXT_provoking_vertex */
-# if defined (GL_EXT_pvrtc_sRGB)
-# endif /* GL_EXT_pvrtc_sRGB */
 # if defined (GL_EXT_raster_multisample)
 #  define glRasterSamplesEXT gload_glRasterSamplesEXT
 # endif /* GL_EXT_raster_multisample */
-# if defined (GL_EXT_read_format_bgra)
-# endif /* GL_EXT_read_format_bgra */
-# if defined (GL_EXT_render_snorm)
-# endif /* GL_EXT_render_snorm */
-# if defined (GL_EXT_rescale_normal)
-# endif /* GL_EXT_rescale_normal */
 # if defined (GL_EXT_robustness)
 #  define glGetGraphicsResetStatusEXT gload_glGetGraphicsResetStatusEXT
 #  define glReadnPixelsEXT gload_glReadnPixelsEXT
@@ -31833,10 +28801,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glImportSemaphoreWin32HandleEXT gload_glImportSemaphoreWin32HandleEXT
 #  define glImportSemaphoreWin32NameEXT gload_glImportSemaphoreWin32NameEXT
 # endif /* GL_EXT_semaphore_win32 */
-# if defined (GL_EXT_sRGB)
-# endif /* GL_EXT_sRGB */
-# if defined (GL_EXT_sRGB_write_control)
-# endif /* GL_EXT_sRGB_write_control */
 # if defined (GL_EXT_secondary_color)
 #  define glSecondaryColor3bEXT gload_glSecondaryColor3bEXT
 #  define glSecondaryColor3bvEXT gload_glSecondaryColor3bvEXT
@@ -31905,10 +28869,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glProgramUniformMatrix3x4fvEXT gload_glProgramUniformMatrix3x4fvEXT
 #  define glProgramUniformMatrix4x3fvEXT gload_glProgramUniformMatrix4x3fvEXT
 # endif /* GL_EXT_separate_shader_objects */
-# if defined (GL_EXT_separate_specular_color)
-# endif /* GL_EXT_separate_specular_color */
-# if defined (GL_EXT_shader_framebuffer_fetch)
-# endif /* GL_EXT_shader_framebuffer_fetch */
 # if defined (GL_EXT_shader_framebuffer_fetch_non_coherent)
 #  define glFramebufferFetchBarrierEXT gload_glFramebufferFetchBarrierEXT
 # endif /* GL_EXT_shader_framebuffer_fetch_non_coherent */
@@ -31916,17 +28876,11 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glBindImageTextureEXT gload_glBindImageTextureEXT
 #  define glMemoryBarrierEXT gload_glMemoryBarrierEXT
 # endif /* GL_EXT_shader_image_load_store */
-# if defined (GL_EXT_shader_pixel_local_storage)
-# endif /* GL_EXT_shader_pixel_local_storage */
 # if defined (GL_EXT_shader_pixel_local_storage2)
 #  define glFramebufferPixelLocalStorageSizeEXT gload_glFramebufferPixelLocalStorageSizeEXT
 #  define glGetFramebufferPixelLocalStorageSizeEXT gload_glGetFramebufferPixelLocalStorageSizeEXT
 #  define glClearPixelLocalStorageuiEXT gload_glClearPixelLocalStorageuiEXT
 # endif /* GL_EXT_shader_pixel_local_storage2 */
-# if defined (GL_EXT_shadow_samplers)
-# endif /* GL_EXT_shadow_samplers */
-# if defined (GL_EXT_shared_texture_palette)
-# endif /* GL_EXT_shared_texture_palette */
 # if defined (GL_EXT_sparse_texture)
 #  define glTexPageCommitmentEXT gload_glTexPageCommitmentEXT
 # endif /* GL_EXT_sparse_texture */
@@ -31936,8 +28890,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 # if defined (GL_EXT_stencil_two_side)
 #  define glActiveStencilFaceEXT gload_glActiveStencilFaceEXT
 # endif /* GL_EXT_stencil_two_side */
-# if defined (GL_EXT_stencil_wrap)
-# endif /* GL_EXT_stencil_wrap */
 # if defined (GL_EXT_subtexture)
 #  define glTexSubImage1DEXT gload_glTexSubImage1DEXT
 #  define glTexSubImage2DEXT gload_glTexSubImage2DEXT
@@ -31945,8 +28897,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 # if defined (GL_EXT_tessellation_shader)
 #  define glPatchParameteriEXT gload_glPatchParameteriEXT
 # endif /* GL_EXT_tessellation_shader */
-# if defined (GL_EXT_texture)
-# endif /* GL_EXT_texture */
 # if defined (GL_EXT_texture3D)
 #  define glTexImage3DEXT gload_glTexImage3DEXT
 #  define glTexSubImage3DEXT gload_glTexSubImage3DEXT
@@ -31971,36 +28921,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 # if defined (GL_EXT_texture_buffer_object)
 #  define glTexBufferEXT gload_glTexBufferEXT
 # endif /* GL_EXT_texture_buffer_object */
-# if defined (GL_EXT_texture_compression_astc_decode_mode)
-# endif /* GL_EXT_texture_compression_astc_decode_mode */
-# if defined (GL_EXT_texture_compression_bptc)
-# endif /* GL_EXT_texture_compression_bptc */
-# if defined (GL_EXT_texture_compression_dxt1)
-# endif /* GL_EXT_texture_compression_dxt1 */
-# if defined (GL_EXT_texture_compression_latc)
-# endif /* GL_EXT_texture_compression_latc */
-# if defined (GL_EXT_texture_compression_rgtc)
-# endif /* GL_EXT_texture_compression_rgtc */
-# if defined (GL_EXT_texture_compression_s3tc)
-# endif /* GL_EXT_texture_compression_s3tc */
-# if defined (GL_EXT_texture_compression_s3tc_srgb)
-# endif /* GL_EXT_texture_compression_s3tc_srgb */
-# if defined (GL_EXT_texture_cube_map)
-# endif /* GL_EXT_texture_cube_map */
-# if defined (GL_EXT_texture_cube_map_array)
-# endif /* GL_EXT_texture_cube_map_array */
-# if defined (GL_EXT_texture_env_combine)
-# endif /* GL_EXT_texture_env_combine */
-# if defined (GL_EXT_texture_env_dot3)
-# endif /* GL_EXT_texture_env_dot3 */
-# if defined (GL_EXT_texture_filter_anisotropic)
-# endif /* GL_EXT_texture_filter_anisotropic */
-# if defined (GL_EXT_texture_filter_minmax)
-# endif /* GL_EXT_texture_filter_minmax */
-# if defined (GL_EXT_texture_format_BGRA8888)
-# endif /* GL_EXT_texture_format_BGRA8888 */
-# if defined (GL_EXT_texture_format_sRGB_override)
-# endif /* GL_EXT_texture_format_sRGB_override */
 # if defined (GL_EXT_texture_integer)
 #  define glTexParameterIivEXT gload_glTexParameterIivEXT
 #  define glTexParameterIuivEXT gload_glTexParameterIuivEXT
@@ -32009,14 +28929,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glClearColorIiEXT gload_glClearColorIiEXT
 #  define glClearColorIuiEXT gload_glClearColorIuiEXT
 # endif /* GL_EXT_texture_integer */
-# if defined (GL_EXT_texture_lod_bias)
-# endif /* GL_EXT_texture_lod_bias */
-# if defined (GL_EXT_texture_mirror_clamp)
-# endif /* GL_EXT_texture_mirror_clamp */
-# if defined (GL_EXT_texture_mirror_clamp_to_edge)
-# endif /* GL_EXT_texture_mirror_clamp_to_edge */
-# if defined (GL_EXT_texture_norm16)
-# endif /* GL_EXT_texture_norm16 */
 # if defined (GL_EXT_texture_object)
 #  define glAreTexturesResidentEXT gload_glAreTexturesResidentEXT
 #  define glBindTextureEXT gload_glBindTextureEXT
@@ -32028,20 +28940,8 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 # if defined (GL_EXT_texture_perturb_normal)
 #  define glTextureNormalEXT gload_glTextureNormalEXT
 # endif /* GL_EXT_texture_perturb_normal */
-# if defined (GL_EXT_texture_rg)
-# endif /* GL_EXT_texture_rg */
 # if defined (GL_EXT_texture_sRGB)
 # endif /* GL_EXT_texture_sRGB */
-# if defined (GL_EXT_texture_sRGB_R8)
-# endif /* GL_EXT_texture_sRGB_R8 */
-# if defined (GL_EXT_texture_sRGB_RG8)
-# endif /* GL_EXT_texture_sRGB_RG8 */
-# if defined (GL_EXT_texture_sRGB_decode)
-# endif /* GL_EXT_texture_sRGB_decode */
-# if defined (GL_EXT_texture_shared_exponent)
-# endif /* GL_EXT_texture_shared_exponent */
-# if defined (GL_EXT_texture_snorm)
-# endif /* GL_EXT_texture_snorm */
 # if defined (GL_EXT_texture_storage)
 #  define glTexStorage1DEXT gload_glTexStorage1DEXT
 #  define glTexStorage2DEXT gload_glTexStorage2DEXT
@@ -32054,10 +28954,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glTexStorageAttribs2DEXT gload_glTexStorageAttribs2DEXT
 #  define glTexStorageAttribs3DEXT gload_glTexStorageAttribs3DEXT
 # endif /* GL_EXT_texture_storage_compression */
-# if defined (GL_EXT_texture_swizzle)
-# endif /* GL_EXT_texture_swizzle */
-# if defined (GL_EXT_texture_type_2_10_10_10_REV)
-# endif /* GL_EXT_texture_type_2_10_10_10_REV */
 # if defined (GL_EXT_texture_view)
 #  define glTextureViewEXT gload_glTextureViewEXT
 # endif /* GL_EXT_texture_view */
@@ -32079,8 +28975,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glTransformFeedbackVaryingsEXT gload_glTransformFeedbackVaryingsEXT
 #  define glGetTransformFeedbackVaryingEXT gload_glGetTransformFeedbackVaryingEXT
 # endif /* GL_EXT_transform_feedback */
-# if defined (GL_EXT_unpack_subimage)
-# endif /* GL_EXT_unpack_subimage */
 # if defined (GL_EXT_vertex_array)
 #  define glArrayElementEXT gload_glArrayElementEXT
 #  define glColorPointerEXT gload_glColorPointerEXT
@@ -32092,8 +28986,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glTexCoordPointerEXT gload_glTexCoordPointerEXT
 #  define glVertexPointerEXT gload_glVertexPointerEXT
 # endif /* GL_EXT_vertex_array */
-# if defined (GL_EXT_vertex_array_bgra)
-# endif /* GL_EXT_vertex_array_bgra */
 # if defined (GL_EXT_vertex_attrib_64bit)
 #  define glVertexAttribL1dEXT gload_glVertexAttribL1dEXT
 #  define glVertexAttribL2dEXT gload_glVertexAttribL2dEXT
@@ -32165,16 +29057,12 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 # if defined (GL_EXT_x11_sync_object)
 #  define glImportSyncEXT gload_glImportSyncEXT
 # endif /* GL_EXT_x11_sync_object */
-# if defined (GL_FJ_shader_binary_GCCSO)
-# endif /* GL_FJ_shader_binary_GCCSO */
 # if defined (GL_GREMEDY_frame_terminator)
 #  define glFrameTerminatorGREMEDY gload_glFrameTerminatorGREMEDY
 # endif /* GL_GREMEDY_frame_terminator */
 # if defined (GL_GREMEDY_string_marker)
 #  define glStringMarkerGREMEDY gload_glStringMarkerGREMEDY
 # endif /* GL_GREMEDY_string_marker */
-# if defined (GL_HP_convolution_border_modes)
-# endif /* GL_HP_convolution_border_modes */
 # if defined (GL_HP_image_transform)
 #  define glImageTransformParameteriHP gload_glImageTransformParameteriHP
 #  define glImageTransformParameterfHP gload_glImageTransformParameterfHP
@@ -32183,27 +29071,13 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glGetImageTransformParameterivHP gload_glGetImageTransformParameterivHP
 #  define glGetImageTransformParameterfvHP gload_glGetImageTransformParameterfvHP
 # endif /* GL_HP_image_transform */
-# if defined (GL_HP_occlusion_test)
-# endif /* GL_HP_occlusion_test */
-# if defined (GL_HP_texture_lighting)
-# endif /* GL_HP_texture_lighting */
-# if defined (GL_HUAWEI_program_binary)
-# endif /* GL_HUAWEI_program_binary */
-# if defined (GL_HUAWEI_shader_binary)
-# endif /* GL_HUAWEI_shader_binary */
-# if defined (GL_IBM_cull_vertex)
-# endif /* GL_IBM_cull_vertex */
 # if defined (GL_IBM_multimode_draw_arrays)
 #  define glMultiModeDrawArraysIBM gload_glMultiModeDrawArraysIBM
 #  define glMultiModeDrawElementsIBM gload_glMultiModeDrawElementsIBM
 # endif /* GL_IBM_multimode_draw_arrays */
-# if defined (GL_IBM_rasterpos_clip)
-# endif /* GL_IBM_rasterpos_clip */
 # if defined (GL_IBM_static_data)
 #  define glFlushStaticDataIBM gload_glFlushStaticDataIBM
 # endif /* GL_IBM_static_data */
-# if defined (GL_IBM_texture_mirrored_repeat)
-# endif /* GL_IBM_texture_mirrored_repeat */
 # if defined (GL_IBM_vertex_array_lists)
 #  define glColorPointerListIBM gload_glColorPointerListIBM
 #  define glSecondaryColorPointerListIBM gload_glSecondaryColorPointerListIBM
@@ -32230,37 +29104,13 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glRenderbufferStorageMultisampleIMG gload_glRenderbufferStorageMultisampleIMG
 #  define glFramebufferTexture2DMultisampleIMG gload_glFramebufferTexture2DMultisampleIMG
 # endif /* GL_IMG_multisampled_render_to_texture */
-# if defined (GL_IMG_program_binary)
-# endif /* GL_IMG_program_binary */
-# if defined (GL_IMG_read_format)
-# endif /* GL_IMG_read_format */
-# if defined (GL_IMG_shader_binary)
-# endif /* GL_IMG_shader_binary */
-# if defined (GL_IMG_texture_compression_pvrtc)
-# endif /* GL_IMG_texture_compression_pvrtc */
-# if defined (GL_IMG_texture_compression_pvrtc2)
-# endif /* GL_IMG_texture_compression_pvrtc2 */
-# if defined (GL_IMG_texture_env_enhanced_fixed_function)
-# endif /* GL_IMG_texture_env_enhanced_fixed_function */
-# if defined (GL_IMG_texture_filter_cubic)
-# endif /* GL_IMG_texture_filter_cubic */
 # if defined (GL_IMG_user_clip_plane)
 #  define glClipPlanefIMG gload_glClipPlanefIMG
 #  define glClipPlanexIMG gload_glClipPlanexIMG
 # endif /* GL_IMG_user_clip_plane */
-# if defined (GL_IMG_tile_region_protection)
-# endif /* GL_IMG_tile_region_protection */
-# if defined (GL_IMG_pvric_end_to_end_signature)
-# endif /* GL_IMG_pvric_end_to_end_signature */
 # if defined (GL_INGR_blend_func_separate)
 #  define glBlendFuncSeparateINGR gload_glBlendFuncSeparateINGR
 # endif /* GL_INGR_blend_func_separate */
-# if defined (GL_INGR_color_clamp)
-# endif /* GL_INGR_color_clamp */
-# if defined (GL_INGR_interlace_read)
-# endif /* GL_INGR_interlace_read */
-# if defined (GL_INTEL_conservative_rasterization)
-# endif /* GL_INTEL_conservative_rasterization */
 # if defined (GL_INTEL_framebuffer_CMAA)
 #  define glApplyFramebufferAttachmentCMAAINTEL gload_glApplyFramebufferAttachmentCMAAINTEL
 # endif /* GL_INTEL_framebuffer_CMAA */
@@ -32269,8 +29119,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glUnmapTexture2DINTEL gload_glUnmapTexture2DINTEL
 #  define glMapTexture2DINTEL gload_glMapTexture2DINTEL
 # endif /* GL_INTEL_map_texture */
-# if defined (GL_INTEL_blackhole_render)
-# endif /* GL_INTEL_blackhole_render */
 # if defined (GL_INTEL_parallel_arrays)
 #  define glVertexPointervINTEL gload_glVertexPointervINTEL
 #  define glNormalPointervINTEL gload_glNormalPointervINTEL
@@ -32292,8 +29140,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 # if defined (GL_KHR_blend_equation_advanced)
 #  define glBlendBarrierKHR gload_glBlendBarrierKHR
 # endif /* GL_KHR_blend_equation_advanced */
-# if defined (GL_KHR_blend_equation_advanced_coherent)
-# endif /* GL_KHR_blend_equation_advanced_coherent */
 # if defined (GL_KHR_context_flush_control)
 # endif /* GL_KHR_context_flush_control */
 # if defined (GL_KHR_debug)
@@ -32320,8 +29166,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glGetObjectPtrLabelKHR gload_glGetObjectPtrLabelKHR
 #  define glGetPointervKHR gload_glGetPointervKHR
 # endif /* GL_KHR_debug */
-# if defined (GL_KHR_no_error)
-# endif /* GL_KHR_no_error */
 # if defined (GL_KHR_robustness)
 #  define glGetGraphicsResetStatus gload_glGetGraphicsResetStatus
 #  define glReadnPixels gload_glReadnPixels
@@ -32334,31 +29178,13 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glGetnUniformivKHR gload_glGetnUniformivKHR
 #  define glGetnUniformuivKHR gload_glGetnUniformuivKHR
 # endif /* GL_KHR_robustness */
-# if defined (GL_KHR_shader_subgroup)
-# endif /* GL_KHR_shader_subgroup */
-# if defined (GL_KHR_texture_compression_astc_hdr)
-# endif /* GL_KHR_texture_compression_astc_hdr */
-# if defined (GL_KHR_texture_compression_astc_ldr)
-# endif /* GL_KHR_texture_compression_astc_ldr */
 # if defined (GL_KHR_parallel_shader_compile)
 #  define glMaxShaderCompilerThreadsKHR gload_glMaxShaderCompilerThreadsKHR
 # endif /* GL_KHR_parallel_shader_compile */
-# if defined (GL_MESAX_texture_stack)
-# endif /* GL_MESAX_texture_stack */
-# if defined (GL_MESA_bgra)
-# endif /* GL_MESA_bgra */
-# if defined (GL_MESA_framebuffer_flip_x)
-# endif /* GL_MESA_framebuffer_flip_x */
 # if defined (GL_MESA_framebuffer_flip_y)
 #  define glFramebufferParameteriMESA gload_glFramebufferParameteriMESA
 #  define glGetFramebufferParameterivMESA gload_glGetFramebufferParameterivMESA
 # endif /* GL_MESA_framebuffer_flip_y */
-# if defined (GL_MESA_framebuffer_swap_xy)
-# endif /* GL_MESA_framebuffer_swap_xy */
-# if defined (GL_MESA_pack_invert)
-# endif /* GL_MESA_pack_invert */
-# if defined (GL_MESA_program_binary_formats)
-# endif /* GL_MESA_program_binary_formats */
 # if defined (GL_MESA_resize_buffers)
 #  define glResizeBuffersMESA gload_glResizeBuffersMESA
 # endif /* GL_MESA_resize_buffers */
@@ -32374,10 +29200,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glGetSamplerParameteriv gload_glGetSamplerParameteriv
 #  define glGetSamplerParameterfv gload_glGetSamplerParameterfv
 # endif /* GL_MESA_sampler_objects */
-# if defined (GL_MESA_texture_const_bandwidth)
-# endif /* GL_MESA_texture_const_bandwidth */
-# if defined (GL_MESA_tile_raster_order)
-# endif /* GL_MESA_tile_raster_order */
 # if defined (GL_MESA_window_pos)
 #  define glWindowPos2dMESA gload_glWindowPos2dMESA
 #  define glWindowPos2dvMESA gload_glWindowPos2dvMESA
@@ -32404,16 +29226,10 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glWindowPos4sMESA gload_glWindowPos4sMESA
 #  define glWindowPos4svMESA gload_glWindowPos4svMESA
 # endif /* GL_MESA_window_pos */
-# if defined (GL_MESA_ycbcr_texture)
-# endif /* GL_MESA_ycbcr_texture */
-# if defined (GL_NVX_cross_process_interop)
-# endif /* GL_NVX_cross_process_interop */
 # if defined (GL_NVX_conditional_render)
 #  define glBeginConditionalRenderNVX gload_glBeginConditionalRenderNVX
 #  define glEndConditionalRenderNVX gload_glEndConditionalRenderNVX
 # endif /* GL_NVX_conditional_render */
-# if defined (GL_NVX_gpu_memory_info)
-# endif /* GL_NVX_gpu_memory_info */
 # if defined (GL_NVX_linked_gpu_multicast)
 #  define glLGPUNamedBufferSubDataNVX gload_glLGPUNamedBufferSubDataNVX
 #  define glLGPUCopyImageSubDataNVX gload_glLGPUCopyImageSubDataNVX
@@ -32449,10 +29265,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glBlendParameteriNV gload_glBlendParameteriNV
 #  define glBlendBarrierNV gload_glBlendBarrierNV
 # endif /* GL_NV_blend_equation_advanced */
-# if defined (GL_NV_blend_equation_advanced_coherent)
-# endif /* GL_NV_blend_equation_advanced_coherent */
-# if defined (GL_NV_blend_minmax_factor)
-# endif /* GL_NV_blend_minmax_factor */
 # if defined (GL_NV_clip_space_w_scaling)
 #  define glViewportPositionWScaleNV gload_glViewportPositionWScaleNV
 # endif /* GL_NV_clip_space_w_scaling */
@@ -32475,8 +29287,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glCompileCommandListNV gload_glCompileCommandListNV
 #  define glCallCommandListNV gload_glCallCommandListNV
 # endif /* GL_NV_command_list */
-# if defined (GL_NV_compute_program5)
-# endif /* GL_NV_compute_program5 */
 # if defined (GL_NV_conditional_render)
 #  define glBeginConditionalRenderNV gload_glBeginConditionalRenderNV
 #  define glEndConditionalRenderNV gload_glEndConditionalRenderNV
@@ -32487,16 +29297,12 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 # if defined (GL_NV_conservative_raster_dilate)
 #  define glConservativeRasterParameterfNV gload_glConservativeRasterParameterfNV
 # endif /* GL_NV_conservative_raster_dilate */
-# if defined (GL_NV_conservative_raster_pre_snap)
-# endif /* GL_NV_conservative_raster_pre_snap */
 # if defined (GL_NV_conservative_raster_pre_snap_triangles)
 #  define glConservativeRasterParameteriNV gload_glConservativeRasterParameteriNV
 # endif /* GL_NV_conservative_raster_pre_snap_triangles */
 # if defined (GL_NV_copy_buffer)
 #  define glCopyBufferSubDataNV gload_glCopyBufferSubDataNV
 # endif /* GL_NV_copy_buffer */
-# if defined (GL_NV_copy_depth_to_color)
-# endif /* GL_NV_copy_depth_to_color */
 # if defined (GL_NV_copy_image)
 #  define glCopyImageSubDataNV gload_glCopyImageSubDataNV
 # endif /* GL_NV_copy_image */
@@ -32504,17 +29310,11 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glCoverageMaskNV gload_glCoverageMaskNV
 #  define glCoverageOperationNV gload_glCoverageOperationNV
 # endif /* GL_NV_coverage_sample */
-# if defined (GL_NV_deep_texture3D)
-# endif /* GL_NV_deep_texture3D */
 # if defined (GL_NV_depth_buffer_float)
 #  define glDepthRangedNV gload_glDepthRangedNV
 #  define glClearDepthdNV gload_glClearDepthdNV
 #  define glDepthBoundsdNV gload_glDepthBoundsdNV
 # endif /* GL_NV_depth_buffer_float */
-# if defined (GL_NV_depth_clamp)
-# endif /* GL_NV_depth_clamp */
-# if defined (GL_NV_depth_nonlinear)
-# endif /* GL_NV_depth_nonlinear */
 # if defined (GL_NV_draw_buffers)
 #  define glDrawBuffersNV gload_glDrawBuffersNV
 # endif /* GL_NV_draw_buffers */
@@ -32548,8 +29348,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glSampleMaskIndexedNV gload_glSampleMaskIndexedNV
 #  define glTexRenderbufferNV gload_glTexRenderbufferNV
 # endif /* GL_NV_explicit_multisample */
-# if defined (GL_NV_fbo_color_attachments)
-# endif /* GL_NV_fbo_color_attachments */
 # if defined (GL_NV_fence)
 #  define glDeleteFencesNV gload_glDeleteFencesNV
 #  define glGenFencesNV gload_glGenFencesNV
@@ -32559,12 +29357,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glFinishFenceNV gload_glFinishFenceNV
 #  define glSetFenceNV gload_glSetFenceNV
 # endif /* GL_NV_fence */
-# if defined (GL_NV_fill_rectangle)
-# endif /* GL_NV_fill_rectangle */
-# if defined (GL_NV_float_buffer)
-# endif /* GL_NV_float_buffer */
-# if defined (GL_NV_fog_distance)
-# endif /* GL_NV_fog_distance */
 # if defined (GL_NV_fragment_coverage_to_color)
 #  define glFragmentCoverageColorNV gload_glFragmentCoverageColorNV
 # endif /* GL_NV_fragment_coverage_to_color */
@@ -32576,8 +29368,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glGetProgramNamedParameterfvNV gload_glGetProgramNamedParameterfvNV
 #  define glGetProgramNamedParameterdvNV gload_glGetProgramNamedParameterdvNV
 # endif /* GL_NV_fragment_program */
-# if defined (GL_NV_fragment_program2)
-# endif /* GL_NV_fragment_program2 */
 # if defined (GL_NV_framebuffer_blit)
 #  define glBlitFramebufferNV gload_glBlitFramebufferNV
 # endif /* GL_NV_framebuffer_blit */
@@ -32710,8 +29500,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 # if defined (GL_NV_internalformat_sample_query)
 #  define glGetInternalformatSampleivNV gload_glGetInternalformatSampleivNV
 # endif /* GL_NV_internalformat_sample_query */
-# if defined (GL_NV_light_max_exponent)
-# endif /* GL_NV_light_max_exponent */
 # if defined (GL_NV_gpu_multicast)
 #  define glRenderGpuMaskNV gload_glRenderGpuMaskNV
 #  define glMulticastBufferSubDataNV gload_glMulticastBufferSubDataNV
@@ -32760,10 +29548,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glMultiDrawMeshTasksIndirectNV gload_glMultiDrawMeshTasksIndirectNV
 #  define glMultiDrawMeshTasksIndirectCountNV gload_glMultiDrawMeshTasksIndirectCountNV
 # endif /* GL_NV_mesh_shader */
-# if defined (GL_NV_multisample_coverage)
-# endif /* GL_NV_multisample_coverage */
-# if defined (GL_NV_multisample_filter_hint)
-# endif /* GL_NV_multisample_filter_hint */
 # if defined (GL_NV_non_square_matrices)
 #  define glUniformMatrix2x3fvNV gload_glUniformMatrix2x3fvNV
 #  define glUniformMatrix3x2fvNV gload_glUniformMatrix3x2fvNV
@@ -32781,8 +29565,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glGetOcclusionQueryivNV gload_glGetOcclusionQueryivNV
 #  define glGetOcclusionQueryuivNV gload_glGetOcclusionQueryuivNV
 # endif /* GL_NV_occlusion_query */
-# if defined (GL_NV_packed_depth_stencil)
-# endif /* GL_NV_packed_depth_stencil */
 # if defined (GL_NV_parameter_buffer_object)
 #  define glProgramBufferParametersfvNV gload_glProgramBufferParametersfvNV
 #  define glProgramBufferParametersIivNV gload_glProgramBufferParametersIivNV
@@ -32873,14 +29655,10 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glMatrixTranslatefEXT gload_glMatrixTranslatefEXT
 #  define glMatrixTranslatedEXT gload_glMatrixTranslatedEXT
 # endif /* GL_NV_path_rendering */
-# if defined (GL_NV_path_rendering_shared_edge)
-# endif /* GL_NV_path_rendering_shared_edge */
 # if defined (GL_NV_pixel_data_range)
 #  define glPixelDataRangeNV gload_glPixelDataRangeNV
 #  define glFlushPixelDataRangeNV gload_glFlushPixelDataRangeNV
 # endif /* GL_NV_pixel_data_range */
-# if defined (GL_NV_pixel_buffer_object)
-# endif /* GL_NV_pixel_buffer_object */
 # if defined (GL_NV_point_sprite)
 #  define glPointParameteriNV gload_glPointParameteriNV
 #  define glPointParameterivNV gload_glPointParameterivNV
@@ -32900,8 +29678,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glPrimitiveRestartNV gload_glPrimitiveRestartNV
 #  define glPrimitiveRestartIndexNV gload_glPrimitiveRestartIndexNV
 # endif /* GL_NV_primitive_restart */
-# if defined (GL_NV_primitive_shading_rate)
-# endif /* GL_NV_primitive_shading_rate */
 # if defined (GL_NV_query_resource)
 #  define glQueryResourceNV gload_glQueryResourceNV
 # endif /* GL_NV_query_resource */
@@ -32932,12 +29708,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glCombinerStageParameterfvNV gload_glCombinerStageParameterfvNV
 #  define glGetCombinerStageParameterfvNV gload_glGetCombinerStageParameterfvNV
 # endif /* GL_NV_register_combiners2 */
-# if defined (GL_NV_representative_fragment_test)
-# endif /* GL_NV_representative_fragment_test */
-# if defined (GL_NV_robustness_video_memory_purge)
-# endif /* GL_NV_robustness_video_memory_purge */
-# if defined (GL_NV_sRGB_formats)
-# endif /* GL_NV_sRGB_formats */
 # if defined (GL_NV_sample_locations)
 #  define glFramebufferSampleLocationsfvNV gload_glFramebufferSampleLocationsfvNV
 #  define glNamedFramebufferSampleLocationsfvNV gload_glNamedFramebufferSampleLocationsfvNV
@@ -32963,12 +29733,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glProgramUniformui64NV gload_glProgramUniformui64NV
 #  define glProgramUniformui64vNV gload_glProgramUniformui64vNV
 # endif /* GL_NV_shader_buffer_load */
-# if defined (GL_NV_shader_buffer_store)
-# endif /* GL_NV_shader_buffer_store */
-# if defined (GL_NV_shader_subgroup_partitioned)
-# endif /* GL_NV_shader_subgroup_partitioned */
-# if defined (GL_NV_shader_thread_group)
-# endif /* GL_NV_shader_thread_group */
 # if defined (GL_NV_shading_rate_image)
 #  define glBindShadingRateImageNV gload_glBindShadingRateImageNV
 #  define glGetShadingRateImagePaletteNV gload_glGetShadingRateImagePaletteNV
@@ -32978,25 +29742,9 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glShadingRateSampleOrderNV gload_glShadingRateSampleOrderNV
 #  define glShadingRateSampleOrderCustomNV gload_glShadingRateSampleOrderCustomNV
 # endif /* GL_NV_shading_rate_image */
-# if defined (GL_NV_shadow_samplers_array)
-# endif /* GL_NV_shadow_samplers_array */
-# if defined (GL_NV_shadow_samplers_cube)
-# endif /* GL_NV_shadow_samplers_cube */
-# if defined (GL_NV_tessellation_program5)
-# endif /* GL_NV_tessellation_program5 */
-# if defined (GL_NV_texgen_emboss)
-# endif /* GL_NV_texgen_emboss */
-# if defined (GL_NV_texgen_reflection)
-# endif /* GL_NV_texgen_reflection */
 # if defined (GL_NV_texture_barrier)
 #  define glTextureBarrierNV gload_glTextureBarrierNV
 # endif /* GL_NV_texture_barrier */
-# if defined (GL_NV_texture_border_clamp)
-# endif /* GL_NV_texture_border_clamp */
-# if defined (GL_NV_texture_env_combine4)
-# endif /* GL_NV_texture_env_combine4 */
-# if defined (GL_NV_texture_expand_normal)
-# endif /* GL_NV_texture_expand_normal */
 # if defined (GL_NV_texture_multisample)
 #  define glTexImage2DMultisampleCoverageNV gload_glTexImage2DMultisampleCoverageNV
 #  define glTexImage3DMultisampleCoverageNV gload_glTexImage3DMultisampleCoverageNV
@@ -33005,14 +29753,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glTextureImage2DMultisampleCoverageNV gload_glTextureImage2DMultisampleCoverageNV
 #  define glTextureImage3DMultisampleCoverageNV gload_glTextureImage3DMultisampleCoverageNV
 # endif /* GL_NV_texture_multisample */
-# if defined (GL_NV_texture_rectangle)
-# endif /* GL_NV_texture_rectangle */
-# if defined (GL_NV_texture_shader)
-# endif /* GL_NV_texture_shader */
-# if defined (GL_NV_texture_shader2)
-# endif /* GL_NV_texture_shader2 */
-# if defined (GL_NV_texture_shader3)
-# endif /* GL_NV_texture_shader3 */
 # if defined (GL_NV_transform_feedback)
 #  define glBeginTransformFeedbackNV gload_glBeginTransformFeedbackNV
 #  define glEndTransformFeedbackNV gload_glEndTransformFeedbackNV
@@ -33036,8 +29776,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glResumeTransformFeedbackNV gload_glResumeTransformFeedbackNV
 #  define glDrawTransformFeedbackNV gload_glDrawTransformFeedbackNV
 # endif /* GL_NV_transform_feedback2 */
-# if defined (GL_NV_uniform_buffer_unified_memory)
-# endif /* GL_NV_uniform_buffer_unified_memory */
 # if defined (GL_NV_vdpau_interop)
 #  define glVDPAUInitNV gload_glVDPAUInitNV
 #  define glVDPAUFiniNV gload_glVDPAUFiniNV
@@ -33057,8 +29795,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glFlushVertexArrayRangeNV gload_glFlushVertexArrayRangeNV
 #  define glVertexArrayRangeNV gload_glVertexArrayRangeNV
 # endif /* GL_NV_vertex_array_range */
-# if defined (GL_NV_vertex_array_range2)
-# endif /* GL_NV_vertex_array_range2 */
 # if defined (GL_NV_vertex_attrib_integer_64bit)
 #  define glVertexAttribL1i64NV gload_glVertexAttribL1i64NV
 #  define glVertexAttribL2i64NV gload_glVertexAttribL2i64NV
@@ -33160,10 +29896,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glVertexAttribs4svNV gload_glVertexAttribs4svNV
 #  define glVertexAttribs4ubvNV gload_glVertexAttribs4ubvNV
 # endif /* GL_NV_vertex_program */
-# if defined (GL_NV_vertex_program2_option)
-# endif /* GL_NV_vertex_program2_option */
-# if defined (GL_NV_vertex_program3)
-# endif /* GL_NV_vertex_program3 */
 # if defined (GL_NV_vertex_program4)
 #  define glVertexAttribI1iEXT gload_glVertexAttribI1iEXT
 #  define glVertexAttribI2iEXT gload_glVertexAttribI2iEXT
@@ -33220,8 +29952,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 # if defined (GL_NV_viewport_swizzle)
 #  define glViewportSwizzleNV gload_glViewportSwizzleNV
 # endif /* GL_NV_viewport_swizzle */
-# if defined (GL_NV_pack_subimage)
-# endif /* GL_NV_pack_subimage */
 # if defined (GL_OES_EGL_image)
 #  define glEGLImageTargetTexture2DOES gload_glEGLImageTargetTexture2DOES
 #  define glEGLImageTargetRenderbufferStorageOES gload_glEGLImageTargetRenderbufferStorageOES
@@ -33262,19 +29992,9 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glVertex4bOES gload_glVertex4bOES
 #  define glVertex4bvOES gload_glVertex4bvOES
 # endif /* GL_OES_byte_coordinates */
-# if defined (GL_OES_compressed_ETC1_RGB8_texture)
-# endif /* GL_OES_compressed_ETC1_RGB8_texture */
-# if defined (GL_OES_compressed_paletted_texture)
-# endif /* GL_OES_compressed_paletted_texture */
 # if defined (GL_OES_copy_image)
 #  define glCopyImageSubDataOES gload_glCopyImageSubDataOES
 # endif /* GL_OES_copy_image */
-# if defined (GL_OES_depth24)
-# endif /* GL_OES_depth24 */
-# if defined (GL_OES_depth32)
-# endif /* GL_OES_depth32 */
-# if defined (GL_OES_depth_texture)
-# endif /* GL_OES_depth_texture */
 # if defined (GL_OES_draw_buffers_indexed)
 #  define glEnableiOES gload_glEnableiOES
 #  define glDisableiOES gload_glDisableiOES
@@ -33301,8 +30021,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glDrawTexfOES gload_glDrawTexfOES
 #  define glDrawTexfvOES gload_glDrawTexfvOES
 # endif /* GL_OES_draw_texture */
-# if defined (GL_OES_element_index_uint)
-# endif /* GL_OES_element_index_uint */
 # if defined (GL_OES_fixed_point)
 #  define glAlphaFuncxOES gload_glAlphaFuncxOES
 #  define glClearColorxOES gload_glClearColorxOES
@@ -33412,8 +30130,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glVertex4xOES gload_glVertex4xOES
 #  define glVertex4xvOES gload_glVertex4xvOES
 # endif /* GL_OES_fixed_point */
-# if defined (GL_OES_fragment_precision_high)
-# endif /* GL_OES_fragment_precision_high */
 # if defined (GL_OES_framebuffer_object)
 #  define glIsRenderbufferOES gload_glIsRenderbufferOES
 #  define glBindRenderbufferOES gload_glBindRenderbufferOES
@@ -33443,38 +30159,24 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glUnmapBufferOES gload_glUnmapBufferOES
 #  define glGetBufferPointervOES gload_glGetBufferPointervOES
 # endif /* GL_OES_mapbuffer */
-# if defined (GL_OES_matrix_get)
-# endif /* GL_OES_matrix_get */
 # if defined (GL_OES_matrix_palette)
 #  define glCurrentPaletteMatrixOES gload_glCurrentPaletteMatrixOES
 #  define glLoadPaletteFromModelViewMatrixOES gload_glLoadPaletteFromModelViewMatrixOES
 #  define glMatrixIndexPointerOES gload_glMatrixIndexPointerOES
 #  define glWeightPointerOES gload_glWeightPointerOES
 # endif /* GL_OES_matrix_palette */
-# if defined (GL_OES_packed_depth_stencil)
-# endif /* GL_OES_packed_depth_stencil */
 # if defined (GL_OES_point_size_array)
 #  define glPointSizePointerOES gload_glPointSizePointerOES
 # endif /* GL_OES_point_size_array */
-# if defined (GL_OES_point_sprite)
-# endif /* GL_OES_point_sprite */
 # if defined (GL_OES_primitive_bounding_box)
 #  define glPrimitiveBoundingBoxOES gload_glPrimitiveBoundingBoxOES
 # endif /* GL_OES_primitive_bounding_box */
 # if defined (GL_OES_query_matrix)
 #  define glQueryMatrixxOES gload_glQueryMatrixxOES
 # endif /* GL_OES_query_matrix */
-# if defined (GL_OES_read_format)
-# endif /* GL_OES_read_format */
-# if defined (GL_OES_required_internalformat)
-# endif /* GL_OES_required_internalformat */
-# if defined (GL_OES_rgb8_rgba8)
-# endif /* GL_OES_rgb8_rgba8 */
 # if defined (GL_OES_sample_shading)
 #  define glMinSampleShadingOES gload_glMinSampleShadingOES
 # endif /* GL_OES_sample_shading */
-# if defined (GL_OES_shader_multisample_interpolation)
-# endif /* GL_OES_shader_multisample_interpolation */
 # if defined (GL_OES_single_precision)
 #  define glClearDepthfOES gload_glClearDepthfOES
 #  define glClipPlanefOES gload_glClipPlanefOES
@@ -33483,18 +30185,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glGetClipPlanefOES gload_glGetClipPlanefOES
 #  define glOrthofOES gload_glOrthofOES
 # endif /* GL_OES_single_precision */
-# if defined (GL_OES_standard_derivatives)
-# endif /* GL_OES_standard_derivatives */
-# if defined (GL_OES_stencil1)
-# endif /* GL_OES_stencil1 */
-# if defined (GL_OES_stencil4)
-# endif /* GL_OES_stencil4 */
-# if defined (GL_OES_stencil8)
-# endif /* GL_OES_stencil8 */
-# if defined (GL_OES_stencil_wrap)
-# endif /* GL_OES_stencil_wrap */
-# if defined (GL_OES_surfaceless_context)
-# endif /* GL_OES_surfaceless_context */
 # if defined (GL_OES_tessellation_shader)
 #  define glPatchParameteriOES gload_glPatchParameteriOES
 # endif /* GL_OES_tessellation_shader */
@@ -33520,8 +30210,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glTexBufferOES gload_glTexBufferOES
 #  define glTexBufferRangeOES gload_glTexBufferRangeOES
 # endif /* GL_OES_texture_buffer */
-# if defined (GL_OES_texture_compression_astc)
-# endif /* GL_OES_texture_compression_astc */
 # if defined (GL_OES_texture_cube_map)
 #  define glTexGenfOES gload_glTexGenfOES
 #  define glTexGenfvOES gload_glTexGenfvOES
@@ -33533,16 +30221,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glGetTexGenivOES gload_glGetTexGenivOES
 #  define glGetTexGenxvOES gload_glGetTexGenxvOES
 # endif /* GL_OES_texture_cube_map */
-# if defined (GL_OES_texture_cube_map_array)
-# endif /* GL_OES_texture_cube_map_array */
-# if defined (GL_OES_texture_float)
-# endif /* GL_OES_texture_float */
-# if defined (GL_OES_texture_half_float)
-# endif /* GL_OES_texture_half_float */
-# if defined (GL_OES_texture_mirrored_repeat)
-# endif /* GL_OES_texture_mirrored_repeat */
-# if defined (GL_OES_texture_stencil8)
-# endif /* GL_OES_texture_stencil8 */
 # if defined (GL_OES_texture_storage_multisample_2d_array)
 #  define glTexStorage3DMultisampleOES gload_glTexStorage3DMultisampleOES
 # endif /* GL_OES_texture_storage_multisample_2d_array */
@@ -33555,10 +30233,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glGenVertexArraysOES gload_glGenVertexArraysOES
 #  define glIsVertexArrayOES gload_glIsVertexArrayOES
 # endif /* GL_OES_vertex_array_object */
-# if defined (GL_OES_vertex_half_float)
-# endif /* GL_OES_vertex_half_float */
-# if defined (GL_OES_vertex_type_10_10_10_2)
-# endif /* GL_OES_vertex_type_10_10_10_2 */
 # if defined (GL_OES_viewport_array)
 #  define glViewportArrayvOES gload_glViewportArrayvOES
 #  define glViewportIndexedfOES gload_glViewportIndexedfOES
@@ -33573,12 +30247,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glDisableiOES gload_glDisableiOES
 #  define glIsEnablediOES gload_glIsEnablediOES
 # endif /* GL_OES_viewport_array */
-# if defined (GL_OML_interlace)
-# endif /* GL_OML_interlace */
-# if defined (GL_OML_resample)
-# endif /* GL_OML_resample */
-# if defined (GL_OML_subsample)
-# endif /* GL_OML_subsample */
 # if defined (GL_OVR_multiview)
 #  define glFramebufferTextureMultiviewOVR gload_glFramebufferTextureMultiviewOVR
 #  define glNamedFramebufferTextureMultiviewOVR gload_glNamedFramebufferTextureMultiviewOVR
@@ -33589,13 +30257,9 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 # if defined (GL_PGI_misc_hints)
 #  define glHintPGI gload_glHintPGI
 # endif /* GL_PGI_misc_hints */
-# if defined (GL_PGI_vertex_hints)
-# endif /* GL_PGI_vertex_hints */
 # if defined (GL_QCOM_alpha_test)
 #  define glAlphaFuncQCOM gload_glAlphaFuncQCOM
 # endif /* GL_QCOM_alpha_test */
-# if defined (GL_QCOM_binning_control)
-# endif /* GL_QCOM_binning_control */
 # if defined (GL_QCOM_driver_control)
 #  define glGetDriverControlsQCOM gload_glGetDriverControlsQCOM
 #  define glGetDriverControlStringQCOM gload_glGetDriverControlStringQCOM
@@ -33632,16 +30296,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 # if defined (GL_QCOM_texture_foveated)
 #  define glTextureFoveationParametersQCOM gload_glTextureFoveationParametersQCOM
 # endif /* GL_QCOM_texture_foveated */
-# if defined (GL_QCOM_texture_foveated2)
-# endif /* GL_QCOM_texture_foveated2 */
-# if defined (GL_QCOM_texture_foveated_subsampled_layout)
-# endif /* GL_QCOM_texture_foveated_subsampled_layout */
-# if defined (GL_QCOM_ycbcr_degamma)
-# endif /* GL_QCOM_ycbcr_degamma */
-# if defined (GL_QCOM_texture_lod_bias)
-# endif /* GL_QCOM_texture_lod_bias */
-# if defined (GL_QCOM_perfmon_global_mode)
-# endif /* GL_QCOM_perfmon_global_mode */
 # if defined (GL_QCOM_shader_framebuffer_fetch_noncoherent)
 #  define glFramebufferFetchBarrierQCOM gload_glFramebufferFetchBarrierQCOM
 # endif /* GL_QCOM_shader_framebuffer_fetch_noncoherent */
@@ -33652,12 +30306,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glStartTilingQCOM gload_glStartTilingQCOM
 #  define glEndTilingQCOM gload_glEndTilingQCOM
 # endif /* GL_QCOM_tiled_rendering */
-# if defined (GL_QCOM_writeonly_rendering)
-# endif /* GL_QCOM_writeonly_rendering */
-# if defined (GL_REND_screen_coordinates)
-# endif /* GL_REND_screen_coordinates */
-# if defined (GL_S3_s3tc)
-# endif /* GL_S3_s3tc */
 # if defined (GL_SGIS_detail_texture)
 #  define glDetailTexFuncSGIS gload_glDetailTexFuncSGIS
 #  define glGetDetailTexFuncSGIS gload_glGetDetailTexFuncSGIS
@@ -33666,8 +30314,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glFogFuncSGIS gload_glFogFuncSGIS
 #  define glGetFogFuncSGIS gload_glGetFogFuncSGIS
 # endif /* GL_SGIS_fog_function */
-# if defined (GL_SGIS_generate_mipmap)
-# endif /* GL_SGIS_generate_mipmap */
 # if defined (GL_SGIS_multisample)
 #  define glSampleMaskSGIS gload_glSampleMaskSGIS
 #  define glSamplePatternSGIS gload_glSamplePatternSGIS
@@ -33680,8 +30326,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glGetPixelTexGenParameterivSGIS gload_glGetPixelTexGenParameterivSGIS
 #  define glGetPixelTexGenParameterfvSGIS gload_glGetPixelTexGenParameterfvSGIS
 # endif /* GL_SGIS_pixel_texture */
-# if defined (GL_SGIS_point_line_texgen)
-# endif /* GL_SGIS_point_line_texgen */
 # if defined (GL_SGIS_point_parameters)
 #  define glPointParameterfSGIS gload_glPointParameterfSGIS
 #  define glPointParameterfvSGIS gload_glPointParameterfvSGIS
@@ -33694,21 +30338,13 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glTexImage4DSGIS gload_glTexImage4DSGIS
 #  define glTexSubImage4DSGIS gload_glTexSubImage4DSGIS
 # endif /* GL_SGIS_texture4D */
-# if defined (GL_SGIS_texture_border_clamp)
-# endif /* GL_SGIS_texture_border_clamp */
 # if defined (GL_SGIS_texture_color_mask)
 #  define glTextureColorMaskSGIS gload_glTextureColorMaskSGIS
 # endif /* GL_SGIS_texture_color_mask */
-# if defined (GL_SGIS_texture_edge_clamp)
-# endif /* GL_SGIS_texture_edge_clamp */
 # if defined (GL_SGIS_texture_filter4)
 #  define glGetTexFilterFuncSGIS gload_glGetTexFilterFuncSGIS
 #  define glTexFilterFuncSGIS gload_glTexFilterFuncSGIS
 # endif /* GL_SGIS_texture_filter4 */
-# if defined (GL_SGIS_texture_lod)
-# endif /* GL_SGIS_texture_lod */
-# if defined (GL_SGIS_texture_select)
-# endif /* GL_SGIS_texture_select */
 # if defined (GL_SGIX_async)
 #  define glAsyncMarkerSGIX gload_glAsyncMarkerSGIX
 #  define glFinishAsyncSGIX gload_glFinishAsyncSGIX
@@ -33717,25 +30353,9 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glDeleteAsyncMarkersSGIX gload_glDeleteAsyncMarkersSGIX
 #  define glIsAsyncMarkerSGIX gload_glIsAsyncMarkerSGIX
 # endif /* GL_SGIX_async */
-# if defined (GL_SGIX_async_histogram)
-# endif /* GL_SGIX_async_histogram */
-# if defined (GL_SGIX_async_pixel)
-# endif /* GL_SGIX_async_pixel */
-# if defined (GL_SGIX_blend_alpha_minmax)
-# endif /* GL_SGIX_blend_alpha_minmax */
-# if defined (GL_SGIX_calligraphic_fragment)
-# endif /* GL_SGIX_calligraphic_fragment */
-# if defined (GL_SGIX_clipmap)
-# endif /* GL_SGIX_clipmap */
-# if defined (GL_SGIX_convolution_accuracy)
-# endif /* GL_SGIX_convolution_accuracy */
-# if defined (GL_SGIX_depth_texture)
-# endif /* GL_SGIX_depth_texture */
 # if defined (GL_SGIX_flush_raster)
 #  define glFlushRasterSGIX gload_glFlushRasterSGIX
 # endif /* GL_SGIX_flush_raster */
-# if defined (GL_SGIX_fog_offset)
-# endif /* GL_SGIX_fog_offset */
 # if defined (GL_SGIX_fragment_lighting)
 #  define glFragmentColorMaterialSGIX gload_glFragmentColorMaterialSGIX
 #  define glFragmentLightfSGIX gload_glFragmentLightfSGIX
@@ -33770,10 +30390,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glStartInstrumentsSGIX gload_glStartInstrumentsSGIX
 #  define glStopInstrumentsSGIX gload_glStopInstrumentsSGIX
 # endif /* GL_SGIX_instruments */
-# if defined (GL_SGIX_interlace)
-# endif /* GL_SGIX_interlace */
-# if defined (GL_SGIX_ir_instrument1)
-# endif /* GL_SGIX_ir_instrument1 */
 # if defined (GL_SGIX_list_priority)
 #  define glGetListParameterfvSGIX gload_glGetListParameterfvSGIX
 #  define glGetListParameterivSGIX gload_glGetListParameterivSGIX
@@ -33785,8 +30401,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 # if defined (GL_SGIX_pixel_texture)
 #  define glPixelTexGenSGIX gload_glPixelTexGenSGIX
 # endif /* GL_SGIX_pixel_texture */
-# if defined (GL_SGIX_pixel_tiles)
-# endif /* GL_SGIX_pixel_tiles */
 # if defined (GL_SGIX_polynomial_ffd)
 #  define glDeformationMap3dSGIX gload_glDeformationMap3dSGIX
 #  define glDeformationMap3fSGIX gload_glDeformationMap3fSGIX
@@ -33796,43 +30410,15 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 # if defined (GL_SGIX_reference_plane)
 #  define glReferencePlaneSGIX gload_glReferencePlaneSGIX
 # endif /* GL_SGIX_reference_plane */
-# if defined (GL_SGIX_resample)
-# endif /* GL_SGIX_resample */
-# if defined (GL_SGIX_scalebias_hint)
-# endif /* GL_SGIX_scalebias_hint */
-# if defined (GL_SGIX_shadow)
-# endif /* GL_SGIX_shadow */
-# if defined (GL_SGIX_shadow_ambient)
-# endif /* GL_SGIX_shadow_ambient */
 # if defined (GL_SGIX_sprite)
 #  define glSpriteParameterfSGIX gload_glSpriteParameterfSGIX
 #  define glSpriteParameterfvSGIX gload_glSpriteParameterfvSGIX
 #  define glSpriteParameteriSGIX gload_glSpriteParameteriSGIX
 #  define glSpriteParameterivSGIX gload_glSpriteParameterivSGIX
 # endif /* GL_SGIX_sprite */
-# if defined (GL_SGIX_subsample)
-# endif /* GL_SGIX_subsample */
 # if defined (GL_SGIX_tag_sample_buffer)
 #  define glTagSampleBufferSGIX gload_glTagSampleBufferSGIX
 # endif /* GL_SGIX_tag_sample_buffer */
-# if defined (GL_SGIX_texture_add_env)
-# endif /* GL_SGIX_texture_add_env */
-# if defined (GL_SGIX_texture_coordinate_clamp)
-# endif /* GL_SGIX_texture_coordinate_clamp */
-# if defined (GL_SGIX_texture_lod_bias)
-# endif /* GL_SGIX_texture_lod_bias */
-# if defined (GL_SGIX_texture_multi_buffer)
-# endif /* GL_SGIX_texture_multi_buffer */
-# if defined (GL_SGIX_texture_scale_bias)
-# endif /* GL_SGIX_texture_scale_bias */
-# if defined (GL_SGIX_vertex_preclip)
-# endif /* GL_SGIX_vertex_preclip */
-# if defined (GL_SGIX_ycrcb)
-# endif /* GL_SGIX_ycrcb */
-# if defined (GL_SGIX_ycrcba)
-# endif /* GL_SGIX_ycrcba */
-# if defined (GL_SGI_color_matrix)
-# endif /* GL_SGI_color_matrix */
 # if defined (GL_SGI_color_table)
 #  define glColorTableSGI gload_glColorTableSGI
 #  define glColorTableParameterfvSGI gload_glColorTableParameterfvSGI
@@ -33842,13 +30428,9 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glGetColorTableParameterfvSGI gload_glGetColorTableParameterfvSGI
 #  define glGetColorTableParameterivSGI gload_glGetColorTableParameterivSGI
 # endif /* GL_SGI_color_table */
-# if defined (GL_SGI_texture_color_table)
-# endif /* GL_SGI_texture_color_table */
 # if defined (GL_SUNX_constant_data)
 #  define glFinishTextureSUNX gload_glFinishTextureSUNX
 # endif /* GL_SUNX_constant_data */
-# if defined (GL_SUN_convolution_border_modes)
-# endif /* GL_SUN_convolution_border_modes */
 # if defined (GL_SUN_global_alpha)
 #  define glGlobalAlphaFactorbSUN gload_glGlobalAlphaFactorbSUN
 #  define glGlobalAlphaFactorsSUN gload_glGlobalAlphaFactorsSUN
@@ -33862,8 +30444,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 # if defined (GL_SUN_mesh_array)
 #  define glDrawMeshArraysSUN gload_glDrawMeshArraysSUN
 # endif /* GL_SUN_mesh_array */
-# if defined (GL_SUN_slice_accum)
-# endif /* GL_SUN_slice_accum */
 # if defined (GL_SUN_triangle_list)
 #  define glReplacementCodeuiSUN gload_glReplacementCodeuiSUN
 #  define glReplacementCodeusSUN gload_glReplacementCodeusSUN
@@ -33915,12 +30495,6 @@ extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glR
 #  define glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fSUN gload_glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fSUN
 #  define glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fvSUN gload_glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fvSUN
 # endif /* GL_SUN_vertex */
-# if defined (GL_VIV_shader_binary)
-# endif /* GL_VIV_shader_binary */
-# if defined (GL_WIN_phong_shading)
-# endif /* GL_WIN_phong_shading */
-# if defined (GL_WIN_specular_fog)
-# endif /* GL_WIN_specular_fog */
 #
 # if defined (__cplusplus)
 
@@ -35809,31 +32383,11 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glViewport", (void **) &gload_glViewport },
 
 # endif /* GL_SC_VERSION_2_0 */
-# if defined (GL_3DFX_multisample)
-
-
-# endif /* GL_3DFX_multisample */
 # if defined (GL_3DFX_tbuffer)
 
    { "glTbufferMask3DFX", (void **) &gload_glTbufferMask3DFX },
 
 # endif /* GL_3DFX_tbuffer */
-# if defined (GL_3DFX_texture_compression_FXT1)
-
-
-# endif /* GL_3DFX_texture_compression_FXT1 */
-# if defined (GL_AMD_blend_minmax_factor)
-
-
-# endif /* GL_AMD_blend_minmax_factor */
-# if defined (GL_AMD_compressed_3DC_texture)
-
-
-# endif /* GL_AMD_compressed_3DC_texture */
-# if defined (GL_AMD_compressed_ATC_texture)
-
-
-# endif /* GL_AMD_compressed_ATC_texture */
 # if defined (GL_AMD_debug_output)
 
    { "glDebugMessageEnableAMD", (void **) &gload_glDebugMessageEnableAMD },
@@ -35842,10 +32396,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glGetDebugMessageLogAMD", (void **) &gload_glGetDebugMessageLogAMD },
 
 # endif /* GL_AMD_debug_output */
-# if defined (GL_AMD_depth_clamp_separate)
-
-
-# endif /* GL_AMD_depth_clamp_separate */
 # if defined (GL_AMD_draw_buffers_blend)
 
    { "glBlendFuncIndexedAMD", (void **) &gload_glBlendFuncIndexedAMD },
@@ -35868,10 +32418,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glGetNamedFramebufferParameterfvAMD", (void **) &gload_glGetNamedFramebufferParameterfvAMD },
 
 # endif /* GL_AMD_framebuffer_sample_positions */
-# if defined (GL_AMD_gpu_shader_half_float)
-
-
-# endif /* GL_AMD_gpu_shader_half_float */
 # if defined (GL_AMD_gpu_shader_int64)
 
    { "glUniform1i64NV", (void **) &gload_glUniform1i64NV },
@@ -35948,27 +32494,11 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glGetPerfMonitorCounterDataAMD", (void **) &gload_glGetPerfMonitorCounterDataAMD },
 
 # endif /* GL_AMD_performance_monitor */
-# if defined (GL_AMD_pinned_memory)
-
-
-# endif /* GL_AMD_pinned_memory */
-# if defined (GL_AMD_program_binary_Z400)
-
-
-# endif /* GL_AMD_program_binary_Z400 */
-# if defined (GL_AMD_query_buffer_object)
-
-
-# endif /* GL_AMD_query_buffer_object */
 # if defined (GL_AMD_sample_positions)
 
    { "glSetMultisamplefvAMD", (void **) &gload_glSetMultisamplefvAMD },
 
 # endif /* GL_AMD_sample_positions */
-# if defined (GL_AMD_seamless_cubemap_per_texture)
-
-
-# endif /* GL_AMD_seamless_cubemap_per_texture */
 # if defined (GL_AMD_sparse_texture)
 
    { "glTexStorageSparseAMD", (void **) &gload_glTexStorageSparseAMD },
@@ -35980,24 +32510,12 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glStencilOpValueAMD", (void **) &gload_glStencilOpValueAMD },
 
 # endif /* GL_AMD_stencil_operation_extended */
-# if defined (GL_AMD_transform_feedback4)
-
-
-# endif /* GL_AMD_transform_feedback4 */
 # if defined (GL_AMD_vertex_shader_tessellator)
 
    { "glTessellationFactorAMD", (void **) &gload_glTessellationFactorAMD },
    { "glTessellationModeAMD", (void **) &gload_glTessellationModeAMD },
 
 # endif /* GL_AMD_vertex_shader_tessellator */
-# if defined (GL_ANDROID_extension_pack_es31a)
-
-
-# endif /* GL_ANDROID_extension_pack_es31a */
-# if defined (GL_ANGLE_depth_texture)
-
-
-# endif /* GL_ANGLE_depth_texture */
 # if defined (GL_ANGLE_framebuffer_blit)
 
    { "glBlitFramebufferANGLE", (void **) &gload_glBlitFramebufferANGLE },
@@ -36015,43 +32533,11 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glVertexAttribDivisorANGLE", (void **) &gload_glVertexAttribDivisorANGLE },
 
 # endif /* GL_ANGLE_instanced_arrays */
-# if defined (GL_ANGLE_pack_reverse_row_order)
-
-
-# endif /* GL_ANGLE_pack_reverse_row_order */
-# if defined (GL_ANGLE_program_binary)
-
-
-# endif /* GL_ANGLE_program_binary */
-# if defined (GL_ANGLE_texture_compression_dxt3)
-
-
-# endif /* GL_ANGLE_texture_compression_dxt3 */
-# if defined (GL_ANGLE_texture_compression_dxt5)
-
-
-# endif /* GL_ANGLE_texture_compression_dxt5 */
-# if defined (GL_ANGLE_texture_usage)
-
-
-# endif /* GL_ANGLE_texture_usage */
 # if defined (GL_ANGLE_translated_shader_source)
 
    { "glGetTranslatedShaderSourceANGLE", (void **) &gload_glGetTranslatedShaderSourceANGLE },
 
 # endif /* GL_ANGLE_translated_shader_source */
-# if defined (GL_APPLE_aux_depth_stencil)
-
-
-# endif /* GL_APPLE_aux_depth_stencil */
-# if defined (GL_APPLE_client_storage)
-
-
-# endif /* GL_APPLE_client_storage */
-# if defined (GL_APPLE_clip_distance)
-
-
-# endif /* GL_APPLE_clip_distance */
 # if defined (GL_APPLE_copy_texture_levels)
 
    { "glCopyTextureLevelsAPPLE", (void **) &gload_glCopyTextureLevelsAPPLE },
@@ -36078,10 +32564,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glFinishObjectAPPLE", (void **) &gload_glFinishObjectAPPLE },
 
 # endif /* GL_APPLE_fence */
-# if defined (GL_APPLE_float_pixels)
-
-
-# endif /* GL_APPLE_float_pixels */
 # if defined (GL_APPLE_flush_buffer_range)
 
    { "glBufferParameteriAPPLE", (void **) &gload_glBufferParameteriAPPLE },
@@ -36105,14 +32587,6 @@ static struct s_nameaddr    g_nameaddr[] = {
 
 
 # endif /* GL_APPLE_rgb_422 */
-# if defined (GL_APPLE_row_bytes)
-
-
-# endif /* GL_APPLE_row_bytes */
-# if defined (GL_APPLE_specular_vector)
-
-
-# endif /* GL_APPLE_specular_vector */
 # if defined (GL_APPLE_sync)
 
    { "glFenceSyncAPPLE", (void **) &gload_glFenceSyncAPPLE },
@@ -36128,24 +32602,12 @@ static struct s_nameaddr    g_nameaddr[] = {
 
 
 # endif /* GL_APPLE_texture_format_BGRA8888 */
-# if defined (GL_APPLE_texture_max_level)
-
-
-# endif /* GL_APPLE_texture_max_level */
-# if defined (GL_APPLE_texture_packed_float)
-
-
-# endif /* GL_APPLE_texture_packed_float */
 # if defined (GL_APPLE_texture_range)
 
    { "glTextureRangeAPPLE", (void **) &gload_glTextureRangeAPPLE },
    { "glGetTexParameterPointervAPPLE", (void **) &gload_glGetTexParameterPointervAPPLE },
 
 # endif /* GL_APPLE_texture_range */
-# if defined (GL_APPLE_transform_hint)
-
-
-# endif /* GL_APPLE_transform_hint */
 # if defined (GL_APPLE_vertex_array_object)
 
    { "glBindVertexArrayAPPLE", (void **) &gload_glBindVertexArrayAPPLE },
@@ -36172,10 +32634,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glMapVertexAttrib2fAPPLE", (void **) &gload_glMapVertexAttrib2fAPPLE },
 
 # endif /* GL_APPLE_vertex_program_evaluators */
-# if defined (GL_APPLE_ycbcr_422)
-
-
-# endif /* GL_APPLE_ycbcr_422 */
 # if defined (GL_ARB_ES2_compatibility)
 
    { "glReleaseShaderCompiler", (void **) &gload_glReleaseShaderCompiler },
@@ -36195,10 +32653,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glPrimitiveBoundingBoxARB", (void **) &gload_glPrimitiveBoundingBoxARB },
 
 # endif /* GL_ARB_ES3_2_compatibility */
-# if defined (GL_ARB_ES3_compatibility)
-
-
-# endif /* GL_ARB_ES3_compatibility */
 # if defined (GL_ARB_base_instance)
 
    { "glDrawArraysInstancedBaseInstance", (void **) &gload_glDrawArraysInstancedBaseInstance },
@@ -36264,14 +32718,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glClampColorARB", (void **) &gload_glClampColorARB },
 
 # endif /* GL_ARB_color_buffer_float */
-# if defined (GL_ARB_compatibility)
-
-
-# endif /* GL_ARB_compatibility */
-# if defined (GL_ARB_compressed_texture_pixel_storage)
-
-
-# endif /* GL_ARB_compressed_texture_pixel_storage */
 # if defined (GL_ARB_compute_shader)
 
    { "glDispatchCompute", (void **) &gload_glDispatchCompute },
@@ -36283,10 +32729,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glDispatchComputeGroupSizeARB", (void **) &gload_glDispatchComputeGroupSizeARB },
 
 # endif /* GL_ARB_compute_variable_group_size */
-# if defined (GL_ARB_conditional_render_inverted)
-
-
-# endif /* GL_ARB_conditional_render_inverted */
 # if defined (GL_ARB_copy_buffer)
 
    { "glCopyBufferSubData", (void **) &gload_glCopyBufferSubData },
@@ -36297,10 +32739,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glCopyImageSubData", (void **) &gload_glCopyImageSubData },
 
 # endif /* GL_ARB_copy_image */
-# if defined (GL_ARB_cull_distance)
-
-
-# endif /* GL_ARB_cull_distance */
 # if defined (GL_ARB_debug_output)
 
    { "glDebugMessageControlARB", (void **) &gload_glDebugMessageControlARB },
@@ -36309,18 +32747,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glGetDebugMessageLogARB", (void **) &gload_glGetDebugMessageLogARB },
 
 # endif /* GL_ARB_debug_output */
-# if defined (GL_ARB_depth_buffer_float)
-
-
-# endif /* GL_ARB_depth_buffer_float */
-# if defined (GL_ARB_depth_clamp)
-
-
-# endif /* GL_ARB_depth_clamp */
-# if defined (GL_ARB_depth_texture)
-
-
-# endif /* GL_ARB_depth_texture */
 # if defined (GL_ARB_direct_state_access)
 
    { "glCreateTransformFeedbacks", (void **) &gload_glCreateTransformFeedbacks },
@@ -36455,14 +32881,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glDrawElementsInstancedARB", (void **) &gload_glDrawElementsInstancedARB },
 
 # endif /* GL_ARB_draw_instanced */
-# if defined (GL_ARB_enhanced_layouts)
-
-
-# endif /* GL_ARB_enhanced_layouts */
-# if defined (GL_ARB_explicit_uniform_location)
-
-
-# endif /* GL_ARB_explicit_uniform_location */
 # if defined (GL_ARB_fragment_program)
 
    { "glProgramStringARB", (void **) &gload_glProgramStringARB },
@@ -36486,10 +32904,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glIsProgramARB", (void **) &gload_glIsProgramARB },
 
 # endif /* GL_ARB_fragment_program */
-# if defined (GL_ARB_fragment_shader)
-
-
-# endif /* GL_ARB_fragment_shader */
 # if defined (GL_ARB_framebuffer_no_attachments)
 
    { "glFramebufferParameteri", (void **) &gload_glFramebufferParameteri },
@@ -36520,10 +32934,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glFramebufferTextureLayer", (void **) &gload_glFramebufferTextureLayer },
 
 # endif /* GL_ARB_framebuffer_object */
-# if defined (GL_ARB_framebuffer_sRGB)
-
-
-# endif /* GL_ARB_framebuffer_sRGB */
 # if defined (GL_ARB_geometry_shader4)
 
    { "glProgramParameteriARB", (void **) &gload_glProgramParameteriARB },
@@ -36550,10 +32960,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glSpecializeShaderARB", (void **) &gload_glSpecializeShaderARB },
 
 # endif /* GL_ARB_gl_spirv */
-# if defined (GL_ARB_gpu_shader5)
-
-
-# endif /* GL_ARB_gpu_shader5 */
 # if defined (GL_ARB_gpu_shader_fp64)
 
    { "glUniform1d", (void **) &gload_glUniform1d },
@@ -36616,14 +33022,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glProgramUniform4ui64vARB", (void **) &gload_glProgramUniform4ui64vARB },
 
 # endif /* GL_ARB_gpu_shader_int64 */
-# if defined (GL_ARB_half_float_pixel)
-
-
-# endif /* GL_ARB_half_float_pixel */
-# if defined (GL_ARB_half_float_vertex)
-
-
-# endif /* GL_ARB_half_float_vertex */
 # if defined (GL_ARB_imaging)
 
    { "glBlendColor", (void **) &gload_glBlendColor },
@@ -36693,10 +33091,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glInvalidateSubFramebuffer", (void **) &gload_glInvalidateSubFramebuffer },
 
 # endif /* GL_ARB_invalidate_subdata */
-# if defined (GL_ARB_map_buffer_alignment)
-
-
-# endif /* GL_ARB_map_buffer_alignment */
 # if defined (GL_ARB_map_buffer_range)
 
    { "glMapBufferRange", (void **) &gload_glMapBufferRange },
@@ -36783,33 +33177,17 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glGetQueryObjectuivARB", (void **) &gload_glGetQueryObjectuivARB },
 
 # endif /* GL_ARB_occlusion_query */
-# if defined (GL_ARB_occlusion_query2)
-
-
-# endif /* GL_ARB_occlusion_query2 */
 # if defined (GL_ARB_parallel_shader_compile)
 
    { "glMaxShaderCompilerThreadsARB", (void **) &gload_glMaxShaderCompilerThreadsARB },
 
 # endif /* GL_ARB_parallel_shader_compile */
-# if defined (GL_ARB_pipeline_statistics_query)
-
-
-# endif /* GL_ARB_pipeline_statistics_query */
-# if defined (GL_ARB_pixel_buffer_object)
-
-
-# endif /* GL_ARB_pixel_buffer_object */
 # if defined (GL_ARB_point_parameters)
 
    { "glPointParameterfARB", (void **) &gload_glPointParameterfARB },
    { "glPointParameterfvARB", (void **) &gload_glPointParameterfvARB },
 
 # endif /* GL_ARB_point_parameters */
-# if defined (GL_ARB_point_sprite)
-
-
-# endif /* GL_ARB_point_sprite */
 # if defined (GL_ARB_polygon_offset_clamp)
 
    { "glPolygonOffsetClamp", (void **) &gload_glPolygonOffsetClamp },
@@ -36830,10 +33208,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glProvokingVertex", (void **) &gload_glProvokingVertex },
 
 # endif /* GL_ARB_provoking_vertex */
-# if defined (GL_ARB_query_buffer_object)
-
-
-# endif /* GL_ARB_query_buffer_object */
 # if defined (GL_ARB_robustness)
 
    { "glGetGraphicsResetStatusARB", (void **) &gload_glGetGraphicsResetStatusARB },
@@ -36888,14 +33262,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glGetSamplerParameterIuiv", (void **) &gload_glGetSamplerParameterIuiv },
 
 # endif /* GL_ARB_sampler_objects */
-# if defined (GL_ARB_seamless_cube_map)
-
-
-# endif /* GL_ARB_seamless_cube_map */
-# if defined (GL_ARB_seamless_cubemap_per_texture)
-
-
-# endif /* GL_ARB_seamless_cubemap_per_texture */
 # if defined (GL_ARB_separate_shader_objects)
 
    { "glUseProgramStages", (void **) &gload_glUseProgramStages },
@@ -37032,10 +33398,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glGetProgramStageiv", (void **) &gload_glGetProgramStageiv },
 
 # endif /* GL_ARB_shader_subroutine */
-# if defined (GL_ARB_shading_language_100)
-
-
-# endif /* GL_ARB_shading_language_100 */
 # if defined (GL_ARB_shading_language_include)
 
    { "glNamedStringARB", (void **) &gload_glNamedStringARB },
@@ -37046,14 +33408,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glGetNamedStringivARB", (void **) &gload_glGetNamedStringivARB },
 
 # endif /* GL_ARB_shading_language_include */
-# if defined (GL_ARB_shadow)
-
-
-# endif /* GL_ARB_shadow */
-# if defined (GL_ARB_shadow_ambient)
-
-
-# endif /* GL_ARB_shadow_ambient */
 # if defined (GL_ARB_sparse_buffer)
 
    { "glBufferPageCommitmentARB", (void **) &gload_glBufferPageCommitmentARB },
@@ -37066,14 +33420,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glTexPageCommitmentARB", (void **) &gload_glTexPageCommitmentARB },
 
 # endif /* GL_ARB_sparse_texture */
-# if defined (GL_ARB_spirv_extensions)
-
-
-# endif /* GL_ARB_spirv_extensions */
-# if defined (GL_ARB_stencil_texturing)
-
-
-# endif /* GL_ARB_stencil_texturing */
 # if defined (GL_ARB_sync)
 
    { "glFenceSync", (void **) &gload_glFenceSync },
@@ -37096,19 +33442,11 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glTextureBarrier", (void **) &gload_glTextureBarrier },
 
 # endif /* GL_ARB_texture_barrier */
-# if defined (GL_ARB_texture_border_clamp)
-
-
-# endif /* GL_ARB_texture_border_clamp */
 # if defined (GL_ARB_texture_buffer_object)
 
    { "glTexBufferARB", (void **) &gload_glTexBufferARB },
 
 # endif /* GL_ARB_texture_buffer_object */
-# if defined (GL_ARB_texture_buffer_object_rgb32)
-
-
-# endif /* GL_ARB_texture_buffer_object_rgb32 */
 # if defined (GL_ARB_texture_buffer_range)
 
    { "glTexBufferRange", (void **) &gload_glTexBufferRange },
@@ -37125,54 +33463,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glGetCompressedTexImageARB", (void **) &gload_glGetCompressedTexImageARB },
 
 # endif /* GL_ARB_texture_compression */
-# if defined (GL_ARB_texture_compression_bptc)
-
-
-# endif /* GL_ARB_texture_compression_bptc */
-# if defined (GL_ARB_texture_compression_rgtc)
-
-
-# endif /* GL_ARB_texture_compression_rgtc */
-# if defined (GL_ARB_texture_cube_map)
-
-
-# endif /* GL_ARB_texture_cube_map */
-# if defined (GL_ARB_texture_cube_map_array)
-
-
-# endif /* GL_ARB_texture_cube_map_array */
-# if defined (GL_ARB_texture_env_combine)
-
-
-# endif /* GL_ARB_texture_env_combine */
-# if defined (GL_ARB_texture_env_dot3)
-
-
-# endif /* GL_ARB_texture_env_dot3 */
-# if defined (GL_ARB_texture_filter_anisotropic)
-
-
-# endif /* GL_ARB_texture_filter_anisotropic */
-# if defined (GL_ARB_texture_filter_minmax)
-
-
-# endif /* GL_ARB_texture_filter_minmax */
-# if defined (GL_ARB_texture_float)
-
-
-# endif /* GL_ARB_texture_float */
-# if defined (GL_ARB_texture_gather)
-
-
-# endif /* GL_ARB_texture_gather */
-# if defined (GL_ARB_texture_mirror_clamp_to_edge)
-
-
-# endif /* GL_ARB_texture_mirror_clamp_to_edge */
-# if defined (GL_ARB_texture_mirrored_repeat)
-
-
-# endif /* GL_ARB_texture_mirrored_repeat */
 # if defined (GL_ARB_texture_multisample)
 
    { "glTexImage2DMultisample", (void **) &gload_glTexImage2DMultisample },
@@ -37181,22 +33471,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glSampleMaski", (void **) &gload_glSampleMaski },
 
 # endif /* GL_ARB_texture_multisample */
-# if defined (GL_ARB_texture_rectangle)
-
-
-# endif /* GL_ARB_texture_rectangle */
-# if defined (GL_ARB_texture_rg)
-
-
-# endif /* GL_ARB_texture_rg */
-# if defined (GL_ARB_texture_rgb10_a2ui)
-
-
-# endif /* GL_ARB_texture_rgb10_a2ui */
-# if defined (GL_ARB_texture_stencil8)
-
-
-# endif /* GL_ARB_texture_stencil8 */
 # if defined (GL_ARB_texture_storage)
 
    { "glTexStorage1D", (void **) &gload_glTexStorage1D },
@@ -37210,10 +33484,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glTexStorage3DMultisample", (void **) &gload_glTexStorage3DMultisample },
 
 # endif /* GL_ARB_texture_storage_multisample */
-# if defined (GL_ARB_texture_swizzle)
-
-
-# endif /* GL_ARB_texture_swizzle */
 # if defined (GL_ARB_texture_view)
 
    { "glTextureView", (void **) &gload_glTextureView },
@@ -37251,10 +33521,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glDrawTransformFeedbackStreamInstanced", (void **) &gload_glDrawTransformFeedbackStreamInstanced },
 
 # endif /* GL_ARB_transform_feedback_instanced */
-# if defined (GL_ARB_transform_feedback_overflow_query)
-
-
-# endif /* GL_ARB_transform_feedback_overflow_query */
 # if defined (GL_ARB_transpose_matrix)
 
    { "glLoadTransposeMatrixfARB", (void **) &gload_glLoadTransposeMatrixfARB },
@@ -37277,10 +33543,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glGetIntegeri_v", (void **) &gload_glGetIntegeri_v },
 
 # endif /* GL_ARB_uniform_buffer_object */
-# if defined (GL_ARB_vertex_array_bgra)
-
-
-# endif /* GL_ARB_vertex_array_bgra */
 # if defined (GL_ARB_vertex_array_object)
 
    { "glBindVertexArray", (void **) &gload_glBindVertexArray },
@@ -37458,10 +33720,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glGetVertexAttribPointervARB", (void **) &gload_glGetVertexAttribPointervARB },
 
 # endif /* GL_ARB_vertex_shader */
-# if defined (GL_ARB_vertex_type_10f_11f_11f_rev)
-
-
-# endif /* GL_ARB_vertex_type_10f_11f_11f_rev */
 # if defined (GL_ARB_vertex_type_2_10_10_10_rev)
 
    { "glVertexAttribP1ui", (void **) &gload_glVertexAttribP1ui },
@@ -37540,27 +33798,11 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glWindowPos3svARB", (void **) &gload_glWindowPos3svARB },
 
 # endif /* GL_ARB_window_pos */
-# if defined (GL_ARM_mali_program_binary)
-
-
-# endif /* GL_ARM_mali_program_binary */
-# if defined (GL_ARM_mali_shader_binary)
-
-
-# endif /* GL_ARM_mali_shader_binary */
 # if defined (GL_ARM_shader_core_properties)
 
    { "glMaxActiveShaderCoresARM", (void **) &gload_glMaxActiveShaderCoresARM },
 
 # endif /* GL_ARM_shader_core_properties */
-# if defined (GL_ARM_shader_framebuffer_fetch)
-
-
-# endif /* GL_ARM_shader_framebuffer_fetch */
-# if defined (GL_ARM_texture_unnormalized_coordinates)
-
-
-# endif /* GL_ARM_texture_unnormalized_coordinates */
 # if defined (GL_ATI_draw_buffers)
 
    { "glDrawBuffersATI", (void **) &gload_glDrawBuffersATI },
@@ -37605,14 +33847,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glUnmapObjectBufferATI", (void **) &gload_glUnmapObjectBufferATI },
 
 # endif /* GL_ATI_map_object_buffer */
-# if defined (GL_ATI_meminfo)
-
-
-# endif /* GL_ATI_meminfo */
-# if defined (GL_ATI_pixel_format_float)
-
-
-# endif /* GL_ATI_pixel_format_float */
 # if defined (GL_ATI_pn_triangles)
 
    { "glPNTrianglesiATI", (void **) &gload_glPNTrianglesiATI },
@@ -37625,22 +33859,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glStencilFuncSeparateATI", (void **) &gload_glStencilFuncSeparateATI },
 
 # endif /* GL_ATI_separate_stencil */
-# if defined (GL_ATI_text_fragment_shader)
-
-
-# endif /* GL_ATI_text_fragment_shader */
-# if defined (GL_ATI_texture_env_combine3)
-
-
-# endif /* GL_ATI_texture_env_combine3 */
-# if defined (GL_ATI_texture_float)
-
-
-# endif /* GL_ATI_texture_float */
-# if defined (GL_ATI_texture_mirror_once)
-
-
-# endif /* GL_ATI_texture_mirror_once */
 # if defined (GL_ATI_vertex_array_object)
 
    { "glNewObjectBufferATI", (void **) &gload_glNewObjectBufferATI },
@@ -37713,36 +33931,12 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glVertexBlendEnvfATI", (void **) &gload_glVertexBlendEnvfATI },
 
 # endif /* GL_ATI_vertex_streams */
-# if defined (GL_DMP_program_binary)
-
-
-# endif /* GL_DMP_program_binary */
-# if defined (GL_DMP_shader_binary)
-
-
-# endif /* GL_DMP_shader_binary */
-# if defined (GL_EXT_422_pixels)
-
-
-# endif /* GL_EXT_422_pixels */
 # if defined (GL_EXT_EGL_image_storage)
 
    { "glEGLImageTargetTexStorageEXT", (void **) &gload_glEGLImageTargetTexStorageEXT },
    { "glEGLImageTargetTextureStorageEXT", (void **) &gload_glEGLImageTargetTextureStorageEXT },
 
 # endif /* GL_EXT_EGL_image_storage */
-# if defined (GL_EXT_EGL_image_storage_compression)
-
-
-# endif /* GL_EXT_EGL_image_storage_compression */
-# if defined (GL_EXT_YUV_target)
-
-
-# endif /* GL_EXT_YUV_target */
-# if defined (GL_EXT_abgr)
-
-
-# endif /* GL_EXT_abgr */
 # if defined (GL_EXT_base_instance)
 
    { "glDrawArraysInstancedBaseInstanceEXT", (void **) &gload_glDrawArraysInstancedBaseInstanceEXT },
@@ -37750,10 +33944,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glDrawElementsInstancedBaseVertexBaseInstanceEXT", (void **) &gload_glDrawElementsInstancedBaseVertexBaseInstanceEXT },
 
 # endif /* GL_EXT_base_instance */
-# if defined (GL_EXT_bgra)
-
-
-# endif /* GL_EXT_bgra */
 # if defined (GL_EXT_bindable_uniform)
 
    { "glUniformBufferEXT", (void **) &gload_glUniformBufferEXT },
@@ -37789,10 +33979,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glBlendEquationEXT", (void **) &gload_glBlendEquationEXT },
 
 # endif /* GL_EXT_blend_minmax */
-# if defined (GL_EXT_blend_subtract)
-
-
-# endif /* GL_EXT_blend_subtract */
 # if defined (GL_EXT_buffer_storage)
 
    { "glBufferStorageEXT", (void **) &gload_glBufferStorageEXT },
@@ -37809,22 +33995,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glClipControlEXT", (void **) &gload_glClipControlEXT },
 
 # endif /* GL_EXT_clip_control */
-# if defined (GL_EXT_clip_cull_distance)
-
-
-# endif /* GL_EXT_clip_cull_distance */
-# if defined (GL_EXT_clip_volume_hint)
-
-
-# endif /* GL_EXT_clip_volume_hint */
-# if defined (GL_EXT_cmyka)
-
-
-# endif /* GL_EXT_cmyka */
-# if defined (GL_EXT_color_buffer_half_float)
-
-
-# endif /* GL_EXT_color_buffer_half_float */
 # if defined (GL_EXT_color_subtable)
 
    { "glColorSubTableEXT", (void **) &gload_glColorSubTableEXT },
@@ -37918,10 +34088,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glDepthBoundsEXT", (void **) &gload_glDepthBoundsEXT },
 
 # endif /* GL_EXT_depth_bounds_test */
-# if defined (GL_EXT_depth_clamp)
-
-
-# endif /* GL_EXT_depth_clamp */
 # if defined (GL_EXT_direct_state_access)
 
    { "glMatrixLoadfEXT", (void **) &gload_glMatrixLoadfEXT },
@@ -38293,10 +34459,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glRenderbufferStorageMultisampleEXT", (void **) &gload_glRenderbufferStorageMultisampleEXT },
 
 # endif /* GL_EXT_framebuffer_multisample */
-# if defined (GL_EXT_framebuffer_multisample_blit_scaled)
-
-
-# endif /* GL_EXT_framebuffer_multisample_blit_scaled */
 # if defined (GL_EXT_framebuffer_object)
 
    { "glIsRenderbufferEXT", (void **) &gload_glIsRenderbufferEXT },
@@ -38318,10 +34480,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glGenerateMipmapEXT", (void **) &gload_glGenerateMipmapEXT },
 
 # endif /* GL_EXT_framebuffer_object */
-# if defined (GL_EXT_framebuffer_sRGB)
-
-
-# endif /* GL_EXT_framebuffer_sRGB */
 # if defined (GL_EXT_geometry_shader)
 
    { "glFramebufferTextureEXT", (void **) &gload_glFramebufferTextureEXT },
@@ -38390,10 +34548,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glResetMinmaxEXT", (void **) &gload_glResetMinmaxEXT },
 
 # endif /* GL_EXT_histogram */
-# if defined (GL_EXT_index_array_formats)
-
-
-# endif /* GL_EXT_index_array_formats */
 # if defined (GL_EXT_index_func)
 
    { "glIndexFuncEXT", (void **) &gload_glIndexFuncEXT },
@@ -38484,20 +34638,12 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glSamplePatternEXT", (void **) &gload_glSamplePatternEXT },
 
 # endif /* GL_EXT_multisample */
-# if defined (GL_EXT_multisampled_compatibility)
-
-
-# endif /* GL_EXT_multisampled_compatibility */
 # if defined (GL_EXT_multisampled_render_to_texture)
 
    { "glRenderbufferStorageMultisampleEXT", (void **) &gload_glRenderbufferStorageMultisampleEXT },
    { "glFramebufferTexture2DMultisampleEXT", (void **) &gload_glFramebufferTexture2DMultisampleEXT },
 
 # endif /* GL_EXT_multisampled_render_to_texture */
-# if defined (GL_EXT_multisampled_render_to_texture2)
-
-
-# endif /* GL_EXT_multisampled_render_to_texture2 */
 # if defined (GL_EXT_multiview_draw_buffers)
 
    { "glReadBufferIndexedEXT", (void **) &gload_glReadBufferIndexedEXT },
@@ -38516,18 +34662,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glGetQueryObjectuivEXT", (void **) &gload_glGetQueryObjectuivEXT },
 
 # endif /* GL_EXT_occlusion_query_boolean */
-# if defined (GL_EXT_packed_depth_stencil)
-
-
-# endif /* GL_EXT_packed_depth_stencil */
-# if defined (GL_EXT_packed_float)
-
-
-# endif /* GL_EXT_packed_float */
-# if defined (GL_EXT_packed_pixels)
-
-
-# endif /* GL_EXT_packed_pixels */
 # if defined (GL_EXT_paletted_texture)
 
    { "glColorTableEXT", (void **) &gload_glColorTableEXT },
@@ -38536,10 +34670,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glGetColorTableParameterfvEXT", (void **) &gload_glGetColorTableParameterfvEXT },
 
 # endif /* GL_EXT_paletted_texture */
-# if defined (GL_EXT_pixel_buffer_object)
-
-
-# endif /* GL_EXT_pixel_buffer_object */
 # if defined (GL_EXT_pixel_transform)
 
    { "glPixelTransformParameteriEXT", (void **) &gload_glPixelTransformParameteriEXT },
@@ -38571,36 +34701,16 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glPrimitiveBoundingBoxEXT", (void **) &gload_glPrimitiveBoundingBoxEXT },
 
 # endif /* GL_EXT_primitive_bounding_box */
-# if defined (GL_EXT_protected_textures)
-
-
-# endif /* GL_EXT_protected_textures */
 # if defined (GL_EXT_provoking_vertex)
 
    { "glProvokingVertexEXT", (void **) &gload_glProvokingVertexEXT },
 
 # endif /* GL_EXT_provoking_vertex */
-# if defined (GL_EXT_pvrtc_sRGB)
-
-
-# endif /* GL_EXT_pvrtc_sRGB */
 # if defined (GL_EXT_raster_multisample)
 
    { "glRasterSamplesEXT", (void **) &gload_glRasterSamplesEXT },
 
 # endif /* GL_EXT_raster_multisample */
-# if defined (GL_EXT_read_format_bgra)
-
-
-# endif /* GL_EXT_read_format_bgra */
-# if defined (GL_EXT_render_snorm)
-
-
-# endif /* GL_EXT_render_snorm */
-# if defined (GL_EXT_rescale_normal)
-
-
-# endif /* GL_EXT_rescale_normal */
 # if defined (GL_EXT_robustness)
 
    { "glGetGraphicsResetStatusEXT", (void **) &gload_glGetGraphicsResetStatusEXT },
@@ -38633,14 +34743,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glImportSemaphoreWin32NameEXT", (void **) &gload_glImportSemaphoreWin32NameEXT },
 
 # endif /* GL_EXT_semaphore_win32 */
-# if defined (GL_EXT_sRGB)
-
-
-# endif /* GL_EXT_sRGB */
-# if defined (GL_EXT_sRGB_write_control)
-
-
-# endif /* GL_EXT_sRGB_write_control */
 # if defined (GL_EXT_secondary_color)
 
    { "glSecondaryColor3bEXT", (void **) &gload_glSecondaryColor3bEXT },
@@ -38713,14 +34815,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glProgramUniformMatrix4x3fvEXT", (void **) &gload_glProgramUniformMatrix4x3fvEXT },
 
 # endif /* GL_EXT_separate_shader_objects */
-# if defined (GL_EXT_separate_specular_color)
-
-
-# endif /* GL_EXT_separate_specular_color */
-# if defined (GL_EXT_shader_framebuffer_fetch)
-
-
-# endif /* GL_EXT_shader_framebuffer_fetch */
 # if defined (GL_EXT_shader_framebuffer_fetch_non_coherent)
 
    { "glFramebufferFetchBarrierEXT", (void **) &gload_glFramebufferFetchBarrierEXT },
@@ -38732,10 +34826,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glMemoryBarrierEXT", (void **) &gload_glMemoryBarrierEXT },
 
 # endif /* GL_EXT_shader_image_load_store */
-# if defined (GL_EXT_shader_pixel_local_storage)
-
-
-# endif /* GL_EXT_shader_pixel_local_storage */
 # if defined (GL_EXT_shader_pixel_local_storage2)
 
    { "glFramebufferPixelLocalStorageSizeEXT", (void **) &gload_glFramebufferPixelLocalStorageSizeEXT },
@@ -38743,14 +34833,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glClearPixelLocalStorageuiEXT", (void **) &gload_glClearPixelLocalStorageuiEXT },
 
 # endif /* GL_EXT_shader_pixel_local_storage2 */
-# if defined (GL_EXT_shadow_samplers)
-
-
-# endif /* GL_EXT_shadow_samplers */
-# if defined (GL_EXT_shared_texture_palette)
-
-
-# endif /* GL_EXT_shared_texture_palette */
 # if defined (GL_EXT_sparse_texture)
 
    { "glTexPageCommitmentEXT", (void **) &gload_glTexPageCommitmentEXT },
@@ -38766,10 +34848,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glActiveStencilFaceEXT", (void **) &gload_glActiveStencilFaceEXT },
 
 # endif /* GL_EXT_stencil_two_side */
-# if defined (GL_EXT_stencil_wrap)
-
-
-# endif /* GL_EXT_stencil_wrap */
 # if defined (GL_EXT_subtexture)
 
    { "glTexSubImage1DEXT", (void **) &gload_glTexSubImage1DEXT },
@@ -38781,10 +34859,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glPatchParameteriEXT", (void **) &gload_glPatchParameteriEXT },
 
 # endif /* GL_EXT_tessellation_shader */
-# if defined (GL_EXT_texture)
-
-
-# endif /* GL_EXT_texture */
 # if defined (GL_EXT_texture3D)
 
    { "glTexImage3DEXT", (void **) &gload_glTexImage3DEXT },
@@ -38819,66 +34893,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glTexBufferEXT", (void **) &gload_glTexBufferEXT },
 
 # endif /* GL_EXT_texture_buffer_object */
-# if defined (GL_EXT_texture_compression_astc_decode_mode)
-
-
-# endif /* GL_EXT_texture_compression_astc_decode_mode */
-# if defined (GL_EXT_texture_compression_bptc)
-
-
-# endif /* GL_EXT_texture_compression_bptc */
-# if defined (GL_EXT_texture_compression_dxt1)
-
-
-# endif /* GL_EXT_texture_compression_dxt1 */
-# if defined (GL_EXT_texture_compression_latc)
-
-
-# endif /* GL_EXT_texture_compression_latc */
-# if defined (GL_EXT_texture_compression_rgtc)
-
-
-# endif /* GL_EXT_texture_compression_rgtc */
-# if defined (GL_EXT_texture_compression_s3tc)
-
-
-# endif /* GL_EXT_texture_compression_s3tc */
-# if defined (GL_EXT_texture_compression_s3tc_srgb)
-
-
-# endif /* GL_EXT_texture_compression_s3tc_srgb */
-# if defined (GL_EXT_texture_cube_map)
-
-
-# endif /* GL_EXT_texture_cube_map */
-# if defined (GL_EXT_texture_cube_map_array)
-
-
-# endif /* GL_EXT_texture_cube_map_array */
-# if defined (GL_EXT_texture_env_combine)
-
-
-# endif /* GL_EXT_texture_env_combine */
-# if defined (GL_EXT_texture_env_dot3)
-
-
-# endif /* GL_EXT_texture_env_dot3 */
-# if defined (GL_EXT_texture_filter_anisotropic)
-
-
-# endif /* GL_EXT_texture_filter_anisotropic */
-# if defined (GL_EXT_texture_filter_minmax)
-
-
-# endif /* GL_EXT_texture_filter_minmax */
-# if defined (GL_EXT_texture_format_BGRA8888)
-
-
-# endif /* GL_EXT_texture_format_BGRA8888 */
-# if defined (GL_EXT_texture_format_sRGB_override)
-
-
-# endif /* GL_EXT_texture_format_sRGB_override */
 # if defined (GL_EXT_texture_integer)
 
    { "glTexParameterIivEXT", (void **) &gload_glTexParameterIivEXT },
@@ -38889,22 +34903,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glClearColorIuiEXT", (void **) &gload_glClearColorIuiEXT },
 
 # endif /* GL_EXT_texture_integer */
-# if defined (GL_EXT_texture_lod_bias)
-
-
-# endif /* GL_EXT_texture_lod_bias */
-# if defined (GL_EXT_texture_mirror_clamp)
-
-
-# endif /* GL_EXT_texture_mirror_clamp */
-# if defined (GL_EXT_texture_mirror_clamp_to_edge)
-
-
-# endif /* GL_EXT_texture_mirror_clamp_to_edge */
-# if defined (GL_EXT_texture_norm16)
-
-
-# endif /* GL_EXT_texture_norm16 */
 # if defined (GL_EXT_texture_object)
 
    { "glAreTexturesResidentEXT", (void **) &gload_glAreTexturesResidentEXT },
@@ -38920,34 +34918,10 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glTextureNormalEXT", (void **) &gload_glTextureNormalEXT },
 
 # endif /* GL_EXT_texture_perturb_normal */
-# if defined (GL_EXT_texture_rg)
-
-
-# endif /* GL_EXT_texture_rg */
 # if defined (GL_EXT_texture_sRGB)
 
 
 # endif /* GL_EXT_texture_sRGB */
-# if defined (GL_EXT_texture_sRGB_R8)
-
-
-# endif /* GL_EXT_texture_sRGB_R8 */
-# if defined (GL_EXT_texture_sRGB_RG8)
-
-
-# endif /* GL_EXT_texture_sRGB_RG8 */
-# if defined (GL_EXT_texture_sRGB_decode)
-
-
-# endif /* GL_EXT_texture_sRGB_decode */
-# if defined (GL_EXT_texture_shared_exponent)
-
-
-# endif /* GL_EXT_texture_shared_exponent */
-# if defined (GL_EXT_texture_snorm)
-
-
-# endif /* GL_EXT_texture_snorm */
 # if defined (GL_EXT_texture_storage)
 
    { "glTexStorage1DEXT", (void **) &gload_glTexStorage1DEXT },
@@ -38964,14 +34938,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glTexStorageAttribs3DEXT", (void **) &gload_glTexStorageAttribs3DEXT },
 
 # endif /* GL_EXT_texture_storage_compression */
-# if defined (GL_EXT_texture_swizzle)
-
-
-# endif /* GL_EXT_texture_swizzle */
-# if defined (GL_EXT_texture_type_2_10_10_10_REV)
-
-
-# endif /* GL_EXT_texture_type_2_10_10_10_REV */
 # if defined (GL_EXT_texture_view)
 
    { "glTextureViewEXT", (void **) &gload_glTextureViewEXT },
@@ -39001,10 +34967,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glGetTransformFeedbackVaryingEXT", (void **) &gload_glGetTransformFeedbackVaryingEXT },
 
 # endif /* GL_EXT_transform_feedback */
-# if defined (GL_EXT_unpack_subimage)
-
-
-# endif /* GL_EXT_unpack_subimage */
 # if defined (GL_EXT_vertex_array)
 
    { "glArrayElementEXT", (void **) &gload_glArrayElementEXT },
@@ -39018,10 +34980,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glVertexPointerEXT", (void **) &gload_glVertexPointerEXT },
 
 # endif /* GL_EXT_vertex_array */
-# if defined (GL_EXT_vertex_array_bgra)
-
-
-# endif /* GL_EXT_vertex_array_bgra */
 # if defined (GL_EXT_vertex_attrib_64bit)
 
    { "glVertexAttribL1dEXT", (void **) &gload_glVertexAttribL1dEXT },
@@ -39105,10 +35063,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glImportSyncEXT", (void **) &gload_glImportSyncEXT },
 
 # endif /* GL_EXT_x11_sync_object */
-# if defined (GL_FJ_shader_binary_GCCSO)
-
-
-# endif /* GL_FJ_shader_binary_GCCSO */
 # if defined (GL_GREMEDY_frame_terminator)
 
    { "glFrameTerminatorGREMEDY", (void **) &gload_glFrameTerminatorGREMEDY },
@@ -39119,10 +35073,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glStringMarkerGREMEDY", (void **) &gload_glStringMarkerGREMEDY },
 
 # endif /* GL_GREMEDY_string_marker */
-# if defined (GL_HP_convolution_border_modes)
-
-
-# endif /* GL_HP_convolution_border_modes */
 # if defined (GL_HP_image_transform)
 
    { "glImageTransformParameteriHP", (void **) &gload_glImageTransformParameteriHP },
@@ -39133,45 +35083,17 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glGetImageTransformParameterfvHP", (void **) &gload_glGetImageTransformParameterfvHP },
 
 # endif /* GL_HP_image_transform */
-# if defined (GL_HP_occlusion_test)
-
-
-# endif /* GL_HP_occlusion_test */
-# if defined (GL_HP_texture_lighting)
-
-
-# endif /* GL_HP_texture_lighting */
-# if defined (GL_HUAWEI_program_binary)
-
-
-# endif /* GL_HUAWEI_program_binary */
-# if defined (GL_HUAWEI_shader_binary)
-
-
-# endif /* GL_HUAWEI_shader_binary */
-# if defined (GL_IBM_cull_vertex)
-
-
-# endif /* GL_IBM_cull_vertex */
 # if defined (GL_IBM_multimode_draw_arrays)
 
    { "glMultiModeDrawArraysIBM", (void **) &gload_glMultiModeDrawArraysIBM },
    { "glMultiModeDrawElementsIBM", (void **) &gload_glMultiModeDrawElementsIBM },
 
 # endif /* GL_IBM_multimode_draw_arrays */
-# if defined (GL_IBM_rasterpos_clip)
-
-
-# endif /* GL_IBM_rasterpos_clip */
 # if defined (GL_IBM_static_data)
 
    { "glFlushStaticDataIBM", (void **) &gload_glFlushStaticDataIBM },
 
 # endif /* GL_IBM_static_data */
-# if defined (GL_IBM_texture_mirrored_repeat)
-
-
-# endif /* GL_IBM_texture_mirrored_repeat */
 # if defined (GL_IBM_vertex_array_lists)
 
    { "glColorPointerListIBM", (void **) &gload_glColorPointerListIBM },
@@ -39206,65 +35128,17 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glFramebufferTexture2DMultisampleIMG", (void **) &gload_glFramebufferTexture2DMultisampleIMG },
 
 # endif /* GL_IMG_multisampled_render_to_texture */
-# if defined (GL_IMG_program_binary)
-
-
-# endif /* GL_IMG_program_binary */
-# if defined (GL_IMG_read_format)
-
-
-# endif /* GL_IMG_read_format */
-# if defined (GL_IMG_shader_binary)
-
-
-# endif /* GL_IMG_shader_binary */
-# if defined (GL_IMG_texture_compression_pvrtc)
-
-
-# endif /* GL_IMG_texture_compression_pvrtc */
-# if defined (GL_IMG_texture_compression_pvrtc2)
-
-
-# endif /* GL_IMG_texture_compression_pvrtc2 */
-# if defined (GL_IMG_texture_env_enhanced_fixed_function)
-
-
-# endif /* GL_IMG_texture_env_enhanced_fixed_function */
-# if defined (GL_IMG_texture_filter_cubic)
-
-
-# endif /* GL_IMG_texture_filter_cubic */
 # if defined (GL_IMG_user_clip_plane)
 
    { "glClipPlanefIMG", (void **) &gload_glClipPlanefIMG },
    { "glClipPlanexIMG", (void **) &gload_glClipPlanexIMG },
 
 # endif /* GL_IMG_user_clip_plane */
-# if defined (GL_IMG_tile_region_protection)
-
-
-# endif /* GL_IMG_tile_region_protection */
-# if defined (GL_IMG_pvric_end_to_end_signature)
-
-
-# endif /* GL_IMG_pvric_end_to_end_signature */
 # if defined (GL_INGR_blend_func_separate)
 
    { "glBlendFuncSeparateINGR", (void **) &gload_glBlendFuncSeparateINGR },
 
 # endif /* GL_INGR_blend_func_separate */
-# if defined (GL_INGR_color_clamp)
-
-
-# endif /* GL_INGR_color_clamp */
-# if defined (GL_INGR_interlace_read)
-
-
-# endif /* GL_INGR_interlace_read */
-# if defined (GL_INTEL_conservative_rasterization)
-
-
-# endif /* GL_INTEL_conservative_rasterization */
 # if defined (GL_INTEL_framebuffer_CMAA)
 
    { "glApplyFramebufferAttachmentCMAAINTEL", (void **) &gload_glApplyFramebufferAttachmentCMAAINTEL },
@@ -39277,10 +35151,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glMapTexture2DINTEL", (void **) &gload_glMapTexture2DINTEL },
 
 # endif /* GL_INTEL_map_texture */
-# if defined (GL_INTEL_blackhole_render)
-
-
-# endif /* GL_INTEL_blackhole_render */
 # if defined (GL_INTEL_parallel_arrays)
 
    { "glVertexPointervINTEL", (void **) &gload_glVertexPointervINTEL },
@@ -39308,10 +35178,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glBlendBarrierKHR", (void **) &gload_glBlendBarrierKHR },
 
 # endif /* GL_KHR_blend_equation_advanced */
-# if defined (GL_KHR_blend_equation_advanced_coherent)
-
-
-# endif /* GL_KHR_blend_equation_advanced_coherent */
 # if defined (GL_KHR_context_flush_control)
 
 
@@ -39342,10 +35208,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glGetPointervKHR", (void **) &gload_glGetPointervKHR },
 
 # endif /* GL_KHR_debug */
-# if defined (GL_KHR_no_error)
-
-
-# endif /* GL_KHR_no_error */
 # if defined (GL_KHR_robustness)
 
    { "glGetGraphicsResetStatus", (void **) &gload_glGetGraphicsResetStatus },
@@ -39360,53 +35222,17 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glGetnUniformuivKHR", (void **) &gload_glGetnUniformuivKHR },
 
 # endif /* GL_KHR_robustness */
-# if defined (GL_KHR_shader_subgroup)
-
-
-# endif /* GL_KHR_shader_subgroup */
-# if defined (GL_KHR_texture_compression_astc_hdr)
-
-
-# endif /* GL_KHR_texture_compression_astc_hdr */
-# if defined (GL_KHR_texture_compression_astc_ldr)
-
-
-# endif /* GL_KHR_texture_compression_astc_ldr */
 # if defined (GL_KHR_parallel_shader_compile)
 
    { "glMaxShaderCompilerThreadsKHR", (void **) &gload_glMaxShaderCompilerThreadsKHR },
 
 # endif /* GL_KHR_parallel_shader_compile */
-# if defined (GL_MESAX_texture_stack)
-
-
-# endif /* GL_MESAX_texture_stack */
-# if defined (GL_MESA_bgra)
-
-
-# endif /* GL_MESA_bgra */
-# if defined (GL_MESA_framebuffer_flip_x)
-
-
-# endif /* GL_MESA_framebuffer_flip_x */
 # if defined (GL_MESA_framebuffer_flip_y)
 
    { "glFramebufferParameteriMESA", (void **) &gload_glFramebufferParameteriMESA },
    { "glGetFramebufferParameterivMESA", (void **) &gload_glGetFramebufferParameterivMESA },
 
 # endif /* GL_MESA_framebuffer_flip_y */
-# if defined (GL_MESA_framebuffer_swap_xy)
-
-
-# endif /* GL_MESA_framebuffer_swap_xy */
-# if defined (GL_MESA_pack_invert)
-
-
-# endif /* GL_MESA_pack_invert */
-# if defined (GL_MESA_program_binary_formats)
-
-
-# endif /* GL_MESA_program_binary_formats */
 # if defined (GL_MESA_resize_buffers)
 
    { "glResizeBuffersMESA", (void **) &gload_glResizeBuffersMESA },
@@ -39426,14 +35252,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glGetSamplerParameterfv", (void **) &gload_glGetSamplerParameterfv },
 
 # endif /* GL_MESA_sampler_objects */
-# if defined (GL_MESA_texture_const_bandwidth)
-
-
-# endif /* GL_MESA_texture_const_bandwidth */
-# if defined (GL_MESA_tile_raster_order)
-
-
-# endif /* GL_MESA_tile_raster_order */
 # if defined (GL_MESA_window_pos)
 
    { "glWindowPos2dMESA", (void **) &gload_glWindowPos2dMESA },
@@ -39462,24 +35280,12 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glWindowPos4svMESA", (void **) &gload_glWindowPos4svMESA },
 
 # endif /* GL_MESA_window_pos */
-# if defined (GL_MESA_ycbcr_texture)
-
-
-# endif /* GL_MESA_ycbcr_texture */
-# if defined (GL_NVX_cross_process_interop)
-
-
-# endif /* GL_NVX_cross_process_interop */
 # if defined (GL_NVX_conditional_render)
 
    { "glBeginConditionalRenderNVX", (void **) &gload_glBeginConditionalRenderNVX },
    { "glEndConditionalRenderNVX", (void **) &gload_glEndConditionalRenderNVX },
 
 # endif /* GL_NVX_conditional_render */
-# if defined (GL_NVX_gpu_memory_info)
-
-
-# endif /* GL_NVX_gpu_memory_info */
 # if defined (GL_NVX_linked_gpu_multicast)
 
    { "glLGPUNamedBufferSubDataNVX", (void **) &gload_glLGPUNamedBufferSubDataNVX },
@@ -39527,14 +35333,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glBlendBarrierNV", (void **) &gload_glBlendBarrierNV },
 
 # endif /* GL_NV_blend_equation_advanced */
-# if defined (GL_NV_blend_equation_advanced_coherent)
-
-
-# endif /* GL_NV_blend_equation_advanced_coherent */
-# if defined (GL_NV_blend_minmax_factor)
-
-
-# endif /* GL_NV_blend_minmax_factor */
 # if defined (GL_NV_clip_space_w_scaling)
 
    { "glViewportPositionWScaleNV", (void **) &gload_glViewportPositionWScaleNV },
@@ -39561,10 +35359,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glCallCommandListNV", (void **) &gload_glCallCommandListNV },
 
 # endif /* GL_NV_command_list */
-# if defined (GL_NV_compute_program5)
-
-
-# endif /* GL_NV_compute_program5 */
 # if defined (GL_NV_conditional_render)
 
    { "glBeginConditionalRenderNV", (void **) &gload_glBeginConditionalRenderNV },
@@ -39581,10 +35375,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glConservativeRasterParameterfNV", (void **) &gload_glConservativeRasterParameterfNV },
 
 # endif /* GL_NV_conservative_raster_dilate */
-# if defined (GL_NV_conservative_raster_pre_snap)
-
-
-# endif /* GL_NV_conservative_raster_pre_snap */
 # if defined (GL_NV_conservative_raster_pre_snap_triangles)
 
    { "glConservativeRasterParameteriNV", (void **) &gload_glConservativeRasterParameteriNV },
@@ -39595,10 +35385,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glCopyBufferSubDataNV", (void **) &gload_glCopyBufferSubDataNV },
 
 # endif /* GL_NV_copy_buffer */
-# if defined (GL_NV_copy_depth_to_color)
-
-
-# endif /* GL_NV_copy_depth_to_color */
 # if defined (GL_NV_copy_image)
 
    { "glCopyImageSubDataNV", (void **) &gload_glCopyImageSubDataNV },
@@ -39610,10 +35396,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glCoverageOperationNV", (void **) &gload_glCoverageOperationNV },
 
 # endif /* GL_NV_coverage_sample */
-# if defined (GL_NV_deep_texture3D)
-
-
-# endif /* GL_NV_deep_texture3D */
 # if defined (GL_NV_depth_buffer_float)
 
    { "glDepthRangedNV", (void **) &gload_glDepthRangedNV },
@@ -39621,14 +35403,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glDepthBoundsdNV", (void **) &gload_glDepthBoundsdNV },
 
 # endif /* GL_NV_depth_buffer_float */
-# if defined (GL_NV_depth_clamp)
-
-
-# endif /* GL_NV_depth_clamp */
-# if defined (GL_NV_depth_nonlinear)
-
-
-# endif /* GL_NV_depth_nonlinear */
 # if defined (GL_NV_draw_buffers)
 
    { "glDrawBuffersNV", (void **) &gload_glDrawBuffersNV },
@@ -39674,10 +35448,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glTexRenderbufferNV", (void **) &gload_glTexRenderbufferNV },
 
 # endif /* GL_NV_explicit_multisample */
-# if defined (GL_NV_fbo_color_attachments)
-
-
-# endif /* GL_NV_fbo_color_attachments */
 # if defined (GL_NV_fence)
 
    { "glDeleteFencesNV", (void **) &gload_glDeleteFencesNV },
@@ -39689,18 +35459,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glSetFenceNV", (void **) &gload_glSetFenceNV },
 
 # endif /* GL_NV_fence */
-# if defined (GL_NV_fill_rectangle)
-
-
-# endif /* GL_NV_fill_rectangle */
-# if defined (GL_NV_float_buffer)
-
-
-# endif /* GL_NV_float_buffer */
-# if defined (GL_NV_fog_distance)
-
-
-# endif /* GL_NV_fog_distance */
 # if defined (GL_NV_fragment_coverage_to_color)
 
    { "glFragmentCoverageColorNV", (void **) &gload_glFragmentCoverageColorNV },
@@ -39716,10 +35474,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glGetProgramNamedParameterdvNV", (void **) &gload_glGetProgramNamedParameterdvNV },
 
 # endif /* GL_NV_fragment_program */
-# if defined (GL_NV_fragment_program2)
-
-
-# endif /* GL_NV_fragment_program2 */
 # if defined (GL_NV_framebuffer_blit)
 
    { "glBlitFramebufferNV", (void **) &gload_glBlitFramebufferNV },
@@ -39874,10 +35628,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glGetInternalformatSampleivNV", (void **) &gload_glGetInternalformatSampleivNV },
 
 # endif /* GL_NV_internalformat_sample_query */
-# if defined (GL_NV_light_max_exponent)
-
-
-# endif /* GL_NV_light_max_exponent */
 # if defined (GL_NV_gpu_multicast)
 
    { "glRenderGpuMaskNV", (void **) &gload_glRenderGpuMaskNV },
@@ -39938,14 +35688,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glMultiDrawMeshTasksIndirectCountNV", (void **) &gload_glMultiDrawMeshTasksIndirectCountNV },
 
 # endif /* GL_NV_mesh_shader */
-# if defined (GL_NV_multisample_coverage)
-
-
-# endif /* GL_NV_multisample_coverage */
-# if defined (GL_NV_multisample_filter_hint)
-
-
-# endif /* GL_NV_multisample_filter_hint */
 # if defined (GL_NV_non_square_matrices)
 
    { "glUniformMatrix2x3fvNV", (void **) &gload_glUniformMatrix2x3fvNV },
@@ -39967,10 +35709,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glGetOcclusionQueryuivNV", (void **) &gload_glGetOcclusionQueryuivNV },
 
 # endif /* GL_NV_occlusion_query */
-# if defined (GL_NV_packed_depth_stencil)
-
-
-# endif /* GL_NV_packed_depth_stencil */
 # if defined (GL_NV_parameter_buffer_object)
 
    { "glProgramBufferParametersfvNV", (void **) &gload_glProgramBufferParametersfvNV },
@@ -40065,20 +35803,12 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glMatrixTranslatedEXT", (void **) &gload_glMatrixTranslatedEXT },
 
 # endif /* GL_NV_path_rendering */
-# if defined (GL_NV_path_rendering_shared_edge)
-
-
-# endif /* GL_NV_path_rendering_shared_edge */
 # if defined (GL_NV_pixel_data_range)
 
    { "glPixelDataRangeNV", (void **) &gload_glPixelDataRangeNV },
    { "glFlushPixelDataRangeNV", (void **) &gload_glFlushPixelDataRangeNV },
 
 # endif /* GL_NV_pixel_data_range */
-# if defined (GL_NV_pixel_buffer_object)
-
-
-# endif /* GL_NV_pixel_buffer_object */
 # if defined (GL_NV_point_sprite)
 
    { "glPointParameteriNV", (void **) &gload_glPointParameteriNV },
@@ -40106,10 +35836,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glPrimitiveRestartIndexNV", (void **) &gload_glPrimitiveRestartIndexNV },
 
 # endif /* GL_NV_primitive_restart */
-# if defined (GL_NV_primitive_shading_rate)
-
-
-# endif /* GL_NV_primitive_shading_rate */
 # if defined (GL_NV_query_resource)
 
    { "glQueryResourceNV", (void **) &gload_glQueryResourceNV },
@@ -40150,18 +35876,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glGetCombinerStageParameterfvNV", (void **) &gload_glGetCombinerStageParameterfvNV },
 
 # endif /* GL_NV_register_combiners2 */
-# if defined (GL_NV_representative_fragment_test)
-
-
-# endif /* GL_NV_representative_fragment_test */
-# if defined (GL_NV_robustness_video_memory_purge)
-
-
-# endif /* GL_NV_robustness_video_memory_purge */
-# if defined (GL_NV_sRGB_formats)
-
-
-# endif /* GL_NV_sRGB_formats */
 # if defined (GL_NV_sample_locations)
 
    { "glFramebufferSampleLocationsfvNV", (void **) &gload_glFramebufferSampleLocationsfvNV },
@@ -40193,18 +35907,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glProgramUniformui64vNV", (void **) &gload_glProgramUniformui64vNV },
 
 # endif /* GL_NV_shader_buffer_load */
-# if defined (GL_NV_shader_buffer_store)
-
-
-# endif /* GL_NV_shader_buffer_store */
-# if defined (GL_NV_shader_subgroup_partitioned)
-
-
-# endif /* GL_NV_shader_subgroup_partitioned */
-# if defined (GL_NV_shader_thread_group)
-
-
-# endif /* GL_NV_shader_thread_group */
 # if defined (GL_NV_shading_rate_image)
 
    { "glBindShadingRateImageNV", (void **) &gload_glBindShadingRateImageNV },
@@ -40216,43 +35918,11 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glShadingRateSampleOrderCustomNV", (void **) &gload_glShadingRateSampleOrderCustomNV },
 
 # endif /* GL_NV_shading_rate_image */
-# if defined (GL_NV_shadow_samplers_array)
-
-
-# endif /* GL_NV_shadow_samplers_array */
-# if defined (GL_NV_shadow_samplers_cube)
-
-
-# endif /* GL_NV_shadow_samplers_cube */
-# if defined (GL_NV_tessellation_program5)
-
-
-# endif /* GL_NV_tessellation_program5 */
-# if defined (GL_NV_texgen_emboss)
-
-
-# endif /* GL_NV_texgen_emboss */
-# if defined (GL_NV_texgen_reflection)
-
-
-# endif /* GL_NV_texgen_reflection */
 # if defined (GL_NV_texture_barrier)
 
    { "glTextureBarrierNV", (void **) &gload_glTextureBarrierNV },
 
 # endif /* GL_NV_texture_barrier */
-# if defined (GL_NV_texture_border_clamp)
-
-
-# endif /* GL_NV_texture_border_clamp */
-# if defined (GL_NV_texture_env_combine4)
-
-
-# endif /* GL_NV_texture_env_combine4 */
-# if defined (GL_NV_texture_expand_normal)
-
-
-# endif /* GL_NV_texture_expand_normal */
 # if defined (GL_NV_texture_multisample)
 
    { "glTexImage2DMultisampleCoverageNV", (void **) &gload_glTexImage2DMultisampleCoverageNV },
@@ -40263,22 +35933,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glTextureImage3DMultisampleCoverageNV", (void **) &gload_glTextureImage3DMultisampleCoverageNV },
 
 # endif /* GL_NV_texture_multisample */
-# if defined (GL_NV_texture_rectangle)
-
-
-# endif /* GL_NV_texture_rectangle */
-# if defined (GL_NV_texture_shader)
-
-
-# endif /* GL_NV_texture_shader */
-# if defined (GL_NV_texture_shader2)
-
-
-# endif /* GL_NV_texture_shader2 */
-# if defined (GL_NV_texture_shader3)
-
-
-# endif /* GL_NV_texture_shader3 */
 # if defined (GL_NV_transform_feedback)
 
    { "glBeginTransformFeedbackNV", (void **) &gload_glBeginTransformFeedbackNV },
@@ -40306,10 +35960,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glDrawTransformFeedbackNV", (void **) &gload_glDrawTransformFeedbackNV },
 
 # endif /* GL_NV_transform_feedback2 */
-# if defined (GL_NV_uniform_buffer_unified_memory)
-
-
-# endif /* GL_NV_uniform_buffer_unified_memory */
 # if defined (GL_NV_vdpau_interop)
 
    { "glVDPAUInitNV", (void **) &gload_glVDPAUInitNV },
@@ -40335,10 +35985,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glVertexArrayRangeNV", (void **) &gload_glVertexArrayRangeNV },
 
 # endif /* GL_NV_vertex_array_range */
-# if defined (GL_NV_vertex_array_range2)
-
-
-# endif /* GL_NV_vertex_array_range2 */
 # if defined (GL_NV_vertex_attrib_integer_64bit)
 
    { "glVertexAttribL1i64NV", (void **) &gload_glVertexAttribL1i64NV },
@@ -40446,14 +36092,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glVertexAttribs4ubvNV", (void **) &gload_glVertexAttribs4ubvNV },
 
 # endif /* GL_NV_vertex_program */
-# if defined (GL_NV_vertex_program2_option)
-
-
-# endif /* GL_NV_vertex_program2_option */
-# if defined (GL_NV_vertex_program3)
-
-
-# endif /* GL_NV_vertex_program3 */
 # if defined (GL_NV_vertex_program4)
 
    { "glVertexAttribI1iEXT", (void **) &gload_glVertexAttribI1iEXT },
@@ -40518,10 +36156,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glViewportSwizzleNV", (void **) &gload_glViewportSwizzleNV },
 
 # endif /* GL_NV_viewport_swizzle */
-# if defined (GL_NV_pack_subimage)
-
-
-# endif /* GL_NV_pack_subimage */
 # if defined (GL_OES_EGL_image)
 
    { "glEGLImageTargetTexture2DOES", (void **) &gload_glEGLImageTargetTexture2DOES },
@@ -40574,31 +36208,11 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glVertex4bvOES", (void **) &gload_glVertex4bvOES },
 
 # endif /* GL_OES_byte_coordinates */
-# if defined (GL_OES_compressed_ETC1_RGB8_texture)
-
-
-# endif /* GL_OES_compressed_ETC1_RGB8_texture */
-# if defined (GL_OES_compressed_paletted_texture)
-
-
-# endif /* GL_OES_compressed_paletted_texture */
 # if defined (GL_OES_copy_image)
 
    { "glCopyImageSubDataOES", (void **) &gload_glCopyImageSubDataOES },
 
 # endif /* GL_OES_copy_image */
-# if defined (GL_OES_depth24)
-
-
-# endif /* GL_OES_depth24 */
-# if defined (GL_OES_depth32)
-
-
-# endif /* GL_OES_depth32 */
-# if defined (GL_OES_depth_texture)
-
-
-# endif /* GL_OES_depth_texture */
 # if defined (GL_OES_draw_buffers_indexed)
 
    { "glEnableiOES", (void **) &gload_glEnableiOES },
@@ -40631,10 +36245,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glDrawTexfvOES", (void **) &gload_glDrawTexfvOES },
 
 # endif /* GL_OES_draw_texture */
-# if defined (GL_OES_element_index_uint)
-
-
-# endif /* GL_OES_element_index_uint */
 # if defined (GL_OES_fixed_point)
 
    { "glAlphaFuncxOES", (void **) &gload_glAlphaFuncxOES },
@@ -40746,10 +36356,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glVertex4xvOES", (void **) &gload_glVertex4xvOES },
 
 # endif /* GL_OES_fixed_point */
-# if defined (GL_OES_fragment_precision_high)
-
-
-# endif /* GL_OES_fragment_precision_high */
 # if defined (GL_OES_framebuffer_object)
 
    { "glIsRenderbufferOES", (void **) &gload_glIsRenderbufferOES },
@@ -40787,10 +36393,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glGetBufferPointervOES", (void **) &gload_glGetBufferPointervOES },
 
 # endif /* GL_OES_mapbuffer */
-# if defined (GL_OES_matrix_get)
-
-
-# endif /* GL_OES_matrix_get */
 # if defined (GL_OES_matrix_palette)
 
    { "glCurrentPaletteMatrixOES", (void **) &gload_glCurrentPaletteMatrixOES },
@@ -40799,19 +36401,11 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glWeightPointerOES", (void **) &gload_glWeightPointerOES },
 
 # endif /* GL_OES_matrix_palette */
-# if defined (GL_OES_packed_depth_stencil)
-
-
-# endif /* GL_OES_packed_depth_stencil */
 # if defined (GL_OES_point_size_array)
 
    { "glPointSizePointerOES", (void **) &gload_glPointSizePointerOES },
 
 # endif /* GL_OES_point_size_array */
-# if defined (GL_OES_point_sprite)
-
-
-# endif /* GL_OES_point_sprite */
 # if defined (GL_OES_primitive_bounding_box)
 
    { "glPrimitiveBoundingBoxOES", (void **) &gload_glPrimitiveBoundingBoxOES },
@@ -40822,27 +36416,11 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glQueryMatrixxOES", (void **) &gload_glQueryMatrixxOES },
 
 # endif /* GL_OES_query_matrix */
-# if defined (GL_OES_read_format)
-
-
-# endif /* GL_OES_read_format */
-# if defined (GL_OES_required_internalformat)
-
-
-# endif /* GL_OES_required_internalformat */
-# if defined (GL_OES_rgb8_rgba8)
-
-
-# endif /* GL_OES_rgb8_rgba8 */
 # if defined (GL_OES_sample_shading)
 
    { "glMinSampleShadingOES", (void **) &gload_glMinSampleShadingOES },
 
 # endif /* GL_OES_sample_shading */
-# if defined (GL_OES_shader_multisample_interpolation)
-
-
-# endif /* GL_OES_shader_multisample_interpolation */
 # if defined (GL_OES_single_precision)
 
    { "glClearDepthfOES", (void **) &gload_glClearDepthfOES },
@@ -40853,30 +36431,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glOrthofOES", (void **) &gload_glOrthofOES },
 
 # endif /* GL_OES_single_precision */
-# if defined (GL_OES_standard_derivatives)
-
-
-# endif /* GL_OES_standard_derivatives */
-# if defined (GL_OES_stencil1)
-
-
-# endif /* GL_OES_stencil1 */
-# if defined (GL_OES_stencil4)
-
-
-# endif /* GL_OES_stencil4 */
-# if defined (GL_OES_stencil8)
-
-
-# endif /* GL_OES_stencil8 */
-# if defined (GL_OES_stencil_wrap)
-
-
-# endif /* GL_OES_stencil_wrap */
-# if defined (GL_OES_surfaceless_context)
-
-
-# endif /* GL_OES_surfaceless_context */
 # if defined (GL_OES_tessellation_shader)
 
    { "glPatchParameteriOES", (void **) &gload_glPatchParameteriOES },
@@ -40910,10 +36464,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glTexBufferRangeOES", (void **) &gload_glTexBufferRangeOES },
 
 # endif /* GL_OES_texture_buffer */
-# if defined (GL_OES_texture_compression_astc)
-
-
-# endif /* GL_OES_texture_compression_astc */
 # if defined (GL_OES_texture_cube_map)
 
    { "glTexGenfOES", (void **) &gload_glTexGenfOES },
@@ -40927,26 +36477,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glGetTexGenxvOES", (void **) &gload_glGetTexGenxvOES },
 
 # endif /* GL_OES_texture_cube_map */
-# if defined (GL_OES_texture_cube_map_array)
-
-
-# endif /* GL_OES_texture_cube_map_array */
-# if defined (GL_OES_texture_float)
-
-
-# endif /* GL_OES_texture_float */
-# if defined (GL_OES_texture_half_float)
-
-
-# endif /* GL_OES_texture_half_float */
-# if defined (GL_OES_texture_mirrored_repeat)
-
-
-# endif /* GL_OES_texture_mirrored_repeat */
-# if defined (GL_OES_texture_stencil8)
-
-
-# endif /* GL_OES_texture_stencil8 */
 # if defined (GL_OES_texture_storage_multisample_2d_array)
 
    { "glTexStorage3DMultisampleOES", (void **) &gload_glTexStorage3DMultisampleOES },
@@ -40965,14 +36495,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glIsVertexArrayOES", (void **) &gload_glIsVertexArrayOES },
 
 # endif /* GL_OES_vertex_array_object */
-# if defined (GL_OES_vertex_half_float)
-
-
-# endif /* GL_OES_vertex_half_float */
-# if defined (GL_OES_vertex_type_10_10_10_2)
-
-
-# endif /* GL_OES_vertex_type_10_10_10_2 */
 # if defined (GL_OES_viewport_array)
 
    { "glViewportArrayvOES", (void **) &gload_glViewportArrayvOES },
@@ -40989,18 +36511,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glIsEnablediOES", (void **) &gload_glIsEnablediOES },
 
 # endif /* GL_OES_viewport_array */
-# if defined (GL_OML_interlace)
-
-
-# endif /* GL_OML_interlace */
-# if defined (GL_OML_resample)
-
-
-# endif /* GL_OML_resample */
-# if defined (GL_OML_subsample)
-
-
-# endif /* GL_OML_subsample */
 # if defined (GL_OVR_multiview)
 
    { "glFramebufferTextureMultiviewOVR", (void **) &gload_glFramebufferTextureMultiviewOVR },
@@ -41017,19 +36527,11 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glHintPGI", (void **) &gload_glHintPGI },
 
 # endif /* GL_PGI_misc_hints */
-# if defined (GL_PGI_vertex_hints)
-
-
-# endif /* GL_PGI_vertex_hints */
 # if defined (GL_QCOM_alpha_test)
 
    { "glAlphaFuncQCOM", (void **) &gload_glAlphaFuncQCOM },
 
 # endif /* GL_QCOM_alpha_test */
-# if defined (GL_QCOM_binning_control)
-
-
-# endif /* GL_QCOM_binning_control */
 # if defined (GL_QCOM_driver_control)
 
    { "glGetDriverControlsQCOM", (void **) &gload_glGetDriverControlsQCOM },
@@ -41080,26 +36582,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glTextureFoveationParametersQCOM", (void **) &gload_glTextureFoveationParametersQCOM },
 
 # endif /* GL_QCOM_texture_foveated */
-# if defined (GL_QCOM_texture_foveated2)
-
-
-# endif /* GL_QCOM_texture_foveated2 */
-# if defined (GL_QCOM_texture_foveated_subsampled_layout)
-
-
-# endif /* GL_QCOM_texture_foveated_subsampled_layout */
-# if defined (GL_QCOM_ycbcr_degamma)
-
-
-# endif /* GL_QCOM_ycbcr_degamma */
-# if defined (GL_QCOM_texture_lod_bias)
-
-
-# endif /* GL_QCOM_texture_lod_bias */
-# if defined (GL_QCOM_perfmon_global_mode)
-
-
-# endif /* GL_QCOM_perfmon_global_mode */
 # if defined (GL_QCOM_shader_framebuffer_fetch_noncoherent)
 
    { "glFramebufferFetchBarrierQCOM", (void **) &gload_glFramebufferFetchBarrierQCOM },
@@ -41116,18 +36598,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glEndTilingQCOM", (void **) &gload_glEndTilingQCOM },
 
 # endif /* GL_QCOM_tiled_rendering */
-# if defined (GL_QCOM_writeonly_rendering)
-
-
-# endif /* GL_QCOM_writeonly_rendering */
-# if defined (GL_REND_screen_coordinates)
-
-
-# endif /* GL_REND_screen_coordinates */
-# if defined (GL_S3_s3tc)
-
-
-# endif /* GL_S3_s3tc */
 # if defined (GL_SGIS_detail_texture)
 
    { "glDetailTexFuncSGIS", (void **) &gload_glDetailTexFuncSGIS },
@@ -41140,10 +36610,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glGetFogFuncSGIS", (void **) &gload_glGetFogFuncSGIS },
 
 # endif /* GL_SGIS_fog_function */
-# if defined (GL_SGIS_generate_mipmap)
-
-
-# endif /* GL_SGIS_generate_mipmap */
 # if defined (GL_SGIS_multisample)
 
    { "glSampleMaskSGIS", (void **) &gload_glSampleMaskSGIS },
@@ -41160,10 +36626,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glGetPixelTexGenParameterfvSGIS", (void **) &gload_glGetPixelTexGenParameterfvSGIS },
 
 # endif /* GL_SGIS_pixel_texture */
-# if defined (GL_SGIS_point_line_texgen)
-
-
-# endif /* GL_SGIS_point_line_texgen */
 # if defined (GL_SGIS_point_parameters)
 
    { "glPointParameterfSGIS", (void **) &gload_glPointParameterfSGIS },
@@ -41182,33 +36644,17 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glTexSubImage4DSGIS", (void **) &gload_glTexSubImage4DSGIS },
 
 # endif /* GL_SGIS_texture4D */
-# if defined (GL_SGIS_texture_border_clamp)
-
-
-# endif /* GL_SGIS_texture_border_clamp */
 # if defined (GL_SGIS_texture_color_mask)
 
    { "glTextureColorMaskSGIS", (void **) &gload_glTextureColorMaskSGIS },
 
 # endif /* GL_SGIS_texture_color_mask */
-# if defined (GL_SGIS_texture_edge_clamp)
-
-
-# endif /* GL_SGIS_texture_edge_clamp */
 # if defined (GL_SGIS_texture_filter4)
 
    { "glGetTexFilterFuncSGIS", (void **) &gload_glGetTexFilterFuncSGIS },
    { "glTexFilterFuncSGIS", (void **) &gload_glTexFilterFuncSGIS },
 
 # endif /* GL_SGIS_texture_filter4 */
-# if defined (GL_SGIS_texture_lod)
-
-
-# endif /* GL_SGIS_texture_lod */
-# if defined (GL_SGIS_texture_select)
-
-
-# endif /* GL_SGIS_texture_select */
 # if defined (GL_SGIX_async)
 
    { "glAsyncMarkerSGIX", (void **) &gload_glAsyncMarkerSGIX },
@@ -41219,43 +36665,11 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glIsAsyncMarkerSGIX", (void **) &gload_glIsAsyncMarkerSGIX },
 
 # endif /* GL_SGIX_async */
-# if defined (GL_SGIX_async_histogram)
-
-
-# endif /* GL_SGIX_async_histogram */
-# if defined (GL_SGIX_async_pixel)
-
-
-# endif /* GL_SGIX_async_pixel */
-# if defined (GL_SGIX_blend_alpha_minmax)
-
-
-# endif /* GL_SGIX_blend_alpha_minmax */
-# if defined (GL_SGIX_calligraphic_fragment)
-
-
-# endif /* GL_SGIX_calligraphic_fragment */
-# if defined (GL_SGIX_clipmap)
-
-
-# endif /* GL_SGIX_clipmap */
-# if defined (GL_SGIX_convolution_accuracy)
-
-
-# endif /* GL_SGIX_convolution_accuracy */
-# if defined (GL_SGIX_depth_texture)
-
-
-# endif /* GL_SGIX_depth_texture */
 # if defined (GL_SGIX_flush_raster)
 
    { "glFlushRasterSGIX", (void **) &gload_glFlushRasterSGIX },
 
 # endif /* GL_SGIX_flush_raster */
-# if defined (GL_SGIX_fog_offset)
-
-
-# endif /* GL_SGIX_fog_offset */
 # if defined (GL_SGIX_fragment_lighting)
 
    { "glFragmentColorMaterialSGIX", (void **) &gload_glFragmentColorMaterialSGIX },
@@ -41298,14 +36712,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glStopInstrumentsSGIX", (void **) &gload_glStopInstrumentsSGIX },
 
 # endif /* GL_SGIX_instruments */
-# if defined (GL_SGIX_interlace)
-
-
-# endif /* GL_SGIX_interlace */
-# if defined (GL_SGIX_ir_instrument1)
-
-
-# endif /* GL_SGIX_ir_instrument1 */
 # if defined (GL_SGIX_list_priority)
 
    { "glGetListParameterfvSGIX", (void **) &gload_glGetListParameterfvSGIX },
@@ -41321,10 +36727,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glPixelTexGenSGIX", (void **) &gload_glPixelTexGenSGIX },
 
 # endif /* GL_SGIX_pixel_texture */
-# if defined (GL_SGIX_pixel_tiles)
-
-
-# endif /* GL_SGIX_pixel_tiles */
 # if defined (GL_SGIX_polynomial_ffd)
 
    { "glDeformationMap3dSGIX", (void **) &gload_glDeformationMap3dSGIX },
@@ -41338,22 +36740,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glReferencePlaneSGIX", (void **) &gload_glReferencePlaneSGIX },
 
 # endif /* GL_SGIX_reference_plane */
-# if defined (GL_SGIX_resample)
-
-
-# endif /* GL_SGIX_resample */
-# if defined (GL_SGIX_scalebias_hint)
-
-
-# endif /* GL_SGIX_scalebias_hint */
-# if defined (GL_SGIX_shadow)
-
-
-# endif /* GL_SGIX_shadow */
-# if defined (GL_SGIX_shadow_ambient)
-
-
-# endif /* GL_SGIX_shadow_ambient */
 # if defined (GL_SGIX_sprite)
 
    { "glSpriteParameterfSGIX", (void **) &gload_glSpriteParameterfSGIX },
@@ -41362,51 +36748,11 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glSpriteParameterivSGIX", (void **) &gload_glSpriteParameterivSGIX },
 
 # endif /* GL_SGIX_sprite */
-# if defined (GL_SGIX_subsample)
-
-
-# endif /* GL_SGIX_subsample */
 # if defined (GL_SGIX_tag_sample_buffer)
 
    { "glTagSampleBufferSGIX", (void **) &gload_glTagSampleBufferSGIX },
 
 # endif /* GL_SGIX_tag_sample_buffer */
-# if defined (GL_SGIX_texture_add_env)
-
-
-# endif /* GL_SGIX_texture_add_env */
-# if defined (GL_SGIX_texture_coordinate_clamp)
-
-
-# endif /* GL_SGIX_texture_coordinate_clamp */
-# if defined (GL_SGIX_texture_lod_bias)
-
-
-# endif /* GL_SGIX_texture_lod_bias */
-# if defined (GL_SGIX_texture_multi_buffer)
-
-
-# endif /* GL_SGIX_texture_multi_buffer */
-# if defined (GL_SGIX_texture_scale_bias)
-
-
-# endif /* GL_SGIX_texture_scale_bias */
-# if defined (GL_SGIX_vertex_preclip)
-
-
-# endif /* GL_SGIX_vertex_preclip */
-# if defined (GL_SGIX_ycrcb)
-
-
-# endif /* GL_SGIX_ycrcb */
-# if defined (GL_SGIX_ycrcba)
-
-
-# endif /* GL_SGIX_ycrcba */
-# if defined (GL_SGI_color_matrix)
-
-
-# endif /* GL_SGI_color_matrix */
 # if defined (GL_SGI_color_table)
 
    { "glColorTableSGI", (void **) &gload_glColorTableSGI },
@@ -41418,19 +36764,11 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glGetColorTableParameterivSGI", (void **) &gload_glGetColorTableParameterivSGI },
 
 # endif /* GL_SGI_color_table */
-# if defined (GL_SGI_texture_color_table)
-
-
-# endif /* GL_SGI_texture_color_table */
 # if defined (GL_SUNX_constant_data)
 
    { "glFinishTextureSUNX", (void **) &gload_glFinishTextureSUNX },
 
 # endif /* GL_SUNX_constant_data */
-# if defined (GL_SUN_convolution_border_modes)
-
-
-# endif /* GL_SUN_convolution_border_modes */
 # if defined (GL_SUN_global_alpha)
 
    { "glGlobalAlphaFactorbSUN", (void **) &gload_glGlobalAlphaFactorbSUN },
@@ -41448,10 +36786,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glDrawMeshArraysSUN", (void **) &gload_glDrawMeshArraysSUN },
 
 # endif /* GL_SUN_mesh_array */
-# if defined (GL_SUN_slice_accum)
-
-
-# endif /* GL_SUN_slice_accum */
 # if defined (GL_SUN_triangle_list)
 
    { "glReplacementCodeuiSUN", (void **) &gload_glReplacementCodeuiSUN },
@@ -41507,18 +36841,6 @@ static struct s_nameaddr    g_nameaddr[] = {
    { "glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fvSUN", (void **) &gload_glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fvSUN },
 
 # endif /* GL_SUN_vertex */
-# if defined (GL_VIV_shader_binary)
-
-
-# endif /* GL_VIV_shader_binary */
-# if defined (GL_WIN_phong_shading)
-
-
-# endif /* GL_WIN_phong_shading */
-# if defined (GL_WIN_specular_fog)
-
-
-# endif /* GL_WIN_specular_fog */
 
     /* null-terminator */
     { "", 0 }
@@ -43454,31 +38776,11 @@ extern PFNGLVERTEXATTRIBPOINTERPROC gload_glVertexAttribPointer;
 extern PFNGLVIEWPORTPROC gload_glViewport;
 
 # endif /* GL_SC_VERSION_2_0 */
-# if defined (GL_3DFX_multisample)
-
-
-# endif /* GL_3DFX_multisample */
 # if defined (GL_3DFX_tbuffer)
 
 PFNGLTBUFFERMASK3DFXPROC gload_glTbufferMask3DFX;
 
 # endif /* GL_3DFX_tbuffer */
-# if defined (GL_3DFX_texture_compression_FXT1)
-
-
-# endif /* GL_3DFX_texture_compression_FXT1 */
-# if defined (GL_AMD_blend_minmax_factor)
-
-
-# endif /* GL_AMD_blend_minmax_factor */
-# if defined (GL_AMD_compressed_3DC_texture)
-
-
-# endif /* GL_AMD_compressed_3DC_texture */
-# if defined (GL_AMD_compressed_ATC_texture)
-
-
-# endif /* GL_AMD_compressed_ATC_texture */
 # if defined (GL_AMD_debug_output)
 
 PFNGLDEBUGMESSAGEENABLEAMDPROC gload_glDebugMessageEnableAMD;
@@ -43487,10 +38789,6 @@ PFNGLDEBUGMESSAGECALLBACKAMDPROC gload_glDebugMessageCallbackAMD;
 PFNGLGETDEBUGMESSAGELOGAMDPROC gload_glGetDebugMessageLogAMD;
 
 # endif /* GL_AMD_debug_output */
-# if defined (GL_AMD_depth_clamp_separate)
-
-
-# endif /* GL_AMD_depth_clamp_separate */
 # if defined (GL_AMD_draw_buffers_blend)
 
 PFNGLBLENDFUNCINDEXEDAMDPROC gload_glBlendFuncIndexedAMD;
@@ -43513,10 +38811,6 @@ PFNGLGETFRAMEBUFFERPARAMETERFVAMDPROC gload_glGetFramebufferParameterfvAMD;
 PFNGLGETNAMEDFRAMEBUFFERPARAMETERFVAMDPROC gload_glGetNamedFramebufferParameterfvAMD;
 
 # endif /* GL_AMD_framebuffer_sample_positions */
-# if defined (GL_AMD_gpu_shader_half_float)
-
-
-# endif /* GL_AMD_gpu_shader_half_float */
 # if defined (GL_AMD_gpu_shader_int64)
 
 PFNGLUNIFORM1I64NVPROC gload_glUniform1i64NV;
@@ -43593,27 +38887,11 @@ PFNGLENDPERFMONITORAMDPROC gload_glEndPerfMonitorAMD;
 PFNGLGETPERFMONITORCOUNTERDATAAMDPROC gload_glGetPerfMonitorCounterDataAMD;
 
 # endif /* GL_AMD_performance_monitor */
-# if defined (GL_AMD_pinned_memory)
-
-
-# endif /* GL_AMD_pinned_memory */
-# if defined (GL_AMD_program_binary_Z400)
-
-
-# endif /* GL_AMD_program_binary_Z400 */
-# if defined (GL_AMD_query_buffer_object)
-
-
-# endif /* GL_AMD_query_buffer_object */
 # if defined (GL_AMD_sample_positions)
 
 PFNGLSETMULTISAMPLEFVAMDPROC gload_glSetMultisamplefvAMD;
 
 # endif /* GL_AMD_sample_positions */
-# if defined (GL_AMD_seamless_cubemap_per_texture)
-
-
-# endif /* GL_AMD_seamless_cubemap_per_texture */
 # if defined (GL_AMD_sparse_texture)
 
 PFNGLTEXSTORAGESPARSEAMDPROC gload_glTexStorageSparseAMD;
@@ -43625,24 +38903,12 @@ PFNGLTEXTURESTORAGESPARSEAMDPROC gload_glTextureStorageSparseAMD;
 PFNGLSTENCILOPVALUEAMDPROC gload_glStencilOpValueAMD;
 
 # endif /* GL_AMD_stencil_operation_extended */
-# if defined (GL_AMD_transform_feedback4)
-
-
-# endif /* GL_AMD_transform_feedback4 */
 # if defined (GL_AMD_vertex_shader_tessellator)
 
 PFNGLTESSELLATIONFACTORAMDPROC gload_glTessellationFactorAMD;
 PFNGLTESSELLATIONMODEAMDPROC gload_glTessellationModeAMD;
 
 # endif /* GL_AMD_vertex_shader_tessellator */
-# if defined (GL_ANDROID_extension_pack_es31a)
-
-
-# endif /* GL_ANDROID_extension_pack_es31a */
-# if defined (GL_ANGLE_depth_texture)
-
-
-# endif /* GL_ANGLE_depth_texture */
 # if defined (GL_ANGLE_framebuffer_blit)
 
 PFNGLBLITFRAMEBUFFERANGLEPROC gload_glBlitFramebufferANGLE;
@@ -43660,43 +38926,11 @@ PFNGLDRAWELEMENTSINSTANCEDANGLEPROC gload_glDrawElementsInstancedANGLE;
 PFNGLVERTEXATTRIBDIVISORANGLEPROC gload_glVertexAttribDivisorANGLE;
 
 # endif /* GL_ANGLE_instanced_arrays */
-# if defined (GL_ANGLE_pack_reverse_row_order)
-
-
-# endif /* GL_ANGLE_pack_reverse_row_order */
-# if defined (GL_ANGLE_program_binary)
-
-
-# endif /* GL_ANGLE_program_binary */
-# if defined (GL_ANGLE_texture_compression_dxt3)
-
-
-# endif /* GL_ANGLE_texture_compression_dxt3 */
-# if defined (GL_ANGLE_texture_compression_dxt5)
-
-
-# endif /* GL_ANGLE_texture_compression_dxt5 */
-# if defined (GL_ANGLE_texture_usage)
-
-
-# endif /* GL_ANGLE_texture_usage */
 # if defined (GL_ANGLE_translated_shader_source)
 
 PFNGLGETTRANSLATEDSHADERSOURCEANGLEPROC gload_glGetTranslatedShaderSourceANGLE;
 
 # endif /* GL_ANGLE_translated_shader_source */
-# if defined (GL_APPLE_aux_depth_stencil)
-
-
-# endif /* GL_APPLE_aux_depth_stencil */
-# if defined (GL_APPLE_client_storage)
-
-
-# endif /* GL_APPLE_client_storage */
-# if defined (GL_APPLE_clip_distance)
-
-
-# endif /* GL_APPLE_clip_distance */
 # if defined (GL_APPLE_copy_texture_levels)
 
 PFNGLCOPYTEXTURELEVELSAPPLEPROC gload_glCopyTextureLevelsAPPLE;
@@ -43723,10 +38957,6 @@ PFNGLTESTOBJECTAPPLEPROC gload_glTestObjectAPPLE;
 PFNGLFINISHOBJECTAPPLEPROC gload_glFinishObjectAPPLE;
 
 # endif /* GL_APPLE_fence */
-# if defined (GL_APPLE_float_pixels)
-
-
-# endif /* GL_APPLE_float_pixels */
 # if defined (GL_APPLE_flush_buffer_range)
 
 PFNGLBUFFERPARAMETERIAPPLEPROC gload_glBufferParameteriAPPLE;
@@ -43750,14 +38980,6 @@ PFNGLGETOBJECTPARAMETERIVAPPLEPROC gload_glGetObjectParameterivAPPLE;
 
 
 # endif /* GL_APPLE_rgb_422 */
-# if defined (GL_APPLE_row_bytes)
-
-
-# endif /* GL_APPLE_row_bytes */
-# if defined (GL_APPLE_specular_vector)
-
-
-# endif /* GL_APPLE_specular_vector */
 # if defined (GL_APPLE_sync)
 
 PFNGLFENCESYNCAPPLEPROC gload_glFenceSyncAPPLE;
@@ -43773,24 +38995,12 @@ PFNGLGETSYNCIVAPPLEPROC gload_glGetSyncivAPPLE;
 
 
 # endif /* GL_APPLE_texture_format_BGRA8888 */
-# if defined (GL_APPLE_texture_max_level)
-
-
-# endif /* GL_APPLE_texture_max_level */
-# if defined (GL_APPLE_texture_packed_float)
-
-
-# endif /* GL_APPLE_texture_packed_float */
 # if defined (GL_APPLE_texture_range)
 
 PFNGLTEXTURERANGEAPPLEPROC gload_glTextureRangeAPPLE;
 PFNGLGETTEXPARAMETERPOINTERVAPPLEPROC gload_glGetTexParameterPointervAPPLE;
 
 # endif /* GL_APPLE_texture_range */
-# if defined (GL_APPLE_transform_hint)
-
-
-# endif /* GL_APPLE_transform_hint */
 # if defined (GL_APPLE_vertex_array_object)
 
 PFNGLBINDVERTEXARRAYAPPLEPROC gload_glBindVertexArrayAPPLE;
@@ -43817,10 +39027,6 @@ PFNGLMAPVERTEXATTRIB2DAPPLEPROC gload_glMapVertexAttrib2dAPPLE;
 PFNGLMAPVERTEXATTRIB2FAPPLEPROC gload_glMapVertexAttrib2fAPPLE;
 
 # endif /* GL_APPLE_vertex_program_evaluators */
-# if defined (GL_APPLE_ycbcr_422)
-
-
-# endif /* GL_APPLE_ycbcr_422 */
 # if defined (GL_ARB_ES2_compatibility)
 
 PFNGLRELEASESHADERCOMPILERPROC gload_glReleaseShaderCompiler;
@@ -43840,10 +39046,6 @@ PFNGLMEMORYBARRIERBYREGIONPROC gload_glMemoryBarrierByRegion;
 PFNGLPRIMITIVEBOUNDINGBOXARBPROC gload_glPrimitiveBoundingBoxARB;
 
 # endif /* GL_ARB_ES3_2_compatibility */
-# if defined (GL_ARB_ES3_compatibility)
-
-
-# endif /* GL_ARB_ES3_compatibility */
 # if defined (GL_ARB_base_instance)
 
 PFNGLDRAWARRAYSINSTANCEDBASEINSTANCEPROC gload_glDrawArraysInstancedBaseInstance;
@@ -43909,14 +39111,6 @@ PFNGLCLIPCONTROLPROC gload_glClipControl;
 PFNGLCLAMPCOLORARBPROC gload_glClampColorARB;
 
 # endif /* GL_ARB_color_buffer_float */
-# if defined (GL_ARB_compatibility)
-
-
-# endif /* GL_ARB_compatibility */
-# if defined (GL_ARB_compressed_texture_pixel_storage)
-
-
-# endif /* GL_ARB_compressed_texture_pixel_storage */
 # if defined (GL_ARB_compute_shader)
 
 PFNGLDISPATCHCOMPUTEPROC gload_glDispatchCompute;
@@ -43928,10 +39122,6 @@ PFNGLDISPATCHCOMPUTEINDIRECTPROC gload_glDispatchComputeIndirect;
 PFNGLDISPATCHCOMPUTEGROUPSIZEARBPROC gload_glDispatchComputeGroupSizeARB;
 
 # endif /* GL_ARB_compute_variable_group_size */
-# if defined (GL_ARB_conditional_render_inverted)
-
-
-# endif /* GL_ARB_conditional_render_inverted */
 # if defined (GL_ARB_copy_buffer)
 
 PFNGLCOPYBUFFERSUBDATAPROC gload_glCopyBufferSubData;
@@ -43942,10 +39132,6 @@ PFNGLCOPYBUFFERSUBDATAPROC gload_glCopyBufferSubData;
 PFNGLCOPYIMAGESUBDATAPROC gload_glCopyImageSubData;
 
 # endif /* GL_ARB_copy_image */
-# if defined (GL_ARB_cull_distance)
-
-
-# endif /* GL_ARB_cull_distance */
 # if defined (GL_ARB_debug_output)
 
 PFNGLDEBUGMESSAGECONTROLARBPROC gload_glDebugMessageControlARB;
@@ -43954,18 +39140,6 @@ PFNGLDEBUGMESSAGECALLBACKARBPROC gload_glDebugMessageCallbackARB;
 PFNGLGETDEBUGMESSAGELOGARBPROC gload_glGetDebugMessageLogARB;
 
 # endif /* GL_ARB_debug_output */
-# if defined (GL_ARB_depth_buffer_float)
-
-
-# endif /* GL_ARB_depth_buffer_float */
-# if defined (GL_ARB_depth_clamp)
-
-
-# endif /* GL_ARB_depth_clamp */
-# if defined (GL_ARB_depth_texture)
-
-
-# endif /* GL_ARB_depth_texture */
 # if defined (GL_ARB_direct_state_access)
 
 PFNGLCREATETRANSFORMFEEDBACKSPROC gload_glCreateTransformFeedbacks;
@@ -44100,14 +39274,6 @@ PFNGLDRAWARRAYSINSTANCEDARBPROC gload_glDrawArraysInstancedARB;
 PFNGLDRAWELEMENTSINSTANCEDARBPROC gload_glDrawElementsInstancedARB;
 
 # endif /* GL_ARB_draw_instanced */
-# if defined (GL_ARB_enhanced_layouts)
-
-
-# endif /* GL_ARB_enhanced_layouts */
-# if defined (GL_ARB_explicit_uniform_location)
-
-
-# endif /* GL_ARB_explicit_uniform_location */
 # if defined (GL_ARB_fragment_program)
 
 PFNGLPROGRAMSTRINGARBPROC gload_glProgramStringARB;
@@ -44131,10 +39297,6 @@ PFNGLGETPROGRAMSTRINGARBPROC gload_glGetProgramStringARB;
 PFNGLISPROGRAMARBPROC gload_glIsProgramARB;
 
 # endif /* GL_ARB_fragment_program */
-# if defined (GL_ARB_fragment_shader)
-
-
-# endif /* GL_ARB_fragment_shader */
 # if defined (GL_ARB_framebuffer_no_attachments)
 
 PFNGLFRAMEBUFFERPARAMETERIPROC gload_glFramebufferParameteri;
@@ -44165,10 +39327,6 @@ PFNGLRENDERBUFFERSTORAGEMULTISAMPLEPROC gload_glRenderbufferStorageMultisample;
 PFNGLFRAMEBUFFERTEXTURELAYERPROC gload_glFramebufferTextureLayer;
 
 # endif /* GL_ARB_framebuffer_object */
-# if defined (GL_ARB_framebuffer_sRGB)
-
-
-# endif /* GL_ARB_framebuffer_sRGB */
 # if defined (GL_ARB_geometry_shader4)
 
 PFNGLPROGRAMPARAMETERIARBPROC gload_glProgramParameteriARB;
@@ -44195,10 +39353,6 @@ PFNGLGETCOMPRESSEDTEXTURESUBIMAGEPROC gload_glGetCompressedTextureSubImage;
 PFNGLSPECIALIZESHADERARBPROC gload_glSpecializeShaderARB;
 
 # endif /* GL_ARB_gl_spirv */
-# if defined (GL_ARB_gpu_shader5)
-
-
-# endif /* GL_ARB_gpu_shader5 */
 # if defined (GL_ARB_gpu_shader_fp64)
 
 PFNGLUNIFORM1DPROC gload_glUniform1d;
@@ -44261,14 +39415,6 @@ PFNGLPROGRAMUNIFORM3UI64VARBPROC gload_glProgramUniform3ui64vARB;
 PFNGLPROGRAMUNIFORM4UI64VARBPROC gload_glProgramUniform4ui64vARB;
 
 # endif /* GL_ARB_gpu_shader_int64 */
-# if defined (GL_ARB_half_float_pixel)
-
-
-# endif /* GL_ARB_half_float_pixel */
-# if defined (GL_ARB_half_float_vertex)
-
-
-# endif /* GL_ARB_half_float_vertex */
 # if defined (GL_ARB_imaging)
 
 PFNGLBLENDCOLORPROC gload_glBlendColor;
@@ -44338,10 +39484,6 @@ PFNGLINVALIDATEFRAMEBUFFERPROC gload_glInvalidateFramebuffer;
 PFNGLINVALIDATESUBFRAMEBUFFERPROC gload_glInvalidateSubFramebuffer;
 
 # endif /* GL_ARB_invalidate_subdata */
-# if defined (GL_ARB_map_buffer_alignment)
-
-
-# endif /* GL_ARB_map_buffer_alignment */
 # if defined (GL_ARB_map_buffer_range)
 
 PFNGLMAPBUFFERRANGEPROC gload_glMapBufferRange;
@@ -44428,33 +39570,17 @@ PFNGLGETQUERYOBJECTIVARBPROC gload_glGetQueryObjectivARB;
 PFNGLGETQUERYOBJECTUIVARBPROC gload_glGetQueryObjectuivARB;
 
 # endif /* GL_ARB_occlusion_query */
-# if defined (GL_ARB_occlusion_query2)
-
-
-# endif /* GL_ARB_occlusion_query2 */
 # if defined (GL_ARB_parallel_shader_compile)
 
 PFNGLMAXSHADERCOMPILERTHREADSARBPROC gload_glMaxShaderCompilerThreadsARB;
 
 # endif /* GL_ARB_parallel_shader_compile */
-# if defined (GL_ARB_pipeline_statistics_query)
-
-
-# endif /* GL_ARB_pipeline_statistics_query */
-# if defined (GL_ARB_pixel_buffer_object)
-
-
-# endif /* GL_ARB_pixel_buffer_object */
 # if defined (GL_ARB_point_parameters)
 
 PFNGLPOINTPARAMETERFARBPROC gload_glPointParameterfARB;
 PFNGLPOINTPARAMETERFVARBPROC gload_glPointParameterfvARB;
 
 # endif /* GL_ARB_point_parameters */
-# if defined (GL_ARB_point_sprite)
-
-
-# endif /* GL_ARB_point_sprite */
 # if defined (GL_ARB_polygon_offset_clamp)
 
 PFNGLPOLYGONOFFSETCLAMPPROC gload_glPolygonOffsetClamp;
@@ -44475,10 +39601,6 @@ PFNGLGETPROGRAMRESOURCELOCATIONINDEXPROC gload_glGetProgramResourceLocationIndex
 PFNGLPROVOKINGVERTEXPROC gload_glProvokingVertex;
 
 # endif /* GL_ARB_provoking_vertex */
-# if defined (GL_ARB_query_buffer_object)
-
-
-# endif /* GL_ARB_query_buffer_object */
 # if defined (GL_ARB_robustness)
 
 PFNGLGETGRAPHICSRESETSTATUSARBPROC gload_glGetGraphicsResetStatusARB;
@@ -44533,14 +39655,6 @@ PFNGLGETSAMPLERPARAMETERFVPROC gload_glGetSamplerParameterfv;
 PFNGLGETSAMPLERPARAMETERIUIVPROC gload_glGetSamplerParameterIuiv;
 
 # endif /* GL_ARB_sampler_objects */
-# if defined (GL_ARB_seamless_cube_map)
-
-
-# endif /* GL_ARB_seamless_cube_map */
-# if defined (GL_ARB_seamless_cubemap_per_texture)
-
-
-# endif /* GL_ARB_seamless_cubemap_per_texture */
 # if defined (GL_ARB_separate_shader_objects)
 
 PFNGLUSEPROGRAMSTAGESPROC gload_glUseProgramStages;
@@ -44677,10 +39791,6 @@ PFNGLGETUNIFORMSUBROUTINEUIVPROC gload_glGetUniformSubroutineuiv;
 PFNGLGETPROGRAMSTAGEIVPROC gload_glGetProgramStageiv;
 
 # endif /* GL_ARB_shader_subroutine */
-# if defined (GL_ARB_shading_language_100)
-
-
-# endif /* GL_ARB_shading_language_100 */
 # if defined (GL_ARB_shading_language_include)
 
 PFNGLNAMEDSTRINGARBPROC gload_glNamedStringARB;
@@ -44691,14 +39801,6 @@ PFNGLGETNAMEDSTRINGARBPROC gload_glGetNamedStringARB;
 PFNGLGETNAMEDSTRINGIVARBPROC gload_glGetNamedStringivARB;
 
 # endif /* GL_ARB_shading_language_include */
-# if defined (GL_ARB_shadow)
-
-
-# endif /* GL_ARB_shadow */
-# if defined (GL_ARB_shadow_ambient)
-
-
-# endif /* GL_ARB_shadow_ambient */
 # if defined (GL_ARB_sparse_buffer)
 
 PFNGLBUFFERPAGECOMMITMENTARBPROC gload_glBufferPageCommitmentARB;
@@ -44711,14 +39813,6 @@ PFNGLNAMEDBUFFERPAGECOMMITMENTARBPROC gload_glNamedBufferPageCommitmentARB;
 PFNGLTEXPAGECOMMITMENTARBPROC gload_glTexPageCommitmentARB;
 
 # endif /* GL_ARB_sparse_texture */
-# if defined (GL_ARB_spirv_extensions)
-
-
-# endif /* GL_ARB_spirv_extensions */
-# if defined (GL_ARB_stencil_texturing)
-
-
-# endif /* GL_ARB_stencil_texturing */
 # if defined (GL_ARB_sync)
 
 PFNGLFENCESYNCPROC gload_glFenceSync;
@@ -44741,19 +39835,11 @@ PFNGLPATCHPARAMETERFVPROC gload_glPatchParameterfv;
 PFNGLTEXTUREBARRIERPROC gload_glTextureBarrier;
 
 # endif /* GL_ARB_texture_barrier */
-# if defined (GL_ARB_texture_border_clamp)
-
-
-# endif /* GL_ARB_texture_border_clamp */
 # if defined (GL_ARB_texture_buffer_object)
 
 PFNGLTEXBUFFERARBPROC gload_glTexBufferARB;
 
 # endif /* GL_ARB_texture_buffer_object */
-# if defined (GL_ARB_texture_buffer_object_rgb32)
-
-
-# endif /* GL_ARB_texture_buffer_object_rgb32 */
 # if defined (GL_ARB_texture_buffer_range)
 
 PFNGLTEXBUFFERRANGEPROC gload_glTexBufferRange;
@@ -44770,54 +39856,6 @@ PFNGLCOMPRESSEDTEXSUBIMAGE1DARBPROC gload_glCompressedTexSubImage1DARB;
 PFNGLGETCOMPRESSEDTEXIMAGEARBPROC gload_glGetCompressedTexImageARB;
 
 # endif /* GL_ARB_texture_compression */
-# if defined (GL_ARB_texture_compression_bptc)
-
-
-# endif /* GL_ARB_texture_compression_bptc */
-# if defined (GL_ARB_texture_compression_rgtc)
-
-
-# endif /* GL_ARB_texture_compression_rgtc */
-# if defined (GL_ARB_texture_cube_map)
-
-
-# endif /* GL_ARB_texture_cube_map */
-# if defined (GL_ARB_texture_cube_map_array)
-
-
-# endif /* GL_ARB_texture_cube_map_array */
-# if defined (GL_ARB_texture_env_combine)
-
-
-# endif /* GL_ARB_texture_env_combine */
-# if defined (GL_ARB_texture_env_dot3)
-
-
-# endif /* GL_ARB_texture_env_dot3 */
-# if defined (GL_ARB_texture_filter_anisotropic)
-
-
-# endif /* GL_ARB_texture_filter_anisotropic */
-# if defined (GL_ARB_texture_filter_minmax)
-
-
-# endif /* GL_ARB_texture_filter_minmax */
-# if defined (GL_ARB_texture_float)
-
-
-# endif /* GL_ARB_texture_float */
-# if defined (GL_ARB_texture_gather)
-
-
-# endif /* GL_ARB_texture_gather */
-# if defined (GL_ARB_texture_mirror_clamp_to_edge)
-
-
-# endif /* GL_ARB_texture_mirror_clamp_to_edge */
-# if defined (GL_ARB_texture_mirrored_repeat)
-
-
-# endif /* GL_ARB_texture_mirrored_repeat */
 # if defined (GL_ARB_texture_multisample)
 
 PFNGLTEXIMAGE2DMULTISAMPLEPROC gload_glTexImage2DMultisample;
@@ -44826,22 +39864,6 @@ PFNGLGETMULTISAMPLEFVPROC gload_glGetMultisamplefv;
 PFNGLSAMPLEMASKIPROC gload_glSampleMaski;
 
 # endif /* GL_ARB_texture_multisample */
-# if defined (GL_ARB_texture_rectangle)
-
-
-# endif /* GL_ARB_texture_rectangle */
-# if defined (GL_ARB_texture_rg)
-
-
-# endif /* GL_ARB_texture_rg */
-# if defined (GL_ARB_texture_rgb10_a2ui)
-
-
-# endif /* GL_ARB_texture_rgb10_a2ui */
-# if defined (GL_ARB_texture_stencil8)
-
-
-# endif /* GL_ARB_texture_stencil8 */
 # if defined (GL_ARB_texture_storage)
 
 PFNGLTEXSTORAGE1DPROC gload_glTexStorage1D;
@@ -44855,10 +39877,6 @@ PFNGLTEXSTORAGE2DMULTISAMPLEPROC gload_glTexStorage2DMultisample;
 PFNGLTEXSTORAGE3DMULTISAMPLEPROC gload_glTexStorage3DMultisample;
 
 # endif /* GL_ARB_texture_storage_multisample */
-# if defined (GL_ARB_texture_swizzle)
-
-
-# endif /* GL_ARB_texture_swizzle */
 # if defined (GL_ARB_texture_view)
 
 PFNGLTEXTUREVIEWPROC gload_glTextureView;
@@ -44896,10 +39914,6 @@ PFNGLDRAWTRANSFORMFEEDBACKINSTANCEDPROC gload_glDrawTransformFeedbackInstanced;
 PFNGLDRAWTRANSFORMFEEDBACKSTREAMINSTANCEDPROC gload_glDrawTransformFeedbackStreamInstanced;
 
 # endif /* GL_ARB_transform_feedback_instanced */
-# if defined (GL_ARB_transform_feedback_overflow_query)
-
-
-# endif /* GL_ARB_transform_feedback_overflow_query */
 # if defined (GL_ARB_transpose_matrix)
 
 PFNGLLOADTRANSPOSEMATRIXFARBPROC gload_glLoadTransposeMatrixfARB;
@@ -44922,10 +39936,6 @@ PFNGLBINDBUFFERBASEPROC gload_glBindBufferBase;
 PFNGLGETINTEGERI_VPROC gload_glGetIntegeri_v;
 
 # endif /* GL_ARB_uniform_buffer_object */
-# if defined (GL_ARB_vertex_array_bgra)
-
-
-# endif /* GL_ARB_vertex_array_bgra */
 # if defined (GL_ARB_vertex_array_object)
 
 PFNGLBINDVERTEXARRAYPROC gload_glBindVertexArray;
@@ -45103,10 +40113,6 @@ extern PFNGLGETVERTEXATTRIBIVARBPROC gload_glGetVertexAttribivARB;
 extern PFNGLGETVERTEXATTRIBPOINTERVARBPROC gload_glGetVertexAttribPointervARB;
 
 # endif /* GL_ARB_vertex_shader */
-# if defined (GL_ARB_vertex_type_10f_11f_11f_rev)
-
-
-# endif /* GL_ARB_vertex_type_10f_11f_11f_rev */
 # if defined (GL_ARB_vertex_type_2_10_10_10_rev)
 
 PFNGLVERTEXATTRIBP1UIPROC gload_glVertexAttribP1ui;
@@ -45185,27 +40191,11 @@ PFNGLWINDOWPOS3SARBPROC gload_glWindowPos3sARB;
 PFNGLWINDOWPOS3SVARBPROC gload_glWindowPos3svARB;
 
 # endif /* GL_ARB_window_pos */
-# if defined (GL_ARM_mali_program_binary)
-
-
-# endif /* GL_ARM_mali_program_binary */
-# if defined (GL_ARM_mali_shader_binary)
-
-
-# endif /* GL_ARM_mali_shader_binary */
 # if defined (GL_ARM_shader_core_properties)
 
 PFNGLMAXACTIVESHADERCORESARMPROC gload_glMaxActiveShaderCoresARM;
 
 # endif /* GL_ARM_shader_core_properties */
-# if defined (GL_ARM_shader_framebuffer_fetch)
-
-
-# endif /* GL_ARM_shader_framebuffer_fetch */
-# if defined (GL_ARM_texture_unnormalized_coordinates)
-
-
-# endif /* GL_ARM_texture_unnormalized_coordinates */
 # if defined (GL_ATI_draw_buffers)
 
 PFNGLDRAWBUFFERSATIPROC gload_glDrawBuffersATI;
@@ -45250,14 +40240,6 @@ PFNGLMAPOBJECTBUFFERATIPROC gload_glMapObjectBufferATI;
 PFNGLUNMAPOBJECTBUFFERATIPROC gload_glUnmapObjectBufferATI;
 
 # endif /* GL_ATI_map_object_buffer */
-# if defined (GL_ATI_meminfo)
-
-
-# endif /* GL_ATI_meminfo */
-# if defined (GL_ATI_pixel_format_float)
-
-
-# endif /* GL_ATI_pixel_format_float */
 # if defined (GL_ATI_pn_triangles)
 
 PFNGLPNTRIANGLESIATIPROC gload_glPNTrianglesiATI;
@@ -45270,22 +40252,6 @@ PFNGLSTENCILOPSEPARATEATIPROC gload_glStencilOpSeparateATI;
 PFNGLSTENCILFUNCSEPARATEATIPROC gload_glStencilFuncSeparateATI;
 
 # endif /* GL_ATI_separate_stencil */
-# if defined (GL_ATI_text_fragment_shader)
-
-
-# endif /* GL_ATI_text_fragment_shader */
-# if defined (GL_ATI_texture_env_combine3)
-
-
-# endif /* GL_ATI_texture_env_combine3 */
-# if defined (GL_ATI_texture_float)
-
-
-# endif /* GL_ATI_texture_float */
-# if defined (GL_ATI_texture_mirror_once)
-
-
-# endif /* GL_ATI_texture_mirror_once */
 # if defined (GL_ATI_vertex_array_object)
 
 PFNGLNEWOBJECTBUFFERATIPROC gload_glNewObjectBufferATI;
@@ -45358,36 +40324,12 @@ PFNGLVERTEXBLENDENVIATIPROC gload_glVertexBlendEnviATI;
 PFNGLVERTEXBLENDENVFATIPROC gload_glVertexBlendEnvfATI;
 
 # endif /* GL_ATI_vertex_streams */
-# if defined (GL_DMP_program_binary)
-
-
-# endif /* GL_DMP_program_binary */
-# if defined (GL_DMP_shader_binary)
-
-
-# endif /* GL_DMP_shader_binary */
-# if defined (GL_EXT_422_pixels)
-
-
-# endif /* GL_EXT_422_pixels */
 # if defined (GL_EXT_EGL_image_storage)
 
 PFNGLEGLIMAGETARGETTEXSTORAGEEXTPROC gload_glEGLImageTargetTexStorageEXT;
 PFNGLEGLIMAGETARGETTEXTURESTORAGEEXTPROC gload_glEGLImageTargetTextureStorageEXT;
 
 # endif /* GL_EXT_EGL_image_storage */
-# if defined (GL_EXT_EGL_image_storage_compression)
-
-
-# endif /* GL_EXT_EGL_image_storage_compression */
-# if defined (GL_EXT_YUV_target)
-
-
-# endif /* GL_EXT_YUV_target */
-# if defined (GL_EXT_abgr)
-
-
-# endif /* GL_EXT_abgr */
 # if defined (GL_EXT_base_instance)
 
 PFNGLDRAWARRAYSINSTANCEDBASEINSTANCEEXTPROC gload_glDrawArraysInstancedBaseInstanceEXT;
@@ -45395,10 +40337,6 @@ PFNGLDRAWELEMENTSINSTANCEDBASEINSTANCEEXTPROC gload_glDrawElementsInstancedBaseI
 PFNGLDRAWELEMENTSINSTANCEDBASEVERTEXBASEINSTANCEEXTPROC gload_glDrawElementsInstancedBaseVertexBaseInstanceEXT;
 
 # endif /* GL_EXT_base_instance */
-# if defined (GL_EXT_bgra)
-
-
-# endif /* GL_EXT_bgra */
 # if defined (GL_EXT_bindable_uniform)
 
 PFNGLUNIFORMBUFFEREXTPROC gload_glUniformBufferEXT;
@@ -45434,10 +40372,6 @@ PFNGLBLENDFUNCSEPARATEEXTPROC gload_glBlendFuncSeparateEXT;
 PFNGLBLENDEQUATIONEXTPROC gload_glBlendEquationEXT;
 
 # endif /* GL_EXT_blend_minmax */
-# if defined (GL_EXT_blend_subtract)
-
-
-# endif /* GL_EXT_blend_subtract */
 # if defined (GL_EXT_buffer_storage)
 
 PFNGLBUFFERSTORAGEEXTPROC gload_glBufferStorageEXT;
@@ -45454,22 +40388,6 @@ PFNGLCLEARTEXSUBIMAGEEXTPROC gload_glClearTexSubImageEXT;
 PFNGLCLIPCONTROLEXTPROC gload_glClipControlEXT;
 
 # endif /* GL_EXT_clip_control */
-# if defined (GL_EXT_clip_cull_distance)
-
-
-# endif /* GL_EXT_clip_cull_distance */
-# if defined (GL_EXT_clip_volume_hint)
-
-
-# endif /* GL_EXT_clip_volume_hint */
-# if defined (GL_EXT_cmyka)
-
-
-# endif /* GL_EXT_cmyka */
-# if defined (GL_EXT_color_buffer_half_float)
-
-
-# endif /* GL_EXT_color_buffer_half_float */
 # if defined (GL_EXT_color_subtable)
 
 PFNGLCOLORSUBTABLEEXTPROC gload_glColorSubTableEXT;
@@ -45563,10 +40481,6 @@ PFNGLPOPGROUPMARKEREXTPROC gload_glPopGroupMarkerEXT;
 PFNGLDEPTHBOUNDSEXTPROC gload_glDepthBoundsEXT;
 
 # endif /* GL_EXT_depth_bounds_test */
-# if defined (GL_EXT_depth_clamp)
-
-
-# endif /* GL_EXT_depth_clamp */
 # if defined (GL_EXT_direct_state_access)
 
 PFNGLMATRIXLOADFEXTPROC gload_glMatrixLoadfEXT;
@@ -45938,10 +40852,6 @@ PFNGLBLITFRAMEBUFFERLAYEREXTPROC gload_glBlitFramebufferLayerEXT;
 PFNGLRENDERBUFFERSTORAGEMULTISAMPLEEXTPROC gload_glRenderbufferStorageMultisampleEXT;
 
 # endif /* GL_EXT_framebuffer_multisample */
-# if defined (GL_EXT_framebuffer_multisample_blit_scaled)
-
-
-# endif /* GL_EXT_framebuffer_multisample_blit_scaled */
 # if defined (GL_EXT_framebuffer_object)
 
 PFNGLISRENDERBUFFEREXTPROC gload_glIsRenderbufferEXT;
@@ -45963,10 +40873,6 @@ PFNGLGETFRAMEBUFFERATTACHMENTPARAMETERIVEXTPROC gload_glGetFramebufferAttachment
 PFNGLGENERATEMIPMAPEXTPROC gload_glGenerateMipmapEXT;
 
 # endif /* GL_EXT_framebuffer_object */
-# if defined (GL_EXT_framebuffer_sRGB)
-
-
-# endif /* GL_EXT_framebuffer_sRGB */
 # if defined (GL_EXT_geometry_shader)
 
 PFNGLFRAMEBUFFERTEXTUREEXTPROC gload_glFramebufferTextureEXT;
@@ -46035,10 +40941,6 @@ PFNGLRESETHISTOGRAMEXTPROC gload_glResetHistogramEXT;
 PFNGLRESETMINMAXEXTPROC gload_glResetMinmaxEXT;
 
 # endif /* GL_EXT_histogram */
-# if defined (GL_EXT_index_array_formats)
-
-
-# endif /* GL_EXT_index_array_formats */
 # if defined (GL_EXT_index_func)
 
 PFNGLINDEXFUNCEXTPROC gload_glIndexFuncEXT;
@@ -46129,20 +41031,12 @@ PFNGLSAMPLEMASKEXTPROC gload_glSampleMaskEXT;
 PFNGLSAMPLEPATTERNEXTPROC gload_glSamplePatternEXT;
 
 # endif /* GL_EXT_multisample */
-# if defined (GL_EXT_multisampled_compatibility)
-
-
-# endif /* GL_EXT_multisampled_compatibility */
 # if defined (GL_EXT_multisampled_render_to_texture)
 
 extern PFNGLRENDERBUFFERSTORAGEMULTISAMPLEEXTPROC gload_glRenderbufferStorageMultisampleEXT;
 PFNGLFRAMEBUFFERTEXTURE2DMULTISAMPLEEXTPROC gload_glFramebufferTexture2DMultisampleEXT;
 
 # endif /* GL_EXT_multisampled_render_to_texture */
-# if defined (GL_EXT_multisampled_render_to_texture2)
-
-
-# endif /* GL_EXT_multisampled_render_to_texture2 */
 # if defined (GL_EXT_multiview_draw_buffers)
 
 PFNGLREADBUFFERINDEXEDEXTPROC gload_glReadBufferIndexedEXT;
@@ -46161,18 +41055,6 @@ extern PFNGLGETQUERYIVEXTPROC gload_glGetQueryivEXT;
 extern PFNGLGETQUERYOBJECTUIVEXTPROC gload_glGetQueryObjectuivEXT;
 
 # endif /* GL_EXT_occlusion_query_boolean */
-# if defined (GL_EXT_packed_depth_stencil)
-
-
-# endif /* GL_EXT_packed_depth_stencil */
-# if defined (GL_EXT_packed_float)
-
-
-# endif /* GL_EXT_packed_float */
-# if defined (GL_EXT_packed_pixels)
-
-
-# endif /* GL_EXT_packed_pixels */
 # if defined (GL_EXT_paletted_texture)
 
 PFNGLCOLORTABLEEXTPROC gload_glColorTableEXT;
@@ -46181,10 +41063,6 @@ PFNGLGETCOLORTABLEPARAMETERIVEXTPROC gload_glGetColorTableParameterivEXT;
 PFNGLGETCOLORTABLEPARAMETERFVEXTPROC gload_glGetColorTableParameterfvEXT;
 
 # endif /* GL_EXT_paletted_texture */
-# if defined (GL_EXT_pixel_buffer_object)
-
-
-# endif /* GL_EXT_pixel_buffer_object */
 # if defined (GL_EXT_pixel_transform)
 
 PFNGLPIXELTRANSFORMPARAMETERIEXTPROC gload_glPixelTransformParameteriEXT;
@@ -46216,36 +41094,16 @@ PFNGLPOLYGONOFFSETCLAMPEXTPROC gload_glPolygonOffsetClampEXT;
 PFNGLPRIMITIVEBOUNDINGBOXEXTPROC gload_glPrimitiveBoundingBoxEXT;
 
 # endif /* GL_EXT_primitive_bounding_box */
-# if defined (GL_EXT_protected_textures)
-
-
-# endif /* GL_EXT_protected_textures */
 # if defined (GL_EXT_provoking_vertex)
 
 PFNGLPROVOKINGVERTEXEXTPROC gload_glProvokingVertexEXT;
 
 # endif /* GL_EXT_provoking_vertex */
-# if defined (GL_EXT_pvrtc_sRGB)
-
-
-# endif /* GL_EXT_pvrtc_sRGB */
 # if defined (GL_EXT_raster_multisample)
 
 PFNGLRASTERSAMPLESEXTPROC gload_glRasterSamplesEXT;
 
 # endif /* GL_EXT_raster_multisample */
-# if defined (GL_EXT_read_format_bgra)
-
-
-# endif /* GL_EXT_read_format_bgra */
-# if defined (GL_EXT_render_snorm)
-
-
-# endif /* GL_EXT_render_snorm */
-# if defined (GL_EXT_rescale_normal)
-
-
-# endif /* GL_EXT_rescale_normal */
 # if defined (GL_EXT_robustness)
 
 PFNGLGETGRAPHICSRESETSTATUSEXTPROC gload_glGetGraphicsResetStatusEXT;
@@ -46278,14 +41136,6 @@ PFNGLIMPORTSEMAPHOREWIN32HANDLEEXTPROC gload_glImportSemaphoreWin32HandleEXT;
 PFNGLIMPORTSEMAPHOREWIN32NAMEEXTPROC gload_glImportSemaphoreWin32NameEXT;
 
 # endif /* GL_EXT_semaphore_win32 */
-# if defined (GL_EXT_sRGB)
-
-
-# endif /* GL_EXT_sRGB */
-# if defined (GL_EXT_sRGB_write_control)
-
-
-# endif /* GL_EXT_sRGB_write_control */
 # if defined (GL_EXT_secondary_color)
 
 PFNGLSECONDARYCOLOR3BEXTPROC gload_glSecondaryColor3bEXT;
@@ -46358,14 +41208,6 @@ extern PFNGLPROGRAMUNIFORMMATRIX3X4FVEXTPROC gload_glProgramUniformMatrix3x4fvEX
 extern PFNGLPROGRAMUNIFORMMATRIX4X3FVEXTPROC gload_glProgramUniformMatrix4x3fvEXT;
 
 # endif /* GL_EXT_separate_shader_objects */
-# if defined (GL_EXT_separate_specular_color)
-
-
-# endif /* GL_EXT_separate_specular_color */
-# if defined (GL_EXT_shader_framebuffer_fetch)
-
-
-# endif /* GL_EXT_shader_framebuffer_fetch */
 # if defined (GL_EXT_shader_framebuffer_fetch_non_coherent)
 
 PFNGLFRAMEBUFFERFETCHBARRIEREXTPROC gload_glFramebufferFetchBarrierEXT;
@@ -46377,10 +41219,6 @@ PFNGLBINDIMAGETEXTUREEXTPROC gload_glBindImageTextureEXT;
 PFNGLMEMORYBARRIEREXTPROC gload_glMemoryBarrierEXT;
 
 # endif /* GL_EXT_shader_image_load_store */
-# if defined (GL_EXT_shader_pixel_local_storage)
-
-
-# endif /* GL_EXT_shader_pixel_local_storage */
 # if defined (GL_EXT_shader_pixel_local_storage2)
 
 PFNGLFRAMEBUFFERPIXELLOCALSTORAGESIZEEXTPROC gload_glFramebufferPixelLocalStorageSizeEXT;
@@ -46388,14 +41226,6 @@ PFNGLGETFRAMEBUFFERPIXELLOCALSTORAGESIZEEXTPROC gload_glGetFramebufferPixelLocal
 PFNGLCLEARPIXELLOCALSTORAGEUIEXTPROC gload_glClearPixelLocalStorageuiEXT;
 
 # endif /* GL_EXT_shader_pixel_local_storage2 */
-# if defined (GL_EXT_shadow_samplers)
-
-
-# endif /* GL_EXT_shadow_samplers */
-# if defined (GL_EXT_shared_texture_palette)
-
-
-# endif /* GL_EXT_shared_texture_palette */
 # if defined (GL_EXT_sparse_texture)
 
 PFNGLTEXPAGECOMMITMENTEXTPROC gload_glTexPageCommitmentEXT;
@@ -46411,10 +41241,6 @@ PFNGLSTENCILCLEARTAGEXTPROC gload_glStencilClearTagEXT;
 PFNGLACTIVESTENCILFACEEXTPROC gload_glActiveStencilFaceEXT;
 
 # endif /* GL_EXT_stencil_two_side */
-# if defined (GL_EXT_stencil_wrap)
-
-
-# endif /* GL_EXT_stencil_wrap */
 # if defined (GL_EXT_subtexture)
 
 PFNGLTEXSUBIMAGE1DEXTPROC gload_glTexSubImage1DEXT;
@@ -46426,10 +41252,6 @@ PFNGLTEXSUBIMAGE2DEXTPROC gload_glTexSubImage2DEXT;
 PFNGLPATCHPARAMETERIEXTPROC gload_glPatchParameteriEXT;
 
 # endif /* GL_EXT_tessellation_shader */
-# if defined (GL_EXT_texture)
-
-
-# endif /* GL_EXT_texture */
 # if defined (GL_EXT_texture3D)
 
 PFNGLTEXIMAGE3DEXTPROC gload_glTexImage3DEXT;
@@ -46464,66 +41286,6 @@ PFNGLTEXBUFFERRANGEEXTPROC gload_glTexBufferRangeEXT;
 extern PFNGLTEXBUFFEREXTPROC gload_glTexBufferEXT;
 
 # endif /* GL_EXT_texture_buffer_object */
-# if defined (GL_EXT_texture_compression_astc_decode_mode)
-
-
-# endif /* GL_EXT_texture_compression_astc_decode_mode */
-# if defined (GL_EXT_texture_compression_bptc)
-
-
-# endif /* GL_EXT_texture_compression_bptc */
-# if defined (GL_EXT_texture_compression_dxt1)
-
-
-# endif /* GL_EXT_texture_compression_dxt1 */
-# if defined (GL_EXT_texture_compression_latc)
-
-
-# endif /* GL_EXT_texture_compression_latc */
-# if defined (GL_EXT_texture_compression_rgtc)
-
-
-# endif /* GL_EXT_texture_compression_rgtc */
-# if defined (GL_EXT_texture_compression_s3tc)
-
-
-# endif /* GL_EXT_texture_compression_s3tc */
-# if defined (GL_EXT_texture_compression_s3tc_srgb)
-
-
-# endif /* GL_EXT_texture_compression_s3tc_srgb */
-# if defined (GL_EXT_texture_cube_map)
-
-
-# endif /* GL_EXT_texture_cube_map */
-# if defined (GL_EXT_texture_cube_map_array)
-
-
-# endif /* GL_EXT_texture_cube_map_array */
-# if defined (GL_EXT_texture_env_combine)
-
-
-# endif /* GL_EXT_texture_env_combine */
-# if defined (GL_EXT_texture_env_dot3)
-
-
-# endif /* GL_EXT_texture_env_dot3 */
-# if defined (GL_EXT_texture_filter_anisotropic)
-
-
-# endif /* GL_EXT_texture_filter_anisotropic */
-# if defined (GL_EXT_texture_filter_minmax)
-
-
-# endif /* GL_EXT_texture_filter_minmax */
-# if defined (GL_EXT_texture_format_BGRA8888)
-
-
-# endif /* GL_EXT_texture_format_BGRA8888 */
-# if defined (GL_EXT_texture_format_sRGB_override)
-
-
-# endif /* GL_EXT_texture_format_sRGB_override */
 # if defined (GL_EXT_texture_integer)
 
 extern PFNGLTEXPARAMETERIIVEXTPROC gload_glTexParameterIivEXT;
@@ -46534,22 +41296,6 @@ PFNGLCLEARCOLORIIEXTPROC gload_glClearColorIiEXT;
 PFNGLCLEARCOLORIUIEXTPROC gload_glClearColorIuiEXT;
 
 # endif /* GL_EXT_texture_integer */
-# if defined (GL_EXT_texture_lod_bias)
-
-
-# endif /* GL_EXT_texture_lod_bias */
-# if defined (GL_EXT_texture_mirror_clamp)
-
-
-# endif /* GL_EXT_texture_mirror_clamp */
-# if defined (GL_EXT_texture_mirror_clamp_to_edge)
-
-
-# endif /* GL_EXT_texture_mirror_clamp_to_edge */
-# if defined (GL_EXT_texture_norm16)
-
-
-# endif /* GL_EXT_texture_norm16 */
 # if defined (GL_EXT_texture_object)
 
 PFNGLARETEXTURESRESIDENTEXTPROC gload_glAreTexturesResidentEXT;
@@ -46565,34 +41311,10 @@ PFNGLPRIORITIZETEXTURESEXTPROC gload_glPrioritizeTexturesEXT;
 PFNGLTEXTURENORMALEXTPROC gload_glTextureNormalEXT;
 
 # endif /* GL_EXT_texture_perturb_normal */
-# if defined (GL_EXT_texture_rg)
-
-
-# endif /* GL_EXT_texture_rg */
 # if defined (GL_EXT_texture_sRGB)
 
 
 # endif /* GL_EXT_texture_sRGB */
-# if defined (GL_EXT_texture_sRGB_R8)
-
-
-# endif /* GL_EXT_texture_sRGB_R8 */
-# if defined (GL_EXT_texture_sRGB_RG8)
-
-
-# endif /* GL_EXT_texture_sRGB_RG8 */
-# if defined (GL_EXT_texture_sRGB_decode)
-
-
-# endif /* GL_EXT_texture_sRGB_decode */
-# if defined (GL_EXT_texture_shared_exponent)
-
-
-# endif /* GL_EXT_texture_shared_exponent */
-# if defined (GL_EXT_texture_snorm)
-
-
-# endif /* GL_EXT_texture_snorm */
 # if defined (GL_EXT_texture_storage)
 
 PFNGLTEXSTORAGE1DEXTPROC gload_glTexStorage1DEXT;
@@ -46609,14 +41331,6 @@ PFNGLTEXSTORAGEATTRIBS2DEXTPROC gload_glTexStorageAttribs2DEXT;
 PFNGLTEXSTORAGEATTRIBS3DEXTPROC gload_glTexStorageAttribs3DEXT;
 
 # endif /* GL_EXT_texture_storage_compression */
-# if defined (GL_EXT_texture_swizzle)
-
-
-# endif /* GL_EXT_texture_swizzle */
-# if defined (GL_EXT_texture_type_2_10_10_10_REV)
-
-
-# endif /* GL_EXT_texture_type_2_10_10_10_REV */
 # if defined (GL_EXT_texture_view)
 
 PFNGLTEXTUREVIEWEXTPROC gload_glTextureViewEXT;
@@ -46646,10 +41360,6 @@ PFNGLTRANSFORMFEEDBACKVARYINGSEXTPROC gload_glTransformFeedbackVaryingsEXT;
 PFNGLGETTRANSFORMFEEDBACKVARYINGEXTPROC gload_glGetTransformFeedbackVaryingEXT;
 
 # endif /* GL_EXT_transform_feedback */
-# if defined (GL_EXT_unpack_subimage)
-
-
-# endif /* GL_EXT_unpack_subimage */
 # if defined (GL_EXT_vertex_array)
 
 PFNGLARRAYELEMENTEXTPROC gload_glArrayElementEXT;
@@ -46663,10 +41373,6 @@ PFNGLTEXCOORDPOINTEREXTPROC gload_glTexCoordPointerEXT;
 PFNGLVERTEXPOINTEREXTPROC gload_glVertexPointerEXT;
 
 # endif /* GL_EXT_vertex_array */
-# if defined (GL_EXT_vertex_array_bgra)
-
-
-# endif /* GL_EXT_vertex_array_bgra */
 # if defined (GL_EXT_vertex_attrib_64bit)
 
 PFNGLVERTEXATTRIBL1DEXTPROC gload_glVertexAttribL1dEXT;
@@ -46750,10 +41456,6 @@ PFNGLWINDOWRECTANGLESEXTPROC gload_glWindowRectanglesEXT;
 PFNGLIMPORTSYNCEXTPROC gload_glImportSyncEXT;
 
 # endif /* GL_EXT_x11_sync_object */
-# if defined (GL_FJ_shader_binary_GCCSO)
-
-
-# endif /* GL_FJ_shader_binary_GCCSO */
 # if defined (GL_GREMEDY_frame_terminator)
 
 PFNGLFRAMETERMINATORGREMEDYPROC gload_glFrameTerminatorGREMEDY;
@@ -46764,10 +41466,6 @@ PFNGLFRAMETERMINATORGREMEDYPROC gload_glFrameTerminatorGREMEDY;
 PFNGLSTRINGMARKERGREMEDYPROC gload_glStringMarkerGREMEDY;
 
 # endif /* GL_GREMEDY_string_marker */
-# if defined (GL_HP_convolution_border_modes)
-
-
-# endif /* GL_HP_convolution_border_modes */
 # if defined (GL_HP_image_transform)
 
 PFNGLIMAGETRANSFORMPARAMETERIHPPROC gload_glImageTransformParameteriHP;
@@ -46778,45 +41476,17 @@ PFNGLGETIMAGETRANSFORMPARAMETERIVHPPROC gload_glGetImageTransformParameterivHP;
 PFNGLGETIMAGETRANSFORMPARAMETERFVHPPROC gload_glGetImageTransformParameterfvHP;
 
 # endif /* GL_HP_image_transform */
-# if defined (GL_HP_occlusion_test)
-
-
-# endif /* GL_HP_occlusion_test */
-# if defined (GL_HP_texture_lighting)
-
-
-# endif /* GL_HP_texture_lighting */
-# if defined (GL_HUAWEI_program_binary)
-
-
-# endif /* GL_HUAWEI_program_binary */
-# if defined (GL_HUAWEI_shader_binary)
-
-
-# endif /* GL_HUAWEI_shader_binary */
-# if defined (GL_IBM_cull_vertex)
-
-
-# endif /* GL_IBM_cull_vertex */
 # if defined (GL_IBM_multimode_draw_arrays)
 
 PFNGLMULTIMODEDRAWARRAYSIBMPROC gload_glMultiModeDrawArraysIBM;
 PFNGLMULTIMODEDRAWELEMENTSIBMPROC gload_glMultiModeDrawElementsIBM;
 
 # endif /* GL_IBM_multimode_draw_arrays */
-# if defined (GL_IBM_rasterpos_clip)
-
-
-# endif /* GL_IBM_rasterpos_clip */
 # if defined (GL_IBM_static_data)
 
 PFNGLFLUSHSTATICDATAIBMPROC gload_glFlushStaticDataIBM;
 
 # endif /* GL_IBM_static_data */
-# if defined (GL_IBM_texture_mirrored_repeat)
-
-
-# endif /* GL_IBM_texture_mirrored_repeat */
 # if defined (GL_IBM_vertex_array_lists)
 
 PFNGLCOLORPOINTERLISTIBMPROC gload_glColorPointerListIBM;
@@ -46851,65 +41521,17 @@ PFNGLRENDERBUFFERSTORAGEMULTISAMPLEIMGPROC gload_glRenderbufferStorageMultisampl
 PFNGLFRAMEBUFFERTEXTURE2DMULTISAMPLEIMGPROC gload_glFramebufferTexture2DMultisampleIMG;
 
 # endif /* GL_IMG_multisampled_render_to_texture */
-# if defined (GL_IMG_program_binary)
-
-
-# endif /* GL_IMG_program_binary */
-# if defined (GL_IMG_read_format)
-
-
-# endif /* GL_IMG_read_format */
-# if defined (GL_IMG_shader_binary)
-
-
-# endif /* GL_IMG_shader_binary */
-# if defined (GL_IMG_texture_compression_pvrtc)
-
-
-# endif /* GL_IMG_texture_compression_pvrtc */
-# if defined (GL_IMG_texture_compression_pvrtc2)
-
-
-# endif /* GL_IMG_texture_compression_pvrtc2 */
-# if defined (GL_IMG_texture_env_enhanced_fixed_function)
-
-
-# endif /* GL_IMG_texture_env_enhanced_fixed_function */
-# if defined (GL_IMG_texture_filter_cubic)
-
-
-# endif /* GL_IMG_texture_filter_cubic */
 # if defined (GL_IMG_user_clip_plane)
 
 PFNGLCLIPPLANEFIMGPROC gload_glClipPlanefIMG;
 PFNGLCLIPPLANEXIMGPROC gload_glClipPlanexIMG;
 
 # endif /* GL_IMG_user_clip_plane */
-# if defined (GL_IMG_tile_region_protection)
-
-
-# endif /* GL_IMG_tile_region_protection */
-# if defined (GL_IMG_pvric_end_to_end_signature)
-
-
-# endif /* GL_IMG_pvric_end_to_end_signature */
 # if defined (GL_INGR_blend_func_separate)
 
 PFNGLBLENDFUNCSEPARATEINGRPROC gload_glBlendFuncSeparateINGR;
 
 # endif /* GL_INGR_blend_func_separate */
-# if defined (GL_INGR_color_clamp)
-
-
-# endif /* GL_INGR_color_clamp */
-# if defined (GL_INGR_interlace_read)
-
-
-# endif /* GL_INGR_interlace_read */
-# if defined (GL_INTEL_conservative_rasterization)
-
-
-# endif /* GL_INTEL_conservative_rasterization */
 # if defined (GL_INTEL_framebuffer_CMAA)
 
 PFNGLAPPLYFRAMEBUFFERATTACHMENTCMAAINTELPROC gload_glApplyFramebufferAttachmentCMAAINTEL;
@@ -46922,10 +41544,6 @@ PFNGLUNMAPTEXTURE2DINTELPROC gload_glUnmapTexture2DINTEL;
 PFNGLMAPTEXTURE2DINTELPROC gload_glMapTexture2DINTEL;
 
 # endif /* GL_INTEL_map_texture */
-# if defined (GL_INTEL_blackhole_render)
-
-
-# endif /* GL_INTEL_blackhole_render */
 # if defined (GL_INTEL_parallel_arrays)
 
 PFNGLVERTEXPOINTERVINTELPROC gload_glVertexPointervINTEL;
@@ -46953,10 +41571,6 @@ PFNGLGETPERFQUERYINFOINTELPROC gload_glGetPerfQueryInfoINTEL;
 PFNGLBLENDBARRIERKHRPROC gload_glBlendBarrierKHR;
 
 # endif /* GL_KHR_blend_equation_advanced */
-# if defined (GL_KHR_blend_equation_advanced_coherent)
-
-
-# endif /* GL_KHR_blend_equation_advanced_coherent */
 # if defined (GL_KHR_context_flush_control)
 
 
@@ -46987,10 +41601,6 @@ PFNGLGETOBJECTPTRLABELKHRPROC gload_glGetObjectPtrLabelKHR;
 PFNGLGETPOINTERVKHRPROC gload_glGetPointervKHR;
 
 # endif /* GL_KHR_debug */
-# if defined (GL_KHR_no_error)
-
-
-# endif /* GL_KHR_no_error */
 # if defined (GL_KHR_robustness)
 
 PFNGLGETGRAPHICSRESETSTATUSPROC gload_glGetGraphicsResetStatus;
@@ -47005,53 +41615,17 @@ PFNGLGETNUNIFORMIVKHRPROC gload_glGetnUniformivKHR;
 PFNGLGETNUNIFORMUIVKHRPROC gload_glGetnUniformuivKHR;
 
 # endif /* GL_KHR_robustness */
-# if defined (GL_KHR_shader_subgroup)
-
-
-# endif /* GL_KHR_shader_subgroup */
-# if defined (GL_KHR_texture_compression_astc_hdr)
-
-
-# endif /* GL_KHR_texture_compression_astc_hdr */
-# if defined (GL_KHR_texture_compression_astc_ldr)
-
-
-# endif /* GL_KHR_texture_compression_astc_ldr */
 # if defined (GL_KHR_parallel_shader_compile)
 
 PFNGLMAXSHADERCOMPILERTHREADSKHRPROC gload_glMaxShaderCompilerThreadsKHR;
 
 # endif /* GL_KHR_parallel_shader_compile */
-# if defined (GL_MESAX_texture_stack)
-
-
-# endif /* GL_MESAX_texture_stack */
-# if defined (GL_MESA_bgra)
-
-
-# endif /* GL_MESA_bgra */
-# if defined (GL_MESA_framebuffer_flip_x)
-
-
-# endif /* GL_MESA_framebuffer_flip_x */
 # if defined (GL_MESA_framebuffer_flip_y)
 
 PFNGLFRAMEBUFFERPARAMETERIMESAPROC gload_glFramebufferParameteriMESA;
 PFNGLGETFRAMEBUFFERPARAMETERIVMESAPROC gload_glGetFramebufferParameterivMESA;
 
 # endif /* GL_MESA_framebuffer_flip_y */
-# if defined (GL_MESA_framebuffer_swap_xy)
-
-
-# endif /* GL_MESA_framebuffer_swap_xy */
-# if defined (GL_MESA_pack_invert)
-
-
-# endif /* GL_MESA_pack_invert */
-# if defined (GL_MESA_program_binary_formats)
-
-
-# endif /* GL_MESA_program_binary_formats */
 # if defined (GL_MESA_resize_buffers)
 
 PFNGLRESIZEBUFFERSMESAPROC gload_glResizeBuffersMESA;
@@ -47071,14 +41645,6 @@ extern PFNGLGETSAMPLERPARAMETERIVPROC gload_glGetSamplerParameteriv;
 extern PFNGLGETSAMPLERPARAMETERFVPROC gload_glGetSamplerParameterfv;
 
 # endif /* GL_MESA_sampler_objects */
-# if defined (GL_MESA_texture_const_bandwidth)
-
-
-# endif /* GL_MESA_texture_const_bandwidth */
-# if defined (GL_MESA_tile_raster_order)
-
-
-# endif /* GL_MESA_tile_raster_order */
 # if defined (GL_MESA_window_pos)
 
 PFNGLWINDOWPOS2DMESAPROC gload_glWindowPos2dMESA;
@@ -47107,24 +41673,12 @@ PFNGLWINDOWPOS4SMESAPROC gload_glWindowPos4sMESA;
 PFNGLWINDOWPOS4SVMESAPROC gload_glWindowPos4svMESA;
 
 # endif /* GL_MESA_window_pos */
-# if defined (GL_MESA_ycbcr_texture)
-
-
-# endif /* GL_MESA_ycbcr_texture */
-# if defined (GL_NVX_cross_process_interop)
-
-
-# endif /* GL_NVX_cross_process_interop */
 # if defined (GL_NVX_conditional_render)
 
 PFNGLBEGINCONDITIONALRENDERNVXPROC gload_glBeginConditionalRenderNVX;
 PFNGLENDCONDITIONALRENDERNVXPROC gload_glEndConditionalRenderNVX;
 
 # endif /* GL_NVX_conditional_render */
-# if defined (GL_NVX_gpu_memory_info)
-
-
-# endif /* GL_NVX_gpu_memory_info */
 # if defined (GL_NVX_linked_gpu_multicast)
 
 PFNGLLGPUNAMEDBUFFERSUBDATANVXPROC gload_glLGPUNamedBufferSubDataNVX;
@@ -47172,14 +41726,6 @@ PFNGLBLENDPARAMETERINVPROC gload_glBlendParameteriNV;
 PFNGLBLENDBARRIERNVPROC gload_glBlendBarrierNV;
 
 # endif /* GL_NV_blend_equation_advanced */
-# if defined (GL_NV_blend_equation_advanced_coherent)
-
-
-# endif /* GL_NV_blend_equation_advanced_coherent */
-# if defined (GL_NV_blend_minmax_factor)
-
-
-# endif /* GL_NV_blend_minmax_factor */
 # if defined (GL_NV_clip_space_w_scaling)
 
 PFNGLVIEWPORTPOSITIONWSCALENVPROC gload_glViewportPositionWScaleNV;
@@ -47206,10 +41752,6 @@ PFNGLCOMPILECOMMANDLISTNVPROC gload_glCompileCommandListNV;
 PFNGLCALLCOMMANDLISTNVPROC gload_glCallCommandListNV;
 
 # endif /* GL_NV_command_list */
-# if defined (GL_NV_compute_program5)
-
-
-# endif /* GL_NV_compute_program5 */
 # if defined (GL_NV_conditional_render)
 
 PFNGLBEGINCONDITIONALRENDERNVPROC gload_glBeginConditionalRenderNV;
@@ -47226,10 +41768,6 @@ PFNGLSUBPIXELPRECISIONBIASNVPROC gload_glSubpixelPrecisionBiasNV;
 PFNGLCONSERVATIVERASTERPARAMETERFNVPROC gload_glConservativeRasterParameterfNV;
 
 # endif /* GL_NV_conservative_raster_dilate */
-# if defined (GL_NV_conservative_raster_pre_snap)
-
-
-# endif /* GL_NV_conservative_raster_pre_snap */
 # if defined (GL_NV_conservative_raster_pre_snap_triangles)
 
 PFNGLCONSERVATIVERASTERPARAMETERINVPROC gload_glConservativeRasterParameteriNV;
@@ -47240,10 +41778,6 @@ PFNGLCONSERVATIVERASTERPARAMETERINVPROC gload_glConservativeRasterParameteriNV;
 PFNGLCOPYBUFFERSUBDATANVPROC gload_glCopyBufferSubDataNV;
 
 # endif /* GL_NV_copy_buffer */
-# if defined (GL_NV_copy_depth_to_color)
-
-
-# endif /* GL_NV_copy_depth_to_color */
 # if defined (GL_NV_copy_image)
 
 PFNGLCOPYIMAGESUBDATANVPROC gload_glCopyImageSubDataNV;
@@ -47255,10 +41789,6 @@ PFNGLCOVERAGEMASKNVPROC gload_glCoverageMaskNV;
 PFNGLCOVERAGEOPERATIONNVPROC gload_glCoverageOperationNV;
 
 # endif /* GL_NV_coverage_sample */
-# if defined (GL_NV_deep_texture3D)
-
-
-# endif /* GL_NV_deep_texture3D */
 # if defined (GL_NV_depth_buffer_float)
 
 PFNGLDEPTHRANGEDNVPROC gload_glDepthRangedNV;
@@ -47266,14 +41796,6 @@ PFNGLCLEARDEPTHDNVPROC gload_glClearDepthdNV;
 PFNGLDEPTHBOUNDSDNVPROC gload_glDepthBoundsdNV;
 
 # endif /* GL_NV_depth_buffer_float */
-# if defined (GL_NV_depth_clamp)
-
-
-# endif /* GL_NV_depth_clamp */
-# if defined (GL_NV_depth_nonlinear)
-
-
-# endif /* GL_NV_depth_nonlinear */
 # if defined (GL_NV_draw_buffers)
 
 PFNGLDRAWBUFFERSNVPROC gload_glDrawBuffersNV;
@@ -47319,10 +41841,6 @@ PFNGLSAMPLEMASKINDEXEDNVPROC gload_glSampleMaskIndexedNV;
 PFNGLTEXRENDERBUFFERNVPROC gload_glTexRenderbufferNV;
 
 # endif /* GL_NV_explicit_multisample */
-# if defined (GL_NV_fbo_color_attachments)
-
-
-# endif /* GL_NV_fbo_color_attachments */
 # if defined (GL_NV_fence)
 
 PFNGLDELETEFENCESNVPROC gload_glDeleteFencesNV;
@@ -47334,18 +41852,6 @@ PFNGLFINISHFENCENVPROC gload_glFinishFenceNV;
 PFNGLSETFENCENVPROC gload_glSetFenceNV;
 
 # endif /* GL_NV_fence */
-# if defined (GL_NV_fill_rectangle)
-
-
-# endif /* GL_NV_fill_rectangle */
-# if defined (GL_NV_float_buffer)
-
-
-# endif /* GL_NV_float_buffer */
-# if defined (GL_NV_fog_distance)
-
-
-# endif /* GL_NV_fog_distance */
 # if defined (GL_NV_fragment_coverage_to_color)
 
 PFNGLFRAGMENTCOVERAGECOLORNVPROC gload_glFragmentCoverageColorNV;
@@ -47361,10 +41867,6 @@ PFNGLGETPROGRAMNAMEDPARAMETERFVNVPROC gload_glGetProgramNamedParameterfvNV;
 PFNGLGETPROGRAMNAMEDPARAMETERDVNVPROC gload_glGetProgramNamedParameterdvNV;
 
 # endif /* GL_NV_fragment_program */
-# if defined (GL_NV_fragment_program2)
-
-
-# endif /* GL_NV_fragment_program2 */
 # if defined (GL_NV_framebuffer_blit)
 
 PFNGLBLITFRAMEBUFFERNVPROC gload_glBlitFramebufferNV;
@@ -47519,10 +42021,6 @@ PFNGLVERTEXATTRIBDIVISORNVPROC gload_glVertexAttribDivisorNV;
 PFNGLGETINTERNALFORMATSAMPLEIVNVPROC gload_glGetInternalformatSampleivNV;
 
 # endif /* GL_NV_internalformat_sample_query */
-# if defined (GL_NV_light_max_exponent)
-
-
-# endif /* GL_NV_light_max_exponent */
 # if defined (GL_NV_gpu_multicast)
 
 PFNGLRENDERGPUMASKNVPROC gload_glRenderGpuMaskNV;
@@ -47583,14 +42081,6 @@ PFNGLMULTIDRAWMESHTASKSINDIRECTNVPROC gload_glMultiDrawMeshTasksIndirectNV;
 PFNGLMULTIDRAWMESHTASKSINDIRECTCOUNTNVPROC gload_glMultiDrawMeshTasksIndirectCountNV;
 
 # endif /* GL_NV_mesh_shader */
-# if defined (GL_NV_multisample_coverage)
-
-
-# endif /* GL_NV_multisample_coverage */
-# if defined (GL_NV_multisample_filter_hint)
-
-
-# endif /* GL_NV_multisample_filter_hint */
 # if defined (GL_NV_non_square_matrices)
 
 PFNGLUNIFORMMATRIX2X3FVNVPROC gload_glUniformMatrix2x3fvNV;
@@ -47612,10 +42102,6 @@ PFNGLGETOCCLUSIONQUERYIVNVPROC gload_glGetOcclusionQueryivNV;
 PFNGLGETOCCLUSIONQUERYUIVNVPROC gload_glGetOcclusionQueryuivNV;
 
 # endif /* GL_NV_occlusion_query */
-# if defined (GL_NV_packed_depth_stencil)
-
-
-# endif /* GL_NV_packed_depth_stencil */
 # if defined (GL_NV_parameter_buffer_object)
 
 PFNGLPROGRAMBUFFERPARAMETERSFVNVPROC gload_glProgramBufferParametersfvNV;
@@ -47710,20 +42196,12 @@ extern PFNGLMATRIXTRANSLATEFEXTPROC gload_glMatrixTranslatefEXT;
 extern PFNGLMATRIXTRANSLATEDEXTPROC gload_glMatrixTranslatedEXT;
 
 # endif /* GL_NV_path_rendering */
-# if defined (GL_NV_path_rendering_shared_edge)
-
-
-# endif /* GL_NV_path_rendering_shared_edge */
 # if defined (GL_NV_pixel_data_range)
 
 PFNGLPIXELDATARANGENVPROC gload_glPixelDataRangeNV;
 PFNGLFLUSHPIXELDATARANGENVPROC gload_glFlushPixelDataRangeNV;
 
 # endif /* GL_NV_pixel_data_range */
-# if defined (GL_NV_pixel_buffer_object)
-
-
-# endif /* GL_NV_pixel_buffer_object */
 # if defined (GL_NV_point_sprite)
 
 PFNGLPOINTPARAMETERINVPROC gload_glPointParameteriNV;
@@ -47751,10 +42229,6 @@ PFNGLPRIMITIVERESTARTNVPROC gload_glPrimitiveRestartNV;
 PFNGLPRIMITIVERESTARTINDEXNVPROC gload_glPrimitiveRestartIndexNV;
 
 # endif /* GL_NV_primitive_restart */
-# if defined (GL_NV_primitive_shading_rate)
-
-
-# endif /* GL_NV_primitive_shading_rate */
 # if defined (GL_NV_query_resource)
 
 PFNGLQUERYRESOURCENVPROC gload_glQueryResourceNV;
@@ -47795,18 +42269,6 @@ PFNGLCOMBINERSTAGEPARAMETERFVNVPROC gload_glCombinerStageParameterfvNV;
 PFNGLGETCOMBINERSTAGEPARAMETERFVNVPROC gload_glGetCombinerStageParameterfvNV;
 
 # endif /* GL_NV_register_combiners2 */
-# if defined (GL_NV_representative_fragment_test)
-
-
-# endif /* GL_NV_representative_fragment_test */
-# if defined (GL_NV_robustness_video_memory_purge)
-
-
-# endif /* GL_NV_robustness_video_memory_purge */
-# if defined (GL_NV_sRGB_formats)
-
-
-# endif /* GL_NV_sRGB_formats */
 # if defined (GL_NV_sample_locations)
 
 PFNGLFRAMEBUFFERSAMPLELOCATIONSFVNVPROC gload_glFramebufferSampleLocationsfvNV;
@@ -47838,18 +42300,6 @@ PFNGLPROGRAMUNIFORMUI64NVPROC gload_glProgramUniformui64NV;
 PFNGLPROGRAMUNIFORMUI64VNVPROC gload_glProgramUniformui64vNV;
 
 # endif /* GL_NV_shader_buffer_load */
-# if defined (GL_NV_shader_buffer_store)
-
-
-# endif /* GL_NV_shader_buffer_store */
-# if defined (GL_NV_shader_subgroup_partitioned)
-
-
-# endif /* GL_NV_shader_subgroup_partitioned */
-# if defined (GL_NV_shader_thread_group)
-
-
-# endif /* GL_NV_shader_thread_group */
 # if defined (GL_NV_shading_rate_image)
 
 PFNGLBINDSHADINGRATEIMAGENVPROC gload_glBindShadingRateImageNV;
@@ -47861,43 +42311,11 @@ PFNGLSHADINGRATESAMPLEORDERNVPROC gload_glShadingRateSampleOrderNV;
 PFNGLSHADINGRATESAMPLEORDERCUSTOMNVPROC gload_glShadingRateSampleOrderCustomNV;
 
 # endif /* GL_NV_shading_rate_image */
-# if defined (GL_NV_shadow_samplers_array)
-
-
-# endif /* GL_NV_shadow_samplers_array */
-# if defined (GL_NV_shadow_samplers_cube)
-
-
-# endif /* GL_NV_shadow_samplers_cube */
-# if defined (GL_NV_tessellation_program5)
-
-
-# endif /* GL_NV_tessellation_program5 */
-# if defined (GL_NV_texgen_emboss)
-
-
-# endif /* GL_NV_texgen_emboss */
-# if defined (GL_NV_texgen_reflection)
-
-
-# endif /* GL_NV_texgen_reflection */
 # if defined (GL_NV_texture_barrier)
 
 PFNGLTEXTUREBARRIERNVPROC gload_glTextureBarrierNV;
 
 # endif /* GL_NV_texture_barrier */
-# if defined (GL_NV_texture_border_clamp)
-
-
-# endif /* GL_NV_texture_border_clamp */
-# if defined (GL_NV_texture_env_combine4)
-
-
-# endif /* GL_NV_texture_env_combine4 */
-# if defined (GL_NV_texture_expand_normal)
-
-
-# endif /* GL_NV_texture_expand_normal */
 # if defined (GL_NV_texture_multisample)
 
 PFNGLTEXIMAGE2DMULTISAMPLECOVERAGENVPROC gload_glTexImage2DMultisampleCoverageNV;
@@ -47908,22 +42326,6 @@ PFNGLTEXTUREIMAGE2DMULTISAMPLECOVERAGENVPROC gload_glTextureImage2DMultisampleCo
 PFNGLTEXTUREIMAGE3DMULTISAMPLECOVERAGENVPROC gload_glTextureImage3DMultisampleCoverageNV;
 
 # endif /* GL_NV_texture_multisample */
-# if defined (GL_NV_texture_rectangle)
-
-
-# endif /* GL_NV_texture_rectangle */
-# if defined (GL_NV_texture_shader)
-
-
-# endif /* GL_NV_texture_shader */
-# if defined (GL_NV_texture_shader2)
-
-
-# endif /* GL_NV_texture_shader2 */
-# if defined (GL_NV_texture_shader3)
-
-
-# endif /* GL_NV_texture_shader3 */
 # if defined (GL_NV_transform_feedback)
 
 PFNGLBEGINTRANSFORMFEEDBACKNVPROC gload_glBeginTransformFeedbackNV;
@@ -47951,10 +42353,6 @@ PFNGLRESUMETRANSFORMFEEDBACKNVPROC gload_glResumeTransformFeedbackNV;
 PFNGLDRAWTRANSFORMFEEDBACKNVPROC gload_glDrawTransformFeedbackNV;
 
 # endif /* GL_NV_transform_feedback2 */
-# if defined (GL_NV_uniform_buffer_unified_memory)
-
-
-# endif /* GL_NV_uniform_buffer_unified_memory */
 # if defined (GL_NV_vdpau_interop)
 
 PFNGLVDPAUINITNVPROC gload_glVDPAUInitNV;
@@ -47980,10 +42378,6 @@ PFNGLFLUSHVERTEXARRAYRANGENVPROC gload_glFlushVertexArrayRangeNV;
 PFNGLVERTEXARRAYRANGENVPROC gload_glVertexArrayRangeNV;
 
 # endif /* GL_NV_vertex_array_range */
-# if defined (GL_NV_vertex_array_range2)
-
-
-# endif /* GL_NV_vertex_array_range2 */
 # if defined (GL_NV_vertex_attrib_integer_64bit)
 
 PFNGLVERTEXATTRIBL1I64NVPROC gload_glVertexAttribL1i64NV;
@@ -48091,14 +42485,6 @@ PFNGLVERTEXATTRIBS4SVNVPROC gload_glVertexAttribs4svNV;
 PFNGLVERTEXATTRIBS4UBVNVPROC gload_glVertexAttribs4ubvNV;
 
 # endif /* GL_NV_vertex_program */
-# if defined (GL_NV_vertex_program2_option)
-
-
-# endif /* GL_NV_vertex_program2_option */
-# if defined (GL_NV_vertex_program3)
-
-
-# endif /* GL_NV_vertex_program3 */
 # if defined (GL_NV_vertex_program4)
 
 extern PFNGLVERTEXATTRIBI1IEXTPROC gload_glVertexAttribI1iEXT;
@@ -48163,10 +42549,6 @@ PFNGLISENABLEDINVPROC gload_glIsEnablediNV;
 PFNGLVIEWPORTSWIZZLENVPROC gload_glViewportSwizzleNV;
 
 # endif /* GL_NV_viewport_swizzle */
-# if defined (GL_NV_pack_subimage)
-
-
-# endif /* GL_NV_pack_subimage */
 # if defined (GL_OES_EGL_image)
 
 PFNGLEGLIMAGETARGETTEXTURE2DOESPROC gload_glEGLImageTargetTexture2DOES;
@@ -48219,31 +42601,11 @@ PFNGLVERTEX4BOESPROC gload_glVertex4bOES;
 PFNGLVERTEX4BVOESPROC gload_glVertex4bvOES;
 
 # endif /* GL_OES_byte_coordinates */
-# if defined (GL_OES_compressed_ETC1_RGB8_texture)
-
-
-# endif /* GL_OES_compressed_ETC1_RGB8_texture */
-# if defined (GL_OES_compressed_paletted_texture)
-
-
-# endif /* GL_OES_compressed_paletted_texture */
 # if defined (GL_OES_copy_image)
 
 PFNGLCOPYIMAGESUBDATAOESPROC gload_glCopyImageSubDataOES;
 
 # endif /* GL_OES_copy_image */
-# if defined (GL_OES_depth24)
-
-
-# endif /* GL_OES_depth24 */
-# if defined (GL_OES_depth32)
-
-
-# endif /* GL_OES_depth32 */
-# if defined (GL_OES_depth_texture)
-
-
-# endif /* GL_OES_depth_texture */
 # if defined (GL_OES_draw_buffers_indexed)
 
 PFNGLENABLEIOESPROC gload_glEnableiOES;
@@ -48276,10 +42638,6 @@ PFNGLDRAWTEXFOESPROC gload_glDrawTexfOES;
 PFNGLDRAWTEXFVOESPROC gload_glDrawTexfvOES;
 
 # endif /* GL_OES_draw_texture */
-# if defined (GL_OES_element_index_uint)
-
-
-# endif /* GL_OES_element_index_uint */
 # if defined (GL_OES_fixed_point)
 
 PFNGLALPHAFUNCXOESPROC gload_glAlphaFuncxOES;
@@ -48391,10 +42749,6 @@ PFNGLVERTEX4XOESPROC gload_glVertex4xOES;
 PFNGLVERTEX4XVOESPROC gload_glVertex4xvOES;
 
 # endif /* GL_OES_fixed_point */
-# if defined (GL_OES_fragment_precision_high)
-
-
-# endif /* GL_OES_fragment_precision_high */
 # if defined (GL_OES_framebuffer_object)
 
 PFNGLISRENDERBUFFEROESPROC gload_glIsRenderbufferOES;
@@ -48432,10 +42786,6 @@ PFNGLUNMAPBUFFEROESPROC gload_glUnmapBufferOES;
 PFNGLGETBUFFERPOINTERVOESPROC gload_glGetBufferPointervOES;
 
 # endif /* GL_OES_mapbuffer */
-# if defined (GL_OES_matrix_get)
-
-
-# endif /* GL_OES_matrix_get */
 # if defined (GL_OES_matrix_palette)
 
 PFNGLCURRENTPALETTEMATRIXOESPROC gload_glCurrentPaletteMatrixOES;
@@ -48444,19 +42794,11 @@ PFNGLMATRIXINDEXPOINTEROESPROC gload_glMatrixIndexPointerOES;
 PFNGLWEIGHTPOINTEROESPROC gload_glWeightPointerOES;
 
 # endif /* GL_OES_matrix_palette */
-# if defined (GL_OES_packed_depth_stencil)
-
-
-# endif /* GL_OES_packed_depth_stencil */
 # if defined (GL_OES_point_size_array)
 
 PFNGLPOINTSIZEPOINTEROESPROC gload_glPointSizePointerOES;
 
 # endif /* GL_OES_point_size_array */
-# if defined (GL_OES_point_sprite)
-
-
-# endif /* GL_OES_point_sprite */
 # if defined (GL_OES_primitive_bounding_box)
 
 PFNGLPRIMITIVEBOUNDINGBOXOESPROC gload_glPrimitiveBoundingBoxOES;
@@ -48467,27 +42809,11 @@ PFNGLPRIMITIVEBOUNDINGBOXOESPROC gload_glPrimitiveBoundingBoxOES;
 PFNGLQUERYMATRIXXOESPROC gload_glQueryMatrixxOES;
 
 # endif /* GL_OES_query_matrix */
-# if defined (GL_OES_read_format)
-
-
-# endif /* GL_OES_read_format */
-# if defined (GL_OES_required_internalformat)
-
-
-# endif /* GL_OES_required_internalformat */
-# if defined (GL_OES_rgb8_rgba8)
-
-
-# endif /* GL_OES_rgb8_rgba8 */
 # if defined (GL_OES_sample_shading)
 
 PFNGLMINSAMPLESHADINGOESPROC gload_glMinSampleShadingOES;
 
 # endif /* GL_OES_sample_shading */
-# if defined (GL_OES_shader_multisample_interpolation)
-
-
-# endif /* GL_OES_shader_multisample_interpolation */
 # if defined (GL_OES_single_precision)
 
 PFNGLCLEARDEPTHFOESPROC gload_glClearDepthfOES;
@@ -48498,30 +42824,6 @@ PFNGLGETCLIPPLANEFOESPROC gload_glGetClipPlanefOES;
 PFNGLORTHOFOESPROC gload_glOrthofOES;
 
 # endif /* GL_OES_single_precision */
-# if defined (GL_OES_standard_derivatives)
-
-
-# endif /* GL_OES_standard_derivatives */
-# if defined (GL_OES_stencil1)
-
-
-# endif /* GL_OES_stencil1 */
-# if defined (GL_OES_stencil4)
-
-
-# endif /* GL_OES_stencil4 */
-# if defined (GL_OES_stencil8)
-
-
-# endif /* GL_OES_stencil8 */
-# if defined (GL_OES_stencil_wrap)
-
-
-# endif /* GL_OES_stencil_wrap */
-# if defined (GL_OES_surfaceless_context)
-
-
-# endif /* GL_OES_surfaceless_context */
 # if defined (GL_OES_tessellation_shader)
 
 PFNGLPATCHPARAMETERIOESPROC gload_glPatchParameteriOES;
@@ -48555,10 +42857,6 @@ PFNGLTEXBUFFEROESPROC gload_glTexBufferOES;
 PFNGLTEXBUFFERRANGEOESPROC gload_glTexBufferRangeOES;
 
 # endif /* GL_OES_texture_buffer */
-# if defined (GL_OES_texture_compression_astc)
-
-
-# endif /* GL_OES_texture_compression_astc */
 # if defined (GL_OES_texture_cube_map)
 
 PFNGLTEXGENFOESPROC gload_glTexGenfOES;
@@ -48572,26 +42870,6 @@ PFNGLGETTEXGENIVOESPROC gload_glGetTexGenivOES;
 extern PFNGLGETTEXGENXVOESPROC gload_glGetTexGenxvOES;
 
 # endif /* GL_OES_texture_cube_map */
-# if defined (GL_OES_texture_cube_map_array)
-
-
-# endif /* GL_OES_texture_cube_map_array */
-# if defined (GL_OES_texture_float)
-
-
-# endif /* GL_OES_texture_float */
-# if defined (GL_OES_texture_half_float)
-
-
-# endif /* GL_OES_texture_half_float */
-# if defined (GL_OES_texture_mirrored_repeat)
-
-
-# endif /* GL_OES_texture_mirrored_repeat */
-# if defined (GL_OES_texture_stencil8)
-
-
-# endif /* GL_OES_texture_stencil8 */
 # if defined (GL_OES_texture_storage_multisample_2d_array)
 
 PFNGLTEXSTORAGE3DMULTISAMPLEOESPROC gload_glTexStorage3DMultisampleOES;
@@ -48610,14 +42888,6 @@ PFNGLGENVERTEXARRAYSOESPROC gload_glGenVertexArraysOES;
 PFNGLISVERTEXARRAYOESPROC gload_glIsVertexArrayOES;
 
 # endif /* GL_OES_vertex_array_object */
-# if defined (GL_OES_vertex_half_float)
-
-
-# endif /* GL_OES_vertex_half_float */
-# if defined (GL_OES_vertex_type_10_10_10_2)
-
-
-# endif /* GL_OES_vertex_type_10_10_10_2 */
 # if defined (GL_OES_viewport_array)
 
 PFNGLVIEWPORTARRAYVOESPROC gload_glViewportArrayvOES;
@@ -48634,18 +42904,6 @@ extern PFNGLDISABLEIOESPROC gload_glDisableiOES;
 extern PFNGLISENABLEDIOESPROC gload_glIsEnablediOES;
 
 # endif /* GL_OES_viewport_array */
-# if defined (GL_OML_interlace)
-
-
-# endif /* GL_OML_interlace */
-# if defined (GL_OML_resample)
-
-
-# endif /* GL_OML_resample */
-# if defined (GL_OML_subsample)
-
-
-# endif /* GL_OML_subsample */
 # if defined (GL_OVR_multiview)
 
 PFNGLFRAMEBUFFERTEXTUREMULTIVIEWOVRPROC gload_glFramebufferTextureMultiviewOVR;
@@ -48662,19 +42920,11 @@ PFNGLFRAMEBUFFERTEXTUREMULTISAMPLEMULTIVIEWOVRPROC gload_glFramebufferTextureMul
 PFNGLHINTPGIPROC gload_glHintPGI;
 
 # endif /* GL_PGI_misc_hints */
-# if defined (GL_PGI_vertex_hints)
-
-
-# endif /* GL_PGI_vertex_hints */
 # if defined (GL_QCOM_alpha_test)
 
 PFNGLALPHAFUNCQCOMPROC gload_glAlphaFuncQCOM;
 
 # endif /* GL_QCOM_alpha_test */
-# if defined (GL_QCOM_binning_control)
-
-
-# endif /* GL_QCOM_binning_control */
 # if defined (GL_QCOM_driver_control)
 
 PFNGLGETDRIVERCONTROLSQCOMPROC gload_glGetDriverControlsQCOM;
@@ -48725,26 +42975,6 @@ PFNGLEXTRAPOLATETEX2DQCOMPROC gload_glExtrapolateTex2DQCOM;
 PFNGLTEXTUREFOVEATIONPARAMETERSQCOMPROC gload_glTextureFoveationParametersQCOM;
 
 # endif /* GL_QCOM_texture_foveated */
-# if defined (GL_QCOM_texture_foveated2)
-
-
-# endif /* GL_QCOM_texture_foveated2 */
-# if defined (GL_QCOM_texture_foveated_subsampled_layout)
-
-
-# endif /* GL_QCOM_texture_foveated_subsampled_layout */
-# if defined (GL_QCOM_ycbcr_degamma)
-
-
-# endif /* GL_QCOM_ycbcr_degamma */
-# if defined (GL_QCOM_texture_lod_bias)
-
-
-# endif /* GL_QCOM_texture_lod_bias */
-# if defined (GL_QCOM_perfmon_global_mode)
-
-
-# endif /* GL_QCOM_perfmon_global_mode */
 # if defined (GL_QCOM_shader_framebuffer_fetch_noncoherent)
 
 PFNGLFRAMEBUFFERFETCHBARRIERQCOMPROC gload_glFramebufferFetchBarrierQCOM;
@@ -48761,18 +42991,6 @@ PFNGLSTARTTILINGQCOMPROC gload_glStartTilingQCOM;
 PFNGLENDTILINGQCOMPROC gload_glEndTilingQCOM;
 
 # endif /* GL_QCOM_tiled_rendering */
-# if defined (GL_QCOM_writeonly_rendering)
-
-
-# endif /* GL_QCOM_writeonly_rendering */
-# if defined (GL_REND_screen_coordinates)
-
-
-# endif /* GL_REND_screen_coordinates */
-# if defined (GL_S3_s3tc)
-
-
-# endif /* GL_S3_s3tc */
 # if defined (GL_SGIS_detail_texture)
 
 PFNGLDETAILTEXFUNCSGISPROC gload_glDetailTexFuncSGIS;
@@ -48785,10 +43003,6 @@ PFNGLFOGFUNCSGISPROC gload_glFogFuncSGIS;
 PFNGLGETFOGFUNCSGISPROC gload_glGetFogFuncSGIS;
 
 # endif /* GL_SGIS_fog_function */
-# if defined (GL_SGIS_generate_mipmap)
-
-
-# endif /* GL_SGIS_generate_mipmap */
 # if defined (GL_SGIS_multisample)
 
 PFNGLSAMPLEMASKSGISPROC gload_glSampleMaskSGIS;
@@ -48805,10 +43019,6 @@ PFNGLGETPIXELTEXGENPARAMETERIVSGISPROC gload_glGetPixelTexGenParameterivSGIS;
 PFNGLGETPIXELTEXGENPARAMETERFVSGISPROC gload_glGetPixelTexGenParameterfvSGIS;
 
 # endif /* GL_SGIS_pixel_texture */
-# if defined (GL_SGIS_point_line_texgen)
-
-
-# endif /* GL_SGIS_point_line_texgen */
 # if defined (GL_SGIS_point_parameters)
 
 PFNGLPOINTPARAMETERFSGISPROC gload_glPointParameterfSGIS;
@@ -48827,33 +43037,17 @@ PFNGLTEXIMAGE4DSGISPROC gload_glTexImage4DSGIS;
 PFNGLTEXSUBIMAGE4DSGISPROC gload_glTexSubImage4DSGIS;
 
 # endif /* GL_SGIS_texture4D */
-# if defined (GL_SGIS_texture_border_clamp)
-
-
-# endif /* GL_SGIS_texture_border_clamp */
 # if defined (GL_SGIS_texture_color_mask)
 
 PFNGLTEXTURECOLORMASKSGISPROC gload_glTextureColorMaskSGIS;
 
 # endif /* GL_SGIS_texture_color_mask */
-# if defined (GL_SGIS_texture_edge_clamp)
-
-
-# endif /* GL_SGIS_texture_edge_clamp */
 # if defined (GL_SGIS_texture_filter4)
 
 PFNGLGETTEXFILTERFUNCSGISPROC gload_glGetTexFilterFuncSGIS;
 PFNGLTEXFILTERFUNCSGISPROC gload_glTexFilterFuncSGIS;
 
 # endif /* GL_SGIS_texture_filter4 */
-# if defined (GL_SGIS_texture_lod)
-
-
-# endif /* GL_SGIS_texture_lod */
-# if defined (GL_SGIS_texture_select)
-
-
-# endif /* GL_SGIS_texture_select */
 # if defined (GL_SGIX_async)
 
 PFNGLASYNCMARKERSGIXPROC gload_glAsyncMarkerSGIX;
@@ -48864,43 +43058,11 @@ PFNGLDELETEASYNCMARKERSSGIXPROC gload_glDeleteAsyncMarkersSGIX;
 PFNGLISASYNCMARKERSGIXPROC gload_glIsAsyncMarkerSGIX;
 
 # endif /* GL_SGIX_async */
-# if defined (GL_SGIX_async_histogram)
-
-
-# endif /* GL_SGIX_async_histogram */
-# if defined (GL_SGIX_async_pixel)
-
-
-# endif /* GL_SGIX_async_pixel */
-# if defined (GL_SGIX_blend_alpha_minmax)
-
-
-# endif /* GL_SGIX_blend_alpha_minmax */
-# if defined (GL_SGIX_calligraphic_fragment)
-
-
-# endif /* GL_SGIX_calligraphic_fragment */
-# if defined (GL_SGIX_clipmap)
-
-
-# endif /* GL_SGIX_clipmap */
-# if defined (GL_SGIX_convolution_accuracy)
-
-
-# endif /* GL_SGIX_convolution_accuracy */
-# if defined (GL_SGIX_depth_texture)
-
-
-# endif /* GL_SGIX_depth_texture */
 # if defined (GL_SGIX_flush_raster)
 
 PFNGLFLUSHRASTERSGIXPROC gload_glFlushRasterSGIX;
 
 # endif /* GL_SGIX_flush_raster */
-# if defined (GL_SGIX_fog_offset)
-
-
-# endif /* GL_SGIX_fog_offset */
 # if defined (GL_SGIX_fragment_lighting)
 
 PFNGLFRAGMENTCOLORMATERIALSGIXPROC gload_glFragmentColorMaterialSGIX;
@@ -48943,14 +43105,6 @@ PFNGLSTARTINSTRUMENTSSGIXPROC gload_glStartInstrumentsSGIX;
 PFNGLSTOPINSTRUMENTSSGIXPROC gload_glStopInstrumentsSGIX;
 
 # endif /* GL_SGIX_instruments */
-# if defined (GL_SGIX_interlace)
-
-
-# endif /* GL_SGIX_interlace */
-# if defined (GL_SGIX_ir_instrument1)
-
-
-# endif /* GL_SGIX_ir_instrument1 */
 # if defined (GL_SGIX_list_priority)
 
 PFNGLGETLISTPARAMETERFVSGIXPROC gload_glGetListParameterfvSGIX;
@@ -48966,10 +43120,6 @@ PFNGLLISTPARAMETERIVSGIXPROC gload_glListParameterivSGIX;
 PFNGLPIXELTEXGENSGIXPROC gload_glPixelTexGenSGIX;
 
 # endif /* GL_SGIX_pixel_texture */
-# if defined (GL_SGIX_pixel_tiles)
-
-
-# endif /* GL_SGIX_pixel_tiles */
 # if defined (GL_SGIX_polynomial_ffd)
 
 PFNGLDEFORMATIONMAP3DSGIXPROC gload_glDeformationMap3dSGIX;
@@ -48983,22 +43133,6 @@ PFNGLLOADIDENTITYDEFORMATIONMAPSGIXPROC gload_glLoadIdentityDeformationMapSGIX;
 PFNGLREFERENCEPLANESGIXPROC gload_glReferencePlaneSGIX;
 
 # endif /* GL_SGIX_reference_plane */
-# if defined (GL_SGIX_resample)
-
-
-# endif /* GL_SGIX_resample */
-# if defined (GL_SGIX_scalebias_hint)
-
-
-# endif /* GL_SGIX_scalebias_hint */
-# if defined (GL_SGIX_shadow)
-
-
-# endif /* GL_SGIX_shadow */
-# if defined (GL_SGIX_shadow_ambient)
-
-
-# endif /* GL_SGIX_shadow_ambient */
 # if defined (GL_SGIX_sprite)
 
 PFNGLSPRITEPARAMETERFSGIXPROC gload_glSpriteParameterfSGIX;
@@ -49007,51 +43141,11 @@ PFNGLSPRITEPARAMETERISGIXPROC gload_glSpriteParameteriSGIX;
 PFNGLSPRITEPARAMETERIVSGIXPROC gload_glSpriteParameterivSGIX;
 
 # endif /* GL_SGIX_sprite */
-# if defined (GL_SGIX_subsample)
-
-
-# endif /* GL_SGIX_subsample */
 # if defined (GL_SGIX_tag_sample_buffer)
 
 PFNGLTAGSAMPLEBUFFERSGIXPROC gload_glTagSampleBufferSGIX;
 
 # endif /* GL_SGIX_tag_sample_buffer */
-# if defined (GL_SGIX_texture_add_env)
-
-
-# endif /* GL_SGIX_texture_add_env */
-# if defined (GL_SGIX_texture_coordinate_clamp)
-
-
-# endif /* GL_SGIX_texture_coordinate_clamp */
-# if defined (GL_SGIX_texture_lod_bias)
-
-
-# endif /* GL_SGIX_texture_lod_bias */
-# if defined (GL_SGIX_texture_multi_buffer)
-
-
-# endif /* GL_SGIX_texture_multi_buffer */
-# if defined (GL_SGIX_texture_scale_bias)
-
-
-# endif /* GL_SGIX_texture_scale_bias */
-# if defined (GL_SGIX_vertex_preclip)
-
-
-# endif /* GL_SGIX_vertex_preclip */
-# if defined (GL_SGIX_ycrcb)
-
-
-# endif /* GL_SGIX_ycrcb */
-# if defined (GL_SGIX_ycrcba)
-
-
-# endif /* GL_SGIX_ycrcba */
-# if defined (GL_SGI_color_matrix)
-
-
-# endif /* GL_SGI_color_matrix */
 # if defined (GL_SGI_color_table)
 
 PFNGLCOLORTABLESGIPROC gload_glColorTableSGI;
@@ -49063,19 +43157,11 @@ PFNGLGETCOLORTABLEPARAMETERFVSGIPROC gload_glGetColorTableParameterfvSGI;
 PFNGLGETCOLORTABLEPARAMETERIVSGIPROC gload_glGetColorTableParameterivSGI;
 
 # endif /* GL_SGI_color_table */
-# if defined (GL_SGI_texture_color_table)
-
-
-# endif /* GL_SGI_texture_color_table */
 # if defined (GL_SUNX_constant_data)
 
 PFNGLFINISHTEXTURESUNXPROC gload_glFinishTextureSUNX;
 
 # endif /* GL_SUNX_constant_data */
-# if defined (GL_SUN_convolution_border_modes)
-
-
-# endif /* GL_SUN_convolution_border_modes */
 # if defined (GL_SUN_global_alpha)
 
 PFNGLGLOBALALPHAFACTORBSUNPROC gload_glGlobalAlphaFactorbSUN;
@@ -49093,10 +43179,6 @@ PFNGLGLOBALALPHAFACTORUISUNPROC gload_glGlobalAlphaFactoruiSUN;
 PFNGLDRAWMESHARRAYSSUNPROC gload_glDrawMeshArraysSUN;
 
 # endif /* GL_SUN_mesh_array */
-# if defined (GL_SUN_slice_accum)
-
-
-# endif /* GL_SUN_slice_accum */
 # if defined (GL_SUN_triangle_list)
 
 PFNGLREPLACEMENTCODEUISUNPROC gload_glReplacementCodeuiSUN;
@@ -49152,18 +43234,6 @@ PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FSUNPROC gload_glReplaceme
 PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC gload_glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fvSUN;
 
 # endif /* GL_SUN_vertex */
-# if defined (GL_VIV_shader_binary)
-
-
-# endif /* GL_VIV_shader_binary */
-# if defined (GL_WIN_phong_shading)
-
-
-# endif /* GL_WIN_phong_shading */
-# if defined (GL_WIN_specular_fog)
-
-
-# endif /* GL_WIN_specular_fog */
 #
 #  if defined (__cplusplus)
 
