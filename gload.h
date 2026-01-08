@@ -36950,18 +36950,18 @@ GLAPI void  *gloadGetProcAddress(const char *name) {
         "libGL.so.1",
         "libGL.so.1.7.0",
         0
-#  endif /* __linux__ */
+#  endif /* GLOAD_LINUX */
 #  if defined (GLOAD_APPLE)
         "../Frameworks/OpenGL.framework/OpenGL",
         "/Library/Frameworks/OpenGL.framework/OpenGL",
         "/System/Library/Frameworks/OpenGL.framework/OpenGL",
         "/System/Library/Frameworks/OpenGL.framework/Versions/Current/OpenGL"
         0
-#  endif /* __APPLE__ */
+#  endif /* GLOAD_APPLE */
 #  if defined (GLOAD_WIN32)
         "opengl32.dll",
         0
-#  endif /* _WIN32 */
+#  endif /* GLOAD_WIN32 */
 
     };
     

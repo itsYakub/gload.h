@@ -1,3 +1,4 @@
+#define GLOAD_VERBOSE
 #define GLOAD_IMPLEMENTATION
 #include "./../../gload.h"
 
