@@ -89,6 +89,18 @@
  *              Enables error-logging to standard-output/standard-error.
  *              Enabled by default if GLOAD_VERBOSE is defined.
  *
+ *      #define GLOAD_EXTENSIONS
+ *          - TYPE:
+ *              OPTIONAL
+ *          - DESCRIPTION:
+ *              Enable OpenGL extensions (default script should define this option).
+ *
+ *      #define GLOAD_NO_EXTENSIONS
+ *          - TYPE:
+ *              OPTIONAL
+ *          - DESCRIPTION:
+ *              Disable OpenGL extensions.
+ *
  *
  *  Constants (MUST NOT be defined by user):
  *

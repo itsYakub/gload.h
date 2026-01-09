@@ -33,12 +33,13 @@ g_glsc_version_list: list = [
     '2.0'
 ]
 
-g_opts: str = 'hvo:p:'
+g_opts: str = 'hvo:p:e:'
 g_optl: list = [
-    'help',     # -h, --help
-    'version',  # -v, --version
-    'output=',  # -o, --output
-    'profile=', # -p, --profile
+    'help',         # -h, --help
+    'version',      # -v, --version
+    'output=',      # -o, --output
+    'profile=',     # -p, --profile
+    'extensions='   # -e, --extensions
 ]
 g_opt: dict = {
     'output': f'{g_path}/gload.h',
@@ -46,6 +47,7 @@ g_opt: dict = {
     'version': g_gl_version_list[-1],
     'version-es': g_gles_version_list[-1],
     'version-sc': g_glsc_version_list[-1],
+    'extensions': True
     'template': f'{g_path}/gload-template.h',
 }
 
@@ -86,6 +88,16 @@ def gl_getopt():
                 print(f'{__file__}: invalid profile: {arg} (expected: core/compatibility)')
                 sys.exit(1)
             g_opt['profile'] = arg
+        
+        elif opt in ('-e', '--extensions'):
+            if arg not in ('on', 'off'):
+                print(f'{__file__}: invalid extension state: {arg} (expected: on/off)')
+                sys.exit(1)
+
+            if arg == 'on':
+                g_opt['extensions'] = True
+            elif arg == 'off':
+                g_opt['extensions'] = False
 
         elif opt in ('-h', '--help'):
             print('help')
