@@ -498,21 +498,21 @@ def opengl_loader(parse: glParse):
     # <<gload-declr-0>>
     template = gload_declr(parse.feat, parse.cmds, 0)
     template += '\n'
-    template += gload_declr(parse.ext, parse.cmds, 0)
+    template += gload_declr(parse.ext, parse.cmds, 0, template)
     template = template.replace('#', '# ')
     fstr = fstr.replace('/* <<gload-declr-0>> */', template)
 
     # <<gload-declr-1>>
     template = gload_declr(parse.feat, parse.cmds, 1)
     template += '\n'
-    template += gload_declr(parse.ext, parse.cmds, 1)
+    template += gload_declr(parse.ext, parse.cmds, 1, template)
     template = template.replace('#', '# ')
     fstr = fstr.replace('/* <<gload-declr-1>> */', template)
 
     # <<gload-declr-2>>
     template = gload_declr(parse.feat, parse.cmds, 2)
     template += '\n'
-    template += gload_declr(parse.ext, parse.cmds, 2)
+    template += gload_declr(parse.ext, parse.cmds, 2, template)
     template = template.replace('#', '# ')
     fstr = fstr.replace('/* <<gload-declr-2>> */', template)
 
@@ -636,7 +636,7 @@ def gload_enums(lst, enums: list[glEnum]) -> str:
     return (result.strip())
 
 
-def gload_declr(lst, cmds: list[glCmd], mode: int) -> str:
+def gload_declr(lst, cmds: list[glCmd], mode: int, prev: str = None) -> str:
     result: str
 
     result = str()
@@ -662,8 +662,17 @@ def gload_declr(lst, cmds: list[glCmd], mode: int) -> str:
                 if mode == 0:
                     func = f'PFN{cmd.name.upper()}PROC '
                     func += f'gload_{cmd.name};\n'
-                    if result.find(func) != -1:
+
+                    search = f'\n{func}'
+                    exist = result.rfind(search)
+                    if exist != -1:
                         result += 'extern '
+
+                    elif prev is not None:
+                        exist = prev.rfind(search)
+                        if exist != -1:
+                            result += 'extern '
+
                     result += func
 
                 elif mode == 1:
