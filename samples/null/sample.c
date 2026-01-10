@@ -1,4 +1,5 @@
 #define GLOAD_VERBOSE
+#define GLOAD_NO_EXTENSIONS
 #define GLOAD_IMPLEMENTATION
 #include "./../../gload.h"
 

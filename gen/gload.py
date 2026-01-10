@@ -469,10 +469,20 @@ def opengl_loader(parse: glParse):
     template = template.replace('#', '# ')
     fstr = fstr.replace('/* <<gload-macro-glversion>> */', template)
 
+    # <<gload-macro-ext-state>>
+    template = gload_macro_ext_state()
+    template = template.replace('#', '# ')
+    fstr = fstr.replace('/* <<gload-macro-ext-state>> */', template)
+
     # <<gload-macro-version-list>>
-    template = gload_macro_version_list(parse.feat, parse.ext)
+    template = gload_macro_version_list(parse.feat)
     template = template.replace('#', '# ')
     fstr = fstr.replace('/* <<gload-macro-version-list>> */', template)
+
+    # <<gload-macro-ext-list>>
+    template = gload_macro_ext_list(parse.ext)
+    template = template.replace('#', '# ')
+    fstr = fstr.replace('/* <<gload-macro-ext-list>> */', template)
 
     # <<gload-type-declr>>
     template = gload_type_declr(parse.types)
@@ -540,9 +550,9 @@ def gload_macro_glprofile() -> str:
     result: str
 
     # GLOAD_GL_PROFILE macro...
-    result = '#if !defined (GLOAD_GL_PROFILE)\n'
+    result  =  '#if !defined (GLOAD_GL_PROFILE)\n'
     result += f'# define GLOAD_GL_PROFILE \"{g_opt['profile']}\"\n'
-    result += '#endif /* GLOAD_GL_PROFILE */'
+    result +=  '#endif /* GLOAD_GL_PROFILE */'
 
     return (result.strip())
 
@@ -550,30 +560,60 @@ def gload_macro_glversion() -> str:
     result: str
 
     # GLOAD_GL_VERSION macro...
-    result = '#if !defined (GLOAD_GL_VERSION)\n'
+    result  =  '#if !defined (GLOAD_GL_VERSION)\n'
     result += f'# define GLOAD_GL_VERSION \"{g_opt['version']}\"\n'
-    result += '#endif /* GLOAD_GL_VERSION */\n'
+    result +=  '#endif /* GLOAD_GL_VERSION */\n'
 
     # GLOAD_GLES_VERSION macro...
-    result += '#if !defined (GLOAD_GLES_VERSION)\n'
+    result +=  '#if !defined (GLOAD_GLES_VERSION)\n'
     result += f'# define GLOAD_GLES_VERSION \"{g_opt['version-es']}\"\n'
-    result += '#endif /* GLOAD_GLES_VERSION */\n'
+    result +=  '#endif /* GLOAD_GLES_VERSION */\n'
 
     # GLOAD_GLSC_VERSION macro...
-    result += '#if !defined (GLOAD_GLSC_VERSION)\n'
+    result +=  '#if !defined (GLOAD_GLSC_VERSION)\n'
     result += f'# define GLOAD_GLSC_VERSION \"{g_opt['version-sc']}\"\n'
-    result += '#endif /* GLOAD_GLSC_VERSION */'
+    result +=  '#endif /* GLOAD_GLSC_VERSION */'
 
     return (result.strip())
 
-def gload_macro_version_list(feats: list[glFeat], exts: list[glExt]) -> str:
+def gload_macro_ext_state() -> str:
+    result: str
+
+    # GLOAD_EXTENSIONS / GL_NO_EXTESIONS macros...
+    result  = '#if !defined (GLOAD_EXTENSIONS)\n'
+    result += '# if !defined (GLOAD_NO_EXTENSIONS)\n'
+
+    # This is where the option 'g_opt['extensions']' is going to be used...
+    if g_opt['extensions']:
+        result += '#  define GLOAD_EXTENSIONS 1\n'
+    else:
+        result += '#  define GLOAD_NO_EXTENSIONS 1\n'
+
+    result += '# endif /* GLOAD_NO_EXTENSIONS */\n'
+    result += '#endif /* GLOAD_EXTENSIONS */\n'
+
+    # NOTE:
+    #  Remember that this is only the default setting that can be manipulated.
+    #  You can either edit it in this very script, set it during generation or define it as a compile-time macro.
+    #  By default I'm enabling extensions. Note that if you disable them then they won't be processed by gload.h.
+    #  That being said using extensions when GLOAD_NO_EXTENSIONS can cause segfaults!
+    return (result.strip())
+
+def gload_macro_version_list(feats: list[glFeat]) -> str:
     result: str
 
     result = str()
     for feat in feats:
         result += f'#define {feat.name}\n'
+    return (result.strip())
+
+def gload_macro_ext_list(exts: list[glExt]) -> str:
+    result: str
+
+    result = '#if defined (GLOAD_EXTENSIONS)\n'
     for ext in exts:
-        result += f'#define {ext.name}\n'
+        result += f'# define {ext.name}\n'
+    result += '#endif /* GLOAD_EXTENSIONS */\n'
     return (result.strip())
 
 def gload_type_declr(types: list[glType]) -> str:
