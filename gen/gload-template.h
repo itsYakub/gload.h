@@ -145,8 +145,6 @@
  *              Integer
  *          - DESCRIPTION:
  *              Compile-time version detection of OpenGL.
- *              Value of '1' means OpenGL version is handled by gload.h.
- *              Value of '0' means OpenGL version should not be handled by gload.h.
  *
  *
  *  Summary and Notes:

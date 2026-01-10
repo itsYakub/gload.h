@@ -6,7 +6,7 @@ MK_NAME		= gload
 # ========
 
 TARGET		= $(MK_ROOT)$(MK_NAME).h
-GENERATOR	= $(MK_ROOT)gen/$(MK_NAME)-gen.py
+GENERATOR	= $(MK_ROOT)gen/$(MK_NAME).py
 
 # ========
 
