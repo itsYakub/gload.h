@@ -8,7 +8,7 @@
  *
  *
  *  OpenGL settings:
- *      - profile: <<gload-profile>>
+ *      - profile: <<gload-glprofile>>
  *      - version: <<gload-glversion>> (OpenGL)
  *      - version: <<gload-glesversion>> (OpenGL ES)
  *      - version: <<gload-glscversion>> (OpenGL SC)
@@ -273,9 +273,9 @@ extern "C" {
 #  define GLOAD_VERSION "<<gload-version>>"
 # endif /* GLOAD_VERSION */
 #
-/* <<gload-profile-macro>> */
+/* <<gload-macro-glprofile>> */
 #
-/* <<gload-glversion-macro>> */
+/* <<gload-macro-glversion>> */
 
 /* SECTION:
  *  gload API
@@ -332,14 +332,14 @@ GLAPI void  *gloadGetProcAddress(const char *);
  *  OpenGL API
  * * * * * * */
 
-/* <<gload-version-macro>> */
+/* <<gload-macro-version-list>> */
 #
-/* <<gload-typedef>> */
+/* <<gload-type-declr>> */
 
-/* <<gload-enums>> */
-/* <<gload-funcptr>> */
-/* <<gload-declr-1>> */
-/* <<gload-declr-2>> */
+/* <<gload-enum-declr>> */
+/* <<gload-func-ptr>> */
+/* <<gload-func-declr-1>> */
+/* <<gload-func-declr-2>> */
 #
 # if defined (__cplusplus)
 
@@ -462,7 +462,7 @@ struct s_nameaddr {
 
 static struct s_nameaddr    g_nameaddr[] = {
     
-/* <<gload-nameaddr>> */
+/* <<gload-func-nameaddr>> */
 
     /* null-terminator */
     { "", 0 }
@@ -632,7 +632,7 @@ GLAPI void  *gloadGetProcAddress(const char *name) {
  *  OpenGL API
  * * * * * * */
 
-/* <<gload-declr-0>> */
+/* <<gload-func-declr-0>> */
 #
 #  if defined (__cplusplus)
 

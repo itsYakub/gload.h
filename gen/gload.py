@@ -39,7 +39,7 @@ g_optl: list = [
     'version',      # -v, --version
     'output=',      # -o, --output
     'profile=',     # -p, --profile
-    'extensions='   # -e, --extensions
+    'extensions=',  # -e, --extensions
 ]
 g_opt: dict = {
     'output': f'{g_path}/gload.h',
@@ -47,7 +47,7 @@ g_opt: dict = {
     'version': g_gl_version_list[-1],
     'version-es': g_gles_version_list[-1],
     'version-sc': g_glsc_version_list[-1],
-    'extensions': True
+    'extensions': True,
     'template': f'{g_path}/gload-template.h',
 }
 
@@ -445,12 +445,7 @@ def opengl_loader(parse: glParse):
     fstr = fstr.replace('<<gload-licence>>', g_licence)
 
     # <<gload-profile>>
-    fstr = fstr.replace('<<gload-profile>>', g_opt['profile'])
-
-    # <<gload-profile-macro>>
-    template = gload_profile_macro()
-    template = template.replace('#', '# ')
-    fstr = fstr.replace('/* <<gload-profile-macro>> */', template)
+    fstr = fstr.replace('<<gload-glprofile>>', g_opt['profile'])
 
     # <<gload-glversion>>
     fstr = fstr.replace('<<gload-glversion>>', g_opt['version'])
@@ -461,72 +456,77 @@ def opengl_loader(parse: glParse):
     # <<gload-glscversion>>
     fstr = fstr.replace('<<gload-glscversion>>', g_opt['version-sc'])
 
-    # <<gload-glversion-macro>>
+    # <<gload-macro-version>>
+    fstr = fstr.replace('<<gload-macro-version>>', g_version)
+
+    # <<gload-macro-glprofile>>
+    template = gload_profile_macro()
+    template = template.replace('#', '# ')
+    fstr = fstr.replace('/* <<gload-macro-glprofile>> */', template)
+
+    # <<gload-macro-glversion>>
     template = gload_glversion_macro()
     template = template.replace('#', '# ')
-    fstr = fstr.replace('/* <<gload-glversion-macro>> */', template)
+    fstr = fstr.replace('/* <<gload-macro-glversion>> */', template)
 
-    # <<gload-version>>
-    fstr = fstr.replace('<<gload-version>>', g_version)
-
-    # <<gload-version-macro>>
+    # <<gload-macro-version-list>>
     template = gload_version_macro(parse.feat, parse.ext)
     template = template.replace('#', '# ')
-    fstr = fstr.replace('/* <<gload-version-macro>> */', template)
+    fstr = fstr.replace('/* <<gload-macro-version-list>> */', template)
 
-    # <<gload-typedef>>
+    # <<gload-type-declr>>
     template = gload_typedefs(parse.types)
     template = template.replace('#', '# ')
-    fstr = fstr.replace('/* <<gload-typedef>> */', template)
+    fstr = fstr.replace('/* <<gload-type-declr>> */', template)
 
-    # <<gload-enums>>
+    # <<gload-enum-declr>>
     template = gload_enums(parse.feat, parse.enums)
     template += '\n'
     template += gload_enums(parse.ext, parse.enums)
     template = template.replace('#', '# ')
-    fstr = fstr.replace('/* <<gload-enums>> */', template)
+    fstr = fstr.replace('/* <<gload-enum-declr>> */', template)
 
-    # <<gload-funcptr>>
+    # <<gload-func-ptr>>
     template = gload_funcptr(parse.feat, parse.cmds)
     template += '\n'
     template += gload_funcptr(parse.ext, parse.cmds)
     template = template.replace('#', '# ')
-    fstr = fstr.replace('/* <<gload-funcptr>> */', template)
+    fstr = fstr.replace('/* <<gload-func-ptr>> */', template)
 
-    # <<glaod-nameaddr>>
+    # <<glaod-func-nameaddr>>
     template = gload_nameaddr(parse.feat, parse.cmds)
     template += '\n'
     template += gload_nameaddr(parse.ext, parse.cmds)
     template = template.replace('#', '# ')
-    fstr = fstr.replace('/* <<gload-nameaddr>> */', template)
+    fstr = fstr.replace('/* <<gload-func-nameaddr>> */', template)
 
-    # <<gload-loadfunc>>
+    # <<gload-func-load>>
     template = gload_loadfunc(parse.feat, parse.cmds)
     template += '\n'
     template += gload_loadfunc(parse.ext, parse.cmds)
     template = template.replace('#', '# ')
-    fstr = fstr.replace('/* <<gload-loadfunc>> */', template)
+    fstr = fstr.replace('/* <<gload-func-load>> */', template)
 
-    # <<gload-declr-0>>
+    # <<gload-func-declr-0>>
     template = gload_declr(parse.feat, parse.cmds, 0)
     template += '\n'
     template += gload_declr(parse.ext, parse.cmds, 0, template)
     template = template.replace('#', '# ')
-    fstr = fstr.replace('/* <<gload-declr-0>> */', template)
+    fstr = fstr.replace('/* <<gload-func-declr-0>> */', template)
 
-    # <<gload-declr-1>>
+    # <<gload-func-declr-1>>
     template = gload_declr(parse.feat, parse.cmds, 1)
     template += '\n'
     template += gload_declr(parse.ext, parse.cmds, 1, template)
     template = template.replace('#', '# ')
-    fstr = fstr.replace('/* <<gload-declr-1>> */', template)
+    fstr = fstr.replace('/* <<gload-func-declr-1>> */', template)
 
-    # <<gload-declr-2>>
+    # <<gload-func-declr-2>>
     template = gload_declr(parse.feat, parse.cmds, 2)
     template += '\n'
     template += gload_declr(parse.ext, parse.cmds, 2, template)
     template = template.replace('#', '# ')
-    fstr = fstr.replace('/* <<gload-declr-2>> */', template)
+    fstr = fstr.replace('/* <<gload-func-declr-2>> */', template)
 
     with open(g_opt['output'], 'w') as f:
         f.write(fstr)

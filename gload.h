@@ -3,7 +3,7 @@
  *  gload.h: OpenGL API Loader:
  *
  *      - made by: Jakub Oleksiak (yakubofficialmail@gmail.com)
- *      - version: 1.2
+ *      - version: 1.2.1
  *      - licence: GNU LESSER GENERAL PUBLIC LICENSE Version 3, 29 June 2007
  *
  *
@@ -89,6 +89,18 @@
  *              Enables error-logging to standard-output/standard-error.
  *              Enabled by default if GLOAD_VERBOSE is defined.
  *
+ *      #define GLOAD_EXTENSIONS
+ *          - TYPE:
+ *              OPTIONAL
+ *          - DESCRIPTION:
+ *              Enable OpenGL extensions (default script should define this option).
+ *
+ *      #define GLOAD_NO_EXTENSIONS
+ *          - TYPE:
+ *              OPTIONAL
+ *          - DESCRIPTION:
+ *              Disable OpenGL extensions.
+ *
  *
  *  Constants (MUST NOT be defined by user):
  *
@@ -133,8 +145,6 @@
  *              Integer
  *          - DESCRIPTION:
  *              Compile-time version detection of OpenGL.
- *              Value of '1' means OpenGL version is handled by gload.h.
- *              Value of '0' means OpenGL version should not be handled by gload.h.
  *
  *
  *  Summary and Notes:
@@ -260,7 +270,7 @@ extern "C" {
 # endif /* GLOAD_LINUX, GLOAD_APPLE, GLOAD_WIN32 */
 #
 # if !defined GLOAD_VERSION
-#  define GLOAD_VERSION "1.2"
+#  define GLOAD_VERSION "1.2.1"
 # endif /* GLOAD_VERSION */
 #
 # if !defined (GLOAD_GL_PROFILE)
