@@ -460,43 +460,43 @@ def opengl_loader(parse: glParse):
     fstr = fstr.replace('<<gload-macro-version>>', g_version)
 
     # <<gload-macro-glprofile>>
-    template = gload_profile_macro()
+    template = gload_macro_glprofile()
     template = template.replace('#', '# ')
     fstr = fstr.replace('/* <<gload-macro-glprofile>> */', template)
 
     # <<gload-macro-glversion>>
-    template = gload_glversion_macro()
+    template = gload_macro_glversion()
     template = template.replace('#', '# ')
     fstr = fstr.replace('/* <<gload-macro-glversion>> */', template)
 
     # <<gload-macro-version-list>>
-    template = gload_version_macro(parse.feat, parse.ext)
+    template = gload_macro_version_list(parse.feat, parse.ext)
     template = template.replace('#', '# ')
     fstr = fstr.replace('/* <<gload-macro-version-list>> */', template)
 
     # <<gload-type-declr>>
-    template = gload_typedefs(parse.types)
+    template = gload_type_declr(parse.types)
     template = template.replace('#', '# ')
     fstr = fstr.replace('/* <<gload-type-declr>> */', template)
 
     # <<gload-enum-declr>>
-    template = gload_enums(parse.feat, parse.enums)
+    template = gload_enum_declr(parse.feat, parse.enums)
     template += '\n'
-    template += gload_enums(parse.ext, parse.enums)
+    template += gload_enum_declr(parse.ext, parse.enums)
     template = template.replace('#', '# ')
     fstr = fstr.replace('/* <<gload-enum-declr>> */', template)
 
     # <<gload-func-ptr>>
-    template = gload_funcptr(parse.feat, parse.cmds)
+    template = gload_func_ptr(parse.feat, parse.cmds)
     template += '\n'
-    template += gload_funcptr(parse.ext, parse.cmds)
+    template += gload_func_ptr(parse.ext, parse.cmds)
     template = template.replace('#', '# ')
     fstr = fstr.replace('/* <<gload-func-ptr>> */', template)
 
     # <<glaod-func-nameaddr>>
-    template = gload_nameaddr(parse.feat, parse.cmds)
+    template = gload_func_nameaddr(parse.feat, parse.cmds)
     template += '\n'
-    template += gload_nameaddr(parse.ext, parse.cmds)
+    template += gload_func_nameaddr(parse.ext, parse.cmds)
     template = template.replace('#', '# ')
     fstr = fstr.replace('/* <<gload-func-nameaddr>> */', template)
 
@@ -508,23 +508,23 @@ def opengl_loader(parse: glParse):
     fstr = fstr.replace('/* <<gload-func-load>> */', template)
 
     # <<gload-func-declr-0>>
-    template = gload_declr(parse.feat, parse.cmds, 0)
+    template = gload_func_declr(parse.feat, parse.cmds, 0)
     template += '\n'
-    template += gload_declr(parse.ext, parse.cmds, 0, template)
+    template += gload_func_declr(parse.ext, parse.cmds, 0, template)
     template = template.replace('#', '# ')
     fstr = fstr.replace('/* <<gload-func-declr-0>> */', template)
 
     # <<gload-func-declr-1>>
-    template = gload_declr(parse.feat, parse.cmds, 1)
+    template = gload_func_declr(parse.feat, parse.cmds, 1)
     template += '\n'
-    template += gload_declr(parse.ext, parse.cmds, 1, template)
+    template += gload_func_declr(parse.ext, parse.cmds, 1, template)
     template = template.replace('#', '# ')
     fstr = fstr.replace('/* <<gload-func-declr-1>> */', template)
 
     # <<gload-func-declr-2>>
-    template = gload_declr(parse.feat, parse.cmds, 2)
+    template = gload_func_declr(parse.feat, parse.cmds, 2)
     template += '\n'
-    template += gload_declr(parse.ext, parse.cmds, 2, template)
+    template += gload_func_declr(parse.ext, parse.cmds, 2, template)
     template = template.replace('#', '# ')
     fstr = fstr.replace('/* <<gload-func-declr-2>> */', template)
 
@@ -536,7 +536,7 @@ def opengl_loader(parse: glParse):
 # SECTION: template
 # =================
 
-def gload_profile_macro() -> str:
+def gload_macro_glprofile() -> str:
     result: str
 
     # GLOAD_GL_PROFILE macro...
@@ -546,7 +546,7 @@ def gload_profile_macro() -> str:
 
     return (result.strip())
 
-def gload_glversion_macro() -> str:
+def gload_macro_glversion() -> str:
     result: str
 
     # GLOAD_GL_VERSION macro...
@@ -566,7 +566,7 @@ def gload_glversion_macro() -> str:
 
     return (result.strip())
 
-def gload_version_macro(feats: list[glFeat], exts: list[glExt]) -> str:
+def gload_macro_version_list(feats: list[glFeat], exts: list[glExt]) -> str:
     result: str
 
     result = str()
@@ -576,7 +576,7 @@ def gload_version_macro(feats: list[glFeat], exts: list[glExt]) -> str:
         result += f'#define {ext.name}\n'
     return (result.strip())
 
-def gload_typedefs(types: list[glType]) -> str:
+def gload_type_declr(types: list[glType]) -> str:
     result: str
 
     result = str()
@@ -592,7 +592,7 @@ def gload_typedefs(types: list[glType]) -> str:
     return (result.strip())
 
 
-def gload_funcptr(lst, cmds: list[glCmd]) -> str:
+def gload_func_ptr(lst, cmds: list[glCmd]) -> str:
     result: str
 
     result = str()
@@ -625,7 +625,7 @@ def gload_funcptr(lst, cmds: list[glCmd]) -> str:
     return (result.strip())
 
 
-def gload_enums(lst, enums: list[glEnum]) -> str:
+def gload_enum_declr(lst, enums: list[glEnum]) -> str:
     result: str
 
     result = str()
@@ -648,7 +648,7 @@ def gload_enums(lst, enums: list[glEnum]) -> str:
     return (result.strip())
 
 
-def gload_declr(lst, cmds: list[glCmd], mode: int, prev: str = None) -> str:
+def gload_func_declr(lst, cmds: list[glCmd], mode: int, prev: str = None) -> str:
     result: str
 
     result = str()
@@ -706,7 +706,7 @@ def gload_declr(lst, cmds: list[glCmd], mode: int, prev: str = None) -> str:
     return (result.strip())
 
 
-def gload_nameaddr(lst, cmds: list[glCmd]) -> str:
+def gload_func_nameaddr(lst, cmds: list[glCmd]) -> str:
     result: str
 
     result = str()
